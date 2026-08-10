@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс ItModelDocument</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_it_model_document.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_it_model_document-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс ItModelDocument<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___data___exchange.html">C3D Converter: Модуль конвертеров</a> &raquo; <a class="el" href="group___exchange___interface.html">Интерфейс конвертеров</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Интерфейс документа модели сборки или детали.  
+ <a href="class_it_model_document.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;conv_model_document.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:ItModelDocument:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_it_model_document__inherit__graph.svg" width="150" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса ItModelDocument:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_it_model_document__coll__graph.svg" width="134" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2179f615abf7182e0e22b0788f4e9378"><td class="memItemLeft" align="right" valign="top"><a id="a2179f615abf7182e0e22b0788f4e9378"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a2179f615abf7182e0e22b0788f4e9378">IsAssembly</a> () const =0</td></tr>
+<tr class="memdesc:a2179f615abf7182e0e22b0788f4e9378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Это сборка? <br /></td></tr>
+<tr class="separator:a2179f615abf7182e0e22b0788f4e9378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bc82815a5cf23039999d6f4fb74448"><td class="memItemLeft" align="right" valign="top"><a id="a90bc82815a5cf23039999d6f4fb74448"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a90bc82815a5cf23039999d6f4fb74448">IsEmpty</a> () const =0</td></tr>
+<tr class="memdesc:a90bc82815a5cf23039999d6f4fb74448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Модельный документ не содержит данных. <br /></td></tr>
+<tr class="separator:a90bc82815a5cf23039999d6f4fb74448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb85cf80200365fa7552d429135a383a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#adb85cf80200365fa7552d429135a383a">SetContent</a> (<a class="el" href="class_mb_item.html">MbItem</a> *)=0</td></tr>
+<tr class="memdesc:adb85cf80200365fa7552d429135a383a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прообраз новой интерфейсной функции - задать модель ЛСК, относительно которой позиционируется модель.  <a href="class_it_model_document.html#adb85cf80200365fa7552d429135a383a">Подробнее...</a><br /></td></tr>
+<tr class="separator:adb85cf80200365fa7552d429135a383a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7874cbb41214482feff03b888daf755"><td class="memItemLeft" align="right" valign="top"><a id="ab7874cbb41214482feff03b888daf755"></a>
+virtual <a class="el" href="class_mb_item.html">MbItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#ab7874cbb41214482feff03b888daf755">GetContent</a> ()=0</td></tr>
+<tr class="memdesc:ab7874cbb41214482feff03b888daf755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прообраз новой интерфейсной функции - получить наполнение. <br /></td></tr>
+<tr class="separator:ab7874cbb41214482feff03b888daf755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bb46602f7ea800bf170fd2365d274e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_s_ptr.html">ModelAssemblyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a29bb46602f7ea800bf170fd2365d274e">CreateAssembly</a> (const c3d::ItemsSPtrVector &amp;componentItems, const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a> &amp;fileName)=0</td></tr>
+<tr class="memdesc:a29bb46602f7ea800bf170fd2365d274e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать документ с новой сборкой при импорте.  <a href="class_it_model_document.html#a29bb46602f7ea800bf170fd2365d274e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a29bb46602f7ea800bf170fd2365d274e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97bd7465d94157975caa92e08d8f6d65"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_s_ptr.html">ModelPartPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a97bd7465d94157975caa92e08d8f6d65">CreatePart</a> (const c3d::ItemsSPtrVector &amp;componentItems, const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a> &amp;fileName)=0</td></tr>
+<tr class="memdesc:a97bd7465d94157975caa92e08d8f6d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать документ с новой деталью при импорте.  <a href="class_it_model_document.html#a97bd7465d94157975caa92e08d8f6d65">Подробнее...</a><br /></td></tr>
+<tr class="separator:a97bd7465d94157975caa92e08d8f6d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a8fb79cff5e3a994b1129a59a16f08"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_s_ptr.html">ModelAssemblyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a88a8fb79cff5e3a994b1129a59a16f08">GetInstanceAssembly</a> ()=0</td></tr>
+<tr class="memdesc:a88a8fb79cff5e3a994b1129a59a16f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить сборку для экспорта.  <a href="class_it_model_document.html#a88a8fb79cff5e3a994b1129a59a16f08">Подробнее...</a><br /></td></tr>
+<tr class="separator:a88a8fb79cff5e3a994b1129a59a16f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5263d6c9526c04b441a5cb83e13a13"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_s_ptr.html">ModelPartPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a0c5263d6c9526c04b441a5cb83e13a13">GetInstancePart</a> ()=0</td></tr>
+<tr class="memdesc:a0c5263d6c9526c04b441a5cb83e13a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить деталь для экспорта.  <a href="class_it_model_document.html#a0c5263d6c9526c04b441a5cb83e13a13">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0c5263d6c9526c04b441a5cb83e13a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93f529ba0023ca48a1e432fb67ee96b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_converter_metadata_receiver.html">IConverterMetadataReceiver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#ad93f529ba0023ca48a1e432fb67ee96b">GetMetadataReceiver</a> ()</td></tr>
+<tr class="memdesc:ad93f529ba0023ca48a1e432fb67ee96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить обработчик метаданных.  <a href="class_it_model_document.html#ad93f529ba0023ca48a1e432fb67ee96b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad93f529ba0023ca48a1e432fb67ee96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dee40089ded3aeb3c5aadb67fd92b76"><td class="memItemLeft" align="right" valign="top">virtual c3d::path_string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a6dee40089ded3aeb3c5aadb67fd92b76">GetMetadataWritePath</a> ()</td></tr>
+<tr class="memdesc:a6dee40089ded3aeb3c5aadb67fd92b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить путь для записи метаданных.  <a href="class_it_model_document.html#a6dee40089ded3aeb3c5aadb67fd92b76">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6dee40089ded3aeb3c5aadb67fd92b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae744c0fcfcb996a38e4843eabe25b508"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#ae744c0fcfcb996a38e4843eabe25b508">FinishImport</a> (<a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator)=0</td></tr>
+<tr class="memdesc:ae744c0fcfcb996a38e4843eabe25b508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Завершить импорт и сохранить документ.  <a href="class_it_model_document.html#ae744c0fcfcb996a38e4843eabe25b508">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae744c0fcfcb996a38e4843eabe25b508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6798598299a3b8d4b23dbe1f6dbba9"><td class="memItemLeft" align="right" valign="top">virtual DEPRECATE_DECLARE <a class="el" href="conv__annotation__item_8h.html#ac3e4efe19c85226aa33752c3ec0ba829">map_of_visual_items</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a9f6798598299a3b8d4b23dbe1f6dbba9">GetAnnotationItems</a> (<a class="el" href="group___data___exchange.html#ga493858658b3e0ff458f950920802b862">eTextForm</a>) const =0</td></tr>
+<tr class="memdesc:a9f6798598299a3b8d4b23dbe1f6dbba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить элементы аннотации, соответствующие элементам геометрической модели.  <a href="class_it_model_document.html#a9f6798598299a3b8d4b23dbe1f6dbba9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9f6798598299a3b8d4b23dbe1f6dbba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996c5f30ea113489eef9988407932159"><td class="memItemLeft" align="right" valign="top"><a id="a996c5f30ea113489eef9988407932159"></a>
+virtual DEPRECATE_DECLARE <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#a996c5f30ea113489eef9988407932159">SetAnnotationItems</a> (const <a class="el" href="conv__annotation__item_8h.html#ac3e4efe19c85226aa33752c3ec0ba829">map_of_visual_items</a> &amp;)=0</td></tr>
+<tr class="memdesc:a996c5f30ea113489eef9988407932159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать размеры. <br /></td></tr>
+<tr class="separator:a996c5f30ea113489eef9988407932159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5de0413a2db54c3573b4df0d2e76104"><td class="memItemLeft" align="right" valign="top"><a id="ad5de0413a2db54c3573b4df0d2e76104"></a>
+virtual DEPRECATE_DECLARE <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_it_model_document.html#ad5de0413a2db54c3573b4df0d2e76104">OpenDocument</a> ()=0</td></tr>
+<tr class="memdesc:ad5de0413a2db54c3573b4df0d2e76104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть документ. <br /></td></tr>
+<tr class="separator:ad5de0413a2db54c3573b4df0d2e76104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4b8113ee0c7e384828c5f3013f8030ec"></a>
+virtual <a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4b8113ee0c7e384828c5f3013f8030ec">RefType</a> () const</td></tr>
+<tr class="memdesc:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Интерфейс документа модели сборки или детали. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="adb85cf80200365fa7552d429135a383a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb85cf80200365fa7552d429135a383a">&#9670;&nbsp;</a></span>SetContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> ItModelDocument::SetContent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_item.html">MbItem</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Прообраз новой интерфейсной функции - задать модель ЛСК, относительно которой позиционируется модель. </p>
+<p>Прообраз новой интерфейсной функции - задать модель для наполнения. </p>
+
+<p>Замещается в <a class="el" href="class_c3d_model_document.html#aaf39986cfb0fbd29f89a9c4f25daeb1c">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="a29bb46602f7ea800bf170fd2365d274e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bb46602f7ea800bf170fd2365d274e">&#9670;&nbsp;</a></span>CreateAssembly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_s_ptr.html">ModelAssemblyPtr</a> ItModelDocument::CreateAssembly </td>
+          <td>(</td>
+          <td class="paramtype">const c3d::ItemsSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>componentItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать документ с новой сборкой при импорте. </p>
+<p>Увеличить счётчик ссылок результирующего документа на 1. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">componentItems</td><td>- Элементы, добавляемые в сборку.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>- Имя сборки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Экземпляр сборки, если операция прошла успешно, nullptr в противном случае. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_c3d_model_document.html#a3373641894138b634289792aa22d1cec">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="a97bd7465d94157975caa92e08d8f6d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bd7465d94157975caa92e08d8f6d65">&#9670;&nbsp;</a></span>CreatePart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_s_ptr.html">ModelPartPtr</a> ItModelDocument::CreatePart </td>
+          <td>(</td>
+          <td class="paramtype">const c3d::ItemsSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>componentItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать документ с новой деталью при импорте. </p>
+<p>Увеличить счётчик ссылок результирующего документа на 1. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">componentItems</td><td>- Элементы, добавляемые в сборку.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>- Имя детали.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Экземпляр детали, если операция прошла успешно, nullptr в противном случае. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_c3d_model_document.html#a3f70dc715b8ffad8905bac1cf1955b2a">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="a88a8fb79cff5e3a994b1129a59a16f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a8fb79cff5e3a994b1129a59a16f08">&#9670;&nbsp;</a></span>GetInstanceAssembly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_s_ptr.html">ModelAssemblyPtr</a> ItModelDocument::GetInstanceAssembly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить сборку для экспорта. </p>
+<p>Увеличить счётчик ссылок результирующей сборки на 1.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Экземпляр сборки, если операция прошла успешно, nullptr в противном случае. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_c3d_model_document.html#a52db8ece30e6feb88f93a7ed754237e7">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="a0c5263d6c9526c04b441a5cb83e13a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5263d6c9526c04b441a5cb83e13a13">&#9670;&nbsp;</a></span>GetInstancePart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_s_ptr.html">ModelPartPtr</a> ItModelDocument::GetInstancePart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить деталь для экспорта. </p>
+<p>Увеличить счётчик ссылок результирующей детали на 1.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Экземпляр детали, если операция прошла успешно, nullptr в противном случае. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_c3d_model_document.html#a284117bb1a0d67fe87245ed37e2eaef0">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="ad93f529ba0023ca48a1e432fb67ee96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93f529ba0023ca48a1e432fb67ee96b">&#9670;&nbsp;</a></span>GetMetadataReceiver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_s_ptr.html">SPtr</a>&lt;<a class="el" href="class_i_converter_metadata_receiver.html">IConverterMetadataReceiver</a>&gt; ItModelDocument::GetMetadataReceiver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить обработчик метаданных. </p>
+<p>Метаданные используются в тех случаях, когда не вписываются не в геометрическую, ни в атрибутивную модели.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Реализацию для приема метаданных с целью дальнейшей обработки. </dd></dl>
+
+<p>Переопределяется в <a class="el" href="class_c3d_model_document.html#abe0ceea6b165e2a8d5861684068a3e60">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="a6dee40089ded3aeb3c5aadb67fd92b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dee40089ded3aeb3c5aadb67fd92b76">&#9670;&nbsp;</a></span>GetMetadataWritePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual c3d::path_string ItModelDocument::GetMetadataWritePath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить путь для записи метаданных. </p>
+<p>Метаданные используются в тех случаях, когда не вписываются не в геометрическую, ни в атрибутивную модели. Этот метод является альтернативным для <a class="el" href="class_it_model_document.html#ad93f529ba0023ca48a1e432fb67ee96b" title="Получить обработчик метаданных.">GetMetadataReceiver()</a>, для случаев, когда для приложения предпочтительнее записывать метаданные в файловую систему вместо передачи через <a class="el" href="class_i_converter_metadata_receiver.html" title="Интерфейс передачи метаданных.">IConverterMetadataReceiver</a>. Указанный каталог должен существовать, быть пустым и доступным для записи.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Путь для записи метаданных в файловую систему. </dd></dl>
+
+<p>Переопределяется в <a class="el" href="class_c3d_model_document.html#a150c9d6aca0b3aba5226372509b430cc">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="ae744c0fcfcb996a38e4843eabe25b508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae744c0fcfcb996a38e4843eabe25b508">&#9670;&nbsp;</a></span>FinishImport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ItModelDocument::FinishImport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *&#160;</td>
+          <td class="paramname"><em>indicator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Завершить импорт и сохранить документ. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если операция прошла успешно, false в противном случае.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">indicator</td><td>Объект для отображения хода процесса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_c3d_model_document.html#a445723335e69a8cea5b81cbcbabf41b2">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<a id="a9f6798598299a3b8d4b23dbe1f6dbba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6798598299a3b8d4b23dbe1f6dbba9">&#9670;&nbsp;</a></span>GetAnnotationItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DEPRECATE_DECLARE <a class="el" href="conv__annotation__item_8h.html#ac3e4efe19c85226aa33752c3ec0ba829">map_of_visual_items</a> ItModelDocument::GetAnnotationItems </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___data___exchange.html#ga493858658b3e0ff458f950920802b862">eTextForm</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить элементы аннотации, соответствующие элементам геометрической модели. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eTextForm</td><td>- Форма представления текста. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Контейнер объектов аннотации. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_c3d_model_document.html#a9a2b37027358281260eb879cf48082f6">C3dModelDocument</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="conv__model__document_8h.html">conv_model_document.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_it_model_document.html">ItModelDocument</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

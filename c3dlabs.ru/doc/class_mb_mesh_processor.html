@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbMeshProcessor</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_mesh_processor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="class_mb_mesh_processor-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbMeshProcessor<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___computation.html">Методы геометрических вычислений</a> &raquo; <a class="el" href="group___polygonal___objects.html">Полигональные объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для создания оболочки в граничном представлении по полигональной сетке.  
+ <a href="class_mb_mesh_processor.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;action_b_shaper.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbMeshProcessor:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_mesh_processor__inherit__graph.svg" width="142" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbMeshProcessor:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_mesh_processor__coll__graph.svg" width="142" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a17107af04aa738b8a5cdba56c489fdba"><td class="memItemLeft" align="right" valign="top"><a id="a17107af04aa738b8a5cdba56c489fdba"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_processor.html#a17107af04aa738b8a5cdba56c489fdba">~MbMeshProcessor</a> ()</td></tr>
+<tr class="memdesc:a17107af04aa738b8a5cdba56c489fdba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a17107af04aa738b8a5cdba56c489fdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5b6c778572141ed2f4a1084a50f4aeb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#gad5b6c778572141ed2f4a1084a50f4aeb">SetRelativeTolerance</a> (double tolerance)=0</td></tr>
+<tr class="memdesc:gad5b6c778572141ed2f4a1084a50f4aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить относительную точность.  <a href="group___polygonal___objects.html#gad5b6c778572141ed2f4a1084a50f4aeb">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad5b6c778572141ed2f4a1084a50f4aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ba84aed191b041e39206060bdbccb40"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga3ba84aed191b041e39206060bdbccb40">SetTolerance</a> (double tolerance)=0</td></tr>
+<tr class="memdesc:ga3ba84aed191b041e39206060bdbccb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить точность.  <a href="group___polygonal___objects.html#ga3ba84aed191b041e39206060bdbccb40">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3ba84aed191b041e39206060bdbccb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4788ec51dd97036ec426a2b353891a6c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga4788ec51dd97036ec426a2b353891a6c">GetTolerance</a> () const =0</td></tr>
+<tr class="memdesc:ga4788ec51dd97036ec426a2b353891a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить точность.  <a href="group___polygonal___objects.html#ga4788ec51dd97036ec426a2b353891a6c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4788ec51dd97036ec426a2b353891a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8515934c5181e1bd8cae9bb4aaf53079"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_processor.html#a8515934c5181e1bd8cae9bb4aaf53079">SetReconstructionMode</a> (<a class="el" href="group___polygonal___objects.html#gaad998174f3210213a325f02aa5bf1b8c">MbeSurfReconstructMode</a> mode)=0</td></tr>
+<tr class="memdesc:a8515934c5181e1bd8cae9bb4aaf53079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить режим распознавания поверхностей.  <a href="class_mb_mesh_processor.html#a8515934c5181e1bd8cae9bb4aaf53079">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8515934c5181e1bd8cae9bb4aaf53079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32041259599b7cf3eb34179bf5f45a1d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_processor.html#a32041259599b7cf3eb34179bf5f45a1d">SetBrepCreationMode</a> (<a class="el" href="group___polygonal___objects.html#ga520f26773b01b0b00f1494167adc1f0a">MbeCreateBRepMode</a> mode)=0</td></tr>
+<tr class="memdesc:a32041259599b7cf3eb34179bf5f45a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить режим построения модели BRep.  <a href="class_mb_mesh_processor.html#a32041259599b7cf3eb34179bf5f45a1d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a32041259599b7cf3eb34179bf5f45a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1f4b218dc0f2c28bf89e3c0e7b2227"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_processor.html#acc1f4b218dc0f2c28bf89e3c0e7b2227">SetUseMeshSmoothing</a> (bool useSmoothing)=0</td></tr>
+<tr class="memdesc:acc1f4b218dc0f2c28bf89e3c0e7b2227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить флаг сглаживания входной сетки.  <a href="class_mb_mesh_processor.html#acc1f4b218dc0f2c28bf89e3c0e7b2227">Подробнее...</a><br /></td></tr>
+<tr class="separator:acc1f4b218dc0f2c28bf89e3c0e7b2227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8701092629863fd53cc9cefea7f0e65e"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_mb_collection.html">MbCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga8701092629863fd53cc9cefea7f0e65e">GetSimplifiedMesh</a> ()=0</td></tr>
+<tr class="memdesc:ga8701092629863fd53cc9cefea7f0e65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить исправленную (упрощенную) копию входной полигональной сетки.  <a href="group___polygonal___objects.html#ga8701092629863fd53cc9cefea7f0e65e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8701092629863fd53cc9cefea7f0e65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b21194e50d1d64b6386bc219caeb3bf"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_mb_collection.html">MbCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga1b21194e50d1d64b6386bc219caeb3bf">GetSegmentedMesh</a> ()=0</td></tr>
+<tr class="memdesc:ga1b21194e50d1d64b6386bc219caeb3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить сегментированную копию входной полигональной сетки.  <a href="group___polygonal___objects.html#ga1b21194e50d1d64b6386bc219caeb3bf">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1b21194e50d1d64b6386bc219caeb3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a4b5a6d3a4b2a8ceff31973fd34134b"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; <a class="el" href="struct_mb_curvature.html">MbCurvature</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga6a4b5a6d3a4b2a8ceff31973fd34134b">CalculateCurvatures</a> ()=0</td></tr>
+<tr class="memdesc:ga6a4b5a6d3a4b2a8ceff31973fd34134b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать главные кривизны и главные направления изменения кривизн в точках сетки.  <a href="group___polygonal___objects.html#ga6a4b5a6d3a4b2a8ceff31973fd34134b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6a4b5a6d3a4b2a8ceff31973fd34134b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bbaef0271cee97c1bae1aad9cf9834a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga9bbaef0271cee97c1bae1aad9cf9834a">SegmentMesh</a> (bool createSurfaces=true)=0</td></tr>
+<tr class="memdesc:ga9bbaef0271cee97c1bae1aad9cf9834a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сегментровать полигональную сетку.  <a href="group___polygonal___objects.html#ga9bbaef0271cee97c1bae1aad9cf9834a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9bbaef0271cee97c1bae1aad9cf9834a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd0c6b68d5e2e93e7971d7560014a9ab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#gabd0c6b68d5e2e93e7971d7560014a9ab">CreateBRepShell</a> (<a class="el" href="class_mb_face_shell.html">MbFaceShell</a> *&amp;pShell, bool smoothBoundaryEdges, double bondThresholdAngle)=0</td></tr>
+<tr class="memdesc:gabd0c6b68d5e2e93e7971d7560014a9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать оболочку.  <a href="group___polygonal___objects.html#gabd0c6b68d5e2e93e7971d7560014a9ab">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabd0c6b68d5e2e93e7971d7560014a9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef547353cf547b5a879278ed0fb7a186"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#gaef547353cf547b5a879278ed0fb7a186">FitSurfaceToSegment</a> (size_t idxSegment)=0</td></tr>
+<tr class="memdesc:gaef547353cf547b5a879278ed0fb7a186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вписать поверхность.  <a href="group___polygonal___objects.html#gaef547353cf547b5a879278ed0fb7a186">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaef547353cf547b5a879278ed0fb7a186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga280ae7020b090d91ab6b948fd57b1a78"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga280ae7020b090d91ab6b948fd57b1a78">FitSurfaceToSegment</a> (size_t idxSegment, <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a> surfaceType)=0</td></tr>
+<tr class="memdesc:ga280ae7020b090d91ab6b948fd57b1a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вписать поверхность заданного типа.  <a href="group___polygonal___objects.html#ga280ae7020b090d91ab6b948fd57b1a78">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga280ae7020b090d91ab6b948fd57b1a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga760a5fbbeec125f832665b7617b32af2"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga760a5fbbeec125f832665b7617b32af2">GetSegmentSurface</a> (size_t idxSegment) const =0</td></tr>
+<tr class="memdesc:ga760a5fbbeec125f832665b7617b32af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить поверхность для сегмента.  <a href="group___polygonal___objects.html#ga760a5fbbeec125f832665b7617b32af2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga760a5fbbeec125f832665b7617b32af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89db7856780279f26bcd57245b25c2f4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga89db7856780279f26bcd57245b25c2f4">SetSegmentSurface</a> (size_t idxSegment)=0</td></tr>
+<tr class="memdesc:ga89db7856780279f26bcd57245b25c2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить поверхность для сегмента.  <a href="group___polygonal___objects.html#ga89db7856780279f26bcd57245b25c2f4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga89db7856780279f26bcd57245b25c2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab70489734842ca61980d95d11cdb276c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#gab70489734842ca61980d95d11cdb276c">ResetSegmentation</a> ()=0</td></tr>
+<tr class="memdesc:gab70489734842ca61980d95d11cdb276c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить сегментацию полигональной сетки.  <a href="group___polygonal___objects.html#gab70489734842ca61980d95d11cdb276c">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab70489734842ca61980d95d11cdb276c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89824adea49a5d89faf8930a0081feb4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga89824adea49a5d89faf8930a0081feb4">FindShortestVertexPath</a> (uint v1, uint v2, std::vector&lt; uint &gt; &amp;path)=0</td></tr>
+<tr class="memdesc:ga89824adea49a5d89faf8930a0081feb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайший путь между двумя вершинами коллекции.  <a href="group___polygonal___objects.html#ga89824adea49a5d89faf8930a0081feb4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga89824adea49a5d89faf8930a0081feb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4b8113ee0c7e384828c5f3013f8030ec"></a>
+virtual <a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4b8113ee0c7e384828c5f3013f8030ec">RefType</a> () const</td></tr>
+<tr class="memdesc:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:gad289c53ac04627be39555478d6c7e615"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_mesh_processor.html">MbMeshProcessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#gad289c53ac04627be39555478d6c7e615">Create</a> (const <a class="el" href="class_mb_collection.html">MbCollection</a> &amp;collection)</td></tr>
+<tr class="memdesc:gad289c53ac04627be39555478d6c7e615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать экземпляр процессора по коллекции.  <a href="group___polygonal___objects.html#gad289c53ac04627be39555478d6c7e615">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad289c53ac04627be39555478d6c7e615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a58057a85fcde570064120afb70ad0bd4"><td class="memItemLeft" align="right" valign="top"><a id="a58057a85fcde570064120afb70ad0bd4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_processor.html#a58057a85fcde570064120afb70ad0bd4">MbMeshProcessor</a> ()</td></tr>
+<tr class="memdesc:a58057a85fcde570064120afb70ad0bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a58057a85fcde570064120afb70ad0bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для создания оболочки в граничном представлении по полигональной сетке. </p>
+<p>Предоставить интерфейс для управления преобразованием сетки в оболочку в граничном представлении. <br  />
+</p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a8515934c5181e1bd8cae9bb4aaf53079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8515934c5181e1bd8cae9bb4aaf53079">&#9670;&nbsp;</a></span>SetReconstructionMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMeshProcessor::SetReconstructionMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___polygonal___objects.html#gaad998174f3210213a325f02aa5bf1b8c">MbeSurfReconstructMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить режим распознавания поверхностей. </p>
+<p>Задать типы поверхностей, генерируемых на сегментах. Поверхности неподдерживаемых типов строиться не будут. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- Режим распознавания поверхностей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32041259599b7cf3eb34179bf5f45a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32041259599b7cf3eb34179bf5f45a1d">&#9670;&nbsp;</a></span>SetBrepCreationMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMeshProcessor::SetBrepCreationMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___polygonal___objects.html#ga520f26773b01b0b00f1494167adc1f0a">MbeCreateBRepMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить режим построения модели BRep. </p>
+<p>Задать степень связности граней в результирующей модели BRep. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- Режим построения модели BRep. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc1f4b218dc0f2c28bf89e3c0e7b2227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1f4b218dc0f2c28bf89e3c0e7b2227">&#9670;&nbsp;</a></span>SetUseMeshSmoothing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMeshProcessor::SetUseMeshSmoothing </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useSmoothing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить флаг сглаживания входной сетки. </p>
+<p>Установить флаг сглаживания входной сетки. Если флаг установлен в true, то перед запуском основного алгоритма сегментации будет выполнено сглаживание входной сетки. Рекомендуется использовать сглаживание на неточных сетках, например, полученных методом сканирования. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">useSmoothing</td><td>- Флаг использования сглаживания входной сетки. По-умолчанию false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="action__b__shaper_8h.html">action_b_shaper.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_mesh_processor.html">MbMeshProcessor</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:04. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

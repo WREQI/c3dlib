@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл map_lump.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('map__lump_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл map_lump.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Объекты для проецирования.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;set&gt;</code><br />
+<code>#include &lt;<a class="el" href="lump_8h.html">lump.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="io__define_8h.html">io_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve3d_8h.html">curve3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cur__contour__on__plane_8h.html">cur_contour_on_plane.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh__polygon_8h.html">mesh_polygon.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh__primitive_8h.html">mesh_primitive.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__thread_8h.html">mb_thread.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="map__vestige_8h.html">map_vestige.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="solid_8h.html">solid.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__symbol_8h.html">mb_symbol.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html">MbMapVisibilityMode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройки видимости следов проецируемых объектов.  <a href="struct_mb_map_visibility_mode.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curve_w_type.html">CurveWType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кривая с типом и погрешностью.  <a href="class_curve_w_type.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ann_curves.html">MbAnnCurves</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество аннотационных кривых.  <a href="class_mb_ann_curves.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_simbolth_thread_view.html">MbSimbolthThreadView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация интерфейса аннотационного вида.  <a href="class_mb_simbolth_thread_view.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_it_ann_object_store.html">ItAnnObjectStore</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс хранилища аннотированных объектов.  <a href="struct_it_ann_object_store.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_it_symbol_object_store.html">ItSymbolObjectStore</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс хранилища условных обозначений.  <a href="struct_it_symbol_object_store.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_points.html">MbSpacePoints</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество пространственных точек для проецирования.  <a href="class_mb_space_points.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_curves.html">MbSpaceCurves</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество пространственных кривых для проецирования.  <a href="class_mb_space_curves.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_cut_lump.html">MbCutLump</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тело с признаком разрезки в производном виде.  <a href="struct_mb_cut_lump.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_mapping_lumps.html">MbMappingLumps</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тело или набор тел, определенных в системе координат, с признаком разрезания в сечениях и разрезах.  <a href="struct_mb_mapping_lumps.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polygon3_d_solid.html">MbPolygon3DSolid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Полигон с телом.  <a href="class_mb_polygon3_d_solid.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_map_view_info.html">MbMapViewInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Информация о виде.  <a href="class_mb_map_view_info.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ga2147dd7e7fd84653e5bf8358017e994f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga2147dd7e7fd84653e5bf8358017e994f">AnnotatedObjectType</a> { <a class="el" href="group___mapping.html#gga2147dd7e7fd84653e5bf8358017e994faaaeaf64637d8d4ecd7482e157fe6b427">aot_SymbolicThread</a> = 0
+, <a class="el" href="group___mapping.html#gga2147dd7e7fd84653e5bf8358017e994fac768465ba44730797ca5014d5e2a46f1">aot_SymbolicThread_CuttedView</a>
+, <a class="el" href="group___mapping.html#gga2147dd7e7fd84653e5bf8358017e994fa0b0908679b2ad8b72709b58cc9bb8cf1">aot_SymbolicThread_SectionView</a>
+ }</td></tr>
+<tr class="memdesc:ga2147dd7e7fd84653e5bf8358017e994f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип аннотированного объекта.  <a href="group___mapping.html#ga2147dd7e7fd84653e5bf8358017e994f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2147dd7e7fd84653e5bf8358017e994f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6081e48a48183ba7322c6f88ff6ab2ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga6081e48a48183ba7322c6f88ff6ab2ad">MbeMapViewType</a> { <a class="el" href="group___mapping.html#gga6081e48a48183ba7322c6f88ff6ab2ada532919f651fb6004246a0f1f18815146">mvt_View</a>
+, <a class="el" href="group___mapping.html#gga6081e48a48183ba7322c6f88ff6ab2adae3ee13836211e3f5b2ad35a9ec1e3bf3">mvt_Cut</a>
+, <a class="el" href="group___mapping.html#gga6081e48a48183ba7322c6f88ff6ab2ada8d717d6c7f9d8f8f7e865597635e8c41">mvt_Section</a>
+ }</td></tr>
+<tr class="memdesc:ga6081e48a48183ba7322c6f88ff6ab2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип ассоциативного вида.  <a href="group___mapping.html#ga6081e48a48183ba7322c6f88ff6ab2ad">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6081e48a48183ba7322c6f88ff6ab2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gab26b5238886bd67b953930f5523376ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#gab26b5238886bd67b953930f5523376ce">AnnotationSort</a> (const <a class="el" href="class_mb_simbolth_thread_view.html">MbSimbolthThreadView</a> **pf, const <a class="el" href="class_mb_simbolth_thread_view.html">MbSimbolthThreadView</a> **ps)</td></tr>
+<tr class="memdesc:gab26b5238886bd67b953930f5523376ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировать объекты.  <a href="group___mapping.html#gab26b5238886bd67b953930f5523376ce">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab26b5238886bd67b953930f5523376ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e68ec85f85d820ab6b3652555243ddd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga9e68ec85f85d820ab6b3652555243ddd">SetCuttingFlags</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="struct_mb_lump.html">MbLump</a> &gt; &amp;lumps, const <a class="el" href="class_s_array.html">SArray</a>&lt; uint &gt; *baseNotSected, const <a class="el" href="class_s_array.html">SArray</a>&lt; uint &gt; *deriveNotSected)</td></tr>
+<tr class="memdesc:ga9e68ec85f85d820ab6b3652555243ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить значение флагов рассеченности.  <a href="group___mapping.html#ga9e68ec85f85d820ab6b3652555243ddd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9e68ec85f85d820ab6b3652555243ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Объекты для проецирования. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="map__lump_8h.html">map_lump.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

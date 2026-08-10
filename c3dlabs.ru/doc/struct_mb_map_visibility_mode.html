@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Структура MbMapVisibilityMode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('struct_mb_map_visibility_mode.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="struct_mb_map_visibility_mode-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура MbMapVisibilityMode<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___computation.html">Методы геометрических вычислений</a> &raquo; <a class="el" href="group___mapping.html">Построение плоских проекций</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Настройки видимости следов проецируемых объектов.  
+ <a href="struct_mb_map_visibility_mode.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;map_lump.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a3af80c8cc071dcf2d74d32c9b7a33d16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a> : uint8 { <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16a3262d48df5d75e3452f0f16b313b7808">off</a>
+, <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16aed2b5c0139cec8ad2873829dc1117d50">on</a>
+, <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16a7068706da54b8a88dfd6f5f658c4a885">on_exclude</a>
+, <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16afe47aa7c733c490d36e80508d5dc4019">cut</a>
+ }</td></tr>
+<tr class="memdesc:a3af80c8cc071dcf2d74d32c9b7a33d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройки проецирования объектов по глубине видимости.  <a href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3af80c8cc071dcf2d74d32c9b7a33d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8834a4a21d2e337a2e3e3ba6ef53c2be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a8834a4a21d2e337a2e3e3ba6ef53c2be">MbMapVisibilityMode</a> (bool invis, bool skipVerts, bool shadeSpaceCurves=false, bool useTransparency=false, bool addCentLines=false)</td></tr>
+<tr class="memdesc:a8834a4a21d2e337a2e3e3ba6ef53c2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="struct_mb_map_visibility_mode.html#a8834a4a21d2e337a2e3e3ba6ef53c2be">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8834a4a21d2e337a2e3e3ba6ef53c2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc684404f68ecc09cdbdd9e46cc76e7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#adc684404f68ecc09cdbdd9e46cc76e7a">MbMapVisibilityMode</a> (bool invis, bool skipVerts, bool shadeSpaceCurves, bool useTransparency, bool addCentLines, <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a> limitDepthMode, double visibleDepth)</td></tr>
+<tr class="memdesc:adc684404f68ecc09cdbdd9e46cc76e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="struct_mb_map_visibility_mode.html#adc684404f68ecc09cdbdd9e46cc76e7a">Подробнее...</a><br /></td></tr>
+<tr class="separator:adc684404f68ecc09cdbdd9e46cc76e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130178989a78998782ae893f8d706458"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a130178989a78998782ae893f8d706458">MbMapVisibilityMode</a> (bool invis, bool skipVerts, bool shadeSpaceCurves, bool useTransparency, bool addCentLines, bool checkSuperposition, <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a> limitDepthMode, double visibleDepth)</td></tr>
+<tr class="memdesc:a130178989a78998782ae893f8d706458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="struct_mb_map_visibility_mode.html#a130178989a78998782ae893f8d706458">Подробнее...</a><br /></td></tr>
+<tr class="separator:a130178989a78998782ae893f8d706458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f21b13a05089f7814a008adf6612d81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a6f21b13a05089f7814a008adf6612d81">Init</a> (bool invis, bool skipVerts, bool shadeSpaceCurves=false, bool useTransparency=false, bool addCentLines=false)</td></tr>
+<tr class="memdesc:a6f21b13a05089f7814a008adf6612d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация.  <a href="struct_mb_map_visibility_mode.html#a6f21b13a05089f7814a008adf6612d81">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6f21b13a05089f7814a008adf6612d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d6bc8f39872e54ad4c1ead045b7b23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#af5d6bc8f39872e54ad4c1ead045b7b23">Init</a> (bool invis, bool skipVerts, bool shadeSpaceCurves, bool useTransparency, bool addCentLines, <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a> limitDepthMode, double visibleDepth)</td></tr>
+<tr class="memdesc:af5d6bc8f39872e54ad4c1ead045b7b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация.  <a href="struct_mb_map_visibility_mode.html#af5d6bc8f39872e54ad4c1ead045b7b23">Подробнее...</a><br /></td></tr>
+<tr class="separator:af5d6bc8f39872e54ad4c1ead045b7b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f435d58a508df2f7167a5d1a054f47e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a1f435d58a508df2f7167a5d1a054f47e">Init</a> (bool invis, bool skipVerts, bool shadeSpaceCurves, bool useTransparency, bool addCentLines, bool checkSuperposition, <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a> limitDepthMode, double visibleDepth)</td></tr>
+<tr class="memdesc:a1f435d58a508df2f7167a5d1a054f47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация.  <a href="struct_mb_map_visibility_mode.html#a1f435d58a508df2f7167a5d1a054f47e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1f435d58a508df2f7167a5d1a054f47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e67a08042d4a7a4ffdf6cf8d480ef6"><td class="memItemLeft" align="right" valign="top"><a id="a00e67a08042d4a7a4ffdf6cf8d480ef6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a00e67a08042d4a7a4ffdf6cf8d480ef6">AddInvisible</a> () const</td></tr>
+<tr class="memdesc:a00e67a08042d4a7a4ffdf6cf8d480ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить проекции невидимых линий и точек? <br /></td></tr>
+<tr class="separator:a00e67a08042d4a7a4ffdf6cf8d480ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8531c1c32e6429c796490e5deed92ef1"><td class="memItemLeft" align="right" valign="top"><a id="a8531c1c32e6429c796490e5deed92ef1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a8531c1c32e6429c796490e5deed92ef1">SkipVertices</a> () const</td></tr>
+<tr class="memdesc:a8531c1c32e6429c796490e5deed92ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пропустить проекции вершин тела? <br /></td></tr>
+<tr class="separator:a8531c1c32e6429c796490e5deed92ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cd8a219a92ec05025a696e4eccce12"><td class="memItemLeft" align="right" valign="top"><a id="ad5cd8a219a92ec05025a696e4eccce12"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#ad5cd8a219a92ec05025a696e4eccce12">ShadeSpaceCurves</a> () const</td></tr>
+<tr class="memdesc:ad5cd8a219a92ec05025a696e4eccce12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Затенять пространственные кривые телами? <br /></td></tr>
+<tr class="separator:ad5cd8a219a92ec05025a696e4eccce12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe153b1dc6840732fd64cab362127096"><td class="memItemLeft" align="right" valign="top"><a id="abe153b1dc6840732fd64cab362127096"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#abe153b1dc6840732fd64cab362127096">UseBodyTransparency</a> () const</td></tr>
+<tr class="memdesc:abe153b1dc6840732fd64cab362127096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Учитывать прозрачность тел при проецировании? <br /></td></tr>
+<tr class="separator:abe153b1dc6840732fd64cab362127096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53047f88f5044c2ba01356511d019eb8"><td class="memItemLeft" align="right" valign="top"><a id="a53047f88f5044c2ba01356511d019eb8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a53047f88f5044c2ba01356511d019eb8">AddCenterLines</a> () const</td></tr>
+<tr class="memdesc:a53047f88f5044c2ba01356511d019eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить проекции осевых линий поверхностей? <br /></td></tr>
+<tr class="separator:a53047f88f5044c2ba01356511d019eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2c9143ae7fddb972b0851d88459a24"><td class="memItemLeft" align="right" valign="top"><a id="a3f2c9143ae7fddb972b0851d88459a24"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a3f2c9143ae7fddb972b0851d88459a24">CheckSuperposition</a> () const</td></tr>
+<tr class="memdesc:a3f2c9143ae7fddb972b0851d88459a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Учитывать наложение проекций линий? <br /></td></tr>
+<tr class="separator:a3f2c9143ae7fddb972b0851d88459a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1831565eaf84f8cc4487c872ac6989c"><td class="memItemLeft" align="right" valign="top"><a id="af1831565eaf84f8cc4487c872ac6989c"></a>
+<a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#af1831565eaf84f8cc4487c872ac6989c">GetLimitDepthMode</a> () const</td></tr>
+<tr class="memdesc:af1831565eaf84f8cc4487c872ac6989c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип ограничения. В разработке. <br /></td></tr>
+<tr class="separator:af1831565eaf84f8cc4487c872ac6989c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac707e6a068cccc9a4838a7c4da4279a9"><td class="memItemLeft" align="right" valign="top"><a id="ac707e6a068cccc9a4838a7c4da4279a9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#ac707e6a068cccc9a4838a7c4da4279a9">SetLimitDepthMode</a> (const <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a> &amp;limitDepthMode)</td></tr>
+<tr class="memdesc:ac707e6a068cccc9a4838a7c4da4279a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить тип ограничения. В разработке. <br /></td></tr>
+<tr class="separator:ac707e6a068cccc9a4838a7c4da4279a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa13864d30423dbf6760e243f12b595"><td class="memItemLeft" align="right" valign="top"><a id="aefa13864d30423dbf6760e243f12b595"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#aefa13864d30423dbf6760e243f12b595">GetVisibilityDepth</a> () const</td></tr>
+<tr class="memdesc:aefa13864d30423dbf6760e243f12b595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить глубину видимости. В разработке. <br /></td></tr>
+<tr class="separator:aefa13864d30423dbf6760e243f12b595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ae0916d38df6358dbe4e1ea1427a37"><td class="memItemLeft" align="right" valign="top"><a id="a97ae0916d38df6358dbe4e1ea1427a37"></a>
+<a class="el" href="struct_mb_map_visibility_mode.html">MbMapVisibilityMode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a97ae0916d38df6358dbe4e1ea1427a37">operator=</a> (const <a class="el" href="struct_mb_map_visibility_mode.html">MbMapVisibilityMode</a> &amp;m)</td></tr>
+<tr class="memdesc:a97ae0916d38df6358dbe4e1ea1427a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания. <br /></td></tr>
+<tr class="separator:a97ae0916d38df6358dbe4e1ea1427a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a75f9df469fb3c7f2210607a007147a58"><td class="memItemLeft" align="right" valign="top"><a id="a75f9df469fb3c7f2210607a007147a58"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a75f9df469fb3c7f2210607a007147a58">_invisible</a></td></tr>
+<tr class="memdesc:a75f9df469fb3c7f2210607a007147a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавлять проекции невидимых линий и точек. <br /></td></tr>
+<tr class="separator:a75f9df469fb3c7f2210607a007147a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabcc998d6af7fb5a361f280193f1c851"><td class="memItemLeft" align="right" valign="top"><a id="aabcc998d6af7fb5a361f280193f1c851"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#aabcc998d6af7fb5a361f280193f1c851">_skipVertices</a></td></tr>
+<tr class="memdesc:aabcc998d6af7fb5a361f280193f1c851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Не добавлять проекции вершин тела. <br /></td></tr>
+<tr class="separator:aabcc998d6af7fb5a361f280193f1c851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718c48cc6b6bd6fdcd4dee317a156a6d"><td class="memItemLeft" align="right" valign="top"><a id="a718c48cc6b6bd6fdcd4dee317a156a6d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a718c48cc6b6bd6fdcd4dee317a156a6d">_shadeCurves</a></td></tr>
+<tr class="memdesc:a718c48cc6b6bd6fdcd4dee317a156a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг затенения пространственных кривых телами (false по умолчанию). <br /></td></tr>
+<tr class="separator:a718c48cc6b6bd6fdcd4dee317a156a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d04bd012f5d6fa20fb1431f3fe4978d"><td class="memItemLeft" align="right" valign="top"><a id="a8d04bd012f5d6fa20fb1431f3fe4978d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a8d04bd012f5d6fa20fb1431f3fe4978d">_useBodyTransparency</a></td></tr>
+<tr class="memdesc:a8d04bd012f5d6fa20fb1431f3fe4978d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Учитывать прозрачность тел при проецировании (false по умолчанию). <br /></td></tr>
+<tr class="separator:a8d04bd012f5d6fa20fb1431f3fe4978d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34cfe0c2ad8d37957bfc58c8446b56a"><td class="memItemLeft" align="right" valign="top"><a id="aa34cfe0c2ad8d37957bfc58c8446b56a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#aa34cfe0c2ad8d37957bfc58c8446b56a">_addCenterLines</a></td></tr>
+<tr class="memdesc:aa34cfe0c2ad8d37957bfc58c8446b56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавлять проекции осевых линий поверхностей (false по умолчанию). <br /></td></tr>
+<tr class="separator:aa34cfe0c2ad8d37957bfc58c8446b56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe2750cceb10fdc140217c0966ffd97"><td class="memItemLeft" align="right" valign="top"><a id="a7fe2750cceb10fdc140217c0966ffd97"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a7fe2750cceb10fdc140217c0966ffd97">_checkSuperposition</a></td></tr>
+<tr class="memdesc:a7fe2750cceb10fdc140217c0966ffd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Учитывать наложение проекций линий. (false по умолчанию). <br /></td></tr>
+<tr class="separator:a7fe2750cceb10fdc140217c0966ffd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab161bae098d3b96e7642ee93a800971a"><td class="memItemLeft" align="right" valign="top"><a id="ab161bae098d3b96e7642ee93a800971a"></a>
+<a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#ab161bae098d3b96e7642ee93a800971a">_limitDepthMode</a></td></tr>
+<tr class="memdesc:ab161bae098d3b96e7642ee93a800971a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройки проецирования объектов по глубине видимости (off по умолчанию). <br /></td></tr>
+<tr class="separator:ab161bae098d3b96e7642ee93a800971a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bcb34f9f68c9464807b0362aa2bef60"><td class="memItemLeft" align="right" valign="top"><a id="a5bcb34f9f68c9464807b0362aa2bef60"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_map_visibility_mode.html#a5bcb34f9f68c9464807b0362aa2bef60">_visibilityDepth</a></td></tr>
+<tr class="memdesc:a5bcb34f9f68c9464807b0362aa2bef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глубина видимости (0 по умолчанию). <br /></td></tr>
+<tr class="separator:a5bcb34f9f68c9464807b0362aa2bef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Настройки видимости следов проецируемых объектов. </p>
+<p>Настройки видимости следов проецируемых объектов.<br  />
+</p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a3af80c8cc071dcf2d74d32c9b7a33d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af80c8cc071dcf2d74d32c9b7a33d16">&#9670;&nbsp;</a></span>LimitDepthMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">MbMapVisibilityMode::LimitDepthMode</a> : uint8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Настройки проецирования объектов по глубине видимости. </p>
+<p>При наличии ограничений тип опредяляет видимость следов в зависимости от положения объекта относительно границы (глубины) видимости.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a3af80c8cc071dcf2d74d32c9b7a33d16a3262d48df5d75e3452f0f16b313b7808"></a>off&#160;</td><td class="fielddoc"><p>Ограничения по глубине видимости отключены. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3af80c8cc071dcf2d74d32c9b7a33d16aed2b5c0139cec8ad2873829dc1117d50"></a>on&#160;</td><td class="fielddoc"><p>Ограничения включены, объекты целиком находящиеся за границей видимости не проецируются. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3af80c8cc071dcf2d74d32c9b7a33d16a7068706da54b8a88dfd6f5f658c4a885"></a>on_exclude&#160;</td><td class="fielddoc"><p>Ограничения включены, объекты целиком находящиеся за границей видимости и на границе видимости не проецируются. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3af80c8cc071dcf2d74d32c9b7a33d16afe47aa7c733c490d36e80508d5dc4019"></a>cut&#160;</td><td class="fielddoc"><p>Ограничения включены, объекты целиком находящиеся за границей видимости не проецируются, находящиеся на границе видимости будут проецироваться в рассеченном виде. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a8834a4a21d2e337a2e3e3ba6ef53c2be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8834a4a21d2e337a2e3e3ba6ef53c2be">&#9670;&nbsp;</a></span>MbMapVisibilityMode() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbMapVisibilityMode::MbMapVisibilityMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>invis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skipVerts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shadeSpaceCurves</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useTransparency</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addCentLines</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор видимости следов проецируемых объектов.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">invis</td><td>- Добавлять проекции невидимых линий и точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skipVerts</td><td>- Не добавлять проекции вершин тела.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shadeSpaceCurves</td><td>- Флаг затенения пространственных кривых телами (false по умолчанию).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">useTransparency</td><td>- Учитывать прозрачность тел при проецировании (false по умолчанию).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addCentLines</td><td>- Добавлять проекции осевых линий поверхностей (false по умолчанию). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc684404f68ecc09cdbdd9e46cc76e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc684404f68ecc09cdbdd9e46cc76e7a">&#9670;&nbsp;</a></span>MbMapVisibilityMode() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbMapVisibilityMode::MbMapVisibilityMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>invis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skipVerts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shadeSpaceCurves</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useTransparency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addCentLines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a>&#160;</td>
+          <td class="paramname"><em>limitDepthMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>visibleDepth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор видимости следов проецируемых объектов.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">invis</td><td>- Добавлять проекции невидимых линий и точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skipVerts</td><td>- Не добавлять проекции вершин тела.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shadeSpaceCurves</td><td>- Флаг затенения пространственных кривых телами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">useTransparency</td><td>- Учитывать прозрачность тел при проецировании.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addCentLines</td><td>- Добавлять проекции осевых линий поверхностей.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limitDepthMode</td><td>- Настройки проецирования объектов по глубине видимости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">visibleDepth</td><td>- Глубина видимости.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<a id="a130178989a78998782ae893f8d706458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130178989a78998782ae893f8d706458">&#9670;&nbsp;</a></span>MbMapVisibilityMode() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbMapVisibilityMode::MbMapVisibilityMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>invis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skipVerts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shadeSpaceCurves</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useTransparency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addCentLines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkSuperposition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a>&#160;</td>
+          <td class="paramname"><em>limitDepthMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>visibleDepth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор видимости следов проецируемых объектов.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">invis</td><td>- Добавлять проекции невидимых линий и точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skipVerts</td><td>- Не добавлять проекции вершин тела.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shadeSpaceCurves</td><td>- Флаг затенения пространственных кривых телами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">useTransparency</td><td>- Учитывать прозрачность тел при проецировании.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addCentLines</td><td>- Добавлять проекции осевых линий поверхностей.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkSuperposition</td><td>- Учитывать наложение проекций линий.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limitDepthMode</td><td>- Настройки проецирования объектов по глубине видимости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">visibleDepth</td><td>- Глубина видимости.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a6f21b13a05089f7814a008adf6612d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f21b13a05089f7814a008adf6612d81">&#9670;&nbsp;</a></span>Init() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMapVisibilityMode::Init </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>invis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skipVerts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shadeSpaceCurves</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useTransparency</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addCentLines</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализация. </p>
+<p>Инициализация по параметрам.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">invis</td><td>- Добавлять проекции невидимых линий и точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skipVerts</td><td>- Не добавлять проекции вершин тела.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shadeSpaceCurves</td><td>- Флаг затенения пространственных кривых телами (false по умолчанию).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">useTransparency</td><td>- Учитывать прозрачность тел при проецировании (false по умолчанию).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addCentLines</td><td>- Добавлять проекции осевых линий поверхностей (false по умолчанию). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5d6bc8f39872e54ad4c1ead045b7b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d6bc8f39872e54ad4c1ead045b7b23">&#9670;&nbsp;</a></span>Init() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMapVisibilityMode::Init </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>invis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skipVerts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shadeSpaceCurves</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useTransparency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addCentLines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a>&#160;</td>
+          <td class="paramname"><em>limitDepthMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>visibleDepth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализация. </p>
+<p>Инициализация по параметрам.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">invis</td><td>- Добавлять проекции невидимых линий и точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skipVerts</td><td>- Не добавлять проекции вершин тела.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shadeSpaceCurves</td><td>- Флаг затенения пространственных кривых телами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">useTransparency</td><td>- Учитывать прозрачность тел при проецировании.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addCentLines</td><td>- Добавлять проекции осевых линий поверхностей.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limitDepthMode</td><td>- Настройки проецирования объектов по глубине видимости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">visibleDepth</td><td>- Глубина видимости.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<a id="a1f435d58a508df2f7167a5d1a054f47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f435d58a508df2f7167a5d1a054f47e">&#9670;&nbsp;</a></span>Init() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMapVisibilityMode::Init </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>invis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skipVerts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shadeSpaceCurves</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useTransparency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addCentLines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkSuperposition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_map_visibility_mode.html#a3af80c8cc071dcf2d74d32c9b7a33d16">LimitDepthMode</a>&#160;</td>
+          <td class="paramname"><em>limitDepthMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>visibleDepth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализация. </p>
+<p>Инициализация по параметрам.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">invis</td><td>- Добавлять проекции невидимых линий и точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">skipVerts</td><td>- Не добавлять проекции вершин тела.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shadeSpaceCurves</td><td>- Флаг затенения пространственных кривых телами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">useTransparency</td><td>- Учитывать прозрачность тел при проецировании.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addCentLines</td><td>- Добавлять проекции осевых линий поверхностей.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkSuperposition</td><td>- Учитывать наложение проекций линий.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limitDepthMode</td><td>- Настройки проецирования объектов по глубине видимости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">visibleDepth</td><td>- Глубина видимости.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li><a class="el" href="map__lump_8h.html">map_lump.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_mb_map_visibility_mode.html">MbMapVisibilityMode</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:04. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mb_property.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mb__property_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mb_property.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Свойства математических объектов.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__p__array_8h.html">templ_p_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__property__title_8h.html">mb_property_title.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point3d_8h.html">mb_cart_point3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point_8h.html">mb_cart_point.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve_8h.html">curve.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="name__item_8h.html">name_item.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_prop_type.html">PropType&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура соответствия типа объекта и типа свойства.  <a href="struct_prop_type.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_property.html">MbProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство. Только для внутреннего использования.  <a href="class_mb_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bool_property.html">BoolProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">bool свойство.  <a href="class_bool_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_int_property.html">IntProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">int свойство.  <a href="class_int_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_int_property.html">UIntProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">uint свойство.  <a href="class_u_int_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_double_property.html">DoubleProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">double свойство.  <a href="class_double_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_double_property.html">NDoubleProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">double свойство с номером.  <a href="class_n_double_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string_property.html">StringProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">string свойство.  <a href="class_string_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_version_property.html">VersionProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version свойство.  <a href="class_version_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_math_item_property.html">MathItemProperty&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство объекта.  <a href="class_math_item_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_math_item_copy_property.html">MathItemCopyProperty&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство объекта.  <a href="class_math_item_copy_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_const_ref_item_property.html">ConstRefItemProperty&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство объекта без изменения состояния (read only).  <a href="class_const_ref_item_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ref_item_property.html">RefItemProperty&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство объекта (read/write).  <a href="class_ref_item_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_properties.html">MbProperties</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество свойств объекта. Только для внутреннего использования.  <a href="class_mb_properties.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_property_base.html">MbPolymeshPropertyBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс для свойств полигонального объекта с топологией.  <a href="class_mb_polymesh_property_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_region_property.html">MbPolymeshRegionProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство региона.  <a href="class_mb_polymesh_region_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_sub_region_property.html">MbPolymeshSubRegionProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство подрегиона.  <a href="class_mb_polymesh_sub_region_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_loop_property.html">MbPolymeshLoopProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство цикла.  <a href="class_mb_polymesh_loop_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_edge_property.html">MbPolymeshEdgeProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство ребра.  <a href="class_mb_polymesh_edge_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_vertex_property.html">MbPolymeshVertexProperty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство вершины.  <a href="class_mb_polymesh_vertex_property.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ga1cd2ac4649aedd202e93126694b811e4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___geometric___items.html#ga1cd2ac4649aedd202e93126694b811e4">PrePropType</a> { <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a3cbc36165c49565314390c90bc374844">pt_UndefinedProp</a> = 0
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a7993e7c9a7f434d86dfcd34f5c26ecc2">pt_BoolProp</a> = 1
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a3d70815b71998ed0e637a527549f4076">pt_IntProp</a> = 2
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a6f03d23764cae15b202ea5019de23177">pt_UIntProp</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4afe5f56c3c2e157acf0e8cc31c465554f">pt_DoubleProp</a> = 4
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a4ebc5b59604b57799253a1fe754b1c97">pt_NDoubleProp</a> = 5
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a635aa534b178549c5126920c1d33570b">pt_StringProp</a> = 6
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a3805f315e5f8d38051451b0c21be2ea0">pt_CharProp</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a5c9cfb7fd711592aba3cd8b0a4cef513">pt_VersionProp</a> = 8
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a33c183b4d5918f47b6e9773d3f3b3172">pt_AtomicPropLast</a> = 20
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4af865d5ef874367cf36a61953990a5223">pt_CartPointProp</a> = 21
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a884ac2970bb21f04f41d518d20c6736f">pt_VectorProp</a> = 22
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a77481ed2bba3894a19498eb63d3b8711">pt_DirectionProp</a> = 23
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a04350be92445beb7e2fb43dbb25ebb48">pt_PlacementProp</a> = 24
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a62c4f24c80ced5d0132acdfe03743d3a">pt_MatrixProp</a> = 25
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a5ced9ac4a78f492b998f152726166e8e">pt_CurveProp</a> = 26
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a0780ca485a2d52e329f920e319e6761e">pt_MultilineProp</a> = 27
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a63ca421393e246ec4a33b95bb7018ee4">pt_RegionProp</a> = 28
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a8d4ce4a22d76ac8101f08b09c35fac78">pt_PntMatingProp</a> = 29
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a359bbe27529496de73497a69dd75d164">pt_PlanarPropLast</a> = 50
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a53a10a3e7cd2aba33205458bf58f4d70">pt_CartPoint3DProp</a> = 51
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4ac0ec1efc3101f96dde3203f0932a46f5">pt_Vector3DProp</a> = 52
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a5d112cc2ff82b42d1cf845353b641817">pt_Placement3DProp</a> = 53
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a4224f4b77ec69eaa46c797bc71384d4f">pt_Matrix3DProp</a> = 54
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a89b8a155be86c9d48d4d69646aba0a3d">pt_FloatPointProp</a> = 55
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4afb75a66d39561ae4848390503a398ec4">pt_FloatPoint3DProp</a> = 56
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a3b57361fbc111cabdb083cc1ae1a49b3">pt_FloatVector3DProp</a> = 57
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aa131300b14d69ac5b36d39a80e670d67">pt_TriangleProp</a> = 58
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4abf2e03fa2be6901eb779b1458ae66905">pt_QuadrangleProp</a> = 59
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a4fa11717da5b18f82e3081610f299c44">pt_ElementProp</a> = 60
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a530b37c525ff9b6544524094ff34c5e0">pt_Apex3DProp</a> = 61
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aa31a6d415c57f0641148a0dd1762fb2e">pt_Polygon3DProp</a> = 62
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a07f431b541810d557844e30ef3f2b10d">pt_GridProp</a> = 63
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a32fe85e3ededad8d3d12bea2c6cfe7bc">pt_PolymeshRegionProp</a> = 64
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a81cf5fe639b3e8a331a7138f52280817">pt_PolymeshSubProp</a> = 65
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a66238ab32e0988a88c80598ae8ed3188">pt_PolymeshLoopProp</a> = 66
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a396d728fd045aeb34abbc5a6d7b56747">pt_PolymeshEdgeProp</a> = 67
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a16823f0d61a62bd84632de4f1d96b806">pt_PolymeshVertexProp</a> = 68
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4abd5c268438b913c397b95f08f326a440">pt_SpatialPropLast</a> = 90
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a85c1e9199e0f589d118e369864795dc2">pt_FunctionProp</a> = 91
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4acd80d260eb5b08458d09b3a177f3bab1">pt_Curve3DProp</a> = 92
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4abce734747554c557cce5a49424797285">pt_SurfaceProp</a> = 93
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4afdcd6e440aae9c4f01b70e8b0d66e80c">pt_Point3DProp</a> = 94
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a3c8ff23168c35d170dbb58dfadd1e29d">pt_MarkerProp</a> = 95
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aeba2dde7f490f34d4202572e2fa7df30">pt_SymbolProp</a> = 96
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a00b0d0ebec98d19f648052de48aa687d">pt_ThreadProp</a> = 97
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a7e75fc6c433a7a9b6a872ecef6391da3">pt_Pnt3DMatingProp</a> = 98
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4abc178ef90981a456f7aaef954bec73fe">pt_GeomPropLast</a> = 120
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a87df2632066ee263715e5d0334715917">pt_CreatorProp</a> = 121
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a0b47dce5fa660a92c7ec22d57f5b568d">pt_VertexProp</a> = 122
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4ad488792192c815fa1468f33b63d0b346">pt_EdgeProp</a> = 123
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a11d742d65ec06f17354bcf612a488f0e">pt_CurveEdgeProp</a> = 124
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4ab923f05132d0073ad04e0a9a2748ada8">pt_OrientedEdgeProp</a> = 125
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a62ef6d4558376fa1d76dd83ff3f325bd">pt_LoopProp</a> = 126
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a09eefe1456bb7413e672dd3b0de205d9">pt_FaceProp</a> = 127
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aa3555d4c4dc4e9a7501c004a9595a879">pt_FaceShellProp</a> = 128
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a2c844553c3876464e5c59fd48fbd2a76">pt_NameProp</a> = 129
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a07588eb673c1e4c9043c5c6866a4cb16">pt_TopologyPropLast</a> = 150
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a6cdb2f3fa633b9bbff6f97bba00fa119">pt_AssistingItemProp</a> = 151
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a8fa39d7dbabfa59414191dd97ac3463b">pt_CollectionProp</a> = 152
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a5851030c10dd78a1b1b1a79e109320b1">pt_PointFrameProp</a> = 153
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aec4994aa1578b64286eeebb885e1a0d1">pt_WireFrameProp</a> = 154
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aca4e258c961dde5617d10878262507c8">pt_SolidProp</a> = 155
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a16fd4601eda861ac7ca78574fe190dd7">pt_InstanceProp</a> = 156
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a53d44a18c4babb23e8d7a11d2d32436e">pt_AssemblyProp</a> = 157
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a4b4c892ee0602ec297a3da2b700a299c">pt_ConstraintSystem</a> = 158
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a7341db176aee9e6130b76902883f76ae">pt_MeshProp</a> = 159
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a48fd04dfe2e72b35c85a32f10cfbe0f6">pt_SpaceInstanceProp</a> = 160
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4ae7bfc0a0c362aa909497f64319221fc8">pt_PlaneInstanceProp</a> = 161
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a26bbc27a4576aa65190dc3c94c230abb">pt_ConstraintModelProp</a> = 162
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4ac8b4cbfb2c636ef497f3cae73d77f8cb">pt_ItemProp</a> = 163
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4ae46fda6a0b444e9f01567e6fdd87cedb">pt_ModelProp</a> = 164
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a425175e5bb37f82b6343beae0d5f6192">pt_TransactionsProp</a> = 165
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aafd014e2fccb293ee25e28e3aa5dae24">pt_AttributeContainerProp</a> = 166
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a0f561f368a8b87a66cccd2f31c35aeec">pt_AttributeProp</a> = 167
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4aefcab0bc30e055bf3859eec2b5a0ea8c">pt_NamedAttributeContainerProp</a> = 168
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4adfa932f81006d1d16b3f82be4b3e4335">pt_AttributeActionProp</a> = 169
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a2d628972f02dded0119f298479cdf916">pt_ModelPropLast</a> = 300
+, <a class="el" href="group___geometric___items.html#gga1cd2ac4649aedd202e93126694b811e4a00f93f07deff9646cefd50069f5dd062">pt_LastPropType</a> = 1000
+<br />
+ }</td></tr>
+<tr class="memdesc:ga1cd2ac4649aedd202e93126694b811e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы свойств.  <a href="group___geometric___items.html#ga1cd2ac4649aedd202e93126694b811e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1cd2ac4649aedd202e93126694b811e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga6e383f17cc6084fe4241728c0615d445"><td class="memTemplParams" colspan="2">template&lt;class PropType , class FieldType &gt; </td></tr>
+<tr class="memitem:ga6e383f17cc6084fe4241728c0615d445"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___model___properties.html#ga6e383f17cc6084fe4241728c0615d445">GetCharValue</a> (const <a class="el" href="struct_prop_type.html">PropType</a> *, const FieldType *, uint32 n, TCHAR *v)</td></tr>
+<tr class="memdesc:ga6e383f17cc6084fe4241728c0615d445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать строковое значение данного свойства для данного его поля.  <a href="group___model___properties.html#ga6e383f17cc6084fe4241728c0615d445">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6e383f17cc6084fe4241728c0615d445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd33a389d8a1776dfef2f38de4acf5e9"><td class="memTemplParams" colspan="2">template&lt;class PropType &gt; </td></tr>
+<tr class="memitem:gadd33a389d8a1776dfef2f38de4acf5e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___model___properties.html#gadd33a389d8a1776dfef2f38de4acf5e9">GetCharValue</a> (const <a class="el" href="struct_prop_type.html">PropType</a> *, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> *value, uint32 n, TCHAR *v)</td></tr>
+<tr class="memdesc:gadd33a389d8a1776dfef2f38de4acf5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства двумерной точки.  <a href="group___model___properties.html#gadd33a389d8a1776dfef2f38de4acf5e9">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadd33a389d8a1776dfef2f38de4acf5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga817963a0ec463c01759ba5fc6df718c3"><td class="memTemplParams" colspan="2">template&lt;class PropType &gt; </td></tr>
+<tr class="memitem:ga817963a0ec463c01759ba5fc6df718c3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___model___properties.html#ga817963a0ec463c01759ba5fc6df718c3">GetCharValue</a> (const <a class="el" href="struct_prop_type.html">PropType</a> *, const <a class="el" href="class_mb_vector.html">MbVector</a> *value, uint32 n, TCHAR *v)</td></tr>
+<tr class="memdesc:ga817963a0ec463c01759ba5fc6df718c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства двумерного вектора.  <a href="group___model___properties.html#ga817963a0ec463c01759ba5fc6df718c3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga817963a0ec463c01759ba5fc6df718c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e7ff21b1943a68bd13ab1e416d013fc"><td class="memTemplParams" colspan="2">template&lt;class PropType &gt; </td></tr>
+<tr class="memitem:ga4e7ff21b1943a68bd13ab1e416d013fc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___model___properties.html#ga4e7ff21b1943a68bd13ab1e416d013fc">GetCharValue</a> (const <a class="el" href="struct_prop_type.html">PropType</a> *, const <a class="el" href="class_mb_direction.html">MbDirection</a> *value, uint32 n, TCHAR *v)</td></tr>
+<tr class="memdesc:ga4e7ff21b1943a68bd13ab1e416d013fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства двумерного нормированного вектора.  <a href="group___model___properties.html#ga4e7ff21b1943a68bd13ab1e416d013fc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4e7ff21b1943a68bd13ab1e416d013fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9df1aee59432d9c206cbf5d4f31dc291"><td class="memTemplParams" colspan="2">template&lt;class PropType &gt; </td></tr>
+<tr class="memitem:ga9df1aee59432d9c206cbf5d4f31dc291"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___model___properties.html#ga9df1aee59432d9c206cbf5d4f31dc291">GetCharValue</a> (const <a class="el" href="struct_prop_type.html">PropType</a> *, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> *value, uint32 n, TCHAR *v)</td></tr>
+<tr class="memdesc:ga9df1aee59432d9c206cbf5d4f31dc291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства трёхмерной точки.  <a href="group___model___properties.html#ga9df1aee59432d9c206cbf5d4f31dc291">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9df1aee59432d9c206cbf5d4f31dc291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13be20ebf07b608d7b03d1890247984e"><td class="memTemplParams" colspan="2">template&lt;class PropType &gt; </td></tr>
+<tr class="memitem:ga13be20ebf07b608d7b03d1890247984e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___model___properties.html#ga13be20ebf07b608d7b03d1890247984e">GetCharValue</a> (const <a class="el" href="struct_prop_type.html">PropType</a> *, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> *value, uint32 n, TCHAR *v)</td></tr>
+<tr class="memdesc:ga13be20ebf07b608d7b03d1890247984e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства трёхмерного вектора.  <a href="group___model___properties.html#ga13be20ebf07b608d7b03d1890247984e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga13be20ebf07b608d7b03d1890247984e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11228b622d129e05889287f56639abf0"><td class="memTemplParams" colspan="2">template&lt;class PropType &gt; </td></tr>
+<tr class="memitem:ga11228b622d129e05889287f56639abf0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___model___properties.html#ga11228b622d129e05889287f56639abf0">GetCharValue</a> (const <a class="el" href="struct_prop_type.html">PropType</a> *, const <a class="el" href="class_mb_name.html">MbName</a> *value, uint32 n, TCHAR *v)</td></tr>
+<tr class="memdesc:ga11228b622d129e05889287f56639abf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства имени объекта.  <a href="group___model___properties.html#ga11228b622d129e05889287f56639abf0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga11228b622d129e05889287f56639abf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Свойства математических объектов. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mb__property_8h.html">mb_property.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

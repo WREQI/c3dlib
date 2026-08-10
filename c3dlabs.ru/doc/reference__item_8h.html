@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл reference_item.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('reference__item_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл reference_item.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Счетчик ссылок (владельцев объекта).  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system__types_8h.html">system_types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__rp__array_8h.html">templ_rp_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system__cpp__standard_8h.html">system_cpp_standard.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="system__dependency_8h.html">system_dependency.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tool__memory__leaks__check_8h.html">tool_memory_leaks_check.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__variables_8h.html">mb_variables.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект с подсчетом ссылок.  <a href="class_mb_ref_item.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_serial_item.html">MbSerialItem&lt; Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон класса сериализации (порядковой нумерации создаваемых объектов).  <a href="class_mb_serial_item.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gad5d5f91a380bf12afb3c157e5acf973b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a> { <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggad5d5f91a380bf12afb3c157e5acf973ba6849e439d5ebbe725aeddbd4287f53e4">rt_RefItem</a> = 0
+, <a class="el" href="group___geometric___items.html#ggad5d5f91a380bf12afb3c157e5acf973ba3f99cf0dd10710731504a7d86102e748">rt_PlaneItem</a>
+, <a class="el" href="group___geometric___items.html#ggad5d5f91a380bf12afb3c157e5acf973ba8a7c034fd60450d296b9a2241e766c2a">rt_SpaceItem</a>
+, <a class="el" href="group___geometric___items.html#ggad5d5f91a380bf12afb3c157e5acf973ba2bbf6b09265cd0736dc57b92025f4b2a">rt_TopItem</a>
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggad5d5f91a380bf12afb3c157e5acf973baa247329aa866be933ebe8c50af6966f2">rt_Creator</a>
+, <a class="el" href="group___geometric___items.html#ggad5d5f91a380bf12afb3c157e5acf973bacbf09fd2974ef18ea95c7c3fbaf3236b">rt_Attribute</a>
+, <a class="el" href="group___geometric___items.html#ggad5d5f91a380bf12afb3c157e5acf973bae455cb373fd71e88a1b53c3e811d170a">rt_Primitive</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gad5d5f91a380bf12afb3c157e5acf973b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы объекта со счетчиком ссылок.  <a href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad5d5f91a380bf12afb3c157e5acf973b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a6a311a5898c64724198988f6974c23d7"><td class="memTemplParams" colspan="2"><a id="a6a311a5898c64724198988f6974c23d7"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a6a311a5898c64724198988f6974c23d7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a6a311a5898c64724198988f6974c23d7">DeleteMatItem</a> (Type *&amp;item)</td></tr>
+<tr class="memdesc:a6a311a5898c64724198988f6974c23d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить объект без ссылок. <br /></td></tr>
+<tr class="separator:a6a311a5898c64724198988f6974c23d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56a0f894ffdc7729b95742eae6daa36"><td class="memTemplParams" colspan="2"><a id="af56a0f894ffdc7729b95742eae6daa36"></a>
+template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:af56a0f894ffdc7729b95742eae6daa36"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#af56a0f894ffdc7729b95742eae6daa36">DeleteMatItems</a> (Vector &amp;items)</td></tr>
+<tr class="memdesc:af56a0f894ffdc7729b95742eae6daa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить объекты без ссылок. <br /></td></tr>
+<tr class="separator:af56a0f894ffdc7729b95742eae6daa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa985108de5f90bafd7fb79115d509b7e"><td class="memTemplParams" colspan="2"><a id="aa985108de5f90bafd7fb79115d509b7e"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:aa985108de5f90bafd7fb79115d509b7e"><td class="memTemplItemLeft" align="right" valign="top">Type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#aa985108de5f90bafd7fb79115d509b7e">DuplicateIfUsed</a> (Type &amp;item)</td></tr>
+<tr class="memdesc:aa985108de5f90bafd7fb79115d509b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать копию, если объект используется, иначе вернуть оригинал. <br /></td></tr>
+<tr class="separator:aa985108de5f90bafd7fb79115d509b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c91ad20bf7c945d5eb1d06371fbce9"><td class="memTemplParams" colspan="2"><a id="a55c91ad20bf7c945d5eb1d06371fbce9"></a>
+template&lt;class Type , class RegType &gt; </td></tr>
+<tr class="memitem:a55c91ad20bf7c945d5eb1d06371fbce9"><td class="memTemplItemLeft" align="right" valign="top">Type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a55c91ad20bf7c945d5eb1d06371fbce9">DuplicateIfUsed</a> (Type &amp;item, RegType *iReg)</td></tr>
+<tr class="memdesc:a55c91ad20bf7c945d5eb1d06371fbce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать копию, если объект используется, иначе вернуть оригинал. <br /></td></tr>
+<tr class="separator:a55c91ad20bf7c945d5eb1d06371fbce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f78b135dbd064b9ef9b373bb0494a46"><td class="memTemplParams" colspan="2"><a id="a5f78b135dbd064b9ef9b373bb0494a46"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a5f78b135dbd064b9ef9b373bb0494a46"><td class="memTemplItemLeft" align="right" valign="top">Type *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a5f78b135dbd064b9ef9b373bb0494a46">DuplicateIfUsed</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &amp;item)</td></tr>
+<tr class="memdesc:a5f78b135dbd064b9ef9b373bb0494a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать копию, если объект используется, иначе вернуть оригинал. <br /></td></tr>
+<tr class="separator:a5f78b135dbd064b9ef9b373bb0494a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500238ec67b58f03b13eab17657f1eeb"><td class="memTemplParams" colspan="2"><a id="a500238ec67b58f03b13eab17657f1eeb"></a>
+template&lt;class Type , class RegType &gt; </td></tr>
+<tr class="memitem:a500238ec67b58f03b13eab17657f1eeb"><td class="memTemplItemLeft" align="right" valign="top">Type *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a500238ec67b58f03b13eab17657f1eeb">DuplicateIfUsed</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &amp;item, RegType *iReg)</td></tr>
+<tr class="memdesc:a500238ec67b58f03b13eab17657f1eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать копию, если объект используется, иначе вернуть оригинал. <br /></td></tr>
+<tr class="separator:a500238ec67b58f03b13eab17657f1eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0a44a40ef4682b8c975b8178af3fca"><td class="memTemplParams" colspan="2"><a id="ade0a44a40ef4682b8c975b8178af3fca"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:ade0a44a40ef4682b8c975b8178af3fca"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#ade0a44a40ef4682b8c975b8178af3fca">DeleteItem</a> (Type *&amp;item)</td></tr>
+<tr class="memdesc:ade0a44a40ef4682b8c975b8178af3fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить объект, если он больше никому не нужен. <br /></td></tr>
+<tr class="separator:ade0a44a40ef4682b8c975b8178af3fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a094cf9adf596428021ea42cc66821b"><td class="memTemplParams" colspan="2"><a id="a7a094cf9adf596428021ea42cc66821b"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a7a094cf9adf596428021ea42cc66821b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a7a094cf9adf596428021ea42cc66821b">ReleaseItem</a> (Type *&amp;item)</td></tr>
+<tr class="memdesc:a7a094cf9adf596428021ea42cc66821b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освободить ссылку на объект. <br /></td></tr>
+<tr class="separator:a7a094cf9adf596428021ea42cc66821b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0554b66af3acdbc17d0d448b2d4dcef8"><td class="memTemplParams" colspan="2"><a id="a0554b66af3acdbc17d0d448b2d4dcef8"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a0554b66af3acdbc17d0d448b2d4dcef8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a0554b66af3acdbc17d0d448b2d4dcef8">AddRefItem</a> (const Type *item)</td></tr>
+<tr class="memdesc:a0554b66af3acdbc17d0d448b2d4dcef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Захватить объект. <br /></td></tr>
+<tr class="separator:a0554b66af3acdbc17d0d448b2d4dcef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528bbbdc71870f78b368fcf7f486cd62"><td class="memTemplParams" colspan="2"><a id="a528bbbdc71870f78b368fcf7f486cd62"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a528bbbdc71870f78b368fcf7f486cd62"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a528bbbdc71870f78b368fcf7f486cd62">DecRefItem</a> (const Type *item)</td></tr>
+<tr class="memdesc:a528bbbdc71870f78b368fcf7f486cd62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отпустить объект без удаления. <br /></td></tr>
+<tr class="separator:a528bbbdc71870f78b368fcf7f486cd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f68377bc692f1a29229ea3fe0755be"><td class="memTemplParams" colspan="2"><a id="a77f68377bc692f1a29229ea3fe0755be"></a>
+template&lt;class ItemsVector &gt; </td></tr>
+<tr class="memitem:a77f68377bc692f1a29229ea3fe0755be"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a77f68377bc692f1a29229ea3fe0755be">AddRefItems</a> (const ItemsVector &amp;items)</td></tr>
+<tr class="memdesc:a77f68377bc692f1a29229ea3fe0755be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Захватить объекты. <br /></td></tr>
+<tr class="separator:a77f68377bc692f1a29229ea3fe0755be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb868c50faa1a55abb6791d64bc2e124"><td class="memTemplParams" colspan="2"><a id="abb868c50faa1a55abb6791d64bc2e124"></a>
+template&lt;class ItemsVector &gt; </td></tr>
+<tr class="memitem:abb868c50faa1a55abb6791d64bc2e124"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#abb868c50faa1a55abb6791d64bc2e124">DecRefItems</a> (const ItemsVector &amp;items)</td></tr>
+<tr class="memdesc:abb868c50faa1a55abb6791d64bc2e124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отпустить объекты без удаления. <br /></td></tr>
+<tr class="separator:abb868c50faa1a55abb6791d64bc2e124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568ec89d3316b79a98c5508a83c45561"><td class="memTemplParams" colspan="2"><a id="a568ec89d3316b79a98c5508a83c45561"></a>
+template&lt;class ItemsVector &gt; </td></tr>
+<tr class="memitem:a568ec89d3316b79a98c5508a83c45561"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a568ec89d3316b79a98c5508a83c45561">DeleteItems</a> (ItemsVector &amp;items)</td></tr>
+<tr class="memdesc:a568ec89d3316b79a98c5508a83c45561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить никому не нужные объекты. <br /></td></tr>
+<tr class="separator:a568ec89d3316b79a98c5508a83c45561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefffe8a97d5994d391109bf53bc77c0e"><td class="memTemplParams" colspan="2"><a id="aefffe8a97d5994d391109bf53bc77c0e"></a>
+template&lt;class ItemsVector &gt; </td></tr>
+<tr class="memitem:aefffe8a97d5994d391109bf53bc77c0e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#aefffe8a97d5994d391109bf53bc77c0e">ReleaseItems</a> (ItemsVector &amp;items)</td></tr>
+<tr class="memdesc:aefffe8a97d5994d391109bf53bc77c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отпустить объекты с возможным удалением. <br /></td></tr>
+<tr class="separator:aefffe8a97d5994d391109bf53bc77c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37442279889ae93ae28bc78abb475340"><td class="memTemplParams" colspan="2"><a id="a37442279889ae93ae28bc78abb475340"></a>
+template&lt;class ItemsVector , class coType &gt; </td></tr>
+<tr class="memitem:a37442279889ae93ae28bc78abb475340"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a37442279889ae93ae28bc78abb475340">DeleteItems</a> (ItemsVector &amp;items, <a class="el" href="class_s_array.html">SArray</a>&lt; coType &gt; &amp;coItems)</td></tr>
+<tr class="memdesc:a37442279889ae93ae28bc78abb475340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить никому не нужные объекты. <br /></td></tr>
+<tr class="separator:a37442279889ae93ae28bc78abb475340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7462d6f80ba88d68775aa42262607e1"><td class="memTemplParams" colspan="2"><a id="af7462d6f80ba88d68775aa42262607e1"></a>
+template&lt;class ItemsVector , class coType &gt; </td></tr>
+<tr class="memitem:af7462d6f80ba88d68775aa42262607e1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#af7462d6f80ba88d68775aa42262607e1">DeleteItems</a> (ItemsVector &amp;items, std::vector&lt; coType &gt; &amp;coItems)</td></tr>
+<tr class="memdesc:af7462d6f80ba88d68775aa42262607e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить никому не нужные объекты. <br /></td></tr>
+<tr class="separator:af7462d6f80ba88d68775aa42262607e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efb52ef3bbd322e0f5ab070f98c650f"><td class="memTemplParams" colspan="2"><a id="a2efb52ef3bbd322e0f5ab070f98c650f"></a>
+template&lt;class ItemsVector , class coType &gt; </td></tr>
+<tr class="memitem:a2efb52ef3bbd322e0f5ab070f98c650f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a2efb52ef3bbd322e0f5ab070f98c650f">ReleaseItems</a> (ItemsVector &amp;items, <a class="el" href="class_s_array.html">SArray</a>&lt; coType &gt; &amp;coItems)</td></tr>
+<tr class="memdesc:a2efb52ef3bbd322e0f5ab070f98c650f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отпустить объекты с возможным удалением. <br /></td></tr>
+<tr class="separator:a2efb52ef3bbd322e0f5ab070f98c650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d03a2b2e6e899109e844bc480af6df4"><td class="memTemplParams" colspan="2"><a id="a3d03a2b2e6e899109e844bc480af6df4"></a>
+template&lt;class ItemsVector , class coType &gt; </td></tr>
+<tr class="memitem:a3d03a2b2e6e899109e844bc480af6df4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a3d03a2b2e6e899109e844bc480af6df4">ReleaseItems</a> (ItemsVector &amp;items, std::vector&lt; coType &gt; &amp;coItems)</td></tr>
+<tr class="memdesc:a3d03a2b2e6e899109e844bc480af6df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отпустить объекты с возможным удалением. <br /></td></tr>
+<tr class="separator:a3d03a2b2e6e899109e844bc480af6df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00f9afd2f01d521585faf684648405d"><td class="memTemplParams" colspan="2"><a id="ae00f9afd2f01d521585faf684648405d"></a>
+template&lt;class TypeVector , class Type &gt; </td></tr>
+<tr class="memitem:ae00f9afd2f01d521585faf684648405d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#ae00f9afd2f01d521585faf684648405d">AddRefItems</a> (const TypeVector &amp;srcItems, bool same, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;dstItems)</td></tr>
+<tr class="memdesc:ae00f9afd2f01d521585faf684648405d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переложить элементы с захватом и возможным копированием. <br /></td></tr>
+<tr class="separator:ae00f9afd2f01d521585faf684648405d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75dd190cbb2f9e3317abe683162e6f4"><td class="memTemplParams" colspan="2"><a id="ab75dd190cbb2f9e3317abe683162e6f4"></a>
+template&lt;class TypeVector , class Type &gt; </td></tr>
+<tr class="memitem:ab75dd190cbb2f9e3317abe683162e6f4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#ab75dd190cbb2f9e3317abe683162e6f4">AddRefItems</a> (const TypeVector &amp;srcItems, bool same, std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;dstItems)</td></tr>
+<tr class="memdesc:ab75dd190cbb2f9e3317abe683162e6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переложить элементы с захватом и возможным копированием. <br /></td></tr>
+<tr class="separator:ab75dd190cbb2f9e3317abe683162e6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62508f62b14ca436352a278a00702106"><td class="memTemplParams" colspan="2"><a id="a62508f62b14ca436352a278a00702106"></a>
+template&lt;class TypeVector , class Type &gt; </td></tr>
+<tr class="memitem:a62508f62b14ca436352a278a00702106"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a62508f62b14ca436352a278a00702106">AddRefItems</a> (const TypeVector &amp;srcItems, bool same, std::vector&lt; Type * &gt; &amp;dstItems)</td></tr>
+<tr class="memdesc:a62508f62b14ca436352a278a00702106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переложить элементы с захватом и возможным копированием. <br /></td></tr>
+<tr class="separator:a62508f62b14ca436352a278a00702106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1f71b107a9698f7606a46b1cbc8c89"><td class="memTemplParams" colspan="2"><a id="aba1f71b107a9698f7606a46b1cbc8c89"></a>
+template&lt;class TypeVector , class Type , class RegType &gt; </td></tr>
+<tr class="memitem:aba1f71b107a9698f7606a46b1cbc8c89"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#aba1f71b107a9698f7606a46b1cbc8c89">AddRefRegItems</a> (const TypeVector &amp;srcItems, bool same, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;dstItems, RegType *iReg)</td></tr>
+<tr class="memdesc:aba1f71b107a9698f7606a46b1cbc8c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переложить элементы с захватом и возможным копированием. <br /></td></tr>
+<tr class="separator:aba1f71b107a9698f7606a46b1cbc8c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7699829e432fd7a3d1f488fb913ebb26"><td class="memTemplParams" colspan="2"><a id="a7699829e432fd7a3d1f488fb913ebb26"></a>
+template&lt;class TypeVector , class Type , class RegType &gt; </td></tr>
+<tr class="memitem:a7699829e432fd7a3d1f488fb913ebb26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a7699829e432fd7a3d1f488fb913ebb26">AddRefRegItems</a> (const TypeVector &amp;srcItems, bool same, std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;dstItems, RegType *iReg)</td></tr>
+<tr class="memdesc:a7699829e432fd7a3d1f488fb913ebb26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переложить элементы с захватом и возможным копированием. <br /></td></tr>
+<tr class="separator:a7699829e432fd7a3d1f488fb913ebb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c4b7bceb6638b70ea8dec0297b296c"><td class="memTemplParams" colspan="2"><a id="a07c4b7bceb6638b70ea8dec0297b296c"></a>
+template&lt;class TypeVector , class Type , class RegType &gt; </td></tr>
+<tr class="memitem:a07c4b7bceb6638b70ea8dec0297b296c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a07c4b7bceb6638b70ea8dec0297b296c">AddRefRegItems</a> (const TypeVector &amp;srcItems, bool same, std::vector&lt; Type * &gt; &amp;dstItems, RegType *iReg)</td></tr>
+<tr class="memdesc:a07c4b7bceb6638b70ea8dec0297b296c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переложить элементы с захватом и возможным копированием. <br /></td></tr>
+<tr class="separator:a07c4b7bceb6638b70ea8dec0297b296c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8a9992b8b56ac3fd5fa3ec48aed1f4"><td class="memTemplParams" colspan="2"><a id="a4b8a9992b8b56ac3fd5fa3ec48aed1f4"></a>
+template&lt;class Item &gt; </td></tr>
+<tr class="memitem:a4b8a9992b8b56ac3fd5fa3ec48aed1f4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a4b8a9992b8b56ac3fd5fa3ec48aed1f4">IsItemSame</a> (const Item *item1, const Item *item2, double accuracy)</td></tr>
+<tr class="memdesc:a4b8a9992b8b56ac3fd5fa3ec48aed1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты подобными. <br /></td></tr>
+<tr class="separator:a4b8a9992b8b56ac3fd5fa3ec48aed1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c766b9ad0527899b03b8b5b28c012b1"><td class="memTemplParams" colspan="2"><a id="a6c766b9ad0527899b03b8b5b28c012b1"></a>
+template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:a6c766b9ad0527899b03b8b5b28c012b1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a6c766b9ad0527899b03b8b5b28c012b1">AreItemsSame</a> (const Vector &amp;items1, const Vector &amp;items2, double accuracy)</td></tr>
+<tr class="memdesc:a6c766b9ad0527899b03b8b5b28c012b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты подобными. <br /></td></tr>
+<tr class="separator:a6c766b9ad0527899b03b8b5b28c012b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377ab8945e111d2e2c21d7e2dc48df62"><td class="memTemplParams" colspan="2"><a id="a377ab8945e111d2e2c21d7e2dc48df62"></a>
+template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:a377ab8945e111d2e2c21d7e2dc48df62"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a377ab8945e111d2e2c21d7e2dc48df62">AreObjectsSame</a> (const Vector &amp;items1, const Vector &amp;items2, double accuracy)</td></tr>
+<tr class="memdesc:a377ab8945e111d2e2c21d7e2dc48df62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты подобными. <br /></td></tr>
+<tr class="separator:a377ab8945e111d2e2c21d7e2dc48df62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723724d5367292ea08242e43b9dfb0dd"><td class="memTemplParams" colspan="2"><a id="a723724d5367292ea08242e43b9dfb0dd"></a>
+template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:a723724d5367292ea08242e43b9dfb0dd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a723724d5367292ea08242e43b9dfb0dd">AreItemsSimilar</a> (const Vector &amp;items1, const Vector &amp;items2)</td></tr>
+<tr class="memdesc:a723724d5367292ea08242e43b9dfb0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты подобными. <br /></td></tr>
+<tr class="separator:a723724d5367292ea08242e43b9dfb0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34509d457446dc81b013fdde9fcb0f7b"><td class="memTemplParams" colspan="2"><a id="a34509d457446dc81b013fdde9fcb0f7b"></a>
+template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:a34509d457446dc81b013fdde9fcb0f7b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a34509d457446dc81b013fdde9fcb0f7b">SetItemsEqual</a> (const Vector &amp;srcItems, Vector &amp;dstItems)</td></tr>
+<tr class="memdesc:a34509d457446dc81b013fdde9fcb0f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать равными. <br /></td></tr>
+<tr class="separator:a34509d457446dc81b013fdde9fcb0f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7513953804ca05e58a8f913d9aecc900"><td class="memTemplParams" colspan="2"><a id="a7513953804ca05e58a8f913d9aecc900"></a>
+template&lt;class TypeVector , class Type , class RegType &gt; </td></tr>
+<tr class="memitem:a7513953804ca05e58a8f913d9aecc900"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a7513953804ca05e58a8f913d9aecc900">DuplicateItems</a> (const TypeVector &amp;srcItems, RegType *iReg, bool same, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;dstItems)</td></tr>
+<tr class="memdesc:a7513953804ca05e58a8f913d9aecc900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дублировать c регистратором (опционально переложить оригиналы). <br /></td></tr>
+<tr class="separator:a7513953804ca05e58a8f913d9aecc900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc7ed69f0df5d09abc2262ebe93ab02"><td class="memTemplParams" colspan="2"><a id="a1dc7ed69f0df5d09abc2262ebe93ab02"></a>
+template&lt;class TypeVector , class Type , class RegType &gt; </td></tr>
+<tr class="memitem:a1dc7ed69f0df5d09abc2262ebe93ab02"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a1dc7ed69f0df5d09abc2262ebe93ab02">DuplicateItems</a> (const TypeVector &amp;srcItems, RegType *iReg, bool same, std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;dstItems)</td></tr>
+<tr class="memdesc:a1dc7ed69f0df5d09abc2262ebe93ab02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дублировать c регистратором (опционально переложить оригиналы). <br /></td></tr>
+<tr class="separator:a1dc7ed69f0df5d09abc2262ebe93ab02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25b7f1c81649c9cabbb2ab40725acab"><td class="memTemplParams" colspan="2"><a id="ad25b7f1c81649c9cabbb2ab40725acab"></a>
+template&lt;class TypeVector , class Type , class RegType &gt; </td></tr>
+<tr class="memitem:ad25b7f1c81649c9cabbb2ab40725acab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#ad25b7f1c81649c9cabbb2ab40725acab">DuplicateItems</a> (const TypeVector &amp;srcItems, RegType *iReg, bool same, std::vector&lt; Type * &gt; &amp;dstItems)</td></tr>
+<tr class="memdesc:ad25b7f1c81649c9cabbb2ab40725acab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дублировать c регистратором (опционально переложить оригиналы). <br /></td></tr>
+<tr class="separator:ad25b7f1c81649c9cabbb2ab40725acab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fab996b3fa5dc18bc71589a388e830"><td class="memTemplParams" colspan="2"><a id="ab7fab996b3fa5dc18bc71589a388e830"></a>
+template&lt;class Array , class Matrix , class RegType &gt; </td></tr>
+<tr class="memitem:ab7fab996b3fa5dc18bc71589a388e830"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#ab7fab996b3fa5dc18bc71589a388e830">TransformItems</a> (Array &amp;items, const Matrix &amp;matr, RegType *iReg)</td></tr>
+<tr class="memdesc:ab7fab996b3fa5dc18bc71589a388e830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать элементы согласно матрице. <br /></td></tr>
+<tr class="separator:ab7fab996b3fa5dc18bc71589a388e830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcb8ec08c93dd2d72b5ca6b573d69a0"><td class="memTemplParams" colspan="2"><a id="a4bcb8ec08c93dd2d72b5ca6b573d69a0"></a>
+template&lt;class Array , class Matrix &gt; </td></tr>
+<tr class="memitem:a4bcb8ec08c93dd2d72b5ca6b573d69a0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a4bcb8ec08c93dd2d72b5ca6b573d69a0">TransformItems</a> (Array &amp;items, const Matrix &amp;matr)</td></tr>
+<tr class="memdesc:a4bcb8ec08c93dd2d72b5ca6b573d69a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать элементы согласно матрице. <br /></td></tr>
+<tr class="separator:a4bcb8ec08c93dd2d72b5ca6b573d69a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf85b1e4c1cad75fa22331287841ce2e"><td class="memTemplParams" colspan="2"><a id="aaf85b1e4c1cad75fa22331287841ce2e"></a>
+template&lt;class Array , class Matrix &gt; </td></tr>
+<tr class="memitem:aaf85b1e4c1cad75fa22331287841ce2e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#aaf85b1e4c1cad75fa22331287841ce2e">TransformObjects</a> (Array &amp;objects, const Matrix &amp;matr)</td></tr>
+<tr class="memdesc:aaf85b1e4c1cad75fa22331287841ce2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать элементы согласно матрице. <br /></td></tr>
+<tr class="separator:aaf85b1e4c1cad75fa22331287841ce2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e3135b4539cb3a1fd786a353c4088c"><td class="memTemplParams" colspan="2"><a id="a31e3135b4539cb3a1fd786a353c4088c"></a>
+template&lt;class Array , class Vector , class RegType &gt; </td></tr>
+<tr class="memitem:a31e3135b4539cb3a1fd786a353c4088c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a31e3135b4539cb3a1fd786a353c4088c">MoveItems</a> (Array &amp;items, const Vector &amp;to, RegType *iReg)</td></tr>
+<tr class="memdesc:a31e3135b4539cb3a1fd786a353c4088c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль объекты вектора. <br /></td></tr>
+<tr class="separator:a31e3135b4539cb3a1fd786a353c4088c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47bdebae90d2f56deaa1e1a27ace354"><td class="memTemplParams" colspan="2"><a id="af47bdebae90d2f56deaa1e1a27ace354"></a>
+template&lt;class Array , class Vector &gt; </td></tr>
+<tr class="memitem:af47bdebae90d2f56deaa1e1a27ace354"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#af47bdebae90d2f56deaa1e1a27ace354">MoveItems</a> (Array &amp;items, const Vector &amp;to)</td></tr>
+<tr class="memdesc:af47bdebae90d2f56deaa1e1a27ace354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль объекты вектора. <br /></td></tr>
+<tr class="separator:af47bdebae90d2f56deaa1e1a27ace354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d3580a3ff4c8361eae3c92401a23e9"><td class="memTemplParams" colspan="2"><a id="a87d3580a3ff4c8361eae3c92401a23e9"></a>
+template&lt;class Array , class Vector &gt; </td></tr>
+<tr class="memitem:a87d3580a3ff4c8361eae3c92401a23e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a87d3580a3ff4c8361eae3c92401a23e9">MoveObjects</a> (Array &amp;objects, const Vector &amp;to)</td></tr>
+<tr class="memdesc:a87d3580a3ff4c8361eae3c92401a23e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль объекты вектора. <br /></td></tr>
+<tr class="separator:a87d3580a3ff4c8361eae3c92401a23e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b968c06b9fcf7d6e479f2417b26e83"><td class="memTemplParams" colspan="2"><a id="a29b968c06b9fcf7d6e479f2417b26e83"></a>
+template&lt;class Array , class Axis , class RegType &gt; </td></tr>
+<tr class="memitem:a29b968c06b9fcf7d6e479f2417b26e83"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a29b968c06b9fcf7d6e479f2417b26e83">RotateItems</a> (Array &amp;items, const Axis &amp;axis, double angle, RegType *iReg)</td></tr>
+<tr class="memdesc:a29b968c06b9fcf7d6e479f2417b26e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг оси. <br /></td></tr>
+<tr class="separator:a29b968c06b9fcf7d6e479f2417b26e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33eb15dd2957d208abf9aef7acc11a35"><td class="memTemplParams" colspan="2"><a id="a33eb15dd2957d208abf9aef7acc11a35"></a>
+template&lt;class Array , class Axis &gt; </td></tr>
+<tr class="memitem:a33eb15dd2957d208abf9aef7acc11a35"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a33eb15dd2957d208abf9aef7acc11a35">RotateItems</a> (Array &amp;items, const Axis &amp;axis, double angle)</td></tr>
+<tr class="memdesc:a33eb15dd2957d208abf9aef7acc11a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг оси. <br /></td></tr>
+<tr class="separator:a33eb15dd2957d208abf9aef7acc11a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba03f997357e69ffb3e9fcbebdcf061"><td class="memTemplParams" colspan="2"><a id="a5ba03f997357e69ffb3e9fcbebdcf061"></a>
+template&lt;class Array , class Axis &gt; </td></tr>
+<tr class="memitem:a5ba03f997357e69ffb3e9fcbebdcf061"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a5ba03f997357e69ffb3e9fcbebdcf061">RotateObjects</a> (Array &amp;objects, const Axis &amp;axis, double angle)</td></tr>
+<tr class="memdesc:a5ba03f997357e69ffb3e9fcbebdcf061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг оси. <br /></td></tr>
+<tr class="separator:a5ba03f997357e69ffb3e9fcbebdcf061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08711ab71610c6c59356ab4f2f445f80"><td class="memTemplParams" colspan="2"><a id="a08711ab71610c6c59356ab4f2f445f80"></a>
+template&lt;class Vector , class Writer &gt; </td></tr>
+<tr class="memitem:a08711ab71610c6c59356ab4f2f445f80"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a08711ab71610c6c59356ab4f2f445f80">WriteRefItems</a> (const Vector &amp;items, Writer &amp;out)</td></tr>
+<tr class="memdesc:a08711ab71610c6c59356ab4f2f445f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись объектов в поток. <br /></td></tr>
+<tr class="separator:a08711ab71610c6c59356ab4f2f445f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5b7836ccb71934e969a68ceecef014"><td class="memTemplParams" colspan="2"><a id="a7d5b7836ccb71934e969a68ceecef014"></a>
+template&lt;class Type , class Writer &gt; </td></tr>
+<tr class="memitem:a7d5b7836ccb71934e969a68ceecef014"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a7d5b7836ccb71934e969a68ceecef014">WriteRefItems</a> (const std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;items, Writer &amp;out)</td></tr>
+<tr class="memdesc:a7d5b7836ccb71934e969a68ceecef014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись объекты в поток. <br /></td></tr>
+<tr class="separator:a7d5b7836ccb71934e969a68ceecef014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3200fd112d7d92a0f0784a3368e88d56"><td class="memTemplParams" colspan="2"><a id="a3200fd112d7d92a0f0784a3368e88d56"></a>
+template&lt;class Type , class Reader &gt; </td></tr>
+<tr class="memitem:a3200fd112d7d92a0f0784a3368e88d56"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a3200fd112d7d92a0f0784a3368e88d56">ReadRefItems</a> (Reader &amp;in, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;items)</td></tr>
+<tr class="memdesc:a3200fd112d7d92a0f0784a3368e88d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение массива объектов из потока с захватом. <br /></td></tr>
+<tr class="separator:a3200fd112d7d92a0f0784a3368e88d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796558a4a0b831b14d70b4daf32613f0"><td class="memTemplParams" colspan="2"><a id="a796558a4a0b831b14d70b4daf32613f0"></a>
+template&lt;class Type , class Reader &gt; </td></tr>
+<tr class="memitem:a796558a4a0b831b14d70b4daf32613f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a796558a4a0b831b14d70b4daf32613f0">ReadRefItems</a> (Reader &amp;in, std::vector&lt; Type * &gt; &amp;items)</td></tr>
+<tr class="memdesc:a796558a4a0b831b14d70b4daf32613f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение массива объектов из потока с захватом. <br /></td></tr>
+<tr class="separator:a796558a4a0b831b14d70b4daf32613f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff790ed09d9dc1fc8c47b4d933daf2ac"><td class="memTemplParams" colspan="2"><a id="aff790ed09d9dc1fc8c47b4d933daf2ac"></a>
+template&lt;class Type , class Reader &gt; </td></tr>
+<tr class="memitem:aff790ed09d9dc1fc8c47b4d933daf2ac"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#aff790ed09d9dc1fc8c47b4d933daf2ac">ReadRefItems</a> (Reader &amp;in, std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;items)</td></tr>
+<tr class="memdesc:aff790ed09d9dc1fc8c47b4d933daf2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение массива объектов из потока с захватом. <br /></td></tr>
+<tr class="separator:aff790ed09d9dc1fc8c47b4d933daf2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001f20b5306049328ef6027f7f4586f8"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:a001f20b5306049328ef6027f7f4586f8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a001f20b5306049328ef6027f7f4586f8">ReleaseAndDetachItem_</a> (Vector &amp;items, size_t index)</td></tr>
+<tr class="memdesc:a001f20b5306049328ef6027f7f4586f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить от массива и уменьшить счетчик ссылок.  <a href="reference__item_8h.html#a001f20b5306049328ef6027f7f4586f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a001f20b5306049328ef6027f7f4586f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1991b11a1be42c10fc7569db63155eee"><td class="memTemplParams" colspan="2">template&lt;class Vector , class Type &gt; </td></tr>
+<tr class="memitem:a1991b11a1be42c10fc7569db63155eee"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a1991b11a1be42c10fc7569db63155eee">AddRefAndAddItem_</a> (Vector &amp;items, Type *newItem)</td></tr>
+<tr class="memdesc:a1991b11a1be42c10fc7569db63155eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить объект и увеличить счетчик ссылок.  <a href="reference__item_8h.html#a1991b11a1be42c10fc7569db63155eee">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1991b11a1be42c10fc7569db63155eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9288032cb5624716539e449aa9f17bc1"><td class="memTemplParams" colspan="2">template&lt;class Vector , class Type &gt; </td></tr>
+<tr class="memitem:a9288032cb5624716539e449aa9f17bc1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a9288032cb5624716539e449aa9f17bc1">AddRefAndAddAtItem_</a> (Vector &amp;items, Type *newItem, size_t index)</td></tr>
+<tr class="memdesc:a9288032cb5624716539e449aa9f17bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить объект и увеличить счетчик ссылок.  <a href="reference__item_8h.html#a9288032cb5624716539e449aa9f17bc1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9288032cb5624716539e449aa9f17bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cec8723021fbe17061fb10aa17c95e"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a32cec8723021fbe17061fb10aa17c95e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a32cec8723021fbe17061fb10aa17c95e">ReleaseAndDetachItem_</a> (std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;items, size_t index)</td></tr>
+<tr class="memdesc:a32cec8723021fbe17061fb10aa17c95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить от массива и уменьшить счетчик ссылок.  <a href="reference__item_8h.html#a32cec8723021fbe17061fb10aa17c95e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a32cec8723021fbe17061fb10aa17c95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0870679c2b5541041a7a3f94209b26"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a8d0870679c2b5541041a7a3f94209b26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a8d0870679c2b5541041a7a3f94209b26">AddRefAndAddItem_</a> (std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;items, Type *newItem)</td></tr>
+<tr class="memdesc:a8d0870679c2b5541041a7a3f94209b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить объект и увеличить счетчик ссылок.  <a href="reference__item_8h.html#a8d0870679c2b5541041a7a3f94209b26">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8d0870679c2b5541041a7a3f94209b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13d0643e84b693c908efc5eeb203c5b"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:aa13d0643e84b693c908efc5eeb203c5b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#aa13d0643e84b693c908efc5eeb203c5b">AddRefAndAddAtItem_</a> (std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;items, Type *newItem, size_t index)</td></tr>
+<tr class="memdesc:aa13d0643e84b693c908efc5eeb203c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить объект и увеличить счетчик ссылок.  <a href="reference__item_8h.html#aa13d0643e84b693c908efc5eeb203c5b">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa13d0643e84b693c908efc5eeb203c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d92492e3f9dd2f1e4d56b0df4d02a78"><td class="memTemplParams" colspan="2"><a id="a7d92492e3f9dd2f1e4d56b0df4d02a78"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a7d92492e3f9dd2f1e4d56b0df4d02a78"><td class="memTemplItemLeft" align="right" valign="top">Type *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a7d92492e3f9dd2f1e4d56b0df4d02a78">DetachItem</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &amp;itemOwner)</td></tr>
+<tr class="memdesc:a7d92492e3f9dd2f1e4d56b0df4d02a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить объект из владеющего указателя. <br /></td></tr>
+<tr class="separator:a7d92492e3f9dd2f1e4d56b0df4d02a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf193b059bbf25afd100eebfc8aff0a"><td class="memTemplParams" colspan="2"><a id="a0bf193b059bbf25afd100eebfc8aff0a"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a0bf193b059bbf25afd100eebfc8aff0a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a0bf193b059bbf25afd100eebfc8aff0a">ReplaceByCopy</a> (Type *&amp;item)</td></tr>
+<tr class="memdesc:a0bf193b059bbf25afd100eebfc8aff0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменить объект на копию. <br /></td></tr>
+<tr class="separator:a0bf193b059bbf25afd100eebfc8aff0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72407c27d1f86d0f68516ba83dea48c2"><td class="memTemplParams" colspan="2"><a id="a72407c27d1f86d0f68516ba83dea48c2"></a>
+template&lt;class Objects , class Gab &gt; </td></tr>
+<tr class="memitem:a72407c27d1f86d0f68516ba83dea48c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="reference__item_8h.html#a72407c27d1f86d0f68516ba83dea48c2">AddYourGabaritTo</a> (Objects &amp;objects, Gab &amp;gab)</td></tr>
+<tr class="memdesc:a72407c27d1f86d0f68516ba83dea48c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить габариты объектов массива в общий габарит. <br /></td></tr>
+<tr class="separator:a72407c27d1f86d0f68516ba83dea48c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Счетчик ссылок (владельцев объекта). </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a001f20b5306049328ef6027f7f4586f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001f20b5306049328ef6027f7f4586f8">&#9670;&nbsp;</a></span>ReleaseAndDetachItem_() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Vector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> ReleaseAndDetachItem_ </td>
+          <td>(</td>
+          <td class="paramtype">Vector &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отцепить от массива и уменьшить счетчик ссылок. </p>
+<p>Отцепить от массива и уменьшить счетчик ссылок без проверок.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">items</td><td>- Множество элементов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Номер элемента. Не проверяется на корректность. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1991b11a1be42c10fc7569db63155eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1991b11a1be42c10fc7569db63155eee">&#9670;&nbsp;</a></span>AddRefAndAddItem_() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Vector , class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> AddRefAndAddItem_ </td>
+          <td>(</td>
+          <td class="paramtype">Vector &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>newItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить объект и увеличить счетчик ссылок. </p>
+<p>Добавить объект и увеличить счетчик ссылок без проверок.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">items</td><td>- Множество элементов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newItem</td><td>- Новый элемент. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9288032cb5624716539e449aa9f17bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9288032cb5624716539e449aa9f17bc1">&#9670;&nbsp;</a></span>AddRefAndAddAtItem_() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Vector , class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> AddRefAndAddAtItem_ </td>
+          <td>(</td>
+          <td class="paramtype">Vector &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>newItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить объект и увеличить счетчик ссылок. </p>
+<p>Добавить объект и увеличить счетчик ссылок без проверок.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">items</td><td>- Множество элементов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newItem</td><td>- Новый элемент.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Номер элемента. Не проверяется на корректность. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32cec8723021fbe17061fb10aa17c95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32cec8723021fbe17061fb10aa17c95e">&#9670;&nbsp;</a></span>ReleaseAndDetachItem_() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> ReleaseAndDetachItem_ </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отцепить от массива и уменьшить счетчик ссылок. </p>
+<p>Отцепить от массива и уменьшить счетчик ссылок без проверок.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">items</td><td>- Множество элементов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Номер элемента. Не проверяется на корректность. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d0870679c2b5541041a7a3f94209b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0870679c2b5541041a7a3f94209b26">&#9670;&nbsp;</a></span>AddRefAndAddItem_() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> AddRefAndAddItem_ </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>newItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить объект и увеличить счетчик ссылок. </p>
+<p>Добавить объект и увеличить счетчик ссылок без проверок.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">items</td><td>- Множество элементов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newItem</td><td>- Новый элемент. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa13d0643e84b693c908efc5eeb203c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa13d0643e84b693c908efc5eeb203c5b">&#9670;&nbsp;</a></span>AddRefAndAddAtItem_() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> AddRefAndAddAtItem_ </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>newItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить объект и увеличить счетчик ссылок. </p>
+<p>Добавить объект и увеличить счетчик ссылок без проверок.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">items</td><td>- Множество элементов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newItem</td><td>- Новый элемент.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Номер элемента. Не проверяется на корректность. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="reference__item_8h.html">reference_item.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

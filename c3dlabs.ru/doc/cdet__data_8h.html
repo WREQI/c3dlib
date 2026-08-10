@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл cdet_data.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('cdet__data_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл cdet_data.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Типы данных утилиты обнаружения столкновений.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="topology_8h.html">topology.h</a>&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query.html">cdet_query</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура данных и обратных вызовов для запроса на поиск соударений. Базовый класс, предназначенный для реализации на стороне приложения структуры запроса к алгоритму поиска соударений. С помощью обратных вызовов приложение управляет поиском соударений и получает сведения o найденных пересечениях.  <a href="structcdet__query.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query_1_1geom__element.html">cdet_query::geom_element</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Structure representing a collision detection geometry.  <a href="structcdet__query_1_1geom__element.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query_1_1cback__data.html">cdet_query::cback_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Data structure that notifies an app about collision detection event.  <a href="structcdet__query_1_1cback__data.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__collided__faces.html">cdet_collided_faces</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура запроса для поиска граней столкновения.  <a href="structcdet__collided__faces.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cd_collision_face.html">CdCollisionFace</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Грань столкновения.  <a href="class_cd_collision_face.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cd_proximity_parameters.html">CdProximityParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры запроса и результат измерения расстояния между двух объектов.  <a href="class_cd_proximity_parameters.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ga4d2eeca22d46c41eecc5fd3d1b6d9105"><td class="memItemLeft" align="right" valign="top">
+typedef const CdSceneItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a></td></tr>
+<tr class="memdesc:ga4d2eeca22d46c41eecc5fd3d1b6d9105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект из набора контроля столкновений. <br /></td></tr>
+<tr class="separator:ga4d2eeca22d46c41eecc5fd3d1b6d9105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22b4cd905cc12d70abe2f884ffad6ce4"><td class="memItemLeft" align="right" valign="top">
+typedef <a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">CDM_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga22b4cd905cc12d70abe2f884ffad6ce4">cdet_result</a></td></tr>
+<tr class="memdesc:ga22b4cd905cc12d70abe2f884ffad6ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код результата контроля столкновений. <br /></td></tr>
+<tr class="separator:ga22b4cd905cc12d70abe2f884ffad6ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gacc090e702a720330783e649c03f4bdf8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">CDM_result</a> {  }</td></tr>
+<tr class="memdesc:gacc090e702a720330783e649c03f4bdf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код результата контроля столкновений или измерений.  <a href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacc090e702a720330783e649c03f4bdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:gacc7d6f46bd99a69c1e46dcad5d21ff8a"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gacc7d6f46bd99a69c1e46dcad5d21ff8a">CDET_NULL</a> = nullptr</td></tr>
+<tr class="memdesc:gacc7d6f46bd99a69c1e46dcad5d21ff8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой объект набора для контроля столкновений. <br /></td></tr>
+<tr class="separator:gacc7d6f46bd99a69c1e46dcad5d21ff8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f47c323bbcd1b977c27cc487a4d0e4a"><td class="memItemLeft" align="right" valign="top">
+const cdet_app_item&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga4f47c323bbcd1b977c27cc487a4d0e4a">CDET_APP_NULL</a> = nullptr</td></tr>
+<tr class="memdesc:ga4f47c323bbcd1b977c27cc487a4d0e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Нулевой" объект модели приложения. <br /></td></tr>
+<tr class="separator:ga4f47c323bbcd1b977c27cc487a4d0e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Типы данных утилиты обнаружения столкновений. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="cdet__data_8h.html">cdet_data.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

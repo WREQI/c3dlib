@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл conv_exchange_settings.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('conv__exchange__settings_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл conv_exchange_settings.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Настройки импорта и экспорта.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__placement3d_8h.html">mb_placement3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__data_8h.html">mb_data.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="op__mesh__parameter_8h.html">op_mesh_parameter.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="conv__predefined_8h.html">conv_predefined.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="reference__item_8h.html">reference_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="conv__requestor_8h.html">conv_requestor.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="attribute__item_8h.html">attribute_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tool__cstring_8h.html">tool_cstring.h</a>&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c3_d_converter_debug_settings.html">C3DConverterDebugSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройки отладочного функционала C3D Converter.  <a href="struct_c3_d_converter_debug_settings.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_product_id_maker.html">IProductIdMaker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс генератора однострочного идентификатора компонента.  <a href="struct_i_product_id_maker.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_c3_d_char_encoding_transformer.html">IC3DCharEncodingTransformer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс для преобразования строк.  <a href="class_i_c3_d_char_encoding_transformer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс свойств конвертера.  <a href="class_i_convertor_property3_d.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_name_product_id_maker.html">NameProductIdMaker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация генератора однострочного идентификатора компонента.  <a href="struct_name_product_id_maker.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conv_convertor_property3_d.html">ConvConvertorProperty3D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённая реализация интерфейса свойств конвертера.  <a href="class_conv_convertor_property3_d.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_conv_convertor_property3_d_1_1_log_record.html">ConvConvertorProperty3D::LogRecord</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сведения о сообщениях конвертера.  <a href="struct_conv_convertor_property3_d_1_1_log_record.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c3_d_char_encoding_transformer_locale.html">C3DCharEncodingTransformerLocale</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование строк с использованием установленной локали. <br  />
+ Выполняется только для UNICODE-сборок, для остальных случаев производится копирование.  <a href="class_c3_d_char_encoding_transformer_locale.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_c3_d_char_encoding_transformer_step.html">IC3DCharEncodingTransformerStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование строк с использованием нотации STEP.  <a href="class_i_c3_d_char_encoding_transformer_step.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_c3_d_char_encoding_transformer_u_t_f8.html">IC3DCharEncodingTransformerUTF8</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование строк с использованием кодировки UTF-8. Реализовано только для C++ 20 или выше.  <a href="class_i_c3_d_char_encoding_transformer_u_t_f8.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_c3_d_char_encoding_transformer_windows1251.html">IC3DCharEncodingTransformerWindows1251</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование строк с использованием кодировки Windows-1251.  <a href="class_i_c3_d_char_encoding_transformer_windows1251.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a2c4a12a017492a00c7096ce9a0e62c29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a2c4a12a017492a00c7096ce9a0e62c29">LENGTH_UNIT_MM</a>&#160;&#160;&#160;1.0</td></tr>
+<tr class="memdesc:a2c4a12a017492a00c7096ce9a0e62c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Константы единиц измерения. <br  />
+  <a href="conv__exchange__settings_8h.html#a2c4a12a017492a00c7096ce9a0e62c29">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2c4a12a017492a00c7096ce9a0e62c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19c2431f8b77b7bc8ba3067047cffb0"><td class="memItemLeft" align="right" valign="top"><a id="af19c2431f8b77b7bc8ba3067047cffb0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#af19c2431f8b77b7bc8ba3067047cffb0">LENGTH_UNIT_CM</a>&#160;&#160;&#160;10.0</td></tr>
+<tr class="memdesc:af19c2431f8b77b7bc8ba3067047cffb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сантиметры. <br /></td></tr>
+<tr class="separator:af19c2431f8b77b7bc8ba3067047cffb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7d40bd6bd9a3548a0dd0bed0673a62"><td class="memItemLeft" align="right" valign="top"><a id="adf7d40bd6bd9a3548a0dd0bed0673a62"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#adf7d40bd6bd9a3548a0dd0bed0673a62">LENGTH_UNIT_DM</a>&#160;&#160;&#160;100.0</td></tr>
+<tr class="memdesc:adf7d40bd6bd9a3548a0dd0bed0673a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дециметры. <br /></td></tr>
+<tr class="separator:adf7d40bd6bd9a3548a0dd0bed0673a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d3371d7780e9993afbbeac0c2c6799"><td class="memItemLeft" align="right" valign="top"><a id="a77d3371d7780e9993afbbeac0c2c6799"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a77d3371d7780e9993afbbeac0c2c6799">LENGTH_UNIT_METER</a>&#160;&#160;&#160;1000.0</td></tr>
+<tr class="memdesc:a77d3371d7780e9993afbbeac0c2c6799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метры. <br /></td></tr>
+<tr class="separator:a77d3371d7780e9993afbbeac0c2c6799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae560a806f53ecfb87d2eddb79d584c55"><td class="memItemLeft" align="right" valign="top"><a id="ae560a806f53ecfb87d2eddb79d584c55"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#ae560a806f53ecfb87d2eddb79d584c55">LENGTH_UNIT_INCH</a>&#160;&#160;&#160;25.4</td></tr>
+<tr class="memdesc:ae560a806f53ecfb87d2eddb79d584c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дюймы. <br /></td></tr>
+<tr class="separator:ae560a806f53ecfb87d2eddb79d584c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e1b4a615d11acd16dc6ffa58126eea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a18e1b4a615d11acd16dc6ffa58126eea">MASS_UNIT_GM</a>&#160;&#160;&#160;1.0</td></tr>
+<tr class="memdesc:a18e1b4a615d11acd16dc6ffa58126eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Константы единиц массы.  <a href="conv__exchange__settings_8h.html#a18e1b4a615d11acd16dc6ffa58126eea">Подробнее...</a><br /></td></tr>
+<tr class="separator:a18e1b4a615d11acd16dc6ffa58126eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c08efa3b0151e80e93c057854bac65"><td class="memItemLeft" align="right" valign="top"><a id="ac9c08efa3b0151e80e93c057854bac65"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#ac9c08efa3b0151e80e93c057854bac65">MASS_UNIT_KG</a>&#160;&#160;&#160;1000.0</td></tr>
+<tr class="memdesc:ac9c08efa3b0151e80e93c057854bac65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Килограммы. <br /></td></tr>
+<tr class="separator:ac9c08efa3b0151e80e93c057854bac65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa668c388e1f5bfe5905ca09bffe1b7d1"><td class="memItemLeft" align="right" valign="top"><a id="aa668c388e1f5bfe5905ca09bffe1b7d1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#aa668c388e1f5bfe5905ca09bffe1b7d1">MASS_UNIT_MG</a>&#160;&#160;&#160;0.001</td></tr>
+<tr class="memdesc:aa668c388e1f5bfe5905ca09bffe1b7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Миллиграммы. <br /></td></tr>
+<tr class="separator:aa668c388e1f5bfe5905ca09bffe1b7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc870fdbac5678906de652f84e53efbf"><td class="memItemLeft" align="right" valign="top"><a id="acc870fdbac5678906de652f84e53efbf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#acc870fdbac5678906de652f84e53efbf">MASS_UNIT_MKG</a>&#160;&#160;&#160;1e-6</td></tr>
+<tr class="memdesc:acc870fdbac5678906de652f84e53efbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Микрограммы. <br /></td></tr>
+<tr class="separator:acc870fdbac5678906de652f84e53efbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c9400bd19da1d7bc169bad61e075b5"><td class="memItemLeft" align="right" valign="top"><a id="af9c9400bd19da1d7bc169bad61e075b5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#af9c9400bd19da1d7bc169bad61e075b5">MASS_UNIT_OU</a>&#160;&#160;&#160;28.35</td></tr>
+<tr class="memdesc:af9c9400bd19da1d7bc169bad61e075b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Унции. <br /></td></tr>
+<tr class="separator:af9c9400bd19da1d7bc169bad61e075b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd1bca3f7e6eb8dc486d7073e128547"><td class="memItemLeft" align="right" valign="top"><a id="a3fd1bca3f7e6eb8dc486d7073e128547"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a3fd1bca3f7e6eb8dc486d7073e128547">MASS_UNIT_PN</a>&#160;&#160;&#160;453.59</td></tr>
+<tr class="memdesc:a3fd1bca3f7e6eb8dc486d7073e128547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фунты. <br /></td></tr>
+<tr class="separator:a3fd1bca3f7e6eb8dc486d7073e128547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a7cdb6c2908c9649e07fc0e637d3c6"><td class="memItemLeft" align="right" valign="top"><a id="a12a7cdb6c2908c9649e07fc0e637d3c6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a12a7cdb6c2908c9649e07fc0e637d3c6">EXPORT_DEFAULT</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:a12a7cdb6c2908c9649e07fc0e637d3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">По умолчанию для заданного формата. <br /></td></tr>
+<tr class="separator:a12a7cdb6c2908c9649e07fc0e637d3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b02820597c2acd975b70b3d7ed4a22d"><td class="memItemLeft" align="right" valign="top"><a id="a2b02820597c2acd975b70b3d7ed4a22d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a2b02820597c2acd975b70b3d7ed4a22d">EXPORT_STEP_203</a>&#160;&#160;&#160;203</td></tr>
+<tr class="memdesc:a2b02820597c2acd975b70b3d7ed4a22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">STEP прикладной протокол 203 ( Проектирование с управляемой конфигурацией ). <br /></td></tr>
+<tr class="separator:a2b02820597c2acd975b70b3d7ed4a22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd1b418dbb6d97ec78c92445ec12804"><td class="memItemLeft" align="right" valign="top"><a id="a3cd1b418dbb6d97ec78c92445ec12804"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a3cd1b418dbb6d97ec78c92445ec12804">EXPORT_STEP_214</a>&#160;&#160;&#160;214</td></tr>
+<tr class="memdesc:a3cd1b418dbb6d97ec78c92445ec12804"><td class="mdescLeft">&#160;</td><td class="mdescRight">STEP прикладной протокол 214 ( Проектирование автомобилей ). <br /></td></tr>
+<tr class="separator:a3cd1b418dbb6d97ec78c92445ec12804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f9cd5e6c7e12652c6026ecc7b60edf"><td class="memItemLeft" align="right" valign="top"><a id="a41f9cd5e6c7e12652c6026ecc7b60edf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a41f9cd5e6c7e12652c6026ecc7b60edf">EXPORT_STEP_242</a>&#160;&#160;&#160;242</td></tr>
+<tr class="memdesc:a41f9cd5e6c7e12652c6026ecc7b60edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">STEP прикладной протокол 242. (по умолчанию) <br /></td></tr>
+<tr class="separator:a41f9cd5e6c7e12652c6026ecc7b60edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afdaadf6d6ea302657ef4d3294b9b59"><td class="memItemLeft" align="right" valign="top"><a id="a1afdaadf6d6ea302657ef4d3294b9b59"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a1afdaadf6d6ea302657ef4d3294b9b59">EXPORT_ACIS_4</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a1afdaadf6d6ea302657ef4d3294b9b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACIS версия 4.0. <br /></td></tr>
+<tr class="separator:a1afdaadf6d6ea302657ef4d3294b9b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a544d39f0a8f01cc4bbdd3ccfa07e94"><td class="memItemLeft" align="right" valign="top"><a id="a6a544d39f0a8f01cc4bbdd3ccfa07e94"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a6a544d39f0a8f01cc4bbdd3ccfa07e94">EXPORT_ACIS_7</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a6a544d39f0a8f01cc4bbdd3ccfa07e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACIS версия 7.0 (по умолчанию). <br /></td></tr>
+<tr class="separator:a6a544d39f0a8f01cc4bbdd3ccfa07e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7245211c2b6a295be2f5391babb3bb"><td class="memItemLeft" align="right" valign="top"><a id="a8e7245211c2b6a295be2f5391babb3bb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a8e7245211c2b6a295be2f5391babb3bb">EXPORT_ACIS_10</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:a8e7245211c2b6a295be2f5391babb3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACIS версия 10.0. <br /></td></tr>
+<tr class="separator:a8e7245211c2b6a295be2f5391babb3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ad12d02719cad2128b4d15a272183bcd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8">MbeConverterStrings</a> { <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8ab9fa270fb4ead6b918d24b08551a3da9">cvs_BEGIN</a> = 0
+, <a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8a607f763bfe15461be9af24b1b788195e">cvs_STEPAuthor</a>
+, <a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8a36884994c87eb97aefbac4604fcc40e9">cvs_STEPOrganization</a>
+, <a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8adedc28789b353a55c3b7fe06c9dafa33">cvs_STEPComment</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8a52983330969962172781db26dcb95aa0">cvs_CAD_NAME</a>
+, <a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8af63d604cde7377c717dfa79303fd2c38">cvs_STEPPreprocessorVersion</a>
+, <a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8a2c83329dc9159c69832a4356bcb53e2e">cvs_STEPAuthorization</a>
+, <a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8a1fc084e2e1c91ae5cc651c1169743e37">cvs_END</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ad12d02719cad2128b4d15a272183bcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индексы строк, передаваемых через конвертер. <br  />
+  <a href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad12d02719cad2128b4d15a272183bcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b8af17fa18dd9f72e3e17f4df72865"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865">MbeIOPermiss</a> { <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865aabdaf990c7ac6f3b74508eb758048498">iop_rSolid</a> = 0
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865aae93a31a6cc40a151f9543af2454e936">iop_wSolid</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a2a624cb248bd5b41e6689a21279ccd3b">iop_rSurface</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865ad2d0524a517d239c8a823652f6891635">iop_wSurface</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a9d56223921ad682b4d3efc08e47c1e58">iop_rCurve</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865af558e9d2c8756cfdb41ae26e7bdce906">iop_wCurve</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a547c751953dcd3261dac47eff142c45c">iop_rDrafts</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865abb5ee668521ebceb1d095aa0aa509c8a">iop_wDrafts</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865af1cec07dbbfb8af9d4522f4d57cde3fa">iop_rInvisible</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a926231cdeed7713e7a54946829da5e9c">iop_wInvisible</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865abe498185328386c1c66157624a67867a">iop_rPoint</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865ad7460c0193053f363caca89d94a636ba">iop_wPoint</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865adf281a4c43ed0f38c811868836b46fcc">iop_rDocInfo</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865aac629d77ff3e3e3fb1315db74d9d23ef">iop_wDocInfo</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865abab9df6a46ce113271a17371811904a2">iop_rTextDescription</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a0eaa2119c8264a32f47ea1fb8096e441">iop_wTextDescription</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a9d751c27b2ede8481fd178378a391978">iop_rDimensions</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a083cc08535afc44dfa42cc0aa542b013">iop_wDimensions</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a3a97935d0a0a14a00ec9d7a009898240">iop_rAttributes</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865ac98c7eabcc57c881de228189263ec653">iop_wAttributes</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a46bf6e9a7a3f45e4abbdf3fe4d4dc929">iop_rBRep</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a78bfce6c179063a8337be17c2f3970fd">iop_wBRep</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a2a24fd2332b4b07f6be6f9647acd8b6e">iop_rPolygonal</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865afd919c40e7f029d0a1b546099ca5a3a3">iop_wPolygonal</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a0ca6471bee83690d25021060a5922acb">iop_rLOD0</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a6e06794b9642378e7280276d20bbf1e9">iop_wLOD0</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a9a36e5dc497a7cd1f94ed1767425eb25">iop_rAssociated</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a8be14866013ac867c96c6fbaa4c12ca7">iop_wAssociated</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a2876cc2548288ae1568d535a417fb5a8">iop_rDensity</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865ac76b72e853073fe4f1ad59efe8799ebc">iop_wDensity</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865af2b1413309fb2e111b440640cc057c73">iop_rValidationProperties</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865ab570bf8812a4142177cc4fceeeb8ddfc">iop_wValidationProperties</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865ab295ab444a2338f53dde93ebece1a017">iop_rStyle</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a81b4d4ba4cfe2f09fdc0edc13f18ce35">iop_wStyle</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865aae14d0cb45802e357dfadeba72532fe4">iop_rCS</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a5d45b30d87842571feab9773784d57d4">iop_wCS</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865ad74137c6cd242c701de59b75ca0b3286">iop_rBounds</a>
+, <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865a09cbd2b1ddadfa4c7f72e4bb3b8eb252">iop_wBounds</a>
+, <b>iop_END</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a12b8af17fa18dd9f72e3e17f4df72865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индексы, управляющие разрешением на чтение или запись объектов. <br  />
+  <a href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865">Подробнее...</a><br /></td></tr>
+<tr class="separator:a12b8af17fa18dd9f72e3e17f4df72865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb4b4e0d5444451407bbd4f23b052231"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___exchange.html#gacb4b4e0d5444451407bbd4f23b052231">eMsgType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___exchange.html#ggacb4b4e0d5444451407bbd4f23b052231a694c2faaab7aa8a6e3702a42590e153e">emt_ErrorNoId</a>
+, <a class="el" href="group___data___exchange.html#ggacb4b4e0d5444451407bbd4f23b052231aa3ee8f5a9c3a6220f6b4e25938de8506">emt_TextOnly</a>
+, <a class="el" href="group___data___exchange.html#ggacb4b4e0d5444451407bbd4f23b052231ab9f0af6b9e50a736f2788ae131346b27">emt_Info</a>
+, <a class="el" href="group___data___exchange.html#ggacb4b4e0d5444451407bbd4f23b052231a9d46f0ba0802c73a003f20eae76ed4c0">emt_Warning</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___exchange.html#ggacb4b4e0d5444451407bbd4f23b052231af2ca5953bca8dc855fb1d67f33c76c15">emt_Error</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gacb4b4e0d5444451407bbd4f23b052231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип сообщения об ошибке при выводе в лог. <br  />
+  <a href="group___data___exchange.html#gacb4b4e0d5444451407bbd4f23b052231">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacb4b4e0d5444451407bbd4f23b052231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ca78c1526c8c3bc71b4c1fb6fe63a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6">eMsgDetail</a> { <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3ffb0ee9105847762d452567f9a6ae56">emd_Title</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3d1c42abacf8d43394d00a02a58fa6ea">emd_HEADError</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a970ba03e108f83ed91990b1f111bc77e">emd_HEADWarinig</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac497c546e4984ce01a9c2fc3c7adebf1">emd_HEADInfo</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a6be6e2681bf50a33da7537ffb7e2bc51">emd_HEADDefaultMsg</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3fa45c34c14adcf42d69cc9cc27fede3">emd_STOPFileOpenError</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8a0756ad52242b0529f259833fd36298">emd_STOPFileOpenErrorOrEmpty</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aaeea0d97bb626e9d32d01387ebdf8797">emd_STOPHeaderReadError</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae20825aa79dbdc3f977d50804db7d046">emd_STOPNoOrBadData</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a36ffd869f1fd48850ebbf68f275bff22">emd_STOPIncorrectStructure</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a9799c98147f53dd10013a21a958baf27">emd_STOPAddressConflict</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7f09865584eae498eff0323131157bea">emd_ErrorNoRootObject</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a60e4f513acc66fc4f7d49e200ab223ff">emd_ErrorSyntaxIncorrectFormFloat</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab5cf47803ce65bcbfdf7d5567943bead">emd_ErrorEmptyLoop</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a459429abfa003e79afaf4b1ccd74f479">emd_ErrorEmptyQueriesList</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aa208433b3ed6d0c0f4ed1cad435040a2">emd_ErrorEmptyObjectsList</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ada82f519d500bf5143403bea01426e04">emd_ErrorEmptyGeomObjectsList</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a858956cd830121391873e98a916cb2f4">emd_ErrorEmptyShellsList</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6afb916795ed206f391903f6cabea38a11">emd_ErrorEmptyListOfWrieframes</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab174cffd92f102bf296d15686b93c962">emd_ErrorEmptyCurveCompositesList</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3e4f896808feaf83a438495bcfb52f01">emd_ErrorEmptyBoundCurvesList</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3107394ae10ac1d27a3e7afc5d21bf62">emd_ErrorEmptyEdgeList</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aec80f575486672f9516133d43d61ff59">emd_ErrorEmptyFacesList</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab21db2b9c560599ca2004e3c8082c7b7">emd_ErrorEmptyReferencesList</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aece3267563787e547b4f4a48ad22a7f7">emd_ErrorEmptyOrMore2ReferencesList</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a375bfb53e5ae1864d2008a832eba7323">emd_ErrorUndefinedFaceSurfaceRef</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aad22dda8d1c05c930804b0585300d5f7">emd_ErrorUndefinedBaseCurveRef</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aa96dd0c9df829719ddca22bdc85c54de">emd_ErrorRadiusTooCloseToZero</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae10ba99ffe6afe827e61a01f1ce091c6">emd_ErrorRadiusValueNegative</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6afd1f95c03a23a01c220fc9b82ae3f854">emd_ErrorEllipseAxisTooCloseToZero</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a508960c691fd9ba735030e8f94b2f622">emd_ErrorEllipseAxisNegative</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a2ebe486dc27fccb4fab48dab4569aa77">emd_ErrorNegativeDegree</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6adf91b37aeb9f38fe96dbf18b6f064796">emd_ErrorNegativeUDegree</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a898c569b841213d0e96761d2b8317ba1">emd_ErrorNegativeVDegree</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4aca88edff0d5036de38d1967e0beea0">emd_ErrorDegreeFixImpossible</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6abef697c7dfe940d1ff905b61d22c0308">emd_ErrorPolylinePointListLess2</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aac54a02d995da8667167953ad36ae755">emd_ErrorPointListLess2</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a0d0400a28f0b8508536ee5a8ffbc8659">emd_ErrorKnotsListLess2</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a2118c75163bedb98d123bc48e070f9bc">emd_ErrorWeightsListLess2</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a933a119e07b0439dc260c5a20d5bab58">emd_ErrorUPointListLess2</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a42737ced5e4b81af1ca517665df26c0a">emd_ErrorUKnotsListLess2</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7faa174f0fa80ad7518a6bf1bda59548">emd_ErrorUWeightsListLess2</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac55a7fa23e54ce79a5e207bc549f7e4f">emd_ErrorVPointListLess2</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a478597b4ef57b1e1f1e715022495793c">emd_ErrorVKnotsListLess2</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3eda8e6f66737b807a65f562091b328d">emd_ErrorVWeightsListLess2</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1a44f2c227dc667dc682649fbe97204a">emd_ErrorListsSizeMismatch</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8a443b15fceca3ff7c8a223a8fc7065e">emd_ErrorKnotsWeightsListsOrderMismatch</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a12e156eac235adfe8043989de91beee0">emd_ErrorKnotsWeightsListsSizeMismatch</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7ddb47382f71fd111fa910b9d77a8c7e">emd_ErrorUKnotsWeightsListsSizeMismatch</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aa860b0f3fb348a931ae2ca430267cbf7">emd_ErrorVKnotsWeightsListsSizeMismatch</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a923e564fbe88234a132f93f7e0905c46">emd_ErrorSplineCurveNotCreatedUndefinedKnotsVector</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4213ea3c9bbcca989f55d7fc2f5fe1d4">emd_ErrorSplineSurfaceNotCreatedUndefinedKnotsVectors</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6afd1c721344644e27f4dd2d6910d4d417">emd_ErrorInCorrectSplineSurfaceData</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a28ff370e46d5c21f89682983928249a6">emd_WarningNoSectionTerminator</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7b94b3de2f46c3dfc7811567f1fdc08e">emd_WarningSyntaxMultipleDotInFloat</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4acb0e401e4c353d7dd2078cbb575daa">emd_WarningSyntaxMultipleEInFloat</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a9a756eb4e0f091e94c27d1a7fe278cce">emd_WarningLoopNotClosed</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6abfdeb7b3facf0463ba63edbccec063ec">emd_WarningContourNotClosed</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ad361ceddd4df5ed056c1ac9a3b4b6158">emd_WarningUndefinedRef</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a0a5d73b16f98150967902ff45dfd1950">emd_WarningToroidalSurfaceDegenerated</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3671f52f74bcba2bb5b9b0bbe90ca54e">emd_WarningUndefinedBasisCurve</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a5dece560a9e6e935657049a2307920d0">emd_WarningUndefinedSweptCurve</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae256901901d8b07bf0b93a96974fc593">emd_WarningUndefinedExtrusionDirection</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aca163ad1a195646cffd030981329e053">emd_WarningUndefinedAxis</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac1c107efe162ce9ea16cf7432882e5f8">emd_WarningUndefinedAxisOfRevolution</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ad470e38d7e36adaca6e071a25c566c54">emd_WarningUndefinedBasisSurface</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae1c2b154945f47f0221a2f55b4f52408">emd_WarningUndefinedRepresentation</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a25dd34568584266f03f20b3723f65dc1">emd_WarningUndefinedTransformationOperator</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a0ff85852519d433c336cb8f4712ae186">emd_WarningUndefinedObjectTransformBy</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aee99a042a68dc6886f771b833fa0a798">emd_WarningUndefinedObjectToTransform</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a745f9dbc1c01d90ab2a9d326e32feee4">emd_WarningUndefinedCurve</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a59a3693bc867d42283f4967c98d244b0">emd_WarningUndefinedCompositeSegment</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3310bebdbf6d5c7416f1c72e48f8894f">emd_WarningUndefinedDirection</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a77ae12d5f5b58a3b500a0a6f9cde7c51">emd_WarningUndefinedAxisDirection</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a83e222eb14eea41c42a7122b6349e29f">emd_WarningDegeneratedItemWasSkipped</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4816cda9283c7d369f8ec1f976a3943d">emd_WarningFloatParceFailureDefaultUsed</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac491aeb0214ba9ef165cba77d028e35e">emd_WarningSameShapeEdgeTwiceInLoop</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a6731db2ad29b0f8694d6cdb4061c3b66">emd_WarningIncorrectFaceWasNotAddedToShell</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a74f03c77c22b7cf2c07a03b0062f0794">emd_WarningBoundsNotConnectedWithSeams</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a81a96015189c200b311c6800aaf39ee5">emd_WarningIntCurveWasReplacedBySegment</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6af25598fe396b4d4f66004bf12898adac">emd_WarningOpenSolidsNotSupported</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8f9ef6092ccec186e777496f51d4e807">emd_WarningOpenMeshesNotSupported</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6adf66b24ec165035bfec05cc20a953ff5">emd_WarningClosedSolidBecameOpenMesh</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a392748adec66f03d9cce26798451029e">emd_WarningEmptyMeshSkipped</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6accb183afb4bb35e02f895f190f9680e1">emd_WarningTriangulationFailed</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a66a2bac919dc00f4879ee85b1d7aa77a">emd_MessageWeightsFilled</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1681decbe1bc4083c64b1fb073ef4233">emd_ErrorEdgeCurveFlagTSingleRedefinition</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6abd654dfcea69eb0fd0a95a56b81dc58e">emd_ErrorEdgeCurveFlagFSingleRedefinition</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a5fbb7be0a7db29469ad88a8bfea75e02">emd_ErrorSTEPEdgeCurveFlagTMultipleRedefinition</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a91dafd9d1a95255531525a4c5fc27879">emd_ErrorSTEPEdgeCurveFlagFMultipleRedefinition</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aec6ad2cadc0ea23e3688e2c98500e6bb">emd_ErrorSTEPUndefinedFaceGeometry</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a13aabb164db29084f5212f50a9addb44">emd_ErrorSTEPSyntaxMultipleDotInEnum</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7ab9c96394679ca25666eeca13b6a0c6">emd_WarningSTEPPointCorrection</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a5f95af4db3bf2fac005d3036cb3ea2dd">emd_WarningSTEPEdgeCurveByVertices</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a332b1665857e00c6476c3ffcc0b080a2">emd_MessageSTEPFlagChangedToF</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a605a685e8b4aa9b5cbab649f0b944025">emd_MessageSTEPFlagChangedToT</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a899b62e39c584c7e257aa4c32dc5b6ad">emd_WarningBooleanUndefined</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a61bef31da5461440cd6b9e1e1a21f034">emd_WarningACISUnsupportedInterpoleCurveType</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a31ca460c70343d9756c1c5f8c7c8743a">emd_WarningACISUnsupportedParametricCurveType</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6afab7d108e4e2f0fd6e17c99e680c4df9">emd_WarningACISUnsupportedSplineSurfaceType</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6acb4b7d137c1a2d3346d6c10068e2938d">emd_ErrorACISUnsupportedVersion</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6af940ad03bcfc1010c3adfc16e72652a0">emd_WarningACISCannotImportEntityId</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1b1d05e4d91ed518d398030538ce12c0">emd_WarningACISIncorrectIntAttribute</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a86218987d72f3ebe6d4b76c1dd7fec50">emd_WarningVRMLGridDuplicatesInMeshes</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a63b37a7b1ad2d6bf8f6dbb7d271e0178">emd_WarningACISLawIntCurveIsNotCreated</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac25b776b38ebedcff606b37e1bb03a34">emd_ErrorIGESIncorrectExternalReference</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8680a639f23b75b74cf9c270fe44f72e">emd_ErrorSTLTooManyTrianglesForBinary</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a16a77bb5718c72c34959e6a10aa54f40">emd_ErrorXTUnsupportedVersion</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a188ce802b99981193bb4eb70d8784ac9">emd_ErrorJTUnsupportedVersion</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7adeab2efddfe0e3a62f04edc963a66b">emd_ErrorStringEncoding</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a6f1f5a12cdc273fb84da062396926ad6">emd_WarningCurveParametrizationCorrected</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ad4ddd755fb53b047fdd952a6537a1fab">emd_ErrorJTDuplicatedTriangles</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7112e25df8ff6444a9f0b349366f82a4">emd_WarningCreateEdgeBadInput</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1af872d8b2a69de0e54f6936cb06dfbb">emd_PluginGeneralProblem</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a796db65ee7d80cbfea59e8d432de53a0">emd_PluginLicenceProblem</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a81c7d4702eee3239100dac7857f21c7f">emd_PluginFunctionalityLimitation</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a891e626fe6b0f3536d9045a5e41dd3fe">emd_PluginImportPartialSuccess</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a9a6748214897709d7b3e8ada13a62fb5">emd_ErrorModelHasNoGeometry</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a35ac6256f7e6d9db1b7a9db4c9cfd51f">emd_ErrorReferencedModelFileNotFound</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae1aa1b39027779bdcb5ed144a7e8c4c3">emd_InfoMetadataSuccessfullyImported</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac2d0dd7910eabb881137a3177e0d5505">emd_WarningMetadataPartiallyImported</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab74911511d211f00739ac5d06a16c994">emd_InfoMetadataNotSupported</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6af825ff883a2d9487abbc0ccd8a7ec9e9">emd_InfoModelContainsNoMetadata</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4e03005c7cededee3abee424d49fbe6e">emd_ErrorInvalidTargetDirectoryForMetadata</a>
+, <br />
+&#160;&#160;<a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6af9a8ba1a4b7ae2dd8623e7eb0c330279">emd_ErrorMetadataFileWriteFailure</a>
+, <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6aacb15ce1255259fc4eb33f65bb7a8234">emd_ErrorMetadataImportError</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:aa6ca78c1526c8c3bc71b4c1fb6fe63a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код подробного сообщения об ошибке при выводе в лог. <br  />
+  <a href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa6ca78c1526c8c3bc71b4c1fb6fe63a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab15cfc38b1d04f466769f5a2c83b5aa6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exchange___interface.html#gab15cfc38b1d04f466769f5a2c83b5aa6">eLoggingMode</a> { <a class="el" href="group___exchange___interface.html#ggab15cfc38b1d04f466769f5a2c83b5aa6a95c1b64b816ad7dc1712f3073d2395f8">elm_LoggingOff</a>
+, <a class="el" href="group___exchange___interface.html#ggab15cfc38b1d04f466769f5a2c83b5aa6a80eda9a4bbdaf5527c8304de22a4403b">elm_LoggingAll</a>
+, <a class="el" href="group___exchange___interface.html#ggab15cfc38b1d04f466769f5a2c83b5aa6ace68f62d601cfa82395dad00100de8ef">elm_LoggingForId</a>
+ }</td></tr>
+<tr class="memdesc:gab15cfc38b1d04f466769f5a2c83b5aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим логирования. <br  />
+  <a href="group___exchange___interface.html#gab15cfc38b1d04f466769f5a2c83b5aa6">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab15cfc38b1d04f466769f5a2c83b5aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Настройки импорта и экспорта. </p>
+<p>Интерфейс настроек и предопределённая реализация <a class="el" href="class_conv_convertor_property3_d.html" title="Предопределённая реализация интерфейса свойств конвертера.">ConvConvertorProperty3D</a>. </p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="a2c4a12a017492a00c7096ce9a0e62c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4a12a017492a00c7096ce9a0e62c29">&#9670;&nbsp;</a></span>LENGTH_UNIT_MM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LENGTH_UNIT_MM&#160;&#160;&#160;1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Константы единиц измерения. <br  />
+ </p>
+<p>Миллиметры. </p>
+
+</div>
+</div>
+<a id="a18e1b4a615d11acd16dc6ffa58126eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e1b4a615d11acd16dc6ffa58126eea">&#9670;&nbsp;</a></span>MASS_UNIT_GM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MASS_UNIT_GM&#160;&#160;&#160;1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Константы единиц массы. </p>
+<p>Граммы. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="ad12d02719cad2128b4d15a272183bcd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12d02719cad2128b4d15a272183bcd8">&#9670;&nbsp;</a></span>MbeConverterStrings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="conv__exchange__settings_8h.html#ad12d02719cad2128b4d15a272183bcd8">MbeConverterStrings</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Индексы строк, передаваемых через конвертер. <br  />
+ </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8ab9fa270fb4ead6b918d24b08551a3da9"></a>cvs_BEGIN&#160;</td><td class="fielddoc"><p>Для удобства перебора. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8a607f763bfe15461be9af24b1b788195e"></a>cvs_STEPAuthor&#160;</td><td class="fielddoc"><p>Автор для конвертера STEP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8a36884994c87eb97aefbac4604fcc40e9"></a>cvs_STEPOrganization&#160;</td><td class="fielddoc"><p>Организация для конвертера STEP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8adedc28789b353a55c3b7fe06c9dafa33"></a>cvs_STEPComment&#160;</td><td class="fielddoc"><p>Комментарий файла формата STEP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8a52983330969962172781db26dcb95aa0"></a>cvs_CAD_NAME&#160;</td><td class="fielddoc"><p>Название САПР при экспорте. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8af63d604cde7377c717dfa79303fd2c38"></a>cvs_STEPPreprocessorVersion&#160;</td><td class="fielddoc"><p>Поле Preprocerssor version из формата STEP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8a2c83329dc9159c69832a4356bcb53e2e"></a>cvs_STEPAuthorization&#160;</td><td class="fielddoc"><p>Поле Authorization из формата STEP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad12d02719cad2128b4d15a272183bcd8a1fc084e2e1c91ae5cc651c1169743e37"></a>cvs_END&#160;</td><td class="fielddoc"><p>Для удобства перебора. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a12b8af17fa18dd9f72e3e17f4df72865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b8af17fa18dd9f72e3e17f4df72865">&#9670;&nbsp;</a></span>MbeIOPermiss</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="conv__exchange__settings_8h.html#a12b8af17fa18dd9f72e3e17f4df72865">MbeIOPermiss</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Индексы, управляющие разрешением на чтение или запись объектов. <br  />
+ </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865aabdaf990c7ac6f3b74508eb758048498"></a>iop_rSolid&#160;</td><td class="fielddoc"><p>Разрешение на чтение твёрдых тел. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865aae93a31a6cc40a151f9543af2454e936"></a>iop_wSolid&#160;</td><td class="fielddoc"><p>Разрешение на запись твёрдых тел. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a2a624cb248bd5b41e6689a21279ccd3b"></a>iop_rSurface&#160;</td><td class="fielddoc"><p>Разрешение на чтение поверхностей. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865ad2d0524a517d239c8a823652f6891635"></a>iop_wSurface&#160;</td><td class="fielddoc"><p>Разрешение на запись поверхностей. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a9d56223921ad682b4d3efc08e47c1e58"></a>iop_rCurve&#160;</td><td class="fielddoc"><p>Разрешение на чтение кривых. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865af558e9d2c8756cfdb41ae26e7bdce906"></a>iop_wCurve&#160;</td><td class="fielddoc"><p>Разрешение на запись кривых. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a547c751953dcd3261dac47eff142c45c"></a>iop_rDrafts&#160;</td><td class="fielddoc"><p>Разрешение на чтение эскизов (не применяется). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865abb5ee668521ebceb1d095aa0aa509c8a"></a>iop_wDrafts&#160;</td><td class="fielddoc"><p>Разрешение на запись эскизов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865af1cec07dbbfb8af9d4522f4d57cde3fa"></a>iop_rInvisible&#160;</td><td class="fielddoc"><p>Разрешение на чтение невидимых объектов (не применяется). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a926231cdeed7713e7a54946829da5e9c"></a>iop_wInvisible&#160;</td><td class="fielddoc"><p>Разрешение на запись невидимых объектов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865abe498185328386c1c66157624a67867a"></a>iop_rPoint&#160;</td><td class="fielddoc"><p>Разрешение на чтение точек. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865ad7460c0193053f363caca89d94a636ba"></a>iop_wPoint&#160;</td><td class="fielddoc"><p>Разрешение на запись точек. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865adf281a4c43ed0f38c811868836b46fcc"></a>iop_rDocInfo&#160;</td><td class="fielddoc"><p>Разрешение на чтение информации о документе (автор, организация, комментарии). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865aac629d77ff3e3e3fb1315db74d9d23ef"></a>iop_wDocInfo&#160;</td><td class="fielddoc"><p>Разрешение на запись информации о документе (автор, организация, комментарии). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865abab9df6a46ce113271a17371811904a2"></a>iop_rTextDescription&#160;</td><td class="fielddoc"><p>Разрешение на чтение технических требований. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a0eaa2119c8264a32f47ea1fb8096e441"></a>iop_wTextDescription&#160;</td><td class="fielddoc"><p>Разрешение на запись технических требований. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a9d751c27b2ede8481fd178378a391978"></a>iop_rDimensions&#160;</td><td class="fielddoc"><p>Разрешение на чтение размеров. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a083cc08535afc44dfa42cc0aa542b013"></a>iop_wDimensions&#160;</td><td class="fielddoc"><p>Разрешение на запись размеров. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a3a97935d0a0a14a00ec9d7a009898240"></a>iop_rAttributes&#160;</td><td class="fielddoc"><p>Разрешение на чтение атрибутов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865ac98c7eabcc57c881de228189263ec653"></a>iop_wAttributes&#160;</td><td class="fielddoc"><p>Разрешение на запись атрибутов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a46bf6e9a7a3f45e4abbdf3fe4d4dc929"></a>iop_rBRep&#160;</td><td class="fielddoc"><p>Разрешение на чтение форм изделий в граничном представлении (только в JT). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a78bfce6c179063a8337be17c2f3970fd"></a>iop_wBRep&#160;</td><td class="fielddoc"><p>Разрешение на запись форм изделий в граничном представлении (только в JT). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a2a24fd2332b4b07f6be6f9647acd8b6e"></a>iop_rPolygonal&#160;</td><td class="fielddoc"><p>Разрешение на чтение полигональных форм изделий. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865afd919c40e7f029d0a1b546099ca5a3a3"></a>iop_wPolygonal&#160;</td><td class="fielddoc"><p>Разрешение на запись полигональных форм изделий. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a0ca6471bee83690d25021060a5922acb"></a>iop_rLOD0&#160;</td><td class="fielddoc"><p>Разрешение на чтение полигональных форм изделий уровня детализации 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a6e06794b9642378e7280276d20bbf1e9"></a>iop_wLOD0&#160;</td><td class="fielddoc"><p>Разрешение на запись полигональных форм изделий уровня детализации 0. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a9a36e5dc497a7cd1f94ed1767425eb25"></a>iop_rAssociated&#160;</td><td class="fielddoc"><p>Разрешение на чтение ассоциированной геометрии (резьбы и др). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a8be14866013ac867c96c6fbaa4c12ca7"></a>iop_wAssociated&#160;</td><td class="fielddoc"><p>Разрешение на запись ассоциированной геометрии (резьбы и др). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a2876cc2548288ae1568d535a417fb5a8"></a>iop_rDensity&#160;</td><td class="fielddoc"><p>Разрешение на чтение единиц плотности. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865ac76b72e853073fe4f1ad59efe8799ebc"></a>iop_wDensity&#160;</td><td class="fielddoc"><p>Разрешение на запись единиц плотности. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865af2b1413309fb2e111b440640cc057c73"></a>iop_rValidationProperties&#160;</td><td class="fielddoc"><p>Разрешение на чтение контрольных параметров - объёма, площади поверхности, центра масс. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865ab570bf8812a4142177cc4fceeeb8ddfc"></a>iop_wValidationProperties&#160;</td><td class="fielddoc"><p>Разрешение на запись контрольных параметров - объёма, площади поверхности, центра масс. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865ab295ab444a2338f53dde93ebece1a017"></a>iop_rStyle&#160;</td><td class="fielddoc"><p>Разрешение на чтение элементов оформления (цвет, начертание, и т.п.). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a81b4d4ba4cfe2f09fdc0edc13f18ce35"></a>iop_wStyle&#160;</td><td class="fielddoc"><p>Разрешение на запись элементов оформления (цвет, начертание, и т.п.). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865aae14d0cb45802e357dfadeba72532fe4"></a>iop_rCS&#160;</td><td class="fielddoc"><p>Разрешение на чтение систем координат и конструкционных осей. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a5d45b30d87842571feab9773784d57d4"></a>iop_wCS&#160;</td><td class="fielddoc"><p>Разрешение на запись систем координат и конструкционных осей. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865ad74137c6cd242c701de59b75ca0b3286"></a>iop_rBounds&#160;</td><td class="fielddoc"><p>Разрешение на чтение объектов, ограничивающих объем или площадь. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a12b8af17fa18dd9f72e3e17f4df72865a09cbd2b1ddadfa4c7f72e4bb3b8eb252"></a>iop_wBounds&#160;</td><td class="fielddoc"><p>Разрешение на запись объектов, ограничивающих объем или площадь. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ca78c1526c8c3bc71b4c1fb6fe63a6">&#9670;&nbsp;</a></span>eMsgDetail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="conv__exchange__settings_8h.html#aa6ca78c1526c8c3bc71b4c1fb6fe63a6">eMsgDetail</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Код подробного сообщения об ошибке при выводе в лог. <br  />
+ </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3ffb0ee9105847762d452567f9a6ae56"></a>emd_Title&#160;</td><td class="fielddoc"><p>Заголовок файла. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3d1c42abacf8d43394d00a02a58fa6ea"></a>emd_HEADError&#160;</td><td class="fielddoc"><p>Тип сообщения - ошибка. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a970ba03e108f83ed91990b1f111bc77e"></a>emd_HEADWarinig&#160;</td><td class="fielddoc"><p>Тип сообщения - Предупреждение. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac497c546e4984ce01a9c2fc3c7adebf1"></a>emd_HEADInfo&#160;</td><td class="fielddoc"><p>Тип сообщения - Информация. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a6be6e2681bf50a33da7537ffb7e2bc51"></a>emd_HEADDefaultMsg&#160;</td><td class="fielddoc"><p>Тип сообщения - Сообщение. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3fa45c34c14adcf42d69cc9cc27fede3"></a>emd_STOPFileOpenError&#160;</td><td class="fielddoc"><p>Ошибка открытия файла. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8a0756ad52242b0529f259833fd36298"></a>emd_STOPFileOpenErrorOrEmpty&#160;</td><td class="fielddoc"><p>Ошибка открытия файла или файл пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aaeea0d97bb626e9d32d01387ebdf8797"></a>emd_STOPHeaderReadError&#160;</td><td class="fielddoc"><p>Не удалось прочитать заголовок файла. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae20825aa79dbdc3f977d50804db7d046"></a>emd_STOPNoOrBadData&#160;</td><td class="fielddoc"><p>Файл не содержит данных или их не удалось распознать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a36ffd869f1fd48850ebbf68f275bff22"></a>emd_STOPIncorrectStructure&#160;</td><td class="fielddoc"><p>Неверная структура файла. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a9799c98147f53dd10013a21a958baf27"></a>emd_STOPAddressConflict&#160;</td><td class="fielddoc"><p>Данный адрес имеют два различных объекта. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7f09865584eae498eff0323131157bea"></a>emd_ErrorNoRootObject&#160;</td><td class="fielddoc"><p>Не найден корневой объект. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a60e4f513acc66fc4f7d49e200ab223ff"></a>emd_ErrorSyntaxIncorrectFormFloat&#160;</td><td class="fielddoc"><p>Невозможно прочитать действительную константу. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab5cf47803ce65bcbfdf7d5567943bead"></a>emd_ErrorEmptyLoop&#160;</td><td class="fielddoc"><p>Цикл грани пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a459429abfa003e79afaf4b1ccd74f479"></a>emd_ErrorEmptyQueriesList&#160;</td><td class="fielddoc"><p>Список запросов пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aa208433b3ed6d0c0f4ed1cad435040a2"></a>emd_ErrorEmptyObjectsList&#160;</td><td class="fielddoc"><p>Список объектов пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ada82f519d500bf5143403bea01426e04"></a>emd_ErrorEmptyGeomObjectsList&#160;</td><td class="fielddoc"><p>Список геометрических объектов пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a858956cd830121391873e98a916cb2f4"></a>emd_ErrorEmptyShellsList&#160;</td><td class="fielddoc"><p>Список оболочек пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6afb916795ed206f391903f6cabea38a11"></a>emd_ErrorEmptyListOfWrieframes&#160;</td><td class="fielddoc"><p>Список каркасов пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab174cffd92f102bf296d15686b93c962"></a>emd_ErrorEmptyCurveCompositesList&#160;</td><td class="fielddoc"><p>Список компонент составной кривой пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3e4f896808feaf83a438495bcfb52f01"></a>emd_ErrorEmptyBoundCurvesList&#160;</td><td class="fielddoc"><p>Список граничных кривых пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3107394ae10ac1d27a3e7afc5d21bf62"></a>emd_ErrorEmptyEdgeList&#160;</td><td class="fielddoc"><p>Список рёбер пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aec80f575486672f9516133d43d61ff59"></a>emd_ErrorEmptyFacesList&#160;</td><td class="fielddoc"><p>Список граней пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab21db2b9c560599ca2004e3c8082c7b7"></a>emd_ErrorEmptyReferencesList&#160;</td><td class="fielddoc"><p>Список ссылок пуст. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aece3267563787e547b4f4a48ad22a7f7"></a>emd_ErrorEmptyOrMore2ReferencesList&#160;</td><td class="fielddoc"><p>Список ссылок пуст или содержит более 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a375bfb53e5ae1864d2008a832eba7323"></a>emd_ErrorUndefinedFaceSurfaceRef&#160;</td><td class="fielddoc"><p>Ссылка на базовую поверхность грани не определена. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aad22dda8d1c05c930804b0585300d5f7"></a>emd_ErrorUndefinedBaseCurveRef&#160;</td><td class="fielddoc"><p>Ссылка на базовую кривую не определена. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aa96dd0c9df829719ddca22bdc85c54de"></a>emd_ErrorRadiusTooCloseToZero&#160;</td><td class="fielddoc"><p>Радиус слишком мал. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae10ba99ffe6afe827e61a01f1ce091c6"></a>emd_ErrorRadiusValueNegative&#160;</td><td class="fielddoc"><p>Отрицательное значение радиуса. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6afd1f95c03a23a01c220fc9b82ae3f854"></a>emd_ErrorEllipseAxisTooCloseToZero&#160;</td><td class="fielddoc"><p>Длина полуоси эллипса слишком мала. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a508960c691fd9ba735030e8f94b2f622"></a>emd_ErrorEllipseAxisNegative&#160;</td><td class="fielddoc"><p>Отрицательная длина полуоси эллипса. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a2ebe486dc27fccb4fab48dab4569aa77"></a>emd_ErrorNegativeDegree&#160;</td><td class="fielddoc"><p>Отрицательный порядок сплайна. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6adf91b37aeb9f38fe96dbf18b6f064796"></a>emd_ErrorNegativeUDegree&#160;</td><td class="fielddoc"><p>Отрицательный порядок сплайновой поверхности по U. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a898c569b841213d0e96761d2b8317ba1"></a>emd_ErrorNegativeVDegree&#160;</td><td class="fielddoc"><p>Отрицательный порядок сплайновой поверхности по V. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4aca88edff0d5036de38d1967e0beea0"></a>emd_ErrorDegreeFixImpossible&#160;</td><td class="fielddoc"><p>Невозможно исправить порядок сплайна. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6abef697c7dfe940d1ff905b61d22c0308"></a>emd_ErrorPolylinePointListLess2&#160;</td><td class="fielddoc"><p>Список точек ломаной содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aac54a02d995da8667167953ad36ae755"></a>emd_ErrorPointListLess2&#160;</td><td class="fielddoc"><p>Список точек содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a0d0400a28f0b8508536ee5a8ffbc8659"></a>emd_ErrorKnotsListLess2&#160;</td><td class="fielddoc"><p>Список узлов содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a2118c75163bedb98d123bc48e070f9bc"></a>emd_ErrorWeightsListLess2&#160;</td><td class="fielddoc"><p>Список весов содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a933a119e07b0439dc260c5a20d5bab58"></a>emd_ErrorUPointListLess2&#160;</td><td class="fielddoc"><p>Список точек по U содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a42737ced5e4b81af1ca517665df26c0a"></a>emd_ErrorUKnotsListLess2&#160;</td><td class="fielddoc"><p>Список узлов по U содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7faa174f0fa80ad7518a6bf1bda59548"></a>emd_ErrorUWeightsListLess2&#160;</td><td class="fielddoc"><p>Список весов по U содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac55a7fa23e54ce79a5e207bc549f7e4f"></a>emd_ErrorVPointListLess2&#160;</td><td class="fielddoc"><p>Список точек по V содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a478597b4ef57b1e1f1e715022495793c"></a>emd_ErrorVKnotsListLess2&#160;</td><td class="fielddoc"><p>Список узлов по V содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3eda8e6f66737b807a65f562091b328d"></a>emd_ErrorVWeightsListLess2&#160;</td><td class="fielddoc"><p>Список весов по V содержит менее 2 элементов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1a44f2c227dc667dc682649fbe97204a"></a>emd_ErrorListsSizeMismatch&#160;</td><td class="fielddoc"><p>Размеры списков не согласуются. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8a443b15fceca3ff7c8a223a8fc7065e"></a>emd_ErrorKnotsWeightsListsOrderMismatch&#160;</td><td class="fielddoc"><p>Размеры списков узлов и весов не согласуются с порядком сплайна. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a12e156eac235adfe8043989de91beee0"></a>emd_ErrorKnotsWeightsListsSizeMismatch&#160;</td><td class="fielddoc"><p>Размеры списков узлов и весов не согласуются. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7ddb47382f71fd111fa910b9d77a8c7e"></a>emd_ErrorUKnotsWeightsListsSizeMismatch&#160;</td><td class="fielddoc"><p>Размеры списков узлов и весов по U не согласуются. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aa860b0f3fb348a931ae2ca430267cbf7"></a>emd_ErrorVKnotsWeightsListsSizeMismatch&#160;</td><td class="fielddoc"><p>Размеры списков узлов и весов по V не согласуются. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a923e564fbe88234a132f93f7e0905c46"></a>emd_ErrorSplineCurveNotCreatedUndefinedKnotsVector&#160;</td><td class="fielddoc"><p>Сплайновая кривая не создана - не определёны узлы. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4213ea3c9bbcca989f55d7fc2f5fe1d4"></a>emd_ErrorSplineSurfaceNotCreatedUndefinedKnotsVectors&#160;</td><td class="fielddoc"><p>Сплайновая поверхность не создана - не определёны узлы. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6afd1c721344644e27f4dd2d6910d4d417"></a>emd_ErrorInCorrectSplineSurfaceData&#160;</td><td class="fielddoc"><p>Неверно заданы параметры NURBS поверхности. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a28ff370e46d5c21f89682983928249a6"></a>emd_WarningNoSectionTerminator&#160;</td><td class="fielddoc"><p>Маркер завершения раздела не обнаружен. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7b94b3de2f46c3dfc7811567f1fdc08e"></a>emd_WarningSyntaxMultipleDotInFloat&#160;</td><td class="fielddoc"><p>Повторяющаяся точка в действительном числе. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4acb0e401e4c353d7dd2078cbb575daa"></a>emd_WarningSyntaxMultipleEInFloat&#160;</td><td class="fielddoc"><p>Повторяющаяся E в действительном числе. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a9a756eb4e0f091e94c27d1a7fe278cce"></a>emd_WarningLoopNotClosed&#160;</td><td class="fielddoc"><p>Цикл не замкнут. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6abfdeb7b3facf0463ba63edbccec063ec"></a>emd_WarningContourNotClosed&#160;</td><td class="fielddoc"><p>Контур не замкнут. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ad361ceddd4df5ed056c1ac9a3b4b6158"></a>emd_WarningUndefinedRef&#160;</td><td class="fielddoc"><p>Ссылка не определена. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a0a5d73b16f98150967902ff45dfd1950"></a>emd_WarningToroidalSurfaceDegenerated&#160;</td><td class="fielddoc"><p>Тороидальная поверхность вырождена. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3671f52f74bcba2bb5b9b0bbe90ca54e"></a>emd_WarningUndefinedBasisCurve&#160;</td><td class="fielddoc"><p>Не определена базовая кривая. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a5dece560a9e6e935657049a2307920d0"></a>emd_WarningUndefinedSweptCurve&#160;</td><td class="fielddoc"><p>Не определена образующая кривая. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae256901901d8b07bf0b93a96974fc593"></a>emd_WarningUndefinedExtrusionDirection&#160;</td><td class="fielddoc"><p>Не определено направление выдавливания. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aca163ad1a195646cffd030981329e053"></a>emd_WarningUndefinedAxis&#160;</td><td class="fielddoc"><p>Не определена ось. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac1c107efe162ce9ea16cf7432882e5f8"></a>emd_WarningUndefinedAxisOfRevolution&#160;</td><td class="fielddoc"><p>Не определена ось вращения. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ad470e38d7e36adaca6e071a25c566c54"></a>emd_WarningUndefinedBasisSurface&#160;</td><td class="fielddoc"><p>Не определена базовая поверхность. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae1c2b154945f47f0221a2f55b4f52408"></a>emd_WarningUndefinedRepresentation&#160;</td><td class="fielddoc"><p>Не определено представление. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a25dd34568584266f03f20b3723f65dc1"></a>emd_WarningUndefinedTransformationOperator&#160;</td><td class="fielddoc"><p>Не определён оператор преобразования. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a0ff85852519d433c336cb8f4712ae186"></a>emd_WarningUndefinedObjectTransformBy&#160;</td><td class="fielddoc"><p>Не определён объект, по которому ведётся преобразование. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aee99a042a68dc6886f771b833fa0a798"></a>emd_WarningUndefinedObjectToTransform&#160;</td><td class="fielddoc"><p>Не определён преобразуемый объект. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a745f9dbc1c01d90ab2a9d326e32feee4"></a>emd_WarningUndefinedCurve&#160;</td><td class="fielddoc"><p>Не определена кривая. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a59a3693bc867d42283f4967c98d244b0"></a>emd_WarningUndefinedCompositeSegment&#160;</td><td class="fielddoc"><p>Не определён сегмент составной кривой. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a3310bebdbf6d5c7416f1c72e48f8894f"></a>emd_WarningUndefinedDirection&#160;</td><td class="fielddoc"><p>Не определено направление. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a77ae12d5f5b58a3b500a0a6f9cde7c51"></a>emd_WarningUndefinedAxisDirection&#160;</td><td class="fielddoc"><p>Не определено направление оси. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a83e222eb14eea41c42a7122b6349e29f"></a>emd_WarningDegeneratedItemWasSkipped&#160;</td><td class="fielddoc"><p>Проигнорирован (пропущен) вырожденный объект. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4816cda9283c7d369f8ec1f976a3943d"></a>emd_WarningFloatParceFailureDefaultUsed&#160;</td><td class="fielddoc"><p>Ошибка разпознавания числа с плавающей точкой, подставлено значение по умолчанию. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac491aeb0214ba9ef165cba77d028e35e"></a>emd_WarningSameShapeEdgeTwiceInLoop&#160;</td><td class="fielddoc"><p>В цикле дважды встречается одинаковое ребро. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a6731db2ad29b0f8694d6cdb4061c3b66"></a>emd_WarningIncorrectFaceWasNotAddedToShell&#160;</td><td class="fielddoc"><p>Некорректная грань не была добавлена в оболочку. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a74f03c77c22b7cf2c07a03b0062f0794"></a>emd_WarningBoundsNotConnectedWithSeams&#160;</td><td class="fielddoc"><p>Границы замкнутой грани не стыкуются со швами. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a81a96015189c200b311c6800aaf39ee5"></a>emd_WarningIntCurveWasReplacedBySegment&#160;</td><td class="fielddoc"><p>Кривая пересечения была заменена отрезком. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6af25598fe396b4d4f66004bf12898adac"></a>emd_WarningOpenSolidsNotSupported&#160;</td><td class="fielddoc"><p>Формат не поддерживает запись незамкнутых тел. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8f9ef6092ccec186e777496f51d4e807"></a>emd_WarningOpenMeshesNotSupported&#160;</td><td class="fielddoc"><p>Формат не поддерживает запись незамкнутых полигональных объектов. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6adf66b24ec165035bfec05cc20a953ff5"></a>emd_WarningClosedSolidBecameOpenMesh&#160;</td><td class="fielddoc"><p>В результате триангуляции замкнутого тела сформировался незамкнутый полигональный объект. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a392748adec66f03d9cce26798451029e"></a>emd_WarningEmptyMeshSkipped&#160;</td><td class="fielddoc"><p>Пропущен полигональный объект, не содержащий триангуляций. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6accb183afb4bb35e02f895f190f9680e1"></a>emd_WarningTriangulationFailed&#160;</td><td class="fielddoc"><p>Не удалось выполнить триангуляцию. Объект пропущен. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a66a2bac919dc00f4879ee85b1d7aa77a"></a>emd_MessageWeightsFilled&#160;</td><td class="fielddoc"><p>Веса заданы. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1681decbe1bc4083c64b1fb073ef4233"></a>emd_ErrorEdgeCurveFlagTSingleRedefinition&#160;</td><td class="fielddoc"><p>При создании ребра в конвертере дважды указана грань с флагом .T.. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6abd654dfcea69eb0fd0a95a56b81dc58e"></a>emd_ErrorEdgeCurveFlagFSingleRedefinition&#160;</td><td class="fielddoc"><p>При создании ребра в конвертере дважды указана грань с флагом .F.. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a5fbb7be0a7db29469ad88a8bfea75e02"></a>emd_ErrorSTEPEdgeCurveFlagTMultipleRedefinition&#160;</td><td class="fielddoc"><p>При создании ребра в конвертере STEP более чем дважды указана грань с флагом .T.. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a91dafd9d1a95255531525a4c5fc27879"></a>emd_ErrorSTEPEdgeCurveFlagFMultipleRedefinition&#160;</td><td class="fielddoc"><p>При создании ребра в конвертере STEP более чем дважды указана грань с флагом .F.. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aec6ad2cadc0ea23e3688e2c98500e6bb"></a>emd_ErrorSTEPUndefinedFaceGeometry&#160;</td><td class="fielddoc"><p>Не определена геометрия грани в конвертере STEP. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a13aabb164db29084f5212f50a9addb44"></a>emd_ErrorSTEPSyntaxMultipleDotInEnum&#160;</td><td class="fielddoc"><p>Синтаксическая ошибка в файле формата STEP - в перечислении символ "." встречается более 1 раза подряд. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7ab9c96394679ca25666eeca13b6a0c6"></a>emd_WarningSTEPPointCorrection&#160;</td><td class="fielddoc"><p>Скорректированы координаты точки. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a5f95af4db3bf2fac005d3036cb3ea2dd"></a>emd_WarningSTEPEdgeCurveByVertices&#160;</td><td class="fielddoc"><p>Кривая ребра скорректирована с учётом координат вершин. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a332b1665857e00c6476c3ffcc0b080a2"></a>emd_MessageSTEPFlagChangedToF&#160;</td><td class="fielddoc"><p>Произведена замена флага на .F.. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a605a685e8b4aa9b5cbab649f0b944025"></a>emd_MessageSTEPFlagChangedToT&#160;</td><td class="fielddoc"><p>Произведена замена флага на .T.. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a899b62e39c584c7e257aa4c32dc5b6ad"></a>emd_WarningBooleanUndefined&#160;</td><td class="fielddoc"><p>Булево значение не определено. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a61bef31da5461440cd6b9e1e1a21f034"></a>emd_WarningACISUnsupportedInterpoleCurveType&#160;</td><td class="fielddoc"><p>Данный подтип ACIS интерполяционной кривой не поддерживается. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a31ca460c70343d9756c1c5f8c7c8743a"></a>emd_WarningACISUnsupportedParametricCurveType&#160;</td><td class="fielddoc"><p>Данный подтип ACIS параметрической кривой не поддерживается. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6afab7d108e4e2f0fd6e17c99e680c4df9"></a>emd_WarningACISUnsupportedSplineSurfaceType&#160;</td><td class="fielddoc"><p>Данный подтип ACIS сплайновой поверхности не поддерживается. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6acb4b7d137c1a2d3346d6c10068e2938d"></a>emd_ErrorACISUnsupportedVersion&#160;</td><td class="fielddoc"><p>Данная версия ACIS NT не поддерживается. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6af940ad03bcfc1010c3adfc16e72652a0"></a>emd_WarningACISCannotImportEntityId&#160;</td><td class="fielddoc"><p>Не удалось импортировать объект с данным Id. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1b1d05e4d91ed518d398030538ce12c0"></a>emd_WarningACISIncorrectIntAttribute&#160;</td><td class="fielddoc"><p>Некорректный целочисленный атрибут. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a86218987d72f3ebe6d4b76c1dd7fec50"></a>emd_WarningVRMLGridDuplicatesInMeshes&#160;</td><td class="fielddoc"><p>Присутствуют дубликаты объектов в сетках. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a63b37a7b1ad2d6bf8f6dbb7d271e0178"></a>emd_WarningACISLawIntCurveIsNotCreated&#160;</td><td class="fielddoc"><p>Кривая по закону не создана. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac25b776b38ebedcff606b37e1bb03a34"></a>emd_ErrorIGESIncorrectExternalReference&#160;</td><td class="fielddoc"><p>Неверное имя внешней ссылки. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a8680a639f23b75b74cf9c270fe44f72e"></a>emd_ErrorSTLTooManyTrianglesForBinary&#160;</td><td class="fielddoc"><p>Триангуляция исходной модели содержит больше треугольников, чем допустимо стандартом ( не выражается 32-битным беззнаковым числом ) ( by BUG_71422 ). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a16a77bb5718c72c34959e6a10aa54f40"></a>emd_ErrorXTUnsupportedVersion&#160;</td><td class="fielddoc"><p>Данная версия X_T не поддерживается. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a188ce802b99981193bb4eb70d8784ac9"></a>emd_ErrorJTUnsupportedVersion&#160;</td><td class="fielddoc"><p>Данная версия JT не поддерживается. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7adeab2efddfe0e3a62f04edc963a66b"></a>emd_ErrorStringEncoding&#160;</td><td class="fielddoc"><p>Ошибка кодировки строки. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a6f1f5a12cdc273fb84da062396926ad6"></a>emd_WarningCurveParametrizationCorrected&#160;</td><td class="fielddoc"><p>Исправлена параметризация кривой. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ad4ddd755fb53b047fdd952a6537a1fab"></a>emd_ErrorJTDuplicatedTriangles&#160;</td><td class="fielddoc"><p>Сетка содержит дублирующиеся треугольники и не может быть записана. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a7112e25df8ff6444a9f0b349366f82a4"></a>emd_WarningCreateEdgeBadInput&#160;</td><td class="fielddoc"><p>Некорректные исходные данные для кривой пересечения. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a1af872d8b2a69de0e54f6936cb06dfbb"></a>emd_PluginGeneralProblem&#160;</td><td class="fielddoc"><p>Сбой общего характера в плагине. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a796db65ee7d80cbfea59e8d432de53a0"></a>emd_PluginLicenceProblem&#160;</td><td class="fielddoc"><p>Ошибка активации плагина. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a81c7d4702eee3239100dac7857f21c7f"></a>emd_PluginFunctionalityLimitation&#160;</td><td class="fielddoc"><p>Плагин не обладает требуемой функциональностью. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a891e626fe6b0f3536d9045a5e41dd3fe"></a>emd_PluginImportPartialSuccess&#160;</td><td class="fielddoc"><p>Модель частично импортирована через плагин. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a9a6748214897709d7b3e8ada13a62fb5"></a>emd_ErrorModelHasNoGeometry&#160;</td><td class="fielddoc"><p>Модель не содержит геометрии. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a35ac6256f7e6d9db1b7a9db4c9cfd51f"></a>emd_ErrorReferencedModelFileNotFound&#160;</td><td class="fielddoc"><p>Файл, на который ссылается модель не найден. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ae1aa1b39027779bdcb5ed144a7e8c4c3"></a>emd_InfoMetadataSuccessfullyImported&#160;</td><td class="fielddoc"><p>Метаданные импортированы успешно. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ac2d0dd7910eabb881137a3177e0d5505"></a>emd_WarningMetadataPartiallyImported&#160;</td><td class="fielddoc"><p>Метаданные импортированы не полностью. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6ab74911511d211f00739ac5d06a16c994"></a>emd_InfoMetadataNotSupported&#160;</td><td class="fielddoc"><p>Импорт метаданных не поддерживается. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6af825ff883a2d9487abbc0ccd8a7ec9e9"></a>emd_InfoModelContainsNoMetadata&#160;</td><td class="fielddoc"><p>Модель не содержит метаданных. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6a4e03005c7cededee3abee424d49fbe6e"></a>emd_ErrorInvalidTargetDirectoryForMetadata&#160;</td><td class="fielddoc"><p>Не удалось записать метаданные в указанную директорию. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6af9a8ba1a4b7ae2dd8623e7eb0c330279"></a>emd_ErrorMetadataFileWriteFailure&#160;</td><td class="fielddoc"><p>Не удалось записать файл с метаданными. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa6ca78c1526c8c3bc71b4c1fb6fe63a6aacb15ce1255259fc4eb33f65bb7a8234"></a>emd_ErrorMetadataImportError&#160;</td><td class="fielddoc"><p>Сбой импорта метаданных. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="conv__exchange__settings_8h.html">conv_exchange_settings.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

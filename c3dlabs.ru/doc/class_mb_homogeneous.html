@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbHomogeneous</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_homogeneous.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="class_mb_homogeneous-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbHomogeneous<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___mathematic___base__2_d.html">Двумерные базовые объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Расширенная точка с однородными координатами в двумерном пространстве.  
+ <a href="class_mb_homogeneous.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_homogeneous.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса MbHomogeneous:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_homogeneous__coll__graph.svg" width="187" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a632662b0929b247a116bb82d9cef2e57"><td class="memItemLeft" align="right" valign="top"><a id="a632662b0929b247a116bb82d9cef2e57"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a632662b0929b247a116bb82d9cef2e57">MbHomogeneous</a> ()</td></tr>
+<tr class="memdesc:a632662b0929b247a116bb82d9cef2e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a632662b0929b247a116bb82d9cef2e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe02516ef6e6b39548075731de079b3a"><td class="memItemLeft" align="right" valign="top"><a id="afe02516ef6e6b39548075731de079b3a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#afe02516ef6e6b39548075731de079b3a">MbHomogeneous</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v, double ww)</td></tr>
+<tr class="memdesc:afe02516ef6e6b39548075731de079b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по точке и весу. <br /></td></tr>
+<tr class="separator:afe02516ef6e6b39548075731de079b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab738c21797ce39b82c0860ff6cb0fa6"><td class="memItemLeft" align="right" valign="top"><a id="aab738c21797ce39b82c0860ff6cb0fa6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#aab738c21797ce39b82c0860ff6cb0fa6">MbHomogeneous</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;other)</td></tr>
+<tr class="memdesc:aab738c21797ce39b82c0860ff6cb0fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:aab738c21797ce39b82c0860ff6cb0fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccb63da23162dfc2cf714aaa7fd897f"><td class="memItemLeft" align="right" valign="top"><a id="a3ccb63da23162dfc2cf714aaa7fd897f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a3ccb63da23162dfc2cf714aaa7fd897f">MbHomogeneous</a> (double initX, double initY, double initW)</td></tr>
+<tr class="memdesc:a3ccb63da23162dfc2cf714aaa7fd897f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по компонентам точки и весу. <br /></td></tr>
+<tr class="separator:a3ccb63da23162dfc2cf714aaa7fd897f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7a8ad0a9143f5bb5c412c7ceb14de6"><td class="memItemLeft" align="right" valign="top"><a id="a8b7a8ad0a9143f5bb5c412c7ceb14de6"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a8b7a8ad0a9143f5bb5c412c7ceb14de6">Init</a> (double initX, double initY)</td></tr>
+<tr class="memdesc:a8b7a8ad0a9143f5bb5c412c7ceb14de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация по компонентам точки. <br /></td></tr>
+<tr class="separator:a8b7a8ad0a9143f5bb5c412c7ceb14de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2233359e4997ed6a11bd6833a6f647"><td class="memItemLeft" align="right" valign="top"><a id="aaf2233359e4997ed6a11bd6833a6f647"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#aaf2233359e4997ed6a11bd6833a6f647">Init</a> (double initX, double initY, double initW)</td></tr>
+<tr class="memdesc:aaf2233359e4997ed6a11bd6833a6f647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация по компонентам точки и весу. <br /></td></tr>
+<tr class="separator:aaf2233359e4997ed6a11bd6833a6f647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7624338e4d5ad2400f0c2871401e426"><td class="memItemLeft" align="right" valign="top"><a id="ab7624338e4d5ad2400f0c2871401e426"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#ab7624338e4d5ad2400f0c2871401e426">Init</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, double weight)</td></tr>
+<tr class="memdesc:ab7624338e4d5ad2400f0c2871401e426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация по компонентам точки и весу. <br /></td></tr>
+<tr class="separator:ab7624338e4d5ad2400f0c2871401e426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3312a9b5496bee93044cbaa269295ce3"><td class="memItemLeft" align="right" valign="top"><a id="a3312a9b5496bee93044cbaa269295ce3"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a3312a9b5496bee93044cbaa269295ce3">SetZero</a> ()</td></tr>
+<tr class="memdesc:a3312a9b5496bee93044cbaa269295ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить вектор нулевой длины. <br /></td></tr>
+<tr class="separator:a3312a9b5496bee93044cbaa269295ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f53b218c4a86e5838ab32cc014f0b03"><td class="memItemLeft" align="right" valign="top"><a id="a4f53b218c4a86e5838ab32cc014f0b03"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a4f53b218c4a86e5838ab32cc014f0b03">Transform</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;matr)</td></tr>
+<tr class="memdesc:a4f53b218c4a86e5838ab32cc014f0b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование по матрице. <br /></td></tr>
+<tr class="separator:a4f53b218c4a86e5838ab32cc014f0b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff9d0cb5bb6083f35ebdce53cf7a361"><td class="memItemLeft" align="right" valign="top"><a id="abff9d0cb5bb6083f35ebdce53cf7a361"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#abff9d0cb5bb6083f35ebdce53cf7a361">Move</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;shift)</td></tr>
+<tr class="memdesc:abff9d0cb5bb6083f35ebdce53cf7a361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль вектора. <br /></td></tr>
+<tr class="separator:abff9d0cb5bb6083f35ebdce53cf7a361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91add49b937e58d6bd71ee784f4b5d04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a91add49b937e58d6bd71ee784f4b5d04">Rotate</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, double angle)</td></tr>
+<tr class="memdesc:a91add49b937e58d6bd71ee784f4b5d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть на угол.  <a href="class_mb_homogeneous.html#a91add49b937e58d6bd71ee784f4b5d04">Подробнее...</a><br /></td></tr>
+<tr class="separator:a91add49b937e58d6bd71ee784f4b5d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c096c53a6bd0a79737f3ecbaf4b6b7"><td class="memItemLeft" align="right" valign="top"><a id="a71c096c53a6bd0a79737f3ecbaf4b6b7"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a71c096c53a6bd0a79737f3ecbaf4b6b7">GetWeight</a> () const</td></tr>
+<tr class="memdesc:a71c096c53a6bd0a79737f3ecbaf4b6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать вес точки. <br /></td></tr>
+<tr class="separator:a71c096c53a6bd0a79737f3ecbaf4b6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5826d312c8ed6dc225985ec32c9030b9"><td class="memItemLeft" align="right" valign="top"><a id="a5826d312c8ed6dc225985ec32c9030b9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a5826d312c8ed6dc225985ec32c9030b9">GetCartPoint</a> (<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt) const</td></tr>
+<tr class="memdesc:a5826d312c8ed6dc225985ec32c9030b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить декартовы координаты, как точки. <br /></td></tr>
+<tr class="separator:a5826d312c8ed6dc225985ec32c9030b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7511b53ad04f600502dd3986d6abba87"><td class="memItemLeft" align="right" valign="top"><a id="a7511b53ad04f600502dd3986d6abba87"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a7511b53ad04f600502dd3986d6abba87">GetVector</a> (<a class="el" href="class_mb_vector.html">MbVector</a> &amp;vect) const</td></tr>
+<tr class="memdesc:a7511b53ad04f600502dd3986d6abba87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить декартовы координаты, как вектора. <br /></td></tr>
+<tr class="separator:a7511b53ad04f600502dd3986d6abba87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6083dee5a1123c01299e606424c50129"><td class="memItemLeft" align="right" valign="top"><a id="a6083dee5a1123c01299e606424c50129"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a6083dee5a1123c01299e606424c50129">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt)</td></tr>
+<tr class="memdesc:a6083dee5a1123c01299e606424c50129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать точку в однородные координаты. <br /></td></tr>
+<tr class="separator:a6083dee5a1123c01299e606424c50129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7f777f1e506858e872a7d2d590a92d"><td class="memItemLeft" align="right" valign="top"><a id="a4d7f777f1e506858e872a7d2d590a92d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a4d7f777f1e506858e872a7d2d590a92d">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, double weight)</td></tr>
+<tr class="memdesc:a4d7f777f1e506858e872a7d2d590a92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать точку в однородные координаты. <br /></td></tr>
+<tr class="separator:a4d7f777f1e506858e872a7d2d590a92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfab5c3ac341974d7822a3b9dd141e8"><td class="memItemLeft" align="right" valign="top"><a id="a1cfab5c3ac341974d7822a3b9dd141e8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a1cfab5c3ac341974d7822a3b9dd141e8">Set</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;pnt, double weight)</td></tr>
+<tr class="memdesc:a1cfab5c3ac341974d7822a3b9dd141e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать вектор в однородные координаты. <br /></td></tr>
+<tr class="separator:a1cfab5c3ac341974d7822a3b9dd141e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67a76529136141aa0205fc9052b8176"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#ad67a76529136141aa0205fc9052b8176">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt1, double weight1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt2, double weight2)</td></tr>
+<tr class="memdesc:ad67a76529136141aa0205fc9052b8176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить по точкам.  <a href="class_mb_homogeneous.html#ad67a76529136141aa0205fc9052b8176">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad67a76529136141aa0205fc9052b8176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac621d44934097935e9c11201180043de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#ac621d44934097935e9c11201180043de">Add</a> (double initX, double initY, double weight)</td></tr>
+<tr class="memdesc:ac621d44934097935e9c11201180043de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на указанные значения.  <a href="class_mb_homogeneous.html#ac621d44934097935e9c11201180043de">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac621d44934097935e9c11201180043de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379381055fd6c7f08629c6ca15c78cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a379381055fd6c7f08629c6ca15c78cf6">Add</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt1, double weight1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt2, double weight2)</td></tr>
+<tr class="memdesc:a379381055fd6c7f08629c6ca15c78cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить точки.  <a href="class_mb_homogeneous.html#a379381055fd6c7f08629c6ca15c78cf6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a379381055fd6c7f08629c6ca15c78cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c8a99fbbdaadc828a8852da380d827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a96c8a99fbbdaadc828a8852da380d827">Add</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, double weight)</td></tr>
+<tr class="memdesc:a96c8a99fbbdaadc828a8852da380d827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить точку.  <a href="class_mb_homogeneous.html#a96c8a99fbbdaadc828a8852da380d827">Подробнее...</a><br /></td></tr>
+<tr class="separator:a96c8a99fbbdaadc828a8852da380d827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72656d146e3b1adb27ebaef0637e22a5"><td class="memItemLeft" align="right" valign="top"><a id="a72656d146e3b1adb27ebaef0637e22a5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a72656d146e3b1adb27ebaef0637e22a5">Dec</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;p1, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;p2, double kk)</td></tr>
+<tr class="memdesc:a72656d146e3b1adb27ebaef0637e22a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разность p2 - p1 умножить на kk. <br /></td></tr>
+<tr class="separator:a72656d146e3b1adb27ebaef0637e22a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f959023cec4ede344480e48e842ba7"><td class="memItemLeft" align="right" valign="top"><a id="aa2f959023cec4ede344480e48e842ba7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#aa2f959023cec4ede344480e48e842ba7">Set</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v1, double t1)</td></tr>
+<tr class="memdesc:aa2f959023cec4ede344480e48e842ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты вектора координатам точки v1, умноженных на t1. <br /></td></tr>
+<tr class="separator:aa2f959023cec4ede344480e48e842ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff6eb8d7642755f9eed75e4497002be"><td class="memItemLeft" align="right" valign="top"><a id="a8ff6eb8d7642755f9eed75e4497002be"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a8ff6eb8d7642755f9eed75e4497002be">Set</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v1, double t1, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v2, double t2)</td></tr>
+<tr class="memdesc:a8ff6eb8d7642755f9eed75e4497002be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты вектора координатам суммы точек v1 и v2, умноженных на t1 и t2 соответственно. <br /></td></tr>
+<tr class="separator:a8ff6eb8d7642755f9eed75e4497002be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ce8415470505547d3e7739cbc754c9"><td class="memItemLeft" align="right" valign="top"><a id="a81ce8415470505547d3e7739cbc754c9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a81ce8415470505547d3e7739cbc754c9">Set</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v1, double t1, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v2, double t2, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v3, double t3)</td></tr>
+<tr class="memdesc:a81ce8415470505547d3e7739cbc754c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты вектора координатам суммы точек v1, v2 и v3, умноженных на t1, t2 и t3 соответственно. <br /></td></tr>
+<tr class="separator:a81ce8415470505547d3e7739cbc754c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339e076db2324ce3e2bc95e83168cf07"><td class="memItemLeft" align="right" valign="top"><a id="a339e076db2324ce3e2bc95e83168cf07"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a339e076db2324ce3e2bc95e83168cf07">Set</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v1, double t1, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v2, double t2, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v3, double t3, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v4, double t4)</td></tr>
+<tr class="memdesc:a339e076db2324ce3e2bc95e83168cf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты вектора координатам суммы точек v1, v2, v3 и v4, умноженных на t1, t2, t3 и t4 соответственно. <br /></td></tr>
+<tr class="separator:a339e076db2324ce3e2bc95e83168cf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ee3adaf60c521a619b69926c29ddb7"><td class="memItemLeft" align="right" valign="top"><a id="a88ee3adaf60c521a619b69926c29ddb7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a88ee3adaf60c521a619b69926c29ddb7">Set</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v1, double t1, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v2, double t2, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v3, double t3, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v4, double t4, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;v5, double t5)</td></tr>
+<tr class="memdesc:a88ee3adaf60c521a619b69926c29ddb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты вектора координатам суммы точек v1, v2, v3, v4 и v5, умноженных на t1, t2, t3 t4 и t5 соответственно. <br /></td></tr>
+<tr class="separator:a88ee3adaf60c521a619b69926c29ddb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7043b70951e8b21a5aee4eecea861c7a"><td class="memItemLeft" align="right" valign="top"><a id="a7043b70951e8b21a5aee4eecea861c7a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a7043b70951e8b21a5aee4eecea861c7a">Add</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;p, double kk)</td></tr>
+<tr class="memdesc:a7043b70951e8b21a5aee4eecea861c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить вектор p, умноженный на kk. <br /></td></tr>
+<tr class="separator:a7043b70951e8b21a5aee4eecea861c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Перегрузка арифметических операций.</div></td></tr>
+<tr class="memitem:a5232868c1da128a07f4678c7488ed208"><td class="memItemLeft" align="right" valign="top"><a id="a5232868c1da128a07f4678c7488ed208"></a>
+<a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a5232868c1da128a07f4678c7488ed208">operator+</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;with) const</td></tr>
+<tr class="memdesc:a5232868c1da128a07f4678c7488ed208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сложить две точки. <br /></td></tr>
+<tr class="separator:a5232868c1da128a07f4678c7488ed208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427105d51c261e208ca09b2bda1bcb42"><td class="memItemLeft" align="right" valign="top"><a id="a427105d51c261e208ca09b2bda1bcb42"></a>
+<a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a427105d51c261e208ca09b2bda1bcb42">operator-</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;with) const</td></tr>
+<tr class="memdesc:a427105d51c261e208ca09b2bda1bcb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычесть из точки точку. <br /></td></tr>
+<tr class="separator:a427105d51c261e208ca09b2bda1bcb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3f13104f0a8b3347355f1e451ce3ce"><td class="memItemLeft" align="right" valign="top"><a id="a0a3f13104f0a8b3347355f1e451ce3ce"></a>
+<a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a0a3f13104f0a8b3347355f1e451ce3ce">operator*</a> (double factor) const</td></tr>
+<tr class="memdesc:a0a3f13104f0a8b3347355f1e451ce3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножить координаты точки на число. <br /></td></tr>
+<tr class="separator:a0a3f13104f0a8b3347355f1e451ce3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcea3cd747e4f8ff778f7630cde1030a"><td class="memItemLeft" align="right" valign="top"><a id="abcea3cd747e4f8ff778f7630cde1030a"></a>
+<a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#abcea3cd747e4f8ff778f7630cde1030a">operator/</a> (double factor) const</td></tr>
+<tr class="memdesc:abcea3cd747e4f8ff778f7630cde1030a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделить координаты точки на число. <br /></td></tr>
+<tr class="separator:abcea3cd747e4f8ff778f7630cde1030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863a931f5949ad1198803f3e30260eeb"><td class="memItemLeft" align="right" valign="top"><a id="a863a931f5949ad1198803f3e30260eeb"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a863a931f5949ad1198803f3e30260eeb">operator*</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;vector) const</td></tr>
+<tr class="memdesc:a863a931f5949ad1198803f3e30260eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скалярное умножение двух векторов. <br /></td></tr>
+<tr class="separator:a863a931f5949ad1198803f3e30260eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a65c36bea49b320ea21494c7b8ae4d"><td class="memItemLeft" align="right" valign="top"><a id="ab4a65c36bea49b320ea21494c7b8ae4d"></a>
+<a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#ab4a65c36bea49b320ea21494c7b8ae4d">operator|</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;vect2) const</td></tr>
+<tr class="memdesc:ab4a65c36bea49b320ea21494c7b8ae4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Векторное умножение двух векторов. <br /></td></tr>
+<tr class="separator:ab4a65c36bea49b320ea21494c7b8ae4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e7db2c658a5b012917585ebd681a9c"><td class="memItemLeft" align="right" valign="top"><a id="a32e7db2c658a5b012917585ebd681a9c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a32e7db2c658a5b012917585ebd681a9c">operator=</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;other)</td></tr>
+<tr class="memdesc:a32e7db2c658a5b012917585ebd681a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить значение. <br /></td></tr>
+<tr class="separator:a32e7db2c658a5b012917585ebd681a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c092fa4ee0247677aa8a2d975b6aaac"><td class="memItemLeft" align="right" valign="top"><a id="a0c092fa4ee0247677aa8a2d975b6aaac"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a0c092fa4ee0247677aa8a2d975b6aaac">operator*=</a> (double factor)</td></tr>
+<tr class="memdesc:a0c092fa4ee0247677aa8a2d975b6aaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножить координаты точки на число. <br /></td></tr>
+<tr class="separator:a0c092fa4ee0247677aa8a2d975b6aaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade68f6d7b1f0445273cd870b868d72aa"><td class="memItemLeft" align="right" valign="top"><a id="ade68f6d7b1f0445273cd870b868d72aa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#ade68f6d7b1f0445273cd870b868d72aa">operator/=</a> (double factor)</td></tr>
+<tr class="memdesc:ade68f6d7b1f0445273cd870b868d72aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделить координаты точки на число. <br /></td></tr>
+<tr class="separator:ade68f6d7b1f0445273cd870b868d72aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace488171fc615bc8e59bcf2ccc19ba83"><td class="memItemLeft" align="right" valign="top"><a id="ace488171fc615bc8e59bcf2ccc19ba83"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#ace488171fc615bc8e59bcf2ccc19ba83">operator==</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;) const</td></tr>
+<tr class="memdesc:ace488171fc615bc8e59bcf2ccc19ba83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на равенство с точностью <a class="el" href="class_math.html#ab286036ac6d326204428d62aadc062a4" title="Точность вычисления длины (PARAM_PRECISION).">Math::LengthEps</a>. Рекомендуется вместо оператора == использовать функцию IsSame с явным указанием точности сравнения на равенство. <br /></td></tr>
+<tr class="separator:ace488171fc615bc8e59bcf2ccc19ba83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525bcdf6b1a345a7ce31ca35869f94a7"><td class="memItemLeft" align="right" valign="top"><a id="a525bcdf6b1a345a7ce31ca35869f94a7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a525bcdf6b1a345a7ce31ca35869f94a7">operator!=</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;) const</td></tr>
+<tr class="memdesc:a525bcdf6b1a345a7ce31ca35869f94a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на неравенство с точностью <a class="el" href="class_math.html#ab286036ac6d326204428d62aadc062a4" title="Точность вычисления длины (PARAM_PRECISION).">Math::LengthEps</a>. Рекомендуется вместо оператора != использовать инвертированное значение функции IsSame с явным указанием точности сравнения на равенство. <br /></td></tr>
+<tr class="separator:a525bcdf6b1a345a7ce31ca35869f94a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0eefd9edfb05582a73f6c30939e1b4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#ac0eefd9edfb05582a73f6c30939e1b4c">IsSame</a> (const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;other, double accuracy) const</td></tr>
+<tr class="memdesc:ac0eefd9edfb05582a73f6c30939e1b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными?  <a href="class_mb_homogeneous.html#ac0eefd9edfb05582a73f6c30939e1b4c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac0eefd9edfb05582a73f6c30939e1b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a0a523740b62beefd01cae36eae10eb3e"><td class="memItemLeft" align="right" valign="top"><a id="a0a523740b62beefd01cae36eae10eb3e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a0a523740b62beefd01cae36eae10eb3e">x</a></td></tr>
+<tr class="memdesc:a0a523740b62beefd01cae36eae10eb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Первая координата точки. <br /></td></tr>
+<tr class="separator:a0a523740b62beefd01cae36eae10eb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a19f7ef68660a2ac578d8b2923aab1"><td class="memItemLeft" align="right" valign="top"><a id="a96a19f7ef68660a2ac578d8b2923aab1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a96a19f7ef68660a2ac578d8b2923aab1">y</a></td></tr>
+<tr class="memdesc:a96a19f7ef68660a2ac578d8b2923aab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вторая координата точки. <br /></td></tr>
+<tr class="separator:a96a19f7ef68660a2ac578d8b2923aab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf06df275919142ad692e067d8c3200"><td class="memItemLeft" align="right" valign="top"><a id="a7cf06df275919142ad692e067d8c3200"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a7cf06df275919142ad692e067d8c3200">w</a></td></tr>
+<tr class="memdesc:a7cf06df275919142ad692e067d8c3200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вес точки. <br /></td></tr>
+<tr class="separator:a7cf06df275919142ad692e067d8c3200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a6b248570aa9cd8d7d3d6f58c78367469"><td class="memItemLeft" align="right" valign="top"><a id="a6b248570aa9cd8d7d3d6f58c78367469"></a>
+static const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_homogeneous.html#a6b248570aa9cd8d7d3d6f58c78367469">zero</a></td></tr>
+<tr class="memdesc:a6b248570aa9cd8d7d3d6f58c78367469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нулевая точка. <br /></td></tr>
+<tr class="separator:a6b248570aa9cd8d7d3d6f58c78367469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Расширенная точка с однородными координатами в двумерном пространстве. </p>
+<p>Расширенная точка с однородными координатами в двумерном пространстве. <br  />
+ Дополнительная координата точки (вес) вводится для удобства работы с неоднородными рациональными сплайнами.<br  />
+ Определены операции преобразования точки и вектора в однородные координаты. Определены различные арифметические операции однородной точки с числом, декартовой точкой и однородной точкой. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a91add49b937e58d6bd71ee784f4b5d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91add49b937e58d6bd71ee784f4b5d04">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbHomogeneous::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть на угол. </p>
+<p>Угол определяет вектор вращения, а точка - центр.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad67a76529136141aa0205fc9052b8176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad67a76529136141aa0205fc9052b8176">&#9670;&nbsp;</a></span>Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbHomogeneous::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить по точкам. </p>
+<p>Координаты точки равны сумме однородных координат исходных точек, а вес - сумме весов.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt1,pnt2</td><td>- Исходные точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">weight1,weight2</td><td>- Весы точек. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac621d44934097935e9c11201180043de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac621d44934097935e9c11201180043de">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbHomogeneous::Add </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>initX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>initY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на указанные значения. </p>
+<p>Увеличить координаты на указанные значения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">initX</td><td>- Исходное значение координаты x.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initY</td><td>- Исходное значение координаты y.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">weight</td><td>- Вес. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a379381055fd6c7f08629c6ca15c78cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379381055fd6c7f08629c6ca15c78cf6">&#9670;&nbsp;</a></span>Add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbHomogeneous::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить точки. </p>
+<p>Увеличить координаты на значения однородных координат двух исходных точек.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt1,pnt2</td><td>- Исходные точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">weight1,weight2</td><td>- Весы точек. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a96c8a99fbbdaadc828a8852da380d827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c8a99fbbdaadc828a8852da380d827">&#9670;&nbsp;</a></span>Add() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbHomogeneous::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить точку. </p>
+<p>Увеличить координаты на значения однородных координат точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Исходная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">weight</td><td>- Вес точки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac0eefd9edfb05582a73f6c30939e1b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0eefd9edfb05582a73f6c30939e1b4c">&#9670;&nbsp;</a></span>IsSame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbHomogeneous::IsSame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Являются ли объекты равными? </p>
+<p>Равными считаются объекты, данные которых равны с заданной точностью.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- Объект для сравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Точность сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Равны ли объекты. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__homogeneous_8h.html">mb_homogeneous.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:03. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

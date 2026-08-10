@@ -1,0 +1,1356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbSweptData</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_swept_data.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_mb_swept_data-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbSweptData<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___build___parameters.html">Параметры операций</a> &raquo; <a class="el" href="group___shell___building___parameters.html">Параметры построения оболочек</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Данные об образующей.  
+ <a href="class_mb_swept_data.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;op_swept_parameter.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a9c981aef92318936a75ebdef20608702"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbeWireFrameType</a> { <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74">undefined</a> = 0
+, <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180">planeContours</a> = 1
+, <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea">surfaceContours</a> = 2
+, <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae">spaceContours</a> = 3
+ }</td></tr>
+<tr class="memdesc:a9c981aef92318936a75ebdef20608702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип интерпретации проволочного каркаса.  <a href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9c981aef92318936a75ebdef20608702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a7abcb33a0000b18d2018b3bde18bf7b7"><td class="memItemLeft" align="right" valign="top"><a id="a7abcb33a0000b18d2018b3bde18bf7b7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a7abcb33a0000b18d2018b3bde18bf7b7">MbSweptData</a> ()</td></tr>
+<tr class="memdesc:a7abcb33a0000b18d2018b3bde18bf7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a7abcb33a0000b18d2018b3bde18bf7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7cc6bfa40460aaa151a71fbf38edef"><td class="memItemLeft" align="right" valign="top"><a id="aac7cc6bfa40460aaa151a71fbf38edef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#aac7cc6bfa40460aaa151a71fbf38edef">MbSweptData</a> (const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;, <a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *ireg=nullptr)</td></tr>
+<tr class="memdesc:aac7cc6bfa40460aaa151a71fbf38edef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:aac7cc6bfa40460aaa151a71fbf38edef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea82bfb362099b31a621c7972abf6d34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#aea82bfb362099b31a621c7972abf6d34">MbSweptData</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, <a class="el" href="class_mb_contour.html">MbContour</a> &amp;contour)</td></tr>
+<tr class="memdesc:aea82bfb362099b31a621c7972abf6d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор плоской образующей.  <a href="class_mb_swept_data.html#aea82bfb362099b31a621c7972abf6d34">Подробнее...</a><br /></td></tr>
+<tr class="separator:aea82bfb362099b31a621c7972abf6d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f45327de082cca3aef2af31efc443c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ac1f45327de082cca3aef2af31efc443c">MbSweptData</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;_surface, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;_contours, bool spatialThickness=false)</td></tr>
+<tr class="memdesc:ac1f45327de082cca3aef2af31efc443c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#ac1f45327de082cca3aef2af31efc443c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac1f45327de082cca3aef2af31efc443c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0453d91befb49a94534ce280e208d97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ab0453d91befb49a94534ce280e208d97">MbSweptData</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;_surface, c3d::PlaneContoursSPtrVector &amp;_contours, bool spatialThickness=false)</td></tr>
+<tr class="memdesc:ab0453d91befb49a94534ce280e208d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#ab0453d91befb49a94534ce280e208d97">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab0453d91befb49a94534ce280e208d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a8d3648882373b3553af710a9e83b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a73a8d3648882373b3553af710a9e83b9">MbSweptData</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;_curve3d)</td></tr>
+<tr class="memdesc:a73a8d3648882373b3553af710a9e83b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#a73a8d3648882373b3553af710a9e83b9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a73a8d3648882373b3553af710a9e83b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3070490eb0e10dfcc623ab972010676"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ae3070490eb0e10dfcc623ab972010676">MbSweptData</a> (c3d::SpaceCurvesSPtrVector &amp;_curves3d)</td></tr>
+<tr class="memdesc:ae3070490eb0e10dfcc623ab972010676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по трехмерным кривым.  <a href="class_mb_swept_data.html#ae3070490eb0e10dfcc623ab972010676">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae3070490eb0e10dfcc623ab972010676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31ca32def2aef398c7aa24d2870a39c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ab31ca32def2aef398c7aa24d2870a39c">MbSweptData</a> (<a class="el" href="class_mb_contour3_d.html">MbContour3D</a> &amp;_contour3d)</td></tr>
+<tr class="memdesc:ab31ca32def2aef398c7aa24d2870a39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#ab31ca32def2aef398c7aa24d2870a39c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab31ca32def2aef398c7aa24d2870a39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b0aabb0bc36df40be081859e2b7439"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ae8b0aabb0bc36df40be081859e2b7439">MbSweptData</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour3_d.html">MbContour3D</a> &gt; &amp;_contours3d)</td></tr>
+<tr class="memdesc:ae8b0aabb0bc36df40be081859e2b7439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#ae8b0aabb0bc36df40be081859e2b7439">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae8b0aabb0bc36df40be081859e2b7439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad54ec74cc4ae9eddbe6b4d856f7a7a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#aad54ec74cc4ae9eddbe6b4d856f7a7a0">MbSweptData</a> (c3d::SpaceContoursSPtrVector &amp;_contours3d)</td></tr>
+<tr class="memdesc:aad54ec74cc4ae9eddbe6b4d856f7a7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#aad54ec74cc4ae9eddbe6b4d856f7a7a0">Подробнее...</a><br /></td></tr>
+<tr class="separator:aad54ec74cc4ae9eddbe6b4d856f7a7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af7df505c8d2597a3176e71fd354269"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a7af7df505c8d2597a3176e71fd354269">MbSweptData</a> (<a class="el" href="class_mb_solid.html">MbSolid</a> &amp;_solid, const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> *newNameMaker=nullptr)</td></tr>
+<tr class="memdesc:a7af7df505c8d2597a3176e71fd354269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#a7af7df505c8d2597a3176e71fd354269">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7af7df505c8d2597a3176e71fd354269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc3fd63242bfe42a26161617842afb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a5dc3fd63242bfe42a26161617842afb4">MbSweptData</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> *_surface, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;_contours, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour3_d.html">MbContour3D</a> &gt; &amp;_contours3d, <a class="el" href="class_mb_solid.html">MbSolid</a> *_solid)</td></tr>
+<tr class="memdesc:a5dc3fd63242bfe42a26161617842afb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#a5dc3fd63242bfe42a26161617842afb4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5dc3fd63242bfe42a26161617842afb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa828d4e3fadc42e6bd1cd9d1625c9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a2aa828d4e3fadc42e6bd1cd9d1625c9c">MbSweptData</a> (<a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;_wireFrame, <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbeWireFrameType</a> _wireFrameType=<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74">MbeWireFrameType::undefined</a>)</td></tr>
+<tr class="memdesc:a2aa828d4e3fadc42e6bd1cd9d1625c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_swept_data.html#a2aa828d4e3fadc42e6bd1cd9d1625c9c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2aa828d4e3fadc42e6bd1cd9d1625c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b0faa38df132722afbd3100b55d324"><td class="memItemLeft" align="right" valign="top"><a id="a44b0faa38df132722afbd3100b55d324"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a44b0faa38df132722afbd3100b55d324">~MbSweptData</a> ()</td></tr>
+<tr class="memdesc:a44b0faa38df132722afbd3100b55d324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a44b0faa38df132722afbd3100b55d324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24daf7f8b2b583938e62bf3b1886527"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ad24daf7f8b2b583938e62bf3b1886527">AddData</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;_surface, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;_contours)</td></tr>
+<tr class="memdesc:ad24daf7f8b2b583938e62bf3b1886527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить данные.  <a href="class_mb_swept_data.html#ad24daf7f8b2b583938e62bf3b1886527">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad24daf7f8b2b583938e62bf3b1886527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7105508f82711e0b85319b4f46e1c9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ad7105508f82711e0b85319b4f46e1c9a">AddData</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;_surface, c3d::PlaneContoursSPtrVector &amp;_contours)</td></tr>
+<tr class="memdesc:ad7105508f82711e0b85319b4f46e1c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить данные.  <a href="class_mb_swept_data.html#ad7105508f82711e0b85319b4f46e1c9a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7105508f82711e0b85319b4f46e1c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9057c44c6632c3de3125d4608af9bc89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a9057c44c6632c3de3125d4608af9bc89">AddData</a> (<a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;_wireFrame, <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbeWireFrameType</a> _wireFrameType, <a class="el" href="class_mb_surface.html">MbSurface</a> *_surface)</td></tr>
+<tr class="memdesc:a9057c44c6632c3de3125d4608af9bc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить данные.  <a href="class_mb_swept_data.html#a9057c44c6632c3de3125d4608af9bc89">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9057c44c6632c3de3125d4608af9bc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6c5e5a84367f76da8f80b4d750baa8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a5b6c5e5a84367f76da8f80b4d750baa8">CurvesCount</a> () const</td></tr>
+<tr class="memdesc:a5b6c5e5a84367f76da8f80b4d750baa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество всех кривых.  <a href="class_mb_swept_data.html#a5b6c5e5a84367f76da8f80b4d750baa8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5b6c5e5a84367f76da8f80b4d750baa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff46e57134064b882eb1b422ea143704"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#aff46e57134064b882eb1b422ea143704">GetCurve3D</a> (size_t i) const</td></tr>
+<tr class="memdesc:aff46e57134064b882eb1b422ea143704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить кривую по индексу.  <a href="class_mb_swept_data.html#aff46e57134064b882eb1b422ea143704">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff46e57134064b882eb1b422ea143704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac818696f4958b3a29ed918295f03bbb1"><td class="memItemLeft" align="right" valign="top"><a id="ac818696f4958b3a29ed918295f03bbb1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ac818696f4958b3a29ed918295f03bbb1">IsSurfaceCurvesData</a> () const</td></tr>
+<tr class="memdesc:ac818696f4958b3a29ed918295f03bbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть данные о двумерных кривых на поверхности? <br /></td></tr>
+<tr class="separator:ac818696f4958b3a29ed918295f03bbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5882fee9eadd90f7f3833003603f24"><td class="memItemLeft" align="right" valign="top"><a id="abd5882fee9eadd90f7f3833003603f24"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#abd5882fee9eadd90f7f3833003603f24">IsSpaceCurvesData</a> () const</td></tr>
+<tr class="memdesc:abd5882fee9eadd90f7f3833003603f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть данные о пространственных кривых? <br /></td></tr>
+<tr class="separator:abd5882fee9eadd90f7f3833003603f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b73400ad1aa4e5dbe350b54ca0aaa6"><td class="memItemLeft" align="right" valign="top"><a id="a01b73400ad1aa4e5dbe350b54ca0aaa6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a01b73400ad1aa4e5dbe350b54ca0aaa6">IsWireFrameData</a> () const</td></tr>
+<tr class="memdesc:a01b73400ad1aa4e5dbe350b54ca0aaa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть данные о проволочном каркасе? <br /></td></tr>
+<tr class="separator:a01b73400ad1aa4e5dbe350b54ca0aaa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc68e410850c4ed30e056565fc388363"><td class="memItemLeft" align="right" valign="top"><a id="acc68e410850c4ed30e056565fc388363"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#acc68e410850c4ed30e056565fc388363">IsSolidData</a> () const</td></tr>
+<tr class="memdesc:acc68e410850c4ed30e056565fc388363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть данные о теле? <br /></td></tr>
+<tr class="separator:acc68e410850c4ed30e056565fc388363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ec6f51391569e8e26a68976615c00e"><td class="memItemLeft" align="right" valign="top"><a id="a52ec6f51391569e8e26a68976615c00e"></a>
+const <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a52ec6f51391569e8e26a68976615c00e">GetSurface</a> () const</td></tr>
+<tr class="memdesc:a52ec6f51391569e8e26a68976615c00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поверхность. <br /></td></tr>
+<tr class="separator:a52ec6f51391569e8e26a68976615c00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a24b039357facf3d0b187f6c6291ed2"><td class="memItemLeft" align="right" valign="top"><a id="a0a24b039357facf3d0b187f6c6291ed2"></a>
+<a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a0a24b039357facf3d0b187f6c6291ed2">SetSurface</a> ()</td></tr>
+<tr class="memdesc:a0a24b039357facf3d0b187f6c6291ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поверхность для изменения. <br /></td></tr>
+<tr class="separator:a0a24b039357facf3d0b187f6c6291ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6a122508e5b869e44d2170c0fa4be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#afb6a122508e5b869e44d2170c0fa4be3">SetSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf)</td></tr>
+<tr class="memdesc:afb6a122508e5b869e44d2170c0fa4be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить поверхность.  <a href="class_mb_swept_data.html#afb6a122508e5b869e44d2170c0fa4be3">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb6a122508e5b869e44d2170c0fa4be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cce7d584ce565be260f875baed36b39"><td class="memItemLeft" align="right" valign="top"><a id="a3cce7d584ce565be260f875baed36b39"></a>
+const c3d::PlaneContoursSPtrVector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a3cce7d584ce565be260f875baed36b39">GetContours</a> () const</td></tr>
+<tr class="memdesc:a3cce7d584ce565be260f875baed36b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать набор двумерных контуров. <br /></td></tr>
+<tr class="separator:a3cce7d584ce565be260f875baed36b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cad03e19effd87edec25745e92c725"><td class="memItemLeft" align="right" valign="top"><a id="a17cad03e19effd87edec25745e92c725"></a>
+const c3d::SpaceContoursSPtrVector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a17cad03e19effd87edec25745e92c725">GetContours3D</a> () const</td></tr>
+<tr class="memdesc:a17cad03e19effd87edec25745e92c725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать набор трехмерных контуров. <br /></td></tr>
+<tr class="separator:a17cad03e19effd87edec25745e92c725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb192ccaf760b2ceb8af48bc0489d1c"><td class="memItemLeft" align="right" valign="top"><a id="aeeb192ccaf760b2ceb8af48bc0489d1c"></a>
+DEPRECATE_DECLARE const <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#aeeb192ccaf760b2ceb8af48bc0489d1c">GetWireFrame</a> () const</td></tr>
+<tr class="memdesc:aeeb192ccaf760b2ceb8af48bc0489d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать проволочный каркас. <br /></td></tr>
+<tr class="separator:aeeb192ccaf760b2ceb8af48bc0489d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3a290a68c5d93c4b18c61b97260cf5"><td class="memItemLeft" align="right" valign="top"><a id="a3b3a290a68c5d93c4b18c61b97260cf5"></a>
+DEPRECATE_DECLARE <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a3b3a290a68c5d93c4b18c61b97260cf5">SetWireFrame</a> () const</td></tr>
+<tr class="memdesc:a3b3a290a68c5d93c4b18c61b97260cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать проволочный каркас для изменения. <br /></td></tr>
+<tr class="separator:a3b3a290a68c5d93c4b18c61b97260cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed4e1535c10a89d47acf30ad7403f94"><td class="memItemLeft" align="right" valign="top"><a id="a2ed4e1535c10a89d47acf30ad7403f94"></a>
+DEPRECATE_DECLARE <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbeWireFrameType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a2ed4e1535c10a89d47acf30ad7403f94">GetWireFrameType</a> () const</td></tr>
+<tr class="memdesc:a2ed4e1535c10a89d47acf30ad7403f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип интерпретации проволочного каркаса. <br /></td></tr>
+<tr class="separator:a2ed4e1535c10a89d47acf30ad7403f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50775dc7bf44be3551596bea1001c982"><td class="memItemLeft" align="right" valign="top"><a id="a50775dc7bf44be3551596bea1001c982"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a50775dc7bf44be3551596bea1001c982">GetWireFramesCount</a> () const</td></tr>
+<tr class="memdesc:a50775dc7bf44be3551596bea1001c982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество проволочных каркасов. <br /></td></tr>
+<tr class="separator:a50775dc7bf44be3551596bea1001c982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0989631def75b5ec7485290257aaa9"><td class="memItemLeft" align="right" valign="top"><a id="afa0989631def75b5ec7485290257aaa9"></a>
+const <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#afa0989631def75b5ec7485290257aaa9">GetWireFrame</a> (size_t ind) const</td></tr>
+<tr class="memdesc:afa0989631def75b5ec7485290257aaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать проволочный каркас по индексу. <br /></td></tr>
+<tr class="separator:afa0989631def75b5ec7485290257aaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fc433dd71007fc139e7380b8bbb26b"><td class="memItemLeft" align="right" valign="top"><a id="a78fc433dd71007fc139e7380b8bbb26b"></a>
+<a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a78fc433dd71007fc139e7380b8bbb26b">SetWireFrame</a> (size_t ind)</td></tr>
+<tr class="memdesc:a78fc433dd71007fc139e7380b8bbb26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать проволочный каркас по индексу для изменения. <br /></td></tr>
+<tr class="separator:a78fc433dd71007fc139e7380b8bbb26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c2562c32b5564199f39456a458e008"><td class="memItemLeft" align="right" valign="top"><a id="a38c2562c32b5564199f39456a458e008"></a>
+<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbeWireFrameType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a38c2562c32b5564199f39456a458e008">GetWireFrameType</a> (size_t ind) const</td></tr>
+<tr class="memdesc:a38c2562c32b5564199f39456a458e008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип интерпретации проволочного каркаса по индексу. <br /></td></tr>
+<tr class="separator:a38c2562c32b5564199f39456a458e008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6d93847065551f851da9759db7757a"><td class="memItemLeft" align="right" valign="top"><a id="a3f6d93847065551f851da9759db7757a"></a>
+const <a class="el" href="class_mb_solid.html">MbSolid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a3f6d93847065551f851da9759db7757a">GetSolid</a> () const</td></tr>
+<tr class="memdesc:a3f6d93847065551f851da9759db7757a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тело. <br /></td></tr>
+<tr class="separator:a3f6d93847065551f851da9759db7757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe491bb4f4aaedcc7603fec9e529c5b9"><td class="memItemLeft" align="right" valign="top"><a id="abe491bb4f4aaedcc7603fec9e529c5b9"></a>
+<a class="el" href="class_mb_solid.html">MbSolid</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#abe491bb4f4aaedcc7603fec9e529c5b9">SetSolid</a> () const</td></tr>
+<tr class="memdesc:abe491bb4f4aaedcc7603fec9e529c5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тело для изменения. <br /></td></tr>
+<tr class="separator:abe491bb4f4aaedcc7603fec9e529c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf49a08d9ca7fc459ceb1b26719dc939"><td class="memItemLeft" align="right" valign="top"><a id="adf49a08d9ca7fc459ceb1b26719dc939"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#adf49a08d9ca7fc459ceb1b26719dc939">RebuildItem</a> ()</td></tr>
+<tr class="memdesc:adf49a08d9ca7fc459ceb1b26719dc939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перестроить объект по журналу построения. Для перестроения проволочного каркаса. Вернуть true в случае успешного перестроения. <br /></td></tr>
+<tr class="separator:adf49a08d9ca7fc459ceb1b26719dc939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04b3c9fbd9b1706c74b79ecf0c14f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ab04b3c9fbd9b1706c74b79ecf0c14f9b">GetWireFrameContours</a> (c3d::PlaneContoursSPtrVector &amp;wireContours, <a class="el" href="class_s_ptr.html">c3d::SurfaceSPtr</a> &amp;wireSurface, c3d::SpaceContoursSPtrVector &amp;wireContours3D, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &gt; *contoursNames=nullptr) const</td></tr>
+<tr class="memdesc:ab04b3c9fbd9b1706c74b79ecf0c14f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать двумерные контуры с поверхностью или трехмерные контуры, полученные с проволочного каркаса.  <a href="class_mb_swept_data.html#ab04b3c9fbd9b1706c74b79ecf0c14f9b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab04b3c9fbd9b1706c74b79ecf0c14f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765e344d42e9b9c39c2c4a432aee5fb5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a765e344d42e9b9c39c2c4a432aee5fb5">GetWireFrameSurfaceContours</a> (c3d::SurfacesSPtrVector &amp;wireSurfaces, std::vector&lt; c3d::PlaneContoursSPtrVector &gt; &amp;wireContours, std::vector&lt; c3d::SNamesMakerSPtrVector &gt; &amp;contoursNames, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()) const</td></tr>
+<tr class="memdesc:a765e344d42e9b9c39c2c4a432aee5fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать двумерные контуры с поверхностью, полученные с проволочного каркаса.  <a href="class_mb_swept_data.html#a765e344d42e9b9c39c2c4a432aee5fb5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a765e344d42e9b9c39c2c4a432aee5fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efac08bcee51f2a8b02237fbd235ea7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a5efac08bcee51f2a8b02237fbd235ea7">GetWireFrameSpaceContours</a> (c3d::SpaceContoursSPtrVector &amp;wireContours3D, c3d::SNamesMakerSPtrVector &amp;contoursNames, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()) const</td></tr>
+<tr class="memdesc:a5efac08bcee51f2a8b02237fbd235ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать трехмерные контуры, полученные с проволочного каркаса.  <a href="class_mb_swept_data.html#a5efac08bcee51f2a8b02237fbd235ea7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5efac08bcee51f2a8b02237fbd235ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02b21b3ac3d2ebb6407de6c758f65e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#af02b21b3ac3d2ebb6407de6c758f65e3">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matr, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:af02b21b3ac3d2ebb6407de6c758f65e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать объект.  <a href="class_mb_swept_data.html#af02b21b3ac3d2ebb6407de6c758f65e3">Подробнее...</a><br /></td></tr>
+<tr class="separator:af02b21b3ac3d2ebb6407de6c758f65e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ee06bd787cb5832b248e2da4a9a652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ac7ee06bd787cb5832b248e2da4a9a652">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;to, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:ac7ee06bd787cb5832b248e2da4a9a652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть объект.  <a href="class_mb_swept_data.html#ac7ee06bd787cb5832b248e2da4a9a652">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac7ee06bd787cb5832b248e2da4a9a652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4f22e7840a8e2931d67d277b3003c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a1d4f22e7840a8e2931d67d277b3003c3">Rotate</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;axis, double angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:a1d4f22e7840a8e2931d67d277b3003c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть объект.  <a href="class_mb_swept_data.html#a1d4f22e7840a8e2931d67d277b3003c3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1d4f22e7840a8e2931d67d277b3003c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ad2f9ffca993ec50dde9f9e26a78df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a60ad2f9ffca993ec50dde9f9e26a78df">IsSame</a> (const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;other, double accuracy) const</td></tr>
+<tr class="memdesc:a60ad2f9ffca993ec50dde9f9e26a78df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты равными.  <a href="class_mb_swept_data.html#a60ad2f9ffca993ec50dde9f9e26a78df">Подробнее...</a><br /></td></tr>
+<tr class="separator:a60ad2f9ffca993ec50dde9f9e26a78df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d168d0f8457d924438ff212f34166f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#af1d168d0f8457d924438ff212f34166f">IsSimilar</a> (const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;other) const</td></tr>
+<tr class="memdesc:af1d168d0f8457d924438ff212f34166f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты подобными.  <a href="class_mb_swept_data.html#af1d168d0f8457d924438ff212f34166f">Подробнее...</a><br /></td></tr>
+<tr class="separator:af1d168d0f8457d924438ff212f34166f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e4cedc90c3fa4f81624bbb0b6cf7ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ad0e4cedc90c3fa4f81624bbb0b6cf7ee">SetEqual</a> (const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;other)</td></tr>
+<tr class="memdesc:ad0e4cedc90c3fa4f81624bbb0b6cf7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать объекты равным.  <a href="class_mb_swept_data.html#ad0e4cedc90c3fa4f81624bbb0b6cf7ee">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad0e4cedc90c3fa4f81624bbb0b6cf7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352c964867d4ab5c232ac23bfd4d5733"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a352c964867d4ab5c232ac23bfd4d5733">IsContoursClosed</a> () const</td></tr>
+<tr class="memdesc:a352c964867d4ab5c232ac23bfd4d5733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Замкнуты ли все контуры.  <a href="class_mb_swept_data.html#a352c964867d4ab5c232ac23bfd4d5733">Подробнее...</a><br /></td></tr>
+<tr class="separator:a352c964867d4ab5c232ac23bfd4d5733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8836784c562067fee5c53e92ee854cf"><td class="memItemLeft" align="right" valign="top"><a id="ae8836784c562067fee5c53e92ee854cf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#ae8836784c562067fee5c53e92ee854cf">CheckSurfaceContourConnection</a> (double eps) const</td></tr>
+<tr class="memdesc:ae8836784c562067fee5c53e92ee854cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, что нет разрывов между сегментами поверхностных контуров. <br /></td></tr>
+<tr class="separator:ae8836784c562067fee5c53e92ee854cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1d245ec11d26957e21130e5c5d5322"><td class="memItemLeft" align="right" valign="top"><a id="a1a1d245ec11d26957e21130e5c5d5322"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_swept_data.html#a1a1d245ec11d26957e21130e5c5d5322">CheckSpaceContourConnection</a> (double eps) const</td></tr>
+<tr class="memdesc:a1a1d245ec11d26957e21130e5c5d5322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, что нет разрывов между сегментами пространственных контуров. <br /></td></tr>
+<tr class="separator:a1a1d245ec11d26957e21130e5c5d5322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Данные об образующей. </p>
+<p>Данные об образующей операции движения. <br  />
+ Образующая операции выдавливания, вращения или кинематической операции может включать в себя набор двумерных контуров, набор трехмерных контуров, проволочный каркас, тело. <br  />
+ Для набора двумерных контуров на поверхности существуют следующие ограничения:<br  />
+ – может быть один или несколько контуров;<br  />
+ – если контуров несколько, они должны быть либо все замкнуты, либо все разомкнуты;<br  />
+</p><ul>
+<li>если контуры замкнуты, они могут быть вложенными друг в друга, уровень вложенности не ограничивается;<br  />
+ – контуры не должны пересекаться между собой или самопересекаться.<br  />
+ Для двумерных контуров на не плоской поверхности есть дополнительное ограничение: все контуры должны быть замкнуты.<br  />
+ Построение операции по двумерным контурам на не плоской поверхности рассчитано на указание пользователем грани тела в качестве образующей. В этом случае данные для образующей можно получить с помощью метода грани <a class="el" href="class_mb_face.html#a9af8dfa7e1a7bedf12f137268b2a23cf" title="Построить копию поверхности и двумерные контуры по циклам для операций выдавливания и вращения кривых...">MbFace::GetSurfaceCurvesData</a>.<br  />
+ Ограничения для трехмерных контуров:<br  />
+ – контуры не должны пересекаться между собой или самопересекаться.<br  />
+</li>
+</ul>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a9c981aef92318936a75ebdef20608702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c981aef92318936a75ebdef20608702">&#9670;&nbsp;</a></span>MbeWireFrameType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbSweptData::MbeWireFrameType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тип интерпретации проволочного каркаса. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"><p>Не определен. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180"></a>planeContours&#160;</td><td class="fielddoc"><p>Контуры на плоскости. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea"></a>surfaceContours&#160;</td><td class="fielddoc"><p>Контуры на поверхности. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae"></a>spaceContours&#160;</td><td class="fielddoc"><p>Трехмерные контуры. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aea82bfb362099b31a621c7972abf6d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea82bfb362099b31a621c7972abf6d34">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[1/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_contour.html">MbContour</a> &amp;&#160;</td>
+          <td class="paramname"><em>contour</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор плоской образующей. </p>
+<p>Конструктор плоской образующей из одного контура.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Локальная система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contour</td><td>- Контур в параметрах заданной системы координат. Используется оригинал. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac1f45327de082cca3aef2af31efc443c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f45327de082cca3aef2af31efc443c">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[2/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>_surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_contours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>spatialThickness</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по набору контуров на поверхности.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_surface</td><td>- Поверхность. Используется оригинал.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours</td><td>- Набор контуров. Используются оригиналы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spatialThickness</td><td>- Тип тонкой стенки: true - построение по пространственному случаю, false - по двумерному. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab0453d91befb49a94534ce280e208d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0453d91befb49a94534ce280e208d97">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[3/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>_surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c3d::PlaneContoursSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>_contours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>spatialThickness</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по набору контуров на поверхности.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_surface</td><td>- Поверхность. Используется оригинал.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours</td><td>- Набор контуров. Используются оригиналы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spatialThickness</td><td>- Тип тонкой стенки: true - построение по пространственному случаю, false - по двумерному. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a73a8d3648882373b3553af710a9e83b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a8d3648882373b3553af710a9e83b9">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[4/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>_curve3d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по кривой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_curve3d</td><td>- Кривая. Используются оригиналы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3070490eb0e10dfcc623ab972010676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3070490eb0e10dfcc623ab972010676">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[5/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype">c3d::SpaceCurvesSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>_curves3d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор по трехмерным кривым. </p>
+<p>Конструктор по трехмерным кривым.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_curves3d</td><td>- Кривые. Используются оригиналы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab31ca32def2aef398c7aa24d2870a39c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab31ca32def2aef398c7aa24d2870a39c">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[6/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_contour3_d.html">MbContour3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>_contour3d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по контуру.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contour3d</td><td>- Контур. Используются оригиналы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8b0aabb0bc36df40be081859e2b7439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b0aabb0bc36df40be081859e2b7439">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[7/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour3_d.html">MbContour3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_contours3d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по набору пространственных контуров.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours3d</td><td>- Набор контуров. Используются оригиналы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad54ec74cc4ae9eddbe6b4d856f7a7a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad54ec74cc4ae9eddbe6b4d856f7a7a0">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[8/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype">c3d::SpaceContoursSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>_contours3d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по набору пространственных контуров.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours3d</td><td>- Набор контуров. Используются оригиналы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7af7df505c8d2597a3176e71fd354269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af7df505c8d2597a3176e71fd354269">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[9/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_solid.html">MbSolid</a> &amp;&#160;</td>
+          <td class="paramname"><em>_solid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> *&#160;</td>
+          <td class="paramname"><em>newNameMaker</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по телу.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_solid</td><td>- Тело. Используется оригинал объекта.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newNameMaker</td><td>- Новое главное имя для топологических элементов тела. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5dc3fd63242bfe42a26161617842afb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc3fd63242bfe42a26161617842afb4">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[10/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td>
+          <td class="paramname"><em>_surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_contours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour3_d.html">MbContour3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_contours3d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_solid.html">MbSolid</a> *&#160;</td>
+          <td class="paramname"><em>_solid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор смешанной образующей.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_surface</td><td>- Поверхность. Используется оригинал.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours</td><td>- Набор двумерных контуров в параметрах заданной поверхности. Используются оригиналы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours3d</td><td>- Набор трехмерных контуров. Используются оригиналы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_solid</td><td>- Тело. Используется оригинал объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2aa828d4e3fadc42e6bd1cd9d1625c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa828d4e3fadc42e6bd1cd9d1625c9c">&#9670;&nbsp;</a></span>MbSweptData() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSweptData::MbSweptData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>_wireFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbeWireFrameType</a>&#160;</td>
+          <td class="paramname"><em>_wireFrameType</em> = <code><a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74">MbeWireFrameType::undefined</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор по трехмерному проволочному каркасу. Используются оригинал.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_wireFrame</td><td>- Трехмерный проволочный каркас.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_wireFrameType</td><td>- Тип интерпретации проволочного каркаса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ad24daf7f8b2b583938e62bf3b1886527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24daf7f8b2b583938e62bf3b1886527">&#9670;&nbsp;</a></span>AddData() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbSweptData::AddData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>_surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_contours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить данные. </p>
+<p>Добавить данные о контурах на поверхности.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_surface</td><td>- Поверхность. Добавляется оригинал объекта.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours</td><td>- Набор контуров. Добавляются оригиналы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7105508f82711e0b85319b4f46e1c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7105508f82711e0b85319b4f46e1c9a">&#9670;&nbsp;</a></span>AddData() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbSweptData::AddData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>_surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c3d::PlaneContoursSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>_contours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить данные. </p>
+<p>Добавить данные о контурах на поверхности.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_surface</td><td>- Поверхность. Добавляется оригинал объекта.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_contours</td><td>- Набор контуров. Добавляются оригиналы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9057c44c6632c3de3125d4608af9bc89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9057c44c6632c3de3125d4608af9bc89">&#9670;&nbsp;</a></span>AddData() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSweptData::AddData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>_wireFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702">MbeWireFrameType</a>&#160;</td>
+          <td class="paramname"><em>_wireFrameType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td>
+          <td class="paramname"><em>_surface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить данные. </p>
+<p>Добавить данные о проволочном каркасе.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_wireFrame</td><td>- Трехмерный проволочный каркас.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_wireFrameType</td><td>- Тип интерпретации проволочного каркаса. Все проволочные каркасы, добавленные в образующую, должны иметь типы: <br  />
+<ol type="1">
+<li>'<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea" title="Контуры на поверхности.">MbeWireFrameType::surfaceContours</a>' или '<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180" title="Контуры на плоскости.">MbeWireFrameType::planeContours</a>', или '<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74" title="Не определен.">MbeWireFrameType::undefined</a>'; <br  />
+ или <br  />
+</li>
+<li>'<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae" title="Трехмерные контуры.">MbeWireFrameType::spaceContours</a>' или 'MbeWireFrameType::undefinedContours'. <br  />
+ или <br  />
+</li>
+<li>'<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea" title="Контуры на поверхности.">MbeWireFrameType::surfaceContours</a>' или '<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180" title="Контуры на плоскости.">MbeWireFrameType::planeContours</a>', или '<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae" title="Трехмерные контуры.">MbeWireFrameType::spaceContours</a>'; <br  />
+ </li>
+</ol>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_surface</td><td>- Поверхность, общая для кривых каркаса, при типах интерепретации '<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea" title="Контуры на поверхности.">MbeWireFrameType::surfaceContours</a>' или '<a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180" title="Контуры на плоскости.">MbeWireFrameType::planeContours</a>'. Добавляется оригинал объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b6c5e5a84367f76da8f80b4d750baa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6c5e5a84367f76da8f80b4d750baa8">&#9670;&nbsp;</a></span>CurvesCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MbSweptData::CurvesCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество всех кривых. </p>
+<p>Общее количество двумерных и трехмерных кривых. </p>
+
+</div>
+</div>
+<a id="aff46e57134064b882eb1b422ea143704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff46e57134064b882eb1b422ea143704">&#9670;&nbsp;</a></span>GetCurve3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_ptr.html">SPtr</a>&lt;<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a>&gt; MbSweptData::GetCurve3D </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить кривую по индексу. </p>
+<p>Получить кривую из множества кривых на поверхности и трехмерных кривых.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>- Номер кривой в пределах от 0 до <a class="el" href="class_mb_swept_data.html#a5b6c5e5a84367f76da8f80b4d750baa8" title="Количество всех кривых.">CurvesCount()</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Кривую на поверхности или трехмерную кривую. </dd></dl>
+
+</div>
+</div>
+<a id="afb6a122508e5b869e44d2170c0fa4be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6a122508e5b869e44d2170c0fa4be3">&#9670;&nbsp;</a></span>SetSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSweptData::SetSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить поверхность. </p>
+<p>Установить новую поверхность как носитель двумерных контуров или как целевую поверхность для направляющей.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surf</td><td>- Новая поверхность как носитель для двумерных контуров или целевая поверхность для направляющей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab04b3c9fbd9b1706c74b79ecf0c14f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04b3c9fbd9b1706c74b79ecf0c14f9b">&#9670;&nbsp;</a></span>GetWireFrameContours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSweptData::GetWireFrameContours </td>
+          <td>(</td>
+          <td class="paramtype">c3d::PlaneContoursSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>wireContours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">c3d::SurfaceSPtr</a> &amp;&#160;</td>
+          <td class="paramname"><em>wireSurface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c3d::SpaceContoursSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>wireContours3D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &gt; *&#160;</td>
+          <td class="paramname"><em>contoursNames</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать двумерные контуры с поверхностью или трехмерные контуры, полученные с проволочного каркаса. </p>
+<p>Выдать двумерные контуры с поверхностью или трехмерные контуры, полученные с проволочного каркаса. Каркас трактуется как поверхностные контуры, если у контуров общая поверхность, иначе как пространственные.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">wireContours</td><td>- Набор двумерных контуров.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wireSurface</td><td>- Поверхность.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wireContours3D</td><td>- Набор трехмерных контуров.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">contoursNames</td><td>- На входе - именователь ребер каркаса. На выходе - именователь полученных контуров. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a765e344d42e9b9c39c2c4a432aee5fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765e344d42e9b9c39c2c4a432aee5fb5">&#9670;&nbsp;</a></span>GetWireFrameSurfaceContours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MbSweptData::GetWireFrameSurfaceContours </td>
+          <td>(</td>
+          <td class="paramtype">c3d::SurfacesSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>wireSurfaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; c3d::PlaneContoursSPtrVector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wireContours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; c3d::SNamesMakerSPtrVector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>contoursNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>version</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать двумерные контуры с поверхностью, полученные с проволочного каркаса. </p>
+<p>Выдать двумерные контуры с поверхностью, полученные с проволочного каркаса. Возможные варианты типов каркасов:</p><ol type="1">
+<li>Все кроме <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae" title="Трехмерные контуры.">MbeWireFrameType::spaceContours</a> - контуры строятся по всем кракасам.</li>
+<li>Все кроме <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74" title="Не определен.">MbeWireFrameType::undefined</a> - контуры строятся только по каркасам с типом <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180" title="Контуры на плоскости.">MbeWireFrameType::planeContours</a> и <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea" title="Контуры на поверхности.">MbeWireFrameType::surfaceContours</a>. Каркас трактуется как плоские контуры или как поверхностные контуры, в зависимости от заданного типа frameType.</li>
+</ol>
+<ol type="1">
+<li>All except <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae" title="Трехмерные контуры.">MbeWireFrameType::spaceContours</a> - contours are built using all frames.</li>
+<li>All except <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74" title="Не определен.">MbeWireFrameType::undefined</a> - contours are built only using frames with the <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180" title="Контуры на плоскости.">MbeWireFrameType::planeContours</a> and <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea" title="Контуры на поверхности.">MbeWireFrameType::surfaceContours</a> types. The frame is treated as either plane contours or surface contours, depending on the specified frameType. <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">wireSurfaces</td><td>- Набор поверхностей.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wireContours</td><td>- Наборы двумерных контуров для каждой поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>- Версия.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество поверхностей и наборов контуров. </dd></dl>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="a5efac08bcee51f2a8b02237fbd235ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efac08bcee51f2a8b02237fbd235ea7">&#9670;&nbsp;</a></span>GetWireFrameSpaceContours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MbSweptData::GetWireFrameSpaceContours </td>
+          <td>(</td>
+          <td class="paramtype">c3d::SpaceContoursSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>wireContours3D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c3d::SNamesMakerSPtrVector &amp;&#160;</td>
+          <td class="paramname"><em>contoursNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>version</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать трехмерные контуры, полученные с проволочного каркаса. </p>
+<p>Выдать трехмерные контуры, полученные с проволочного каркаса. Возможные варианты типов каркасов:</p><ol type="1">
+<li>Все каркасы имеют типы <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae" title="Трехмерные контуры.">MbeWireFrameType::spaceContours</a> или <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74" title="Не определен.">MbeWireFrameType::undefined</a> - строим по всем.</li>
+<li>Все кроме <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74" title="Не определен.">MbeWireFrameType::undefined</a> - строим только по <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae" title="Трехмерные контуры.">MbeWireFrameType::spaceContours</a>.</li>
+</ol>
+<p>Possible frame types:</p><ol type="1">
+<li>All except <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a3288e90c491ab3070c01fb5806e2e5ae" title="Трехмерные контуры.">MbeWireFrameType::spaceContours</a> - contours are built using all frames.</li>
+<li>All except <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702a5e543256c480ac577d30f76f9120eb74" title="Не определен.">MbeWireFrameType::undefined</a> - contours are built only using frames with the <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702ab1212fd098ed99fd085b298a67f95180" title="Контуры на плоскости.">MbeWireFrameType::planeContours</a> and <a class="el" href="class_mb_swept_data.html#a9c981aef92318936a75ebdef20608702afc36a8413cde022b6d44d16b1ed856ea" title="Контуры на поверхности.">MbeWireFrameType::surfaceContours</a> types. <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">wireContours</td><td>- Наборы двумерных контуров для каждой поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>- Версия.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество контуров. </dd></dl>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="af02b21b3ac3d2ebb6407de6c758f65e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02b21b3ac3d2ebb6407de6c758f65e3">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSweptData::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразовать объект. </p>
+<p>Преобразовать исходный объект согласно матрице c использованием регистратора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">matr</td><td>- Матрица преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7ee06bd787cb5832b248e2da4a9a652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ee06bd787cb5832b248e2da4a9a652">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSweptData::Move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сдвинуть объект. </p>
+<p>Сдвинуть геометрический объект вдоль вектора с использованием регистратора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>- Вектор сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d4f22e7840a8e2931d67d277b3003c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4f22e7840a8e2931d67d277b3003c3">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSweptData::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть объект. </p>
+<p>Повернуть объект вокруг оси на заданный угол с использованием регистратора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>- Ось поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a60ad2f9ffca993ec50dde9f9e26a78df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ad2f9ffca993ec50dde9f9e26a78df">&#9670;&nbsp;</a></span>IsSame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbSweptData::IsSame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты равными. </p>
+<p>Определить, являются ли объекты равными с заданной точностью.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- Объект для сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Подобны ли объекты. </dd></dl>
+
+</div>
+</div>
+<a id="af1d168d0f8457d924438ff212f34166f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d168d0f8457d924438ff212f34166f">&#9670;&nbsp;</a></span>IsSimilar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbSweptData::IsSimilar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты подобными. </p>
+<p>Подобный объект можно инициализировать по данным подобного ему объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- Объект для сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Подобны ли объекты. </dd></dl>
+
+</div>
+</div>
+<a id="ad0e4cedc90c3fa4f81624bbb0b6cf7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e4cedc90c3fa4f81624bbb0b6cf7ee">&#9670;&nbsp;</a></span>SetEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbSweptData::SetEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сделать объекты равным. </p>
+<p>Равными можно сделать только подобные объекты.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>- Объект для инициализации.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сделан ли объект равным присланному. </dd></dl>
+
+</div>
+</div>
+<a id="a352c964867d4ab5c232ac23bfd4d5733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352c964867d4ab5c232ac23bfd4d5733">&#9670;&nbsp;</a></span>IsContoursClosed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbSweptData::IsContoursClosed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Замкнуты ли все контуры. </p>
+<p>Замкнуты ли все контуры. <br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если все контуры замкнуты. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="op__swept__parameter_8h.html">op_swept_parameter.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_swept_data.html">MbSweptData</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

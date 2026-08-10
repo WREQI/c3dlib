@@ -1,0 +1,1947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbThread</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_thread.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_mb_thread-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbThread<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___items.html">Геометрические объекты</a> &raquo; <a class="el" href="group___legend.html">Вспомогательные объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Резьба.  
+ <a href="class_mb_thread.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_thread.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbThread:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_thread__inherit__graph.svg" width="200" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbThread:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_thread__coll__graph.svg" width="352" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab0d23cef24c69d0acff8eb0eb4bf915d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ab0d23cef24c69d0acff8eb0eb4bf915d">MbThread</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;<a class="el" href="class_mb_thread.html#abfa0a3aa8eea6ea651f5ad913c85c2ad">place</a>, double rObj, double rThr, double len, double ang)</td></tr>
+<tr class="memdesc:ab0d23cef24c69d0acff8eb0eb4bf915d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_thread.html#ab0d23cef24c69d0acff8eb0eb4bf915d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab0d23cef24c69d0acff8eb0eb4bf915d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b624bd6ef4056d09fa1f72b05f8e75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a09b624bd6ef4056d09fa1f72b05f8e75">MbThread</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;<a class="el" href="class_mb_thread.html#abfa0a3aa8eea6ea651f5ad913c85c2ad">place</a>, double rObj, double rThr, double begPos, double endPos, double ang)</td></tr>
+<tr class="memdesc:a09b624bd6ef4056d09fa1f72b05f8e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_thread.html#a09b624bd6ef4056d09fa1f72b05f8e75">Подробнее...</a><br /></td></tr>
+<tr class="separator:a09b624bd6ef4056d09fa1f72b05f8e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8091a866c66074df9fe62839d9f82bc"><td class="memItemLeft" align="right" valign="top"><a id="ab8091a866c66074df9fe62839d9f82bc"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ab8091a866c66074df9fe62839d9f82bc">~MbThread</a> ()</td></tr>
+<tr class="memdesc:ab8091a866c66074df9fe62839d9f82bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ab8091a866c66074df9fe62839d9f82bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Общие функции геометрического объекта.</div></td></tr>
+<tr class="memitem:ae9489216ebf9cb3cfddf7fd064124105"><td class="memItemLeft" align="right" valign="top"><a id="ae9489216ebf9cb3cfddf7fd064124105"></a>
+<a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ae9489216ebf9cb3cfddf7fd064124105">IsA</a> () const override</td></tr>
+<tr class="memdesc:ae9489216ebf9cb3cfddf7fd064124105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип объекта. <br /></td></tr>
+<tr class="separator:ae9489216ebf9cb3cfddf7fd064124105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8802a67b3ec9b199552c17ca0b6c9116"><td class="memItemLeft" align="right" valign="top"><a id="a8802a67b3ec9b199552c17ca0b6c9116"></a>
+<a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a8802a67b3ec9b199552c17ca0b6c9116">Type</a> () const override</td></tr>
+<tr class="memdesc:a8802a67b3ec9b199552c17ca0b6c9116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить групповой тип объекта. <br /></td></tr>
+<tr class="separator:a8802a67b3ec9b199552c17ca0b6c9116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fbc703ee3cccdc77436adecacdf943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a81fbc703ee3cccdc77436adecacdf943">Duplicate</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *=nullptr) const override</td></tr>
+<tr class="memdesc:a81fbc703ee3cccdc77436adecacdf943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию объекта.  <a href="class_mb_thread.html#a81fbc703ee3cccdc77436adecacdf943">Подробнее...</a><br /></td></tr>
+<tr class="separator:a81fbc703ee3cccdc77436adecacdf943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac781b3bbc187119f96e1e547fcaae74e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ac781b3bbc187119f96e1e547fcaae74e">IsSame</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;, double accuracy=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const override</td></tr>
+<tr class="memdesc:ac781b3bbc187119f96e1e547fcaae74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты равными.  <a href="class_mb_thread.html#ac781b3bbc187119f96e1e547fcaae74e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac781b3bbc187119f96e1e547fcaae74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfe13132dcc390d334f2806904c0daa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a7bfe13132dcc390d334f2806904c0daa">IsSimilar</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;) const override</td></tr>
+<tr class="memdesc:a7bfe13132dcc390d334f2806904c0daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты подобными.  <a href="class_mb_thread.html#a7bfe13132dcc390d334f2806904c0daa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7bfe13132dcc390d334f2806904c0daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92cc3c968e3a6307f9a997c8e1319e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#aa92cc3c968e3a6307f9a997c8e1319e0">SetEqual</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;) override</td></tr>
+<tr class="memdesc:aa92cc3c968e3a6307f9a997c8e1319e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать объекты равным, если они подобны.  <a href="class_mb_thread.html#aa92cc3c968e3a6307f9a997c8e1319e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa92cc3c968e3a6307f9a997c8e1319e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab582fff479e89fb442764d7a11bd4a84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ab582fff479e89fb442764d7a11bd4a84">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr) override</td></tr>
+<tr class="memdesc:ab582fff479e89fb442764d7a11bd4a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать объект согласно матрице.  <a href="class_mb_thread.html#ab582fff479e89fb442764d7a11bd4a84">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab582fff479e89fb442764d7a11bd4a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f0136f2901dab5728868471712d1bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a88f0136f2901dab5728868471712d1bc">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr) override</td></tr>
+<tr class="memdesc:a88f0136f2901dab5728868471712d1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть объект вдоль вектора.  <a href="class_mb_thread.html#a88f0136f2901dab5728868471712d1bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a88f0136f2901dab5728868471712d1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e497afca4cd6c98c13ba1f26f342886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a3e497afca4cd6c98c13ba1f26f342886">Rotate</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;, double, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr) override</td></tr>
+<tr class="memdesc:a3e497afca4cd6c98c13ba1f26f342886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть объект вокруг оси на заданный угол.  <a href="class_mb_thread.html#a3e497afca4cd6c98c13ba1f26f342886">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3e497afca4cd6c98c13ba1f26f342886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f67fe1df5455759f65e72debe9a3942"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a8f67fe1df5455759f65e72debe9a3942">DistanceToPoint</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const override</td></tr>
+<tr class="memdesc:a8f67fe1df5455759f65e72debe9a3942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить расстояние до точки.  <a href="class_mb_thread.html#a8f67fe1df5455759f65e72debe9a3942">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8f67fe1df5455759f65e72debe9a3942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c8923710693c3ac5e7e4ce7b88d00e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a41c8923710693c3ac5e7e4ce7b88d00e">AddYourGabaritTo</a> (<a class="el" href="class_mb_cube.html">MbCube</a> &amp;) const override</td></tr>
+<tr class="memdesc:a41c8923710693c3ac5e7e4ce7b88d00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расширить присланный габаритный куб так, чтобы он включал в себя данный объект.  <a href="class_mb_thread.html#a41c8923710693c3ac5e7e4ce7b88d00e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a41c8923710693c3ac5e7e4ce7b88d00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbf17887087ffc07ef9d1ae8c2cf3b2"><td class="memItemLeft" align="right" valign="top"><a id="aecbf17887087ffc07ef9d1ae8c2cf3b2"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#aecbf17887087ffc07ef9d1ae8c2cf3b2">Refresh</a> () override</td></tr>
+<tr class="memdesc:aecbf17887087ffc07ef9d1ae8c2cf3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевести все временные (mutable) данные объекта в неопределённое (исходное) состояние. <br /></td></tr>
+<tr class="separator:aecbf17887087ffc07ef9d1ae8c2cf3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c69fda6e7b72897d717348b70bfeb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a38c69fda6e7b72897d717348b70bfeb2">CalculateMesh</a> (const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;note, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const override</td></tr>
+<tr class="memdesc:a38c69fda6e7b72897d717348b70bfeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить полигональную копию mesh.  <a href="class_mb_thread.html#a38c69fda6e7b72897d717348b70bfeb2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a38c69fda6e7b72897d717348b70bfeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1f8088a4ac03c36017c625ed3521a9"><td class="memItemLeft" align="right" valign="top"><a id="adc1f8088a4ac03c36017c625ed3521a9"></a>
+<a class="el" href="class_mb_property.html">MbProperty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#adc1f8088a4ac03c36017c625ed3521a9">CreateProperty</a> (<a class="el" href="mb__property__title_8h.html#aff36a02591ff535f7cab841a4b0dd312">MbePrompt</a>) const override</td></tr>
+<tr class="memdesc:adc1f8088a4ac03c36017c625ed3521a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать собственное свойство с заданием его имени. <br /></td></tr>
+<tr class="separator:adc1f8088a4ac03c36017c625ed3521a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd3731fa9025713475b8aa9abad2f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a5bd3731fa9025713475b8aa9abad2f81">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;) override</td></tr>
+<tr class="memdesc:a5bd3731fa9025713475b8aa9abad2f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта.  <a href="class_mb_thread.html#a5bd3731fa9025713475b8aa9abad2f81">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5bd3731fa9025713475b8aa9abad2f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5526b88e5a516ebea05de1ea4f8774"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#acc5526b88e5a516ebea05de1ea4f8774">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;) override</td></tr>
+<tr class="memdesc:acc5526b88e5a516ebea05de1ea4f8774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить свойства объекта.  <a href="class_mb_thread.html#acc5526b88e5a516ebea05de1ea4f8774">Подробнее...</a><br /></td></tr>
+<tr class="separator:acc5526b88e5a516ebea05de1ea4f8774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269cd911b7f694e8f4c3ca5964d32f6d"><td class="memItemLeft" align="right" valign="top"><a id="a269cd911b7f694e8f4c3ca5964d32f6d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a269cd911b7f694e8f4c3ca5964d32f6d">GetBasisPoints</a> (<a class="el" href="struct_mb_control_data3_d.html">MbControlData3D</a> &amp;) const override</td></tr>
+<tr class="memdesc:a269cd911b7f694e8f4c3ca5964d32f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать контрольные точки объекта. <br /></td></tr>
+<tr class="separator:a269cd911b7f694e8f4c3ca5964d32f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f35cb979206de30af9e5cb8f90845f"><td class="memItemLeft" align="right" valign="top"><a id="a12f35cb979206de30af9e5cb8f90845f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a12f35cb979206de30af9e5cb8f90845f">SetBasisPoints</a> (const <a class="el" href="struct_mb_control_data3_d.html">MbControlData3D</a> &amp;) override</td></tr>
+<tr class="memdesc:a12f35cb979206de30af9e5cb8f90845f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить объект по контрольным точкам. <br /></td></tr>
+<tr class="separator:a12f35cb979206de30af9e5cb8f90845f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции инициализации.</div></td></tr>
+<tr class="memitem:a555f770816543eccd407cf1819faf4b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a555f770816543eccd407cf1819faf4b9">SetThreadParams</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;<a class="el" href="class_mb_thread.html#abfa0a3aa8eea6ea651f5ad913c85c2ad">place</a>, double <a class="el" href="class_mb_thread.html#afc598bf1e2b1fa683434ac5c8f4ee2c4">radObj</a>, double <a class="el" href="class_mb_thread.html#a3978cf01a52e77a100318760bcd45880">radThr</a>, double len, double ang)</td></tr>
+<tr class="memdesc:a555f770816543eccd407cf1819faf4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация.  <a href="class_mb_thread.html#a555f770816543eccd407cf1819faf4b9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a555f770816543eccd407cf1819faf4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e82b36062911746bdb1f1e0c080f20a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a1e82b36062911746bdb1f1e0c080f20a">SetThreadParams</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;<a class="el" href="class_mb_thread.html#abfa0a3aa8eea6ea651f5ad913c85c2ad">place</a>, double diamObj, double depth, bool bOutThr, double len, double ang)</td></tr>
+<tr class="memdesc:a1e82b36062911746bdb1f1e0c080f20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация.  <a href="class_mb_thread.html#a1e82b36062911746bdb1f1e0c080f20a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e82b36062911746bdb1f1e0c080f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции работы с именами.</div></td></tr>
+<tr class="memitem:ab9cc410185ef229dcc52774565ac27d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ab9cc410185ef229dcc52774565ac27d0">SetName</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;n)</td></tr>
+<tr class="memdesc:ab9cc410185ef229dcc52774565ac27d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить имя.  <a href="class_mb_thread.html#ab9cc410185ef229dcc52774565ac27d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab9cc410185ef229dcc52774565ac27d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7e24c2fbd9226b3c5c458ac8c0e077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_name.html">MbName</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a2a7e24c2fbd9226b3c5c458ac8c0e077">GetName</a> () const</td></tr>
+<tr class="memdesc:a2a7e24c2fbd9226b3c5c458ac8c0e077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя.  <a href="class_mb_thread.html#a2a7e24c2fbd9226b3c5c458ac8c0e077">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2a7e24c2fbd9226b3c5c458ac8c0e077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096ff3c33faf472fd3c15fd2b1453f9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a096ff3c33faf472fd3c15fd2b1453f9f">IsName</a> () const</td></tr>
+<tr class="memdesc:a096ff3c33faf472fd3c15fd2b1453f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли имя.  <a href="class_mb_thread.html#a096ff3c33faf472fd3c15fd2b1453f9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a096ff3c33faf472fd3c15fd2b1453f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции работы с телами, на которых нарезана резьба.</div></td></tr>
+<tr class="memitem:a8db1fc39f9ec4a652ede1297ecab65ba"><td class="memTemplParams" colspan="2">template&lt;class ConstLumps &gt; </td></tr>
+<tr class="memitem:a8db1fc39f9ec4a652ede1297ecab65ba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a8db1fc39f9ec4a652ede1297ecab65ba">AddBodies</a> (const ConstLumps &amp;initBodies)</td></tr>
+<tr class="memdesc:a8db1fc39f9ec4a652ede1297ecab65ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить тела.  <a href="class_mb_thread.html#a8db1fc39f9ec4a652ede1297ecab65ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8db1fc39f9ec4a652ede1297ecab65ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a8770b8fff7c401138c32ba6df90fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a66a8770b8fff7c401138c32ba6df90fb">IsBody</a> (const <a class="el" href="struct_mb_lump.html">MbLump</a> *) const</td></tr>
+<tr class="memdesc:a66a8770b8fff7c401138c32ba6df90fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти тело.  <a href="class_mb_thread.html#a66a8770b8fff7c401138c32ba6df90fb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a66a8770b8fff7c401138c32ba6df90fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86ebf1345e0b39fb966be48df4d459b"><td class="memItemLeft" align="right" valign="top"><a id="ae86ebf1345e0b39fb966be48df4d459b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ae86ebf1345e0b39fb966be48df4d459b">GetBodiesCount</a> () const</td></tr>
+<tr class="memdesc:ae86ebf1345e0b39fb966be48df4d459b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество тел. <br /></td></tr>
+<tr class="separator:ae86ebf1345e0b39fb966be48df4d459b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa70e74bfa5e1c28664c44afdd1cb191"><td class="memTemplParams" colspan="2">template&lt;class ConstLumps &gt; </td></tr>
+<tr class="memitem:afa70e74bfa5e1c28664c44afdd1cb191"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#afa70e74bfa5e1c28664c44afdd1cb191">GetBodies</a> (ConstLumps &amp;lumps) const</td></tr>
+<tr class="memdesc:afa70e74bfa5e1c28664c44afdd1cb191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тела.  <a href="class_mb_thread.html#afa70e74bfa5e1c28664c44afdd1cb191">Подробнее...</a><br /></td></tr>
+<tr class="separator:afa70e74bfa5e1c28664c44afdd1cb191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2beb4cbcbe30b7305239bfa6c34f2ff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a2beb4cbcbe30b7305239bfa6c34f2ff0">DetachWrongBodies</a> ()</td></tr>
+<tr class="memdesc:a2beb4cbcbe30b7305239bfa6c34f2ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить тела, не принадлежащие этой резьбе.  <a href="class_mb_thread.html#a2beb4cbcbe30b7305239bfa6c34f2ff0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2beb4cbcbe30b7305239bfa6c34f2ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775ecdf42f77419d88069a009b353c86"><td class="memItemLeft" align="right" valign="top"><a id="a775ecdf42f77419d88069a009b353c86"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a775ecdf42f77419d88069a009b353c86">DetachBodies</a> ()</td></tr>
+<tr class="memdesc:a775ecdf42f77419d88069a009b353c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить тела, на которых нарезана резьба. <br /></td></tr>
+<tr class="separator:a775ecdf42f77419d88069a009b353c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции доступа к данным. Информация о резьбе.</div></td></tr>
+<tr class="memitem:a0519fedb7081a7474f4be52775ed99be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a0519fedb7081a7474f4be52775ed99be">IsValid</a> () const</td></tr>
+<tr class="memdesc:a0519fedb7081a7474f4be52775ed99be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Корректны ли параметры.  <a href="class_mb_thread.html#a0519fedb7081a7474f4be52775ed99be">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0519fedb7081a7474f4be52775ed99be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d46e85a156f55da5d321c1bc74e341"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ae6d46e85a156f55da5d321c1bc74e341">IsConical</a> () const</td></tr>
+<tr class="memdesc:ae6d46e85a156f55da5d321c1bc74e341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли резьба конической.  <a href="class_mb_thread.html#ae6d46e85a156f55da5d321c1bc74e341">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae6d46e85a156f55da5d321c1bc74e341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b535a5eae181b35b24d0df49eb09491"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a2b535a5eae181b35b24d0df49eb09491">IsOutside</a> () const</td></tr>
+<tr class="memdesc:a2b535a5eae181b35b24d0df49eb09491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли резьба внешней.  <a href="class_mb_thread.html#a2b535a5eae181b35b24d0df49eb09491">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2b535a5eae181b35b24d0df49eb09491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c93874fca8c8df4577bbac9690205dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a4c93874fca8c8df4577bbac9690205dd">IsLeft</a> () const</td></tr>
+<tr class="memdesc:a4c93874fca8c8df4577bbac9690205dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли резьба левой.  <a href="class_mb_thread.html#a4c93874fca8c8df4577bbac9690205dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4c93874fca8c8df4577bbac9690205dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd631d330d3d0b05ef7315408835344a"><td class="memItemLeft" align="right" valign="top"><a id="acd631d330d3d0b05ef7315408835344a"></a>
+const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#acd631d330d3d0b05ef7315408835344a">GetPlacement</a> () const</td></tr>
+<tr class="memdesc:acd631d330d3d0b05ef7315408835344a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить СК резьбы в мировой СК. <br /></td></tr>
+<tr class="separator:acd631d330d3d0b05ef7315408835344a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b14d93a19dd9e322c263d1dc2d82775"><td class="memItemLeft" align="right" valign="top"><a id="a7b14d93a19dd9e322c263d1dc2d82775"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a7b14d93a19dd9e322c263d1dc2d82775">GetObjBegRadius</a> () const</td></tr>
+<tr class="memdesc:a7b14d93a19dd9e322c263d1dc2d82775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить начальный радиус резьбы на поверхности. <br /></td></tr>
+<tr class="separator:a7b14d93a19dd9e322c263d1dc2d82775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510d263db2686713886cd0249cc7f591"><td class="memItemLeft" align="right" valign="top"><a id="a510d263db2686713886cd0249cc7f591"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a510d263db2686713886cd0249cc7f591">GetObjEndRadius</a> () const</td></tr>
+<tr class="memdesc:a510d263db2686713886cd0249cc7f591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить конечный радиус резьбы на поверхности. <br /></td></tr>
+<tr class="separator:a510d263db2686713886cd0249cc7f591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d272d1b221eeb7b43d0da1634fa450"><td class="memItemLeft" align="right" valign="top"><a id="a60d272d1b221eeb7b43d0da1634fa450"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a60d272d1b221eeb7b43d0da1634fa450">GetThrBegRadius</a> () const</td></tr>
+<tr class="memdesc:a60d272d1b221eeb7b43d0da1634fa450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить начальный радиус резьбы в теле. <br /></td></tr>
+<tr class="separator:a60d272d1b221eeb7b43d0da1634fa450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2853a823a4776e1ab989a32faffd15b2"><td class="memItemLeft" align="right" valign="top"><a id="a2853a823a4776e1ab989a32faffd15b2"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a2853a823a4776e1ab989a32faffd15b2">GetThrEndRadius</a> () const</td></tr>
+<tr class="memdesc:a2853a823a4776e1ab989a32faffd15b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить конечный радиус резьбы в теле. <br /></td></tr>
+<tr class="separator:a2853a823a4776e1ab989a32faffd15b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86822bd8847329af1193c9173be3f860"><td class="memItemLeft" align="right" valign="top"><a id="a86822bd8847329af1193c9173be3f860"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a86822bd8847329af1193c9173be3f860">GetLength</a> () const</td></tr>
+<tr class="memdesc:a86822bd8847329af1193c9173be3f860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить длину резьбы. <br /></td></tr>
+<tr class="separator:a86822bd8847329af1193c9173be3f860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59da6da63eae5c3769d4cfe9e651a638"><td class="memItemLeft" align="right" valign="top"><a id="a59da6da63eae5c3769d4cfe9e651a638"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a59da6da63eae5c3769d4cfe9e651a638">GetAngle</a> () const</td></tr>
+<tr class="memdesc:a59da6da63eae5c3769d4cfe9e651a638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить угол конусности поверхности резьбы. <br /></td></tr>
+<tr class="separator:a59da6da63eae5c3769d4cfe9e651a638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5565102a91ab6eaac2b91a44d35eacd"><td class="memItemLeft" align="right" valign="top"><a id="ae5565102a91ab6eaac2b91a44d35eacd"></a>
+<a class="el" href="group___mapping.html#ga607253e08c288d9f8ea8b26d313cdcca">MbeThrState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ae5565102a91ab6eaac2b91a44d35eacd">GetState</a> () const</td></tr>
+<tr class="memdesc:ae5565102a91ab6eaac2b91a44d35eacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать состояние резьбы. <br /></td></tr>
+<tr class="separator:ae5565102a91ab6eaac2b91a44d35eacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897a3465ee458bad16533588c51ad8e1"><td class="memItemLeft" align="right" valign="top"><a id="a897a3465ee458bad16533588c51ad8e1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a897a3465ee458bad16533588c51ad8e1">GetDepth</a> () const</td></tr>
+<tr class="memdesc:a897a3465ee458bad16533588c51ad8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глубина нарезки. <br /></td></tr>
+<tr class="separator:a897a3465ee458bad16533588c51ad8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef53011e70d77e0675b6659e2dbc2e73"><td class="memItemLeft" align="right" valign="top"><a id="aef53011e70d77e0675b6659e2dbc2e73"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#aef53011e70d77e0675b6659e2dbc2e73">GetBegAxisPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const</td></tr>
+<tr class="memdesc:aef53011e70d77e0675b6659e2dbc2e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить начальную точку резьбы на оси. <br /></td></tr>
+<tr class="separator:aef53011e70d77e0675b6659e2dbc2e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b4e7d5d2029144736b96c71eb3a274"><td class="memItemLeft" align="right" valign="top"><a id="a01b4e7d5d2029144736b96c71eb3a274"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a01b4e7d5d2029144736b96c71eb3a274">GetEndAxisPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const</td></tr>
+<tr class="memdesc:a01b4e7d5d2029144736b96c71eb3a274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить конечную точку резьбы на оси. <br /></td></tr>
+<tr class="separator:a01b4e7d5d2029144736b96c71eb3a274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdf0ecf88cf6fbb6378ba291dab0dc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#afbdf0ecf88cf6fbb6378ba291dab0dc8">IsMatedTo</a> (const <a class="el" href="class_mb_thread.html">MbThread</a> &amp;otherThread) const</td></tr>
+<tr class="memdesc:afbdf0ecf88cf6fbb6378ba291dab0dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сопрягаются ли резьбы.  <a href="class_mb_thread.html#afbdf0ecf88cf6fbb6378ba291dab0dc8">Подробнее...</a><br /></td></tr>
+<tr class="separator:afbdf0ecf88cf6fbb6378ba291dab0dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f645909c880ac441c81fa9f1802fb31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a8f645909c880ac441c81fa9f1802fb31">IsMatedTo</a> (const <a class="el" href="class_mb_thread.html">MbThread</a> &amp;otherThread, const <a class="el" href="struct_mb_threaded_joint_check_parameters.html">MbThreadedJointCheckParameters</a> &amp;checkParams, ThreadedJointErrors *thrJointErrors=nullptr) const</td></tr>
+<tr class="memdesc:a8f645909c880ac441c81fa9f1802fb31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сопрягаются ли резьбы.  <a href="class_mb_thread.html#a8f645909c880ac441c81fa9f1802fb31">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8f645909c880ac441c81fa9f1802fb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f7c1a150f37825a7eda5ae487348f7"><td class="memItemLeft" align="right" valign="top"><a id="ac6f7c1a150f37825a7eda5ae487348f7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#ac6f7c1a150f37825a7eda5ae487348f7">IsFaceThread</a> (const <a class="el" href="class_mb_face.html">MbFace</a> *, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;) const</td></tr>
+<tr class="memdesc:ac6f7c1a150f37825a7eda5ae487348f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли резьба грани. <br /></td></tr>
+<tr class="separator:ac6f7c1a150f37825a7eda5ae487348f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681e994b9bd5a594ba3f6f1d1998af7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a681e994b9bd5a594ba3f6f1d1998af7b">IsBodyThread</a> (const <a class="el" href="class_mb_solid.html">MbSolid</a> &amp;solid, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix, <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> *simObjNumbers=nullptr, <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> *intObjNumbers=nullptr) const</td></tr>
+<tr class="memdesc:a681e994b9bd5a594ba3f6f1d1998af7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли резьба телу. <br  />
+  <a href="class_mb_thread.html#a681e994b9bd5a594ba3f6f1d1998af7b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a681e994b9bd5a594ba3f6f1d1998af7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a237435f85234c4c23e9874fe5a3a9f5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a237435f85234c4c23e9874fe5a3a9f5b">IsBodyThread</a> (const <a class="el" href="struct_mb_lump.html">MbLump</a> &amp;lump) const</td></tr>
+<tr class="memdesc:a237435f85234c4c23e9874fe5a3a9f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли резьба телу. <br  />
+  <a href="class_mb_thread.html#a237435f85234c4c23e9874fe5a3a9f5b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a237435f85234c4c23e9874fe5a3a9f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe469ef729aeebf0fd9e5439c8eddf4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#aabe469ef729aeebf0fd9e5439c8eddf4">AdaptToBody</a> (const <a class="el" href="class_mb_solid.html">MbSolid</a> &amp;solid, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix, <a class="el" href="group___mapping.html#ga26c07f3ca9b356455f8557e454db5a6b">MbeThrAdapt</a> thrAdapt, const ThreadLimiters *limiters=nullptr)</td></tr>
+<tr class="memdesc:aabe469ef729aeebf0fd9e5439c8eddf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адаптировать начало и конец резьбы к телу. <br  />
+  <a href="class_mb_thread.html#aabe469ef729aeebf0fd9e5439c8eddf4">Подробнее...</a><br /></td></tr>
+<tr class="separator:aabe469ef729aeebf0fd9e5439c8eddf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e02b421ff16620a44d467cb89903adc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a8e02b421ff16620a44d467cb89903adc">GetLimitPositions</a> (const <a class="el" href="class_mb_thread.html">MbThread</a> &amp;thread, double &amp;begPos, double &amp;endPos) const</td></tr>
+<tr class="memdesc:a8e02b421ff16620a44d467cb89903adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать начало и конец изменённой резьбы относительно исходной. <br  />
+  <a href="class_mb_thread.html#a8e02b421ff16620a44d467cb89903adc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8e02b421ff16620a44d467cb89903adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578cd0208a9f040e9d6499b243d6207c"><td class="memTemplParams" colspan="2">template&lt;class SolidsVector , class MatricesVector , class IndicesVector &gt; </td></tr>
+<tr class="memitem:a578cd0208a9f040e9d6499b243d6207c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a578cd0208a9f040e9d6499b243d6207c">FindThreadBodies</a> (const SolidsVector &amp;solids, const MatricesVector &amp;matrices, IndicesVector &amp;solidsNumbers) const</td></tr>
+<tr class="memdesc:a578cd0208a9f040e9d6499b243d6207c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти тела, которым может принадлежать резьба. <br  />
+  <a href="class_mb_thread.html#a578cd0208a9f040e9d6499b243d6207c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a578cd0208a9f040e9d6499b243d6207c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f645c1ba3cdf6187288e5f6842b719"><td class="memItemLeft" align="right" valign="top"><a id="a74f645c1ba3cdf6187288e5f6842b719"></a>
+const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a74f645c1ba3cdf6187288e5f6842b719">CalculateGabarit</a> () const</td></tr>
+<tr class="memdesc:a74f645c1ba3cdf6187288e5f6842b719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габаритный куб резьбы. <br /></td></tr>
+<tr class="separator:a74f645c1ba3cdf6187288e5f6842b719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67af2f221bf480a2ef43dfd164274ba1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a67af2f221bf480a2ef43dfd164274ba1">CalculateLocalGabarit</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;mIntoLocal, <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cubeLocal) const override</td></tr>
+<tr class="memdesc:a67af2f221bf480a2ef43dfd164274ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габаритный куб резьбы.  <a href="class_mb_thread.html#a67af2f221bf480a2ef43dfd164274ba1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a67af2f221bf480a2ef43dfd164274ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c5e5496985aefd6ba5b655ba57e0a4"><td class="memItemLeft" align="right" valign="top"><a id="a57c5e5496985aefd6ba5b655ba57e0a4"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (const <a class="el" href="class_mb_thread.html">MbThread</a> &amp;)</td></tr>
+<tr class="separator:a57c5e5496985aefd6ba5b655ba57e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_legend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_legend')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_legend.html">MbLegend</a></td></tr>
+<tr class="memitem:afa696b1452e8cf76e5845625a3777358 inherit pub_methods_class_mb_legend"><td class="memItemLeft" align="right" valign="top"><a id="afa696b1452e8cf76e5845625a3777358"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_legend.html#afa696b1452e8cf76e5845625a3777358">~MbLegend</a> ()</td></tr>
+<tr class="memdesc:afa696b1452e8cf76e5845625a3777358 inherit pub_methods_class_mb_legend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:afa696b1452e8cf76e5845625a3777358 inherit pub_methods_class_mb_legend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6d98eb10515fe7bccc437e3afd0564 inherit pub_methods_class_mb_legend"><td class="memItemLeft" align="right" valign="top"><a id="afe6d98eb10515fe7bccc437e3afd0564"></a>
+<a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_legend.html#afe6d98eb10515fe7bccc437e3afd0564">Family</a> () const override</td></tr>
+<tr class="memdesc:afe6d98eb10515fe7bccc437e3afd0564 inherit pub_methods_class_mb_legend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить семейство объекта. <br /></td></tr>
+<tr class="separator:afe6d98eb10515fe7bccc437e3afd0564 inherit pub_methods_class_mb_legend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_space_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_space_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_space_item.html">MbSpaceItem</a></td></tr>
+<tr class="memitem:a23bc52fccf5304c4c0b7836e954b5840 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a23bc52fccf5304c4c0b7836e954b5840"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a23bc52fccf5304c4c0b7836e954b5840">~MbSpaceItem</a> ()</td></tr>
+<tr class="memdesc:a23bc52fccf5304c4c0b7836e954b5840 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a23bc52fccf5304c4c0b7836e954b5840 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860e3b9fc0fa49b8920d2a275049eb21 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a860e3b9fc0fa49b8920d2a275049eb21">PrepareWrite</a> () const</td></tr>
+<tr class="memdesc:a860e3b9fc0fa49b8920d2a275049eb21 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация объекта.  <a href="class_mb_space_item.html#a860e3b9fc0fa49b8920d2a275049eb21">Подробнее...</a><br /></td></tr>
+<tr class="separator:a860e3b9fc0fa49b8920d2a275049eb21 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45589d642ef2d36c9d1898be4b48156 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="af45589d642ef2d36c9d1898be4b48156"></a>
+<a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#af45589d642ef2d36c9d1898be4b48156">RefType</a> () const override</td></tr>
+<tr class="memdesc:af45589d642ef2d36c9d1898be4b48156 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:af45589d642ef2d36c9d1898be4b48156 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74eb49881b4cda0c731ade63ba830e8 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="ac74eb49881b4cda0c731ade63ba830e8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#ac74eb49881b4cda0c731ade63ba830e8">IsFamilyRegistrable</a> () const override</td></tr>
+<tr class="memdesc:ac74eb49881b4cda0c731ade63ba830e8 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:ac74eb49881b4cda0c731ade63ba830e8 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bd72d51277eba72f1372b0f137a0de inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a28bd72d51277eba72f1372b0f137a0de"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWire</b> (const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const</td></tr>
+<tr class="separator:a28bd72d51277eba72f1372b0f137a0de inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da943ddec0381a8ad89c73fae99d4a3 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a0da943ddec0381a8ad89c73fae99d4a3"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWire</b> (double sag, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const</td></tr>
+<tr class="separator:a0da943ddec0381a8ad89c73fae99d4a3 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b7d14509866775298811fd124eac5b inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a85b7d14509866775298811fd124eac5b"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a85b7d14509866775298811fd124eac5b">GetBasisItems</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:a85b7d14509866775298811fd124eac5b inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать базовые объекты в присланный контейнер. <br /></td></tr>
+<tr class="separator:a85b7d14509866775298811fd124eac5b inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:abfa0a3aa8eea6ea651f5ad913c85c2ad"><td class="memItemLeft" align="right" valign="top"><a id="abfa0a3aa8eea6ea651f5ad913c85c2ad"></a>
+<a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#abfa0a3aa8eea6ea651f5ad913c85c2ad">place</a></td></tr>
+<tr class="memdesc:abfa0a3aa8eea6ea651f5ad913c85c2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Система координат резьбы (в мировой системе координат). <br /></td></tr>
+<tr class="separator:abfa0a3aa8eea6ea651f5ad913c85c2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc598bf1e2b1fa683434ac5c8f4ee2c4"><td class="memItemLeft" align="right" valign="top"><a id="afc598bf1e2b1fa683434ac5c8f4ee2c4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#afc598bf1e2b1fa683434ac5c8f4ee2c4">radObj</a></td></tr>
+<tr class="memdesc:afc598bf1e2b1fa683434ac5c8f4ee2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начальный радиус резьбы на поверхности. <br /></td></tr>
+<tr class="separator:afc598bf1e2b1fa683434ac5c8f4ee2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3978cf01a52e77a100318760bcd45880"><td class="memItemLeft" align="right" valign="top"><a id="a3978cf01a52e77a100318760bcd45880"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a3978cf01a52e77a100318760bcd45880">radThr</a></td></tr>
+<tr class="memdesc:a3978cf01a52e77a100318760bcd45880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начальный радиус резьбы в теле. <br /></td></tr>
+<tr class="separator:a3978cf01a52e77a100318760bcd45880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f7884ab3b1c94ae9eb71dad9bd0293"><td class="memItemLeft" align="right" valign="top"><a id="a35f7884ab3b1c94ae9eb71dad9bd0293"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a35f7884ab3b1c94ae9eb71dad9bd0293">length</a></td></tr>
+<tr class="memdesc:a35f7884ab3b1c94ae9eb71dad9bd0293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина резьбы. <br /></td></tr>
+<tr class="separator:a35f7884ab3b1c94ae9eb71dad9bd0293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fff754a6ace86b5558420c5614648c"><td class="memItemLeft" align="right" valign="top"><a id="a94fff754a6ace86b5558420c5614648c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html#a94fff754a6ace86b5558420c5614648c">angle</a></td></tr>
+<tr class="memdesc:a94fff754a6ace86b5558420c5614648c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Угол конусности поверхности резьбы. <br /></td></tr>
+<tr class="separator:a94fff754a6ace86b5558420c5614648c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_class_mb_legend"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_legend')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_legend.html">MbLegend</a></td></tr>
+<tr class="memitem:af0ba81db19ba23a7262401b3afce663f inherit pro_methods_class_mb_legend"><td class="memItemLeft" align="right" valign="top"><a id="af0ba81db19ba23a7262401b3afce663f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_legend.html#af0ba81db19ba23a7262401b3afce663f">MbLegend</a> ()</td></tr>
+<tr class="memdesc:af0ba81db19ba23a7262401b3afce663f inherit pro_methods_class_mb_legend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:af0ba81db19ba23a7262401b3afce663f inherit pro_methods_class_mb_legend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_space_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_space_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_space_item.html">MbSpaceItem</a></td></tr>
+<tr class="memitem:a64964a5fe986724fb4ba3f52ba615cad inherit pro_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a64964a5fe986724fb4ba3f52ba615cad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a64964a5fe986724fb4ba3f52ba615cad">MbSpaceItem</a> ()</td></tr>
+<tr class="memdesc:a64964a5fe986724fb4ba3f52ba615cad inherit pro_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:a64964a5fe986724fb4ba3f52ba615cad inherit pro_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Резьба. </p>
+<p>Резьба отверстий и валов.<br  />
+</p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ab0d23cef24c69d0acff8eb0eb4bf915d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d23cef24c69d0acff8eb0eb4bf915d">&#9670;&nbsp;</a></span>MbThread() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbThread::MbThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rThr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ang</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rObj</td><td>- Начальный радиус резьбы на поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rThr</td><td>- Начальный радиус резьбы в теле.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- Длина резьбы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ang</td><td>- Угол конусности поверхности резьбы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09b624bd6ef4056d09fa1f72b05f8e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b624bd6ef4056d09fa1f72b05f8e75">&#9670;&nbsp;</a></span>MbThread() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbThread::MbThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rThr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>begPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>endPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ang</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rObj</td><td>- Начальный радиус резьбы на поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rThr</td><td>- Начальный радиус резьбы в теле.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">begPos</td><td>- Положение начала резьбы вдоль оси Z системы координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">begPos</td><td>- Положение конца резьбы вдоль оси Z системы координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ang</td><td>- Угол конусности поверхности резьбы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a81fbc703ee3cccdc77436adecacdf943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81fbc703ee3cccdc77436adecacdf943">&#9670;&nbsp;</a></span>Duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_space_item.html">MbSpaceItem</a>&amp; MbThread::Duplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать копию объекта. </p>
+<p>Создать копию объекта с использованием регистратора. Регистратор используется для предотвращения многократного копирования объекта. Если объект содержит ссылки на другие объекты, то вложенные объекты так же копируются. Допустимо не передавать регистратор в функцию. Тогда будет создана новая копия объекта. При копировании одиночного объекта или набора не связанных между собой объектов допустимо не использовать регистратор. Регистратор необходимо использовать, если надо последовательно копировать несколько взаимосвязанных объектов. Возможно, что связь объектов обусловлена наличием в них ссылок на общие объекты. Тогда, при копировании без использования регистратора, можно получить набор копий, содержащих ссылки на разные копии одного и того же вложенного объекта, что ведет к потере связи между копиями.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Копия объекта. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a77f3e80f6f21819c27ffe75506636911">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="ac781b3bbc187119f96e1e547fcaae74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac781b3bbc187119f96e1e547fcaae74e">&#9670;&nbsp;</a></span>IsSame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsSame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em> = <code><a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты равными. </p>
+<p>Равными считаются однотипные объекты, все данные которых одинаковы (равны).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для сравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Точность сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Равны ли объекты. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a51d7fa6cb8c01be0c9456ae36e122f68">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a7bfe13132dcc390d334f2806904c0daa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bfe13132dcc390d334f2806904c0daa">&#9670;&nbsp;</a></span>IsSimilar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsSimilar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты подобными. </p>
+<p>Подобными считаются однотипные объекты, данные которых можно приравнять или данные так же являются подобными (указатели). Подобный объект можно инициализировать по данным подобного ему объекта (приравнять один другому без изменения адресов).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Подобны ли объекты. </dd></dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_mb_space_item.html#a0a575283df807ac23404a47d6ac85590">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="aa92cc3c968e3a6307f9a997c8e1319e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa92cc3c968e3a6307f9a997c8e1319e0">&#9670;&nbsp;</a></span>SetEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::SetEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сделать объекты равным, если они подобны. </p>
+<p>Равными можно сделать только подобные объекты. Подобный объект приравнивается присланному путем изменения численных данных.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для инициализации.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сделан ли объект равным присланному. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#aff5093771e43c5eab4fc1f6d603b22e1">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="ab582fff479e89fb442764d7a11bd4a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab582fff479e89fb442764d7a11bd4a84">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразовать объект согласно матрице. </p>
+<p>Преобразовать исходный объект согласно матрице c использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то вложенные объекты так же преобразуются согласно матрице. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих трансформации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">matr</td><td>- Матрица преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#aff953fe5ad2edb37acdfbbdbb7148043">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a88f0136f2901dab5728868471712d1bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f0136f2901dab5728868471712d1bc">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::Move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сдвинуть объект вдоль вектора. </p>
+<p>Сдвинуть геометрический объект вдоль вектора с использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то к вложенным объектам так же применяется операция сдвига. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих сдвигу.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>- Вектор сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#ae2006b7fff304a10dfa973b72759cb65">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a3e497afca4cd6c98c13ba1f26f342886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e497afca4cd6c98c13ba1f26f342886">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повернуть объект вокруг оси на заданный угол. </p>
+<p>Повернуть объект вокруг оси на заданный угол с использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то к вложенным объектам так же применяется операция поворота. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих повороту.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>- Ось поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a1a49b34182dfe467e37dae1c0982f4dd">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a8f67fe1df5455759f65e72debe9a3942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f67fe1df5455759f65e72debe9a3942">&#9670;&nbsp;</a></span>DistanceToPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MbThread::DistanceToPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить расстояние до точки. </p>
+<p>Определить расстояние до точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>- Точка.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расстояние от объекта до точки. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#aef4c927c97e93b6661c646bf673f6f83">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a41c8923710693c3ac5e7e4ce7b88d00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c8923710693c3ac5e7e4ce7b88d00e">&#9670;&nbsp;</a></span>AddYourGabaritTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::AddYourGabaritTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расширить присланный габаритный куб так, чтобы он включал в себя данный объект. </p>
+<p>Расширить присланный габаритный куб так, чтобы он включал в себя данный объект.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cube</td><td>- Принимающий габаритный куб с информацией по габаритам. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a4cf96cb312c266eb1ae2340f4c870ad4">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a38c69fda6e7b72897d717348b70bfeb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c69fda6e7b72897d717348b70bfeb2">&#9670;&nbsp;</a></span>CalculateMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::CalculateMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;&#160;</td>
+          <td class="paramname"><em>stepData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Построить полигональную копию mesh. </p>
+<p>Построить полигональную копию данного объекта, представленную полигонами, или/и плоскими пластинами.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepData</td><td>- Данные для вычисления шага при построении полигонального.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">note</td><td>- Способ построения полигонального объекта.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">mesh</td><td>- Построенный полигональный объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a11d81f6ac0f5711398cf707d7ffabb54">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a5bd3731fa9025713475b8aa9abad2f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd3731fa9025713475b8aa9abad2f81">&#9670;&nbsp;</a></span>GetProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::GetProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_properties.html">MbProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать свойства объекта. </p>
+<p>Выдать внутренние данные (свойства) объекта для их просмотра и модификации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">properties</td><td>- Контейнер для внутренних данных объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a0377f42bedf917440fb6dace05d16c07">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="acc5526b88e5a516ebea05de1ea4f8774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5526b88e5a516ebea05de1ea4f8774">&#9670;&nbsp;</a></span>SetProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::SetProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изменить свойства объекта. </p>
+<p>Изменение внутренних данных (свойств) объекта выполняется копированием соответствующих значений из присланного объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">properties</td><td>- Контейнер для внутренних данных объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a38908f7d2f0b34269140fefeb3c6cd11">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a555f770816543eccd407cf1819faf4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555f770816543eccd407cf1819faf4b9">&#9670;&nbsp;</a></span>SetThreadParams() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::SetThreadParams </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radThr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ang</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация. </p>
+<p>Инициализация.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radObj</td><td>- Начальный радиус резьбы (на поверхности).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radThr</td><td>- Конечный радиус резьбы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- Длина резьбы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ang</td><td>- Угол. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e82b36062911746bdb1f1e0c080f20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e82b36062911746bdb1f1e0c080f20a">&#9670;&nbsp;</a></span>SetThreadParams() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::SetThreadParams </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>diamObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bOutThr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ang</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация. </p>
+<p>Инициализация.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">diamObj</td><td>- Начальный диаметр.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">depth</td><td>- Глубина нарезки</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bOutThr</td><td>- Признак внешней резьбы.<br  />
+ если true - резьба внешняя,<br  />
+ если false - резьба внутренняя.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- Длина резьбы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ang</td><td>- Угол. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9cc410185ef229dcc52774565ac27d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9cc410185ef229dcc52774565ac27d0">&#9670;&nbsp;</a></span>SetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_name.html">MbName</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить имя. </p>
+<p>Установить имя резьбы.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>- Новое имя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a7e24c2fbd9226b3c5c458ac8c0e077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7e24c2fbd9226b3c5c458ac8c0e077">&#9670;&nbsp;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_name.html">MbName</a>* MbThread::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить имя. </p>
+<p>Получить имя резьбы.<br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>Указатель на имя. </dd></dl>
+
+</div>
+</div>
+<a id="a096ff3c33faf472fd3c15fd2b1453f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096ff3c33faf472fd3c15fd2b1453f9f">&#9670;&nbsp;</a></span>IsName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Есть ли имя. </p>
+<p>Есть ли имя у резьбы.<br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>true, если имя есть и оно не пустое. </dd></dl>
+
+</div>
+</div>
+<a id="a8db1fc39f9ec4a652ede1297ecab65ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db1fc39f9ec4a652ede1297ecab65ba">&#9670;&nbsp;</a></span>AddBodies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ConstLumps &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::AddBodies </td>
+          <td>(</td>
+          <td class="paramtype">const ConstLumps &amp;&#160;</td>
+          <td class="paramname"><em>initBodies</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить тела. </p>
+<p>Добавить тела, на которых нарезана резьба.<br  />
+ Не добавляются нулевые указатели из присланного массива, не добавляются повторяющиеся объекты.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lumps</td><td>- Набор тел. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66a8770b8fff7c401138c32ba6df90fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a8770b8fff7c401138c32ba6df90fb">&#9670;&nbsp;</a></span>IsBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsBody </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_mb_lump.html">MbLump</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти тело. </p>
+<p>Найти тело в массиве.<br  />
+ <br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>Индекс тела.<br  />
+ SYS_MAX_T, если тело не найдено. </dd></dl>
+
+</div>
+</div>
+<a id="afa70e74bfa5e1c28664c44afdd1cb191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa70e74bfa5e1c28664c44afdd1cb191">&#9670;&nbsp;</a></span>GetBodies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ConstLumps &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::GetBodies </td>
+          <td>(</td>
+          <td class="paramtype">ConstLumps &amp;&#160;</td>
+          <td class="paramname"><em>lumps</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить тела. </p>
+<p>Получить массив тел.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">lumps</td><td>- Результат - набор тел. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2beb4cbcbe30b7305239bfa6c34f2ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2beb4cbcbe30b7305239bfa6c34f2ff0">&#9670;&nbsp;</a></span>DetachWrongBodies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::DetachWrongBodies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отцепить тела, не принадлежащие этой резьбе. </p>
+<p>Отцепить тела, не принадлежащие этой резьбе.<br  />
+ <br  />
+ </p>
+
+</div>
+</div>
+<a id="a0519fedb7081a7474f4be52775ed99be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0519fedb7081a7474f4be52775ed99be">&#9670;&nbsp;</a></span>IsValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Корректны ли параметры. </p>
+<p>Корректны ли параметры резьбы:<br  />
+</p><ul>
+<li>резьба не должна быть вырожденной,<br  />
+</li>
+<li>система координат резьбы должна быть ортонормированной,<br  />
+</li>
+<li>значения радиусов и длины должны быть не меньше минимального радиуса объекта MIN_RADIUS, не больше максимального радиуса объекта MAX_RADIUS,<br  />
+</li>
+<li>радиусы должны быть различны,<br  />
+</li>
+<li>угол не должен превосходить полный оборот,<br  />
+</li>
+<li>резьба не должна иметь самопересечения.</li>
+</ul>
+<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae6d46e85a156f55da5d321c1bc74e341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d46e85a156f55da5d321c1bc74e341">&#9670;&nbsp;</a></span>IsConical()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsConical </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Является ли резьба конической. </p>
+<p>Является ли резьба конической.<br  />
+ <br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>true, если значение угла не нулевое. </dd></dl>
+
+</div>
+</div>
+<a id="a2b535a5eae181b35b24d0df49eb09491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b535a5eae181b35b24d0df49eb09491">&#9670;&nbsp;</a></span>IsOutside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsOutside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Является ли резьба внешней. </p>
+<p>Является ли резьба внешней.<br  />
+ <br  />
+ Резьба внешняя, если начальный радиус резьбы больше конечного.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Признак внешней резьбы. </dd></dl>
+
+</div>
+</div>
+<a id="a4c93874fca8c8df4577bbac9690205dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c93874fca8c8df4577bbac9690205dd">&#9670;&nbsp;</a></span>IsLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsLeft </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Является ли резьба левой. </p>
+<p>Является ли резьба левой.<br  />
+ <br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>true, если система координат резьбы левая. </dd></dl>
+
+</div>
+</div>
+<a id="afbdf0ecf88cf6fbb6378ba291dab0dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdf0ecf88cf6fbb6378ba291dab0dc8">&#9670;&nbsp;</a></span>IsMatedTo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsMatedTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_thread.html">MbThread</a> &amp;&#160;</td>
+          <td class="paramname"><em>otherThread</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сопрягаются ли резьбы. </p>
+<p>Сопрягаются ли резьбы (внутренняя с внешней.<br  />
+ 1) Резьбы должны иметь одинаковый угол.<br  />
+ 2) Одна резьба должна быть внутренней, другая внешней.<br  />
+ 3) У обоих объектов должны быть корректные параметры.<br  />
+ 4) Оси резьб должны быть параллельны.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">otherThread</td><td>- Вторая резьба. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если резьбы сопрягаемые. </dd></dl>
+
+</div>
+</div>
+<a id="a8f645909c880ac441c81fa9f1802fb31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f645909c880ac441c81fa9f1802fb31">&#9670;&nbsp;</a></span>IsMatedTo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsMatedTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_thread.html">MbThread</a> &amp;&#160;</td>
+          <td class="paramname"><em>otherThread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_threaded_joint_check_parameters.html">MbThreadedJointCheckParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>checkParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ThreadedJointErrors *&#160;</td>
+          <td class="paramname"><em>thrJointErrors</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сопрягаются ли резьбы. </p>
+<p>Сопрягаются ли резьбы (внутренняя с внешней.<br  />
+ 1) Резьбы должны иметь одинаковый угол.<br  />
+ 2) Одна резьба должна быть внутренней, другая внешней.<br  />
+ 3) У обоих объектов должны быть корректные параметры.<br  />
+ 4) Оси резьб должны быть параллельны.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">otherThread</td><td>- Вторая резьба. <br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkParams</td><td>- Параметры проверки резьбовых соединений.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если резьбы сопрягаемые. </dd></dl>
+
+</div>
+</div>
+<a id="a681e994b9bd5a594ba3f6f1d1998af7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681e994b9bd5a594ba3f6f1d1998af7b">&#9670;&nbsp;</a></span>IsBodyThread() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsBodyThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_solid.html">MbSolid</a> &amp;&#160;</td>
+          <td class="paramname"><em>solid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> *&#160;</td>
+          <td class="paramname"><em>simObjNumbers</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> *&#160;</td>
+          <td class="paramname"><em>intObjNumbers</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Принадлежит ли резьба телу. <br  />
+ </p>
+<p>Принадлежит ли резьба телу.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solid</td><td>- Тело.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matrix</td><td>- Матрица преобразования в мировую систему координат.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">simObjNumbers</td><td>- Индексы граней, которым может принадлежать резьба.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intObjNumbers</td><td>- Индексы граней, c которым может пересекаться резьба.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если резьба принадлежит одной из граней тела. </dd></dl>
+
+</div>
+</div>
+<a id="a237435f85234c4c23e9874fe5a3a9f5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a237435f85234c4c23e9874fe5a3a9f5b">&#9670;&nbsp;</a></span>IsBodyThread() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::IsBodyThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_mb_lump.html">MbLump</a> &amp;&#160;</td>
+          <td class="paramname"><em>lump</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Принадлежит ли резьба телу. <br  />
+ </p>
+<p>Принадлежит ли резьба телу.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solid</td><td>- Тело с матрицей преобразования в мировую систему координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если резьба принадлежит одной из граней тела. </dd></dl>
+
+</div>
+</div>
+<a id="aabe469ef729aeebf0fd9e5439c8eddf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabe469ef729aeebf0fd9e5439c8eddf4">&#9670;&nbsp;</a></span>AdaptToBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::AdaptToBody </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_solid.html">MbSolid</a> &amp;&#160;</td>
+          <td class="paramname"><em>solid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___mapping.html#ga26c07f3ca9b356455f8557e454db5a6b">MbeThrAdapt</a>&#160;</td>
+          <td class="paramname"><em>thrAdapt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ThreadLimiters *&#160;</td>
+          <td class="paramname"><em>limiters</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Адаптировать начало и конец резьбы к телу. <br  />
+ </p>
+<p>Адаптировать начало и конец резьбы к телу, если резьба может принадлежать телу.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solid</td><td>- Тело.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matrix</td><td>- Матрица преобразования в мировую систему координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thrAdapt</td><td>- Метод подгонки резьбы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limiters</td><td>- Начальный и конечный ограничители резьбы.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха операции. </dd></dl>
+
+</div>
+</div>
+<a id="a8e02b421ff16620a44d467cb89903adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e02b421ff16620a44d467cb89903adc">&#9670;&nbsp;</a></span>GetLimitPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::GetLimitPositions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_thread.html">MbThread</a> &amp;&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>begPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>endPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать начало и конец изменённой резьбы относительно исходной. <br  />
+ </p>
+<p>Выдать начало и конец изменённой резьбы относительно исходной вдоль оси Z системы координат исходной резьбы.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread</td><td>- Исходная резьба.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">begPos</td><td>- Положение начала резьбы.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">endPos</td><td>- Положение конца резьбы.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true Если резьбы подобны. </dd></dl>
+
+</div>
+</div>
+<a id="a578cd0208a9f040e9d6499b243d6207c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578cd0208a9f040e9d6499b243d6207c">&#9670;&nbsp;</a></span>FindThreadBodies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class SolidsVector , class MatricesVector , class IndicesVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbThread::FindThreadBodies </td>
+          <td>(</td>
+          <td class="paramtype">const SolidsVector &amp;&#160;</td>
+          <td class="paramname"><em>solids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MatricesVector &amp;&#160;</td>
+          <td class="paramname"><em>matrices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndicesVector &amp;&#160;</td>
+          <td class="paramname"><em>solidsNumbers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти тела, которым может принадлежать резьба. <br  />
+ </p>
+<p>Найти тела, которым может принадлежать резьба.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solids</td><td>- Набор тел.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matrices</td><td>- Набор матриц преобразования тел в мировую систему координат. Количество должно соответствовать количеству тел.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">solidsNumbers</td><td>- Номера тел, которым может принадлежать резьба.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если резьба принадлежит хотя бы одному телу. </dd></dl>
+
+</div>
+</div>
+<a id="a67af2f221bf480a2ef43dfd164274ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67af2f221bf480a2ef43dfd164274ba1">&#9670;&nbsp;</a></span>CalculateLocalGabarit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbThread::CalculateLocalGabarit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>mIntoLocal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cubeLocal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рассчитать габаритный куб резьбы. </p>
+<p>Рассчитать габаритный куб резьбы в локальной системе координат.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mIntoLocal</td><td>- Локальная система координат.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cubeLocal</td><td>- Результат - посчитанный габарит. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_mb_legend.html#a5d99249d26139733a6b926f17125da26">MbLegend</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__thread_8h.html">mb_thread.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_thread.html">MbThread</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

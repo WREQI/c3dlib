@@ -1,0 +1,779 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mb_enum.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mb__enum_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mb_enum.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Перечисления.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="mb__variables_8h.html">mb_variables.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gadb77ddf41d8820cc754f7febf34d7106"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gadb77ddf41d8820cc754f7febf34d7106">MbeNewtonResult</a> { <a class="el" href="group___data___structures.html#ggadb77ddf41d8820cc754f7febf34d7106a3c52df270fe3e5a8bf4d5f276ea56db1">nr_Failure</a> = -1
+, <a class="el" href="group___data___structures.html#ggadb77ddf41d8820cc754f7febf34d7106a4ac6a33bc33d54d21162bb4a0e14cf4b">nr_Special</a> = 0
+, <a class="el" href="group___data___structures.html#ggadb77ddf41d8820cc754f7febf34d7106aab0116b5e871960ec7be6700e1d16e84">nr_Success</a> = 1
+, <a class="el" href="group___data___structures.html#ggadb77ddf41d8820cc754f7febf34d7106a8247830956b3c08557cbca866893acd0">nr_Specific</a> = 2
+ }</td></tr>
+<tr class="memdesc:gadb77ddf41d8820cc754f7febf34d7106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат выполнения итерационного метода.  <a href="group___data___structures.html#gadb77ddf41d8820cc754f7febf34d7106">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadb77ddf41d8820cc754f7febf34d7106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafea98832e921162c14ba15d55698f257"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggafea98832e921162c14ba15d55698f257a9ea05bef772269e3410c7c58a5195ebe">iloc_Undefined</a> = -3
+, <a class="el" href="group___data___structures.html#ggafea98832e921162c14ba15d55698f257ae0574cf4d04bf42cc18a112d89ae32a9">iloc_Unknown</a> = -2
+, <a class="el" href="group___data___structures.html#ggafea98832e921162c14ba15d55698f257ae3e9309842214368738388c8d47ca409">iloc_OutOfItem</a> = -1
+, <a class="el" href="group___data___structures.html#ggafea98832e921162c14ba15d55698f257a2da40aeb6c15eef7a63c446f9c0410c7">iloc_OnItem</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggafea98832e921162c14ba15d55698f257a814113af0ed413f8fccfeff39cd89f25">iloc_InItem</a> = 1
+, <a class="el" href="group___data___structures.html#ggafea98832e921162c14ba15d55698f257a043b742130712177962c127c8fbd1a32">iloc_ByItem</a> = 2
+<br />
+ }</td></tr>
+<tr class="memdesc:gafea98832e921162c14ba15d55698f257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Положение объекта.  <a href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafea98832e921162c14ba15d55698f257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb230321978d9f169faf2600293070fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gafb230321978d9f169faf2600293070fb">MbeLocation</a> { <a class="el" href="group___data___structures.html#ggafb230321978d9f169faf2600293070fba4f8097c87229f284bb90deef986b539b">loc_Undefined</a> = iloc_Unknown
+, <a class="el" href="group___data___structures.html#ggafb230321978d9f169faf2600293070fba834e14788560655b06485d4d9d183756">loc_Outside</a> = iloc_OutOfItem
+, <a class="el" href="group___data___structures.html#ggafb230321978d9f169faf2600293070fba4b679d231720596a6f0aeae3d407ddab">loc_OnCurve</a> = iloc_OnItem
+, <a class="el" href="group___data___structures.html#ggafb230321978d9f169faf2600293070fba00528a96b7f65dbf33f6eefb581d5c1c">loc_Inside</a> = iloc_InItem
+ }</td></tr>
+<tr class="memdesc:gafb230321978d9f169faf2600293070fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Положение двумерной точки.  <a href="group___data___structures.html#gafb230321978d9f169faf2600293070fb">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafb230321978d9f169faf2600293070fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f0218da8cd27b182f7945b789117bd2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga8f0218da8cd27b182f7945b789117bd2">MbeState</a> { <a class="el" href="group___data___structures.html#gga8f0218da8cd27b182f7945b789117bd2afcb98d11ed5750bcd93892d8a167e741">dp_NoChanged</a> = 0
+, <a class="el" href="group___data___structures.html#gga8f0218da8cd27b182f7945b789117bd2af705f76f179f4bc47e0ed55324d677ac">dp_Changed</a>
+, <a class="el" href="group___data___structures.html#gga8f0218da8cd27b182f7945b789117bd2a59d77ca2281b015fba7f28d80757972c">dp_Degenerated</a>
+ }</td></tr>
+<tr class="memdesc:ga8f0218da8cd27b182f7945b789117bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояние объекта после модификации.  <a href="group___data___structures.html#ga8f0218da8cd27b182f7945b789117bd2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8f0218da8cd27b182f7945b789117bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a61943177ef17f05c32acf9b7fdbb4a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga3a61943177ef17f05c32acf9b7fdbb4a">MbeProcessState</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga3a61943177ef17f05c32acf9b7fdbb4aaf4af57b5f3a3ed98a7b5f61d3381fa03">mps_Error</a> = -3
+, <a class="el" href="group___data___structures.html#gga3a61943177ef17f05c32acf9b7fdbb4aa8981583d4b54852e70bf73e5b05eda9b">mps_Skip</a> = -2
+, <a class="el" href="group___data___structures.html#gga3a61943177ef17f05c32acf9b7fdbb4aa05245b442a001d768c1795af060fca83">mps_Stop</a> = -1
+, <a class="el" href="group___data___structures.html#gga3a61943177ef17f05c32acf9b7fdbb4aa4817d216bef5f5085834cadfc0663851">mps_Success</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga3a61943177ef17f05c32acf9b7fdbb4aa41813ca72b846aa23943905df4ad57be">mps_SelfIntersect</a> = 24
+<br />
+ }</td></tr>
+<tr class="memdesc:ga3a61943177ef17f05c32acf9b7fdbb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояние выполнения процесса.  <a href="group___data___structures.html#ga3a61943177ef17f05c32acf9b7fdbb4a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3a61943177ef17f05c32acf9b7fdbb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1707f3263f71eafd3f34f0c4f2a96503"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga1707f3263f71eafd3f34f0c4f2a96503">MbeSenseValue</a> { <a class="el" href="group___data___structures.html#gga1707f3263f71eafd3f34f0c4f2a96503ad72cb85a0ef760a249a4a3a43fb7759a">orient_BOTH</a> = 0
+, <a class="el" href="group___data___structures.html#gga1707f3263f71eafd3f34f0c4f2a96503a40ed37ff8fab7f9cfe9da2b09ec9a162">orient_FORWARD</a>
+, <a class="el" href="group___data___structures.html#gga1707f3263f71eafd3f34f0c4f2a96503a044f0ab2fadf588c777e530c65b346c4">orient_BACK</a>
+ }</td></tr>
+<tr class="memdesc:ga1707f3263f71eafd3f34f0c4f2a96503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Направление.  <a href="group___data___structures.html#ga1707f3263f71eafd3f34f0c4f2a96503">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1707f3263f71eafd3f34f0c4f2a96503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3877650b895d602b5b27749e4bdadc21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">MbeSplineParamType</a> { <a class="el" href="group___data___structures.html#gga3877650b895d602b5b27749e4bdadc21a0a02a2c34d0a4c7bc9bd39a877af03ba">spt_Unstated</a> = 0
+, <a class="el" href="group___data___structures.html#gga3877650b895d602b5b27749e4bdadc21a8d58e4dad0d394908ba28ea49b500d6e">spt_EquallySpaced</a> = 1
+, <a class="el" href="group___data___structures.html#gga3877650b895d602b5b27749e4bdadc21a87af42ec3fbf7cf3d9d05197228c2e3a">spt_ChordLength</a> = 2
+, <a class="el" href="group___data___structures.html#gga3877650b895d602b5b27749e4bdadc21af0dbddd324846423cefed137ebe3601b">spt_Centripetal</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga3877650b895d602b5b27749e4bdadc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип параметризации сплайновых объектов.  <a href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3877650b895d602b5b27749e4bdadc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d710a1ee576e21b95122c09deb1c9d7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga6d710a1ee576e21b95122c09deb1c9d7">MbeNurbsCurveForm</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7a480556c8e6dd149039dfb3776fcd139a">ncf_Unspecified</a> = 0
+, <a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7aef9d84bf272f7c54bfc0ca87ab6bbd1e">ncf_PolylineForm</a>
+, <a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7ac60376b13fee7992ceb31dec95079858">ncf_CircularArc</a>
+, <a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7ae4eb7fe5c55b3ee80c04beec21c01203">ncf_EllipticArc</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7a168b390fe46826fe15dbc64a9b22621b">ncf_ParabolicArc</a>
+, <a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7aa6ca27c58b8e7907e3b1a0beedcda28e">ncf_HyperbolicArc</a>
+, <a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7a8b2c12c5624f8929b838cb5832ec7b0c">ncf_BezierForm</a>
+, <a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7a6b10062fdc3a37c8b8021e7cc5253d38">ncf_HermitForm</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7a6d80344c8fa63d156dccc084c98bb3e5">ncf_SurfacePoleForm</a>
+, <a class="el" href="group___data___structures.html#gga6d710a1ee576e21b95122c09deb1c9d7ae2fd41c72a50568a9e7891775746ce9d">ncf_FairCurveForm</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga6d710a1ee576e21b95122c09deb1c9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы форм NURBS-кривой.  <a href="group___data___structures.html#ga6d710a1ee576e21b95122c09deb1c9d7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6d710a1ee576e21b95122c09deb1c9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97e7bfe6f4de66fbd2de62433e2589a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga97e7bfe6f4de66fbd2de62433e2589a5">MbeMatingType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga97e7bfe6f4de66fbd2de62433e2589a5a379eb8301a38765e4e1569fd655ccdf2">trt_None</a> = -1
+, <a class="el" href="group___data___structures.html#gga97e7bfe6f4de66fbd2de62433e2589a5a9c40c8bc6e62c76280f2fadf9be56d15">trt_Position</a> = 0
+, <a class="el" href="group___data___structures.html#gga97e7bfe6f4de66fbd2de62433e2589a5a621bbfbd112e8077204bed92439d871e">trt_Tangent</a> = 1
+, <a class="el" href="group___data___structures.html#gga97e7bfe6f4de66fbd2de62433e2589a5af4d5596071d8375d18271a5c10882056">trt_Normal</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga97e7bfe6f4de66fbd2de62433e2589a5abd26814927005d0012ae7f5bc28ebeef">trt_SmoothG2</a> = 3
+, <a class="el" href="group___data___structures.html#gga97e7bfe6f4de66fbd2de62433e2589a5a197aaf83527648b45bb0e3cf58b7c13e">trt_SmoothG3</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga97e7bfe6f4de66fbd2de62433e2589a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип сопряжения.  <a href="group___data___structures.html#ga97e7bfe6f4de66fbd2de62433e2589a5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga97e7bfe6f4de66fbd2de62433e2589a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69caf325c09ce927b1b635347553ea59"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga69caf325c09ce927b1b635347553ea59">MbePatchMatingType</a> { <a class="el" href="group___data___structures.html#gga69caf325c09ce927b1b635347553ea59aadd0bca8856b54b2f709cdf87e9295f8">pmt_None</a> = 0
+, <a class="el" href="group___data___structures.html#gga69caf325c09ce927b1b635347553ea59a096cde608b43752e9069a10d45329852">pmt_Tangent</a> = 1
+, <a class="el" href="group___data___structures.html#gga69caf325c09ce927b1b635347553ea59abaa69041ccdc47571d622708b8a85ab5">pmt_SmoothG2</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga69caf325c09ce927b1b635347553ea59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип сопряжения по кривой заплатки.  <a href="group___data___structures.html#ga69caf325c09ce927b1b635347553ea59">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga69caf325c09ce927b1b635347553ea59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62666fb6c4485d4527f799665eea9f9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga62666fb6c4485d4527f799665eea9f9d">MbeConjugationType</a> { <a class="el" href="group___data___structures.html#gga62666fb6c4485d4527f799665eea9f9da5849f2ac1f460f5bc62e366088b21846">cjt_NormPlus</a> = 0
+, <a class="el" href="group___data___structures.html#gga62666fb6c4485d4527f799665eea9f9da7ceee3c0092e6afbaaf59f7145c67d79">cjt_NormMinus</a> = 1
+, <a class="el" href="group___data___structures.html#gga62666fb6c4485d4527f799665eea9f9da500488ab89eeee68f2dcd0d25dce6eb8">cjt_G1Plus</a> = 2
+, <a class="el" href="group___data___structures.html#gga62666fb6c4485d4527f799665eea9f9da5f5f08c03474f6e02b50aa527497ca2a">cjt_G1Minus</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga62666fb6c4485d4527f799665eea9f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип сопряжения по ребрам.  <a href="group___data___structures.html#ga62666fb6c4485d4527f799665eea9f9d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga62666fb6c4485d4527f799665eea9f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga314fb6fee0270cfe6a80bc42539512f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga314fb6fee0270cfe6a80bc42539512f5">MbeDirectSmoothType</a> { <a class="el" href="group___data___structures.html#gga314fb6fee0270cfe6a80bc42539512f5acc2c0473f0ecf080f87f05d6cc84be59">dst_None</a> = -1
+, <a class="el" href="group___data___structures.html#gga314fb6fee0270cfe6a80bc42539512f5ad2c7f5e83d0c8988fb7d390fe39d86bc">dst_Convex</a> = 0
+, <a class="el" href="group___data___structures.html#gga314fb6fee0270cfe6a80bc42539512f5a2c7812be9aecf4d1898242ca10c4b8ff">dst_Concave</a> = 1
+, <a class="el" href="group___data___structures.html#gga314fb6fee0270cfe6a80bc42539512f5aaff347f6e50282f515379b14264e103d">dst_Smooth</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga314fb6fee0270cfe6a80bc42539512f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип сглаживания.  <a href="group___data___structures.html#ga314fb6fee0270cfe6a80bc42539512f5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga314fb6fee0270cfe6a80bc42539512f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf46d27a19429b20548c10c4658bec550"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gaf46d27a19429b20548c10c4658bec550">MbeItemGridType</a> { <a class="el" href="group___data___structures.html#ggaf46d27a19429b20548c10c4658bec550a59696dfc369d4bc4638dacb6f07c17fc">igt_Rectangular</a> = 0
+, <a class="el" href="group___data___structures.html#ggaf46d27a19429b20548c10c4658bec550a288eab6ee31a7e2aa8eea4cdbac3af0c">igt_Concentric</a> = 1
+, <a class="el" href="group___data___structures.html#ggaf46d27a19429b20548c10c4658bec550afcfeaf0573e97fe4260f2ee4c4198d2d">igt_Hexagonal</a> = 2
+ }</td></tr>
+<tr class="memdesc:gaf46d27a19429b20548c10c4658bec550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы двумерной сетки.  <a href="group___data___structures.html#gaf46d27a19429b20548c10c4658bec550">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf46d27a19429b20548c10c4658bec550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2b33fb54f16355a1915a4fd8464b4cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gaa2b33fb54f16355a1915a4fd8464b4cb">MbeParamDir</a> { <a class="el" href="group___data___structures.html#ggaa2b33fb54f16355a1915a4fd8464b4cbad106250d1c8e036f2171ab86c8525586">pd_DirU</a> = 0
+, <a class="el" href="group___data___structures.html#ggaa2b33fb54f16355a1915a4fd8464b4cbafd96f0b5d7275389c15a5315a0c2925e">pd_DirV</a> = 1
+ }</td></tr>
+<tr class="memdesc:gaa2b33fb54f16355a1915a4fd8464b4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Направление на поверхности.  <a href="group___data___structures.html#gaa2b33fb54f16355a1915a4fd8464b4cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa2b33fb54f16355a1915a4fd8464b4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa17916b987726e489625998aa9774f05"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gaa17916b987726e489625998aa9774f05">MbeCurveBuildType</a> { <a class="el" href="group___data___structures.html#ggaa17916b987726e489625998aa9774f05a486a4ede098e3eb6e7f7bb46e49d96f5">cbt_Boundary</a> = -1
+, <a class="el" href="group___data___structures.html#ggaa17916b987726e489625998aa9774f05ab29be17a6320a258761b9f5b3f40ee53">cbt_Ordinary</a> = 0
+, <a class="el" href="group___data___structures.html#ggaa17916b987726e489625998aa9774f05acdf168f9b38c16fab4200a96a251b3b8">cbt_Specific</a> = 1
+, <a class="el" href="group___data___structures.html#ggaa17916b987726e489625998aa9774f05a033cef1ff473cb6386170c538aa04cf7">cbt_Tolerant</a> = 2
+ }</td></tr>
+<tr class="memdesc:gaa17916b987726e489625998aa9774f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы кривой пересечения поверхностей по построению.  <a href="group___data___structures.html#gaa17916b987726e489625998aa9774f05">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa17916b987726e489625998aa9774f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5c1e04cea899ce538e55ce19de2e9be"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gac5c1e04cea899ce538e55ce19de2e9be">MbeSurfaceType</a> { <a class="el" href="group___data___structures.html#ggac5c1e04cea899ce538e55ce19de2e9bea59636c5e9e930b95a285cd0eeae0998c">sst_OrdinarySurface</a> = 0
+, <a class="el" href="group___data___structures.html#ggac5c1e04cea899ce538e55ce19de2e9bea643f5f1dc2e9dc1ae37524a29ca4984b">sst_SpecificSurface</a> = 1
+ }</td></tr>
+<tr class="memdesc:gac5c1e04cea899ce538e55ce19de2e9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы поверхности сопряжения.  <a href="group___data___structures.html#gac5c1e04cea899ce538e55ce19de2e9be">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac5c1e04cea899ce538e55ce19de2e9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52e99de8f00656f079f604eca54c426e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga52e99de8f00656f079f604eca54c426e">MbeCurveGlueType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga52e99de8f00656f079f604eca54c426ea98b1cc3d25e1be4f1288c0608499ea51">cgt_Unknown</a> = 0
+, <a class="el" href="group___data___structures.html#gga52e99de8f00656f079f604eca54c426ea4c5ae3f71bd2db9f77fc5dcebe9e4c7f">cgt_Pole</a> = 1
+, <a class="el" href="group___data___structures.html#gga52e99de8f00656f079f604eca54c426ea4e35e3d05c55604861cd5fe12a5049a9">cgt_Edge</a> = 2
+, <a class="el" href="group___data___structures.html#gga52e99de8f00656f079f604eca54c426eab7097bb5f173ed104a0e8ae45f0b4b39">cgt_Stitch</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga52e99de8f00656f079f604eca54c426ea6c4d0e6bcaab33784e7affc474f20942">cgt_Split</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga52e99de8f00656f079f604eca54c426e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы кривой пересечения поверхностей по топологии.  <a href="group___data___structures.html#ga52e99de8f00656f079f604eca54c426e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga52e99de8f00656f079f604eca54c426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga789817d97fc2902d72491af289f08c2f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga789817d97fc2902d72491af289f08c2f">MbeStepType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga789817d97fc2902d72491af289f08c2fade494451b94b26b201bda208b8a210b8">ist_SpaceStep</a> = 0x01
+, <a class="el" href="group___data___structures.html#gga789817d97fc2902d72491af289f08c2faaa4d876b67a93490c05cf81941f16903">ist_DeviationStep</a> = 0x02
+, <a class="el" href="group___data___structures.html#gga789817d97fc2902d72491af289f08c2faf6bb7f263b23e2df55cc0e23a51cc344">ist_MetricStep</a> = 0x04
+, <a class="el" href="group___data___structures.html#gga789817d97fc2902d72491af289f08c2fa0f4025a131342a8e543291b8afff3b74">ist_ParamStep</a> = 0x08
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga789817d97fc2902d72491af289f08c2fa7bc71e808e0c3e85e330beb495ef19a5">ist_CollisionStep</a> = 0x10
+, <a class="el" href="group___data___structures.html#gga789817d97fc2902d72491af289f08c2fa323d15fc862bb15aeae020ce3abd3b5c">ist_MipStep</a> = 0x20
+<br />
+ }</td></tr>
+<tr class="memdesc:ga789817d97fc2902d72491af289f08c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы вычисления приращения параметра по объекту.  <a href="group___data___structures.html#ga789817d97fc2902d72491af289f08c2f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga789817d97fc2902d72491af289f08c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00f1594de7a992101498b0a905ebcef7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga00f1594de7a992101498b0a905ebcef7">MbeLabelState</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a8e10eda8edeb6c6ef05a6e1b09e765fd">ls_None</a> = -1
+, <a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a5401c822a967f0805635c8c533bf4179">ls_Null</a> = 0
+, <a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a5dbb738b62ea676d4e24df4f648c4950">ls_Used</a> = 1
+, <a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7aad9135a1aa161ef963970963b72d78b3">ls_Delete</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a78e0cd78b9662192ab44354b2e137aec">ls_Rebuild</a> = 3
+, <a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a9eddf06292c37e0291c222a206bdd62e">ls_FirstPass</a> = 4
+, <a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a378cdffa883d92f5ffe09adccde68540">ls_SecondPass</a> = 5
+, <a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7aa44a7ad157f82610a34f4a836f057fb0">ls_Error</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a2fdcc13f20c80fb8dc76225b5bc5f0aa">ls_Doubtful</a> = 7
+, <a class="el" href="group___data___structures.html#gga00f1594de7a992101498b0a905ebcef7a04952fce582bb2495935e3b6aa7ebac8">ls_TempMark</a> = 8
+<br />
+ }</td></tr>
+<tr class="memdesc:ga00f1594de7a992101498b0a905ebcef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рабочие метки.  <a href="group___data___structures.html#ga00f1594de7a992101498b0a905ebcef7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga00f1594de7a992101498b0a905ebcef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bfcf5a732a70476e7ef1df51ceb3841"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga0bfcf5a732a70476e7ef1df51ceb3841">MbeSmoothForm</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841aeefb2022c743e94f4c4011f1f0a580de">st_Unknown</a> = -3
+, <a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841a4794ae0c09e8d328d2d6623fde0cf767">st_Ellipse</a> = -2
+, <a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841a95af06f39509d663d77a6c242f7dbd53">st_Span</a> = -1
+, <a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841a48bf7cef9281012cbfae7737ea2ec295">st_Fillet</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841a5e2486010c970b2a55f88bd72bd6e9cf">st_Chamfer</a> = 1
+, <a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841a3d493d3a62d7227a359d810a27301c24">st_Slant1</a> = 2
+, <a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841a44778c66f484daaf9d2c291621de09fd">st_Slant2</a> = 3
+, <a class="el" href="group___data___structures.html#gga0bfcf5a732a70476e7ef1df51ceb3841a64f5bf904d29786f565706136eff3f8f">st_ByCurvature</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga0bfcf5a732a70476e7ef1df51ceb3841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы построения поверхности сопряжения (скругления или фаски).  <a href="group___data___structures.html#ga0bfcf5a732a70476e7ef1df51ceb3841">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0bfcf5a732a70476e7ef1df51ceb3841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a2c9c31d675b34f6ec35cc1ca89e047"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga9a2c9c31d675b34f6ec35cc1ca89e047">OperationType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047a22f49142941dba38c1c4f522d36faca3">bo_Internal</a> = -4
+, <a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047abeecb86f59b19ab9648b86d323a528a9">bo_External</a> = -3
+, <a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047aff1dae4b6156fc7436857d188760bc48">bo_Intersect</a> = -2
+, <a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047a9169b0c09059c64acef32a03e798ac41">bo_Difference</a> = -1
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047ae42503e1db0c77a6291b85de7fead136">bo_Unknown</a> = 0
+, <a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047ad179820b957d0ab1c6cec429aa22e9da">bo_Union</a> = 1
+, <a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047a08a615c550775ff54938d485b59e4530">bo_Base</a> = 2
+, <a class="el" href="group___data___structures.html#gga9a2c9c31d675b34f6ec35cc1ca89e047a65e65ee6515091402922b37c0bb42f50">bo_Variety</a> = 3
+<br />
+ }</td></tr>
+<tr class="memdesc:ga9a2c9c31d675b34f6ec35cc1ca89e047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы булевых операций над твердыми телами.  <a href="group___data___structures.html#ga9a2c9c31d675b34f6ec35cc1ca89e047">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9a2c9c31d675b34f6ec35cc1ca89e047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga539afa46d4ba2cc226cf1e06db049d20"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga539afa46d4ba2cc226cf1e06db049d20">RegionOperationType</a> { <a class="el" href="group___data___structures.html#gga539afa46d4ba2cc226cf1e06db049d20a43566acbfc14153eae49f727e6186197">rbo_Intersect</a> = -2
+, <a class="el" href="group___data___structures.html#gga539afa46d4ba2cc226cf1e06db049d20a9f843a1acf7fe54240c3e8e32480176f">rbo_Difference</a> = -1
+, <a class="el" href="group___data___structures.html#gga539afa46d4ba2cc226cf1e06db049d20addc0e1f8b7fc65ea466eaf649d80819a">rbo_Unknown</a> = 0
+, <a class="el" href="group___data___structures.html#gga539afa46d4ba2cc226cf1e06db049d20ad5fc297d860a4f0a2bc9f63a0174f9cd">rbo_Union</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga539afa46d4ba2cc226cf1e06db049d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы булевых операций над двумерными регионами.  <a href="group___data___structures.html#ga539afa46d4ba2cc226cf1e06db049d20">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga539afa46d4ba2cc226cf1e06db049d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf529ba176fe4664a60555c46ac8029f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gaf529ba176fe4664a60555c46ac8029f5">MbeConnectingType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggaf529ba176fe4664a60555c46ac8029f5a752ceabce5c4fa07011c4a5509f1c9d9">ft_Fillet</a> = 0
+, <a class="el" href="group___data___structures.html#ggaf529ba176fe4664a60555c46ac8029f5adc77b51ca8a68ef38f527b31a1e27b1e">ft_OnSurface</a> = 1
+, <a class="el" href="group___data___structures.html#ggaf529ba176fe4664a60555c46ac8029f5a2bb00e8d8fca7c734ba235f32c751380">ft_Spline</a> = 2
+, <a class="el" href="group___data___structures.html#ggaf529ba176fe4664a60555c46ac8029f5aab00bf719a841588f77a0d9fd8530cdf">ft_Double</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggaf529ba176fe4664a60555c46ac8029f5a0cdac8f45e028213d30985038abe6430">ft_Bridge</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:gaf529ba176fe4664a60555c46ac8029f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы сопряжения кривых.  <a href="group___data___structures.html#gaf529ba176fe4664a60555c46ac8029f5">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf529ba176fe4664a60555c46ac8029f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c08af1e254cba91e7babf2b2a6c8bb5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga7c08af1e254cba91e7babf2b2a6c8bb5">MbeCopyMode</a> { <a class="el" href="group___data___structures.html#gga7c08af1e254cba91e7babf2b2a6c8bb5a0559a1adc28457a07f4d19922dce6979">cm_Same</a> = 0
+, <a class="el" href="group___data___structures.html#gga7c08af1e254cba91e7babf2b2a6c8bb5a6feda51b5a46e83198c54c7993ad9079">cm_KeepHistory</a>
+, <a class="el" href="group___data___structures.html#gga7c08af1e254cba91e7babf2b2a6c8bb5af917722a103e5b36b5a026fc511452e3">cm_KeepSurface</a>
+, <a class="el" href="group___data___structures.html#gga7c08af1e254cba91e7babf2b2a6c8bb5ae624f26f5eeefd7946993c72fc4cc2ce">cm_Copy</a>
+ }</td></tr>
+<tr class="memdesc:ga7c08af1e254cba91e7babf2b2a6c8bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы передачи данных при копировании оболочек.  <a href="group___data___structures.html#ga7c08af1e254cba91e7babf2b2a6c8bb5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7c08af1e254cba91e7babf2b2a6c8bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ef6b97c3f8b46eab8f36188c8de0fe3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga8ef6b97c3f8b46eab8f36188c8de0fe3">MbeCurveDerivativeType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga8ef6b97c3f8b46eab8f36188c8de0fe3adb48b5bcf8fe9d3e3d19644dba964b4f">cdt_CurPoint</a> = 0
+, <a class="el" href="group___data___structures.html#gga8ef6b97c3f8b46eab8f36188c8de0fe3ab8d590ff3a085c56fcec5f08aa1517a6">cdt_FirstDer</a>
+, <a class="el" href="group___data___structures.html#gga8ef6b97c3f8b46eab8f36188c8de0fe3a6ff7eb4953790500e934156c3d853ff9">cdt_SecondDer</a>
+, <a class="el" href="group___data___structures.html#gga8ef6b97c3f8b46eab8f36188c8de0fe3aa9874870fa9ff63cfab90b34a405fb4a">cdt_ThirdDer</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga8ef6b97c3f8b46eab8f36188c8de0fe3a5822e3ab4eec64e6522c5433089e9b12">cdt_CountDer</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga8ef6b97c3f8b46eab8f36188c8de0fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поддерживаемые типы производных на кривой.  <a href="group___data___structures.html#ga8ef6b97c3f8b46eab8f36188c8de0fe3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8ef6b97c3f8b46eab8f36188c8de0fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa06147df77d4b6d9eb0a58301e4afb36"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gaa06147df77d4b6d9eb0a58301e4afb36">MbeSurfaceDerivativeType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36ab84a6babf104f02e2ee4ca705333d75e">sdt_SurPoint</a> = 0
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a78bcff18e241db34f247881e99f8b7d5">sdt_DeriveU</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a35ee5f52efccdbd5e115344939b913a1">sdt_DeriveV</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a810075df50d5917d6b43f8be057a87d9">sdt_DeriveUU</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36ac5cff2959a3be11463714441216e2c5a">sdt_DeriveUV</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a271fb7f5da1a00be7e9acaa38a999c02">sdt_DeriveVV</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36af552f6a3e2bf3add7b5be5b94741a5b1">sdt_DeriveUUU</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a3b2b2ab4bf6448a2995e640c231c2912">sdt_DeriveUUV</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a0886f6a792028f5d3e39eec57e038039">sdt_DeriveUVV</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a9efb3c5a0d9dff23ea55bd65674eaa33">sdt_DeriveVVV</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a852403473f764d5280780dc977ecd1fb">sdt_Normal</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a565088ee59707eb2b2ac3ebbb8c1dd53">sdt_NormalU</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a4ea41652ac135b37e96598161723b41d">sdt_NormalV</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36abad1d29b47a07660f3f939d3c3f8c56e">sdt_NormalUU</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a197371c1c33a06f90ea79152ee3e44c2">sdt_NormalUV</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a94be862aa6488ccd47f68b230d5064e6">sdt_NormalVV</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36a11b91f1765eb4af64867574030aa7f45">sdt_CountNor</a>
+, <a class="el" href="group___data___structures.html#ggaa06147df77d4b6d9eb0a58301e4afb36aa1fa17fddf420aa36c4bce4847afe525">sdt_CountDer</a> = sdt_Normal
+<br />
+ }</td></tr>
+<tr class="memdesc:gaa06147df77d4b6d9eb0a58301e4afb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поддерживаемые типы производных на поверхности.  <a href="group___data___structures.html#gaa06147df77d4b6d9eb0a58301e4afb36">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa06147df77d4b6d9eb0a58301e4afb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01a93defbb396f89c28786103606eae2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___items.html#ga01a93defbb396f89c28786103606eae2">MbeFacePropagation</a> { <br />
+&#160;&#160;<a class="el" href="group___base___items.html#gga01a93defbb396f89c28786103606eae2a0f5ee23e816b5e35f37e81987ab93dbc">fp_None</a> = 0
+, <a class="el" href="group___base___items.html#gga01a93defbb396f89c28786103606eae2a1bacc1cdff6348d0d5e8dce3c793eb83">fp_All</a> = 1
+, <a class="el" href="group___base___items.html#gga01a93defbb396f89c28786103606eae2a2443170eca5dfeb5692d10c6c8d0972a">fp_SmoothlyJointedAlong</a> = 2
+, <a class="el" href="group___base___items.html#gga01a93defbb396f89c28786103606eae2ae35aa35a7d9f3d235048036f0dfe0809">fp_SmoothlyJointedOrtho</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#gga01a93defbb396f89c28786103606eae2a6ccfae6f5954b4a7e92ecbec5cc7fd90">fp_SmoothlyJointed</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga01a93defbb396f89c28786103606eae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление способов захвата граней.  <a href="group___base___items.html#ga01a93defbb396f89c28786103606eae2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga01a93defbb396f89c28786103606eae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a87a53fbad857a926780ce5cb146f7a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga2a87a53fbad857a926780ce5cb146f7a">MbeIntersectionType</a> { <a class="el" href="group___point___modeling.html#gga2a87a53fbad857a926780ce5cb146f7aa0542eae07d266da54c4647c5856403c2">ipt_Simple</a> = 0
+, <a class="el" href="group___point___modeling.html#gga2a87a53fbad857a926780ce5cb146f7aa89bc330729d4a88191180de6e1b45af3">ipt_Tangent</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga2a87a53fbad857a926780ce5cb146f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы точек пересечения.  <a href="group___point___modeling.html#ga2a87a53fbad857a926780ce5cb146f7a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2a87a53fbad857a926780ce5cb146f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4174dbadc1e4777a20ef6d5b843581c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga4174dbadc1e4777a20ef6d5b843581c8">MbePoleLocation</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga4174dbadc1e4777a20ef6d5b843581c8a49fe0eaacb7a807605ab969b9e707dfb">pln_None</a> = -1
+, <a class="el" href="group___data___structures.html#gga4174dbadc1e4777a20ef6d5b843581c8a7efa73abee3657911d5dc5b27c068732">pln_MinU</a> = 0
+, <a class="el" href="group___data___structures.html#gga4174dbadc1e4777a20ef6d5b843581c8a8393f1dcc8faf72147611b450ec2e255">pln_MaxU</a> = 1
+, <a class="el" href="group___data___structures.html#gga4174dbadc1e4777a20ef6d5b843581c8aafa2e304a8bc0398ddc40cd0324e7ffd">pln_MinV</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga4174dbadc1e4777a20ef6d5b843581c8a55e66673a66312f9ab01bb0c3d47c0af">pln_MaxV</a> = 3
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4174dbadc1e4777a20ef6d5b843581c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расположение полюсов.  <a href="group___data___structures.html#ga4174dbadc1e4777a20ef6d5b843581c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4174dbadc1e4777a20ef6d5b843581c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05d94db640a63cc094bed2ef8252dc9b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga05d94db640a63cc094bed2ef8252dc9b">MbeSurfacePoleType</a> { <a class="el" href="group___data___structures.html#gga05d94db640a63cc094bed2ef8252dc9babc2633ff84bab1c026d24cfc08371b3d">spt_Undefined</a> = 0
+, <a class="el" href="group___data___structures.html#gga05d94db640a63cc094bed2ef8252dc9ba88dd58928900e7b127e546dc71ed9e04">spt_Point</a>
+, <a class="el" href="group___data___structures.html#gga05d94db640a63cc094bed2ef8252dc9bad0d76a5ba51aea17f9f53f378abdae6f">spt_Curve</a>
+ }</td></tr>
+<tr class="memdesc:ga05d94db640a63cc094bed2ef8252dc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип границы поверхности.  <a href="group___data___structures.html#ga05d94db640a63cc094bed2ef8252dc9b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga05d94db640a63cc094bed2ef8252dc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98873f5316c3b6b2fbc5bb69a37611de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___shell___building___parameters.html#ga98873f5316c3b6b2fbc5bb69a37611de">ElementaryShellType</a> { <br />
+&#160;&#160;<a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611deaa0a6d9dddb3f17fe88e1f55c15add863">et_Undefined</a> = -1
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611deaca279f7123566ccde0e3cbe45db5e9a3">et_Sphere</a> = 0
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611dea4fe0cf1b43260db8c7cb187e97eeca21">et_Torus</a> = 1
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611deadc82084a7dcad2d31caa743598e63ded">et_Cylinder</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611dea59ba4d3ddfd88b92c539abb0954c9fc9">et_Cone</a> = 3
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611dea98c20a02c93c406d42dd92bfdd42eab1">et_Block</a> = 4
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611dea9d6e4f5b1ccbf3eb446de42c0c1a387c">et_Wedge</a> = 5
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611dea8588d4a4b9afa2dedc0e11d82b4eb82d">et_Prism</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611dea6bb607aa338426058e5066f95ac83122">et_Pyramid</a> = 7
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611deaf65e4e0776131719ddc4ee853f6cf6c9">et_Plate</a> = 8
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611deadee03ddfce54b628a12628d2d1ec519e">et_Icosahedron</a> = 9
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611dea0a5106ac4370b3cd21362ac210360f3e">et_Polyhedron</a> = 10
+, <br />
+&#160;&#160;<a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611deaec53319f23a87f10b814b1d41d78369f">et_Tetrapipe</a> = 11
+, <a class="el" href="group___shell___building___parameters.html#gga98873f5316c3b6b2fbc5bb69a37611deab4f88554dd58cd033450661edee9ea05">et_Octapipe</a> = 12
+<br />
+ }</td></tr>
+<tr class="memdesc:ga98873f5316c3b6b2fbc5bb69a37611de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы элементарных тел.  <a href="group___shell___building___parameters.html#ga98873f5316c3b6b2fbc5bb69a37611de">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga98873f5316c3b6b2fbc5bb69a37611de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8779515558c436a0cf818cbd800d503b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga8779515558c436a0cf818cbd800d503b">MbeOffsetType</a> { <a class="el" href="group___data___structures.html#gga8779515558c436a0cf818cbd800d503baba0b003a61b3facfbe9d1c5037f31423">off_Empty</a> = 0
+, <a class="el" href="group___data___structures.html#gga8779515558c436a0cf818cbd800d503baee5548b1046837ea3eb0a09c637b22a5">off_Const</a> = 1
+, <a class="el" href="group___data___structures.html#gga8779515558c436a0cf818cbd800d503ba1f90dabb7c3cab44688936324f1ebeff">off_Linea</a> = 2
+, <a class="el" href="group___data___structures.html#gga8779515558c436a0cf818cbd800d503ba549f2318da2cc1f1155bb0fc883674e1">off_Cubic</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga8779515558c436a0cf818cbd800d503b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы изменения смещения точек эквидистантных кривых и поверхностей.  <a href="group___data___structures.html#ga8779515558c436a0cf818cbd800d503b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8779515558c436a0cf818cbd800d503b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6098e5dff731563794eba5abb3dd61fd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga6098e5dff731563794eba5abb3dd61fd">MbeProgBarId_Common</a> { <br />
+ }</td></tr>
+<tr class="memdesc:ga6098e5dff731563794eba5abb3dd61fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификаторы сообщений индикатора прогресса выполнения.  <a href="group___data___structures.html#ga6098e5dff731563794eba5abb3dd61fd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6098e5dff731563794eba5abb3dd61fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f862ab57a48690d0a994264c03a01fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga3f862ab57a48690d0a994264c03a01fa">MbeProgBarId_PointsSurface</a> { <br />
+ }</td></tr>
+<tr class="memdesc:ga3f862ab57a48690d0a994264c03a01fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификаторы сообщений индикатора прогресса выполнения. Поверхность по пласту(сети) точек.  <a href="group___data___structures.html#ga3f862ab57a48690d0a994264c03a01fa">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3f862ab57a48690d0a994264c03a01fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac09f410ea3aa3da28dc55899fbada824"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gac09f410ea3aa3da28dc55899fbada824">MbeProgBarId_Mesh</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggac09f410ea3aa3da28dc55899fbada824a67386bd4f9b46c2aaa50e46168e31b94">pBar_SimplifyMesh_byTrianglesCount</a> = pbarId_PointsSurface_End + 1
+, <a class="el" href="group___data___structures.html#ggac09f410ea3aa3da28dc55899fbada824a9de190ee292c5f35636abcdbdff9aed4">pBar_SimplifyMesh_byTolerance</a>
+, <a class="el" href="group___data___structures.html#ggac09f410ea3aa3da28dc55899fbada824aab845e04e7f744ef9ab0c79ebf464169">pBar_AlignObjects</a>
+, <a class="el" href="group___data___structures.html#ggac09f410ea3aa3da28dc55899fbada824a054fa0516d4627040653ed4a06fb4252">pBar_Remesh</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggac09f410ea3aa3da28dc55899fbada824adede6409e928a9686b6666fda93e83bd">pBar_Drap</a>
+, <a class="el" href="group___data___structures.html#ggac09f410ea3aa3da28dc55899fbada824a5c7cf4275c1ea63850d3e73319aa300b">pBar_Segment</a>
+, <a class="el" href="group___data___structures.html#ggac09f410ea3aa3da28dc55899fbada824ac510281b23d5e1f2b8c477ab7dec6be3">pBar_ClassifyRegions</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gac09f410ea3aa3da28dc55899fbada824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификаторы сообщений индикатора прогресса выполнения различных алгоритмов для сеток.  <a href="group___data___structures.html#gac09f410ea3aa3da28dc55899fbada824">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac09f410ea3aa3da28dc55899fbada824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d5e8b8e6e1ecf28498fce3b3f397438"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga9d5e8b8e6e1ecf28498fce3b3f397438">MbeFairSubdivision</a> { <a class="el" href="group___data___structures.html#gga9d5e8b8e6e1ecf28498fce3b3f397438a212f62b22554f7f9cf0b61963fbfdad6">fairSubdiv_No</a> = 0
+, <a class="el" href="group___data___structures.html#gga9d5e8b8e6e1ecf28498fce3b3f397438a5c1471d9c09ae4135bd905df808349b8">fairSubdiv_Single</a> = 1
+, <a class="el" href="group___data___structures.html#gga9d5e8b8e6e1ecf28498fce3b3f397438adac9347f83e3d715a51ff8b0ff29bafc">fairSubdiv_Double</a> = 2
+, <a class="el" href="group___data___structures.html#gga9d5e8b8e6e1ecf28498fce3b3f397438ac694f6dc6e28be3d586838021589fa1e">fairSubdiv_Thrice</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga9d5e8b8e6e1ecf28498fce3b3f397438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление построением гладких кривых на базе трехмерной ломаной. Коэффициент уплотнения кривой.  <a href="group___data___structures.html#ga9d5e8b8e6e1ecf28498fce3b3f397438">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9d5e8b8e6e1ecf28498fce3b3f397438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf5c439f5e9c403aa3b91ee0f4c064e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gadf5c439f5e9c403aa3b91ee0f4c064e6">MbeFairCurvature</a> { <a class="el" href="group___data___structures.html#ggadf5c439f5e9c403aa3b91ee0f4c064e6ac9789dbc83694793349e93b797ef4c78">fairCur_No</a> = 0
+, <a class="el" href="group___data___structures.html#ggadf5c439f5e9c403aa3b91ee0f4c064e6ade44f440c7450bfedf7773f6417e393c">fairCur_Start</a> = 1
+, <a class="el" href="group___data___structures.html#ggadf5c439f5e9c403aa3b91ee0f4c064e6aae6bb9ef07759228ad8e772b81ad80b2">fairCur_End</a> = 2
+, <a class="el" href="group___data___structures.html#ggadf5c439f5e9c403aa3b91ee0f4c064e6a43215aff6d678e77bf5fe84466d15265">fairCur_Both</a> = 3
+ }</td></tr>
+<tr class="memdesc:gadf5c439f5e9c403aa3b91ee0f4c064e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление построением гладких кривых на базе трехмерной ломаной. Учет кривизны в концевых точках.  <a href="group___data___structures.html#gadf5c439f5e9c403aa3b91ee0f4c064e6">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadf5c439f5e9c403aa3b91ee0f4c064e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f214619422aa9d2fc95177621048aa0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga7f214619422aa9d2fc95177621048aa0">MbeFairApprox</a> { <a class="el" href="group___data___structures.html#gga7f214619422aa9d2fc95177621048aa0a28947503ce85f9c39e7c0f06a0871c32">fairApprox_KnotsSpline</a> = 0
+, <a class="el" href="group___data___structures.html#gga7f214619422aa9d2fc95177621048aa0a0cbbc6e8629fc6a17bd8706e73cc9d7a">fairApprox_IsoSpline</a> = 1
+, <a class="el" href="group___data___structures.html#gga7f214619422aa9d2fc95177621048aa0a426c802d664403d68295a3778475a0a2">fairApprox_IsoNurbs</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga7f214619422aa9d2fc95177621048aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление построением гладких кривых на базе трехмерной ломаной. Метод аппроксимации.  <a href="group___data___structures.html#ga7f214619422aa9d2fc95177621048aa0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7f214619422aa9d2fc95177621048aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4157f98da145b35c8ad47a4e4dc0a0cd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__enum_8h.html#a4157f98da145b35c8ad47a4e4dc0a0cd">MbeFairVector</a> { <a class="el" href="mb__enum_8h.html#a4157f98da145b35c8ad47a4e4dc0a0cda2f2619aea5494aa0798d2dabe7691843">fairVector_Tangent</a> = 0
+, <a class="el" href="mb__enum_8h.html#a4157f98da145b35c8ad47a4e4dc0a0cdad78c8343a45662bb9ef5f18c2dca8221">fairSmooth_Segment</a> = 1
+, <a class="el" href="mb__enum_8h.html#a4157f98da145b35c8ad47a4e4dc0a0cdaa97d3e74fa181b11e47272796686b33d">fairSuperSmooth_Segment</a> = 2
+ }</td></tr>
+<tr class="memdesc:a4157f98da145b35c8ad47a4e4dc0a0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление построением гладких кривых на базе трехмерной ломаной. Учет вектора в точке перегиба.  <a href="mb__enum_8h.html#a4157f98da145b35c8ad47a4e4dc0a0cd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4157f98da145b35c8ad47a4e4dc0a0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9bf0563824a0a44de5045566252949"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__enum_8h.html#a3c9bf0563824a0a44de5045566252949">MbeFixPntTng</a> { <a class="el" href="mb__enum_8h.html#a3c9bf0563824a0a44de5045566252949ac7833bb0c08349ec3a2a1f80ac846a5b">fixPntTng_NotFix</a> = 0
+, <a class="el" href="mb__enum_8h.html#a3c9bf0563824a0a44de5045566252949afe484a2ab24ebb8bd4adbf740460efb9">fixPntTng_Fix</a> = 1
+ }</td></tr>
+<tr class="memdesc:a3c9bf0563824a0a44de5045566252949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление построением гладких кривых на базе трехмерной ломаной. Учет касательной в заданной точке / точки на касательной.  <a href="mb__enum_8h.html#a3c9bf0563824a0a44de5045566252949">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3c9bf0563824a0a44de5045566252949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554ec96aa4cff105ce3a25c936f55840"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__enum_8h.html#a554ec96aa4cff105ce3a25c936f55840">MbDefaultTngs</a> { <a class="el" href="mb__enum_8h.html#a554ec96aa4cff105ce3a25c936f55840ae88dc2ad8175141584b67a3b4c182029">onAffin</a> = 0
+, <a class="el" href="mb__enum_8h.html#a554ec96aa4cff105ce3a25c936f55840af379bc7a395db38dde382b83a86df8aa">onCircle</a> = 1
+ }</td></tr>
+<tr class="memdesc:a554ec96aa4cff105ce3a25c936f55840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг построения гладких кривых.  <a href="mb__enum_8h.html#a554ec96aa4cff105ce3a25c936f55840">Подробнее...</a><br /></td></tr>
+<tr class="separator:a554ec96aa4cff105ce3a25c936f55840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29469d7cdd2c201fea62b50f64dd8018"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga29469d7cdd2c201fea62b50f64dd8018">MbeFairSplineFormat</a> { <a class="el" href="group___data___structures.html#gga29469d7cdd2c201fea62b50f64dd8018abb2ab1a0cdf2e81ae0f5d7a6bf8c67e9">fairFormat_HalfOpened</a> = 0
+, <a class="el" href="group___data___structures.html#gga29469d7cdd2c201fea62b50f64dd8018a523966d7482816b448cf6a4d0b76dd73">fairFormat_Open</a> = 1
+, <a class="el" href="group___data___structures.html#gga29469d7cdd2c201fea62b50f64dd8018aa4959655a93d14664dad0c7dd1e2137b">fairFormat_Close</a> = 2
+, <a class="el" href="group___data___structures.html#gga29469d7cdd2c201fea62b50f64dd8018a5ec1b3742a58fd0f71315e98a72accca">fairFormat_GB</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga29469d7cdd2c201fea62b50f64dd8018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление построением гладких кривых на базе трехмерной ломаной. Формат сплайна.  <a href="group___data___structures.html#ga29469d7cdd2c201fea62b50f64dd8018">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga29469d7cdd2c201fea62b50f64dd8018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47b2598f0e6053d314ba5a5faaa69d7e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga47b2598f0e6053d314ba5a5faaa69d7e">MbeFairSmoothing</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga47b2598f0e6053d314ba5a5faaa69d7ea896bb4c09e267e29456796247f2434d7">fairSmooth_No</a> = 0
+, <a class="el" href="group___data___structures.html#gga47b2598f0e6053d314ba5a5faaa69d7ea42360d90ba512c75c3b1bdc2fea2a674">fairSmooth_Yes</a> = 1
+, <a class="el" href="group___data___structures.html#gga47b2598f0e6053d314ba5a5faaa69d7eab6cfd6c1e59c1a42a85b7d9c6f94da33">fairSmooth_FixAng</a> = 2
+, <a class="el" href="group___data___structures.html#gga47b2598f0e6053d314ba5a5faaa69d7ea18381cdb06dde5ebdf88872884a7a283">fairSmooth_Noisy</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga47b2598f0e6053d314ba5a5faaa69d7ea5a05b0d054b7bb6612b15394c3bedc64">fairSmooth_NoisyMidline</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga47b2598f0e6053d314ba5a5faaa69d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление построением гладких кривых на базе трехмерной ломаной. Сглаживание.  <a href="group___data___structures.html#ga47b2598f0e6053d314ba5a5faaa69d7e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga47b2598f0e6053d314ba5a5faaa69d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5a3a243ad6d2a18e9b0ba903e113c90"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gad5a3a243ad6d2a18e9b0ba903e113c90">MbeFairMethod</a> { <a class="el" href="group___data___structures.html#ggad5a3a243ad6d2a18e9b0ba903e113c90a5b316b34ba782ff3a6b38fbaf9193cd8">fairMethod_Polyline</a> = 1
+, <a class="el" href="group___data___structures.html#ggad5a3a243ad6d2a18e9b0ba903e113c90aa0065d8ecdc17189c7fa02dc767cde8d">fairMethod_Tangent</a> = 2
+, <a class="el" href="group___data___structures.html#ggad5a3a243ad6d2a18e9b0ba903e113c90a6e0569764ddc3a85a309213f6c7e231a">fairMethod_GDHermite</a> = 3
+ }</td></tr>
+<tr class="memdesc:gad5a3a243ad6d2a18e9b0ba903e113c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способ построения плавной кривой.  <a href="group___data___structures.html#gad5a3a243ad6d2a18e9b0ba903e113c90">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad5a3a243ad6d2a18e9b0ba903e113c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad11c461813f4bde72d9958a3a8f9ab69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#gad11c461813f4bde72d9958a3a8f9ab69">MbeFairWarning</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a546dede18a349c6c29a0b0ddf17f3580">fwarn_Success</a> = 0
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a39b3454af7e07ccf6d62186763bb135c">fwarn_IncorrectFirstTang</a> = 1
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69ac29e0a9b66bef5a5ea230e37f39f22ba">fwarn_StraightFirstSite</a> = 2
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a817b70818605fea6dcee11e02bf903bb">fwarn_IncorrectPolylines</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69af4cf46090c964e1bb7f2ad68a3b3b214">fwarn_IncorrectFixPntTng</a> = 4
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69ad10319ab8552d3f113a9dad13501cc3e">fwarn_BadAccuracyFixPntTng</a> = 5
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a3cbbda2a09e67a70108e99fd220877ac">fwarn_BadStructureFixPntTng</a> = 6
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a8b75cae09d54886a6a57b5884e15f477">fwarn_BadPositionFixPntTng</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69ad8d1ad07ee59a0f36266aaf8aea232cc">fwarn_CriticalConfig</a> = 8
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a6f59e6f8c376642e5e8fe44ce22fe359">fwarn_CantSetCurvature</a> = 9
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a196c59289d233caee4676733adc48818">fwarn_AccuracyCritical</a> = 10
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a4a18a52b040de29c6163a43d34c2cfe7">fwarn_AccuracyStraight</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69a8d975eedb9dfa0c83b6317035d3c268b">fwarn_BadAccuracy</a> = 13
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69adc974c482610f13a8ce937bdd2edd061">fwarn_BadInflection</a> = 15
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69ac7d93173cf3c19b0c79646005c66cd3b">fwarn_CurvatureOutOfRange</a> = 16
+, <a class="el" href="group___data___structures.html#ggad11c461813f4bde72d9958a3a8f9ab69acd4174854839dc0c32656d0b348d70d7">fwarn_SawtoothPolyline</a> = 17
+<br />
+ }</td></tr>
+<tr class="memdesc:gad11c461813f4bde72d9958a3a8f9ab69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предупреждения построения плавной кривой.  <a href="group___data___structures.html#gad11c461813f4bde72d9958a3a8f9ab69">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad11c461813f4bde72d9958a3a8f9ab69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga057f7303187eeb0b87a5063f02aaf218"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga057f7303187eeb0b87a5063f02aaf218">MbeFairDataType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga057f7303187eeb0b87a5063f02aaf218a6d30cf9fe3f4086018a869aba86fba42">fairData_None</a> = 0
+, <a class="el" href="group___data___structures.html#gga057f7303187eeb0b87a5063f02aaf218ac82eb9b4500ec5da989177f637243beb">fairData_Polyline</a> = 1
+, <a class="el" href="group___data___structures.html#gga057f7303187eeb0b87a5063f02aaf218af56fcba8794d9fbdbcd368812a9477b5">fairData_Tangent</a> = 2
+, <a class="el" href="group___data___structures.html#gga057f7303187eeb0b87a5063f02aaf218a3d2e9ebc5ded3fadcde0661ba75395e2">fairData_GDHermite</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga057f7303187eeb0b87a5063f02aaf218a68704470cdca5a776161cb180c92ab53">fairData_GDHPoly</a> = 4
+, <a class="el" href="group___data___structures.html#gga057f7303187eeb0b87a5063f02aaf218adbdb330536d12850c0f4d4e8be2a57b6">fairData_GDHTangent</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:ga057f7303187eeb0b87a5063f02aaf218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип входных данных построения плавной кривой.  <a href="group___data___structures.html#ga057f7303187eeb0b87a5063f02aaf218">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga057f7303187eeb0b87a5063f02aaf218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga036a68a66c6f66812b0d0ac90214129f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga036a68a66c6f66812b0d0ac90214129f">MbeFairChangeType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129fa16943ada36ee107e71160b1241927102">fairChange_None</a> = 0
+, <a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129faf36628846958b04acf6cdf2e6cd0224c">fairChange_Elevate</a> = 1
+, <a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129fa084cadea0e3ca9afbf3f0f171c93d600">fairChange_Subdivide</a> = 2
+, <a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129faf2826f41c4d1817d212079fa2a8ab40f">fairChange_Change</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129fa3101cec4be0231e4a9509f59f2901ced">fairChange_AddKnot</a> = 4
+, <a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129faa3e86d4b5d738903bcb0205d00fd030d">fairChange_AddExtr</a> = 5
+, <a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129fa6bcfc94f2fb1d5af4c018afa1f70da52">fairChange_Conic</a> = 6
+, <a class="el" href="group___data___structures.html#gga036a68a66c6f66812b0d0ac90214129fa81026fc06021671516d07f817fec058b">fairChange_Reparam</a> = 7
+<br />
+ }</td></tr>
+<tr class="memdesc:ga036a68a66c6f66812b0d0ac90214129f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод изменения плавной кривой.  <a href="group___data___structures.html#ga036a68a66c6f66812b0d0ac90214129f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga036a68a66c6f66812b0d0ac90214129f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga606055ecd84832347962ac1905ca56aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga606055ecd84832347962ac1905ca56aa">MbeFairCurveType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaa47f5f870d68c5cc7c0f42f99061324af">fairCrvType_None</a> = 0
+, <a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaa62b17a1636c4afca4428cddc0fd10549">fairCrvType_Bezier</a> = 1
+, <a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaa04dd4f923b268515a432c6f61ebb9e94">fairCrvType_BSpline</a> = 2
+, <a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaad6f43211fd48ef338d84f195b6c6a6e2">fairCrvType_HermiteGD</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaa2876c9b09bd46d63541709fd2a9a8f30">fairCrvType_Clothoid</a> = 4
+, <a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaa85d9dfa54875cdff72a2ab15ef7486ad">fairCrvType_Sectrix</a> = 5
+, <a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaab1fbdbfb7086c9a58559ec27c3fef923">fairCrvType_BezierFillet</a> = 6
+, <a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaae6bbb10b0ed3d62ce5215d2765523978">fairCrvType_Poly</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga606055ecd84832347962ac1905ca56aaadf6e659f331155020f50683576224b9c">fairCrvType_PolyTangent</a> = 8
+<br />
+ }</td></tr>
+<tr class="memdesc:ga606055ecd84832347962ac1905ca56aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип создаваемой плавной кривой.  <a href="group___data___structures.html#ga606055ecd84832347962ac1905ca56aa">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga606055ecd84832347962ac1905ca56aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af590e396647c2fb199c85e4c0ea5fa94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94">MbeSectionShape</a> { <br />
+&#160;&#160;<a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94a2efb3d81f615f5e6f3471b322bc9465f">cs_Round</a> = 0
+, <a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94a71f0fe36a003b97e8b0e5a88dead75ea">cs_Linea</a> = 1
+, <a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94a41feba6ea23f4f56577c71117c5b014f">cs_Conic</a> = 2
+, <a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94a936357c8c765583e0cf6ae347c19b49f">cs_Cubic</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94af59c11d3fad7fe8126c2a5043f74741f">cs_Shape</a> = 4
+, <a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94aeecfc5872c98f543386eff2c842fe8ea">cs_Disked</a> = 5
+, <a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94a92883342b12f2a49141f9f0ee5322e39">cs_Fillet</a> = 6
+<br />
+ }</td></tr>
+<tr class="memdesc:af590e396647c2fb199c85e4c0ea5fa94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма поверхности заметания переменного сечения.  <a href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94">Подробнее...</a><br /></td></tr>
+<tr class="separator:af590e396647c2fb199c85e4c0ea5fa94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83700c82ab566e51a5ff18795cfbf160"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160">MbeSideShape</a> { <br />
+&#160;&#160;<a class="el" href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160a78934f22b8054b96ab3660a7f51086ce">side_Non</a> = 0
+, <a class="el" href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160a4ecf435dfdf883ffffcbac6ff676d35b">side_Min</a> = 1
+, <a class="el" href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160aa3afd69d6e2ae8d00b9a9f651a21ead4">side_Max</a> = 2
+, <a class="el" href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160a674d9499c3f8c40b642fa0dce02ab009">side_Cut</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160a0d17c04a9fc18dc797db46e86ad32037">side_Tau</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a83700c82ab566e51a5ff18795cfbf160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Форма обрезки боков поверхности переменного сечения.  <a href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160">Подробнее...</a><br /></td></tr>
+<tr class="separator:a83700c82ab566e51a5ff18795cfbf160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb474019f87d7acebed7e14e76c6049"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__enum_8h.html#adcb474019f87d7acebed7e14e76c6049">MbeFaceHandling</a> { <a class="el" href="mb__enum_8h.html#adcb474019f87d7acebed7e14e76c6049a1a8a34b46cb825aeb52e55af90b5fb0b">face_Non</a> = 0
+, <a class="el" href="mb__enum_8h.html#adcb474019f87d7acebed7e14e76c6049a37f63b1a3582d89ea87c932f9cc910ec">face_Cut</a> = 1
+, <a class="el" href="mb__enum_8h.html#adcb474019f87d7acebed7e14e76c6049a12bad16db3c4ec41a0135d49bcdefbcb">face_Sew</a> = 2
+ }</td></tr>
+<tr class="memdesc:adcb474019f87d7acebed7e14e76c6049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка исходных опорных граней.  <a href="mb__enum_8h.html#adcb474019f87d7acebed7e14e76c6049">Подробнее...</a><br /></td></tr>
+<tr class="separator:adcb474019f87d7acebed7e14e76c6049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga282d9a7b012aa63504467cc5bcc8f763"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga282d9a7b012aa63504467cc5bcc8f763">MbePairObjectsSelection</a> { <a class="el" href="group___data___structures.html#gga282d9a7b012aa63504467cc5bcc8f763ae77e2893a82006428adfe57ba8a500a8">pos_First</a> = 0
+, <a class="el" href="group___data___structures.html#gga282d9a7b012aa63504467cc5bcc8f763a74aeeea277a86b2cc943d0744b39d9e1">pos_Second</a> = 1
+, <a class="el" href="group___data___structures.html#gga282d9a7b012aa63504467cc5bcc8f763a925aaced25cbddf509af91f75038a7f5">pos_Both</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga282d9a7b012aa63504467cc5bcc8f763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выбор из пары объектов.  <a href="group___data___structures.html#ga282d9a7b012aa63504467cc5bcc8f763">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga282d9a7b012aa63504467cc5bcc8f763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87ec091d2a48f91e64d6bebadac7eac9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga87ec091d2a48f91e64d6bebadac7eac9">MbeCurveExtensionWays</a> : unsigned int { <br />
+&#160;&#160;<a class="el" href="group___curve___modeling.html#gga87ec091d2a48f91e64d6bebadac7eac9af0682427201d6e17d705a15fc066bb5c">cew_Linear</a> = 0
+, <a class="el" href="group___curve___modeling.html#gga87ec091d2a48f91e64d6bebadac7eac9a759e9c8a55fa30f9251626186a141e74">cew_Circular</a> = 1
+, <a class="el" href="group___curve___modeling.html#gga87ec091d2a48f91e64d6bebadac7eac9ac8ac8009ef7cb1c016cf2cc79079f6af">cew_CommonNatural</a> = 2
+, <a class="el" href="group___curve___modeling.html#gga87ec091d2a48f91e64d6bebadac7eac9af2a0e90c3279d0e7b50f621d4a211bb5">cew_BaseNatural</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___curve___modeling.html#gga87ec091d2a48f91e64d6bebadac7eac9ab0d50ad8e7d01ca978109e7de73add82">cew_Undefined</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga87ec091d2a48f91e64d6bebadac7eac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление способов продления кривой.  <a href="group___curve___modeling.html#ga87ec091d2a48f91e64d6bebadac7eac9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga87ec091d2a48f91e64d6bebadac7eac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Перечисления. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a4157f98da145b35c8ad47a4e4dc0a0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4157f98da145b35c8ad47a4e4dc0a0cd">&#9670;&nbsp;</a></span>MbeFairVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mb__enum_8h.html#a4157f98da145b35c8ad47a4e4dc0a0cd">MbeFairVector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Управление построением гладких кривых на базе трехмерной ломаной. Учет вектора в точке перегиба. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a4157f98da145b35c8ad47a4e4dc0a0cda2f2619aea5494aa0798d2dabe7691843"></a>fairVector_Tangent&#160;</td><td class="fielddoc"><p>Учет направления касательной. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4157f98da145b35c8ad47a4e4dc0a0cdad78c8343a45662bb9ef5f18c2dca8221"></a>fairSmooth_Segment&#160;</td><td class="fielddoc"><p>Плавная форма участка перегиба. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4157f98da145b35c8ad47a4e4dc0a0cdaa97d3e74fa181b11e47272796686b33d"></a>fairSuperSmooth_Segment&#160;</td><td class="fielddoc"><p>Супер плавная форма участка перегиба. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3c9bf0563824a0a44de5045566252949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9bf0563824a0a44de5045566252949">&#9670;&nbsp;</a></span>MbeFixPntTng</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mb__enum_8h.html#a3c9bf0563824a0a44de5045566252949">MbeFixPntTng</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Управление построением гладких кривых на базе трехмерной ломаной. Учет касательной в заданной точке / точки на касательной. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a3c9bf0563824a0a44de5045566252949ac7833bb0c08349ec3a2a1f80ac846a5b"></a>fixPntTng_NotFix&#160;</td><td class="fielddoc"><p>Не фиксировать точки на касательных / касательные в точках. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c9bf0563824a0a44de5045566252949afe484a2ab24ebb8bd4adbf740460efb9"></a>fixPntTng_Fix&#160;</td><td class="fielddoc"><p>Фиксировать точки на касательных / касательные в точках. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a554ec96aa4cff105ce3a25c936f55840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554ec96aa4cff105ce3a25c936f55840">&#9670;&nbsp;</a></span>MbDefaultTngs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mb__enum_8h.html#a554ec96aa4cff105ce3a25c936f55840">MbDefaultTngs</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаг построения гладких кривых. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a554ec96aa4cff105ce3a25c936f55840ae88dc2ad8175141584b67a3b4c182029"></a>onAffin&#160;</td><td class="fielddoc"><p>Построение аффинно инвариантно. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a554ec96aa4cff105ce3a25c936f55840af379bc7a395db38dde382b83a86df8aa"></a>onCircle&#160;</td><td class="fielddoc"><p>Построение на окружности. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af590e396647c2fb199c85e4c0ea5fa94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af590e396647c2fb199c85e4c0ea5fa94">&#9670;&nbsp;</a></span>MbeSectionShape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mb__enum_8h.html#af590e396647c2fb199c85e4c0ea5fa94">MbeSectionShape</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Форма поверхности заметания переменного сечения. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="af590e396647c2fb199c85e4c0ea5fa94a2efb3d81f615f5e6f3471b322bc9465f"></a>cs_Round&#160;</td><td class="fielddoc"><p>Окружность или её дуга в сечении. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af590e396647c2fb199c85e4c0ea5fa94a71f0fe36a003b97e8b0e5a88dead75ea"></a>cs_Linea&#160;</td><td class="fielddoc"><p>Отрезок прямой в сечении. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af590e396647c2fb199c85e4c0ea5fa94a41feba6ea23f4f56577c71117c5b014f"></a>cs_Conic&#160;</td><td class="fielddoc"><p>Кривая второго порядка в сечении. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af590e396647c2fb199c85e4c0ea5fa94a936357c8c765583e0cf6ae347c19b49f"></a>cs_Cubic&#160;</td><td class="fielddoc"><p>Кубическая кривая в сечении. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af590e396647c2fb199c85e4c0ea5fa94af59c11d3fad7fe8126c2a5043f74741f"></a>cs_Shape&#160;</td><td class="fielddoc"><p>Сплайн определяет форму сечения. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af590e396647c2fb199c85e4c0ea5fa94aeecfc5872c98f543386eff2c842fe8ea"></a>cs_Disked&#160;</td><td class="fielddoc"><p>Сечение поверхности скругления от движения диском. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af590e396647c2fb199c85e4c0ea5fa94a92883342b12f2a49141f9f0ee5322e39"></a>cs_Fillet&#160;</td><td class="fielddoc"><p>Сечение поверхности скругления от движения сферы. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a83700c82ab566e51a5ff18795cfbf160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83700c82ab566e51a5ff18795cfbf160">&#9670;&nbsp;</a></span>MbeSideShape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mb__enum_8h.html#a83700c82ab566e51a5ff18795cfbf160">MbeSideShape</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Форма обрезки боков поверхности переменного сечения. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a83700c82ab566e51a5ff18795cfbf160a78934f22b8054b96ab3660a7f51086ce"></a>side_Non&#160;</td><td class="fielddoc"><p>Прямоугольная продлённая без обрезки. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a83700c82ab566e51a5ff18795cfbf160a4ecf435dfdf883ffffcbac6ff676d35b"></a>side_Min&#160;</td><td class="fielddoc"><p>Прямоугольная обрезка по ближнему краю. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a83700c82ab566e51a5ff18795cfbf160aa3afd69d6e2ae8d00b9a9f651a21ead4"></a>side_Max&#160;</td><td class="fielddoc"><p>Прямоугольная обрезка по дальнему краю. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a83700c82ab566e51a5ff18795cfbf160a674d9499c3f8c40b642fa0dce02ab009"></a>side_Cut&#160;</td><td class="fielddoc"><p>Обрезка по кратчайшей линии. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a83700c82ab566e51a5ff18795cfbf160a0d17c04a9fc18dc797db46e86ad32037"></a>side_Tau&#160;</td><td class="fielddoc"><p>Обрезка по кубической линии с ортогональными краями. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="adcb474019f87d7acebed7e14e76c6049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb474019f87d7acebed7e14e76c6049">&#9670;&nbsp;</a></span>MbeFaceHandling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mb__enum_8h.html#adcb474019f87d7acebed7e14e76c6049">MbeFaceHandling</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработка исходных опорных граней. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="adcb474019f87d7acebed7e14e76c6049a1a8a34b46cb825aeb52e55af90b5fb0b"></a>face_Non&#160;</td><td class="fielddoc"><p>Без обработки. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adcb474019f87d7acebed7e14e76c6049a37f63b1a3582d89ea87c932f9cc910ec"></a>face_Cut&#160;</td><td class="fielddoc"><p>Обрезать по опорным кривым. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adcb474019f87d7acebed7e14e76c6049a12bad16db3c4ec41a0135d49bcdefbcb"></a>face_Sew&#160;</td><td class="fielddoc"><p>Обрезать по опорным кривым и сшить с построенной гранью. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mb__enum_8h.html">mb_enum.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

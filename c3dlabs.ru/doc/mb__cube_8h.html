@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mb_cube.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mb__cube_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mb_cube.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Габаритный куб геометрического объекта.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="mb__cart__point3d_8h.html">mb_cart_point3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="io__base_8h.html">io_base.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cube__tree_8h.html">mb_cube_tree.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html">MbCube</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Габаритный параллелепипед.  <a href="class_mb_cube.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a4a8aa398c83e5a4199230ac708fce80a"><td class="memItemLeft" align="right" valign="top"><a id="a4a8aa398c83e5a4199230ac708fce80a"></a>
+typedef std::pair&lt; <a class="el" href="class_mb_cube.html">MbCube</a>, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a4a8aa398c83e5a4199230ac708fce80a">c3d::CubeIndex</a></td></tr>
+<tr class="memdesc:a4a8aa398c83e5a4199230ac708fce80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Габаритный куб и индекс. <br /></td></tr>
+<tr class="separator:a4a8aa398c83e5a4199230ac708fce80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa85385a7f0f4522eb35cb365942d749"><td class="memItemLeft" align="right" valign="top"><a id="afa85385a7f0f4522eb35cb365942d749"></a>
+typedef std::pair&lt; size_t, <a class="el" href="class_mb_cube.html">MbCube</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#afa85385a7f0f4522eb35cb365942d749">c3d::IndexCube</a></td></tr>
+<tr class="memdesc:afa85385a7f0f4522eb35cb365942d749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс и габаритный куб. <br /></td></tr>
+<tr class="separator:afa85385a7f0f4522eb35cb365942d749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93633bc3dd1e45ffe00d947dd14284a"><td class="memItemLeft" align="right" valign="top"><a id="ac93633bc3dd1e45ffe00d947dd14284a"></a>
+typedef std::pair&lt; <a class="el" href="class_mb_cube.html">MbCube</a> *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#ac93633bc3dd1e45ffe00d947dd14284a">c3d::CubePtrIndex</a></td></tr>
+<tr class="memdesc:ac93633bc3dd1e45ffe00d947dd14284a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Габаритный куб и индекс. <br /></td></tr>
+<tr class="separator:ac93633bc3dd1e45ffe00d947dd14284a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88932a14f667e275f9bf26f9fda939f"><td class="memItemLeft" align="right" valign="top"><a id="ad88932a14f667e275f9bf26f9fda939f"></a>
+typedef std::pair&lt; size_t, <a class="el" href="class_mb_cube.html">MbCube</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#ad88932a14f667e275f9bf26f9fda939f">c3d::IndexCubePtr</a></td></tr>
+<tr class="memdesc:ad88932a14f667e275f9bf26f9fda939f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс и габаритный куб. <br /></td></tr>
+<tr class="separator:ad88932a14f667e275f9bf26f9fda939f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10f57239154ae42f8b9dc9b94a095b2"><td class="memItemLeft" align="right" valign="top"><a id="ad10f57239154ae42f8b9dc9b94a095b2"></a>
+typedef std::pair&lt; const <a class="el" href="class_mb_cube.html">MbCube</a> *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#ad10f57239154ae42f8b9dc9b94a095b2">c3d::ConstCubePtrIndex</a></td></tr>
+<tr class="memdesc:ad10f57239154ae42f8b9dc9b94a095b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Габаритный куб и индекс. <br /></td></tr>
+<tr class="separator:ad10f57239154ae42f8b9dc9b94a095b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf758a7b2c642e1fc95d9ede3368454b"><td class="memItemLeft" align="right" valign="top"><a id="acf758a7b2c642e1fc95d9ede3368454b"></a>
+typedef std::pair&lt; size_t, const <a class="el" href="class_mb_cube.html">MbCube</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#acf758a7b2c642e1fc95d9ede3368454b">c3d::IndexConstCubePtr</a></td></tr>
+<tr class="memdesc:acf758a7b2c642e1fc95d9ede3368454b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс и габаритный куб. <br /></td></tr>
+<tr class="separator:acf758a7b2c642e1fc95d9ede3368454b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc16166b9721fba8061565dd3f04916c"><td class="memItemLeft" align="right" valign="top"><a id="abc16166b9721fba8061565dd3f04916c"></a>
+typedef std::vector&lt; CubePtrIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#abc16166b9721fba8061565dd3f04916c">c3d::CubesPtrIndices</a></td></tr>
+<tr class="memdesc:abc16166b9721fba8061565dd3f04916c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор габаритных кубов и индексов. <br /></td></tr>
+<tr class="separator:abc16166b9721fba8061565dd3f04916c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e04b3e0760916abfa692d4c09de9b9b"><td class="memItemLeft" align="right" valign="top"><a id="a5e04b3e0760916abfa692d4c09de9b9b"></a>
+typedef std::vector&lt; ConstCubePtrIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a5e04b3e0760916abfa692d4c09de9b9b">c3d::ConstCubesPtrIndices</a></td></tr>
+<tr class="memdesc:a5e04b3e0760916abfa692d4c09de9b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор габаритных кубов и индексов. <br /></td></tr>
+<tr class="separator:a5e04b3e0760916abfa692d4c09de9b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f74a5dbc37e2b13b171c283b3f0f0d"><td class="memItemLeft" align="right" valign="top"><a id="a08f74a5dbc37e2b13b171c283b3f0f0d"></a>
+typedef std::vector&lt; <a class="el" href="class_mb_cube.html">MbCube</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a08f74a5dbc37e2b13b171c283b3f0f0d">c3d::CubesVector</a></td></tr>
+<tr class="memdesc:a08f74a5dbc37e2b13b171c283b3f0f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор габаритных кубов. <br /></td></tr>
+<tr class="separator:a08f74a5dbc37e2b13b171c283b3f0f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834d3423fdc5965b53abc41aad9f9ba3"><td class="memItemLeft" align="right" valign="top"><a id="a834d3423fdc5965b53abc41aad9f9ba3"></a>
+typedef std::vector&lt; IndexCube &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a834d3423fdc5965b53abc41aad9f9ba3">c3d::IndexCubeVector</a></td></tr>
+<tr class="memdesc:a834d3423fdc5965b53abc41aad9f9ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор индексов и габаритных кубов. <br /></td></tr>
+<tr class="separator:a834d3423fdc5965b53abc41aad9f9ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48af790e78c88c976a4401b8e8e9254"><td class="memItemLeft" align="right" valign="top"><a id="af48af790e78c88c976a4401b8e8e9254"></a>
+typedef std::vector&lt; CubeIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#af48af790e78c88c976a4401b8e8e9254">c3d::CubeIndexVector</a></td></tr>
+<tr class="memdesc:af48af790e78c88c976a4401b8e8e9254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор индексов и габаритных кубов. <br /></td></tr>
+<tr class="separator:af48af790e78c88c976a4401b8e8e9254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bc84f66bdfb5cb1f6af53d30c63c7b"><td class="memItemLeft" align="right" valign="top"><a id="af7bc84f66bdfb5cb1f6af53d30c63c7b"></a>
+typedef <a class="el" href="class_mb_cube_tree.html">MbCubeTree</a>&lt; <a class="el" href="class_mb_cube.html">MbCube</a>, <a class="el" href="class_mb_cube.html">MbCube</a>, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a>, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#af7bc84f66bdfb5cb1f6af53d30c63c7b">c3d::CubesTree</a></td></tr>
+<tr class="memdesc:af7bc84f66bdfb5cb1f6af53d30c63c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дерево габаритных кубов. <br /></td></tr>
+<tr class="separator:af7bc84f66bdfb5cb1f6af53d30c63c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a718abc8d087d1a37cfb76ad6ab70ab70"><td class="memItemLeft" align="right" valign="top"><a id="a718abc8d087d1a37cfb76ad6ab70ab70"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__cube_8h.html#a718abc8d087d1a37cfb76ad6ab70ab70">CUBE_CONTROL_POINTS_COUNT</a> = 26</td></tr>
+<tr class="memdesc:a718abc8d087d1a37cfb76ad6ab70ab70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество характерных точек куба. <br /></td></tr>
+<tr class="separator:a718abc8d087d1a37cfb76ad6ab70ab70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f70dad8534f33e6a5d92cae2f492a6d"><td class="memItemLeft" align="right" valign="top"><a id="a6f70dad8534f33e6a5d92cae2f492a6d"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__cube_8h.html#a6f70dad8534f33e6a5d92cae2f492a6d">CUBE_VERTEX_COUNT</a> = 8</td></tr>
+<tr class="memdesc:a6f70dad8534f33e6a5d92cae2f492a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество вершин куба. <br /></td></tr>
+<tr class="separator:a6f70dad8534f33e6a5d92cae2f492a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce572aaa367fbefc0a565373ea5be09"><td class="memItemLeft" align="right" valign="top"><a id="a0ce572aaa367fbefc0a565373ea5be09"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__cube_8h.html#a0ce572aaa367fbefc0a565373ea5be09">CUBE_EDGES_COUNT</a> = 12</td></tr>
+<tr class="memdesc:a0ce572aaa367fbefc0a565373ea5be09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество рёбер куба. <br /></td></tr>
+<tr class="separator:a0ce572aaa367fbefc0a565373ea5be09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37de789359e59871481d016ee0d0f00"><td class="memItemLeft" align="right" valign="top"><a id="ac37de789359e59871481d016ee0d0f00"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__cube_8h.html#ac37de789359e59871481d016ee0d0f00">CUBE_FACES_COUNT</a> = 6</td></tr>
+<tr class="memdesc:ac37de789359e59871481d016ee0d0f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество граней куба. <br /></td></tr>
+<tr class="separator:ac37de789359e59871481d016ee0d0f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Габаритный куб геометрического объекта. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mb__cube_8h.html">mb_cube.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

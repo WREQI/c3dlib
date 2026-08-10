@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл name_item.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('name__item_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл name_item.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Имя топологического объекта.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__s__array__rw_8h.html">templ_s_array_rw.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__css__array_8h.html">templ_css_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="reference__item_8h.html">reference_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="io__base_8h.html">io_base.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="hash32_8h.html">hash32.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__enum_8h.html">mb_enum.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="name__version_8h.html">name_version.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="name__flags_8h.html">name_flags.h</a>&gt;</code><br />
+<code>#include &lt;templ_lis_array.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="system__atomic_8h.html">system_atomic.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_name_array.html">SimpleNameArray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество простых имен.  <a href="class_simple_name_array.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_id_arr.html">MbIdArr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Укороченное множество простых имен.  <a href="struct_mb_id_arr.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_name.html">MbName</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта.  <a href="class_mb_name.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_name_pair.html">MbNamePair</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта и его копии.  <a href="class_mb_name_pair.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_name_pair_list.html">MbNamePairList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таблица соответствия имён.  <a href="class_mb_name_pair_list.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_name_maker.html">MbNameMaker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генератор имен.  <a href="class_mb_name_maker.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генератор имен c добавками к имени.  <a href="class_mb_s_name_maker.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_path.html">MbPath</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к компоненту.  <a href="class_mb_path.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga574649027715920777305f4bc735a6e9"><td class="memTemplParams" colspan="2">template&lt;class IntegralType &gt; </td></tr>
+<tr class="memitem:ga574649027715920777305f4bc735a6e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___names.html#ga574649027715920777305f4bc735a6e9">SwapIT</a> (IntegralType &amp;a, IntegralType &amp;b)</td></tr>
+<tr class="memdesc:ga574649027715920777305f4bc735a6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять местами.  <a href="group___names.html#ga574649027715920777305f4bc735a6e9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga574649027715920777305f4bc735a6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0b3558f46e71743e13d0d4203d86cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name__item_8h.html#a5c0b3558f46e71743e13d0d4203d86cc">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;in, <a class="el" href="class_simple_name_array.html">SimpleNameArray</a> *&amp;nArr)</td></tr>
+<tr class="memdesc:a5c0b3558f46e71743e13d0d4203d86cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение с выделением памяти: nArr = new <a class="el" href="class_simple_name_array.html" title="Множество простых имен.">SimpleNameArray()</a>;.  <a href="name__item_8h.html#a5c0b3558f46e71743e13d0d4203d86cc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5c0b3558f46e71743e13d0d4203d86cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8c0804b955faa6430f3375b8364e10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name__item_8h.html#a9c8c0804b955faa6430f3375b8364e10">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;in, <a class="el" href="class_simple_name_array.html">SimpleNameArray</a> &amp;ref)</td></tr>
+<tr class="memdesc:a9c8c0804b955faa6430f3375b8364e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение.  <a href="name__item_8h.html#a9c8c0804b955faa6430f3375b8364e10">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9c8c0804b955faa6430f3375b8364e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35a0734362b04e842044ab3aacc50ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name__item_8h.html#ad35a0734362b04e842044ab3aacc50ca">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, const <a class="el" href="class_simple_name_array.html">SimpleNameArray</a> &amp;ref)</td></tr>
+<tr class="memdesc:ad35a0734362b04e842044ab3aacc50ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись.  <a href="name__item_8h.html#ad35a0734362b04e842044ab3aacc50ca">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad35a0734362b04e842044ab3aacc50ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7844ac13f86374fc00d64dd8cfbef783"><td class="memItemLeft" align="right" valign="top"><a id="a7844ac13f86374fc00d64dd8cfbef783"></a>
+<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name__item_8h.html#a7844ac13f86374fc00d64dd8cfbef783">Hash32</a> (const <a class="el" href="class_simple_name_array.html">SimpleNameArray</a> &amp;snArr)</td></tr>
+<tr class="memdesc:a7844ac13f86374fc00d64dd8cfbef783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash32. <br /></td></tr>
+<tr class="separator:a7844ac13f86374fc00d64dd8cfbef783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5837b09afebb274513e1471fb4711efa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name__item_8h.html#a5837b09afebb274513e1471fb4711efa">operator+=</a> (<a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> &gt; &amp;array, const <a class="el" href="class_simple_name_array.html">SimpleNameArray</a> &amp;other)</td></tr>
+<tr class="memdesc:a5837b09afebb274513e1471fb4711efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор конкатенации.  <a href="name__item_8h.html#a5837b09afebb274513e1471fb4711efa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5837b09afebb274513e1471fb4711efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa91d4a43cd6707996354de0edf5722fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___names.html#gaa91d4a43cd6707996354de0edf5722fb">MbMemDefNameCompare</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;n1, const <a class="el" href="class_mb_name.html">MbName</a> &amp;n2)</td></tr>
+<tr class="memdesc:gaa91d4a43cd6707996354de0edf5722fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сравнения имён.  <a href="group___names.html#gaa91d4a43cd6707996354de0edf5722fb">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa91d4a43cd6707996354de0edf5722fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab99232203dd68d74d9a04e0ba49eec60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___names.html#gab99232203dd68d74d9a04e0ba49eec60">MbDefNameCompare</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;n1, const <a class="el" href="class_mb_name.html">MbName</a> &amp;n2)</td></tr>
+<tr class="memdesc:gab99232203dd68d74d9a04e0ba49eec60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сравнения имён.  <a href="group___names.html#gab99232203dd68d74d9a04e0ba49eec60">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab99232203dd68d74d9a04e0ba49eec60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc9fad703e5a16ac82ce4bf13c1908be"><td class="memTemplParams" colspan="2">template&lt;class SimpleNameVector &gt; </td></tr>
+<tr class="memitem:gabc9fad703e5a16ac82ce4bf13c1908be"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___names.html#gabc9fad703e5a16ac82ce4bf13c1908be">IsEqualPaths</a> (const SimpleNameVector &amp;path1, const SimpleNameVector &amp;path2)</td></tr>
+<tr class="memdesc:gabc9fad703e5a16ac82ce4bf13c1908be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сравнить пути в виде массива идентификаторов.  <a href="group___names.html#gabc9fad703e5a16ac82ce4bf13c1908be">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabc9fad703e5a16ac82ce4bf13c1908be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ga3f21ea6e543be2631899a53393128c45"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___names.html#ga3f21ea6e543be2631899a53393128c45">sizeofSimpleName</a> = sizeof( <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> )</td></tr>
+<tr class="memdesc:ga3f21ea6e543be2631899a53393128c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер SimpleName.  <a href="group___names.html#ga3f21ea6e543be2631899a53393128c45">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3f21ea6e543be2631899a53393128c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Имя топологического объекта. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a5c0b3558f46e71743e13d0d4203d86cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0b3558f46e71743e13d0d4203d86cc">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classreader.html">reader</a>&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_simple_name_array.html">SimpleNameArray</a> *&amp;&#160;</td>
+          <td class="paramname"><em>nArr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Чтение с выделением памяти: nArr = new <a class="el" href="class_simple_name_array.html" title="Множество простых имен.">SimpleNameArray()</a>;. </p>
+<p>Оператор чтения. </p>
+
+</div>
+</div>
+<a id="a9c8c0804b955faa6430f3375b8364e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8c0804b955faa6430f3375b8364e10">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classreader.html">reader</a>&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_simple_name_array.html">SimpleNameArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Чтение. </p>
+<p>Оператор чтения. </p>
+
+</div>
+</div>
+<a id="ad35a0734362b04e842044ab3aacc50ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35a0734362b04e842044ab3aacc50ca">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwriter.html">writer</a>&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_simple_name_array.html">SimpleNameArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запись. </p>
+<p>Оператор записи. </p>
+
+</div>
+</div>
+<a id="a5837b09afebb274513e1471fb4711efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5837b09afebb274513e1471fb4711efa">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_array.html">SArray</a>&lt;<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&gt;&amp; operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_simple_name_array.html">SimpleNameArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор конкатенации. </p>
+<p>Оператор добавления. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="name__item_8h.html">name_item.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

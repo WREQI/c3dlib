@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Структура CornerValues</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('struct_corner_values.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_corner_values-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура CornerValues<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___build___parameters.html">Параметры операций</a> &raquo; <a class="el" href="group___shell___building___parameters.html">Параметры построения оболочек</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Параметры скругления вершины.  
+ <a href="struct_corner_values.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;op_shell_parameter.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:afa1712df92bde59a58728784f47c9fbe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbe">CornerForm</a> { <br />
+&#160;&#160;<a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbea5e0052c77e7ac1e9c2c6b83867b7af34">ef_sphere</a> = 0
+, <a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbea88a561b69dede7d26f134e49cde50d86">ef_smart</a> = 1
+, <a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbea486d6bf5bdaf2c8177fa7601f620cf99">ef_delta</a> = 3
+, <a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbea4d01dee97ad142d29b5dc36ab8730e7a">ef_elbow1</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbea3eba67577c5a7400300443374075e471">ef_elbow2</a> = 5
+, <a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbea33a0b524e326565962cf2cb3a37b9695">ef_elbow3</a> = 6
+<br />
+ }</td></tr>
+<tr class="memdesc:afa1712df92bde59a58728784f47c9fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы скругления вершины стыковки трёх рёбер.  <a href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbe">Подробнее...</a><br /></td></tr>
+<tr class="separator:afa1712df92bde59a58728784f47c9fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab13cc23d22834a7f55eeba0c1b3d8f7e"><td class="memItemLeft" align="right" valign="top"><a id="ab13cc23d22834a7f55eeba0c1b3d8f7e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#ab13cc23d22834a7f55eeba0c1b3d8f7e">CornerValues</a> ()</td></tr>
+<tr class="memdesc:ab13cc23d22834a7f55eeba0c1b3d8f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:ab13cc23d22834a7f55eeba0c1b3d8f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc44c940e03a04c594e32b9201e182b"><td class="memItemLeft" align="right" valign="top"><a id="acfc44c940e03a04c594e32b9201e182b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#acfc44c940e03a04c594e32b9201e182b">CornerValues</a> (double r0, double r1, double r2, double r3, <a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbe">CornerForm</a> ck)</td></tr>
+<tr class="memdesc:acfc44c940e03a04c594e32b9201e182b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по параметрам. <br /></td></tr>
+<tr class="separator:acfc44c940e03a04c594e32b9201e182b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba87bc44e1d9ee0c22c05d200043585"><td class="memItemLeft" align="right" valign="top"><a id="a6ba87bc44e1d9ee0c22c05d200043585"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a6ba87bc44e1d9ee0c22c05d200043585">CornerValues</a> (const <a class="el" href="struct_corner_values.html">CornerValues</a> &amp;other)</td></tr>
+<tr class="memdesc:a6ba87bc44e1d9ee0c22c05d200043585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:a6ba87bc44e1d9ee0c22c05d200043585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356a4799b1f039e6e377d73f5e93c2c5"><td class="memItemLeft" align="right" valign="top"><a id="a356a4799b1f039e6e377d73f5e93c2c5"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a356a4799b1f039e6e377d73f5e93c2c5">~CornerValues</a> ()</td></tr>
+<tr class="memdesc:a356a4799b1f039e6e377d73f5e93c2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a356a4799b1f039e6e377d73f5e93c2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b37dd41a34557c05011f11d652cf1c"><td class="memItemLeft" align="right" valign="top"><a id="a55b37dd41a34557c05011f11d652cf1c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a55b37dd41a34557c05011f11d652cf1c">Init</a> (const <a class="el" href="struct_corner_values.html">CornerValues</a> &amp;other)</td></tr>
+<tr class="memdesc:a55b37dd41a34557c05011f11d652cf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция инициализации. <br /></td></tr>
+<tr class="separator:a55b37dd41a34557c05011f11d652cf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64dfb8f182b89855344b541c0d07e12"><td class="memItemLeft" align="right" valign="top"><a id="ab64dfb8f182b89855344b541c0d07e12"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#ab64dfb8f182b89855344b541c0d07e12">CiclicSwap</a> (bool increase)</td></tr>
+<tr class="memdesc:ab64dfb8f182b89855344b541c0d07e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Циклическая перестановка параметров. <br /></td></tr>
+<tr class="separator:ab64dfb8f182b89855344b541c0d07e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b053ac13c752ec84dc94758268319d1"><td class="memItemLeft" align="right" valign="top"><a id="a9b053ac13c752ec84dc94758268319d1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a9b053ac13c752ec84dc94758268319d1">Swap</a> (int constRadius)</td></tr>
+<tr class="memdesc:a9b053ac13c752ec84dc94758268319d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять местами радиусы (constRadius = 1,2,3). <br /></td></tr>
+<tr class="separator:a9b053ac13c752ec84dc94758268319d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad784b5272d53b01835b3b5cedca8ce72"><td class="memItemLeft" align="right" valign="top"><a id="ad784b5272d53b01835b3b5cedca8ce72"></a>
+<a class="el" href="struct_corner_values.html">CornerValues</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#ad784b5272d53b01835b3b5cedca8ce72">operator=</a> (const <a class="el" href="struct_corner_values.html">CornerValues</a> &amp;other)</td></tr>
+<tr class="memdesc:ad784b5272d53b01835b3b5cedca8ce72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания. <br /></td></tr>
+<tr class="separator:ad784b5272d53b01835b3b5cedca8ce72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5132d69729fdbd370cd5b2613b98cc70"><td class="memItemLeft" align="right" valign="top"><a id="a5132d69729fdbd370cd5b2613b98cc70"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a5132d69729fdbd370cd5b2613b98cc70">IsSame</a> (const <a class="el" href="struct_corner_values.html">CornerValues</a> &amp;other, double accuracy) const</td></tr>
+<tr class="memdesc:a5132d69729fdbd370cd5b2613b98cc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными? <br /></td></tr>
+<tr class="separator:a5132d69729fdbd370cd5b2613b98cc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ae0b40ca7a3e315e50d90a46de8bfb043"><td class="memItemLeft" align="right" valign="top"><a id="ae0b40ca7a3e315e50d90a46de8bfb043"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#ae0b40ca7a3e315e50d90a46de8bfb043">radius0</a></td></tr>
+<tr class="memdesc:ae0b40ca7a3e315e50d90a46de8bfb043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус сферы в вершине. <br /></td></tr>
+<tr class="separator:ae0b40ca7a3e315e50d90a46de8bfb043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca631936f4fdca757c546235bbc667b"><td class="memItemLeft" align="right" valign="top"><a id="a1ca631936f4fdca757c546235bbc667b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a1ca631936f4fdca757c546235bbc667b">radius1</a></td></tr>
+<tr class="memdesc:a1ca631936f4fdca757c546235bbc667b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус первого ребра вершины. <br /></td></tr>
+<tr class="separator:a1ca631936f4fdca757c546235bbc667b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3898b60ca83d2d5c821be6354aea438"><td class="memItemLeft" align="right" valign="top"><a id="aa3898b60ca83d2d5c821be6354aea438"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#aa3898b60ca83d2d5c821be6354aea438">radius2</a></td></tr>
+<tr class="memdesc:aa3898b60ca83d2d5c821be6354aea438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус второго ребра вершины. <br /></td></tr>
+<tr class="separator:aa3898b60ca83d2d5c821be6354aea438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49da49b5323b8b779a015fdb805fd6b"><td class="memItemLeft" align="right" valign="top"><a id="af49da49b5323b8b779a015fdb805fd6b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#af49da49b5323b8b779a015fdb805fd6b">radius3</a></td></tr>
+<tr class="memdesc:af49da49b5323b8b779a015fdb805fd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус третьего ребра вершины. <br /></td></tr>
+<tr class="separator:af49da49b5323b8b779a015fdb805fd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94079e8a380cde051d614dc958ee36b7"><td class="memItemLeft" align="right" valign="top"><a id="a94079e8a380cde051d614dc958ee36b7"></a>
+<a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbe">CornerForm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a94079e8a380cde051d614dc958ee36b7">cornerForm</a></td></tr>
+<tr class="memdesc:a94079e8a380cde051d614dc958ee36b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способ скругления вершины стыковки трёх рёбер. <br /></td></tr>
+<tr class="separator:a94079e8a380cde051d614dc958ee36b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b04da322610a1920e5630055b85a495"><td class="memItemLeft" align="right" valign="top"><a id="a5b04da322610a1920e5630055b85a495"></a>
+uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_corner_values.html#a5b04da322610a1920e5630055b85a495">additive</a></td></tr>
+<tr class="memdesc:a5b04da322610a1920e5630055b85a495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвиг в нумерации рёбер вершины (добавка к номеру ребра). <br /></td></tr>
+<tr class="separator:a5b04da322610a1920e5630055b85a495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Параметры скругления вершины. </p>
+<p>Параметры скругления вершины, в которой стыкуются три ребра, содержат информацию, необходимую для выполнения операции. <br  />
+</p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="afa1712df92bde59a58728784f47c9fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1712df92bde59a58728784f47c9fbe">&#9670;&nbsp;</a></span>CornerForm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_corner_values.html#afa1712df92bde59a58728784f47c9fbe">CornerValues::CornerForm</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Способы скругления вершины стыковки трёх рёбер. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="afa1712df92bde59a58728784f47c9fbea5e0052c77e7ac1e9c2c6b83867b7af34"></a>ef_sphere&#160;</td><td class="fielddoc"><p>Скругление вершины сферической поверхностью. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa1712df92bde59a58728784f47c9fbea88a561b69dede7d26f134e49cde50d86"></a>ef_smart&#160;</td><td class="fielddoc"><p>Скругление вершины гладкой поверхностью. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa1712df92bde59a58728784f47c9fbea486d6bf5bdaf2c8177fa7601f620cf99"></a>ef_delta&#160;</td><td class="fielddoc"><p>Скругление вершины треугольной поверхностью. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa1712df92bde59a58728784f47c9fbea4d01dee97ad142d29b5dc36ab8730e7a"></a>ef_elbow1&#160;</td><td class="fielddoc"><p>Скругление вершины четырёхугольной поверхностью, четвёртую сторону располагать напротив range1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa1712df92bde59a58728784f47c9fbea3eba67577c5a7400300443374075e471"></a>ef_elbow2&#160;</td><td class="fielddoc"><p>Скругление вершины четырёхугольной поверхностью, четвёртую сторону располагать напротив range2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afa1712df92bde59a58728784f47c9fbea33a0b524e326565962cf2cb3a37b9695"></a>ef_elbow3&#160;</td><td class="fielddoc"><p>Скругление вершины четырёхугольной поверхностью, четвёртую сторону располагать напротив range3. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li><a class="el" href="op__shell__parameter_8h.html">op_shell_parameter.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_corner_values.html">CornerValues</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

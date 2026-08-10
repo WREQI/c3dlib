@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл op_polymesh_parameter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('op__polymesh__parameter_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл op_polymesh_parameter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Параметры операций над полигональными сетками с топологией.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="polymesh_8h.html">polymesh.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__placement3d_8h.html">mb_placement3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__data_8h.html">mb_data.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="topology_8h.html">topology.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve_8h.html">curve.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve3d_8h.html">curve3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="m2b__mesh__curvature_8h.html">m2b_mesh_curvature.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_remesh_params.html">MbRemeshParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры ремешинга.  <a href="class_mb_remesh_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_shell_linearization_params.html">MbShellLinearizationParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры линеаризации оболочки.  <a href="class_mb_shell_linearization_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_shell_linearization_results.html">MbShellLinearizationResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты линеаризации оболочки.  <a href="class_mb_shell_linearization_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_curvature_params.html">MbMeshCurvatureParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры операции расчета кривизн полигональной сетки.  <a href="class_mb_mesh_curvature_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_drape_shell_params.html">MbDrapeShellParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры драпировки оболочки тканью.  <a href="class_mb_drape_shell_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_drape_shell_results.html">MbDrapeShellResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты драпировки оболочки тканью.  <a href="class_mb_drape_shell_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_merge_polymesh_params.html">MbMergePolymeshParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры объединения полигональных объектов.  <a href="class_mb_merge_polymesh_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_smoothing_params.html">MbMeshSmoothingParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры сглаживания полигональных объектов.  <a href="class_mb_mesh_smoothing_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polyline_polymesh_project_params.html">MbPolylinePolymeshProjectParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры проецирования полилинии на полигональный объект.  <a href="class_mb_polyline_polymesh_project_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polyline_polymesh_project_results.html">MbPolylinePolymeshProjectResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты проецирования полилинии на полигональный объект.  <a href="class_mb_polyline_polymesh_project_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_polymesh_project_params.html">MbCurvePolymeshProjectParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры обрезки полигонального объекта набором кривых.  <a href="class_mb_curve_polymesh_project_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_path_polymesh_offset_params.html">MbPathPolymeshOffsetParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры оффсета цепочки ребер полигонального объекта.  <a href="class_mb_path_polymesh_offset_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_project_results.html">MbPolymeshProjectResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты обрезки полигонального объекта набором кривых.  <a href="class_mb_polymesh_project_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_fill_closed_curve_params.html">MbFillClosedCurveParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры заполнения отверстия, заданного замкнутой кривой.  <a href="class_mb_fill_closed_curve_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_fill_polymesh_hole_params.html">MbFillPolymeshHoleParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры заполнения отверстия полигонального объекта.  <a href="class_mb_fill_polymesh_hole_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_normals_params.html">MbPolymeshNormalsParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры расчета нормалей в вершинах полигонального объекта.  <a href="class_mb_polymesh_normals_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_segmentation_params.html">MbSegmentationParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры сегментации полигонального объекта.  <a href="class_mb_segmentation_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_segmentation_results.html">MbSegmentationResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты сегментации полигонального объекта.  <a href="class_mb_segmentation_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_repair_segmentation_params.html">MbRepairSegmentationParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры лечения сегментации полигонального объекта.  <a href="class_mb_repair_segmentation_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_classify_regions_params.html">MbClassifyRegionsParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры классификации регионов сегментации.  <a href="class_mb_classify_regions_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_boolean_params.html">MbPolymeshBooleanParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры булевой операции для двух полигональных объектов.  <a href="class_mb_polymesh_boolean_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_boolean_results.html">MbPolymeshBooleanResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты булевой операции для двух полигональных объектов.  <a href="class_mb_polymesh_boolean_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_imprint_params.html">MbPolymeshImprintParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры создания оттиска на полигональном объекте.  <a href="class_mb_polymesh_imprint_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_imprint_results.html">MbPolymeshImprintResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты создания оттиска на полигональном объекте.  <a href="class_mb_polymesh_imprint_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:aec45f56d8ec760275ddd9c54ead64e8c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8c">ProjProcessingMethod</a> : uint { <br />
+&#160;&#160;<a class="el" href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8cae0df5f3dfd2650ae5be9993434e2b2c0">insert</a>
+, <a class="el" href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8cad2e890dd91e762c231dac353eccce591">splitSegmentation</a>
+, <a class="el" href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8cab50bc785ee48c3fe536c375e597621d7">keepOuterPart</a>
+, <a class="el" href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8ca1dd7b9cc3bb697b49f7b826f801f6ee1">keepInnerPart</a>
+, <br />
+&#160;&#160;<a class="el" href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8ca3f0e66c754eae18dc4fa7571b418248b">insertCheckOpen</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:aec45f56d8ec760275ddd9c54ead64e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перечисление для способа обработки результатов проецирования и других операций.  <a href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8c">Подробнее...</a><br /></td></tr>
+<tr class="separator:aec45f56d8ec760275ddd9c54ead64e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80dc04767800d2edffdffa34a8a348b3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga80dc04767800d2edffdffa34a8a348b3">MbeSegmentationCriterion</a> { <a class="el" href="group___polygonal___objects.html#gga80dc04767800d2edffdffa34a8a348b3acaca224745484b3440a7cb5891391cab">openBoundary</a> = 0
+, <a class="el" href="group___polygonal___objects.html#gga80dc04767800d2edffdffa34a8a348b3a4f3b5dcb3c3dcd417bc6717fa7b1f776">sharpEdges</a> = 1
+, <a class="el" href="group___polygonal___objects.html#gga80dc04767800d2edffdffa34a8a348b3a0a8c9d6d62fd57b47169f74d013a8853">curvature</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga80dc04767800d2edffdffa34a8a348b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Критерий сегментации полигонального объекта.  <a href="group___polygonal___objects.html#ga80dc04767800d2edffdffa34a8a348b3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga80dc04767800d2edffdffa34a8a348b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Параметры операций над полигональными сетками с топологией. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="aec45f56d8ec760275ddd9c54ead64e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec45f56d8ec760275ddd9c54ead64e8c">&#9670;&nbsp;</a></span>ProjProcessingMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="op__polymesh__parameter_8h.html#aec45f56d8ec760275ddd9c54ead64e8c">ProjProcessingMethod</a> : uint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перечисление для способа обработки результатов проецирования и других операций. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aec45f56d8ec760275ddd9c54ead64e8cae0df5f3dfd2650ae5be9993434e2b2c0"></a>insert&#160;</td><td class="fielddoc"><p>Просто врезать в сетку. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aec45f56d8ec760275ddd9c54ead64e8cad2e890dd91e762c231dac353eccce591"></a>splitSegmentation&#160;</td><td class="fielddoc"><p>Разбить сегментацию. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aec45f56d8ec760275ddd9c54ead64e8cab50bc785ee48c3fe536c375e597621d7"></a>keepOuterPart&#160;</td><td class="fielddoc"><p>Оставить в сетке только внешнюю часть контура. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aec45f56d8ec760275ddd9c54ead64e8ca1dd7b9cc3bb697b49f7b826f801f6ee1"></a>keepInnerPart&#160;</td><td class="fielddoc"><p>Оставить в сетке только внутреннюю часть контура. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aec45f56d8ec760275ddd9c54ead64e8ca3f0e66c754eae18dc4fa7571b418248b"></a>insertCheckOpen&#160;</td><td class="fielddoc"><p>Врезать в сетку с контролем открытых границ. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="op__polymesh__parameter_8h.html">op_polymesh_parameter.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

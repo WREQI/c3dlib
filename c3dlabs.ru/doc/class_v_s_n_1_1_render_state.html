@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс VSN::RenderState</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_v_s_n_1_1_render_state.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="class_v_s_n_1_1_render_state-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс VSN::RenderState</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Состояние отрисовки объекта. Класс <a class="el" href="class_v_s_n_1_1_render_state.html" title="Состояние отрисовки объекта. Класс RenderState хранит состояние отрисовки и предоставляет функции для...">RenderState</a> хранит состояние отрисовки и предоставляет функции для управления режимами отрисовки объектов <a class="el" href="class_v_s_n_1_1_render_object.html" title="Класс RenderObject содержит GeometryRep + bounding box.">RenderObject</a>.  
+ <a href="class_v_s_n_1_1_render_state.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;vsn_renderstate.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae8e7aa85db2213c7100654edbb36bb4f"><td class="memItemLeft" align="right" valign="top"><a id="ae8e7aa85db2213c7100654edbb36bb4f"></a>
+RenderingState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ae8e7aa85db2213c7100654edbb36bb4f">GetRenderingState</a> () const</td></tr>
+<tr class="memdesc:ae8e7aa85db2213c7100654edbb36bb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть текущее состояние отрисовки. <br /></td></tr>
+<tr class="separator:ae8e7aa85db2213c7100654edbb36bb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58638db17c74ead35bf7155bcf93c1cd"><td class="memItemLeft" align="right" valign="top"><a id="a58638db17c74ead35bf7155bcf93c1cd"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a58638db17c74ead35bf7155bcf93c1cd">SetRenderingState</a> (RenderingState state)</td></tr>
+<tr class="memdesc:a58638db17c74ead35bf7155bcf93c1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние отрисовки. Одно из следующих значений отрисовки: NormalRenderState, PrimitiveSelectedState, BodySelectionState и PrimitiveSelectionState. <br /></td></tr>
+<tr class="separator:a58638db17c74ead35bf7155bcf93c1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ff67069c39d0f691e5f30547699f1a"><td class="memItemLeft" align="right" valign="top">RenderingState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ad8ff67069c39d0f691e5f30547699f1a">GetProperRenderingState</a> () const</td></tr>
+<tr class="memdesc:ad8ff67069c39d0f691e5f30547699f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть собственное состояние отрисовки.  <a href="class_v_s_n_1_1_render_state.html#ad8ff67069c39d0f691e5f30547699f1a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad8ff67069c39d0f691e5f30547699f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed19228d91e8bbc90a604367f8e7bb89"><td class="memItemLeft" align="right" valign="top"><a id="aed19228d91e8bbc90a604367f8e7bb89"></a>
+RenderingState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#aed19228d91e8bbc90a604367f8e7bb89">GetRenderingSpecialState</a> () const</td></tr>
+<tr class="memdesc:aed19228d91e8bbc90a604367f8e7bb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть текущее состояние отрисовки. <br /></td></tr>
+<tr class="separator:aed19228d91e8bbc90a604367f8e7bb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab822c0a98c8c36371ca5a02afbc440a8"><td class="memItemLeft" align="right" valign="top"><a id="ab822c0a98c8c36371ca5a02afbc440a8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ab822c0a98c8c36371ca5a02afbc440a8">SetRenderingSpecialState</a> (RenderingState state)</td></tr>
+<tr class="memdesc:ab822c0a98c8c36371ca5a02afbc440a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние отрисовки. Одно из следующих значений отрисовки: NormalRenderState, SpecialMaterialState, SpecialTransparencyState, SpecialMaterialTransparencyState и SpecialMaterialPrimitiveState. <br /></td></tr>
+<tr class="separator:ab822c0a98c8c36371ca5a02afbc440a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31c51bb933bc9b65c6014bd84946ca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vsn__namespace_8h.html#ade52f8243a40adb5ebdf2db3e536a707">DrawBufferMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#af31c51bb933bc9b65c6014bd84946ca3">GetPolyFaceMode</a> () const</td></tr>
+<tr class="memdesc:af31c51bb933bc9b65c6014bd84946ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть значение режима отрисовки для граней.  <a href="class_v_s_n_1_1_render_state.html#af31c51bb933bc9b65c6014bd84946ca3">Подробнее...</a><br /></td></tr>
+<tr class="separator:af31c51bb933bc9b65c6014bd84946ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9bc493497b9a02cb29d03219ffc44f7"><td class="memItemLeft" align="right" valign="top"><a id="ac9bc493497b9a02cb29d03219ffc44f7"></a>
+<a class="el" href="vsn__namespace_8h.html#a8430478b787ed1120e3e8ee757c9a322">PolygonMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ac9bc493497b9a02cb29d03219ffc44f7">GetPolygonMode</a> () const</td></tr>
+<tr class="memdesc:ac9bc493497b9a02cb29d03219ffc44f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть значение режима отрисовки для полигонов. Одно из следующих значений отрисовки: GL_POINT, GL_LINE или GL_FILL. <br /></td></tr>
+<tr class="separator:ac9bc493497b9a02cb29d03219ffc44f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c0e1951cffaddfe030662d0e6157b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a34c0e1951cffaddfe030662d0e6157b6">SetPolygonMode</a> (<a class="el" href="vsn__namespace_8h.html#ade52f8243a40adb5ebdf2db3e536a707">DrawBufferMode</a> fMode, <a class="el" href="vsn__namespace_8h.html#a8430478b787ed1120e3e8ee757c9a322">PolygonMode</a> pMode)</td></tr>
+<tr class="memdesc:a34c0e1951cffaddfe030662d0e6157b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить режим отображения для граней и полигонов.  <a href="class_v_s_n_1_1_render_state.html#a34c0e1951cffaddfe030662d0e6157b6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a34c0e1951cffaddfe030662d0e6157b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066e4b83445b197bb4fe3b56e641d650"><td class="memItemLeft" align="right" valign="top"><a id="a066e4b83445b197bb4fe3b56e641d650"></a>
+<a class="el" href="vsn__namespace_8h.html#acb90e3f6fc539e02a133995d0933c6b4">RenderMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a066e4b83445b197bb4fe3b56e641d650">GetRenderingMode</a> () const</td></tr>
+<tr class="memdesc:a066e4b83445b197bb4fe3b56e641d650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть текущий режим визуализации модели. <br /></td></tr>
+<tr class="separator:a066e4b83445b197bb4fe3b56e641d650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08478c842fce0c4f55663eb7260a88f"><td class="memItemLeft" align="right" valign="top"><a id="af08478c842fce0c4f55663eb7260a88f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#af08478c842fce0c4f55663eb7260a88f">SetRenderingMode</a> (<a class="el" href="vsn__namespace_8h.html#acb90e3f6fc539e02a133995d0933c6b4">RenderMode</a> mode) const</td></tr>
+<tr class="memdesc:af08478c842fce0c4f55663eb7260a88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить текущий режим визуализации модели. <br /></td></tr>
+<tr class="separator:af08478c842fce0c4f55663eb7260a88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e0287528aa9a0c67ecf266fe97efe9"><td class="memItemLeft" align="right" valign="top"><a id="a92e0287528aa9a0c67ecf266fe97efe9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a92e0287528aa9a0c67ecf266fe97efe9">IsTransparencyRequired</a> () const</td></tr>
+<tr class="memdesc:a92e0287528aa9a0c67ecf266fe97efe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если текущий режим требует отрисовки с прозрачностью. <br /></td></tr>
+<tr class="separator:a92e0287528aa9a0c67ecf266fe97efe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e74fefa0d2ae7b0b5a18daddca33ada"><td class="memItemLeft" align="right" valign="top"><a id="a3e74fefa0d2ae7b0b5a18daddca33ada"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a3e74fefa0d2ae7b0b5a18daddca33ada">GetCurrentBodyIndex</a> () const</td></tr>
+<tr class="memdesc:a3e74fefa0d2ae7b0b5a18daddca33ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть текущий индекс геометрической части. <br /></td></tr>
+<tr class="separator:a3e74fefa0d2ae7b0b5a18daddca33ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555ed98eafa0fa81391d09d6e25d491a"><td class="memItemLeft" align="right" valign="top"><a id="a555ed98eafa0fa81391d09d6e25d491a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a555ed98eafa0fa81391d09d6e25d491a">SetCurrentBodyIndex</a> (int partIdx)</td></tr>
+<tr class="memdesc:a555ed98eafa0fa81391d09d6e25d491a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать текущий индекс геометрической части. <br /></td></tr>
+<tr class="separator:a555ed98eafa0fa81391d09d6e25d491a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c42936e16cbee43a332ebcc1a59ef9d"><td class="memItemLeft" align="right" valign="top"><a id="a3c42936e16cbee43a332ebcc1a59ef9d"></a>
+<a class="el" href="class_v_s_n_1_1_material.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a3c42936e16cbee43a332ebcc1a59ef9d">GetSpecialMaterial</a> () const</td></tr>
+<tr class="memdesc:a3c42936e16cbee43a332ebcc1a59ef9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть указатель на другой материал, отличный от исходного. <br /></td></tr>
+<tr class="separator:a3c42936e16cbee43a332ebcc1a59ef9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f78d74822998121bb14fc678219a69"><td class="memItemLeft" align="right" valign="top"><a id="af6f78d74822998121bb14fc678219a69"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#af6f78d74822998121bb14fc678219a69">SetSpecialMaterial</a> (<a class="el" href="class_v_s_n_1_1_material.html">Material</a> *pMaterial)</td></tr>
+<tr class="memdesc:af6f78d74822998121bb14fc678219a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать другой материал, отличный от исходного. <br /></td></tr>
+<tr class="separator:af6f78d74822998121bb14fc678219a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3045386123756be483b4a666ee6ce553"><td class="memItemLeft" align="right" valign="top"><a id="a3045386123756be483b4a666ee6ce553"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a3045386123756be483b4a666ee6ce553">SetSpecialMaterialTransparency</a> (float alpha)</td></tr>
+<tr class="memdesc:a3045386123756be483b4a666ee6ce553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить прозрачность специального материала. <br /></td></tr>
+<tr class="separator:a3045386123756be483b4a666ee6ce553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622d7350a2576d18acda6dae9ecf1c45"><td class="memItemLeft" align="right" valign="top"><a id="a622d7350a2576d18acda6dae9ecf1c45"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a622d7350a2576d18acda6dae9ecf1c45">GetSpecialTransparency</a> () const</td></tr>
+<tr class="memdesc:a622d7350a2576d18acda6dae9ecf1c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть прозрачность специального материала. <br /></td></tr>
+<tr class="separator:a622d7350a2576d18acda6dae9ecf1c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea28eabfa7156c36cff89bab7acc137"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a2ea28eabfa7156c36cff89bab7acc137">AddSpecialMaterial</a> (uint id, <a class="el" href="class_v_s_n_1_1_material.html">Material</a> *mat, int partIdx=0)</td></tr>
+<tr class="memdesc:a2ea28eabfa7156c36cff89bab7acc137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить специальный материал для примитива.  <a href="class_v_s_n_1_1_render_state.html#a2ea28eabfa7156c36cff89bab7acc137">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2ea28eabfa7156c36cff89bab7acc137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6b3c9cdfbd1364bcad0d79ab71f6cf"><td class="memItemLeft" align="right" valign="top"><a id="add6b3c9cdfbd1364bcad0d79ab71f6cf"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#add6b3c9cdfbd1364bcad0d79ab71f6cf">ClearSpecialMaterials</a> ()</td></tr>
+<tr class="memdesc:add6b3c9cdfbd1364bcad0d79ab71f6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить специальные материалы. <br /></td></tr>
+<tr class="separator:add6b3c9cdfbd1364bcad0d79ab71f6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44c6c082c5ea706eaf4848429613c24"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; uint, <a class="el" href="class_v_s_n_1_1_material.html">Material</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ad44c6c082c5ea706eaf4848429613c24">GetSpecialMaterials</a> () const</td></tr>
+<tr class="memdesc:ad44c6c082c5ea706eaf4848429613c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть контейнер специальных материалов текущей геометрической части.  <a href="class_v_s_n_1_1_render_state.html#ad44c6c082c5ea706eaf4848429613c24">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad44c6c082c5ea706eaf4848429613c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4981fdae5495f2ea4e3cdf4bc74834f3"><td class="memItemLeft" align="right" valign="top"><a id="a4981fdae5495f2ea4e3cdf4bc74834f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a4981fdae5495f2ea4e3cdf4bc74834f3">IsSpecialMaterialsEmpty</a> () const</td></tr>
+<tr class="memdesc:a4981fdae5495f2ea4e3cdf4bc74834f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если нет специальных материалов. <br /></td></tr>
+<tr class="separator:a4981fdae5495f2ea4e3cdf4bc74834f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69073770dd636f1d4bbbb581e395e4a7"><td class="memItemLeft" align="right" valign="top"><a id="a69073770dd636f1d4bbbb581e395e4a7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a69073770dd636f1d4bbbb581e395e4a7">ApplyMaterial</a> (<a class="el" href="class_v_s_n_1_1_material.html">Material</a> *pMaterial)</td></tr>
+<tr class="memdesc:a69073770dd636f1d4bbbb581e395e4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применить указанный материал. <br /></td></tr>
+<tr class="separator:a69073770dd636f1d4bbbb581e395e4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68159a8654f6f850d8696bc240a6ef57"><td class="memItemLeft" align="right" valign="top"><a id="a68159a8654f6f850d8696bc240a6ef57"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a68159a8654f6f850d8696bc240a6ef57">ExcludeMaterial</a> (<a class="el" href="class_v_s_n_1_1_material.html">Material</a> *pMaterial)</td></tr>
+<tr class="memdesc:a68159a8654f6f850d8696bc240a6ef57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключить указанный материал. <br /></td></tr>
+<tr class="separator:a68159a8654f6f850d8696bc240a6ef57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c2f598ba8a07f585806a9053712ae3"><td class="memItemLeft" align="right" valign="top"><a id="a87c2f598ba8a07f585806a9053712ae3"></a>
+std::unordered_map&lt; int, uint &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a87c2f598ba8a07f585806a9053712ae3">GetHighlightedPrimitives</a> () const</td></tr>
+<tr class="memdesc:a87c2f598ba8a07f585806a9053712ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть массив подсвеченных объектов. <br /></td></tr>
+<tr class="separator:a87c2f598ba8a07f585806a9053712ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6545088a4c42e6be38cd50afba7e11af"><td class="memItemLeft" align="right" valign="top"><a id="a6545088a4c42e6be38cd50afba7e11af"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a6545088a4c42e6be38cd50afba7e11af">IsHighlightedPrimitive</a> (uint id) const</td></tr>
+<tr class="memdesc:a6545088a4c42e6be38cd50afba7e11af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если примитив является выбранным. Идентификатор примитива. <br /></td></tr>
+<tr class="separator:a6545088a4c42e6be38cd50afba7e11af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee653fba0e7d902ddda801774cbd503"><td class="memItemLeft" align="right" valign="top"><a id="abee653fba0e7d902ddda801774cbd503"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#abee653fba0e7d902ddda801774cbd503">IsHighlightedPrimitiveEmpty</a> () const</td></tr>
+<tr class="memdesc:abee653fba0e7d902ddda801774cbd503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если нет подсвеченых объектов. <br /></td></tr>
+<tr class="separator:abee653fba0e7d902ddda801774cbd503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1755224b83e308500bce4b8e8749583"><td class="memItemLeft" align="right" valign="top"><a id="ab1755224b83e308500bce4b8e8749583"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ab1755224b83e308500bce4b8e8749583">IsNoHighlightedPrimitive</a> () const</td></tr>
+<tr class="memdesc:ab1755224b83e308500bce4b8e8749583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если массив подсвеченных примитивов пуст. <br /></td></tr>
+<tr class="separator:ab1755224b83e308500bce4b8e8749583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4292116dbff16796f3264fee13a81ee7"><td class="memItemLeft" align="right" valign="top"><a id="a4292116dbff16796f3264fee13a81ee7"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a4292116dbff16796f3264fee13a81ee7">GetHighlightedPrimitive</a> (int body) const</td></tr>
+<tr class="memdesc:a4292116dbff16796f3264fee13a81ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть идентификатор подсвеченного примитива текущей геометрической части. <br /></td></tr>
+<tr class="separator:a4292116dbff16796f3264fee13a81ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300f634cd7e00e97ef19e2418c4f32d3"><td class="memItemLeft" align="right" valign="top"><a id="a300f634cd7e00e97ef19e2418c4f32d3"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a300f634cd7e00e97ef19e2418c4f32d3">SetHighlightedPrimitiveId</a> (uint, int body=0)</td></tr>
+<tr class="memdesc:a300f634cd7e00e97ef19e2418c4f32d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить подсвеченый примитив по идентификатору и индексу геометрической части. <br /></td></tr>
+<tr class="separator:a300f634cd7e00e97ef19e2418c4f32d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7738502a70406aecadea6d70e0eca8e1"><td class="memItemLeft" align="right" valign="top"><a id="a7738502a70406aecadea6d70e0eca8e1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a7738502a70406aecadea6d70e0eca8e1">RemoveHighlightedPrimitiveId</a> (uint id, int body)</td></tr>
+<tr class="memdesc:a7738502a70406aecadea6d70e0eca8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить примитив по идентификатору и индексу геометрической части. <br /></td></tr>
+<tr class="separator:a7738502a70406aecadea6d70e0eca8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0257b072c8c7cc1244c7fd81a9d95b7d"><td class="memItemLeft" align="right" valign="top"><a id="a0257b072c8c7cc1244c7fd81a9d95b7d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a0257b072c8c7cc1244c7fd81a9d95b7d">IsHighlighted</a> () const</td></tr>
+<tr class="memdesc:a0257b072c8c7cc1244c7fd81a9d95b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если текущий режим отрисовки является подсвеченым. <br /></td></tr>
+<tr class="separator:a0257b072c8c7cc1244c7fd81a9d95b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952fadb0d63ab58d6632186534d9ce2d"><td class="memItemLeft" align="right" valign="top"><a id="a952fadb0d63ab58d6632186534d9ce2d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a952fadb0d63ab58d6632186534d9ce2d">SetHighlighted</a> (bool highlighted)</td></tr>
+<tr class="memdesc:a952fadb0d63ab58d6632186534d9ce2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить/Сбрость подсветки. <br /></td></tr>
+<tr class="separator:a952fadb0d63ab58d6632186534d9ce2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55340ead160def30629100d6ea49199c"><td class="memItemLeft" align="right" valign="top"><a id="a55340ead160def30629100d6ea49199c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a55340ead160def30629100d6ea49199c">IsSelected</a> () const</td></tr>
+<tr class="memdesc:a55340ead160def30629100d6ea49199c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если текущий режим отрисовки является выбранным. <br /></td></tr>
+<tr class="separator:a55340ead160def30629100d6ea49199c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafb7aaa2061b50691e1a87e5ce688f5"><td class="memItemLeft" align="right" valign="top"><a id="acafb7aaa2061b50691e1a87e5ce688f5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#acafb7aaa2061b50691e1a87e5ce688f5">SetSelected</a> (bool selected)</td></tr>
+<tr class="memdesc:acafb7aaa2061b50691e1a87e5ce688f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить/Сбрость выбор. <br /></td></tr>
+<tr class="separator:acafb7aaa2061b50691e1a87e5ce688f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee81952e2e636c10a04a4a7642ace07"><td class="memItemLeft" align="right" valign="top"><a id="a0ee81952e2e636c10a04a4a7642ace07"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a0ee81952e2e636c10a04a4a7642ace07">Unselect</a> ()</td></tr>
+<tr class="memdesc:a0ee81952e2e636c10a04a4a7642ace07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отменить выбор. <br /></td></tr>
+<tr class="separator:a0ee81952e2e636c10a04a4a7642ace07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8938eb20384f844a4a550d29e6fa828e"><td class="memItemLeft" align="right" valign="top"><a id="a8938eb20384f844a4a550d29e6fa828e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a8938eb20384f844a4a550d29e6fa828e">IsSelectedPrimitive</a> (uint id) const</td></tr>
+<tr class="memdesc:a8938eb20384f844a4a550d29e6fa828e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если примитив является выбранным. Идентификатор примитива. <br /></td></tr>
+<tr class="separator:a8938eb20384f844a4a550d29e6fa828e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073bf9f91290aa7d93ee5532fcae5a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a073bf9f91290aa7d93ee5532fcae5a7c">IsSelectedPrimitive</a> (int partIdx, uint id) const</td></tr>
+<tr class="memdesc:a073bf9f91290aa7d93ee5532fcae5a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если примитив по этому идентификатору и индексу тела является выбранным.  <a href="class_v_s_n_1_1_render_state.html#a073bf9f91290aa7d93ee5532fcae5a7c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a073bf9f91290aa7d93ee5532fcae5a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef291bc3faabe11f53f2f105566f60e"><td class="memItemLeft" align="right" valign="top"><a id="a8ef291bc3faabe11f53f2f105566f60e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a8ef291bc3faabe11f53f2f105566f60e">IsNoSelectedPrimitive</a> () const</td></tr>
+<tr class="memdesc:a8ef291bc3faabe11f53f2f105566f60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если массив выбранных примитивов пуст. <br /></td></tr>
+<tr class="separator:a8ef291bc3faabe11f53f2f105566f60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3193f577a0e3b7ead969b488d765909a"><td class="memItemLeft" align="right" valign="top"><a id="a3193f577a0e3b7ead969b488d765909a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a3193f577a0e3b7ead969b488d765909a">GetCountSelectedPrimitives</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;keyItem) const</td></tr>
+<tr class="memdesc:a3193f577a0e3b7ead969b488d765909a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть количество выбранных примитив. Идентификатор item групповой геометрии. <br /></td></tr>
+<tr class="separator:a3193f577a0e3b7ead969b488d765909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa36bd604175046fb6875322bda43bd0"><td class="memItemLeft" align="right" valign="top"><a id="afa36bd604175046fb6875322bda43bd0"></a>
+std::unordered_set&lt; uint &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#afa36bd604175046fb6875322bda43bd0">GetSelectedPrimitives</a> () const</td></tr>
+<tr class="memdesc:afa36bd604175046fb6875322bda43bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть массив идентификаторов выбранных примитивов текущей геометрической части. <br /></td></tr>
+<tr class="separator:afa36bd604175046fb6875322bda43bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad99ea39af0a4c0009a26e1de371f282c"><td class="memItemLeft" align="right" valign="top"><a id="ad99ea39af0a4c0009a26e1de371f282c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ad99ea39af0a4c0009a26e1de371f282c">AddSelectedPrimitivesId</a> (const std::unordered_set&lt; uint &gt; &amp;, int body=0)</td></tr>
+<tr class="memdesc:ad99ea39af0a4c0009a26e1de371f282c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить массив выбранных примитивов по идентификатору и индексу тела. <br /></td></tr>
+<tr class="separator:ad99ea39af0a4c0009a26e1de371f282c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c927fa5b8784d929cdf1cd81c16e40"><td class="memItemLeft" align="right" valign="top"><a id="a76c927fa5b8784d929cdf1cd81c16e40"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a76c927fa5b8784d929cdf1cd81c16e40">AddSelectedPrimitiveId</a> (uint, int body=0)</td></tr>
+<tr class="memdesc:a76c927fa5b8784d929cdf1cd81c16e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в выбор примитив по идентификатору и индексу геометрической части. <br /></td></tr>
+<tr class="separator:a76c927fa5b8784d929cdf1cd81c16e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3181f5e7b336a1c2368789f3d2dc2578"><td class="memItemLeft" align="right" valign="top"><a id="a3181f5e7b336a1c2368789f3d2dc2578"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a3181f5e7b336a1c2368789f3d2dc2578">RemoveSelectedPrimitiveId</a> (uint id, int body)</td></tr>
+<tr class="memdesc:a3181f5e7b336a1c2368789f3d2dc2578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить примитив по идентификатору и индексу геометрической части. <br /></td></tr>
+<tr class="separator:a3181f5e7b336a1c2368789f3d2dc2578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e5e924c8501e0e912e7db7eae84b25"><td class="memItemLeft" align="right" valign="top"><a id="a28e5e924c8501e0e912e7db7eae84b25"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a28e5e924c8501e0e912e7db7eae84b25">ClearSelectedPrimitives</a> ()</td></tr>
+<tr class="memdesc:a28e5e924c8501e0e912e7db7eae84b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить выбранные примитивы. <br /></td></tr>
+<tr class="separator:a28e5e924c8501e0e912e7db7eae84b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9141f9250650f1f50430aafb6bd239b"><td class="memItemLeft" align="right" valign="top"><a id="ac9141f9250650f1f50430aafb6bd239b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#ac9141f9250650f1f50430aafb6bd239b">IsSelectedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key) const</td></tr>
+<tr class="memdesc:ac9141f9250650f1f50430aafb6bd239b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если группа является выбранной. <br /></td></tr>
+<tr class="separator:ac9141f9250650f1f50430aafb6bd239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a677b1370d5e4a4ff4e987e911661d"><td class="memItemLeft" align="right" valign="top"><a id="a75a677b1370d5e4a4ff4e987e911661d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a75a677b1370d5e4a4ff4e987e911661d">AddSelectedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key, uint primId)</td></tr>
+<tr class="memdesc:a75a677b1370d5e4a4ff4e987e911661d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в выбор группу по идентификатору и примитив. <br /></td></tr>
+<tr class="separator:a75a677b1370d5e4a4ff4e987e911661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff6e3cf0668cb0f63e8e7cbbcb72952"><td class="memItemLeft" align="right" valign="top"><a id="a9ff6e3cf0668cb0f63e8e7cbbcb72952"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a9ff6e3cf0668cb0f63e8e7cbbcb72952">RemoveSelectedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key, uint primId)</td></tr>
+<tr class="memdesc:a9ff6e3cf0668cb0f63e8e7cbbcb72952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить группу и примитив по идентификатору. <br /></td></tr>
+<tr class="separator:a9ff6e3cf0668cb0f63e8e7cbbcb72952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fed1ebd713667e1e77d3df14fea871"><td class="memItemLeft" align="right" valign="top"><a id="aa6fed1ebd713667e1e77d3df14fea871"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#aa6fed1ebd713667e1e77d3df14fea871">ClearSelectedGroupGeometry</a> ()</td></tr>
+<tr class="memdesc:aa6fed1ebd713667e1e77d3df14fea871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить выбранные группы. <br /></td></tr>
+<tr class="separator:aa6fed1ebd713667e1e77d3df14fea871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9fa6babc4c0078dae69d5b9a011f59"><td class="memItemLeft" align="right" valign="top"><a id="afb9fa6babc4c0078dae69d5b9a011f59"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#afb9fa6babc4c0078dae69d5b9a011f59">IsHighlightedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key) const</td></tr>
+<tr class="memdesc:afb9fa6babc4c0078dae69d5b9a011f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если группа по этому идентификатору является подсвеченной. <br /></td></tr>
+<tr class="separator:afb9fa6babc4c0078dae69d5b9a011f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf548673a2971ead521c646b2e03db78"><td class="memItemLeft" align="right" valign="top"><a id="adf548673a2971ead521c646b2e03db78"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#adf548673a2971ead521c646b2e03db78">AddHighlightedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key, uint primId)</td></tr>
+<tr class="memdesc:adf548673a2971ead521c646b2e03db78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в группу и примитив по идентификатору и индексу геометрической части. <br /></td></tr>
+<tr class="separator:adf548673a2971ead521c646b2e03db78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95049ae0e33b9161816a6b97aaf4554"><td class="memItemLeft" align="right" valign="top"><a id="af95049ae0e33b9161816a6b97aaf4554"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#af95049ae0e33b9161816a6b97aaf4554">RemoveHighlightedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key, uint primId)</td></tr>
+<tr class="memdesc:af95049ae0e33b9161816a6b97aaf4554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить группу и примитив по идентификатору и индексу геометрической части. <br /></td></tr>
+<tr class="separator:af95049ae0e33b9161816a6b97aaf4554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd006629a930d18c540ea3c3005134d"><td class="memItemLeft" align="right" valign="top"><a id="afbd006629a930d18c540ea3c3005134d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#afbd006629a930d18c540ea3c3005134d">ClearHighlightedGroupGeometry</a> ()</td></tr>
+<tr class="memdesc:afbd006629a930d18c540ea3c3005134d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить выбранные группы и примитивы для подсветки. <br /></td></tr>
+<tr class="separator:afbd006629a930d18c540ea3c3005134d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616594205a0147b1696660bb72454ccd"><td class="memItemLeft" align="right" valign="top"><a id="a616594205a0147b1696660bb72454ccd"></a>
+CuttingUtil *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a616594205a0147b1696660bb72454ccd">GetCuttingTool</a> () const</td></tr>
+<tr class="memdesc:a616594205a0147b1696660bb72454ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на инструмент для отсечения. <br /></td></tr>
+<tr class="separator:a616594205a0147b1696660bb72454ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73af6be62c0097f6df749e07236697aa"><td class="memItemLeft" align="right" valign="top"><a id="a73af6be62c0097f6df749e07236697aa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a73af6be62c0097f6df749e07236697aa">SetCuttingTool</a> (CuttingUtil *tool)</td></tr>
+<tr class="memdesc:a73af6be62c0097f6df749e07236697aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить указатель на инструмент для отсечения. <br /></td></tr>
+<tr class="separator:a73af6be62c0097f6df749e07236697aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbb3439f4113916e6a846aae916ffd0"><td class="memItemLeft" align="right" valign="top"><a id="abdbb3439f4113916e6a846aae916ffd0"></a>
+const <a class="el" href="class_v_s_n_1_1_matrix3_d_f.html">Matrix3DF</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#abdbb3439f4113916e6a846aae916ffd0">GetModelViewMatrix</a> () const</td></tr>
+<tr class="memdesc:abdbb3439f4113916e6a846aae916ffd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить модельньную матрицу. <br /></td></tr>
+<tr class="separator:abdbb3439f4113916e6a846aae916ffd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa023cff0b12bb70e5b96530672d00a86"><td class="memItemLeft" align="right" valign="top"><a id="aa023cff0b12bb70e5b96530672d00a86"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#aa023cff0b12bb70e5b96530672d00a86">SetModelViewMatrix</a> (const <a class="el" href="class_v_s_n_1_1_matrix3_d_f.html">Matrix3DF</a> &amp;mx)</td></tr>
+<tr class="memdesc:aa023cff0b12bb70e5b96530672d00a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить модельньную матрицу. <br /></td></tr>
+<tr class="separator:aa023cff0b12bb70e5b96530672d00a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb6ba9623cef57d19401f58048a3c73"><td class="memItemLeft" align="right" valign="top"><a id="a3eb6ba9623cef57d19401f58048a3c73"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a3eb6ba9623cef57d19401f58048a3c73">Clear</a> ()</td></tr>
+<tr class="memdesc:a3eb6ba9623cef57d19401f58048a3c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить содержимое визуализации и обновить значения материалов. <br /></td></tr>
+<tr class="separator:a3eb6ba9623cef57d19401f58048a3c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf217d42961ffdf81415cd46b0a9792"><td class="memItemLeft" align="right" valign="top"><a id="abbf217d42961ffdf81415cd46b0a9792"></a>
+<a class="el" href="class_v_s_n_1_1_render_state.html">RenderState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#abbf217d42961ffdf81415cd46b0a9792">operator=</a> (const <a class="el" href="class_v_s_n_1_1_render_state.html">RenderState</a> &amp;)</td></tr>
+<tr class="memdesc:abbf217d42961ffdf81415cd46b0a9792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присвоения. <br /></td></tr>
+<tr class="separator:abbf217d42961ffdf81415cd46b0a9792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Конструкторы.</div></td></tr>
+<tr class="memitem:a4fb1c95e5c3eefd69b0f9db75b816b52"><td class="memItemLeft" align="right" valign="top"><a id="a4fb1c95e5c3eefd69b0f9db75b816b52"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a4fb1c95e5c3eefd69b0f9db75b816b52">RenderState</a> ()</td></tr>
+<tr class="memdesc:a4fb1c95e5c3eefd69b0f9db75b816b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a4fb1c95e5c3eefd69b0f9db75b816b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af632de4cfa7834ccad0b8a3710a2e2b6"><td class="memItemLeft" align="right" valign="top"><a id="af632de4cfa7834ccad0b8a3710a2e2b6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#af632de4cfa7834ccad0b8a3710a2e2b6">RenderState</a> (const <a class="el" href="class_v_s_n_1_1_render_state.html">RenderState</a> &amp;other)</td></tr>
+<tr class="memdesc:af632de4cfa7834ccad0b8a3710a2e2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:af632de4cfa7834ccad0b8a3710a2e2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8789c59eea6232dc1c23db2c3ffd20df"><td class="memItemLeft" align="right" valign="top"><a id="a8789c59eea6232dc1c23db2c3ffd20df"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a8789c59eea6232dc1c23db2c3ffd20df">~RenderState</a> ()</td></tr>
+<tr class="memdesc:a8789c59eea6232dc1c23db2c3ffd20df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a8789c59eea6232dc1c23db2c3ffd20df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:adfd7bd6b5a68e3cdfc90f2bf74cfbba4"><td class="memItemLeft" align="right" valign="top"><a id="adfd7bd6b5a68e3cdfc90f2bf74cfbba4"></a>
+static <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#adfd7bd6b5a68e3cdfc90f2bf74cfbba4">GetCurrentSelectedGroupGeometry</a> ()</td></tr>
+<tr class="memdesc:adfd7bd6b5a68e3cdfc90f2bf74cfbba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть текущую групповую геометрию. <br /></td></tr>
+<tr class="separator:adfd7bd6b5a68e3cdfc90f2bf74cfbba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e7f6b33f239634f07ef84fd6c6a731"><td class="memItemLeft" align="right" valign="top"><a id="aa6e7f6b33f239634f07ef84fd6c6a731"></a>
+static <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#aa6e7f6b33f239634f07ef84fd6c6a731">SetCurrentSelectedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key)</td></tr>
+<tr class="memdesc:aa6e7f6b33f239634f07ef84fd6c6a731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить текущую групповую геометрию. <br /></td></tr>
+<tr class="separator:aa6e7f6b33f239634f07ef84fd6c6a731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa042232ea4d565b16234a99b9f743d73"><td class="memItemLeft" align="right" valign="top"><a id="aa042232ea4d565b16234a99b9f743d73"></a>
+static <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#aa042232ea4d565b16234a99b9f743d73">ResetCurrentSelectedGroupGeometry</a> ()</td></tr>
+<tr class="memdesc:aa042232ea4d565b16234a99b9f743d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбросить текущую групповую геометрию. <br /></td></tr>
+<tr class="separator:aa042232ea4d565b16234a99b9f743d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b46b3f3a8a44662a6224e473cb5ae85"><td class="memItemLeft" align="right" valign="top"><a id="a5b46b3f3a8a44662a6224e473cb5ae85"></a>
+static <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a5b46b3f3a8a44662a6224e473cb5ae85">GetCurrentHighlightedGroupGeometry</a> ()</td></tr>
+<tr class="memdesc:a5b46b3f3a8a44662a6224e473cb5ae85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть текущую групповую геометрию для подсветки. <br /></td></tr>
+<tr class="separator:a5b46b3f3a8a44662a6224e473cb5ae85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ff87161b731e0eac039d8972a15eea"><td class="memItemLeft" align="right" valign="top"><a id="a38ff87161b731e0eac039d8972a15eea"></a>
+static <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a38ff87161b731e0eac039d8972a15eea">SetCurrentHighlightedGroupGeometry</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key)</td></tr>
+<tr class="memdesc:a38ff87161b731e0eac039d8972a15eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить текущую групповую геометрию для подсветки. <br /></td></tr>
+<tr class="separator:a38ff87161b731e0eac039d8972a15eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907560f754043a3339b4a170e5db5c47"><td class="memItemLeft" align="right" valign="top"><a id="a907560f754043a3339b4a170e5db5c47"></a>
+static <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_render_state.html#a907560f754043a3339b4a170e5db5c47">ResetCurrentHighlightedGroupGeometry</a> ()</td></tr>
+<tr class="memdesc:a907560f754043a3339b4a170e5db5c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбросить текущую групповую геометрию для подсветки. <br /></td></tr>
+<tr class="separator:a907560f754043a3339b4a170e5db5c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Состояние отрисовки объекта. Класс <a class="el" href="class_v_s_n_1_1_render_state.html" title="Состояние отрисовки объекта. Класс RenderState хранит состояние отрисовки и предоставляет функции для...">RenderState</a> хранит состояние отрисовки и предоставляет функции для управления режимами отрисовки объектов <a class="el" href="class_v_s_n_1_1_render_object.html" title="Класс RenderObject содержит GeometryRep + bounding box.">RenderObject</a>. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="ad8ff67069c39d0f691e5f30547699f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ff67069c39d0f691e5f30547699f1a">&#9670;&nbsp;</a></span>GetProperRenderingState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderingState VSN::RenderState::GetProperRenderingState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть собственное состояние отрисовки. </p>
+<p>Функция возвращает собственное состояние отрисовки, присущее данному объекту вне зависимости от его временных состояний, таких как режим подсветки или выбор. </p>
+
+</div>
+</div>
+<a id="af31c51bb933bc9b65c6014bd84946ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31c51bb933bc9b65c6014bd84946ca3">&#9670;&nbsp;</a></span>GetPolyFaceMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vsn__namespace_8h.html#ade52f8243a40adb5ebdf2db3e536a707">DrawBufferMode</a> VSN::RenderState::GetPolyFaceMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть значение режима отрисовки для граней. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Одно из следующих значений отрисовки: GL_FRONT_AND_BACK, GL_FRONT или GL_BACK. </dd></dl>
+
+</div>
+</div>
+<a id="a34c0e1951cffaddfe030662d0e6157b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c0e1951cffaddfe030662d0e6157b6">&#9670;&nbsp;</a></span>SetPolygonMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> VSN::RenderState::SetPolygonMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vsn__namespace_8h.html#ade52f8243a40adb5ebdf2db3e536a707">DrawBufferMode</a>&#160;</td>
+          <td class="paramname"><em>fMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="vsn__namespace_8h.html#a8430478b787ed1120e3e8ee757c9a322">PolygonMode</a>&#160;</td>
+          <td class="paramname"><em>pMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установить режим отображения для граней и полигонов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fMode</td><td>- Режим отрисовки для граней с одним из следующих значений: GL_FRONT_AND_BACK, GL_FRONT, and GL_BACK.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pMode</td><td>- Режим отрисовки для кривых с одним из следующих значений: GL_POINT, GL_LINE, or GL_FILL. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ea28eabfa7156c36cff89bab7acc137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea28eabfa7156c36cff89bab7acc137">&#9670;&nbsp;</a></span>AddSpecialMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> VSN::RenderState::AddSpecialMaterial </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_v_s_n_1_1_material.html">Material</a> *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>partIdx</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить специальный материал для примитива. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Идентификатор примитива.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mat-</td><td>Указатель на специальный материал.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">partIdx</td><td>- Индекс геометрической части. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad44c6c082c5ea706eaf4848429613c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44c6c082c5ea706eaf4848429613c24">&#9670;&nbsp;</a></span>GetSpecialMaterials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;uint, <a class="el" href="class_v_s_n_1_1_material.html">Material</a>*&gt;* VSN::RenderState::GetSpecialMaterials </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть контейнер специальных материалов текущей геометрической части. </p>
+<p>Функция возвращает таблицу указателей на специальные материалы и идентификаторы примитивов текущей геометрической части. </p>
+
+</div>
+</div>
+<a id="a073bf9f91290aa7d93ee5532fcae5a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073bf9f91290aa7d93ee5532fcae5a7c">&#9670;&nbsp;</a></span>IsSelectedPrimitive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VSN::RenderState::IsSelectedPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>partIdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть true, если примитив по этому идентификатору и индексу тела является выбранным. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Идентификатор примитива.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">partIdx</td><td>- Индекс геометрической части. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="vsn__renderstate_8h.html">vsn_renderstate.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>VSN</b></li><li class="navelem"><a class="el" href="class_v_s_n_1_1_render_state.html">RenderState</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:09. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

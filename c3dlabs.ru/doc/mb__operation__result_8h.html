@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mb_operation_result.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mb__operation__result_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mb_operation_result.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Результат операции.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gad298d2af79e3480e59c381ffb111b0bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> { <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca78bcc0f930d298fff11bf22c88f37b64">rt_Success</a> = 0
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad7e90608f0d497f356fd605dc38e82e7">rt_Empty</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca509b3497d1e448f994a697a69b9fffad">rt_ToManyAxis</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae457d40c9b6c8136beb3c0c844028ed5">rt_ToFewAxis</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca23619b5ba63c9e16b5f3d642d9239be3">rt_ToManyContours</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca036fc455ffeef53e0feedac84d9f3678">rt_Stars</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaabf1b8dfaca2d7055b0799e77d0f3329">rt_SelfIntersection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca48633975837e79de6bd655f48426a0c3">rt_SelfIntWhenExtended</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca5c2465fdadc4d530200adcd0a4f96b61">rt_Intersection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad4a1fc2aeb0e5c5963a1916faebbd08a">rt_NoIntersectSolid</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca27bb5f1ab79bbb0dba5f6fbc0334d675">rt_NoIntersectSection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcadc0d17c8304dcd41f649639099778140">rt_LibNotFound</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcab4fccdabb5f0864b14b723ba9d90e17e">rt_MustBeClosed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6420a3b5631fd2453a045bf05e452c3c">rt_MustBeOpen</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca94adf04aa9e204b6ad3bf4330b34a23e">rt_AxisIntersection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaabce3d76e96022e510b87f7d750b48c0">rt_DegenerateAxis</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf7412da5c7d69374b7490112a3f589fe">rt_MultiSolid</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcabcea65a6b810f7e7072932bcef639acd">rt_CurveError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad690cc52d7b26098c2d646c879bdd4d9">rt_ContourError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcace07577d2a8892400570985b1ee61328">rt_SurfaceError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca85ad66929a8e1351dd100531db84639b">rt_SolidError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf65fb732de9e6e9087c11d9d254aa680">rt_ParameterError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4b9cc5901b97764aa499c9e8232595d3">rt_ThicknessError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca739eea2caf0bb0feddedb338ed9284d0">rt_NoSequenceCurveAndSections</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaaf038fb1bfe883ec76c0c84b662d0bdd">rt_SelfIntersect</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca57564ed9f9a1d1401f439ecc2eb90ded">rt_NoIntersect</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca5a8e4ee0b180e304cbdccfea6b9fbe71">rt_OffsetIntersectError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae34c62c4417ff41c62828c815a1662df">rt_BooleanError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca99747ecf963dab7a6878b0cf433233fd">rt_NoEdges</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae9f007062746778f8d8ad7e5cb964df1">rt_PrepareError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaee6f7a629cf8bf769cdf99c592e0328b">rt_ChamferError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca0233d6543a413ffe0dc658ad3b70252b">rt_FilletError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca772b84f2d44e8096ddbfae693c429c45">rt_PartlyChamfer</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca2954755c5dfcd981b248488faa98ae4c">rt_PartlyFillet</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6000fde362a5fe34282b0ed56267dbd2">rt_ChamferSurfaceError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca14c40f9a63d3015b9ce96c359c3a34b8">rt_FilletSurfaceError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6f74765bf2af108fff6c5ab48527e641">rt_TooLargeChamfer</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaae19b854664bd27dfa6152b3ce2d589a">rt_TooLargeFillet</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca41e832d556f7e5743b6648b2f43e7d1d">rt_SemiChamfer</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca88802185e2a496731394015141041f50">rt_SemiFillet</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca332be396d94fb087f6a5552a9cd610f2">rt_CuttingError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcab515cbe3865bdc36dc2406208e6514ba">rt_ThinError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca524d832f1dd709ab50e9628115ead619">rt_OffsetError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca406f2bed971916243ec9dcc2477bf0c7">rt_FaceError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca207bce31050e4c26fce9950df928db7b">rt_RibError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca831b5077ea30c6e4d3904ab08ce35802">rt_DraftError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca59f02ffddb6523ef9a0fa6902f04c85c">rt_NoObjectForDirection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6c597b0246d1f5581382da16b00439ab">rt_AbsorptionSolid</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca43a703b5bf14fd4c502552dc12d9d0c7">rt_Error</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca06d57938171bb361e5be93361f44da82">rt_None</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca8330f75da96fc63d8621605d4a72e1d7">rt_Intersect</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca120b62a8d04b6525358b51df97e2f384">rt_InvalidType</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca43e07195c228925c8af1b714176dc123">rt_NoConvertTextToNurbs</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac47beb2883fc9aeb4257af31c589bf99">rt_SplitWireNotSplitFace</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca18596fc259cd391e558c1713428fb4e1">rt_SplitWireNotIntersectFace</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca63f4baf7ed2414704cf3ae929d4fe10e">rt_MustBeOnlyOnePoint</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae27ab9b8564e7d0635a5ec344884fe3f">rt_InvalidPoleUsage</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca996b5b54d3b133d37498608f85a8478f">rt_ThinWithPole</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca227dace3f1b89b002b819ccac13037c2">rt_TopologyError</a>
+, <b>rt_BeginOfInvalidRange</b>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca5c9f6496f2924ebfad40ae97da005155">rt_ErBodyCloosed</a> = rt_TopologyError + 2
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcafbb05b9c417e7e0336481c901b43126e">rt_OneEdge</a> = rt_ErBodyCloosed + 2
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca408515d1526ac4dd1240604c48e873e1">rt_SomeEdge</a> = rt_OneEdge + 1
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6b9dbedcee2b5210951ba23dcf3291ae">rt_NoSuitedSketch</a> = rt_OneEdge
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcade599999b0797a8806331d5fc75b1150">rt_SketchNoProj</a> = rt_OneEdge + 1
+, <b>rt_NoSheetFace</b> = rt_OneEdge
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad04c2084754304e725ff3d7d25478911">rt_ErHeight</a> = rt_OneEdge
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaff0a29516079fd2d877ab235ce852506">rt_ErSketch</a> = rt_ErHeight + 1
+, <br />
+&#160;&#160;<b>rt_UpdatePlaceWrong</b> = rt_TopologyError + 2
+, <b>rt_ErDegree</b> = rt_TopologyError + 2
+, <b>rt_EndOfInvalidRange</b> = rt_BeginOfInvalidRange + 20
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaccf18f8c8d7c040d11d362aa2d3960b6">rt_NoObjectInDirNormal</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4ba4680eb6d746ec2d77f996b6867d72">rt_NoObjectInDirReverse</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca41f9cb539b13b863f9320d5b5733f768">rt_SolidAffectedByBoolean</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca9ab0b24e8c838edec210a432f9445793">rt_HaveDegenerateSegment</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac4574e59aa548e1293cf94be1b22a389">rt_NotAllSourcesFound</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaaa9cd79a03d5b506a3a1fbdb10630d64">rt_InvalidEmptyContour</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca06945359ee6ae1f43e269f8d524905bc">rt_UnnecessaryVariables</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcadd607b49bb868abbf7c018879f0ebe4f">rt_DomainMismatch</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf215d8b45421b6afbaab9d862182e32f">rt_UnknownTranslatorError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4c5d299c1c28c472ba28346f63312119">rt_UnknownParserError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae72ee2c6fe2102c359835148e00a3ef6">rt_UnknownSymbol</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4d9f5ba1eb2d1b89070407dcd8b79c77">rt_NoClosingBracket</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca1dfbabe8afb4da3dd76a8411104c7d18">rt_NoOpeningBracket</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf55d92ebf104ed97ad4a0fac4a525b8a">rt_ImpossibleOperation</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf3cf11748b063a169408b058529f4410">rt_LostObject</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6bbd6e7224c105bf957d168d4e31883a">rt_NotAllBendsProcessed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcacb1bc411dac6e9fdc44aa012131bee2c">rt_ValueScalingError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca9cdaafee3386b5a16c2674e8b5220d1b">rt_RatioScalingError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca87feca6821dfe05b46ff78377c366548">rt_MultiSolidDeflected</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaa67b474d2112980a91f5f8115e39fac2">rt_MultiSolidDefused</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaaa047180d55a1453e4bf17338c564711">rt_TransitionError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac19107c751bea80da5583b195bcc170d">rt_MeshCrossingError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca54cf30b2e823b9b2b6b1f07d6040e283">rt_ClosedError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcacfd152463ca45b4a3b58e0982a6fe223">rt_TooGreatCurve</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca023aa6109842607767711579aaba1f93">rt_ClosedOrUnClosedError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac49ca0df63eb30e5d355689157ec92f8">rt_SketchNoSheet</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca77e60f85566c909af099dec47304a381">rt_BadSketch</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca9cdc9c214012ea1014869e0f2f22bd48">rt_ConnectionError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4baa6fc71109690c8857c248b526e69f">rt_MeshSmoothError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaadeb2965978eed29a7277377a324bdee">rt_NoIntersectContour</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad8760425976442a117a0dc3f4ce40792">rt_ErShMtHeight</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca8440f3559f7621a5d6830812f00cf9f6">rt_DegenerateSurface</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcabfe64774183b69fbf8e1ba93d6860d24">rt_SurfaceEdgesIntersect</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca96e1e6f93e4beb8311ea97693bd75601">rt_TooLargeExtension</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcab7e2d7563291bb45ba3f3332400dc751">rt_TooSmallExtension</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcadb75eeb625d8aaed8a4b99306c1a4959">rt_VertexExtensionError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaaa31757e18f10904025c88f60b3bebda">rt_SurfaceExtensionError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad15314b9bfdfac64ccb513a4d0b5b1a7">rt_NoEdgesConection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcadac6bd9df88386cc047cd2f1b8f51e5d">rt_TooManyPoints</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae5eef03861ac782fcff69f6c6a30355a">rt_TooManyPoints_1</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca8f467dfa80ae52e7fee181f3fabe5bd1">rt_DirectionExtensionError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca36ad39cbdb5328b04d82419587553bfb">rt_ExtensionPoleError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6e48e00c34d728e94ffd13b53c5745c0">rt_MustBeOpenOrClosed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcab6a4dc53b62e47eab130da1f4831804e">rt_TooComplicatedItemsSet</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcabd42878e04c1cff6e65e4de4329f9b4c">rt_NoAxesIntersection</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6255f230a6bbeb593ca5d4e412e3759d">rt_TooFarItems</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca839076e1247701991492b1c1c55ec77e">rt_ProcessIsStopped</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae5169caf5da6509bbd2a24fc1c76c473">rt_ContourSweptError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca43abaddf32fa4849e50c386faabed8d1">rt_SomeContourError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca228b085ce16ab0bb9ff28f250a6c3738">rt_SplitWireNotAllFaces</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcace18893837e23d8d306343d1e52c444b">rt_GeneratrixColinearGuide</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca06258a23446312180984f42e1486d1ca">rt_NotEnoughMemory</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca9889ed3613f7ef7a41e26244e10a6c84">rt_BorderColinearCurve</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca65f36119b9ae1cf8decd0c4b4bb41471">rt_ObjectNotFound</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca98ddd9c3d4eb44e5c9e2ab5143faf2fe">rt_PoleBrokenError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae1f03b69985820b823c21ee6f3ff3810">rt_ApproxError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca7b6c888f7c4eed562d589a86c76c61b7">rt_AccuracyError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca92314e812cc1392fc51d9176c1a823a5">rt_BadVariable</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca94554de38978d37b1894f40faae2e3d2">rt_BadEdgesForChamfer</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca550d834d5abf7a9ff6fd7ca6e82e4bcb">rt_RevokeStopFillet</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6847aaf76243e9fd68c8526f846649dd">rt_AdjacentTransitionError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca24d631ad00e465e39385d4af159e219b">rt_ObjectAccessDenied</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca595b932f6289c7ef324e8390f75b85d1">rt_TooManySegments</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad7978fac4b31259554e0e070e062b5d2">rt_GapShiftError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca0d6fb71aa3d91d35a33929b593f3f366">rt_CutBySilhouetteError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca2c81fbc36fd0aff54c887ac223d4a5ed">rt_DegeneratedProjection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6a18c79fabce6f5aa89a368f5a598e1f">rt_NotAllContoursUsed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca28146729bdf6ac78080e584939961c97">rt_ChangedParameter</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca85e3da7976323f71a04506d31b6bebcf">rt_NotAllObjectsUsed</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca476d3eacb23998fb1cfaf77a88ef5b23">rt_ZeroJumperError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf4a080d719f94ca945356fd46dbd83f0">rt_FullFilletError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca669bbd6e1a1f5a24c51261dd0c0fd2e1">rt_IncorrectData</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac0a17bd62b8f8839388a815e45af0f5b">rt_IncorrectPolylines</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6418e8f2e59e3c3bdb72b7b25e6bbcfe">rt_IncorrectStructure</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcabb6b641d62cd235acebc2187486fa1c8">rt_TooFewPoints</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca59107c3afa9411bf2ff3d53d7a7c96dd">rt_CoincidentPoints</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca1dee189c250623ab85610ee1c0b8bc90">rt_TooSharpAngle</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca49444407e5a236d7104d61c0f62b86dd">rt_ReverseMotion</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca9271b3c97d1a8a4be16e92db1be01fa9">rt_SharpTorsion</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca315e8711c1a15de8b890cb05076d1827">rt_IncorrectFirstDirection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca8a41254f7cd1b64159381b2f3c0b7587">rt_IncorrectLastDirection</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaebd6c75005d6b78fb12ef876bac7a1c0">rt_FirstTangentVector</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaa997b9861e8c29afe719f56204568641">rt_LastTangentVector</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac6109d2fe08a0b0027b7b02d25638d41">rt_TangentVectorsUnsuitable</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaeb0b2cb374441344e137cc6bd3c6f436">rt_IncorrectBezier</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca406b311e77bbdff34b588e4b71747011">rt_NoIntersection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac09358398ff54ce88dc33f337f5e30e6">rt_CriticalConfiguration</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac642c6e76ba27210d8d098133ddbc237">rt_IncorrectInitialData</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcadc2ba2d4080e622d410e756a8c614a78">rt_NotImplemented</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca88c264c376c3e1bdd7a71aad5f14e87f">rt_InsufficientMemory</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca29eaae8dbff7ee7235420ea6ecf94087">rt_IncorrectFirstTangent</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca3c5084dfebc3087378c507acec97aa3a">rt_IncorrectLastTangent</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca20962c374af06ef38b166d54e4c760d0">rt_StraightenLastSite</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac09dd266a563021c6026652bd7940ccf">rt_IncorrectPolylineStructure</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca0fd20d28461c04753f10916e12cb05a0">rt_IncorrectDataStructure</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca2e82e5d587ba2ae27bf4ffeedbbe7233">rt_ObjectIsNotPolyline</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca93becd1c166be304417f7858569e168e">rt_MissingKnots</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca5ad8917cba72dc47ca83cf4743f842d5">rt_ClosedSpline</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaa053540fb38ed6ac5d39d3341a41fe35">rt_ObjectNotSelected</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca1ab49355d7f6edeb246e3318798587b6">rt_SharpChangeCurvature</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca1aab86296d372eab7ca9ea9825c81df9">rt_CloseToStraightness</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca27b60e19eb73ac2eddb85a6bfd2e088d">rt_TooFewStartPoints</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca34785599de33d3a38536878a3a98ff8e">rt_BanClosedConfiguration</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4d8497a2f61c3d2e583a5f15b79ddec9">rt_IncorrectDeterminant</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca3308c131e6042c68672bf037c7acd430">rt_DimensionsPointsArrays</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca64758a85c6d35c519c18ef9845706eb8">rt_TangentsNotIntersect</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca26068f449daffae80afdac3fadb1aab8">rt_PointsCoincided</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaa00ec5cbdc5bdee158df76353d7b52dd">rt_FewPointsForClosed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad79ff452a55a4c9128054b9b2eff407d">rt_TooFewPointsOnSite</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca9b2e52722291690bcfb134a00b944ca3">rt_PointsOnLine</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca5d94282d9e1a2645a36a5e5e83b7a8fb">rt_TooManyApexes</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca2ffc6303f6f7c2c8c0b820f72067620a">rt_SiteNotConvex</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad4f2f5348d52aee44231698805fdb5c8">rt_CurvatureRange</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca98054285c6979abe111bbd0da42aabab">rt_ObjectNotHermiteGD</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcab92f1dadf89204b70bb6c84635284a50">rt_ObjectNotNURBS</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae033697de1ca0b29397cff2b02ae75f0">rt_DerivativeContinuityErr</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae0af2c59bdb2455ff3c7600d348a11b9">rt_NotEnoughBuildData</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4473c8beb16351622de685b0fa6f7cdb">rt_InternalError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcab6eea52b113dc1361acbf8c1d739eccf">rt_DerivativeGap</a> = 198
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca46e09194d6bf1ac6081f5ae2f7dc9459">rt_DerivativeGapU</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca1f183fa362f7c169d19a889cc86302e8">rt_DerivativeGapV</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaa42b9f53eb03bd2f223eab4e2c20595b">rt_ContourGapError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae76c696582e3b5affe76596f23c0ac7b">rt_ContourSegmentsOverlapError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad2c3efb316a4e56001660fa2feb5fd51">rt_ContourSegmentsNoTangentJoint</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaa129ca5d2c178aff06a95fe76e4a4209">rt_ExtensionOutOfRange</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca5bffde9d886bcabdcf280d0b8f4b3d0f">rt_BuildSheetBySolidError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca4e5dd94f2b847aee2de03f3958dacb88">rt_BendEdgeError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca16aebacdeafd4bd032233e8a07bd23a1">rt_StampToolPositionError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcabacf293ed24c7f62b3adf8eb01edf808">rt_NoEdgesForBuild</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca955e5459a56d0edcb79cedba8fb8d479">rt_NoCurvesForBuild</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca94e7448f9954aa76e17852b462b9398d">rt_NotCorrectDataForBuild</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6d967d7b4899bee81a294ece93ee8271">rt_NotEnoughDataForBuild</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca262ebae21c32b759e91075acba786671">rt_ReferenceCurveError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf4c6840dcb0799e7fcb5854c9c31a49c">rt_GuideCurveError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca54547306f18ffe7daff6aeb2d1a005bb">rt_ApexCurveError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcade06f41c8ab860b1874d6fe521b2a908">rt_DiscriminantFunctionError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcabcb51d35281e7f6390e825975028a890">rt_DiscriminantCurveError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae567cb17993b30fe9e7acf2138e0766c">rt_DiscriminantSurfaceError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae5e85b08adabbfe4f94086752247a807">rt_AngleFunctionError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca6cde0d725b45a826fa12fbfa99e91e74">rt_ReferenceCurveBuildFailed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca761c7ecfef5123db31ae2c4cd3b39f1f">rt_GuideCurveBuildFailed</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca8e26bf9a5bcaf311ed079f53b004a697">rt_ApexCurveBuildFailed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaba098385c4492304ac235b79dac57af2">rt_VertexCurveBuildFailed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca9b79fd43b29455af5fa2083f76a462ec">rt_ApexDiscriminantBuildFailed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcafd4b1bce71b791ba1913bbad54a798d7">rt_DiscriminantBuildFailed</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcac1442ba8529008cd9968e1cc04ce6c95">rt_PatternCurveError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca379c561d22b36ae009edd137126e2bad">rt_SynchronizeParameterError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcabd0da1ac782bfe12fa7bf00118f8960b">rt_ReparamBuildFailed</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca244c497f02107d066e794c8b3b80f5c0">rt_TriangleSectionFailed</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcadce1ad6ebf21609d78aae8ed06cda7c6">rt_DiscriminantFunctionWrong</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca90d9ac3976277d58235d888cccb3b555">rt_DiscriminantCurveWrong</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca14094580be2f3df4ad02d36612e0f23e">rt_DiscriminantSurfaceWrong</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca7e2b62bf2380c3d78cc50456f3842acc">rt_SectionMovementWrong</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad0c17dbcc9c77606206b1a0d82feeda6">rt_DiscriminantSurfaceFar</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae56f6d33a6de19f86b9d29e09059847d">rt_CrossOrderError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca16227e6a59f268f47fce147e570eb4d6">rt_WrongExtensionLength</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca25caf9828f398e868e0bccf780f6e84b">rt_WrongExtensionWayValue</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcaf7beb8ea0132965d16fd36228d3d390d">rt_StampToolHoleError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca43361663552b781b51ff6a9ae935da41">rt_CurveClosedAtStart</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcacf1ef7319c1fa95b39a605b149e26974">rt_CurveClosedAtEnd</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca285d67d61acc76422287835bc52653b9">rt_CurveClosedBothSides</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca0194a495224c9bc32b9dee78d7e4564e">rt_BeyondLimitsExtension</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca8bfb42be5d98897445f553c86b314b58">rt_NonBijectiveFunc</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca26b503d27b0e5b682066073cdda97cf3">rt_LicenseError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcacf5e8c5c505680cc63b48791f64444c7">rt_NoRayIntersection</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca569966808e59fe12bb3be957a6b2e5e4">rt_ExtremesRequestExceeded</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca08cc58ef860bc472488973ed31b3c603">rt_ConstraintSurfaceDomainError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca35cbefc58934360932876e2e7a7f03d0">rt_ConstraintCurveEmptyDomain</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcae68b6edac0be2ce695f915e2e7aadd10">rt_ConstraintCurveDomainError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcab8020114127a5bfef833fdf4873d464b">rt_ConstraintCurveNoBijection</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcad5f6da6f0ae41cd5fc4342204672ba19">rt_FacesGroupsOverlapError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bcadd4f967494b06be14275cc7614c24cdd">rt_StitchShellsError</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca177e480b39a9ccf4f8969cf7d0f66d89">rt_NoFacesForModification</a>
+, <br />
+&#160;&#160;<a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca281e8ed89c428f7933e92cbcd2ada067">rt_NoReplacementFaces</a>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca2cd6208505e7f03d24c5d4ea28400f17">rt_InvalidMathVersion</a>
+, <b>rt_InvalidTruncChainError</b>
+, <a class="el" href="group___base___items.html#ggad298d2af79e3480e59c381ffb111b0bca08b7dc342b4cf3bc6825f0f693303fbf">rt_RadiusFunctionWrong</a>
+, <br />
+&#160;&#160;<b>rt_ErrorTotal</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:gad298d2af79e3480e59c381ffb111b0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код результата операции.  <a href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad298d2af79e3480e59c381ffb111b0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56e6ce022423e30f109a2c7ca58cae76"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga56e6ce022423e30f109a2c7ca58cae76">MbeStitchResType</a> { <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76a88bd0cb8bb558b54f5f0294f31892631">stch_Success</a> = 0
+, <a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76a5e4fa7e36a88ab98f9cfa47c5a1416cc">stch_PrepareError</a>
+, <a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76adb8d2c2098c91d64acd9be8d0e00eee1">stch_CoorientFaceError</a>
+, <a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76a54425c18b63f5c6fc0dd91428a70120f">stch_SomeEdgesUnstitched</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76a7ae3fdfe5c31eedc1095fabe5b08ea57">stch_OutwardOrientError</a>
+, <a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76acf0be7fab4fa545e0f1b0372b053046e">stch_NoEdgeWasStitched</a>
+, <a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76a0f0072294ddcd952733cf02944b5a703">stch_SeparatePartsResult</a>
+, <a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76a05b39e3ced5740c6a971e6c34bb2b8a9">stch_EdgeStitchError</a>
+, <br />
+&#160;&#160;<a class="el" href="group___data___structures.html#gga56e6ce022423e30f109a2c7ca58cae76a412e3df8f81f93fadee1d1048e24e54d">stch_InputTopologyError</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga56e6ce022423e30f109a2c7ca58cae76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат операции "Сшивка".  <a href="group___data___structures.html#ga56e6ce022423e30f109a2c7ca58cae76">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga56e6ce022423e30f109a2c7ca58cae76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Результат операции. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mb__operation__result_8h.html">mb_operation_result.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

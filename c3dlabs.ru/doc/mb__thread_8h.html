@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mb_thread.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mb__thread_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mb_thread.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Определение резьбы.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="legend_8h.html">legend.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__placement3d_8h.html">mb_placement3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cube_8h.html">mb_cube.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__matrix_8h.html">mb_matrix.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="surface_8h.html">surface.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="topology_8h.html">topology.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="lump_8h.html">lump.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="solid_8h.html">solid.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="name__item_8h.html">name_item.h</a>&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_threaded_joint_check_parameters.html">MbThreadedJointCheckParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры проверки резьбовых соединений.  <a href="struct_mb_threaded_joint_check_parameters.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_thread.html">MbThread</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Резьба.  <a href="class_mb_thread.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ga10a396125b6756d862906c9d96603171"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga10a396125b6756d862906c9d96603171">MbeThrMapType</a> { <a class="el" href="group___mapping.html#gga10a396125b6756d862906c9d96603171a70f6e4031cdfa733ac6979affe70589b">tmt_CompleteView</a> = 0
+, <a class="el" href="group___mapping.html#gga10a396125b6756d862906c9d96603171ad2f79612045bb31c38e0cfc11f5f2c42">tmt_CuttedView</a>
+, <a class="el" href="group___mapping.html#gga10a396125b6756d862906c9d96603171a61340f1a6b63f70dfeb94cfb7f55736f">tmt_SectionView</a>
+ }</td></tr>
+<tr class="memdesc:ga10a396125b6756d862906c9d96603171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип отображения.  <a href="group___mapping.html#ga10a396125b6756d862906c9d96603171">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga10a396125b6756d862906c9d96603171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga607253e08c288d9f8ea8b26d313cdcca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga607253e08c288d9f8ea8b26d313cdcca">MbeThrState</a> { <a class="el" href="group___mapping.html#gga607253e08c288d9f8ea8b26d313cdccaa2c5b8d3048a1d1d74b093392fb852fcb">ts_NotChanged</a> = 0
+, <a class="el" href="group___mapping.html#gga607253e08c288d9f8ea8b26d313cdccaaa86357b00d3dfb0fdcbddc427d701a3b">ts_Changed</a>
+, <a class="el" href="group___mapping.html#gga607253e08c288d9f8ea8b26d313cdccaa1017e91647aa6156b1fe6c056a820b63">ts_Degenerated</a>
+ }</td></tr>
+<tr class="memdesc:ga607253e08c288d9f8ea8b26d313cdcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояние резьбы.  <a href="group___mapping.html#ga607253e08c288d9f8ea8b26d313cdcca">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga607253e08c288d9f8ea8b26d313cdcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26c07f3ca9b356455f8557e454db5a6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga26c07f3ca9b356455f8557e454db5a6b">MbeThrAdapt</a> { <br />
+&#160;&#160;<a class="el" href="group___mapping.html#gga26c07f3ca9b356455f8557e454db5a6ba35f4ebe45cdbeb84c168e2b313dfbea2">ta_UsingNothing</a> = 0
+, <a class="el" href="group___mapping.html#gga26c07f3ca9b356455f8557e454db5a6bad65fb56de7e3bfceeddcd300b85c9fbf">ta_UsingGabarit</a>
+, <a class="el" href="group___mapping.html#gga26c07f3ca9b356455f8557e454db5a6ba09ebb411d6a82225cc2a27c20869c986">ta_UsingSurfaces</a>
+, <a class="el" href="group___mapping.html#gga26c07f3ca9b356455f8557e454db5a6ba009d19593065eefb3eb63d877147efff">ta_UsingSolid</a>
+, <br />
+&#160;&#160;<a class="el" href="group___mapping.html#gga26c07f3ca9b356455f8557e454db5a6ba29a6b3a46298505cf8b7de2bc8e89009">ta_TypesCount</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga26c07f3ca9b356455f8557e454db5a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод подгонки резьбы.  <a href="group___mapping.html#ga26c07f3ca9b356455f8557e454db5a6b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga26c07f3ca9b356455f8557e454db5a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8201b958ef2f9ce26dd3ee0301d53494"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___legend.html#ga8201b958ef2f9ce26dd3ee0301d53494">MbeThreadedJointCheckErrors</a> { <br />
+&#160;&#160;<a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494aa43e4c349ff66db0fb03764465778751">tjc_NoErrors</a> = 0
+, <a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494a011cec0f84e4d3944342e1efb3af93c4">tjc_SameThread</a> = 1
+, <a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494a2dcc5900c1d8fd737406ab3c51692783">tjc_WrongThreadParameters</a> = 2
+, <a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494aa3f88ad78d349d5f891cf7b94670fec5">tjc_NormalsMismatch</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494a28d1cfaad71c9ca9fe9a94ea9bc7afbd">tjc_RotationsMismatch</a> = 5
+, <a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494a9ca1197d92a444c437393f20c898d256">tjc_AngularMismatch</a> = 6
+, <a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494ad27584796fb5ab969c9ec629df1e475b">tjc_AxesNotCollinear</a> = 7
+, <a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494abeb7937f9a49802b77622d19a9ebc65a">tjc_DepthOverlapMismatch</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494a07db4bbae5127c30ab992fae21216c25">tjc_LengthOverlapMismatch</a> = 9
+, <a class="el" href="group___legend.html#gga8201b958ef2f9ce26dd3ee0301d53494ac089773c0ebb58da79e471881c4026c2">tjc_PositionsCount</a> = 10
+<br />
+ }</td></tr>
+<tr class="memdesc:ga8201b958ef2f9ce26dd3ee0301d53494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибки при проверке резьбового соединения.  <a href="group___legend.html#ga8201b958ef2f9ce26dd3ee0301d53494">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8201b958ef2f9ce26dd3ee0301d53494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga18b08ee0091962186a50bffe526d192f"><td class="memTemplParams" colspan="2">template&lt;class ThreadsVector &gt; </td></tr>
+<tr class="memitem:ga18b08ee0091962186a50bffe526d192f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga18b08ee0091962186a50bffe526d192f">CheckThreads</a> (ThreadsVector &amp;threads, const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> *placeSec, bool checkThreadNames, double angleEps=<a class="el" href="class_math.html#ab0a603fb82cc15f1c46ba162c4012820">Math::angleRegion</a>)</td></tr>
+<tr class="memdesc:ga18b08ee0091962186a50bffe526d192f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить некорректные резьбы.  <a href="group___mapping.html#ga18b08ee0091962186a50bffe526d192f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga18b08ee0091962186a50bffe526d192f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9db7bba8bd2533123090c1152754ca64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga9db7bba8bd2533123090c1152754ca64">GetThreadEdgeCentre</a> (const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &amp;edge, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pnt)</td></tr>
+<tr class="memdesc:ga9db7bba8bd2533123090c1152754ca64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить центральную точку.  <a href="group___mapping.html#ga9db7bba8bd2533123090c1152754ca64">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9db7bba8bd2533123090c1152754ca64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6afbc1165e01a53121e9c3e681021038"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga6afbc1165e01a53121e9c3e681021038">CalculateThreadLimits</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;threadFace, const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;threadAxis, const <a class="el" href="class_mb_face.html">MbFace</a> &amp;face, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;threadDir, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;facePnt1, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;facePnt2, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;axisPnt1, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;axisPnt2, double dr=0.0, bool findCommonEdges=true)</td></tr>
+<tr class="memdesc:ga6afbc1165e01a53121e9c3e681021038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти граничные точки резьбы.  <a href="group___mapping.html#ga6afbc1165e01a53121e9c3e681021038">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6afbc1165e01a53121e9c3e681021038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Определение резьбы. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mb__thread_8h.html">mb_thread.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

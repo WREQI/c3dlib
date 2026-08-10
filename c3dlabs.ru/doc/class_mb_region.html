@@ -1,0 +1,924 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbRegion</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_region.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_mb_region-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbRegion<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___items.html">Геометрические объекты</a> &raquo; <a class="el" href="group___region__2_d.html">Двумерные области</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Двумерный регион.  
+ <a href="class_mb_region.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;region.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbRegion:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_region__inherit__graph.svg" width="200" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbRegion:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_region__coll__graph.svg" width="200" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa447b7313ae593eb05842b62e0c35631"><td class="memItemLeft" align="right" valign="top"><a id="aa447b7313ae593eb05842b62e0c35631"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#aa447b7313ae593eb05842b62e0c35631">MbRegion</a> ()</td></tr>
+<tr class="memdesc:aa447b7313ae593eb05842b62e0c35631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой регион. <br /></td></tr>
+<tr class="separator:aa447b7313ae593eb05842b62e0c35631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ddfac24fcb7919dc14af948a984181"><td class="memItemLeft" align="right" valign="top"><a id="ad9ddfac24fcb7919dc14af948a984181"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#ad9ddfac24fcb7919dc14af948a984181">MbRegion</a> (const <a class="el" href="class_mb_contour.html">MbContour</a> &amp;, bool same)</td></tr>
+<tr class="memdesc:ad9ddfac24fcb7919dc14af948a984181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регион с одним внешним контуром. <br /></td></tr>
+<tr class="separator:ad9ddfac24fcb7919dc14af948a984181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f01343f2714d77c43a3db37d1b8721"><td class="memItemLeft" align="right" valign="top"><a id="a91f01343f2714d77c43a3db37d1b8721"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a91f01343f2714d77c43a3db37d1b8721">MbRegion</a> (const <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;, bool same)</td></tr>
+<tr class="memdesc:a91f01343f2714d77c43a3db37d1b8721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регион с одним внешним контуром. <br /></td></tr>
+<tr class="separator:a91f01343f2714d77c43a3db37d1b8721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fbea8dbb13ef3180dd43033b8653a8"><td class="memItemLeft" align="right" valign="top"><a id="a89fbea8dbb13ef3180dd43033b8653a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a89fbea8dbb13ef3180dd43033b8653a8">MbRegion</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;, bool same)</td></tr>
+<tr class="memdesc:a89fbea8dbb13ef3180dd43033b8653a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регион с несколькими контурами. <br /></td></tr>
+<tr class="separator:a89fbea8dbb13ef3180dd43033b8653a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2b2d62e09c7b8e7b3dd2ee8d851fde"><td class="memItemLeft" align="right" valign="top"><a id="a0a2b2d62e09c7b8e7b3dd2ee8d851fde"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a0a2b2d62e09c7b8e7b3dd2ee8d851fde">MbRegion</a> (const std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &gt; &amp;, bool same)</td></tr>
+<tr class="memdesc:a0a2b2d62e09c7b8e7b3dd2ee8d851fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регион с несколькими контурами. <br /></td></tr>
+<tr class="separator:a0a2b2d62e09c7b8e7b3dd2ee8d851fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33cdf240a7a79a0c59f7608ace49026"><td class="memItemLeft" align="right" valign="top"><a id="af33cdf240a7a79a0c59f7608ace49026"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#af33cdf240a7a79a0c59f7608ace49026">MbRegion</a> (const <a class="el" href="class_mb_region.html">MbRegion</a> &amp;, bool same, <a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:af33cdf240a7a79a0c59f7608ace49026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копии. <br /></td></tr>
+<tr class="separator:af33cdf240a7a79a0c59f7608ace49026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Общие функции геометрического объекта.</div></td></tr>
+<tr class="memitem:a39e42eef3d15f57c9330f3de6503cf6b"><td class="memItemLeft" align="right" valign="top"><a id="a39e42eef3d15f57c9330f3de6503cf6b"></a>
+<a class="el" href="group___geometric___items.html#gad43d5e481b01b4370aa47a522cbecc26">MbePlaneType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a39e42eef3d15f57c9330f3de6503cf6b">IsA</a> () const override</td></tr>
+<tr class="memdesc:a39e42eef3d15f57c9330f3de6503cf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип объекта. <br /></td></tr>
+<tr class="separator:a39e42eef3d15f57c9330f3de6503cf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab7275f3a3a79c9477c56347bb8edb1"><td class="memItemLeft" align="right" valign="top"><a id="a8ab7275f3a3a79c9477c56347bb8edb1"></a>
+<a class="el" href="group___geometric___items.html#gad43d5e481b01b4370aa47a522cbecc26">MbePlaneType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a8ab7275f3a3a79c9477c56347bb8edb1">Type</a> () const override</td></tr>
+<tr class="memdesc:a8ab7275f3a3a79c9477c56347bb8edb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить групповой тип объекта. <br /></td></tr>
+<tr class="separator:a8ab7275f3a3a79c9477c56347bb8edb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb4a9572a0cf90f7d9659210e54bb47"><td class="memItemLeft" align="right" valign="top"><a id="adeb4a9572a0cf90f7d9659210e54bb47"></a>
+<a class="el" href="group___geometric___items.html#gad43d5e481b01b4370aa47a522cbecc26">MbePlaneType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#adeb4a9572a0cf90f7d9659210e54bb47">Family</a> () const override</td></tr>
+<tr class="memdesc:adeb4a9572a0cf90f7d9659210e54bb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить семейство объекта. <br /></td></tr>
+<tr class="separator:adeb4a9572a0cf90f7d9659210e54bb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc29ff2f1c4dbf8f239fb8516303a9d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_plane_item.html">MbPlaneItem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#acc29ff2f1c4dbf8f239fb8516303a9d6">Duplicate</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *=nullptr) const override</td></tr>
+<tr class="memdesc:acc29ff2f1c4dbf8f239fb8516303a9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию.  <a href="class_mb_region.html#acc29ff2f1c4dbf8f239fb8516303a9d6">Подробнее...</a><br /></td></tr>
+<tr class="separator:acc29ff2f1c4dbf8f239fb8516303a9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129df7df124044a52483bb4e8ee88649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a129df7df124044a52483bb4e8ee88649">Transform</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr, const <a class="el" href="class_mb_surface.html">MbSurface</a> *newSurface=nullptr) override</td></tr>
+<tr class="memdesc:a129df7df124044a52483bb4e8ee88649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать согласно матрице.  <a href="class_mb_region.html#a129df7df124044a52483bb4e8ee88649">Подробнее...</a><br /></td></tr>
+<tr class="separator:a129df7df124044a52483bb4e8ee88649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47ff07dc894d72286981a1873c6d1ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#ad47ff07dc894d72286981a1873c6d1ca">Move</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr, const <a class="el" href="class_mb_surface.html">MbSurface</a> *newSurface=nullptr) override</td></tr>
+<tr class="memdesc:ad47ff07dc894d72286981a1873c6d1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль вектора.  <a href="class_mb_region.html#ad47ff07dc894d72286981a1873c6d1ca">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad47ff07dc894d72286981a1873c6d1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1e4b114399fa9406ed0160d9f417f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a3e1e4b114399fa9406ed0160d9f417f8">Rotate</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr, const <a class="el" href="class_mb_surface.html">MbSurface</a> *newSurface=nullptr) override</td></tr>
+<tr class="memdesc:a3e1e4b114399fa9406ed0160d9f417f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг точки.  <a href="class_mb_region.html#a3e1e4b114399fa9406ed0160d9f417f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3e1e4b114399fa9406ed0160d9f417f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe116f44b5ea86948e8ae82eeba22fa3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#abe116f44b5ea86948e8ae82eeba22fa3">IsSame</a> (const <a class="el" href="class_mb_plane_item.html">MbPlaneItem</a> &amp;, double accuracy=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const override</td></tr>
+<tr class="memdesc:abe116f44b5ea86948e8ae82eeba22fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты равными.  <a href="class_mb_region.html#abe116f44b5ea86948e8ae82eeba22fa3">Подробнее...</a><br /></td></tr>
+<tr class="separator:abe116f44b5ea86948e8ae82eeba22fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e858718aa29b54ec9f06779487dcae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a81e858718aa29b54ec9f06779487dcae">SetEqual</a> (const <a class="el" href="class_mb_plane_item.html">MbPlaneItem</a> &amp;) override</td></tr>
+<tr class="memdesc:a81e858718aa29b54ec9f06779487dcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать объекты равным.  <a href="class_mb_region.html#a81e858718aa29b54ec9f06779487dcae">Подробнее...</a><br /></td></tr>
+<tr class="separator:a81e858718aa29b54ec9f06779487dcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef52761b2839fdc81ee4d2b983d458e0"><td class="memItemLeft" align="right" valign="top"><a id="aef52761b2839fdc81ee4d2b983d458e0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#aef52761b2839fdc81ee4d2b983d458e0">AddYourGabaritTo</a> (<a class="el" href="class_mb_rect.html">MbRect</a> &amp;) const override</td></tr>
+<tr class="memdesc:aef52761b2839fdc81ee4d2b983d458e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расширить присланный габаритный прямоугольник так, чтобы он включал в себя данный объект. <br /></td></tr>
+<tr class="separator:aef52761b2839fdc81ee4d2b983d458e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef8240ee46f8d913ae9e632b8dcc7bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#abef8240ee46f8d913ae9e632b8dcc7bb">CalculateLocalGabarit</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;into, <a class="el" href="class_mb_rect.html">MbRect</a> &amp;local) const</td></tr>
+<tr class="memdesc:abef8240ee46f8d913ae9e632b8dcc7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит в локальной системы координат.  <a href="class_mb_region.html#abef8240ee46f8d913ae9e632b8dcc7bb">Подробнее...</a><br /></td></tr>
+<tr class="separator:abef8240ee46f8d913ae9e632b8dcc7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd3b92ea8cb45b8621d0241e6bb266a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#abbd3b92ea8cb45b8621d0241e6bb266a">IsVisibleInRect</a> (const <a class="el" href="class_mb_rect.html">MbRect</a> &amp;, bool exact=false) const override</td></tr>
+<tr class="memdesc:abbd3b92ea8cb45b8621d0241e6bb266a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить видимость объекта в прямоугольнике.  <a href="class_mb_region.html#abbd3b92ea8cb45b8621d0241e6bb266a">Подробнее...</a><br /></td></tr>
+<tr class="separator:abbd3b92ea8cb45b8621d0241e6bb266a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8127a0c48d7afd697cd252a4c7ca6829"><td class="memItemLeft" align="right" valign="top"><a id="a8127a0c48d7afd697cd252a4c7ca6829"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a8127a0c48d7afd697cd252a4c7ca6829">DistanceToPoint</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;) const override</td></tr>
+<tr class="memdesc:a8127a0c48d7afd697cd252a4c7ca6829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить расстояние до точки. <br /></td></tr>
+<tr class="separator:a8127a0c48d7afd697cd252a4c7ca6829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a590b4c3ed4381f20df4cd26419d720"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a7a590b4c3ed4381f20df4cd26419d720">DistanceToPointIfLess</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, double &amp;distance) const override</td></tr>
+<tr class="memdesc:a7a590b4c3ed4381f20df4cd26419d720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить расстояние до точки.  <a href="class_mb_region.html#a7a590b4c3ed4381f20df4cd26419d720">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7a590b4c3ed4381f20df4cd26419d720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f21a9358c30151067a5982e7e2740dd"><td class="memItemLeft" align="right" valign="top"><a id="a8f21a9358c30151067a5982e7e2740dd"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a8f21a9358c30151067a5982e7e2740dd">Refresh</a> () override</td></tr>
+<tr class="memdesc:a8f21a9358c30151067a5982e7e2740dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевести все временные (mutable) данные объекта в неопределённое (исходное) состояние. <br /></td></tr>
+<tr class="separator:a8f21a9358c30151067a5982e7e2740dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336265d8360a89d9a80c81d871803b35"><td class="memItemLeft" align="right" valign="top"><a id="a336265d8360a89d9a80c81d871803b35"></a>
+<a class="el" href="class_mb_property.html">MbProperty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a336265d8360a89d9a80c81d871803b35">CreateProperty</a> (<a class="el" href="mb__property__title_8h.html#aff36a02591ff535f7cab841a4b0dd312">MbePrompt</a>) const override</td></tr>
+<tr class="memdesc:a336265d8360a89d9a80c81d871803b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать собственное свойство с заданием его имени. <br /></td></tr>
+<tr class="separator:a336265d8360a89d9a80c81d871803b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0860d802ff2ab5b786060e3e8efe935a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a0860d802ff2ab5b786060e3e8efe935a">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;) override</td></tr>
+<tr class="memdesc:a0860d802ff2ab5b786060e3e8efe935a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта.  <a href="class_mb_region.html#a0860d802ff2ab5b786060e3e8efe935a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0860d802ff2ab5b786060e3e8efe935a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9e5ebd58021e881b20a74d33fd6bc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a9e9e5ebd58021e881b20a74d33fd6bc8">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;) override</td></tr>
+<tr class="memdesc:a9e9e5ebd58021e881b20a74d33fd6bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить свойства объекта.  <a href="class_mb_region.html#a9e9e5ebd58021e881b20a74d33fd6bc8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9e9e5ebd58021e881b20a74d33fd6bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae666c015039dd0f6e7c6faec89f6a069"><td class="memItemLeft" align="right" valign="top"><a id="ae666c015039dd0f6e7c6faec89f6a069"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#ae666c015039dd0f6e7c6faec89f6a069">GetBasisPoints</a> (<a class="el" href="struct_mb_control_data.html">MbControlData</a> &amp;) const override</td></tr>
+<tr class="memdesc:ae666c015039dd0f6e7c6faec89f6a069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать контрольные точки объекта. <br /></td></tr>
+<tr class="separator:ae666c015039dd0f6e7c6faec89f6a069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48aed9c0ae81f772ccf00ee571ad7c2"><td class="memItemLeft" align="right" valign="top"><a id="aa48aed9c0ae81f772ccf00ee571ad7c2"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#aa48aed9c0ae81f772ccf00ee571ad7c2">SetBasisPoints</a> (const <a class="el" href="struct_mb_control_data.html">MbControlData</a> &amp;) override</td></tr>
+<tr class="memdesc:aa48aed9c0ae81f772ccf00ee571ad7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить объект по контрольным точкам. <br /></td></tr>
+<tr class="separator:aa48aed9c0ae81f772ccf00ee571ad7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции инициализации.</div></td></tr>
+<tr class="memitem:adc5d74b82162d91f13d68ccae754e181"><td class="memItemLeft" align="right" valign="top"><a id="adc5d74b82162d91f13d68ccae754e181"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#adc5d74b82162d91f13d68ccae754e181">Init</a> (const <a class="el" href="class_mb_contour.html">MbContour</a> &amp;, bool same)</td></tr>
+<tr class="memdesc:adc5d74b82162d91f13d68ccae754e181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация. <br /></td></tr>
+<tr class="separator:adc5d74b82162d91f13d68ccae754e181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae061e66eb9e95541d04b8944393b4774"><td class="memItemLeft" align="right" valign="top"><a id="ae061e66eb9e95541d04b8944393b4774"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#ae061e66eb9e95541d04b8944393b4774">Init</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;, bool same)</td></tr>
+<tr class="memdesc:ae061e66eb9e95541d04b8944393b4774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация. <br /></td></tr>
+<tr class="separator:ae061e66eb9e95541d04b8944393b4774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf03a70ce89c8271aa964ae10058b8a9"><td class="memItemLeft" align="right" valign="top"><a id="acf03a70ce89c8271aa964ae10058b8a9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#acf03a70ce89c8271aa964ae10058b8a9">Init</a> (const std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &gt; &amp;, bool same)</td></tr>
+<tr class="memdesc:acf03a70ce89c8271aa964ae10058b8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация. <br /></td></tr>
+<tr class="separator:acf03a70ce89c8271aa964ae10058b8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции доступа к данным.</div></td></tr>
+<tr class="memitem:a6d612283250adc51f511edc8458a7266"><td class="memItemLeft" align="right" valign="top"><a id="a6d612283250adc51f511edc8458a7266"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a6d612283250adc51f511edc8458a7266">GetContoursCount</a> () const</td></tr>
+<tr class="memdesc:a6d612283250adc51f511edc8458a7266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество контуров региона. <br /></td></tr>
+<tr class="separator:a6d612283250adc51f511edc8458a7266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb0d7c190e3391d9ec6618948babc13"><td class="memItemLeft" align="right" valign="top"><a id="a3fb0d7c190e3391d9ec6618948babc13"></a>
+const <a class="el" href="class_mb_contour.html">MbContour</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a3fb0d7c190e3391d9ec6618948babc13">GetContour</a> (size_t k) const</td></tr>
+<tr class="memdesc:a3fb0d7c190e3391d9ec6618948babc13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать контур с индексом index. <br /></td></tr>
+<tr class="separator:a3fb0d7c190e3391d9ec6618948babc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d9b6d7152bb862b777ef01bd691e8d"><td class="memItemLeft" align="right" valign="top"><a id="a44d9b6d7152bb862b777ef01bd691e8d"></a>
+const <a class="el" href="class_mb_contour.html">MbContour</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a44d9b6d7152bb862b777ef01bd691e8d">GetOutContour</a> () const</td></tr>
+<tr class="memdesc:a44d9b6d7152bb862b777ef01bd691e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать внешний контур. <br /></td></tr>
+<tr class="separator:a44d9b6d7152bb862b777ef01bd691e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции изменения данных.</div></td></tr>
+<tr class="memitem:a8342cfd61ce6687de15a7522a74b149a"><td class="memItemLeft" align="right" valign="top"><a id="a8342cfd61ce6687de15a7522a74b149a"></a>
+<a class="el" href="class_mb_contour.html">MbContour</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a8342cfd61ce6687de15a7522a74b149a">SetContour</a> (size_t k)</td></tr>
+<tr class="memdesc:a8342cfd61ce6687de15a7522a74b149a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать контур с индексом index. <br /></td></tr>
+<tr class="separator:a8342cfd61ce6687de15a7522a74b149a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c606abffd34ac0667750cc59de2d1b"><td class="memItemLeft" align="right" valign="top"><a id="a46c606abffd34ac0667750cc59de2d1b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a46c606abffd34ac0667750cc59de2d1b">DeleteContours</a> ()</td></tr>
+<tr class="memdesc:a46c606abffd34ac0667750cc59de2d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить используемые контуры и удалить остальные. <br /></td></tr>
+<tr class="separator:a46c606abffd34ac0667750cc59de2d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac36f74416ac1ed8d1dcf8e8e576d64"><td class="memTemplParams" colspan="2"><a id="a1ac36f74416ac1ed8d1dcf8e8e576d64"></a>
+template&lt;class ContoursVector &gt; </td></tr>
+<tr class="memitem:a1ac36f74416ac1ed8d1dcf8e8e576d64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a1ac36f74416ac1ed8d1dcf8e8e576d64">DetachContours</a> (ContoursVector &amp;dstContours)</td></tr>
+<tr class="memdesc:a1ac36f74416ac1ed8d1dcf8e8e576d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить все контуры региона без удаления. <br /></td></tr>
+<tr class="separator:a1ac36f74416ac1ed8d1dcf8e8e576d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65af4a38956a10e06b80c46542184fe5"><td class="memItemLeft" align="right" valign="top"><a id="a65af4a38956a10e06b80c46542184fe5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a65af4a38956a10e06b80c46542184fe5">SetCorrect</a> ()</td></tr>
+<tr class="memdesc:a65af4a38956a10e06b80c46542184fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать регион корректным (если это нужно и возможно). <br /></td></tr>
+<tr class="separator:a65af4a38956a10e06b80c46542184fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef9ba5d53bb04319307c688fd0fd943"><td class="memItemLeft" align="right" valign="top"><a id="aeef9ba5d53bb04319307c688fd0fd943"></a>
+<a class="el" href="group___base___tools.html#ga40a99a9e2ec266b0cb5df7b2d94be2a6">ThreeStates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#aeef9ba5d53bb04319307c688fd0fd943">GetCorrectState</a> () const</td></tr>
+<tr class="memdesc:aeef9ba5d53bb04319307c688fd0fd943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояние проверки корректности региона. <br /></td></tr>
+<tr class="separator:aeef9ba5d53bb04319307c688fd0fd943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e96c82eec1ae0da17af69d4d97188e6"><td class="memItemLeft" align="right" valign="top"><a id="a8e96c82eec1ae0da17af69d4d97188e6"></a>
+<a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a8e96c82eec1ae0da17af69d4d97188e6">PointClassification</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, double metricAcc) const</td></tr>
+<tr class="memdesc:a8e96c82eec1ae0da17af69d4d97188e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить положение точки относительно региона. <br /></td></tr>
+<tr class="separator:a8e96c82eec1ae0da17af69d4d97188e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dabd150c439a8d869aade42722233f9"><td class="memItemLeft" align="right" valign="top"><a id="a4dabd150c439a8d869aade42722233f9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a4dabd150c439a8d869aade42722233f9">IsAnyCurvilinear</a> () const</td></tr>
+<tr class="memdesc:a4dabd150c439a8d869aade42722233f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли в контуре криволинейный сегмент. <br /></td></tr>
+<tr class="separator:a4dabd150c439a8d869aade42722233f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8e46bfa4b1b37e27de9fcf639d3e71"><td class="memItemLeft" align="right" valign="top"><a id="a5a8e46bfa4b1b37e27de9fcf639d3e71"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a5a8e46bfa4b1b37e27de9fcf639d3e71">IsSpaceSame</a> (const <a class="el" href="class_mb_region.html">MbRegion</a> &amp;) const</td></tr>
+<tr class="memdesc:a5a8e46bfa4b1b37e27de9fcf639d3e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Одинаковы ли регионы геометрически. <br /></td></tr>
+<tr class="separator:a5a8e46bfa4b1b37e27de9fcf639d3e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd4cb9249c1edd35a8801f68bc7d1bb"><td class="memItemLeft" align="right" valign="top"><a id="afcd4cb9249c1edd35a8801f68bc7d1bb"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#afcd4cb9249c1edd35a8801f68bc7d1bb">CalculatePolygons</a> (double sag, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_polygon.html">MbPolygon</a> &gt; &amp;polygons) const</td></tr>
+<tr class="memdesc:afcd4cb9249c1edd35a8801f68bc7d1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать и добавить массивы отрисовочных точек с заданной стрелкой прогиба. <br /></td></tr>
+<tr class="separator:afcd4cb9249c1edd35a8801f68bc7d1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5070e384ca2915861ca73223e530f2"><td class="memItemLeft" align="right" valign="top"><a id="aec5070e384ca2915861ca73223e530f2"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#aec5070e384ca2915861ca73223e530f2">DeleteInnerContours</a> ()</td></tr>
+<tr class="memdesc:aec5070e384ca2915861ca73223e530f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить внутренние контуры. <br /></td></tr>
+<tr class="separator:aec5070e384ca2915861ca73223e530f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436a084383fd23ddda963d3ced6f8d12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_region.html#a436a084383fd23ddda963d3ced6f8d12">DeleteInnerContour</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memdesc:a436a084383fd23ddda963d3ced6f8d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить внутренний контур.  <a href="class_mb_region.html#a436a084383fd23ddda963d3ced6f8d12">Подробнее...</a><br /></td></tr>
+<tr class="separator:a436a084383fd23ddda963d3ced6f8d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_plane_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_plane_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_plane_item.html">MbPlaneItem</a></td></tr>
+<tr class="memitem:ad28726d4bf825b2590e122dbdd6fdbd8 inherit pub_methods_class_mb_plane_item"><td class="memItemLeft" align="right" valign="top"><a id="ad28726d4bf825b2590e122dbdd6fdbd8"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_plane_item.html#ad28726d4bf825b2590e122dbdd6fdbd8">~MbPlaneItem</a> ()</td></tr>
+<tr class="memdesc:ad28726d4bf825b2590e122dbdd6fdbd8 inherit pub_methods_class_mb_plane_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ad28726d4bf825b2590e122dbdd6fdbd8 inherit pub_methods_class_mb_plane_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6503e1ae477299448ec83945dbeca4 inherit pub_methods_class_mb_plane_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_plane_item.html#a8a6503e1ae477299448ec83945dbeca4">PrepareWrite</a> () const</td></tr>
+<tr class="memdesc:a8a6503e1ae477299448ec83945dbeca4 inherit pub_methods_class_mb_plane_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация объекта.  <a href="class_mb_plane_item.html#a8a6503e1ae477299448ec83945dbeca4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8a6503e1ae477299448ec83945dbeca4 inherit pub_methods_class_mb_plane_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118fa5a39db8162689f4c35f236efbc9 inherit pub_methods_class_mb_plane_item"><td class="memItemLeft" align="right" valign="top"><a id="a118fa5a39db8162689f4c35f236efbc9"></a>
+<a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_plane_item.html#a118fa5a39db8162689f4c35f236efbc9">RefType</a> () const override</td></tr>
+<tr class="memdesc:a118fa5a39db8162689f4c35f236efbc9 inherit pub_methods_class_mb_plane_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:a118fa5a39db8162689f4c35f236efbc9 inherit pub_methods_class_mb_plane_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a86a13351fed7687766bc453a09e92 inherit pub_methods_class_mb_plane_item"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_plane_item.html#a53a86a13351fed7687766bc453a09e92">Rotate</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, double angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr, const <a class="el" href="class_mb_surface.html">MbSurface</a> *newSurface=nullptr)</td></tr>
+<tr class="memdesc:a53a86a13351fed7687766bc453a09e92 inherit pub_methods_class_mb_plane_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг точки.  <a href="class_mb_plane_item.html#a53a86a13351fed7687766bc453a09e92">Подробнее...</a><br /></td></tr>
+<tr class="separator:a53a86a13351fed7687766bc453a09e92 inherit pub_methods_class_mb_plane_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32702e5087503ec503990a5e817a6efb inherit pub_methods_class_mb_plane_item"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_plane_item.html#a32702e5087503ec503990a5e817a6efb">IsSimilar</a> (const <a class="el" href="class_mb_plane_item.html">MbPlaneItem</a> &amp;item) const</td></tr>
+<tr class="memdesc:a32702e5087503ec503990a5e817a6efb inherit pub_methods_class_mb_plane_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты подобными.  <a href="class_mb_plane_item.html#a32702e5087503ec503990a5e817a6efb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a32702e5087503ec503990a5e817a6efb inherit pub_methods_class_mb_plane_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a305e3712ee6124e354115f4da5ad63bb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a305e3712ee6124e354115f4da5ad63bb">IsFamilyRegistrable</a> () const</td></tr>
+<tr class="memdesc:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_class_mb_plane_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_plane_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_plane_item.html">MbPlaneItem</a></td></tr>
+<tr class="memitem:ade6748240e15f72acb813febe832a960 inherit pro_methods_class_mb_plane_item"><td class="memItemLeft" align="right" valign="top"><a id="ade6748240e15f72acb813febe832a960"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_plane_item.html#ade6748240e15f72acb813febe832a960">MbPlaneItem</a> ()</td></tr>
+<tr class="memdesc:ade6748240e15f72acb813febe832a960 inherit pro_methods_class_mb_plane_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:ade6748240e15f72acb813febe832a960 inherit pro_methods_class_mb_plane_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Двумерный регион. </p>
+<p>Регион состоит из набора замкнутых составных кривых (контуров) <a class="el" href="class_mb_contour.html" title="Контур в двумерном пространстве.">MbContour</a>. <br  />
+ Регион представляет собой связное множество точек двумерного пространства, границы которого описывают контуры. Контуры региона замкнуты и не имеют самопересечений (но могут иметь самокасания). В произвольном регионе обязан быть один (и только один) внешний контур (положительный обход внешнего контура осуществляется против часовой стрелки) и несколько внутренних контуров (положительный обход внутреннего контура осуществляется по часовой стрелке), которые полностью лежат внутри внешнего контура (или могут его касаться). В массиве contours первым всегда лежит внешний контур. Над регионами можно выполнять булевы операции. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="acc29ff2f1c4dbf8f239fb8516303a9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc29ff2f1c4dbf8f239fb8516303a9d6">&#9670;&nbsp;</a></span>Duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_plane_item.html">MbPlaneItem</a>&amp; MbRegion::Duplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать копию. </p>
+<p>Создать копию объекта с использованием регистратора. Регистратор используется для предотвращения многократного копирования объекта. Если объект содержит ссылки на другие объекты, то вложенные объекты так же копируются. Допустимо не передавать регистратор в функцию. Тогда будет создана новая копия объекта. При копировании одиночного объекта или набора не связанных между собой объектов допустимо не использовать регистратор. Регистратор необходимо использовать, если надо последовательно копировать несколько взаимосвязанных объектов. Возможно, что связь объектов обусловлена наличием в них ссылок на общие объекты. Тогда, при копировании без использования регистратора, можно получить набор копий, содержащих ссылки на разные копии одного и того же вложенного объекта, что ведет к потере связи между копиями.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Копия объекта. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a8f970a88f5f8814a5b76b21e23dc041e">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="a129df7df124044a52483bb4e8ee88649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129df7df124044a52483bb4e8ee88649">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbRegion::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>matr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td>
+          <td class="paramname"><em>newSurface</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразовать согласно матрице. </p>
+<p>Преобразовать исходный объект согласно матрице c использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то вложенные объекты так же преобразуются согласно матрице. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих трансформации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">matr</td><td>- Матрица преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Новая базовая поверхность объекта при условии, что matr - матрица преобразования из старой поверхности в новую. Для трансформации проекционной кривой. Не учитывается, если поверхность плоская. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a93be97cd71090e817f5e28f9a34673a7">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="ad47ff07dc894d72286981a1873c6d1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47ff07dc894d72286981a1873c6d1ca">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbRegion::Move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td>
+          <td class="paramname"><em>newSurface</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сдвинуть вдоль вектора. </p>
+<p>Сдвинуть геометрический объект вдоль вектора с использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то к вложенным объектам так же применяется операция сдвига. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих сдвигу.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>- Вектор сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Новая базовая поверхность объекта при условии, что matr - матрица преобразования из старой поверхности в новую. Для трансформации проекционной кривой. Не учитывается, если поверхность плоская. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a671c737e05b4369a1218d91d2babf8a1">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="a3e1e4b114399fa9406ed0160d9f417f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1e4b114399fa9406ed0160d9f417f8">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbRegion::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td>
+          <td class="paramname"><em>newSurface</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повернуть вокруг точки. </p>
+<p>Повернуть объект вокруг точки на заданный угол с использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то к вложенным объектам так же применяется операция поворота. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих повороту.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Неподвижная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Новая базовая поверхность объекта при условии, что matr - матрица преобразования из старой поверхности в новую. Для трансформации проекционной кривой. Не учитывается, если поверхность плоская. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#ac88c939cb51fd1220177d452abe0c30f">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="abe116f44b5ea86948e8ae82eeba22fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe116f44b5ea86948e8ae82eeba22fa3">&#9670;&nbsp;</a></span>IsSame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbRegion::IsSame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_plane_item.html">MbPlaneItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em> = <code><a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты равными. </p>
+<p>Равными считаются однотипные объекты, все данные которых одинаковы (равны).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для сравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Точность сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Равны ли объекты. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a01c99f3dda04733d5cc6537c0949a13c">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="a81e858718aa29b54ec9f06779487dcae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e858718aa29b54ec9f06779487dcae">&#9670;&nbsp;</a></span>SetEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbRegion::SetEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_plane_item.html">MbPlaneItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сделать объекты равным. </p>
+<p>Равными можно сделать только подобные объекты. Подобный объект приравнивается присланному путем изменения численных данных.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для инициализации.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сделан ли объект равным присланному. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a63cdf2016d229c432681b8765c2adfe7">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="abef8240ee46f8d913ae9e632b8dcc7bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef8240ee46f8d913ae9e632b8dcc7bb">&#9670;&nbsp;</a></span>CalculateLocalGabarit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbRegion::CalculateLocalGabarit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>into</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_rect.html">MbRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>local</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать габарит в локальной системы координат. </p>
+<p>Для получения габарита объекта относительно локальной системы координат, присланный прямоугольник делается пустым. Затем вычисляются габариты объекта в локальной системе координат и сохраняются в прямоугольнике local.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">into</td><td>- Матрица перехода от текущей для объекта системы координат к локальной системе координат.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">local</td><td>- Прямоугольник с информацией по габаритам. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbd3b92ea8cb45b8621d0241e6bb266a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd3b92ea8cb45b8621d0241e6bb266a">&#9670;&nbsp;</a></span>IsVisibleInRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbRegion::IsVisibleInRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_rect.html">MbRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>exact</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить видимость объекта в прямоугольнике. </p>
+<p>Считается, что объект виден в прямоугольнике, если габариты объекта пересекаются с заданным прямоугольником или (при повышенных требованиях к точности exact = true) в прямоугольник попадает хотя бы одна точка объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rect</td><td>- Прямоугольник, попадание в который проверяется.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exact</td><td>- Точность проверки. При exact = true в прямоугольник должна попасть хотя бы одна точка объекта. При exact = false - достаточно пересечения габарита объекта с прямоугольником.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - объект виден в прямоугольнике, иначе - false. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a1344338904fbd4f1bad0f6c63ffe5b6f">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="a7a590b4c3ed4381f20df4cd26419d720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a590b4c3ed4381f20df4cd26419d720">&#9670;&nbsp;</a></span>DistanceToPointIfLess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbRegion::DistanceToPointIfLess </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычислить расстояние до точки. </p>
+<p>Вычислить расстояние от объекта до заданной точки вблизи объекта. Расстояние вычисляется и записывается в переменную d, если оно меньше исходного значения d. Может быть получен выигрыш по времени выполнения по сравнению с функцией DistanceToPoint, за счет того, что сначала проверяется расстояние от точки до габаритного куба, и только если это расстояние не больше заданного, выполняются дальнейшие вычисления.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">d</td><td>- На входе - заданная величина отступа от объекта. На выходе - расстояние от точки до объекта, если операция выполнена успешно.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если расстояние от точки до объекта меньше заданного, иначе - false. Рассчитать расстояние до точки и изменить его присланное значение, если расстояние окажется меньше присланного значения. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a5a05c31b3f67733ea291b08f624028d5">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="a0860d802ff2ab5b786060e3e8efe935a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0860d802ff2ab5b786060e3e8efe935a">&#9670;&nbsp;</a></span>GetProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbRegion::GetProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_properties.html">MbProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать свойства объекта. </p>
+<p>Выдать внутренние данные (свойства) объекта для их просмотра и модификации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">properties</td><td>- Контейнер для внутренних данных объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a4e55cd3cd8367a49484996b37f367286">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="a9e9e5ebd58021e881b20a74d33fd6bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9e5ebd58021e881b20a74d33fd6bc8">&#9670;&nbsp;</a></span>SetProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbRegion::SetProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изменить свойства объекта. </p>
+<p>Изменение внутренних данных (свойств) объекта выполняется копированием соответствующих значений из присланного объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">properties</td><td>- Контейнер для внутренних данных объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_plane_item.html#a0fa860f1bb5223b138f203efbf320242">MbPlaneItem</a>.</p>
+
+</div>
+</div>
+<a id="a436a084383fd23ddda963d3ced6f8d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436a084383fd23ddda963d3ced6f8d12">&#9670;&nbsp;</a></span>DeleteInnerContour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbRegion::DeleteInnerContour </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить внутренний контур. </p>
+<p>Удалить внутренний контур по индексу. Индекс проверяется на корректность.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Индекс внутреннего контура. Должен быть больше нуля, но меньше количества контуров.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true Если контур был удален. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="region_8h.html">region.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_region.html">MbRegion</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:05. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

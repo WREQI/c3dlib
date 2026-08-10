@@ -1,0 +1,1360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbSpine</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_spine.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="class_mb_spine-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbSpine<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___modelling___functions.html">Методы геометрических построений</a> &raquo; <a class="el" href="group___surface___modeling.html">Построение поверхностей</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Криволинейная направляющая для кинематической поверхности.  
+ <a href="class_mb_spine.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;surf_spine.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbSpine:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_spine__inherit__graph.svg" width="200" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbSpine:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_spine__coll__graph.svg" width="200" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a0dc3c96334d35076bba437d09182fd9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9f">LocalAxes</a> { <br />
+&#160;&#160;<a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9fa73a3668b5b1c32112e84981af7490636">la_planeParallel</a> = 0
+, <a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9fa880d91220e437847b02a9cf324b15db4">la_calcDirection</a> = 1
+, <a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9fa0e40c5dbf1a2f5bc71f116d0d18b2c52">la_userDirection</a> = 2
+, <a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9fa58db91fe11bd039b37232953a4825fd8">la_surfaceNormal</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9fa8c1756ed665fdf0a6dd80c43b3dd2b9d">la_optionalCurve</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a0dc3c96334d35076bba437d09182fd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы движения локальной системы координат вдоль направляющей кривой "curve".  <a href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0dc3c96334d35076bba437d09182fd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Базовые функции</div></td></tr>
+<tr class="memitem:a7436fd6903454b55f3361c76c7c0bd6d"><td class="memItemLeft" align="right" valign="top"><a id="a7436fd6903454b55f3361c76c7c0bd6d"></a>
+<a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a7436fd6903454b55f3361c76c7c0bd6d">IsA</a> () const</td></tr>
+<tr class="memdesc:a7436fd6903454b55f3361c76c7c0bd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип элемента. <br /></td></tr>
+<tr class="separator:a7436fd6903454b55f3361c76c7c0bd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28abe094d667b87210549809a9e24793"><td class="memItemLeft" align="right" valign="top"><a id="a28abe094d667b87210549809a9e24793"></a>
+<a class="el" href="class_mb_spine.html">MbSpine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a28abe094d667b87210549809a9e24793">Duplicate</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *=nullptr) const</td></tr>
+<tr class="memdesc:a28abe094d667b87210549809a9e24793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать копию элемента. <br /></td></tr>
+<tr class="separator:a28abe094d667b87210549809a9e24793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818cf6ebf473049548757769b2f70761"><td class="memItemLeft" align="right" valign="top"><a id="a818cf6ebf473049548757769b2f70761"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a818cf6ebf473049548757769b2f70761">SetEqual</a> (const <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;)</td></tr>
+<tr class="memdesc:a818cf6ebf473049548757769b2f70761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать равным. <br /></td></tr>
+<tr class="separator:a818cf6ebf473049548757769b2f70761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c0bb7ef2879874f7ae23b33e16ab9e"><td class="memItemLeft" align="right" valign="top"><a id="a93c0bb7ef2879874f7ae23b33e16ab9e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a93c0bb7ef2879874f7ae23b33e16ab9e">IsSimilar</a> (const <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;) const</td></tr>
+<tr class="memdesc:a93c0bb7ef2879874f7ae23b33e16ab9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты подобными. <br /></td></tr>
+<tr class="separator:a93c0bb7ef2879874f7ae23b33e16ab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acceace9a54a1c03691dfe92a74619bc6"><td class="memItemLeft" align="right" valign="top"><a id="acceace9a54a1c03691dfe92a74619bc6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#acceace9a54a1c03691dfe92a74619bc6">IsSame</a> (const <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;other, double accuracy=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const</td></tr>
+<tr class="memdesc:acceace9a54a1c03691dfe92a74619bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Равны ли объекты. <br /></td></tr>
+<tr class="separator:acceace9a54a1c03691dfe92a74619bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91da98f11b11e2055dd204787bab58f1"><td class="memItemLeft" align="right" valign="top"><a id="a91da98f11b11e2055dd204787bab58f1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a91da98f11b11e2055dd204787bab58f1">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr)</td></tr>
+<tr class="memdesc:a91da98f11b11e2055dd204787bab58f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать элемент согласно матрице. <br /></td></tr>
+<tr class="separator:a91da98f11b11e2055dd204787bab58f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660b513b212d557239415ccb737be6f3"><td class="memItemLeft" align="right" valign="top"><a id="a660b513b212d557239415ccb737be6f3"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a660b513b212d557239415ccb737be6f3">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr)</td></tr>
+<tr class="memdesc:a660b513b212d557239415ccb737be6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвиг. <br /></td></tr>
+<tr class="separator:a660b513b212d557239415ccb737be6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a40efaf7e336cd60243f2843a67ddbe"><td class="memItemLeft" align="right" valign="top"><a id="a1a40efaf7e336cd60243f2843a67ddbe"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a1a40efaf7e336cd60243f2843a67ddbe">Rotate</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;, double angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr)</td></tr>
+<tr class="memdesc:a1a40efaf7e336cd60243f2843a67ddbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг оси. <br /></td></tr>
+<tr class="separator:a1a40efaf7e336cd60243f2843a67ddbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9219dd5878a81bb05327483dbca323"><td class="memItemLeft" align="right" valign="top"><a id="abc9219dd5878a81bb05327483dbca323"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#abc9219dd5878a81bb05327483dbca323">Inverse</a> (<a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:abc9219dd5878a81bb05327483dbca323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить направление. <br /></td></tr>
+<tr class="separator:abc9219dd5878a81bb05327483dbca323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab68608c24ae3476de2aac8fae2941cc"><td class="memItemLeft" align="right" valign="top"><a id="aab68608c24ae3476de2aac8fae2941cc"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#aab68608c24ae3476de2aac8fae2941cc">Reset</a> ()</td></tr>
+<tr class="memdesc:aab68608c24ae3476de2aac8fae2941cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбросить временные данные объекта. <br /></td></tr>
+<tr class="separator:aab68608c24ae3476de2aac8fae2941cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Общие описания области определения направляющей кривой</div></td></tr>
+<tr class="memitem:a99ba8bd3087ff9bc54d31ebfcd60d156"><td class="memItemLeft" align="right" valign="top"><a id="a99ba8bd3087ff9bc54d31ebfcd60d156"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a99ba8bd3087ff9bc54d31ebfcd60d156">GetTMax</a> () const</td></tr>
+<tr class="memdesc:a99ba8bd3087ff9bc54d31ebfcd60d156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть максимальное значение параметра. <br /></td></tr>
+<tr class="separator:a99ba8bd3087ff9bc54d31ebfcd60d156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8d8489bf80fa7731d2b29dbc254825"><td class="memItemLeft" align="right" valign="top"><a id="a5d8d8489bf80fa7731d2b29dbc254825"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a5d8d8489bf80fa7731d2b29dbc254825">GetTMin</a> () const</td></tr>
+<tr class="memdesc:a5d8d8489bf80fa7731d2b29dbc254825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть минимальное значение параметра. <br /></td></tr>
+<tr class="separator:a5d8d8489bf80fa7731d2b29dbc254825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f371d2ad350a0f8add19b8cee7ff524"><td class="memItemLeft" align="right" valign="top"><a id="a4f371d2ad350a0f8add19b8cee7ff524"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a4f371d2ad350a0f8add19b8cee7ff524">IsClosed</a> () const</td></tr>
+<tr class="memdesc:a4f371d2ad350a0f8add19b8cee7ff524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка замкнутости кривой. <br /></td></tr>
+<tr class="separator:a4f371d2ad350a0f8add19b8cee7ff524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции для работы в области определения направляющей кривой</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Функции PointOn, FirstDer... корректируют параметры при выходе их за пределы области определения параметров направляющей кривой. </p>
+</div></td></tr>
+<tr class="memitem:a42a255364361c4b092c9d559b0079c64"><td class="memItemLeft" align="right" valign="top"><a id="a42a255364361c4b092c9d559b0079c64"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a42a255364361c4b092c9d559b0079c64">PointOn</a> (double &amp;t, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a42a255364361c4b092c9d559b0079c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка на кривой. <br /></td></tr>
+<tr class="separator:a42a255364361c4b092c9d559b0079c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825fa11fd34d53a27c4f30499f7b85dc"><td class="memItemLeft" align="right" valign="top"><a id="a825fa11fd34d53a27c4f30499f7b85dc"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a825fa11fd34d53a27c4f30499f7b85dc">FirstDer</a> (double &amp;t, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a825fa11fd34d53a27c4f30499f7b85dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Первая производная. <br /></td></tr>
+<tr class="separator:a825fa11fd34d53a27c4f30499f7b85dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b10aee6cd7e745479322277d979d18"><td class="memItemLeft" align="right" valign="top"><a id="a76b10aee6cd7e745479322277d979d18"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a76b10aee6cd7e745479322277d979d18">SecondDer</a> (double &amp;t, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a76b10aee6cd7e745479322277d979d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вторая производная. <br /></td></tr>
+<tr class="separator:a76b10aee6cd7e745479322277d979d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdc5654f9f549666521e0997a13310d"><td class="memItemLeft" align="right" valign="top"><a id="a0cdc5654f9f549666521e0997a13310d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a0cdc5654f9f549666521e0997a13310d">ThirdDer</a> (double &amp;t, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a0cdc5654f9f549666521e0997a13310d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Третья производная. <br /></td></tr>
+<tr class="separator:a0cdc5654f9f549666521e0997a13310d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции для работы внутри и вне области определения направляющей кривой</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>функции _PointOn, _FirstDer... корректируют параметры при выходе их за пределы области определения параметров направляющей кривой. </p>
+</div></td></tr>
+<tr class="memitem:a321a5569a2cc08b6d25cd11bbbf4e0df"><td class="memItemLeft" align="right" valign="top"><a id="a321a5569a2cc08b6d25cd11bbbf4e0df"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a321a5569a2cc08b6d25cd11bbbf4e0df">_PointOn</a> (double t, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a321a5569a2cc08b6d25cd11bbbf4e0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка на кривой. <br /></td></tr>
+<tr class="separator:a321a5569a2cc08b6d25cd11bbbf4e0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf85785b94f5630be207dc1bdd47ac4"><td class="memItemLeft" align="right" valign="top"><a id="a2bf85785b94f5630be207dc1bdd47ac4"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a2bf85785b94f5630be207dc1bdd47ac4">_FirstDer</a> (double t, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a2bf85785b94f5630be207dc1bdd47ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Первая производная. <br /></td></tr>
+<tr class="separator:a2bf85785b94f5630be207dc1bdd47ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882ed960e25858e544a15212cb8d986e"><td class="memItemLeft" align="right" valign="top"><a id="a882ed960e25858e544a15212cb8d986e"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a882ed960e25858e544a15212cb8d986e">_SecondDer</a> (double t, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a882ed960e25858e544a15212cb8d986e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вторая производная. <br /></td></tr>
+<tr class="separator:a882ed960e25858e544a15212cb8d986e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29a85862e6944efe73c62d0f4fc0e7e"><td class="memItemLeft" align="right" valign="top"><a id="ab29a85862e6944efe73c62d0f4fc0e7e"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ab29a85862e6944efe73c62d0f4fc0e7e">_ThirdDer</a> (double t, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:ab29a85862e6944efe73c62d0f4fc0e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Третья производная. <br /></td></tr>
+<tr class="separator:ab29a85862e6944efe73c62d0f4fc0e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74373a6fdf8a0b6c1617f7b18080ea1"><td class="memItemLeft" align="right" valign="top"><a id="aa74373a6fdf8a0b6c1617f7b18080ea1"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#aa74373a6fdf8a0b6c1617f7b18080ea1">Explore</a> (double &amp;t, bool ext, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pnt, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;fir, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> *sec, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> *thir) const</td></tr>
+<tr class="memdesc:aa74373a6fdf8a0b6c1617f7b18080ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить значения точки и производных для заданного параметра. <br /></td></tr>
+<tr class="separator:aa74373a6fdf8a0b6c1617f7b18080ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции движения по направляющей кривой</div></td></tr>
+<tr class="memitem:ac8de77503bc4597e76a3a632a005bad6"><td class="memItemLeft" align="right" valign="top"><a id="ac8de77503bc4597e76a3a632a005bad6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ac8de77503bc4597e76a3a632a005bad6">Step</a> (double t, double sag) const</td></tr>
+<tr class="memdesc:ac8de77503bc4597e76a3a632a005bad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление шага аппроксимации по величине прогиба. <br /></td></tr>
+<tr class="separator:ac8de77503bc4597e76a3a632a005bad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cffa8448ede4453fa82c950872a6f85"><td class="memItemLeft" align="right" valign="top"><a id="a5cffa8448ede4453fa82c950872a6f85"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a5cffa8448ede4453fa82c950872a6f85">DeviationStep</a> (double t, double angle) const</td></tr>
+<tr class="memdesc:a5cffa8448ede4453fa82c950872a6f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление шага аппроксимации по углу отклонения нормали. <br /></td></tr>
+<tr class="separator:a5cffa8448ede4453fa82c950872a6f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции изменения и доступа к данным</div></td></tr>
+<tr class="memitem:a0c1714c52bb705d89c4af9f292ff4ebe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a0c1714c52bb705d89c4af9f292ff4ebe">TransformMatrix</a> (double v, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix) const</td></tr>
+<tr class="memdesc:a0c1714c52bb705d89c4af9f292ff4ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение матрицы переноса для образующей. <br  />
+  <a href="class_mb_spine.html#a0c1714c52bb705d89c4af9f292ff4ebe">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0c1714c52bb705d89c4af9f292ff4ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2b3661954f75172176f7380c35d335"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a1b2b3661954f75172176f7380c35d335">MoveVector</a> (double &amp;v, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vect) const</td></tr>
+<tr class="memdesc:a1b2b3661954f75172176f7380c35d335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение вектора переноса для образующей. <br  />
+  <a href="class_mb_spine.html#a1b2b3661954f75172176f7380c35d335">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1b2b3661954f75172176f7380c35d335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1456eec63cde42b6211c97237ad36bec"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a1456eec63cde42b6211c97237ad36bec">GetOrt0</a> () const</td></tr>
+<tr class="memdesc:a1456eec63cde42b6211c97237ad36bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Первой вектор базиса в рассчитанной направляющей.  <a href="class_mb_spine.html#a1456eec63cde42b6211c97237ad36bec">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1456eec63cde42b6211c97237ad36bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5847ecac60aa305217600c0b9978e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a0d5847ecac60aa305217600c0b9978e0">CalculateMatrix</a> (double &amp;v, bool ext, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix0, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix1, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix2) const</td></tr>
+<tr class="memdesc:a0d5847ecac60aa305217600c0b9978e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление матриц преобразования.  <a href="class_mb_spine.html#a0d5847ecac60aa305217600c0b9978e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0d5847ecac60aa305217600c0b9978e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881e196c3b6cb282347d0c8d3a318eb8"><td class="memItemLeft" align="right" valign="top"><a id="a881e196c3b6cb282347d0c8d3a318eb8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateMatrix</b> (double &amp;v, bool ext, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix0, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix1) const</td></tr>
+<tr class="separator:a881e196c3b6cb282347d0c8d3a318eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad70d0962b03e4ef97382d2f0f14688f"><td class="memItemLeft" align="right" valign="top"><a id="aad70d0962b03e4ef97382d2f0f14688f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateMatrix0</b> (double &amp;v, bool ext, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix0) const</td></tr>
+<tr class="separator:aad70d0962b03e4ef97382d2f0f14688f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2c7cf8f60a9a3383bfa792390f4700"><td class="memItemLeft" align="right" valign="top"><a id="a7c2c7cf8f60a9a3383bfa792390f4700"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateMatrix1</b> (double &amp;v, bool ext, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix1) const</td></tr>
+<tr class="separator:a7c2c7cf8f60a9a3383bfa792390f4700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a68b743023c3c070cb33d7f627de1f7"><td class="memItemLeft" align="right" valign="top"><a id="a6a68b743023c3c070cb33d7f627de1f7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateMatrix2</b> (double &amp;v, bool ext, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix2) const</td></tr>
+<tr class="separator:a6a68b743023c3c070cb33d7f627de1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa5b67ac9046eb50a102b68ef6d8612"><td class="memItemLeft" align="right" valign="top"><a id="a0aa5b67ac9046eb50a102b68ef6d8612"></a>
+const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a0aa5b67ac9046eb50a102b68ef6d8612">GetCurve</a> () const</td></tr>
+<tr class="memdesc:a0aa5b67ac9046eb50a102b68ef6d8612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Направляющая кривая. <br /></td></tr>
+<tr class="separator:a0aa5b67ac9046eb50a102b68ef6d8612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a5970ca862f1be74c554b2e7e0664b"><td class="memItemLeft" align="right" valign="top"><a id="aa6a5970ca862f1be74c554b2e7e0664b"></a>
+<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#aa6a5970ca862f1be74c554b2e7e0664b">SetCurve</a> ()</td></tr>
+<tr class="memdesc:aa6a5970ca862f1be74c554b2e7e0664b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать направляющую кривую для изменения. <br /></td></tr>
+<tr class="separator:aa6a5970ca862f1be74c554b2e7e0664b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85376d9a49ef7e00ae64e18555e372e2"><td class="memItemLeft" align="right" valign="top"><a id="a85376d9a49ef7e00ae64e18555e372e2"></a>
+const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a85376d9a49ef7e00ae64e18555e372e2">GetDirectionCurve</a> () const</td></tr>
+<tr class="memdesc:a85376d9a49ef7e00ae64e18555e372e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ориентирующая кривая. <br /></td></tr>
+<tr class="separator:a85376d9a49ef7e00ae64e18555e372e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa342a730b239687a99ea4c3da82f80f4"><td class="memItemLeft" align="right" valign="top"><a id="aa342a730b239687a99ea4c3da82f80f4"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#aa342a730b239687a99ea4c3da82f80f4">GetVersion</a> () const</td></tr>
+<tr class="memdesc:aa342a730b239687a99ea4c3da82f80f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Версия расчета вектора ориентации матрицы преобразования. <br /></td></tr>
+<tr class="separator:aa342a730b239687a99ea4c3da82f80f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78c8f5c5dcb3e1921b9cd849af82865"><td class="memItemLeft" align="right" valign="top"><a id="ac78c8f5c5dcb3e1921b9cd849af82865"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ac78c8f5c5dcb3e1921b9cd849af82865">ChangeCurve</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;)</td></tr>
+<tr class="memdesc:ac78c8f5c5dcb3e1921b9cd849af82865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить направляющую кривую. <br /></td></tr>
+<tr class="separator:ac78c8f5c5dcb3e1921b9cd849af82865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb1bdb442b44fc75559c9604da5c0fe"><td class="memItemLeft" align="right" valign="top"><a id="a0cb1bdb442b44fc75559c9604da5c0fe"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a0cb1bdb442b44fc75559c9604da5c0fe">ChangeOptionalCurve</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;)</td></tr>
+<tr class="memdesc:a0cb1bdb442b44fc75559c9604da5c0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить ориентирующую кривую. <br /></td></tr>
+<tr class="separator:a0cb1bdb442b44fc75559c9604da5c0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e97c433bc773619648f83836b2a0b2"><td class="memItemLeft" align="right" valign="top"><a id="a38e97c433bc773619648f83836b2a0b2"></a>
+const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a38e97c433bc773619648f83836b2a0b2">GetDirection</a> () const</td></tr>
+<tr class="memdesc:a38e97c433bc773619648f83836b2a0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор ориентации матрицы преобразования. <br /></td></tr>
+<tr class="separator:a38e97c433bc773619648f83836b2a0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d20449c83260ccf00ba821b09fe7572"><td class="memItemLeft" align="right" valign="top"><a id="a4d20449c83260ccf00ba821b09fe7572"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a4d20449c83260ccf00ba821b09fe7572">SetDirection</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;d, bool checkBySpineCurve=false)</td></tr>
+<tr class="memdesc:a4d20449c83260ccf00ba821b09fe7572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить вектор ориентации матрицы преобразования. <br /></td></tr>
+<tr class="separator:a4d20449c83260ccf00ba821b09fe7572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61bb10934da3c4c1868f06b358d8025"><td class="memItemLeft" align="right" valign="top"><a id="ab61bb10934da3c4c1868f06b358d8025"></a>
+<a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9f">LocalAxes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ab61bb10934da3c4c1868f06b358d8025">GetLocalAxisMethod</a> () const</td></tr>
+<tr class="memdesc:ab61bb10934da3c4c1868f06b358d8025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать способ ориентации локальной системы координат. <br /></td></tr>
+<tr class="separator:ab61bb10934da3c4c1868f06b358d8025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51056639e0c3c6a0794982fd0efb500"><td class="memItemLeft" align="right" valign="top"><a id="af51056639e0c3c6a0794982fd0efb500"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#af51056639e0c3c6a0794982fd0efb500">SetLocalAxisMethod</a> (<a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9f">LocalAxes</a> la)</td></tr>
+<tr class="memdesc:af51056639e0c3c6a0794982fd0efb500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать способ ориентации локальной системы координат. <br /></td></tr>
+<tr class="separator:af51056639e0c3c6a0794982fd0efb500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac390bf6d697ae123b5c38b02271802e1"><td class="memItemLeft" align="right" valign="top"><a id="ac390bf6d697ae123b5c38b02271802e1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ac390bf6d697ae123b5c38b02271802e1">IsParallel</a> () const</td></tr>
+<tr class="memdesc:ac390bf6d697ae123b5c38b02271802e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак параллельного переноса. <br /></td></tr>
+<tr class="separator:ac390bf6d697ae123b5c38b02271802e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c23f25807e16d09fdfc72f7790b3ae"><td class="memItemLeft" align="right" valign="top"><a id="a66c23f25807e16d09fdfc72f7790b3ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a66c23f25807e16d09fdfc72f7790b3ae">IsUserDirection</a> () const</td></tr>
+<tr class="memdesc:a66c23f25807e16d09fdfc72f7790b3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак пользовательского направления. <br /></td></tr>
+<tr class="separator:a66c23f25807e16d09fdfc72f7790b3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e931d01cb1f513da452aa027ba5586"><td class="memItemLeft" align="right" valign="top"><a id="ae7e931d01cb1f513da452aa027ba5586"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ae7e931d01cb1f513da452aa027ba5586">BySurfaceNormal</a> () const</td></tr>
+<tr class="memdesc:ae7e931d01cb1f513da452aa027ba5586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак направления по нормали к поверхности. <br /></td></tr>
+<tr class="separator:ae7e931d01cb1f513da452aa027ba5586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e99bc2d9ee677f528e0c5f0af0f42ca"><td class="memItemLeft" align="right" valign="top"><a id="a7e99bc2d9ee677f528e0c5f0af0f42ca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a7e99bc2d9ee677f528e0c5f0af0f42ca">ByOptionalCurve</a> () const</td></tr>
+<tr class="memdesc:a7e99bc2d9ee677f528e0c5f0af0f42ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак направления по вспомогательной кривой. <br /></td></tr>
+<tr class="separator:a7e99bc2d9ee677f528e0c5f0af0f42ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3136fbbaf0777e309ad7d54a8f42c9ea"><td class="memItemLeft" align="right" valign="top"><a id="a3136fbbaf0777e309ad7d54a8f42c9ea"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a3136fbbaf0777e309ad7d54a8f42c9ea">GetOrtParam</a> () const</td></tr>
+<tr class="memdesc:a3136fbbaf0777e309ad7d54a8f42c9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр кривой, для которой рассчитан базис направляющей. <br /></td></tr>
+<tr class="separator:a3136fbbaf0777e309ad7d54a8f42c9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0409d8793408110c1d09a75f7fa163"><td class="memItemLeft" align="right" valign="top"><a id="a3e0409d8793408110c1d09a75f7fa163"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a3e0409d8793408110c1d09a75f7fa163">SetOrtParam</a> (double t)</td></tr>
+<tr class="memdesc:a3e0409d8793408110c1d09a75f7fa163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить параметр кривой, для которой рассчитан базис направляющей. <br /></td></tr>
+<tr class="separator:a3e0409d8793408110c1d09a75f7fa163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493c24c3e7d7143aa6ea9f328f466a81"><td class="memItemLeft" align="right" valign="top"><a id="a493c24c3e7d7143aa6ea9f328f466a81"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a493c24c3e7d7143aa6ea9f328f466a81">BaseVectors0</a> (double &amp;v, bool ext, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;origin, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector0, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector2) const</td></tr>
+<tr class="memdesc:a493c24c3e7d7143aa6ea9f328f466a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление ортов для матриц преобразования. \ en The basis vectors calculation for matrix. <br /></td></tr>
+<tr class="separator:a493c24c3e7d7143aa6ea9f328f466a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288f07f5825ec45aed391e7754fb8fd8"><td class="memItemLeft" align="right" valign="top"><a id="a288f07f5825ec45aed391e7754fb8fd8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a288f07f5825ec45aed391e7754fb8fd8">BaseVectors1</a> (double &amp;v, bool ext, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;origin1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector0, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector2, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;derive0, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;derive1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;derive2) const</td></tr>
+<tr class="memdesc:a288f07f5825ec45aed391e7754fb8fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление ортов и их первых производных. \ en Calculation of the basis vectors and their first derivatives. <br /></td></tr>
+<tr class="separator:a288f07f5825ec45aed391e7754fb8fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74fdea809a3d832f82d19fbc09936e40"><td class="memItemLeft" align="right" valign="top"><a id="a74fdea809a3d832f82d19fbc09936e40"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a74fdea809a3d832f82d19fbc09936e40">BaseVectors2</a> (double &amp;v, bool ext, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;origin1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;origin2, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector0, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vector2, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;derive0, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;derive1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;derive2, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;second0, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;second1, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;second2) const</td></tr>
+<tr class="memdesc:a74fdea809a3d832f82d19fbc09936e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление ортов и их первых и вторых производных. \ en Calculation of the basis vectors and their first and second derivatives. <br /></td></tr>
+<tr class="separator:a74fdea809a3d832f82d19fbc09936e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c8036e24fb509a09cdb3df1ad7ea5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ae5c8036e24fb509a09cdb3df1ad7ea5e">GetPlacement</a> (double v) const</td></tr>
+<tr class="memdesc:ae5c8036e24fb509a09cdb3df1ad7ea5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить плейсмент в заданной точке.  <a href="class_mb_spine.html#ae5c8036e24fb509a09cdb3df1ad7ea5e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5c8036e24fb509a09cdb3df1ad7ea5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26cff0ac911df6d8b097de65ca6f9ec"><td class="memItemLeft" align="right" valign="top"><a id="af26cff0ac911df6d8b097de65ca6f9ec"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#af26cff0ac911df6d8b097de65ca6f9ec">GetPlacement</a> (double v, <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;pl) const</td></tr>
+<tr class="memdesc:af26cff0ac911df6d8b097de65ca6f9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать плейсмент для заданной точке. <br /></td></tr>
+<tr class="separator:af26cff0ac911df6d8b097de65ca6f9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d282fa3233e9a88d816b712af42a0e2"><td class="memItemLeft" align="right" valign="top"><a id="a5d282fa3233e9a88d816b712af42a0e2"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a5d282fa3233e9a88d816b712af42a0e2">GetSegmentsCount</a> () const</td></tr>
+<tr class="memdesc:a5d282fa3233e9a88d816b712af42a0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество сегментов направляющей кривой. <br /></td></tr>
+<tr class="separator:a5d282fa3233e9a88d816b712af42a0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8054e29e5246e139f7cb11d4fbb59af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a8054e29e5246e139f7cb11d4fbb59af2">PrepareWrite</a> () const</td></tr>
+<tr class="memdesc:a8054e29e5246e139f7cb11d4fbb59af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция регистрации по количеству ссылок для предотвращения многократной записи.  <a href="class_mb_spine.html#a8054e29e5246e139f7cb11d4fbb59af2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8054e29e5246e139f7cb11d4fbb59af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b3ac6000471f2cde1abf0e6ff1ad85"><td class="memItemLeft" align="right" valign="top"><a id="aa4b3ac6000471f2cde1abf0e6ff1ad85"></a>
+const <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#aa4b3ac6000471f2cde1abf0e6ff1ad85">GetSpineSurface</a> () const</td></tr>
+<tr class="memdesc:aa4b3ac6000471f2cde1abf0e6ff1ad85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поверхность направляющей кривой, если "curve" - кривая на поверхности. <br /></td></tr>
+<tr class="separator:aa4b3ac6000471f2cde1abf0e6ff1ad85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a60599345548b9b2aad0520b1f701ce"><td class="memItemLeft" align="right" valign="top"><a id="a4a60599345548b9b2aad0520b1f701ce"></a>
+const <a class="el" href="class_mb_curve.html">MbCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a4a60599345548b9b2aad0520b1f701ce">GetFeatureCurve</a> () const</td></tr>
+<tr class="memdesc:a4a60599345548b9b2aad0520b1f701ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Двумерная кривая, если "curve" - кривая на поверхности. <br /></td></tr>
+<tr class="separator:a4a60599345548b9b2aad0520b1f701ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4b8113ee0c7e384828c5f3013f8030ec"></a>
+virtual <a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4b8113ee0c7e384828c5f3013f8030ec">RefType</a> () const</td></tr>
+<tr class="memdesc:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a305e3712ee6124e354115f4da5ad63bb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a305e3712ee6124e354115f4da5ad63bb">IsFamilyRegistrable</a> () const</td></tr>
+<tr class="memdesc:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:af6c756b0d0eb111749b22b36809ef45e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#af6c756b0d0eb111749b22b36809ef45e">Create</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;c, bool parallel, bool same, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:af6c756b0d0eb111749b22b36809ef45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по направляющей кривой. <br  />
+  <a href="class_mb_spine.html#af6c756b0d0eb111749b22b36809ef45e">Подробнее...</a><br /></td></tr>
+<tr class="separator:af6c756b0d0eb111749b22b36809ef45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6c7768a9b3ecc8a6a888a29c7e9236"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_spine.html">MbSpine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#acf6c7768a9b3ecc8a6a888a29c7e9236">Create</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;c, bool same, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir, bool parallel, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:acf6c7768a9b3ecc8a6a888a29c7e9236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по направляющей кривой и вектору ориентации матрицы преобразования. <br  />
+  <a href="class_mb_spine.html#acf6c7768a9b3ecc8a6a888a29c7e9236">Подробнее...</a><br /></td></tr>
+<tr class="separator:acf6c7768a9b3ecc8a6a888a29c7e9236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084eb646bab90a84ff9054aed2891095"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_spine.html">MbSpine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a084eb646bab90a84ff9054aed2891095">Create</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;sp, bool sameS, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;dc, bool sameD, bool parallel, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:a084eb646bab90a84ff9054aed2891095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по направляющей кривой и кривой вектора ориентации матрицы преобразования. <br  />
+  <a href="class_mb_spine.html#a084eb646bab90a84ff9054aed2891095">Подробнее...</a><br /></td></tr>
+<tr class="separator:a084eb646bab90a84ff9054aed2891095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb90d9ee50f96ec1010adb4f6f8544ba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_spine.html">MbSpine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#aeb90d9ee50f96ec1010adb4f6f8544ba">Create</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;sp, bool sameS, const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, const <a class="el" href="class_mb_curve.html">MbCurve</a> *pCrv, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers)</td></tr>
+<tr class="memdesc:aeb90d9ee50f96ec1010adb4f6f8544ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по направляющей кривой на кривой, связанной с поверхностью. <br  />
+  <a href="class_mb_spine.html#aeb90d9ee50f96ec1010adb4f6f8544ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeb90d9ee50f96ec1010adb4f6f8544ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a935232bda3f4186c34885bbec90a5e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_spine.html">MbSpine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a1a935232bda3f4186c34885bbec90a5e">Create</a> (const <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;wireFrame, bool same, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> *direction, bool parallel, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version)</td></tr>
+<tr class="memdesc:a1a935232bda3f4186c34885bbec90a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор каркасу. <br  />
+  <a href="class_mb_spine.html#a1a935232bda3f4186c34885bbec90a5e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1a935232bda3f4186c34885bbec90a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fa70023e25732ac1d9405fea7caa29"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_spine.html">MbSpine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a71fa70023e25732ac1d9405fea7caa29">Create</a> (const <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;wireFrame, bool same, const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, const <a class="el" href="class_mb_curve.html">MbCurve</a> *pCurve, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version)</td></tr>
+<tr class="memdesc:a71fa70023e25732ac1d9405fea7caa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор каркасу. <br  />
+  <a href="class_mb_spine.html#a71fa70023e25732ac1d9405fea7caa29">Подробнее...</a><br /></td></tr>
+<tr class="separator:a71fa70023e25732ac1d9405fea7caa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a41961aee0110bd4fd1580ecc822f3cc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a41961aee0110bd4fd1580ecc822f3cc5">MbSpine</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;cur, bool par, bool same, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:a41961aee0110bd4fd1580ecc822f3cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по направляющей кривой. <br  />
+  <a href="class_mb_spine.html#a41961aee0110bd4fd1580ecc822f3cc5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a41961aee0110bd4fd1580ecc822f3cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7455a6717607bc43460ec1003b968bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#ab7455a6717607bc43460ec1003b968bc">MbSpine</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;cur, bool same, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir, bool par, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:ab7455a6717607bc43460ec1003b968bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по направляющей кривой и вектору ориентации матрицы преобразования. <br  />
+  <a href="class_mb_spine.html#ab7455a6717607bc43460ec1003b968bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab7455a6717607bc43460ec1003b968bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494ae6db12e4c81a011f6f8d34dca544"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html#a494ae6db12e4c81a011f6f8d34dca544">MbSpine</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;cur, bool same, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;opt, bool sameO, bool par, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:a494ae6db12e4c81a011f6f8d34dca544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по направляющей кривой и кривой вектора ориентации матрицы преобразования. <br  />
+  <a href="class_mb_spine.html#a494ae6db12e4c81a011f6f8d34dca544">Подробнее...</a><br /></td></tr>
+<tr class="separator:a494ae6db12e4c81a011f6f8d34dca544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Криволинейная направляющая для кинематической поверхности. </p>
+<p>Криволинейная направляющая для кинематической поверхности (поверхности заметания) служит для расчёта в каждой точке направляющей кривой локальной системы координат. <br  />
+ Локальная ось 0 ориентирована по касательной кривой "curve". <br  />
+ Локальная ось 1 ориентирована в сторону вектора "direction" или в сторону кривой "optionalCurve". <br  />
+ Локальная ось 2 дополняет локальную систему до правой системы координат. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a0dc3c96334d35076bba437d09182fd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc3c96334d35076bba437d09182fd9f">&#9670;&nbsp;</a></span>LocalAxes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_spine.html#a0dc3c96334d35076bba437d09182fd9f">MbSpine::LocalAxes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Способы движения локальной системы координат вдоль направляющей кривой "curve". </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a0dc3c96334d35076bba437d09182fd9fa73a3668b5b1c32112e84981af7490636"></a>la_planeParallel&#160;</td><td class="fielddoc"><p>Плоскопараллельный, сохраняющий исходную ориентацию осей. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0dc3c96334d35076bba437d09182fd9fa880d91220e437847b02a9cf324b15db4"></a>la_calcDirection&#160;</td><td class="fielddoc"><p>Вектор "direction" рассчитан объектом. Ось 0 ориентирована по касательной кривой "curve", ось 1 - в сторону вектора "direction". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0dc3c96334d35076bba437d09182fd9fa0e40c5dbf1a2f5bc71f116d0d18b2c52"></a>la_userDirection&#160;</td><td class="fielddoc"><p>Вектор "direction" задан конструктору. Ось 0 ориентирована по касательной кривой "curve", ось 1 - в сторону вектора "direction". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0dc3c96334d35076bba437d09182fd9fa58db91fe11bd039b37232953a4825fd8"></a>la_surfaceNormal&#160;</td><td class="fielddoc"><p>Ось 0 ориентирована по касательной кривой на поверхности "curve", ось 1 - по нормали поверхности кривой "curve". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0dc3c96334d35076bba437d09182fd9fa8c1756ed665fdf0a6dd80c43b3dd2b9d"></a>la_optionalCurve&#160;</td><td class="fielddoc"><p>Ось 0 ориентирована по касательной кривой "curve", ось 1 - в сторону кривой "optionalCurve". </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a41961aee0110bd4fd1580ecc822f3cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41961aee0110bd4fd1580ecc822f3cc5">&#9670;&nbsp;</a></span>MbSpine() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSpine::MbSpine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>cur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>par</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>same</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по направляющей кривой. <br  />
+ </p>
+<p>Конструктор по направляющей кривой.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cur</td><td>- Направляющая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">par</td><td>- Признак параллельного переноса.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">same</td><td>- Признак использования оригинала направляющей кривой, а не ее копии.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия операции. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7455a6717607bc43460ec1003b968bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7455a6717607bc43460ec1003b968bc">&#9670;&nbsp;</a></span>MbSpine() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSpine::MbSpine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>cur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>same</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>par</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по направляющей кривой и вектору ориентации матрицы преобразования. <br  />
+ </p>
+<p>Конструктор по направляющей кривой и вектору ориентации матрицы преобразования.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cur</td><td>- Направляющая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">same</td><td>- Признак использования оригинала направляющей кривой, а не ее копии.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>- Вектор ориентации матрицы преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">par</td><td>- Признак параллельного переноса.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия вычисления осей локальной системы координат. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a494ae6db12e4c81a011f6f8d34dca544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494ae6db12e4c81a011f6f8d34dca544">&#9670;&nbsp;</a></span>MbSpine() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSpine::MbSpine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>cur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>same</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sameO</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>par</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по направляющей кривой и кривой вектора ориентации матрицы преобразования. <br  />
+ </p>
+<p>Конструктор по направляющей кривой и кривой вектора ориентации матрицы преобразования.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cur</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">same</td><td>- Признак использования оригинала направляющей кривой, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>- Кривая вектора ориентации матрицы преобразования</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameO</td><td>- Признак использования оригинала кривой вектора ориентации матрицы преобразования, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">par</td><td>- Признак параллельного переноса.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия вычисления осей локальной системы координат. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="af6c756b0d0eb111749b22b36809ef45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c756b0d0eb111749b22b36809ef45e">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_spine.html">MbSpine</a>&amp; MbSpine::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parallel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>same</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по направляющей кривой. <br  />
+ </p>
+<p>Конструктор по направляющей кривой.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parallel</td><td>- Признак параллельного переноса</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">same</td><td>- Признак использования оригинала направляющей кривой, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия вычисления осей локальной системы координат. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acf6c7768a9b3ecc8a6a888a29c7e9236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6c7768a9b3ecc8a6a888a29c7e9236">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_spine.html">MbSpine</a>* MbSpine::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>same</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parallel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по направляющей кривой и вектору ориентации матрицы преобразования. <br  />
+ </p>
+<p>Конструктор по направляющей кривой и вектору ориентации матрицы преобразования.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">same</td><td>- Признак использования оригинала направляющей кривой, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>- Вектор ориентации матрицы преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parallel</td><td>- Признак параллельного переноса</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия вычисления осей локальной системы координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на созданный объект или нулевой указатель в случае неудачи. </dd></dl>
+
+</div>
+</div>
+<a id="a084eb646bab90a84ff9054aed2891095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084eb646bab90a84ff9054aed2891095">&#9670;&nbsp;</a></span>Create() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_spine.html">MbSpine</a>* MbSpine::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sameS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sameD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parallel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em> = <code><a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по направляющей кривой и кривой вектора ориентации матрицы преобразования. <br  />
+ </p>
+<p>Конструктор по направляющей кривой и кривой вектора ориентации матрицы преобразования.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sp</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameS</td><td>- Признак использования оригинала направляющей кривой, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dc</td><td>- Кривая вектора ориентации матрицы преобразования</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameD</td><td>- Признак использования оригинала кривой вектора ориентации матрицы преобразования, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parallel</td><td>- Признак параллельного переноса</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия вычисления осей локальной системы координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на созданный объект или нулевой указатель в случае неудачи. </dd></dl>
+
+</div>
+</div>
+<a id="aeb90d9ee50f96ec1010adb4f6f8544ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb90d9ee50f96ec1010adb4f6f8544ba">&#9670;&nbsp;</a></span>Create() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_spine.html">MbSpine</a>* MbSpine::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sameS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve.html">MbCurve</a> *&#160;</td>
+          <td class="paramname"><em>pCrv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по направляющей кривой на кривой, связанной с поверхностью. <br  />
+ </p>
+<p>Конструктор по направляющей кривой и поверхности, на которой лежит направляющая кривая.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sp</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameS</td><td>- Признак использования оригинала направляющей кривой, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surf</td><td>- Поверхность направляющей кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pCrv</td><td>- Двумерная кривая на поверхности направляющей кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия вычисления осей локальной системы координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на созданный объект или нулевой указатель в случае неудачи. </dd></dl>
+
+</div>
+</div>
+<a id="a1a935232bda3f4186c34885bbec90a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a935232bda3f4186c34885bbec90a5e">&#9670;&nbsp;</a></span>Create() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_spine.html">MbSpine</a>* MbSpine::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>wireFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>same</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> *&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parallel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор каркасу. <br  />
+ </p>
+<p>Конструктор каркасу.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wireFrame</td><td>- Каркас с направляющей кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">same</td><td>- Признак использования оригинала направляющей кривой, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>- Вектор ориентации матрицы преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parallel</td><td>- Признак параллельного переноса</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>- Версия вычисления осей локальной системы координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на созданный объект или нулевой указатель в случае неудачи. </dd></dl>
+
+</div>
+</div>
+<a id="a71fa70023e25732ac1d9405fea7caa29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fa70023e25732ac1d9405fea7caa29">&#9670;&nbsp;</a></span>Create() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_spine.html">MbSpine</a>* MbSpine::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>wireFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>same</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve.html">MbCurve</a> *&#160;</td>
+          <td class="paramname"><em>pCurve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор каркасу. <br  />
+ </p>
+<p>Конструктор каркасу.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wireFrame</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">same</td><td>- Признак использования оригинала направляющей кривой, а не ее копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Поверхность направляющей кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pCurve</td><td>- Двумерная кривая на поверхности направляющей кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>- Версия вычисления осей локальной системы координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на созданный объект или нулевой указатель в случае неудачи. </dd></dl>
+
+</div>
+</div>
+<a id="a0c1714c52bb705d89c4af9f292ff4ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1714c52bb705d89c4af9f292ff4ebe">&#9670;&nbsp;</a></span>TransformMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpine::TransformMatrix </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определение матрицы переноса для образующей. <br  />
+ </p>
+<p>Определение матрицы переноса для образующей.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- Параметр на направляющей кривой</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">matrix</td><td>- Результат - матрица </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b2b3661954f75172176f7380c35d335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2b3661954f75172176f7380c35d335">&#9670;&nbsp;</a></span>MoveVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpine::MoveVector </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определение вектора переноса для образующей. <br  />
+ </p>
+<p>Определение вектора переноса для образующей.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- Параметр на направляющей кривой</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vect</td><td>- Результат - вектор </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1456eec63cde42b6211c97237ad36bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1456eec63cde42b6211c97237ad36bec">&#9670;&nbsp;</a></span>GetOrt0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a>&amp; MbSpine::GetOrt0 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Первой вектор базиса в рассчитанной направляющей. </p>
+<p>Первой вектор базиса в рассчитанной направляющей.<br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>Вектор </dd></dl>
+
+</div>
+</div>
+<a id="a0d5847ecac60aa305217600c0b9978e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5847ecac60aa305217600c0b9978e0">&#9670;&nbsp;</a></span>CalculateMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpine::CalculateMatrix </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисление матриц преобразования. </p>
+<p>Вычисление матриц преобразования радиуса-вектора (matrix0) и его первой и второй производных (matrix1, matrix2) для параметра на направляющей. При ext==true функция переносит параметр v в область определения направляющей кривой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">v</td><td>- Параметр на направляющей кривой </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae5c8036e24fb509a09cdb3df1ad7ea5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c8036e24fb509a09cdb3df1ad7ea5e">&#9670;&nbsp;</a></span>GetPlacement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> MbSpine::GetPlacement </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построить плейсмент в заданной точке. </p>
+<p>Построить плейсмент в заданной точке.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- Параметр на направляющей кривой </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8054e29e5246e139f7cb11d4fbb59af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8054e29e5246e139f7cb11d4fbb59af2">&#9670;&nbsp;</a></span>PrepareWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpine::PrepareWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция регистрации по количеству ссылок для предотвращения многократной записи. </p>
+<p>Функция регистрации по количеству ссылок для предотвращения многократной записи.<br  />
+ <br  />
+ </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="surf__spine_8h.html">surf_spine.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_spine.html">MbSpine</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:06. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

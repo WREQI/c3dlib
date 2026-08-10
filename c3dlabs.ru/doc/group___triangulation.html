@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Триангуляция</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group___triangulation.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Триангуляция<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___computation.html">Методы геометрических вычислений</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Триангуляция:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___triangulation.svg" width="331" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga4426a09dc571f945f81db5d8b430bb8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___triangulation.html#ga4426a09dc571f945f81db5d8b430bb8c">CalculateBoundsSltFast</a> (const <a class="el" href="class_mb_float_grid.html">MbFloatGrid</a> &amp;grid, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix, bool perspective, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_float_point3_d.html">MbFloatPoint3D</a> &gt; &amp;points)</td></tr>
+<tr class="memdesc:ga4426a09dc571f945f81db5d8b430bb8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить силуэтные линий по триангуляционной сетке.  <a href="group___triangulation.html#ga4426a09dc571f945f81db5d8b430bb8c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4426a09dc571f945f81db5d8b430bb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ad3741d4b0643a0dc1f52c4a2cf7261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___triangulation.html#ga3ad3741d4b0643a0dc1f52c4a2cf7261">CalculateBoundsSlt</a> (const <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;grid, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix, bool perspective, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_float_point3_d.html">MbFloatPoint3D</a> &gt; &amp;points)</td></tr>
+<tr class="memdesc:ga3ad3741d4b0643a0dc1f52c4a2cf7261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить силуэтные линий по триангуляционной сетке.  <a href="group___triangulation.html#ga3ad3741d4b0643a0dc1f52c4a2cf7261">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3ad3741d4b0643a0dc1f52c4a2cf7261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6218ad2d11c74778cd7e87206f266a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___triangulation.html#ga6218ad2d11c74778cd7e87206f266a6c">CalculateSections</a> (const <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;grid, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_float_point3_d.html">MbFloatPoint3D</a> &gt; &amp;points)</td></tr>
+<tr class="memdesc:ga6218ad2d11c74778cd7e87206f266a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить линии сечения по триангуляционной сетке.  <a href="group___triangulation.html#ga6218ad2d11c74778cd7e87206f266a6c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6218ad2d11c74778cd7e87206f266a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a15fb07bce07e9deb599eb1b95fb384"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___triangulation.html#ga3a15fb07bce07e9deb599eb1b95fb384">PolygonTubeGrid</a> (const <a class="el" href="class_mb_polygon3_d.html">MbPolygon3D</a> &amp;poly, double radius, double sag, <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;grid)</td></tr>
+<tr class="memdesc:ga3a15fb07bce07e9deb599eb1b95fb384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить триангуляции в форме трубы заданного радиуса вокруг полигона.  <a href="group___triangulation.html#ga3a15fb07bce07e9deb599eb1b95fb384">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3a15fb07bce07e9deb599eb1b95fb384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd117bf150a97a8377f1cb46330c8952"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___triangulation.html#gabd117bf150a97a8377f1cb46330c8952">PolygonToGrid</a> (const <a class="el" href="class_mb_polygon.html">MbPolygon</a> &amp;poly, <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;grid)</td></tr>
+<tr class="memdesc:gabd117bf150a97a8377f1cb46330c8952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать двумерный полигон в триангуляцию.  <a href="group___triangulation.html#gabd117bf150a97a8377f1cb46330c8952">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabd117bf150a97a8377f1cb46330c8952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3fc26c92583440142abac04b606c98a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___triangulation.html#gaa3fc26c92583440142abac04b606c98a">CalculateGrid</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;face, const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;grid, bool dualSeams=true, bool quad=false, bool fair=false, bool mere=true)</td></tr>
+<tr class="memdesc:gaa3fc26c92583440142abac04b606c98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аппроксимировать грань.  <a href="group___triangulation.html#gaa3fc26c92583440142abac04b606c98a">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa3fc26c92583440142abac04b606c98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98ff7a59aa43cddc9e56c7448f55f5a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___triangulation.html#ga98ff7a59aa43cddc9e56c7448f55f5a6">StepDataTune</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube, size_t count, <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData)</td></tr>
+<tr class="memdesc:ga98ff7a59aa43cddc9e56c7448f55f5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройка данных вычисления шага триангуляции stepData.  <a href="group___triangulation.html#ga98ff7a59aa43cddc9e56c7448f55f5a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga98ff7a59aa43cddc9e56c7448f55f5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Функции</h2>
+<a id="ga4426a09dc571f945f81db5d8b430bb8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4426a09dc571f945f81db5d8b430bb8c">&#9670;&nbsp;</a></span>CalculateBoundsSltFast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CalculateBoundsSltFast </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_float_grid.html">MbFloatGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>perspective</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_float_point3_d.html">MbFloatPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построить силуэтные линий по триангуляционной сетке. </p>
+<p>Выдать силуэтные линии в виде пар указателей на существующие точки в массиве триангуляции.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grid</td><td>- Триангуляционная сетка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matrix</td><td>- Матрица для задания вектора взгляда.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">perspective</td><td>- Признак перспективного отображения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">points</td><td>- Результат - набор точек. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3ad3741d4b0643a0dc1f52c4a2cf7261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ad3741d4b0643a0dc1f52c4a2cf7261">&#9670;&nbsp;</a></span>CalculateBoundsSlt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CalculateBoundsSlt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>perspective</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_float_point3_d.html">MbFloatPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построить силуэтные линий по триангуляционной сетке. </p>
+<p>Выдать силуэтные линии в виде пар точек.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grid</td><td>- Триангуляционная сетка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matrix</td><td>- Матрица для задания вектора взгляда.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">perspective</td><td>- Признак перспективного отображения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">points</td><td>- Результат - набор точек. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6218ad2d11c74778cd7e87206f266a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6218ad2d11c74778cd7e87206f266a6c">&#9670;&nbsp;</a></span>CalculateSections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CalculateSections </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_float_point3_d.html">MbFloatPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построить линии сечения по триангуляционной сетке. </p>
+<p>Выдать линии сечения в виде пар точек.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grid</td><td>- Триангуляционная сетка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matrix</td><td>- Матрица для задания плоскости сечения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">points</td><td>- Результат - набор точек. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3a15fb07bce07e9deb599eb1b95fb384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a15fb07bce07e9deb599eb1b95fb384">&#9670;&nbsp;</a></span>PolygonTubeGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PolygonTubeGrid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_polygon3_d.html">MbPolygon3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_grid.html">MbGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построить триангуляции в форме трубы заданного радиуса вокруг полигона. </p>
+<p>Построить триангуляции в форме трубы заданного радиуса вокруг полигона. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>- Полигон.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>- Радиус трубы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sag</td><td>- Максимальное отклонение триангуляции от окружности (стрелка прогиба).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grid</td><td>- Триангуляция - результат построения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabd117bf150a97a8377f1cb46330c8952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd117bf150a97a8377f1cb46330c8952">&#9670;&nbsp;</a></span>PolygonToGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PolygonToGrid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_polygon.html">MbPolygon</a> &amp;&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_grid.html">MbGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразовать двумерный полигон в триангуляцию. </p>
+<p>Преобразовать двумерный полигон в триангуляцию. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">poly</td><td>- Двумерный полигон.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grid</td><td>- Построенная триангуляция. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa3fc26c92583440142abac04b606c98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3fc26c92583440142abac04b606c98a">&#9670;&nbsp;</a></span>CalculateGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CalculateGrid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_face.html">MbFace</a> &amp;&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;&#160;</td>
+          <td class="paramname"><em>stepData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_grid.html">MbGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dualSeams</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>quad</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fair</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mere</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Аппроксимировать грань. </p>
+<p>Аппроксимировать грань массивом треугольных и четырёхугольных пластин.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>- Грань.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepData</td><td>- Данные для вычисления шага при триангуляции.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grid</td><td>- Результат - триангуляции: для визуализации заполняются массивы params, points и normals;<br  />
+ для вычисления масс-инерционных характеристик - params;<br  />
+ для проверки столкновений тел - params и points;<br  />
+ для разбивки на конечные элементы - points и normals.<br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dualSeams</td><td>- Флаг сохранения полигонов шовных ребер и их совпадающих точек.<br  />
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">quad</td><td>- Строить четырёхугольники (true) при триангуляции поверхностей (по возможности).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fair</td><td>- Удалить вырожденные треугольники (true).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mere</td><td>- Использовать специальный алгоритм для плоской поверхности (true). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga98ff7a59aa43cddc9e56c7448f55f5a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98ff7a59aa43cddc9e56c7448f55f5a6">&#9670;&nbsp;</a></span>StepDataTune()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StepDataTune </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;&#160;</td>
+          <td class="paramname"><em>stepData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Настройка данных вычисления шага триангуляции stepData. </p>
+<p>Проверка и коррекция данных вычисления шага stepData так, чтобы количество точек триангуляции не превосходило заданную величину на порядок. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cube</td><td>- Габаритный куб.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>- Предположительное предельное количество точек триангуляции для одной грани (10 000 000).<br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepData</td><td>- Данные для вычисления шага при триангуляции.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - были внесены изменения в stepData, false - изменений не было. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

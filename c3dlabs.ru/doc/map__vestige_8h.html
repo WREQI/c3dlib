@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл map_vestige.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('map__vestige_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл map_vestige.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Следы трехмерных объектов.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__p__array_8h.html">templ_p_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__pointer_8h.html">templ_pointer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point_8h.html">mb_cart_point.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__matrix_8h.html">mb_matrix.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve_8h.html">curve.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="topology__item_8h.html">topology_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh__primitive_8h.html">mesh_primitive.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_base_vestige.html">MbBaseVestige</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">След трехмерного объекта.  <a href="class_mb_base_vestige.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_vertex_vestige.html">MbVertexVestige</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">След вершины.  <a href="class_mb_vertex_vestige.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_curve_vestige.html">MbCurveVestige</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Информация о следе кривой.  <a href="struct_mb_curve_vestige.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_edge_vestige.html">MbEdgeVestige</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">След ребра или кривой.  <a href="class_mb_edge_vestige.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_vestige.html">MbFaceVestige</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">След грани.  <a href="class_mb_face_vestige.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_annotation_edge_vestige.html">MbAnnotationEdgeVestige</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">След аннотационного объекта.  <a href="class_mb_annotation_edge_vestige.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol_vestige.html">MbSymbolVestige</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">След условного обозначения.  <a href="class_mb_symbol_vestige.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_v_e_f_vestiges.html">MbVEFVestiges</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Набор массивов, выдаваемых наружу при получении всех линий.  <a href="struct_mb_v_e_f_vestiges.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gaa5b4be05a15f5ee9a234ed174ac1133e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#gaa5b4be05a15f5ee9a234ed174ac1133e">MbMapSpaceCurveType</a> { <br />
+&#160;&#160;<a class="el" href="group___mapping.html#ggaa5b4be05a15f5ee9a234ed174ac1133ea6dde52b5baefc299e036fca0fc0d01c2">mst_Unset</a> = 0
+, <a class="el" href="group___mapping.html#ggaa5b4be05a15f5ee9a234ed174ac1133ea2434cdbe59b51682d65a4e06b5d4101b">mst_Degenerate</a>
+, <a class="el" href="group___mapping.html#ggaa5b4be05a15f5ee9a234ed174ac1133eaa2efb85cfd461ab04045e78bd243b6a5">mst_Line</a>
+, <a class="el" href="group___mapping.html#ggaa5b4be05a15f5ee9a234ed174ac1133eab6266ee9e07d203d0043796f35ab87e1">mst_Circle</a>
+, <br />
+&#160;&#160;<a class="el" href="group___mapping.html#ggaa5b4be05a15f5ee9a234ed174ac1133ea77c3a5d9b3363e66eafaa100229b43d4">mst_Ellipse</a>
+, <a class="el" href="group___mapping.html#ggaa5b4be05a15f5ee9a234ed174ac1133ea96f216e7dc2cf2136b1eff6766d125e1">mst_Arbitrary</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gaa5b4be05a15f5ee9a234ed174ac1133e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип пространственной геометрии кривой.  <a href="group___mapping.html#gaa5b4be05a15f5ee9a234ed174ac1133e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa5b4be05a15f5ee9a234ed174ac1133e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gadadd000046c0614ad2d37415520c52c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_edge_vestige.html">MbEdgeVestige</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#gadadd000046c0614ad2d37415520c52c9">AddVestigeCurve</a> (uint otherComp, size_t otherIdent, const <a class="el" href="class_mb_name.html">MbName</a> &amp;otherName, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_edge_vestige.html">MbEdgeVestige</a> &gt; &amp;arr, bool isCenterLine, bool ownName)</td></tr>
+<tr class="memdesc:gadadd000046c0614ad2d37415520c52c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить <a class="el" href="class_mb_edge_vestige.html" title="След ребра или кривой.">MbEdgeVestige</a> в массив.  <a href="group___mapping.html#gadadd000046c0614ad2d37415520c52c9">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadadd000046c0614ad2d37415520c52c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20461a242adb21570d9b21589dcdb592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_annotation_edge_vestige.html">MbAnnotationEdgeVestige</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga20461a242adb21570d9b21589dcdb592">AddVestigeAnnotationEdge</a> (uint otherComp, size_t otherIdent, const <a class="el" href="class_mb_topology_item.html">MbTopologyItem</a> *otherItem, const <a class="el" href="class_mb_name.html">MbName</a> &amp;otherName, <a class="el" href="class_mb_base_vestige.html#aac1cde9668627349bf48a3a07721ccd4">MbBaseVestige::Type</a> type, <a class="el" href="class_mb_base_vestige.html#ada1a00f5c8046746f0ecbff109063e75">MbBaseVestige::SubType</a> subType, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_annotation_edge_vestige.html">MbAnnotationEdgeVestige</a> &gt; &amp;array)</td></tr>
+<tr class="memdesc:ga20461a242adb21570d9b21589dcdb592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить <a class="el" href="class_mb_annotation_edge_vestige.html" title="След аннотационного объекта.">MbAnnotationEdgeVestige</a> в массив.  <a href="group___mapping.html#ga20461a242adb21570d9b21589dcdb592">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga20461a242adb21570d9b21589dcdb592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88dc89b39d32620ad9a9bd60e3e1ebf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_vertex_vestige.html">MbVertexVestige</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mapping.html#ga88dc89b39d32620ad9a9bd60e3e1ebf0">GetVertexI</a> (size_t i, const <a class="el" href="struct_mb_v_e_f_vestiges.html">MbVEFVestiges</a> &amp;vestiges)</td></tr>
+<tr class="memdesc:ga88dc89b39d32620ad9a9bd60e3e1ebf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к элементу массива.  <a href="group___mapping.html#ga88dc89b39d32620ad9a9bd60e3e1ebf0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga88dc89b39d32620ad9a9bd60e3e1ebf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c945d899a0f88a6af49e950fc48b29"><td class="memItemLeft" align="right" valign="top"><a id="a58c945d899a0f88a6af49e950fc48b29"></a>
+<a class="el" href="class_mb_curve.html">MbCurve</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__vestige_8h.html#a58c945d899a0f88a6af49e950fc48b29">MergeTotalMap</a> (const std::vector&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> * &gt; &amp;, <a class="el" href="group___mapping.html#gaa5b4be05a15f5ee9a234ed174ac1133e">MbMapSpaceCurveType</a>=<a class="el" href="group___mapping.html#ggaa5b4be05a15f5ee9a234ed174ac1133ea6dde52b5baefc299e036fca0fc0d01c2">mst_Unset</a>)</td></tr>
+<tr class="memdesc:a58c945d899a0f88a6af49e950fc48b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение полной проекции. <br /></td></tr>
+<tr class="separator:a58c945d899a0f88a6af49e950fc48b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4748b4fa8a5f2b8580113f27752c6947"><td class="memItemLeft" align="right" valign="top"><a id="a4748b4fa8a5f2b8580113f27752c6947"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__vestige_8h.html#a4748b4fa8a5f2b8580113f27752c6947">MergeFaceVestiges</a> (<a class="el" href="struct_mb_v_e_f_vestiges.html">MbVEFVestiges</a> &amp;, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> *)</td></tr>
+<tr class="memdesc:a4748b4fa8a5f2b8580113f27752c6947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слияние наложений линий очерка. <br /></td></tr>
+<tr class="separator:a4748b4fa8a5f2b8580113f27752c6947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Следы трехмерных объектов. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="map__vestige_8h.html">map_vestige.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

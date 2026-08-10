@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mesh_halfedge_attr_base.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mesh__halfedge__attr__base_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mesh_halfedge_attr_base.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Атрибуты для полигональной сетки в представлении half edge.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="io__tape_8h.html">io_tape.h</a>&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый интерфейс атрибутов для полигональной сетки для структуры half edge. Базовый интерфейс атрибутов для полигональной сетки для структуры half edge.  <a href="class_mb_halfedge_attr_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_halfedge_attr_simple_value_base.html">MbHalfedgeAttrSimpleValueBase&lt; Value &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый интерфейс атрибута простого типа для ассоциации значения с элементом half edge.  <a href="class_mb_halfedge_attr_simple_value_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_halfedge_attr_simple_value_vertex_base.html">MbHalfedgeAttrSimpleValueVertexBase&lt; Value &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый атрибут простого типа для вершин.  <a href="class_mb_halfedge_attr_simple_value_vertex_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_halfedge_attr_simple_value_edge_base.html">MbHalfedgeAttrSimpleValueEdgeBase&lt; Value &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый атрибут простого типа для ребер.  <a href="class_mb_halfedge_attr_simple_value_edge_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_halfedge_attr_simple_value_facet_base.html">MbHalfedgeAttrSimpleValueFacetBase&lt; Value &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый атрибут простого типа для фасетов.  <a href="class_mb_halfedge_attr_simple_value_facet_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_halfedge_attr_edge_dependent_vertex_base.html">MbHalfedgeAttrEdgeDependentVertexBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый атрибут для ассоциированных с вершинами величин, зависящих от выбранного вокруг вершины ребра. Базовый атрибут для ассоциированных с вершинами величин, значение которых зависит от того, с какой стороны от вершины мы находимся. Например, нормаль в вершине, которая находится на остром сломе, разная с двух сторон слома. Та же ситуация с кривизнами и другими объектами.  <a href="class_mb_halfedge_attr_edge_dependent_vertex_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a6785fc6520a004a3e86da3e5a93d4a5d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5d">MbeTypeAttr</a> { <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da1e94621a86af9f207f90c2b52d6f126d">ta_Undefined</a> = 0
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dacad0762463e854c4f05731396a0c2a11">ta_BoolValuesFacet</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dae06f7570fef6617153b485a33a8a0c0e">ta_BoolValuesEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da6b76891fa253db0445bb668f74a3a050">ta_BoolValuesVertex</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dac2f1bd484aaf166843fe7377afc93167">ta_UintValuesFacet</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dab764212c31c27f48a30ae59692758547">ta_UintValuesEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da590a53a85a3dc5a0e94ca1e5c19b318c">ta_UintValuesVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dad5e1bc5d9670b30e427d4a5d30b17339">ta_IntValuesFacet</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dad67c090cbb2f79905942fba0fbb38ba1">ta_IntValuesEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da8bfe1828bfa204d26e3c19789fb71996">ta_IntValuesVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da504c32a675792135827ebb300d6a9af8">ta_SizetValuesFacet</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da875101a2a5ca55c3f89c6638d2294c05">ta_SizetValuesEdge</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dafc02014f45ffece30bf5a6f8f2a53097">ta_SizetValuesVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da028e2474cbebbe1895f44dfd1413ac3f">ta_DoubleValuesFacet</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dabcdf2ff7aa02c3d45ab1cfc1a0f659d2">ta_DoubleValuesEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da960ad64e2883b2615b28e897b2b26b73">ta_DoubleValuesVertex</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dab11f6324ca699f11d8ebc10bba93cd75">ta_FloatValuesFacet</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da880dee98538b20ea7195118ed1e58b41">ta_FloatValuesEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da34a9a5933878bda8a691cc66676424f6">ta_FloatValuesVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da0a7facae134b4eda6276d0d4ab376390">ta_Points3D</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dae978e6f51b82851c7cd1b2ed8a100992">ta_Parameters2D</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5daa8ee20248d537dc296d113f6beaa3ab5">ta_NormalsFacet</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5daaff197037b6ff3f401e4c6b36ecedc2c">ta_NormalsVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dabf6c7b75c908d46edefae9afdb38d6d8">ta_DihedralAngles</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5daed3a0f6dcabbf02cf648d9193a70e20e">ta_Sharp</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dac4734409181e2eac558a69ea8776cad2">ta_Curvatures</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5daf4ca761ee1860bd0e16ecc1a99cfc094">ta_Density</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da4b99bb7d3a3b5fa6db63374cd3314b60">ta_DirectionEdge3D</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da8aee286dabe5ebb08e6c859d95449b64">ta_DirectionVertex3D</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da421031190bf2ed2aa98e5a591c635e38">ta_SegmentationSurface</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da4222a81f31784a77cd2838c36cc96899">ta_Parameters2DEdgeDependent</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da05863282fc689b2822aec711f1d8999e">ta_Strains</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da076858147934a84e021666e93901ee19">ta_PairValuesEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da187215e5cfa7b9ef5d209e0a0764161f">ta_UcharValuesFacet</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da25c3510448951e1a52bdbb2da24bf5d7">ta_UcharValuesEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da5329b3ceac7408b8c282393ad1416210">ta_UcharValuesVertex</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5dabc1c19b865023fe616b386dd1a819262">ta_ContainerFacet</a> = 1000
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da6ab6f0eb7dd227f68f29ec9b3f3fe918">ta_ContainerEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da9d7e7a1081f36849fd2e5f94503a7ff6">ta_ContainerVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da42b2abaf52b111cdde1c2f30970fe608">ta_BoolFlagsFacet</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da12558d081da0f8ff2906394e20159c4c">ta_BoolFlagsEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da3a6d1076cae26d04b3831d7d57de2dc1">ta_BoolFlagsVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da4acb0f48a07bf82dca353d05a3e8cc17">ta_Segmentation</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da7f2030c780cfe652acad5499263184d2">ta_SegmentationEdge</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da638d563e9a1030e410cca8d6f000e3c5">ta_SegmentationRegions</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da353744bee3c18fd720cda763d2a54f02">ta_Silhouette</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da4ab1b334ff19361de3414208efe53a08">ta_IntersectEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da99995ddf654ab505bd713286d8bdaaf0">ta_LocationFacet</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da6a1e44846c694c50e31e899953ca341f">ta_LocationVertex</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da063a53eaf7ce6a79aa33a803bcb13979">ta_GridIds</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da51ef77fabc32aa3f7ec56653fca36965">ta_SegmentValues</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da9a730fd59f8441b4b79460f7d961c7b3">ta_FacetData</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5daf1fb67b4ac88f25cecce63c224a982b3">ta_PoleSeamUvEdge</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da61bb1f4815a1052049c6dc5a4d09f66a">ta_Rosy</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da3283079943e51ce7201c2c1cdb94f8dc">ta_Moto</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da47b7be028355c01273b963bf5d1fc306">ta_ComplFacet</a>
+, <br />
+&#160;&#160;<a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da5d19e347a406c85e0fa6b4a8acaeaaae">ta_Fiber</a>
+, <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5da00330a9710aebd51ad6511f78f21def9">ta_SegmentationShellMap</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a6785fc6520a004a3e86da3e5a93d4a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип атрибута. Тип атрибута (вершины, ребра или фасета).  <a href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6785fc6520a004a3e86da3e5a93d4a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a9b022d03e0425ef3eabdfed632f4e8e7"><td class="memTemplParams" colspan="2"><a id="a9b022d03e0425ef3eabdfed632f4e8e7"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9b022d03e0425ef3eabdfed632f4e8e7"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="mesh__halfedge__attr__base_8h.html#a9b022d03e0425ef3eabdfed632f4e8e7">CastHalfedgeAttribute</a> (<a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *pObj)</td></tr>
+<tr class="memdesc:a9b022d03e0425ef3eabdfed632f4e8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать указатель на объект базового атрибута к указателю на объект атрибута заданного типа. Указатель на объект базового типа. Указатель на тип T, если тип объекта совпадает с заданным, иначе нулевой указатель. <br /></td></tr>
+<tr class="separator:a9b022d03e0425ef3eabdfed632f4e8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2683ccc308005281da100124b8288be0"><td class="memTemplParams" colspan="2"><a id="a2683ccc308005281da100124b8288be0"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a2683ccc308005281da100124b8288be0"><td class="memTemplItemLeft" align="right" valign="top">const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="mesh__halfedge__attr__base_8h.html#a2683ccc308005281da100124b8288be0">CastHalfedgeAttribute</a> (const <a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *pObj)</td></tr>
+<tr class="memdesc:a2683ccc308005281da100124b8288be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать указатель на объект базового атрибута к указателю на объект атрибута заданного типа. Указатель на объект базового типа. Указатель на тип T, если тип объекта совпадает с заданным, иначе нулевой указатель. <br /></td></tr>
+<tr class="separator:a2683ccc308005281da100124b8288be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Атрибуты для полигональной сетки в представлении half edge. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a6785fc6520a004a3e86da3e5a93d4a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6785fc6520a004a3e86da3e5a93d4a5d">&#9670;&nbsp;</a></span>MbeTypeAttr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mesh__halfedge__attr__base_8h.html#a6785fc6520a004a3e86da3e5a93d4a5d">MbeTypeAttr</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тип атрибута. Тип атрибута (вершины, ребра или фасета). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da1e94621a86af9f207f90c2b52d6f126d"></a>ta_Undefined&#160;</td><td class="fielddoc"><p>Тип атрибута не определен. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dacad0762463e854c4f05731396a0c2a11"></a>ta_BoolValuesFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrBoolFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dae06f7570fef6617153b485a33a8a0c0e"></a>ta_BoolValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrBoolEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da6b76891fa253db0445bb668f74a3a050"></a>ta_BoolValuesVertex&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrBoolVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dac2f1bd484aaf166843fe7377afc93167"></a>ta_UintValuesFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrUintFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dab764212c31c27f48a30ae59692758547"></a>ta_UintValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrUintEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da590a53a85a3dc5a0e94ca1e5c19b318c"></a>ta_UintValuesVertex&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrUintVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dad5e1bc5d9670b30e427d4a5d30b17339"></a>ta_IntValuesFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrIntFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dad67c090cbb2f79905942fba0fbb38ba1"></a>ta_IntValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrIntEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da8bfe1828bfa204d26e3c19789fb71996"></a>ta_IntValuesVertex&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrIntVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da504c32a675792135827ebb300d6a9af8"></a>ta_SizetValuesFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrSizetFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da875101a2a5ca55c3f89c6638d2294c05"></a>ta_SizetValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrSizetEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dafc02014f45ffece30bf5a6f8f2a53097"></a>ta_SizetValuesVertex&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrSizetVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da028e2474cbebbe1895f44dfd1413ac3f"></a>ta_DoubleValuesFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrDoubleFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dabcdf2ff7aa02c3d45ab1cfc1a0f659d2"></a>ta_DoubleValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrDoubleEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da960ad64e2883b2615b28e897b2b26b73"></a>ta_DoubleValuesVertex&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrDoubleVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dab11f6324ca699f11d8ebc10bba93cd75"></a>ta_FloatValuesFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrFloatFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da880dee98538b20ea7195118ed1e58b41"></a>ta_FloatValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrFloatEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da34a9a5933878bda8a691cc66676424f6"></a>ta_FloatValuesVertex&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrFloatVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da0a7facae134b4eda6276d0d4ab376390"></a>ta_Points3D&#160;</td><td class="fielddoc"><p>Тип атрибута <a class="el" href="class_mb_halfedge_attr_point3_d.html" title="Атрибут 3Д вершин полигональной сетки.">MbHalfedgeAttrPoint3D</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dae978e6f51b82851c7cd1b2ed8a100992"></a>ta_Parameters2D&#160;</td><td class="fielddoc"><p>Тип атрибута <a class="el" href="class_mb_halfedge_attr_parameters.html" title="Атрибут 2Д параметров для вершин полигональной сетки.">MbHalfedgeAttrParameters</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5daa8ee20248d537dc296d113f6beaa3ab5"></a>ta_NormalsFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrNormalsFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5daaff197037b6ff3f401e4c6b36ecedc2c"></a>ta_NormalsVertex&#160;</td><td class="fielddoc"><p>Тип атрибута <a class="el" href="class_mb_halfedge_attr_normals_vertex.html" title="Атрибут нормалей для вершин.">MbHalfedgeAttrNormalsVertex</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dabf6c7b75c908d46edefae9afdb38d6d8"></a>ta_DihedralAngles&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrDihedralAngles. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5daed3a0f6dcabbf02cf648d9193a70e20e"></a>ta_Sharp&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrSharpEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dac4734409181e2eac558a69ea8776cad2"></a>ta_Curvatures&#160;</td><td class="fielddoc"><p>Тип атрибута <a class="el" href="class_mb_halfedge_attr_curvatures_vertex.html" title="Атрибут кривизн для вершин.">MbHalfedgeAttrCurvaturesVertex</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5daf4ca761ee1860bd0e16ecc1a99cfc094"></a>ta_Density&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrDensityVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da4b99bb7d3a3b5fa6db63374cd3314b60"></a>ta_DirectionEdge3D&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrDirectionEdge3D. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da8aee286dabe5ebb08e6c859d95449b64"></a>ta_DirectionVertex3D&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrDirectionVertex3D. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da421031190bf2ed2aa98e5a591c635e38"></a>ta_SegmentationSurface&#160;</td><td class="fielddoc"><p>Тип атрибута <a class="el" href="class_mb_halfedge_attr_surfaces.html" title="Атрибут для поверхностей регионов сегментации.">MbHalfedgeAttrSurfaces</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da4222a81f31784a77cd2838c36cc96899"></a>ta_Parameters2DEdgeDependent&#160;</td><td class="fielddoc"><p>Тип атрибута <a class="el" href="class_mb_halfedge_attr_param_by_edge.html" title="Атрибут 2Д параметров для вершин.">MbHalfedgeAttrParamByEdge</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da05863282fc689b2822aec711f1d8999e"></a>ta_Strains&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrStrains. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da076858147934a84e021666e93901ee19"></a>ta_PairValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrIndPairEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da187215e5cfa7b9ef5d209e0a0764161f"></a>ta_UcharValuesFacet&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrUcharFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da25c3510448951e1a52bdbb2da24bf5d7"></a>ta_UcharValuesEdge&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrUcharEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da5329b3ceac7408b8c282393ad1416210"></a>ta_UcharValuesVertex&#160;</td><td class="fielddoc"><p>Тип атрибута MbHalfedgeAttrUcharVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5dabc1c19b865023fe616b386dd1a819262"></a>ta_ContainerFacet&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrContainerFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da6ab6f0eb7dd227f68f29ec9b3f3fe918"></a>ta_ContainerEdge&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrContainerEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da9d7e7a1081f36849fd2e5f94503a7ff6"></a>ta_ContainerVertex&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrContainerVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da42b2abaf52b111cdde1c2f30970fe608"></a>ta_BoolFlagsFacet&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrSelectFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da12558d081da0f8ff2906394e20159c4c"></a>ta_BoolFlagsEdge&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrSelectEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da3a6d1076cae26d04b3831d7d57de2dc1"></a>ta_BoolFlagsVertex&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrSelectVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da4acb0f48a07bf82dca353d05a3e8cc17"></a>ta_Segmentation&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrSegmentation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da7f2030c780cfe652acad5499263184d2"></a>ta_SegmentationEdge&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrSegmentationEdge. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da638d563e9a1030e410cca8d6f000e3c5"></a>ta_SegmentationRegions&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrRegions. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da353744bee3c18fd720cda763d2a54f02"></a>ta_Silhouette&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrSilhouette. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da4ab1b334ff19361de3414208efe53a08"></a>ta_IntersectEdge&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrIntersect. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da99995ddf654ab505bd713286d8bdaaf0"></a>ta_LocationFacet&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrLocationFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da6a1e44846c694c50e31e899953ca341f"></a>ta_LocationVertex&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrLocationVertex. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da063a53eaf7ce6a79aa33a803bcb13979"></a>ta_GridIds&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrGridId. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da51ef77fabc32aa3f7ec56653fca36965"></a>ta_SegmentValues&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrSegmentValues. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da9a730fd59f8441b4b79460f7d961c7b3"></a>ta_FacetData&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrFacetData. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5daf1fb67b4ac88f25cecce63c224a982b3"></a>ta_PoleSeamUvEdge&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrPoleSeam. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da61bb1f4815a1052049c6dc5a4d09f66a"></a>ta_Rosy&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrRosy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da3283079943e51ce7201c2c1cdb94f8dc"></a>ta_Moto&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrMoto. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da47b7be028355c01273b963bf5d1fc306"></a>ta_ComplFacet&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrComplFacet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da5d19e347a406c85e0fa6b4a8acaeaaae"></a>ta_Fiber&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута FiberNodeState. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6785fc6520a004a3e86da3e5a93d4a5da00330a9710aebd51ad6511f78f21def9"></a>ta_SegmentationShellMap&#160;</td><td class="fielddoc"><p>Внутренний тип атрибута MbHalfedgeAttrShellMap. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mesh__halfedge__attr__base_8h.html">mesh_halfedge_attr_base.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл alg_circle_curve.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('alg__circle__curve_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл alg_circle_curve.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Построение окружности, вычисление центра окружности.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="mb__cart__point_8h.html">mb_cart_point.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="alg__base_8h.html">alg_base.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="alg__curve__distance_8h.html">alg_curve_distance.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_temp_circle.html">MbTempCircle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная окружность.  <a href="class_mb_temp_circle.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga6e9c26edc9bfbef08aef5e862ac69ac3"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga6e9c26edc9bfbef08aef5e862ac69ac3">CircleTanLineLineRad</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;pl1, const <a class="el" href="class_mb_line.html">MbLine</a> &amp;pl2, double rad, <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> *pc)</td></tr>
+<tr class="memdesc:ga6e9c26edc9bfbef08aef5e862ac69ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить центры окружностей.  <a href="group___curve___modeling.html#ga6e9c26edc9bfbef08aef5e862ac69ac3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6e9c26edc9bfbef08aef5e862ac69ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf85f673b35fe3dd8027ab49de3c5962b"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#gaf85f673b35fe3dd8027ab49de3c5962b">CircleTanLineCircleRadius</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;pl1, const <a class="el" href="class_mb_arc.html">MbArc</a> &amp;pc1, double rad, <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> *pc)</td></tr>
+<tr class="memdesc:gaf85f673b35fe3dd8027ab49de3c5962b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить центры окружностей.  <a href="group___curve___modeling.html#gaf85f673b35fe3dd8027ab49de3c5962b">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf85f673b35fe3dd8027ab49de3c5962b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadceff553ad2e78c23bbf5f4dd5028ca5"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#gadceff553ad2e78c23bbf5f4dd5028ca5">CircleTanCircleCircleRad</a> (const <a class="el" href="class_mb_arc.html">MbArc</a> &amp;pc1, const <a class="el" href="class_mb_arc.html">MbArc</a> &amp;pc2, double rad, <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> *pc)</td></tr>
+<tr class="memdesc:gadceff553ad2e78c23bbf5f4dd5028ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить центры окружностей.  <a href="group___curve___modeling.html#gadceff553ad2e78c23bbf5f4dd5028ca5">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadceff553ad2e78c23bbf5f4dd5028ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga445b0308227206454ab09103670b0bfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga445b0308227206454ab09103670b0bfc">CircleTanCurveCentre</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;pCircle)</td></tr>
+<tr class="memdesc:ga445b0308227206454ab09103670b0bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#ga445b0308227206454ab09103670b0bfc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga445b0308227206454ab09103670b0bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcfd9550b85a4d05c3af82fe362394c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#gadcfd9550b85a4d05c3af82fe362394c5">CircleTangentCurveTwoPoints</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;on1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;on2, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;pCircle)</td></tr>
+<tr class="memdesc:gadcfd9550b85a4d05c3af82fe362394c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#gadcfd9550b85a4d05c3af82fe362394c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadcfd9550b85a4d05c3af82fe362394c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5c1d13325eb6915a5ae81dbbacf9ecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#gae5c1d13325eb6915a5ae81dbbacf9ecc">CircleTangentCurveRPointOn</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve, double radius, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;on, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;pCircle)</td></tr>
+<tr class="memdesc:gae5c1d13325eb6915a5ae81dbbacf9ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#gae5c1d13325eb6915a5ae81dbbacf9ecc">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae5c1d13325eb6915a5ae81dbbacf9ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1f5f029014d4cc9368473050afa56cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#gae1f5f029014d4cc9368473050afa56cf">CircleTanTwoCurvesRadius</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve1, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve2, double rad, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;pCircle)</td></tr>
+<tr class="memdesc:gae1f5f029014d4cc9368473050afa56cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#gae1f5f029014d4cc9368473050afa56cf">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae1f5f029014d4cc9368473050afa56cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb157061aa21a0d8b285769b918a148a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#gafb157061aa21a0d8b285769b918a148a">CircleTanTwoCurvesPointOn</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve1, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve2, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pOn, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;pCircle)</td></tr>
+<tr class="memdesc:gafb157061aa21a0d8b285769b918a148a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#gafb157061aa21a0d8b285769b918a148a">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafb157061aa21a0d8b285769b918a148a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7772c7b74db42c501b4677c0b646100b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga7772c7b74db42c501b4677c0b646100b">CircleOriginOneTangentTwo</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve1, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve2, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pp, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;pCircle)</td></tr>
+<tr class="memdesc:ga7772c7b74db42c501b4677c0b646100b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#ga7772c7b74db42c501b4677c0b646100b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7772c7b74db42c501b4677c0b646100b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53bb42099274a439c0bc21730990d94b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga53bb42099274a439c0bc21730990d94b">CircleTanCurvePointOnAngle</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, double angle, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;circles)</td></tr>
+<tr class="memdesc:ga53bb42099274a439c0bc21730990d94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#ga53bb42099274a439c0bc21730990d94b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga53bb42099274a439c0bc21730990d94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7350eda42c9d48034b75d65ec93a2cca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga7350eda42c9d48034b75d65ec93a2cca">ArcTangentCurveTwoPoints</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;on1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;on2, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_arc.html">MbArc</a> &gt; &amp;arc)</td></tr>
+<tr class="memdesc:ga7350eda42c9d48034b75d65ec93a2cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить дуги окружностей.  <a href="group___curve___modeling.html#ga7350eda42c9d48034b75d65ec93a2cca">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7350eda42c9d48034b75d65ec93a2cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0914017bd555ab48382652f5f1f769b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga0914017bd555ab48382652f5f1f769b1">ArcTangentCurveRPointOn</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve, double radius, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;on, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_arc.html">MbArc</a> &gt; &amp;arc)</td></tr>
+<tr class="memdesc:ga0914017bd555ab48382652f5f1f769b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить дуги окружностей.  <a href="group___curve___modeling.html#ga0914017bd555ab48382652f5f1f769b1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0914017bd555ab48382652f5f1f769b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f75da375e2662f34cad30bbe08a7868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga4f75da375e2662f34cad30bbe08a7868">ArcTangentCurveContinue</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p2, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_arc.html">MbArc</a> &gt; &amp;arc)</td></tr>
+<tr class="memdesc:ga4f75da375e2662f34cad30bbe08a7868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить дугу окружности.  <a href="group___curve___modeling.html#ga4f75da375e2662f34cad30bbe08a7868">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4f75da375e2662f34cad30bbe08a7868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00eb7c280e02c951540a6b3a2d77725b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga00eb7c280e02c951540a6b3a2d77725b">ArcTangentCurveRadContinue</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line, double rad, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p2, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_arc.html">MbArc</a> &gt; &amp;arc)</td></tr>
+<tr class="memdesc:ga00eb7c280e02c951540a6b3a2d77725b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить дугу окружности.  <a href="group___curve___modeling.html#ga00eb7c280e02c951540a6b3a2d77725b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga00eb7c280e02c951540a6b3a2d77725b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga457d2fcc9ec6f30483474777f568bfec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga457d2fcc9ec6f30483474777f568bfec">CircleTanThreeCurves</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> *curve1, const <a class="el" href="class_mb_curve.html">MbCurve</a> *curve2, const <a class="el" href="class_mb_curve.html">MbCurve</a> *curve3, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;circle)</td></tr>
+<tr class="memdesc:ga457d2fcc9ec6f30483474777f568bfec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить окружности.  <a href="group___curve___modeling.html#ga457d2fcc9ec6f30483474777f568bfec">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga457d2fcc9ec6f30483474777f568bfec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae491df0af89bdbd0ec9f8ebcf680de70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#gae491df0af89bdbd0ec9f8ebcf680de70">CreateNewCircles</a> (<a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_temp_circle.html">MbTempCircle</a> &gt; &amp;cTmp, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_arc.html">MbArc</a> &gt; &amp;pCircle)</td></tr>
+<tr class="memdesc:gae491df0af89bdbd0ec9f8ebcf680de70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копировать временные окружности  <a href="group___curve___modeling.html#gae491df0af89bdbd0ec9f8ebcf680de70">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae491df0af89bdbd0ec9f8ebcf680de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Построение окружности, вычисление центра окружности. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="alg__circle__curve_8h.html">alg_circle_curve.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл space_item.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('space__item_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл space_item.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Геометрический объект в трехмерном пространстве.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="io__tape__define_8h.html">io_tape_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="reference__item_8h.html">reference_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__rp__array_8h.html">templ_rp_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="item__registrator_8h.html">item_registrator.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__variables_8h.html">mb_variables.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__data_8h.html">mb_data.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__property__title_8h.html">mb_property_title.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html">MbSpaceItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Геометрический объект в трехмерном пространстве.  <a href="class_mb_space_item.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a0d0827d782935fdfccdcdcd60d1f8362"><td class="memItemLeft" align="right" valign="top"><a id="a0d0827d782935fdfccdcdcd60d1f8362"></a>
+typedef <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a0d0827d782935fdfccdcdcd60d1f8362">c3d::SpaceItemSPtr</a></td></tr>
+<tr class="memdesc:a0d0827d782935fdfccdcdcd60d1f8362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умный указатель на геометрический объект. <br /></td></tr>
+<tr class="separator:a0d0827d782935fdfccdcdcd60d1f8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90fc2d0706817dd164c38c7d05251b6b"><td class="memItemLeft" align="right" valign="top"><a id="a90fc2d0706817dd164c38c7d05251b6b"></a>
+typedef <a class="el" href="class_s_ptr.html">SPtr</a>&lt; const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a90fc2d0706817dd164c38c7d05251b6b">c3d::ConstSpaceItemSPtr</a></td></tr>
+<tr class="memdesc:a90fc2d0706817dd164c38c7d05251b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умный указатель на геометрический объект. <br /></td></tr>
+<tr class="separator:a90fc2d0706817dd164c38c7d05251b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ddb62d759832bb07dda1d51f59bc80"><td class="memItemLeft" align="right" valign="top"><a id="ad2ddb62d759832bb07dda1d51f59bc80"></a>
+typedef std::pair&lt; <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> *, <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#ad2ddb62d759832bb07dda1d51f59bc80">c3d::SpaceItemPair</a></td></tr>
+<tr class="memdesc:ad2ddb62d759832bb07dda1d51f59bc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пара геометрических объектов. <br /></td></tr>
+<tr class="separator:ad2ddb62d759832bb07dda1d51f59bc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78e75112bcc92a46f3180f042ad5254"><td class="memItemLeft" align="right" valign="top"><a id="ab78e75112bcc92a46f3180f042ad5254"></a>
+typedef std::vector&lt; <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#ab78e75112bcc92a46f3180f042ad5254">c3d::SpaceItemsVector</a></td></tr>
+<tr class="memdesc:ab78e75112bcc92a46f3180f042ad5254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор геометрических объектов. <br /></td></tr>
+<tr class="separator:ab78e75112bcc92a46f3180f042ad5254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4904ca8a5515066e79ba2f77ed266a"><td class="memItemLeft" align="right" valign="top"><a id="acf4904ca8a5515066e79ba2f77ed266a"></a>
+typedef std::vector&lt; const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#acf4904ca8a5515066e79ba2f77ed266a">c3d::ConstSpaceItemsVector</a></td></tr>
+<tr class="memdesc:acf4904ca8a5515066e79ba2f77ed266a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор геометрических объектов. <br /></td></tr>
+<tr class="separator:acf4904ca8a5515066e79ba2f77ed266a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e37cfc198820e1f72ecc89187f930f7"><td class="memItemLeft" align="right" valign="top"><a id="a3e37cfc198820e1f72ecc89187f930f7"></a>
+typedef std::vector&lt; SpaceItemSPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a3e37cfc198820e1f72ecc89187f930f7">c3d::SpaceItemsSPtrVector</a></td></tr>
+<tr class="memdesc:a3e37cfc198820e1f72ecc89187f930f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор геометрических объектов. <br /></td></tr>
+<tr class="separator:a3e37cfc198820e1f72ecc89187f930f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3b5c16ba2d37343a87009d05ce8ac6"><td class="memItemLeft" align="right" valign="top"><a id="adb3b5c16ba2d37343a87009d05ce8ac6"></a>
+typedef std::vector&lt; ConstSpaceItemSPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#adb3b5c16ba2d37343a87009d05ce8ac6">c3d::ConstSpaceItemsSPtrVector</a></td></tr>
+<tr class="memdesc:adb3b5c16ba2d37343a87009d05ce8ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор геометрических объектов. <br /></td></tr>
+<tr class="separator:adb3b5c16ba2d37343a87009d05ce8ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gafd7eb7897408c4c38de7860da15d876b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a> { <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad0448843cf0433777b8687ac1eba16a9">st_Undefined</a> = 0
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876babeb8164a37fe0aee2abb08e5268d2b43">st_SpaceItem</a> = 1
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba23498efff282a06899ba292f0773e25d">st_Point3D</a> = 101
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba91181b6f236e4c77ac23e5ffe5bfdaf1">st_FreePoint3D</a> = 200
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba8f14156dd6beedc5941f703b48f0949c">st_Curve3D</a> = 201
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baf3c8da67c23889d27977d1f5c1226dab">st_Line3D</a> = 202
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baeaa3db6face18b1853f98399ea78f18e">st_LineSegment3D</a> = 203
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad27eaac006454b0af9ea7504d5a81a74">st_Arc3D</a> = 204
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bae8926956b44f1e118af5c4f9ea23dd82">st_Spiral</a> = 205
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba3a07f47eefe8576428435e61748a1c0b">st_ConeSpiral</a> = 206
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baec4d5ecdf0a391aa8210680f34ad534c">st_CurveSpiral</a> = 207
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba073ce68090fbc7952306b24badaa4abe">st_CrookedSpiral</a> = 208
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba0cc76d95c7aa4ec55ed632191a18a7ff">st_PolyCurve3D</a> = 209
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bac58cc02577ef07882c99f5c187ec6cce">st_Polyline3D</a> = 210
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad41737a0ac3a00fee8225bb7a5ef47bb">st_Nurbs3D</a> = 211
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baf6e9f6f1a61050439666486b849ab1b7">st_Bezier3D</a> = 212
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad17a46cf197f0907d324e49568efc252">st_Hermit3D</a> = 213
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba3b77957b830713dd9867daef7587c74c">st_CubicSpline3D</a> = 214
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bac5eec9541e7f6426e02b52b9b397ac7d">st_PlaneCurve</a> = 215
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba8b12ab026b9674b01d8604997b5f0038">st_OffsetCurve3D</a> = 216
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba4b19d80d9c45d63abdffe4fd9300f5ac">st_TrimmedCurve3D</a> = 217
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baf93ca621066b88ffd6ef85c5673ebc01">st_ReparamCurve3D</a> = 218
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bab481237b5ccd517ac00586e8beb2e987">st_BridgeCurve3D</a> = 219
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba3db91256f038dab4b08bd1b764e9dfb1">st_CharacterCurve3D</a> = 220
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba91ea03bbe345a9d51339dd23e6b66443">st_ContourOnSurface</a> = 221
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad0df8403ebaba4ac6063a1f16d066c13">st_ContourOnPlane</a> = 222
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba98841fd55c364c7eb3b865a36281d10c">st_SurfaceCurve</a> = 223
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba55ff941016d21c766abcb7c2608df791">st_SilhouetteCurve</a> = 224
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad28608c1a98fd8fcd16ac88e77205835">st_SurfaceIntersectionCurve</a> = 225
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba0e13d622553c208148c75b9f873179ea">st_BSpline</a> = 226
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba8d9e4e64dcd8c986358c946b1ab0b492">st_Contour3D</a> = 227
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba64bf11d42795bde4b1385550487c5d02">st_CoonsDerivative</a> = 228
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baaf64f230939fc4a2666351251634fc86">st_FreeCurve3D</a> = 300
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba4fad4a55b52ac79722830b59be0d5b3d">st_Surface</a> = 301
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bac83558e1fd45ca9bd82f0ed2c23e02b1">st_ElementarySurface</a> = 302
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba67fae4797664fb70ea5a882e555b0201">st_Plane</a> = 303
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bab8f3ee3a82d14eb5d92584cc96bfde13">st_ConeSurface</a> = 304
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bae69b88e6b83af78139bef1319675019d">st_CylinderSurface</a> = 305
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba0f8efaad18b13b5c29a827f44ad2d412">st_SphereSurface</a> = 306
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876badd90f8fdc3d2905e8d28264b25762ce3">st_TorusSurface</a> = 307
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba9683e884881dc28afc31273f5a4f2f67">st_SweptSurface</a> = 308
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba54ca9335d7087303d78c0ca7b0593cb4">st_ExtrusionSurface</a> = 309
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba2896272380dbf529955ce0ac8b0dd65c">st_RevolutionSurface</a> = 310
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba7d9da47be7ac40f06128d766fefd5b47">st_EvolutionSurface</a> = 311
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bab0e5cf16c0bff45f983e93f36a731dc0">st_ExactionSurface</a> = 312
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba6fea928097117128a8d95f1150465ad3">st_ExpansionSurface</a> = 313
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba2e15efe6520df33c15539af1cf8dc6af">st_SpiralSurface</a> = 314
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba9de8b25036467804182cb5e8b971240c">st_RuledSurface</a> = 315
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba4887f78e87c9e9a2f2fd20043084ad5c">st_SectorSurface</a> = 316
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba1d8a40d36cc8498366776b650815eea5">st_PolySurface</a> = 317
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bac25f783c81783829f6d031737cf8ba2c">st_HermitSurface</a> = 318
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba6324252d83f1c52f6556d6ba90a4aef2">st_SplineSurface</a> = 319
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad9b2c9199f7a303e855bb5471fdf92bf">st_GridSurface</a> = 320
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba68f502f0228119fcfaff016a4a016525">st_TriBezierSurface</a> = 321
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba18d3187feebe86a51919d7c1f066adad">st_SimplexSurface</a> = 322
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba7bea3f1484e98dc645b3a619f6242423">st_OffsetSurface</a> = 323
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bac451c9dcca35d9eeb1f46244184bdc4d">st_DeformedSurface</a> = 324
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876badb0ffcac772120fb37c28c889a1549df">st_NurbsSurface</a> = 325
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba846b04dbf532787c87c28dea3e4a1133">st_CornerSurface</a> = 326
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba833b63315068ae0462474df256e20717">st_CoverSurface</a> = 327
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba7c0feb778aaf917c8dbec3a13d5aaf1e">st_CoonsPatchSurface</a> = 328
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba6cf1404fdd2d9bb7e989b3177ff176dc">st_GregoryPatchSurface</a> = 329
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad9b4bf0f7be475e70c014398f648eeec">st_LoftedSurface</a> = 330
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bab7dd50f4f8ba048050fd986d41e3c3e0">st_ElevationSurface</a> = 331
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba4bf90e63c60594308fcabb932104ea3b">st_MeshSurface</a> = 332
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baeb3bd622868b13ebecb739acb535edc2">st_GregorySurface</a> = 333
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876badf5a01d5cb23d3efb7215fb649ae0bed">st_SmoothSurface</a> = 334
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baa9727e4cb2f3c5a44141d872c6f7aedf">st_ChamferSurface</a> = 335
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba9a7f93f29edebe4db6819c778cdca2dd">st_FilletSurface</a> = 336
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba992d190deb852c632dfb268b33921ca5">st_ChannelSurface</a> = 337
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bafd34671fe2ad31e248c61bb0b21d4721">st_FullFilletSurface</a> = 338
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba810c211e730a95feff2557cf22c3681b">st_JoinSurface</a> = 339
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baa59f0ccd97af5c001ae334c0b4255712">st_CurveBoundedSurface</a> = 340
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba1fb30450c6d02a98c3539f1fb47ebedf">st_BendedUnbendedSurface</a> = 341
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba3da533cf49d465751a89d67c04c7bb2c">st_CylindricBendedSurface</a> = 342
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba6c54983440e594e817ccab7e1abb7fc9">st_CylindricUnbendedSurface</a> = 343
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876baed131b2ff4620f9413ce381325389f4b">st_ConicBendedSurface</a> = 344
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba13a2a7fdb460dd1d6581028038d545af">st_ConicUnbendedSurface</a> = 345
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba1d333e6d937d05dda5a1c397515cbf0a">st_GregoryRibbonPatchSurface</a> = 346
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba270a5324102cc9a55ce68d6c479987fb">st_ExplorationSurface</a> = 347
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba004253318a25a21a7c5a5c3275c19b4a">st_SectionSurface</a> = 348
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad366d2758de840337d3cf731e2c0699e">st_SimplexSpline</a> = 349
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba1cb4804063132f944d2d584eaa7bbc12">st_RuledBendedUnbendedSurface</a> =350
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba0552baabb1b63bb24faaaf65d5440d75">st_FreeSurface</a> = 400
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad77107768ebf0d1dd923575d5fd8340d">st_Legend</a> = 401
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bad1b2a9a2b7ce573d77c648901611687e">st_Marker</a> = 402
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876badaae2ba590ac22ba24982bb00ba3380b">st_Thread</a> = 403
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba951861f882cdf7f825a988ea87009272">st_Symbol</a> = 404
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba016540095becc21224d240b1e9579558">st_PointsSymbol</a> = 405
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba79aa15264ff9a6290d1e95b68fa8373e">st_Rough</a> = 406
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba32bada6b3576a143bfc2129c636b93fb">st_Leader</a> = 407
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba917b9d14196f4a63985f55eb82bab336">st_Dimension3D</a> = 408
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba4ef6d54e01314276e7477ff06bf20966">st_LinearDimension3D</a> = 409
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bacdeab04412eb595d6a4c04739a7e1d20">st_DiameterDimension3D</a> = 410
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba838f3a7ed615d467fc3d5a4af5a8c0c9">st_RadialDimension3D</a> = 411
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba8316fc6f3ac7ec679ca16acb5e5159cf">st_AngularDimension3D</a> = 412
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba8030ce984afb1ed50a2baed53cd1d2b3">st_PMI</a> = 413
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba8259bc58a2f43026b140b34fe357c9d8">st_FreeLegend</a> = 500
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba2df1b23f09e3549e0f809d2149454e4b">st_Item</a> = 501
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba012c60be6420f4b1592bd421361dd18b">st_AssistedItem</a> = 502
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba093fd968375299ffe8e6cfa2e94ddf50">st_PointFrame</a> = 503
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba3e5c67e04634d3833403c3b2cd694d7b">st_WireFrame</a> = 504
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bac8115e6a31c7d22604292476f1364d6b">st_Solid</a> = 505
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba1d832ab6f5dd836a40b612384c2f778d">st_Instance</a> = 506
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bac5c26cbec1905f170d308220f6a85bee">st_Assembly</a> = 507
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba99e26bbad51ed17ad0ba463351501176">st_Mesh</a> = 508
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bacdf77fcffae206b3fe94ea1d999bc58c">st_SpaceInstance</a> = 509
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba97e4774a9e2e01a53a78c8a9bc178961">st_PlaneInstance</a> = 510
+, <br />
+&#160;&#160;<a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba151c28ddd8a28cc57f3b00a477968488">st_Collection</a> = 511
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876bae497ccdaaa77f7843e3cedfa9f1146e7">st_Polymesh</a> = 512
+, <a class="el" href="group___geometric___items.html#ggafd7eb7897408c4c38de7860da15d876ba537e991f8eaa9a81bbf7fbe914850954">st_FreeItem</a> = 600
+<br />
+ }</td></tr>
+<tr class="memdesc:gafd7eb7897408c4c38de7860da15d876b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы геометрических объектов в трёхмерном пространстве.  <a href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafd7eb7897408c4c38de7860da15d876b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Геометрический объект в трехмерном пространстве. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="space__item_8h.html">space_item.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

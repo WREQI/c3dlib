@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл io_base.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('io__base_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл io_base.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Облегченные макросы сериализации, которые содержат только объявления функций.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga722ded92dd0ebaf524ad9aeb7507e0cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga722ded92dd0ebaf524ad9aeb7507e0cb">__OVERLOAD_MEMORY_ALLOCATE_FREE_</a></td></tr>
+<tr class="memdesc:ga722ded92dd0ebaf524ad9aeb7507e0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переменная включает перегрузку операторов new/delete, обеспечивающую последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="group___base___tools___i_o.html#ga722ded92dd0ebaf524ad9aeb7507e0cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga722ded92dd0ebaf524ad9aeb7507e0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44a79e30e80276867c85de631638a447"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga44a79e30e80276867c85de631638a447">DECLARE_NEW_DELETE_CLASS</a>(Class)</td></tr>
+<tr class="memdesc:ga44a79e30e80276867c85de631638a447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление функций new, delete и операторов доступа. <br /></td></tr>
+<tr class="separator:ga44a79e30e80276867c85de631638a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ee090bef457920d6cec335e0880c42"><td class="memItemLeft" align="right" valign="top"><a id="a38ee090bef457920d6cec335e0880c42"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__base_8h.html#a38ee090bef457920d6cec335e0880c42">DECLARE_NEW_DELETE_CLASS_EX</a>(Class)</td></tr>
+<tr class="memdesc:a38ee090bef457920d6cec335e0880c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление операторов new и delete, обеспечивающих последовательное обращение к функциям выделения/освобождения памяти из разных потоков. Перегружаются все стандартные операторы new и delete.Реализация находится в макросе IMP_PERSISTENT_NEW_DELETE_CLASS_EX. <br /></td></tr>
+<tr class="separator:a38ee090bef457920d6cec335e0880c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722512318991ade348793194c86ee48f"><td class="memItemLeft" align="right" valign="top"><a id="a722512318991ade348793194c86ee48f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__base_8h.html#a722512318991ade348793194c86ee48f">DECLARE_PERSISTENT_OPS_BASE</a>(Class,  DLLFUNC)</td></tr>
+<tr class="memdesc:a722512318991ade348793194c86ee48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление дружественных операторов чтения и записи указателей и ссылок.Реализация находится в макросе IMP_PERSISTENT_OPS_BASE. <br /></td></tr>
+<tr class="separator:a722512318991ade348793194c86ee48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7784ec786a03b6c4eb5e8d6dfc0bd92"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaf7784ec786a03b6c4eb5e8d6dfc0bd92">DECLARE_PERSISTENT_CTOR</a>(Class)</td></tr>
+<tr class="memdesc:gaf7784ec786a03b6c4eb5e8d6dfc0bd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для потокового класса. Реализация должна быть обеспечена пользователем. <br /></td></tr>
+<tr class="separator:gaf7784ec786a03b6c4eb5e8d6dfc0bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e7de3d0f6a81058ca7e0ac4ad51f687"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga3e7de3d0f6a81058ca7e0ac4ad51f687">DECLARE_PERSISTENT_FUNCS</a>(Class)</td></tr>
+<tr class="memdesc:ga3e7de3d0f6a81058ca7e0ac4ad51f687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функции чтения и записи. Реализация должна быть обеспечена пользователем. <br /></td></tr>
+<tr class="separator:ga3e7de3d0f6a81058ca7e0ac4ad51f687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee49687194682a3c51834653bff452e7"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaee49687194682a3c51834653bff452e7">DECLARE_CLASS_DESC_FUNC</a>(Class)</td></tr>
+<tr class="memdesc:gaee49687194682a3c51834653bff452e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функции получения дескриптора класса. Реализация находится в макросе IMP_CLASS_DESC_FUNC. <br /></td></tr>
+<tr class="separator:gaee49687194682a3c51834653bff452e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0a69328d9aa9073fb47066b2466829"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__base_8h.html#a3b0a69328d9aa9073fb47066b2466829">DECLARE_PERSISTENT_CLASS_BASE</a>(Class,  DLLFUNC)</td></tr>
+<tr class="memdesc:a3b0a69328d9aa9073fb47066b2466829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление класса Class поточным.  <a href="io__base_8h.html#a3b0a69328d9aa9073fb47066b2466829">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3b0a69328d9aa9073fb47066b2466829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afc8e281a933dceec6f20013f336f72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__base_8h.html#a2afc8e281a933dceec6f20013f336f72">DECLARE_PERSISTENT_CLASS_NEW_DEL_BASE</a>(Class,  DLLFUNC)</td></tr>
+<tr class="memdesc:a2afc8e281a933dceec6f20013f336f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аналог макроса DECLARE_PERSISTENT_CLASS_BASE с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="io__base_8h.html#a2afc8e281a933dceec6f20013f336f72">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2afc8e281a933dceec6f20013f336f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadca9d3b81cb8e16f2949defe74877466"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gadca9d3b81cb8e16f2949defe74877466">IMPL_PERSISTENT_OPS</a>(Class)</td></tr>
+<tr class="memdesc:gadca9d3b81cb8e16f2949defe74877466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операторы чтения и записи указателей и ссылок. <br /></td></tr>
+<tr class="separator:gadca9d3b81cb8e16f2949defe74877466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Облегченные макросы сериализации, которые содержат только объявления функций. </p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="a3b0a69328d9aa9073fb47066b2466829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0a69328d9aa9073fb47066b2466829">&#9670;&nbsp;</a></span>DECLARE_PERSISTENT_CLASS_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_PERSISTENT_CLASS_BASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DLLFUNC&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#ga3e7de3d0f6a81058ca7e0ac4ad51f687">DECLARE_PERSISTENT_FUNCS</a>( Class );                    \</div>
+<div class="line">  DECLARE_PERSISTENT_OPS_BASE( Class, DLLFUNC );        \</div>
+<div class="line">  DECLARE_PERSISTENT_CTOR( Class );                     \</div>
+<div class="line">  DECLARE_NEW_DELETE_CLASS( Class );                    \</div>
+<div class="line">  DECLARE_CLASS_DESC_FUNC(Class)</div>
+<div class="ttc" id="agroup___base___tools___i_o_html_ga3e7de3d0f6a81058ca7e0ac4ad51f687"><div class="ttname"><a href="group___base___tools___i_o.html#ga3e7de3d0f6a81058ca7e0ac4ad51f687">DECLARE_PERSISTENT_FUNCS</a></div><div class="ttdeci">#define DECLARE_PERSISTENT_FUNCS(Class)</div><div class="ttdoc">Функции чтения и записи. Реализация должна быть обеспечена пользователем.</div><div class="ttdef"><b>Definition:</b> io_base.h:190</div></div>
+</div><!-- fragment -->
+<p>Объявление класса Class поточным. </p>
+<p>Объявление класс Class поточным. Устанавливается в декларации класса в файле *.h. Декларирует операторы &lt;&lt;, &gt;&gt;, а также функции Read и Write, которые должны быть определены в любом файле *.cpp Class должен наследовать от <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a>. Для этого класса должен быть определен конструктор чтения, а его тело должно быть в .cpp файле. <br  />
+ Реализация находится в макросе IMP_PERSISTENT_CLASS_OPS. </p>
+
+</div>
+</div>
+<a id="a2afc8e281a933dceec6f20013f336f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2afc8e281a933dceec6f20013f336f72">&#9670;&nbsp;</a></span>DECLARE_PERSISTENT_CLASS_NEW_DEL_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_PERSISTENT_CLASS_NEW_DEL_BASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DLLFUNC&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="io__base_8h.html#a3b0a69328d9aa9073fb47066b2466829">DECLARE_PERSISTENT_CLASS_BASE</a>( Class, DLLFUNC )               \</div>
+<div class="line">  DECLARE_NEW_DELETE_CLASS_EX( Class )</div>
+<div class="ttc" id="aio__base_8h_html_a3b0a69328d9aa9073fb47066b2466829"><div class="ttname"><a href="io__base_8h.html#a3b0a69328d9aa9073fb47066b2466829">DECLARE_PERSISTENT_CLASS_BASE</a></div><div class="ttdeci">#define DECLARE_PERSISTENT_CLASS_BASE(Class, DLLFUNC)</div><div class="ttdoc">Объявление класса Class поточным.</div><div class="ttdef"><b>Definition:</b> io_base.h:227</div></div>
+</div><!-- fragment -->
+<p>Аналог макроса DECLARE_PERSISTENT_CLASS_BASE с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+<p>Аналог макроса DECLARE_PERSISTENT_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков (включается переменной __OVERLOAD_MEMORY_ALLOCATE_FREE_).</p>
+<p>Реализация находится в макросе IMP_PERSISTENT_CLASS_NEW_DEL_OPS. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="io__base_8h.html">io_base.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

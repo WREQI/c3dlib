@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл alg_base.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('alg__base_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл alg_base.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Вспомогательные общие функции.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__array2_8h.html">templ_array2.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__rect_8h.html">mb_rect.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__placement3d_8h.html">mb_placement3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point_8h.html">mb_cart_point.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point3d_8h.html">mb_cart_point3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__enum_8h.html">mb_enum.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="math__version_8h.html">math_version.h</a>&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga583945bb1af4309df78fd996ddfaafad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga583945bb1af4309df78fd996ddfaafad">c3d::CalcAngle0X</a> (double dx, double dy)</td></tr>
+<tr class="memdesc:ga583945bb1af4309df78fd996ddfaafad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить угол между прямой и осью 0X.  <a href="group___algorithms__2_d.html#ga583945bb1af4309df78fd996ddfaafad">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga583945bb1af4309df78fd996ddfaafad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0028826c91358fc1a83ad7145aa421f"><td class="memItemLeft" align="right" valign="top">DEPRECATE_DECLARE long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#aa0028826c91358fc1a83ad7145aa421f">c3d::CalcAngle0X</a> (long double dx, long double dy)</td></tr>
+<tr class="memdesc:aa0028826c91358fc1a83ad7145aa421f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить угол между прямой и осью 0X.  <a href="namespacec3d.html#aa0028826c91358fc1a83ad7145aa421f">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa0028826c91358fc1a83ad7145aa421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c14e47320692994095ad8e9b424cebe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga1c14e47320692994095ad8e9b424cebe">c3d::CalcAngle0X</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p2)</td></tr>
+<tr class="memdesc:ga1c14e47320692994095ad8e9b424cebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить угол между прямой и осью 0X.  <a href="group___algorithms__2_d.html#ga1c14e47320692994095ad8e9b424cebe">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1c14e47320692994095ad8e9b424cebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d58f77b031805804c115f31d445a5f6"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga6d58f77b031805804c115f31d445a5f6">c3d::NormalizeAngle</a> (double &amp;angle, double angleEpsilon=<a class="el" href="class_math.html#aa11ac2ecdd6f81c080e2b42f036793a0">Math::AngleEps</a>)</td></tr>
+<tr class="memdesc:ga6d58f77b031805804c115f31d445a5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализовать угол.  <a href="group___base___algorithms.html#ga6d58f77b031805804c115f31d445a5f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6d58f77b031805804c115f31d445a5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae100c091b01adba20bb364790f2e284d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#gae100c091b01adba20bb364790f2e284d">c3d::AngleToParam</a> (double dir, bool left, double &amp;t)</td></tr>
+<tr class="memdesc:gae100c091b01adba20bb364790f2e284d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевести параметр окружности в параметр кривой.  <a href="group___algorithms__2_d.html#gae100c091b01adba20bb364790f2e284d">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae100c091b01adba20bb364790f2e284d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad564d7c43dbfb04caf10bc122432f6c9"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:gad564d7c43dbfb04caf10bc122432f6c9"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad564d7c43dbfb04caf10bc122432f6c9">c3d::AngleBetweenVectors</a> (const Type &amp;v1, const Type &amp;v2)</td></tr>
+<tr class="memdesc:gad564d7c43dbfb04caf10bc122432f6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить угол между двумерными векторами.  <a href="group___base___algorithms.html#gad564d7c43dbfb04caf10bc122432f6c9">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad564d7c43dbfb04caf10bc122432f6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08e7231b8b68530a0a870a7cd73ec9c3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga08e7231b8b68530a0a870a7cd73ec9c3">c3d::CalcAngle3Points</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;centre, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p3)</td></tr>
+<tr class="memdesc:ga08e7231b8b68530a0a870a7cd73ec9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить минимальный угол между прямыми.  <a href="group___algorithms__2_d.html#ga08e7231b8b68530a0a870a7cd73ec9c3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga08e7231b8b68530a0a870a7cd73ec9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e221948129c541d3be8fd908df8642b"><td class="memTemplParams" colspan="2">template&lt;class ParamsVector &gt; </td></tr>
+<tr class="memitem:ga1e221948129c541d3be8fd908df8642b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga1e221948129c541d3be8fd908df8642b">c3d::ArFind</a> (const ParamsVector &amp;arParam, double t, ptrdiff_t &amp;id)</td></tr>
+<tr class="memdesc:ga1e221948129c541d3be8fd908df8642b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти параметр в массиве.  <a href="group___base___algorithms.html#ga1e221948129c541d3be8fd908df8642b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1e221948129c541d3be8fd908df8642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3e647b26b88790f5c0b1006142ba39a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#gaf3e647b26b88790f5c0b1006142ba39a">c3d::LineSegDivide</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p2)</td></tr>
+<tr class="memdesc:gaf3e647b26b88790f5c0b1006142ba39a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделить отрезок пополам.  <a href="group___algorithms__2_d.html#gaf3e647b26b88790f5c0b1006142ba39a">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf3e647b26b88790f5c0b1006142ba39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7e2d4a42a42a1fb343b6271c7aa4d7"><td class="memItemLeft" align="right" valign="top"><a id="adf7e2d4a42a42a1fb343b6271c7aa4d7"></a>
+ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#adf7e2d4a42a42a1fb343b6271c7aa4d7">c3d::mod</a> (ptrdiff_t i, ptrdiff_t n)</td></tr>
+<tr class="memdesc:adf7e2d4a42a42a1fb343b6271c7aa4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">i по модулю n (циклический вариант). <br /></td></tr>
+<tr class="separator:adf7e2d4a42a42a1fb343b6271c7aa4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846884314ab437a11d14fad0fcc2dd31"><td class="memItemLeft" align="right" valign="top"><a id="a846884314ab437a11d14fad0fcc2dd31"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a846884314ab437a11d14fad0fcc2dd31">c3d::Sign</a> (double a)</td></tr>
+<tr class="memdesc:a846884314ab437a11d14fad0fcc2dd31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение знака вещественного числа. <br /></td></tr>
+<tr class="separator:a846884314ab437a11d14fad0fcc2dd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47910351dd099832e5460fbd47c2f90a"><td class="memItemLeft" align="right" valign="top"><a id="a47910351dd099832e5460fbd47c2f90a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a47910351dd099832e5460fbd47c2f90a">c3d::Round</a> (double x)</td></tr>
+<tr class="memdesc:a47910351dd099832e5460fbd47c2f90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Округление вещественного числа. <br /></td></tr>
+<tr class="separator:a47910351dd099832e5460fbd47c2f90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9de0b43ee1dcd59da32131b9bbcf20"><td class="memItemLeft" align="right" valign="top"><a id="a4a9de0b43ee1dcd59da32131b9bbcf20"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a4a9de0b43ee1dcd59da32131b9bbcf20">c3d::LRound</a> (double x)</td></tr>
+<tr class="memdesc:a4a9de0b43ee1dcd59da32131b9bbcf20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Округление вещественного числа. <br /></td></tr>
+<tr class="separator:a4a9de0b43ee1dcd59da32131b9bbcf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e920fd44d77831748f4841730f5588"><td class="memItemLeft" align="right" valign="top"><a id="a91e920fd44d77831748f4841730f5588"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a91e920fd44d77831748f4841730f5588">c3d::CheckLRound</a> (double x)</td></tr>
+<tr class="memdesc:a91e920fd44d77831748f4841730f5588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Округление вещественного числа с проверкой <br /></td></tr>
+<tr class="separator:a91e920fd44d77831748f4841730f5588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06fe16a6dc3baff4d44b86420cc92c7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga06fe16a6dc3baff4d44b86420cc92c7f">c3d::InRange</a> (double x1, double x2, double x)</td></tr>
+<tr class="memdesc:ga06fe16a6dc3baff4d44b86420cc92c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли число в интервале [x1, x2].  <a href="group___base___algorithms.html#ga06fe16a6dc3baff4d44b86420cc92c7f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga06fe16a6dc3baff4d44b86420cc92c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa00af61c6ec03bafd6c7979d1ff2c6ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaa00af61c6ec03bafd6c7979d1ff2c6ad">c3d::IsParamOn</a> (double tmin, double tmax, double t, double treg)</td></tr>
+<tr class="memdesc:gaa00af61c6ec03bafd6c7979d1ff2c6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находится ли параметр в диапазоне кривой.  <a href="group___base___algorithms.html#gaa00af61c6ec03bafd6c7979d1ff2c6ad">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa00af61c6ec03bafd6c7979d1ff2c6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45c222a08b766afa03dc86475e40cd85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga45c222a08b766afa03dc86475e40cd85">c3d::InRangePlus</a> (double x1, double x, double eps=FLT_EPSILON)</td></tr>
+<tr class="memdesc:ga45c222a08b766afa03dc86475e40cd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли число в диапазоне [0, x1).  <a href="group___base___algorithms.html#ga45c222a08b766afa03dc86475e40cd85">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga45c222a08b766afa03dc86475e40cd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bdeb63304f32cf1740e430179b84bb1"><td class="memTemplParams" colspan="2">template&lt;class TypeVector &gt; </td></tr>
+<tr class="memitem:ga2bdeb63304f32cf1740e430179b84bb1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga2bdeb63304f32cf1740e430179b84bb1">c3d::IsMonotonic</a> (const TypeVector &amp;items, bool isAscending, bool allowEqual=false)</td></tr>
+<tr class="memdesc:ga2bdeb63304f32cf1740e430179b84bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализован ли массив объектов по возрастанию или убыванию.  <a href="group___base___algorithms.html#ga2bdeb63304f32cf1740e430179b84bb1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2bdeb63304f32cf1740e430179b84bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad33c21265a5635a1fd43b90d1ed5afec"><td class="memTemplParams" colspan="2">template&lt;class Point , class Vector , class PointsVector &gt; </td></tr>
+<tr class="memitem:gad33c21265a5635a1fd43b90d1ed5afec"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad33c21265a5635a1fd43b90d1ed5afec">c3d::ArePointsOnLine</a> (const PointsVector &amp;pnts, double metricEps=<a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a>)</td></tr>
+<tr class="memdesc:gad33c21265a5635a1fd43b90d1ed5afec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежат ли точки на линии.  <a href="group___base___algorithms.html#gad33c21265a5635a1fd43b90d1ed5afec">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad33c21265a5635a1fd43b90d1ed5afec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7512443b796fad2a67fb794fa3823888"><td class="memTemplParams" colspan="2">template&lt;class SpacePoints &gt; </td></tr>
+<tr class="memitem:ga7512443b796fad2a67fb794fa3823888"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga7512443b796fad2a67fb794fa3823888">c3d::IsPlanar</a> (const SpacePoints &amp;pnts, <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> *place, double mEps=<a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a>)</td></tr>
+<tr class="memdesc:ga7512443b796fad2a67fb794fa3823888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли набор точек на плоскости.  <a href="group___base___algorithms.html#ga7512443b796fad2a67fb794fa3823888">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7512443b796fad2a67fb794fa3823888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="memTemplParams" colspan="2">template&lt;class Point &gt; </td></tr>
+<tr class="memitem:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga804bacbc4c98d81afdee2bf13d39e0d2">c3d::IsPlanar2</a> (const <a class="el" href="class_array2.html">Array2</a>&lt; Point &gt; &amp;pnts, <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> *place, double mEps=<a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a>)</td></tr>
+<tr class="memdesc:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли набор точек на плоскости.  <a href="group___base___algorithms.html#ga804bacbc4c98d81afdee2bf13d39e0d2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90d7618054de26417a4ae7d9815f8a6d"><td class="memTemplParams" colspan="2">template&lt;class PointsVector , class BBox &gt; </td></tr>
+<tr class="memitem:ga90d7618054de26417a4ae7d9815f8a6d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga90d7618054de26417a4ae7d9815f8a6d">c3d::CalculateBoundingBox</a> (const PointsVector &amp;pnts, BBox &amp;bbox)</td></tr>
+<tr class="memdesc:ga90d7618054de26417a4ae7d9815f8a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит набора точек.  <a href="group___base___algorithms.html#ga90d7618054de26417a4ae7d9815f8a6d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga90d7618054de26417a4ae7d9815f8a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8c4a80dba9b1934a521247f851df44c"><td class="memTemplParams" colspan="2">template&lt;class Point , class BBox &gt; </td></tr>
+<tr class="memitem:gaa8c4a80dba9b1934a521247f851df44c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaa8c4a80dba9b1934a521247f851df44c">c3d::CalculateBoundingBox2</a> (const <a class="el" href="class_array2.html">Array2</a>&lt; Point &gt; &amp;pnts, BBox &amp;bbox)</td></tr>
+<tr class="memdesc:gaa8c4a80dba9b1934a521247f851df44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит набора точек.  <a href="group___base___algorithms.html#gaa8c4a80dba9b1934a521247f851df44c">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa8c4a80dba9b1934a521247f851df44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6613a51135f29736a2748f71fac10e05"><td class="memTemplParams" colspan="2">template&lt;class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga6613a51135f29736a2748f71fac10e05"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga6613a51135f29736a2748f71fac10e05">c3d::SetLimitParam</a> (DoubleVector &amp;tarr, double tmin, double tmax, double teps=<a class="el" href="class_math.html#a96b07cfb0f21bb2ea10c50bc79c9c585">Math::paramEpsilon</a>)</td></tr>
+<tr class="memdesc:ga6613a51135f29736a2748f71fac10e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить область изменения параметра.  <a href="group___base___algorithms.html#ga6613a51135f29736a2748f71fac10e05">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6613a51135f29736a2748f71fac10e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga186a74f9511de75f73b590e444bebb35"><td class="memTemplParams" colspan="2">template&lt;class DoubleParamsVector &gt; </td></tr>
+<tr class="memitem:ga186a74f9511de75f73b590e444bebb35"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga186a74f9511de75f73b590e444bebb35">SortSynchroArrays</a> (DoubleParamsVector &amp;tt0, DoubleParamsVector &amp;tt2, double eps, bool checkCoincidentParams)</td></tr>
+<tr class="memdesc:ga186a74f9511de75f73b590e444bebb35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсортировать массив.  <a href="group___base___algorithms.html#ga186a74f9511de75f73b590e444bebb35">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga186a74f9511de75f73b590e444bebb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga349fda6b5779f1214705142c331f6135"><td class="memTemplParams" colspan="2">template&lt;class DoubleParamsVector &gt; </td></tr>
+<tr class="memitem:ga349fda6b5779f1214705142c331f6135"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga349fda6b5779f1214705142c331f6135">SortArray</a> (DoubleParamsVector &amp;tt0, double eps, bool checkCoincidentParams)</td></tr>
+<tr class="memdesc:ga349fda6b5779f1214705142c331f6135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсортировать массив.  <a href="group___base___algorithms.html#ga349fda6b5779f1214705142c331f6135">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga349fda6b5779f1214705142c331f6135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6ed7929eb7d979532bdb21b1f7517b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad6ed7929eb7d979532bdb21b1f7517b6">CorrectCiclicParameter</a> (double period, double p0, double &amp;p)</td></tr>
+<tr class="memdesc:gad6ed7929eb7d979532bdb21b1f7517b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перебросить параметр на период.  <a href="group___base___algorithms.html#gad6ed7929eb7d979532bdb21b1f7517b6">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad6ed7929eb7d979532bdb21b1f7517b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51e4521bb173fabfc572f29bc9e942c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga51e4521bb173fabfc572f29bc9e942c8">CorrectParameter</a> (bool pext, bool pc, double pmin, double pmax, double &amp;p, double eps=<a class="el" href="class_math.html#a5ed3096fd796f242fee4e81ad6d6461a">Math::paramRegion</a>)</td></tr>
+<tr class="memdesc:ga51e4521bb173fabfc572f29bc9e942c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уточнить параметр.  <a href="group___base___algorithms.html#ga51e4521bb173fabfc572f29bc9e942c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga51e4521bb173fabfc572f29bc9e942c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4af4d21c865b040773536efeac74c346"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga4af4d21c865b040773536efeac74c346">CorrectCheckNearParameter</a> (const double &amp;tmin, const double &amp;tmax, const double &amp;tPeriod, const bool &amp;ext, const double &amp;tRegion, double &amp;t)</td></tr>
+<tr class="memdesc:ga4af4d21c865b040773536efeac74c346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коррекция параметра с проверкой.  <a href="group___base___algorithms.html#ga4af4d21c865b040773536efeac74c346">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4af4d21c865b040773536efeac74c346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74e0138d6489dc01317684d5e0e32ae9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga74e0138d6489dc01317684d5e0e32ae9">MatrixRoughInverse</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place3D, const <a class="el" href="class_mb_direction.html">MbDirection</a> *pDir, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeY, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeZ, <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;matrix)</td></tr>
+<tr class="memdesc:ga74e0138d6489dc01317684d5e0e32ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить матрицу инвертирования значка.  <a href="group___base___algorithms.html#ga74e0138d6489dc01317684d5e0e32ae9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga74e0138d6489dc01317684d5e0e32ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79016c718039de4213b63d066576405e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga79016c718039de4213b63d066576405e">MatrixTextInverse</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place3D, const <a class="el" href="class_mb_direction.html">MbDirection</a> *pDir, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeY, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeZ, <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;matrix)</td></tr>
+<tr class="memdesc:ga79016c718039de4213b63d066576405e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить матрицу инвертирования текста.  <a href="group___base___algorithms.html#ga79016c718039de4213b63d066576405e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga79016c718039de4213b63d066576405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bc16de71aa31848b0d4753e7a5205af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga5bc16de71aa31848b0d4753e7a5205af">RoundedValue</a> (double &amp;value, uint8 n)</td></tr>
+<tr class="memdesc:ga5bc16de71aa31848b0d4753e7a5205af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Округлить значение до n значащих цифр.  <a href="group___base___algorithms.html#ga5bc16de71aa31848b0d4753e7a5205af">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5bc16de71aa31848b0d4753e7a5205af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92c83571130b628819f4dd6ae87c09ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga92c83571130b628819f4dd6ae87c09ba">QuadraticEquation</a> (double a, double b, double c, double &amp;d, std::pair&lt; double, double &gt; &amp;res)</td></tr>
+<tr class="memdesc:ga92c83571130b628819f4dd6ae87c09ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить квадратное уравнение вида a * x^2 + b * x + c = 0 без внешнего управления погрешностью.  <a href="group___base___algorithms.html#ga92c83571130b628819f4dd6ae87c09ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga92c83571130b628819f4dd6ae87c09ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga539504eddb94dc853b19b092ccb41586"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga539504eddb94dc853b19b092ccb41586">QuadraticEquation</a> (double a, double b, double c, double &amp;x1, double &amp;x2, double epsilon=<a class="el" href="class_math.html#a96b07cfb0f21bb2ea10c50bc79c9c585">Math::paramEpsilon</a>)</td></tr>
+<tr class="memdesc:ga539504eddb94dc853b19b092ccb41586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить квадратное уравнение вида a * x^2 + b * x + c = 0.  <a href="group___base___algorithms.html#ga539504eddb94dc853b19b092ccb41586">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga539504eddb94dc853b19b092ccb41586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bff97f91fa2de7cadeea275b5b649eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga4bff97f91fa2de7cadeea275b5b649eb">QubicEquation</a> (double a, double b, double c, double d, double *x, double epsilon)</td></tr>
+<tr class="memdesc:ga4bff97f91fa2de7cadeea275b5b649eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить кубическое уравнение вида a * x^3 + b * x^2 + c * x + d = 0.  <a href="group___base___algorithms.html#ga4bff97f91fa2de7cadeea275b5b649eb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4bff97f91fa2de7cadeea275b5b649eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1540703d94455d31775828a542ed4093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga1540703d94455d31775828a542ed4093">CubicEquation</a> (double i1, double i2, double i3, double *x, double epsilon)</td></tr>
+<tr class="memdesc:ga1540703d94455d31775828a542ed4093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить кубическое уравнение вида x^3 - i1 * x^2 + i2 * x - i3 = 0.  <a href="group___base___algorithms.html#ga1540703d94455d31775828a542ed4093">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1540703d94455d31775828a542ed4093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b3d71a4c4be9110749d47f5743acdd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga3b3d71a4c4be9110749d47f5743acdd3">Degree4Equation</a> (double a, double b, double c, double d, double e, double *x, double epsilon)</td></tr>
+<tr class="memdesc:ga3b3d71a4c4be9110749d47f5743acdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить уравнение четвертой степени вида a * x^4 + b * x^3 + с * x^2 + d * x + e = 0.  <a href="group___base___algorithms.html#ga3b3d71a4c4be9110749d47f5743acdd3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3b3d71a4c4be9110749d47f5743acdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga950592a3c2e0189d53ad0ff3a5999b2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga950592a3c2e0189d53ad0ff3a5999b2f">EigenVector</a> (double a[<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>][<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>], <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vect)</td></tr>
+<tr class="memdesc:ga950592a3c2e0189d53ad0ff3a5999b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить собственный вектор матрицы 3 x 3.  <a href="group___base___algorithms.html#ga950592a3c2e0189d53ad0ff3a5999b2f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga950592a3c2e0189d53ad0ff3a5999b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Вспомогательные общие функции. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="alg__base_8h.html">alg_base.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс IConverter3D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_i_converter3_d.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_i_converter3_d-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс IConverter3D<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___data___exchange.html">C3D Converter: Модуль конвертеров</a> &raquo; <a class="el" href="group___exchange___interface.html">Интерфейс конвертеров</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Интерфейс конвертера.  
+ <a href="class_i_converter3_d.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;conv_model_exchange.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:afa76e4ed2ef4e82fffaa86152e8ba233"><td class="memItemLeft" align="right" valign="top">virtual DEPRECATE_DECLARE <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#afa76e4ed2ef4e82fffaa86152e8ba233">SetConfgiurationSelector</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_configuration_selector.html">IConfigurationSelector</a> &gt; configuration_selector)=0</td></tr>
+<tr class="memdesc:afa76e4ed2ef4e82fffaa86152e8ba233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить обработчик для выбора конфигураций.  <a href="class_i_converter3_d.html#afa76e4ed2ef4e82fffaa86152e8ba233">Подробнее...</a><br /></td></tr>
+<tr class="separator:afa76e4ed2ef4e82fffaa86152e8ba233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab276d598cb578683029ac6fcfb41b231"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#ab276d598cb578683029ac6fcfb41b231">SetConfigurationSelector</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_configuration_selector.html">IConfigurationSelector</a> &gt; configuration_selector)=0</td></tr>
+<tr class="memdesc:ab276d598cb578683029ac6fcfb41b231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить обработчик для выбора конфигураций.  <a href="class_i_converter3_d.html#ab276d598cb578683029ac6fcfb41b231">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab276d598cb578683029ac6fcfb41b231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3162cca3904a633ab407153570e665ae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#a3162cca3904a633ab407153570e665ae">SetDeveloperEventLogger</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_converter_event_logger.html">IConverterEventLogger</a> &gt; importEventLogger)=0</td></tr>
+<tr class="memdesc:a3162cca3904a633ab407153570e665ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить обработчик для логирования.  <a href="class_i_converter3_d.html#a3162cca3904a633ab407153570e665ae">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3162cca3904a633ab407153570e665ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e02d5548a5e34de9cde91dc6d8efa27"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#a1e02d5548a5e34de9cde91dc6d8efa27">SetMetadataTransferCallback</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_converter_metadata_receiver.html">IConverterMetadataReceiver</a> &gt; metadataTransferCallback)=0</td></tr>
+<tr class="memdesc:a1e02d5548a5e34de9cde91dc6d8efa27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить передачу метаданных.  <a href="class_i_converter3_d.html#a1e02d5548a5e34de9cde91dc6d8efa27">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e02d5548a5e34de9cde91dc6d8efa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga263db4cccaebcfc18b4d082f05a2308b"><td class="memItemLeft" align="right" valign="top">virtual DEPRECATE_DECLARE <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_c_i_s___exchange.html#ga263db4cccaebcfc18b4d082f05a2308b">SATRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, std::iostream *stream, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch)=0</td></tr>
+<tr class="memdesc:ga263db4cccaebcfc18b4d082f05a2308b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата SAT.  <a href="group___a_c_i_s___exchange.html#ga263db4cccaebcfc18b4d082f05a2308b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga263db4cccaebcfc18b4d082f05a2308b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d08e8c1526178abd2479e58deaeebb9"><td class="memItemLeft" align="right" valign="top">virtual DEPRECATE_DECLARE <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_c_i_s___exchange.html#ga0d08e8c1526178abd2479e58deaeebb9">SATWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, std::iostream *stream, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator)=0</td></tr>
+<tr class="memdesc:ga0d08e8c1526178abd2479e58deaeebb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата SAT.  <a href="group___a_c_i_s___exchange.html#ga0d08e8c1526178abd2479e58deaeebb9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0d08e8c1526178abd2479e58deaeebb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d371d5ec4479f63ed41697d48bf8921"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_c_i_s___exchange.html#ga8d371d5ec4479f63ed41697d48bf8921">SATRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga8d371d5ec4479f63ed41697d48bf8921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата SAT.  <a href="group___a_c_i_s___exchange.html#ga8d371d5ec4479f63ed41697d48bf8921">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8d371d5ec4479f63ed41697d48bf8921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7497d672f840b27ffde35d0e21a3c506"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_c_i_s___exchange.html#ga7497d672f840b27ffde35d0e21a3c506">SATWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga7497d672f840b27ffde35d0e21a3c506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата SAT.  <a href="group___a_c_i_s___exchange.html#ga7497d672f840b27ffde35d0e21a3c506">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7497d672f840b27ffde35d0e21a3c506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga604f50c0c354faee43c19a0769d6408b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_g_e_s___exchange.html#ga604f50c0c354faee43c19a0769d6408b">IGSRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga604f50c0c354faee43c19a0769d6408b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата IGES.  <a href="group___i_g_e_s___exchange.html#ga604f50c0c354faee43c19a0769d6408b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga604f50c0c354faee43c19a0769d6408b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga782eec63f99489a9d8097768b94c2469"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_g_e_s___exchange.html#ga782eec63f99489a9d8097768b94c2469">IGSWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga782eec63f99489a9d8097768b94c2469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата IGES.  <a href="group___i_g_e_s___exchange.html#ga782eec63f99489a9d8097768b94c2469">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga782eec63f99489a9d8097768b94c2469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17fad7558342f52523ac4ede7ebc4682"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_g_e_s___exchange.html#ga17fad7558342f52523ac4ede7ebc4682">JTRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga17fad7558342f52523ac4ede7ebc4682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата JT.  <a href="group___i_g_e_s___exchange.html#ga17fad7558342f52523ac4ede7ebc4682">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga17fad7558342f52523ac4ede7ebc4682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa5792ba39accdcbdb403815dc349052"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_g_e_s___exchange.html#gafa5792ba39accdcbdb403815dc349052">JTWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:gafa5792ba39accdcbdb403815dc349052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата JT.  <a href="group___i_g_e_s___exchange.html#gafa5792ba39accdcbdb403815dc349052">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafa5792ba39accdcbdb403815dc349052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31cea3c62053dd87d2b0b2312c3b9f04"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___parasolid___exchange.html#ga31cea3c62053dd87d2b0b2312c3b9f04">XTRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga31cea3c62053dd87d2b0b2312c3b9f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата Parasolid.  <a href="group___parasolid___exchange.html#ga31cea3c62053dd87d2b0b2312c3b9f04">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga31cea3c62053dd87d2b0b2312c3b9f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad74e966b7785c557bc57a292e1a3e110"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___parasolid___exchange.html#gad74e966b7785c557bc57a292e1a3e110">XTWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:gad74e966b7785c557bc57a292e1a3e110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата Parasolid.  <a href="group___parasolid___exchange.html#gad74e966b7785c557bc57a292e1a3e110">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad74e966b7785c557bc57a292e1a3e110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8dcc7a56f2b2b2015bd6c93a007ec51"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_e_p___exchange.html#gae8dcc7a56f2b2b2015bd6c93a007ec51">STEPRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:gae8dcc7a56f2b2b2015bd6c93a007ec51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата STEP.  <a href="group___s_t_e_p___exchange.html#gae8dcc7a56f2b2b2015bd6c93a007ec51">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae8dcc7a56f2b2b2015bd6c93a007ec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a2909008c9da53ef54156330dae22d4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_e_p___exchange.html#ga8a2909008c9da53ef54156330dae22d4">STEPWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga8a2909008c9da53ef54156330dae22d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата STEP.  <a href="group___s_t_e_p___exchange.html#ga8a2909008c9da53ef54156330dae22d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8a2909008c9da53ef54156330dae22d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e876a917256335bb01ae4f044f160f7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_l___exchange.html#ga6e876a917256335bb01ae4f044f160f7">STLRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga6e876a917256335bb01ae4f044f160f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата STL.  <a href="group___s_t_l___exchange.html#ga6e876a917256335bb01ae4f044f160f7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6e876a917256335bb01ae4f044f160f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga085f59f54afedceadf30bd74318b085b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_l___exchange.html#ga085f59f54afedceadf30bd74318b085b">STLWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga085f59f54afedceadf30bd74318b085b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата STL.  <a href="group___s_t_l___exchange.html#ga085f59f54afedceadf30bd74318b085b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga085f59f54afedceadf30bd74318b085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1174be2cce620e266b7b1f6cbc8297c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___v_r_m_l___exchange.html#ga1174be2cce620e266b7b1f6cbc8297c5">OBJRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0)=0</td></tr>
+<tr class="memdesc:ga1174be2cce620e266b7b1f6cbc8297c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата OBJ.  <a href="group___v_r_m_l___exchange.html#ga1174be2cce620e266b7b1f6cbc8297c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1174be2cce620e266b7b1f6cbc8297c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c95b8c5dc618cc176cb0e13de0afd2e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___v_r_m_l___exchange.html#ga2c95b8c5dc618cc176cb0e13de0afd2e">VRMLRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga2c95b8c5dc618cc176cb0e13de0afd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата VRML.  <a href="group___v_r_m_l___exchange.html#ga2c95b8c5dc618cc176cb0e13de0afd2e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2c95b8c5dc618cc176cb0e13de0afd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73b948d3b4b7da37fafa44ec4602daa8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___v_r_m_l___exchange.html#ga73b948d3b4b7da37fafa44ec4602daa8">VRMLWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga73b948d3b4b7da37fafa44ec4602daa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата VRML.  <a href="group___v_r_m_l___exchange.html#ga73b948d3b4b7da37fafa44ec4602daa8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga73b948d3b4b7da37fafa44ec4602daa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga362cf315ed7e396c3cf22f85f3313a00"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___v_r_m_l___exchange.html#ga362cf315ed7e396c3cf22f85f3313a00">ThreeMFWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga362cf315ed7e396c3cf22f85f3313a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата 3MF.  <a href="group___v_r_m_l___exchange.html#ga362cf315ed7e396c3cf22f85f3313a00">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga362cf315ed7e396c3cf22f85f3313a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92bf74b0705417e4854e9fbea501fbb5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___v_r_m_l___exchange.html#ga92bf74b0705417e4854e9fbea501fbb5">GRDECLRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ga92bf74b0705417e4854e9fbea501fbb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл формата GRDECL.  <a href="group___v_r_m_l___exchange.html#ga92bf74b0705417e4854e9fbea501fbb5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga92bf74b0705417e4854e9fbea501fbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2423815fa4b7a3b8978bfc3af8bb66c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_l___exchange.html#gab2423815fa4b7a3b8978bfc3af8bb66c">GRDECLWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:gab2423815fa4b7a3b8978bfc3af8bb66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл формата GRDECL.  <a href="group___s_t_l___exchange.html#gab2423815fa4b7a3b8978bfc3af8bb66c">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab2423815fa4b7a3b8978bfc3af8bb66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ee23e3f1782cb425a853fc3774c12a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#aa8ee23e3f1782cb425a853fc3774c12a">ASCIIPointCloudRead</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:aa8ee23e3f1782cb425a853fc3774c12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл с облаком точек в формате ASCII.  <a href="class_i_converter3_d.html#aa8ee23e3f1782cb425a853fc3774c12a">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa8ee23e3f1782cb425a853fc3774c12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab169caeddd87ad511a50ed2af282d88f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#ab169caeddd87ad511a50ed2af282d88f">ASCIIPointCloudWrite</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0, <a class="el" href="class_mb_ref_item.html">MbRefItem</a> *qeuryStitch=0)=0</td></tr>
+<tr class="memdesc:ab169caeddd87ad511a50ed2af282d88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать файл с облаком точек в формате ASCII..  <a href="class_i_converter3_d.html#ab169caeddd87ad511a50ed2af282d88f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab169caeddd87ad511a50ed2af282d88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9cad0bd2518cc8981d6cc194e19cf0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#a0d9cad0bd2518cc8981d6cc194e19cf0">LoadForeignReader</a> (const c3d::path_string &amp;pluginName, const <a class="el" href="namespacec3d.html#a41e1da7918820e98c8b4d87668a87f19">c3d::optionNameValuePairs_t</a> &amp;pluginSpecificSettings, <a class="el" href="class_i_configuration_selector.html">IConfigurationSelector</a> *configSelector)=0</td></tr>
+<tr class="memdesc:a0d9cad0bd2518cc8981d6cc194e19cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузить плагин получения данных для построения модели.  <a href="class_i_converter3_d.html#a0d9cad0bd2518cc8981d6cc194e19cf0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0d9cad0bd2518cc8981d6cc194e19cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548c50b475485f6d557bb224acc49024"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#a548c50b475485f6d557bb224acc49024">LoadForeignReader</a> (const c3d::path_string &amp;pluginName, const <a class="el" href="namespacec3d.html#a41e1da7918820e98c8b4d87668a87f19">c3d::optionNameValuePairs_t</a> &amp;pluginSpecificSettings)=0</td></tr>
+<tr class="memdesc:a548c50b475485f6d557bb224acc49024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузить плагин получения данных для построения модели.  <a href="class_i_converter3_d.html#a548c50b475485f6d557bb224acc49024">Подробнее...</a><br /></td></tr>
+<tr class="separator:a548c50b475485f6d557bb224acc49024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdf68684c7f8c81cb5d056b8f0653b3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#adfdf68684c7f8c81cb5d056b8f0653b3">ReleaseForeignReader</a> ()=0</td></tr>
+<tr class="memdesc:adfdf68684c7f8c81cb5d056b8f0653b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отключить загруженный плагин получения данных для построения модели.  <a href="class_i_converter3_d.html#adfdf68684c7f8c81cb5d056b8f0653b3">Подробнее...</a><br /></td></tr>
+<tr class="separator:adfdf68684c7f8c81cb5d056b8f0653b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed690ad71201040655b7c3fe424b839b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_converter3_d.html#aed690ad71201040655b7c3fe424b839b">ImportForeign</a> (const c3d::path_string &amp;path, <a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;idoc, <a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> *prop=0, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0)=0</td></tr>
+<tr class="memdesc:aed690ad71201040655b7c3fe424b839b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл с использованием плагина.  <a href="class_i_converter3_d.html#aed690ad71201040655b7c3fe424b839b">Подробнее...</a><br /></td></tr>
+<tr class="separator:aed690ad71201040655b7c3fe424b839b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a15533346d6b23ebbe32eb4cbc00511"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___exchange.html#ga8a15533346d6b23ebbe32eb4cbc00511">PreliminaryImport</a> (<a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;prop, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=0)=0</td></tr>
+<tr class="memdesc:ga8a15533346d6b23ebbe32eb4cbc00511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Импортировать предварительные данные модели: список атрибутов и конфигураций.  <a href="group___data___exchange.html#ga8a15533346d6b23ebbe32eb4cbc00511">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8a15533346d6b23ebbe32eb4cbc00511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga286ccc1ebf63fe0d465630f3686eb5ff"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___exchange.html#ga286ccc1ebf63fe0d465630f3686eb5ff">SetPreliminaryCallbacks</a> (<a class="el" href="class_i_attribute_names_collector.html">IAttributeNamesCollector</a> *attrCollector, <a class="el" href="class_i_configuration_selector.html">IConfigurationSelector</a> *configSelector)=0</td></tr>
+<tr class="memdesc:ga286ccc1ebf63fe0d465630f3686eb5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать параметры для сохранения данных на этапе предварительного импорта.  <a href="group___data___exchange.html#ga286ccc1ebf63fe0d465630f3686eb5ff">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga286ccc1ebf63fe0d465630f3686eb5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c1c6a6f816c563d348e7a608a86d1b7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exchange___interface.html#ga2c1c6a6f816c563d348e7a608a86d1b7">ImportFromFile</a> (<a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;mDoc, const c3d::path_string &amp;filePath, <a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> *prop=nullptr, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *indicator=nullptr)=0</td></tr>
+<tr class="memdesc:ga2c1c6a6f816c563d348e7a608a86d1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать файл обменного формата в модель.  <a href="group___exchange___interface.html#ga2c1c6a6f816c563d348e7a608a86d1b7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2c1c6a6f816c563d348e7a608a86d1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab20966e081ec3bad60d6025fc07149b4"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classc3d_1_1_format_info.html">c3d::FormatInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exchange___interface.html#gab20966e081ec3bad60d6025fc07149b4">GetSupportedImportFormats</a> () const =0</td></tr>
+<tr class="memdesc:gab20966e081ec3bad60d6025fc07149b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить список поддерживаемых форматов.  <a href="group___exchange___interface.html#gab20966e081ec3bad60d6025fc07149b4">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab20966e081ec3bad60d6025fc07149b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50caf4aefc17d8ef46f8822ce32eb203"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classc3d_1_1_format_info.html">c3d::FormatInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___exchange___interface.html#ga50caf4aefc17d8ef46f8822ce32eb203">GetSupportedImportForeignFormats</a> () const =0</td></tr>
+<tr class="memdesc:ga50caf4aefc17d8ef46f8822ce32eb203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить список поддерживаемых форматов для импорта через метод <a class="el" href="class_i_converter3_d.html#aed690ad71201040655b7c3fe424b839b" title="Прочитать файл с использованием плагина.">ImportForeign()</a>.  <a href="group___exchange___interface.html#ga50caf4aefc17d8ef46f8822ce32eb203">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga50caf4aefc17d8ef46f8822ce32eb203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Интерфейс конвертера. </p>
+<p>Интерфейс конвертера реализует методы экспорта модели в файлы обменных форматов и импорта из них. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="afa76e4ed2ef4e82fffaa86152e8ba233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa76e4ed2ef4e82fffaa86152e8ba233">&#9670;&nbsp;</a></span>SetConfgiurationSelector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DEPRECATE_DECLARE <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> IConverter3D::SetConfgiurationSelector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_configuration_selector.html">IConfigurationSelector</a> &gt;&#160;</td>
+          <td class="paramname"><em>configuration_selector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить обработчик для выбора конфигураций. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Уст.:</a></b></dt><dd>Метод устарел, вместо него необходимо использовать <a class="el" href="class_i_converter3_d.html#ab276d598cb578683029ac6fcfb41b231" title="Установить обработчик для выбора конфигураций.">SetConfigurationSelector()</a>.</dd></dl>
+<p>Если обработчик установлен и в импортируемом файле есть более одной конфигурации (исполнения), то в процессе чтения будет вызван установленный обработчик для выбора необходимой конфигурации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">configuration_selector</td><td>- Указатель на устанавливаемый обработчик. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab276d598cb578683029ac6fcfb41b231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab276d598cb578683029ac6fcfb41b231">&#9670;&nbsp;</a></span>SetConfigurationSelector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> IConverter3D::SetConfigurationSelector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_configuration_selector.html">IConfigurationSelector</a> &gt;&#160;</td>
+          <td class="paramname"><em>configuration_selector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить обработчик для выбора конфигураций. </p>
+<p>Если обработчик установлен и в импортируемом файле есть более одной конфигурации (исполнения), то в процессе чтения будет вызван установленный обработчик для выбора необходимой конфигурации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">configuration_selector</td><td>- Указатель на устанавливаемый обработчик. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3162cca3904a633ab407153570e665ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3162cca3904a633ab407153570e665ae">&#9670;&nbsp;</a></span>SetDeveloperEventLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> IConverter3D::SetDeveloperEventLogger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_converter_event_logger.html">IConverterEventLogger</a> &gt;&#160;</td>
+          <td class="paramname"><em>importEventLogger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить обработчик для логирования. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">importEventLogger</td><td>- Указатель на устанавливаемый обработчик. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e02d5548a5e34de9cde91dc6d8efa27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e02d5548a5e34de9cde91dc6d8efa27">&#9670;&nbsp;</a></span>SetMetadataTransferCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> IConverter3D::SetMetadataTransferCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_i_converter_metadata_receiver.html">IConverterMetadataReceiver</a> &gt;&#160;</td>
+          <td class="paramname"><em>metadataTransferCallback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить передачу метаданных. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">importEventLogger</td><td>- Указатель на устанавливаемый обработчик. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8ee23e3f1782cb425a853fc3774c12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ee23e3f1782cb425a853fc3774c12a">&#9670;&nbsp;</a></span>ASCIIPointCloudRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a> IConverter3D::ASCIIPointCloudRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;&#160;</td>
+          <td class="paramname"><em>idoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *&#160;</td>
+          <td class="paramname"><em>indicator</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_ref_item.html">MbRefItem</a> *&#160;</td>
+          <td class="paramname"><em>qeuryStitch</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Прочитать файл с облаком точек в формате ASCII. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prop</td><td>- Реализация интерфейса свойств конвертера.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idoc</td><td>- Реализация интерфейса документа.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indicator</td><td>- Индикатор хода процесса.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qeuryStitch</td><td>- Диалог запроса на сшивку поверхностей (не используется).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения операции. </dd></dl>
+
+</div>
+</div>
+<a id="ab169caeddd87ad511a50ed2af282d88f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab169caeddd87ad511a50ed2af282d88f">&#9670;&nbsp;</a></span>ASCIIPointCloudWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a> IConverter3D::ASCIIPointCloudWrite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;&#160;</td>
+          <td class="paramname"><em>idoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *&#160;</td>
+          <td class="paramname"><em>indicator</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_ref_item.html">MbRefItem</a> *&#160;</td>
+          <td class="paramname"><em>qeuryStitch</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записать файл с облаком точек в формате ASCII.. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prop</td><td>- Реализация интерфейса свойств конвертера.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idoc</td><td>- Реализация интерфейса документа.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indicator</td><td>- Индикатор хода процесса.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qeuryStitch</td><td>- Диалог запроса на сшивку поверхностей (не используется).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения операции. </dd></dl>
+
+</div>
+</div>
+<a id="a0d9cad0bd2518cc8981d6cc194e19cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9cad0bd2518cc8981d6cc194e19cf0">&#9670;&nbsp;</a></span>LoadForeignReader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a> IConverter3D::LoadForeignReader </td>
+          <td>(</td>
+          <td class="paramtype">const c3d::path_string &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a41e1da7918820e98c8b4d87668a87f19">c3d::optionNameValuePairs_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pluginSpecificSettings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_configuration_selector.html">IConfigurationSelector</a> *&#160;</td>
+          <td class="paramname"><em>configSelector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузить плагин получения данных для построения модели. </p>
+<p>Описание специфичных для плагина настроек следует получить у поставщика комопонента.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Экспериментальное API. </dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pluginName</td><td>- Имя подключаемого файла.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pluginSpecificSettings</td><td>- Специфические для плагина настройки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения операции.</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>ЭКСПЕРИМЕНТАЛЬНАЯ.</dd></dl>
+
+</div>
+</div>
+<a id="a548c50b475485f6d557bb224acc49024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548c50b475485f6d557bb224acc49024">&#9670;&nbsp;</a></span>LoadForeignReader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a> IConverter3D::LoadForeignReader </td>
+          <td>(</td>
+          <td class="paramtype">const c3d::path_string &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a41e1da7918820e98c8b4d87668a87f19">c3d::optionNameValuePairs_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pluginSpecificSettings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузить плагин получения данных для построения модели. </p>
+<p>Описание специфичных для плагина настроек следует получить у поставщика комопонента.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Экспериментальное API. </dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pluginName</td><td>- Имя подключаемого файла.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pluginSpecificSettings</td><td>- Специфические для плагина настройки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения операции. </dd></dl>
+
+</div>
+</div>
+<a id="adfdf68684c7f8c81cb5d056b8f0653b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfdf68684c7f8c81cb5d056b8f0653b3">&#9670;&nbsp;</a></span>ReleaseForeignReader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a> IConverter3D::ReleaseForeignReader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отключить загруженный плагин получения данных для построения модели. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения операции. </dd></dl>
+
+</div>
+</div>
+<a id="aed690ad71201040655b7c3fe424b839b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed690ad71201040655b7c3fe424b839b">&#9670;&nbsp;</a></span>ImportForeign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a> IConverter3D::ImportForeign </td>
+          <td>(</td>
+          <td class="paramtype">const c3d::path_string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_it_model_document.html">ItModelDocument</a> &amp;&#160;</td>
+          <td class="paramname"><em>idoc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_convertor_property3_d.html">IConvertorProperty3D</a> *&#160;</td>
+          <td class="paramname"><em>prop</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *&#160;</td>
+          <td class="paramname"><em>indicator</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Прочитать файл с использованием плагина. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- ПУть к файлу, который нужно прочитать.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idoc</td><td>- Реализация интерфейса документа.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prop</td><td>- Реализация интерфейса свойств конвертера.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indicator</td><td>- Индикатор хода процесса.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>ЭКСПЕРИМЕНТАЛЬНАЯ.</dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения операции. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="conv__model__exchange_8h.html">conv_model_exchange.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_i_converter3_d.html">IConverter3D</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

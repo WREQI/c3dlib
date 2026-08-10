@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbCompositeFunction</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_composite_function.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_mb_composite_function-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbCompositeFunction<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___functions.html">Скалярные функции</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Составная функция.  
+ <a href="class_mb_composite_function.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;func_composite_function.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbCompositeFunction:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_composite_function__inherit__graph.svg" width="200" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbCompositeFunction:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_composite_function__coll__graph.svg" width="395" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad0ac4ec4c394a37912e270234512cc03"><td class="memItemLeft" align="right" valign="top"><a id="ad0ac4ec4c394a37912e270234512cc03"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ad0ac4ec4c394a37912e270234512cc03">MbCompositeFunction</a> (<a class="el" href="class_mb_function.html">MbFunction</a> &amp;segment, bool same)</td></tr>
+<tr class="memdesc:ad0ac4ec4c394a37912e270234512cc03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по функции. <br /></td></tr>
+<tr class="separator:ad0ac4ec4c394a37912e270234512cc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbe4df3ab26261073c30d33c78f8e62"><td class="memTemplParams" colspan="2"><a id="a0fbe4df3ab26261073c30d33c78f8e62"></a>
+template&lt;class FunctionVector &gt; </td></tr>
+<tr class="memitem:a0fbe4df3ab26261073c30d33c78f8e62"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a0fbe4df3ab26261073c30d33c78f8e62">MbCompositeFunction</a> (const FunctionVector &amp;initSegments, bool same)</td></tr>
+<tr class="memdesc:a0fbe4df3ab26261073c30d33c78f8e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по набору функции. <br /></td></tr>
+<tr class="separator:a0fbe4df3ab26261073c30d33c78f8e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1d311527c5c04a3f5b9917db2de6b8"><td class="memItemLeft" align="right" valign="top"><a id="aed1d311527c5c04a3f5b9917db2de6b8"></a>
+<a class="el" href="group___functions.html#ga4e771a1f9dba4258ff59317034d3a8ec">MbeFunctionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#aed1d311527c5c04a3f5b9917db2de6b8">IsA</a> () const override</td></tr>
+<tr class="memdesc:aed1d311527c5c04a3f5b9917db2de6b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип элемента. <br /></td></tr>
+<tr class="separator:aed1d311527c5c04a3f5b9917db2de6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa1553f8e3d22116ced7fc647d081d0"><td class="memItemLeft" align="right" valign="top"><a id="a6fa1553f8e3d22116ced7fc647d081d0"></a>
+<a class="el" href="class_mb_function.html">MbFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a6fa1553f8e3d22116ced7fc647d081d0">Duplicate</a> () const override</td></tr>
+<tr class="memdesc:a6fa1553f8e3d22116ced7fc647d081d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать копию элемента. <br /></td></tr>
+<tr class="separator:a6fa1553f8e3d22116ced7fc647d081d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeaea8c856fcb64cc41d9eb826ef54ad"><td class="memItemLeft" align="right" valign="top"><a id="adeaea8c856fcb64cc41d9eb826ef54ad"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#adeaea8c856fcb64cc41d9eb826ef54ad">IsSame</a> (const <a class="el" href="class_mb_function.html">MbFunction</a> &amp;other, double accuracy=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const override</td></tr>
+<tr class="memdesc:adeaea8c856fcb64cc41d9eb826ef54ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными. <br /></td></tr>
+<tr class="separator:adeaea8c856fcb64cc41d9eb826ef54ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed92554121d828ebff6c1d57f446e81"><td class="memItemLeft" align="right" valign="top"><a id="abed92554121d828ebff6c1d57f446e81"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#abed92554121d828ebff6c1d57f446e81">IsSimilar</a> (const <a class="el" href="class_mb_function.html">MbFunction</a> &amp;) const override</td></tr>
+<tr class="memdesc:abed92554121d828ebff6c1d57f446e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты подобными. <br /></td></tr>
+<tr class="separator:abed92554121d828ebff6c1d57f446e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab742f6642d56b08b948f148dda3b040f"><td class="memItemLeft" align="right" valign="top"><a id="ab742f6642d56b08b948f148dda3b040f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ab742f6642d56b08b948f148dda3b040f">SetEqual</a> (const <a class="el" href="class_mb_function.html">MbFunction</a> &amp;) override</td></tr>
+<tr class="memdesc:ab742f6642d56b08b948f148dda3b040f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать равным. <br /></td></tr>
+<tr class="separator:ab742f6642d56b08b948f148dda3b040f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acf2d047caf58bc645c26242f97dd75"><td class="memItemLeft" align="right" valign="top"><a id="a4acf2d047caf58bc645c26242f97dd75"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a4acf2d047caf58bc645c26242f97dd75">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;) override</td></tr>
+<tr class="memdesc:a4acf2d047caf58bc645c26242f97dd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта. <br /></td></tr>
+<tr class="separator:a4acf2d047caf58bc645c26242f97dd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70155cfe89a554855e5606a0e7d92976"><td class="memItemLeft" align="right" valign="top"><a id="a70155cfe89a554855e5606a0e7d92976"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a70155cfe89a554855e5606a0e7d92976">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;) override</td></tr>
+<tr class="memdesc:a70155cfe89a554855e5606a0e7d92976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать свойства объекта. <br /></td></tr>
+<tr class="separator:a70155cfe89a554855e5606a0e7d92976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb4effc1d0b1e261b096eb6566bfeaf"><td class="memItemLeft" align="right" valign="top"><a id="aecb4effc1d0b1e261b096eb6566bfeaf"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#aecb4effc1d0b1e261b096eb6566bfeaf">GetTMax</a> () const override</td></tr>
+<tr class="memdesc:aecb4effc1d0b1e261b096eb6566bfeaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть максимальное значение параметра. <br /></td></tr>
+<tr class="separator:aecb4effc1d0b1e261b096eb6566bfeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207a875c9c1fba4eeb5d5666d1c9a06b"><td class="memItemLeft" align="right" valign="top"><a id="a207a875c9c1fba4eeb5d5666d1c9a06b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a207a875c9c1fba4eeb5d5666d1c9a06b">GetTMin</a> () const override</td></tr>
+<tr class="memdesc:a207a875c9c1fba4eeb5d5666d1c9a06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть минимальное значение параметра. <br /></td></tr>
+<tr class="separator:a207a875c9c1fba4eeb5d5666d1c9a06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4632dc5f292e790a7a3425548a0d302c"><td class="memItemLeft" align="right" valign="top"><a id="a4632dc5f292e790a7a3425548a0d302c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a4632dc5f292e790a7a3425548a0d302c">IsClosed</a> () const override</td></tr>
+<tr class="memdesc:a4632dc5f292e790a7a3425548a0d302c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить замкнутость функции. <br /></td></tr>
+<tr class="separator:a4632dc5f292e790a7a3425548a0d302c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b922d86c9a2618a632631b146b4899"><td class="memItemLeft" align="right" valign="top"><a id="aa2b922d86c9a2618a632631b146b4899"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#aa2b922d86c9a2618a632631b146b4899">SetClosed</a> (bool cl) override</td></tr>
+<tr class="memdesc:aa2b922d86c9a2618a632631b146b4899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить замкнутость функции. <br /></td></tr>
+<tr class="separator:aa2b922d86c9a2618a632631b146b4899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070f5b1844269b42dc2ec2d71566878a"><td class="memItemLeft" align="right" valign="top"><a id="a070f5b1844269b42dc2ec2d71566878a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a070f5b1844269b42dc2ec2d71566878a">Value</a> (double &amp;t) const override</td></tr>
+<tr class="memdesc:a070f5b1844269b42dc2ec2d71566878a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение функции для t. <br /></td></tr>
+<tr class="separator:a070f5b1844269b42dc2ec2d71566878a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8c9c4928e79576e6739ff848f05eb9"><td class="memItemLeft" align="right" valign="top"><a id="a3d8c9c4928e79576e6739ff848f05eb9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a3d8c9c4928e79576e6739ff848f05eb9">FirstDer</a> (double &amp;t) const override</td></tr>
+<tr class="memdesc:a3d8c9c4928e79576e6739ff848f05eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Первая производная по t. <br /></td></tr>
+<tr class="separator:a3d8c9c4928e79576e6739ff848f05eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3633d68ab0e6df7d32a060c049c70e55"><td class="memItemLeft" align="right" valign="top"><a id="a3633d68ab0e6df7d32a060c049c70e55"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a3633d68ab0e6df7d32a060c049c70e55">SecondDer</a> (double &amp;t) const override</td></tr>
+<tr class="memdesc:a3633d68ab0e6df7d32a060c049c70e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вторая производная по t. <br /></td></tr>
+<tr class="separator:a3633d68ab0e6df7d32a060c049c70e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efac273efb9d429b18235a45ad6d3ab"><td class="memItemLeft" align="right" valign="top"><a id="a8efac273efb9d429b18235a45ad6d3ab"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a8efac273efb9d429b18235a45ad6d3ab">ThirdDer</a> (double &amp;t) const override</td></tr>
+<tr class="memdesc:a8efac273efb9d429b18235a45ad6d3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Третья производная по t. <br /></td></tr>
+<tr class="separator:a8efac273efb9d429b18235a45ad6d3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e79490d031405428ec62195718712b"><td class="memItemLeft" align="right" valign="top"><a id="a68e79490d031405428ec62195718712b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a68e79490d031405428ec62195718712b">_Value</a> (double t) const override</td></tr>
+<tr class="memdesc:a68e79490d031405428ec62195718712b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение расширенной функции для t. <br /></td></tr>
+<tr class="separator:a68e79490d031405428ec62195718712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76401d37e918395e837f39bd6528470b"><td class="memItemLeft" align="right" valign="top"><a id="a76401d37e918395e837f39bd6528470b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a76401d37e918395e837f39bd6528470b">_FirstDer</a> (double t) const override</td></tr>
+<tr class="memdesc:a76401d37e918395e837f39bd6528470b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Первая производная расширенной функции по t. <br /></td></tr>
+<tr class="separator:a76401d37e918395e837f39bd6528470b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23689735b56b4e0af3836eb7986284e1"><td class="memItemLeft" align="right" valign="top"><a id="a23689735b56b4e0af3836eb7986284e1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a23689735b56b4e0af3836eb7986284e1">_SecondDer</a> (double t) const override</td></tr>
+<tr class="memdesc:a23689735b56b4e0af3836eb7986284e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вторая производная расширенной функции по t. <br /></td></tr>
+<tr class="separator:a23689735b56b4e0af3836eb7986284e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05c3d6993d047545334641b5bf96a7b"><td class="memItemLeft" align="right" valign="top"><a id="ab05c3d6993d047545334641b5bf96a7b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ab05c3d6993d047545334641b5bf96a7b">_ThirdDer</a> (double t) const override</td></tr>
+<tr class="memdesc:ab05c3d6993d047545334641b5bf96a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Третья производная расширенной функции по t. <br /></td></tr>
+<tr class="separator:ab05c3d6993d047545334641b5bf96a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df601079f126ade19e82200ffb8f929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a5df601079f126ade19e82200ffb8f929">Explore</a> (double &amp;t, bool ext, double &amp;val, double &amp;fir, double *sec, double *thr) const override</td></tr>
+<tr class="memdesc:a5df601079f126ade19e82200ffb8f929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить значение и производные для заданного параметра.  <a href="class_mb_composite_function.html#a5df601079f126ade19e82200ffb8f929">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5df601079f126ade19e82200ffb8f929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0284539a580f216b1ed1838200eacd89"><td class="memItemLeft" align="right" valign="top"><a id="a0284539a580f216b1ed1838200eacd89"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a0284539a580f216b1ed1838200eacd89">Inverse</a> (<a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr) override</td></tr>
+<tr class="memdesc:a0284539a580f216b1ed1838200eacd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить направление. <br /></td></tr>
+<tr class="separator:a0284539a580f216b1ed1838200eacd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7240c587ce9ff0590b51b9305d5514d6"><td class="memItemLeft" align="right" valign="top"><a id="a7240c587ce9ff0590b51b9305d5514d6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a7240c587ce9ff0590b51b9305d5514d6">Step</a> (double t, double sag) const override</td></tr>
+<tr class="memdesc:a7240c587ce9ff0590b51b9305d5514d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить шаг по прогибу для заданного параметра t. <br /></td></tr>
+<tr class="separator:a7240c587ce9ff0590b51b9305d5514d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6227fbb6fac710c56dbd4e3c434a22"><td class="memItemLeft" align="right" valign="top"><a id="a9c6227fbb6fac710c56dbd4e3c434a22"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a9c6227fbb6fac710c56dbd4e3c434a22">DeviationStep</a> (double t, double angle) const override</td></tr>
+<tr class="memdesc:a9c6227fbb6fac710c56dbd4e3c434a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить шаг по угловому отклонению для заданного параметра t. <br /></td></tr>
+<tr class="separator:a9c6227fbb6fac710c56dbd4e3c434a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b82dfa193bc69c7b266fbae3899e68"><td class="memItemLeft" align="right" valign="top"><a id="ae3b82dfa193bc69c7b266fbae3899e68"></a>
+<a class="el" href="class_mb_function.html">MbFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ae3b82dfa193bc69c7b266fbae3899e68">Trimmed</a> (double t1, double t2, int sense) const override</td></tr>
+<tr class="memdesc:ae3b82dfa193bc69c7b266fbae3899e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать функцию из части функции между параметрами t1 и t2 c выбором направления sense. <br /></td></tr>
+<tr class="separator:ae3b82dfa193bc69c7b266fbae3899e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab449efbc93bbb3d1c0d3cc1ecf53e38f"><td class="memItemLeft" align="right" valign="top"><a id="ab449efbc93bbb3d1c0d3cc1ecf53e38f"></a>
+<a class="el" href="class_mb_function.html">MbFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ab449efbc93bbb3d1c0d3cc1ecf53e38f">BreakFunction</a> (double t, bool beg) override</td></tr>
+<tr class="memdesc:ab449efbc93bbb3d1c0d3cc1ecf53e38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбить функцию точкой с параметром t и вернуть отрезанную часть: beg == true - соранить начальную половину, beg == false - соранить конечную половину. <br /></td></tr>
+<tr class="separator:ab449efbc93bbb3d1c0d3cc1ecf53e38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fad045e46ab3f8806391a4303acbef0"><td class="memItemLeft" align="right" valign="top"><a id="a2fad045e46ab3f8806391a4303acbef0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a2fad045e46ab3f8806391a4303acbef0">Break</a> (double t1, double t2)</td></tr>
+<tr class="memdesc:a2fad045e46ab3f8806391a4303acbef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить часть функции. <br /></td></tr>
+<tr class="separator:a2fad045e46ab3f8806391a4303acbef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419bbbc6c4f99cf8e5fced88ca076adf"><td class="memItemLeft" align="right" valign="top"><a id="a419bbbc6c4f99cf8e5fced88ca076adf"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a419bbbc6c4f99cf8e5fced88ca076adf">MinValue</a> (double &amp;t) const override</td></tr>
+<tr class="memdesc:a419bbbc6c4f99cf8e5fced88ca076adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальное значение функции. <br /></td></tr>
+<tr class="separator:a419bbbc6c4f99cf8e5fced88ca076adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83747fd53c35ffcb5f8b546e1332b56"><td class="memItemLeft" align="right" valign="top"><a id="ad83747fd53c35ffcb5f8b546e1332b56"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ad83747fd53c35ffcb5f8b546e1332b56">MaxValue</a> (double &amp;t) const override</td></tr>
+<tr class="memdesc:ad83747fd53c35ffcb5f8b546e1332b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное значение функции. <br /></td></tr>
+<tr class="separator:ad83747fd53c35ffcb5f8b546e1332b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73d1ec10f13cb036e36875137710f0b"><td class="memItemLeft" align="right" valign="top"><a id="ae73d1ec10f13cb036e36875137710f0b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ae73d1ec10f13cb036e36875137710f0b">MidValue</a> () const override</td></tr>
+<tr class="memdesc:ae73d1ec10f13cb036e36875137710f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Среднее значение функции. <br /></td></tr>
+<tr class="separator:ae73d1ec10f13cb036e36875137710f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520751ff119b70e3c971ed06e13e0e7e"><td class="memItemLeft" align="right" valign="top"><a id="a520751ff119b70e3c971ed06e13e0e7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a520751ff119b70e3c971ed06e13e0e7e">IsGood</a> () const override</td></tr>
+<tr class="memdesc:a520751ff119b70e3c971ed06e13e0e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Корректность функции. <br /></td></tr>
+<tr class="separator:a520751ff119b70e3c971ed06e13e0e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806ad5aae90a9405b66844b51faf1d4e"><td class="memItemLeft" align="right" valign="top"><a id="a806ad5aae90a9405b66844b51faf1d4e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a806ad5aae90a9405b66844b51faf1d4e">IsConst</a> () const override</td></tr>
+<tr class="memdesc:a806ad5aae90a9405b66844b51faf1d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли функция константной. <br /></td></tr>
+<tr class="separator:a806ad5aae90a9405b66844b51faf1d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ddcd63b83c017acf279df6f2a54d40"><td class="memItemLeft" align="right" valign="top"><a id="ad6ddcd63b83c017acf279df6f2a54d40"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ad6ddcd63b83c017acf279df6f2a54d40">IsLine</a> () const override</td></tr>
+<tr class="memdesc:ad6ddcd63b83c017acf279df6f2a54d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли функция линейной. <br /></td></tr>
+<tr class="separator:ad6ddcd63b83c017acf279df6f2a54d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad253ee65dfd16c54f171a6b7fe88a9ee"><td class="memItemLeft" align="right" valign="top"><a id="ad253ee65dfd16c54f171a6b7fe88a9ee"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ad253ee65dfd16c54f171a6b7fe88a9ee">SetOffsetFunc</a> (double off, double scale) override</td></tr>
+<tr class="memdesc:ad253ee65dfd16c54f171a6b7fe88a9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сместить функцию. <br /></td></tr>
+<tr class="separator:ad253ee65dfd16c54f171a6b7fe88a9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a27fe87ee68f98270781153b810c15"><td class="memItemLeft" align="right" valign="top"><a id="a23a27fe87ee68f98270781153b810c15"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a23a27fe87ee68f98270781153b810c15">SetLimitParam</a> (double newTMin, double newTMax) override</td></tr>
+<tr class="memdesc:a23a27fe87ee68f98270781153b810c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить область изменения параметра. <br /></td></tr>
+<tr class="separator:a23a27fe87ee68f98270781153b810c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb837112fb62334f05f88e3a69d5d262"><td class="memItemLeft" align="right" valign="top"><a id="acb837112fb62334f05f88e3a69d5d262"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#acb837112fb62334f05f88e3a69d5d262">SetLimitValue</a> (size_t n, double newValue) override</td></tr>
+<tr class="memdesc:acb837112fb62334f05f88e3a69d5d262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить значение на конце ( 1 - в начале, 2 - в конце). <br /></td></tr>
+<tr class="separator:acb837112fb62334f05f88e3a69d5d262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1904432afb03e30b794849330fd8645e"><td class="memItemLeft" align="right" valign="top"><a id="a1904432afb03e30b794849330fd8645e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a1904432afb03e30b794849330fd8645e">GetLimitValue</a> (size_t n) const override</td></tr>
+<tr class="memdesc:a1904432afb03e30b794849330fd8645e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать значение на конце ( 1 - в начале, 2 - в конце). <br /></td></tr>
+<tr class="separator:a1904432afb03e30b794849330fd8645e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd5ccc2e2b9a7592e3b4fccba225859"><td class="memItemLeft" align="right" valign="top"><a id="a6dd5ccc2e2b9a7592e3b4fccba225859"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a6dd5ccc2e2b9a7592e3b4fccba225859">SetLimitDerive</a> (size_t n, double newValue, double dt) override</td></tr>
+<tr class="memdesc:a6dd5ccc2e2b9a7592e3b4fccba225859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить значение производной на конце ( 1 - в начале, 2 - в конце). <br /></td></tr>
+<tr class="separator:a6dd5ccc2e2b9a7592e3b4fccba225859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81460470903507d56605c767b75a7bb8"><td class="memItemLeft" align="right" valign="top"><a id="a81460470903507d56605c767b75a7bb8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a81460470903507d56605c767b75a7bb8">GetLimitDerive</a> (size_t n) const override</td></tr>
+<tr class="memdesc:a81460470903507d56605c767b75a7bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать значение производной на конце ( 1 - в начале, 2 - в конце). <br /></td></tr>
+<tr class="separator:a81460470903507d56605c767b75a7bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab094d9843764b8aae9d0919a3bf6bda6"><td class="memItemLeft" align="right" valign="top"><a id="ab094d9843764b8aae9d0919a3bf6bda6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ab094d9843764b8aae9d0919a3bf6bda6">InsertValue</a> (double t, double newValue) override</td></tr>
+<tr class="memdesc:ab094d9843764b8aae9d0919a3bf6bda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить значение для параметра t. <br /></td></tr>
+<tr class="separator:ab094d9843764b8aae9d0919a3bf6bda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ab38b0780c95643e0e564bed0bf6c2"><td class="memItemLeft" align="right" valign="top"><a id="a26ab38b0780c95643e0e564bed0bf6c2"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a26ab38b0780c95643e0e564bed0bf6c2">BreakPoints</a> (std::vector&lt; double &gt; &amp;vBreaks, double precision=<a class="el" href="mb__variables_8h.html#a42b4b66959f82eb227a4a982982bf159">ANGLE_REGION</a>) const override</td></tr>
+<tr class="memdesc:a26ab38b0780c95643e0e564bed0bf6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">\ ru Определение точек излома контура. <br /></td></tr>
+<tr class="separator:a26ab38b0780c95643e0e564bed0bf6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_function"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_function')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_function.html">MbFunction</a></td></tr>
+<tr class="memitem:a9bd77745ea76f00d376dc228eb6c04c9 inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="a9bd77745ea76f00d376dc228eb6c04c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#a9bd77745ea76f00d376dc228eb6c04c9">IsZero</a> (double t, double accuracy=<a class="el" href="mb__variables_8h.html#a5872af9060c1d9e3bed41d55415278ac">METRIC_REGION</a>) const</td></tr>
+<tr class="memdesc:a9bd77745ea76f00d376dc228eb6c04c9 inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Наличие нулевого значения функции. <br /></td></tr>
+<tr class="separator:a9bd77745ea76f00d376dc228eb6c04c9 inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec7879b23d6db7ec028529eca6bb8a2 inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="a1ec7879b23d6db7ec028529eca6bb8a2"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#a1ec7879b23d6db7ec028529eca6bb8a2">GetTMid</a> () const</td></tr>
+<tr class="memdesc:a1ec7879b23d6db7ec028529eca6bb8a2 inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть середину параметрического диапазона. <br /></td></tr>
+<tr class="separator:a1ec7879b23d6db7ec028529eca6bb8a2 inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5644d6284cc41c7ac193248f69a06b inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="aaa5644d6284cc41c7ac193248f69a06b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#aaa5644d6284cc41c7ac193248f69a06b">GetParamLength</a> () const</td></tr>
+<tr class="memdesc:aaa5644d6284cc41c7ac193248f69a06b inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметрическая длина. <br /></td></tr>
+<tr class="separator:aaa5644d6284cc41c7ac193248f69a06b inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8fdcffa007c9070a6abca3dddff3b6 inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="a6d8fdcffa007c9070a6abca3dddff3b6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#a6d8fdcffa007c9070a6abca3dddff3b6">IsParamOn</a> (double t, double eps) const</td></tr>
+<tr class="memdesc:a6d8fdcffa007c9070a6abca3dddff3b6 inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находится ли параметр в области определения функции. <br /></td></tr>
+<tr class="separator:a6d8fdcffa007c9070a6abca3dddff3b6 inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea2be3fafd9070b14b6fd7b0d2c3aab inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="a1ea2be3fafd9070b14b6fd7b0d2c3aab"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#a1ea2be3fafd9070b14b6fd7b0d2c3aab">PrepareWrite</a> () const</td></tr>
+<tr class="memdesc:a1ea2be3fafd9070b14b6fd7b0d2c3aab inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подготовить к записи регистрируемый объект. <br /></td></tr>
+<tr class="separator:a1ea2be3fafd9070b14b6fd7b0d2c3aab inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e110f98501dc0ab7707b41a45d5f90 inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="a16e110f98501dc0ab7707b41a45d5f90"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#a16e110f98501dc0ab7707b41a45d5f90">IsPeriodic</a> () const</td></tr>
+<tr class="memdesc:a16e110f98501dc0ab7707b41a45d5f90 inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Периодичность замкнутой кривой. <br /></td></tr>
+<tr class="separator:a16e110f98501dc0ab7707b41a45d5f90 inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a528e7d81f39202ce0997e3ee12912 inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="ac4a528e7d81f39202ce0997e3ee12912"></a>
+<a class="el" href="group___data___structures.html#gadb77ddf41d8820cc754f7febf34d7106">MbeNewtonResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ArgumentNewton</b> (double value, bool ext, double funcEpsilon, size_t iterLimit, double &amp;t) const</td></tr>
+<tr class="separator:ac4a528e7d81f39202ce0997e3ee12912 inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74e9b1cbe0134ee6d16eca0b0ec49c5 inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="ab74e9b1cbe0134ee6d16eca0b0ec49c5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#ab74e9b1cbe0134ee6d16eca0b0ec49c5">CuttingFunction</a> (<a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;params, bool beginSafe, double eps, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt; &amp;cutted)</td></tr>
+<tr class="memdesc:ab74e9b1cbe0134ee6d16eca0b0ec49c5 inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбить функцию параметрами: beg == true - соранить начальную половину, beg == false - соранить конечную половину. <br /></td></tr>
+<tr class="separator:ab74e9b1cbe0134ee6d16eca0b0ec49c5 inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e59602d0ff41e052bbfc303f0233c8 inherit pub_methods_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="a79e59602d0ff41e052bbfc303f0233c8"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#a79e59602d0ff41e052bbfc303f0233c8">GetCharacteristicParams</a> (std::vector&lt; double &gt; &amp;tSpecific, double t1, double t2) const</td></tr>
+<tr class="memdesc:a79e59602d0ff41e052bbfc303f0233c8 inherit pub_methods_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить параметры особого поведения в интервале от t1 до t2 (для cos это Pi*n). <br /></td></tr>
+<tr class="separator:a79e59602d0ff41e052bbfc303f0233c8 inherit pub_methods_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4b8113ee0c7e384828c5f3013f8030ec"></a>
+virtual <a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4b8113ee0c7e384828c5f3013f8030ec">RefType</a> () const</td></tr>
+<tr class="memdesc:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a305e3712ee6124e354115f4da5ad63bb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a305e3712ee6124e354115f4da5ad63bb">IsFamilyRegistrable</a> () const</td></tr>
+<tr class="memdesc:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:acf3e977554c65b7c103eb64237824b3b"><td class="memItemLeft" align="right" valign="top"><a id="acf3e977554c65b7c103eb64237824b3b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#acf3e977554c65b7c103eb64237824b3b">MbCompositeFunction</a> ()</td></tr>
+<tr class="memdesc:acf3e977554c65b7c103eb64237824b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой контур. <br /></td></tr>
+<tr class="separator:acf3e977554c65b7c103eb64237824b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662a935ac1f396c913169cb104c1dea7"><td class="memItemLeft" align="right" valign="top"><a id="a662a935ac1f396c913169cb104c1dea7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a662a935ac1f396c913169cb104c1dea7">MbCompositeFunction</a> (const <a class="el" href="class_mb_composite_function.html">MbCompositeFunction</a> &amp;)</td></tr>
+<tr class="memdesc:a662a935ac1f396c913169cb104c1dea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:a662a935ac1f396c913169cb104c1dea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:afeface784ec1d41c1c65dd951e432c57"><td class="memItemLeft" align="right" valign="top"><a id="afeface784ec1d41c1c65dd951e432c57"></a>
+<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#afeface784ec1d41c1c65dd951e432c57">segments</a></td></tr>
+<tr class="memdesc:afeface784ec1d41c1c65dd951e432c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество сегментов составной функции. <br /></td></tr>
+<tr class="separator:afeface784ec1d41c1c65dd951e432c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178d7a0a88098c9c97d67fdc00580348"><td class="memItemLeft" align="right" valign="top"><a id="a178d7a0a88098c9c97d67fdc00580348"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a178d7a0a88098c9c97d67fdc00580348">closed</a></td></tr>
+<tr class="memdesc:a178d7a0a88098c9c97d67fdc00580348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак замкнутости функции. <br /></td></tr>
+<tr class="separator:a178d7a0a88098c9c97d67fdc00580348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134d45ceac58252afa3bc5b4f4b2ad47"><td class="memItemLeft" align="right" valign="top"><a id="a134d45ceac58252afa3bc5b4f4b2ad47"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a134d45ceac58252afa3bc5b4f4b2ad47">tmin</a></td></tr>
+<tr class="memdesc:a134d45ceac58252afa3bc5b4f4b2ad47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начало области определения. <br /></td></tr>
+<tr class="separator:a134d45ceac58252afa3bc5b4f4b2ad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394e16a8c558bcbdc4dee5bf1af85b27"><td class="memItemLeft" align="right" valign="top"><a id="a394e16a8c558bcbdc4dee5bf1af85b27"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a394e16a8c558bcbdc4dee5bf1af85b27">tmax</a></td></tr>
+<tr class="memdesc:a394e16a8c558bcbdc4dee5bf1af85b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конец области определения. <br /></td></tr>
+<tr class="separator:a394e16a8c558bcbdc4dee5bf1af85b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_mb_function"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_mb_function')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_mb_function.html">MbFunction</a></td></tr>
+<tr class="memitem:a345310f575933973ca9f9e3298f7fd32 inherit pro_attribs_class_mb_function"><td class="memItemLeft" align="right" valign="top"><a id="a345310f575933973ca9f9e3298f7fd32"></a>
+MbeFuncVersion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_function.html#a345310f575933973ca9f9e3298f7fd32">version</a></td></tr>
+<tr class="memdesc:a345310f575933973ca9f9e3298f7fd32 inherit pro_attribs_class_mb_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">Версия. <br /></td></tr>
+<tr class="separator:a345310f575933973ca9f9e3298f7fd32 inherit pro_attribs_class_mb_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Функции работы с сегментами контура</h2></td></tr>
+<tr class="memitem:aecf9402fded5e15dc0876b83c74ceb9a"><td class="memTemplParams" colspan="2"><a id="aecf9402fded5e15dc0876b83c74ceb9a"></a>
+template&lt;class FunctionVector &gt; </td></tr>
+<tr class="memitem:aecf9402fded5e15dc0876b83c74ceb9a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#aecf9402fded5e15dc0876b83c74ceb9a">Init</a> (const FunctionVector &amp;initSegments, bool same, bool cls)</td></tr>
+<tr class="memdesc:aecf9402fded5e15dc0876b83c74ceb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация по набору кривых (sameCurves - функции или их копии). <br /></td></tr>
+<tr class="separator:aecf9402fded5e15dc0876b83c74ceb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590528a081f376f325afbd27f7c193aa"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a590528a081f376f325afbd27f7c193aa">FindSegment</a> (double &amp;t, double &amp;tSeg) const</td></tr>
+<tr class="memdesc:a590528a081f376f325afbd27f7c193aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти сегмент контура.  <a href="class_mb_composite_function.html#a590528a081f376f325afbd27f7c193aa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a590528a081f376f325afbd27f7c193aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd7ae56deb1a92d749f312b290c2d6a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a5bd7ae56deb1a92d749f312b290c2d6a">FindParameter</a> (size_t iSeg, double tSeg) const</td></tr>
+<tr class="memdesc:a5bd7ae56deb1a92d749f312b290c2d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти параметр контура.  <a href="class_mb_composite_function.html#a5bd7ae56deb1a92d749f312b290c2d6a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5bd7ae56deb1a92d749f312b290c2d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29810b0857943b0ed20ae000205b0314"><td class="memItemLeft" align="right" valign="top"><a id="a29810b0857943b0ed20ae000205b0314"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a29810b0857943b0ed20ae000205b0314">GetSegmentsCount</a> () const</td></tr>
+<tr class="memdesc:a29810b0857943b0ed20ae000205b0314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество сегментов контура. <br /></td></tr>
+<tr class="separator:a29810b0857943b0ed20ae000205b0314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8707d0a6b66a2f58771992255fb74784"><td class="memTemplParams" colspan="2"><a id="a8707d0a6b66a2f58771992255fb74784"></a>
+template&lt;class CurvesVector &gt; </td></tr>
+<tr class="memitem:a8707d0a6b66a2f58771992255fb74784"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a8707d0a6b66a2f58771992255fb74784">GetSegments</a> (CurvesVector &amp;curves) const</td></tr>
+<tr class="memdesc:a8707d0a6b66a2f58771992255fb74784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить функции контура. <br /></td></tr>
+<tr class="separator:a8707d0a6b66a2f58771992255fb74784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5909251013186945b3a0036ff9eddd"><td class="memItemLeft" align="right" valign="top"><a id="afb5909251013186945b3a0036ff9eddd"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#afb5909251013186945b3a0036ff9eddd">DetachSegments</a> ()</td></tr>
+<tr class="memdesc:afb5909251013186945b3a0036ff9eddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить все сегменты контура. <br /></td></tr>
+<tr class="separator:afb5909251013186945b3a0036ff9eddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a09c14bee4ce79b6d715c4821c26dfc"><td class="memItemLeft" align="right" valign="top"><a id="a6a09c14bee4ce79b6d715c4821c26dfc"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a6a09c14bee4ce79b6d715c4821c26dfc">DeleteSegments</a> ()</td></tr>
+<tr class="memdesc:a6a09c14bee4ce79b6d715c4821c26dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить используемые сегменты и удалить остальные. <br /></td></tr>
+<tr class="separator:a6a09c14bee4ce79b6d715c4821c26dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffb4464c4560c8d37730238d1a58e27"><td class="memItemLeft" align="right" valign="top"><a id="aeffb4464c4560c8d37730238d1a58e27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#aeffb4464c4560c8d37730238d1a58e27">DeleteSegment</a> (size_t ind)</td></tr>
+<tr class="memdesc:aeffb4464c4560c8d37730238d1a58e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить сегмент контура. <br /></td></tr>
+<tr class="separator:aeffb4464c4560c8d37730238d1a58e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a27e5473be50d94865761494d30ee2"><td class="memItemLeft" align="right" valign="top"><a id="a45a27e5473be50d94865761494d30ee2"></a>
+<a class="el" href="class_mb_function.html">MbFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a45a27e5473be50d94865761494d30ee2">DetachSegment</a> (size_t ind)</td></tr>
+<tr class="memdesc:a45a27e5473be50d94865761494d30ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отцепить сегмент контура. <br /></td></tr>
+<tr class="separator:a45a27e5473be50d94865761494d30ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62e5c8943ba4ba98fd0b2b95253699c"><td class="memItemLeft" align="right" valign="top"><a id="ab62e5c8943ba4ba98fd0b2b95253699c"></a>
+const <a class="el" href="class_mb_function.html">MbFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ab62e5c8943ba4ba98fd0b2b95253699c">GetSegment</a> (size_t ind) const</td></tr>
+<tr class="memdesc:ab62e5c8943ba4ba98fd0b2b95253699c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать сегмент контура по индексу. <br /></td></tr>
+<tr class="separator:ab62e5c8943ba4ba98fd0b2b95253699c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2362d03cf0165ba5cc75e5c098874c88"><td class="memItemLeft" align="right" valign="top"><a id="a2362d03cf0165ba5cc75e5c098874c88"></a>
+<a class="el" href="class_mb_function.html">MbFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a2362d03cf0165ba5cc75e5c098874c88">SetSegment</a> (size_t ind)</td></tr>
+<tr class="memdesc:a2362d03cf0165ba5cc75e5c098874c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать сегмент контура по индексу. <br /></td></tr>
+<tr class="separator:a2362d03cf0165ba5cc75e5c098874c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada44a656483d4e54aac1964cc6211e07"><td class="memItemLeft" align="right" valign="top"><a id="ada44a656483d4e54aac1964cc6211e07"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ada44a656483d4e54aac1964cc6211e07">SetSegment</a> (<a class="el" href="class_mb_function.html">MbFunction</a> &amp;newSegment, size_t ind, bool same)</td></tr>
+<tr class="memdesc:ada44a656483d4e54aac1964cc6211e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменить сегмент в контуре. <br /></td></tr>
+<tr class="separator:ada44a656483d4e54aac1964cc6211e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1729e11edc141b7305157d3278d39f"><td class="memItemLeft" align="right" valign="top"><a id="a5b1729e11edc141b7305157d3278d39f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a5b1729e11edc141b7305157d3278d39f">AddSegment</a> (<a class="el" href="class_mb_function.html">MbFunction</a> &amp;newSegment, bool same)</td></tr>
+<tr class="memdesc:a5b1729e11edc141b7305157d3278d39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить сегмент в контур. <br /></td></tr>
+<tr class="separator:a5b1729e11edc141b7305157d3278d39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41481b0d840ab24c09f4b9278b91da7"><td class="memItemLeft" align="right" valign="top"><a id="ad41481b0d840ab24c09f4b9278b91da7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ad41481b0d840ab24c09f4b9278b91da7">AddAtSegment</a> (<a class="el" href="class_mb_function.html">MbFunction</a> &amp;newSegment, size_t ind, bool same)</td></tr>
+<tr class="memdesc:ad41481b0d840ab24c09f4b9278b91da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить сегмент в контур перед сегментом с индексом ind. <br /></td></tr>
+<tr class="separator:ad41481b0d840ab24c09f4b9278b91da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f8fbd95640301d1c892a6c3221cac2"><td class="memItemLeft" align="right" valign="top"><a id="a37f8fbd95640301d1c892a6c3221cac2"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a37f8fbd95640301d1c892a6c3221cac2">AddAfterSegment</a> (<a class="el" href="class_mb_function.html">MbFunction</a> &amp;newSegment, size_t ind, bool same)</td></tr>
+<tr class="memdesc:a37f8fbd95640301d1c892a6c3221cac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить сегмент в контур после сегмента с индексом ind. <br /></td></tr>
+<tr class="separator:a37f8fbd95640301d1c892a6c3221cac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e89be56a697c8a710ca4d5f2aa3c95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_function.html">MbFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a46e89be56a697c8a710ca4d5f2aa3c95">AddSegment</a> (<a class="el" href="class_mb_function.html">MbFunction</a> &amp;pBasis, double t1, double t2, int sense)</td></tr>
+<tr class="memdesc:a46e89be56a697c8a710ca4d5f2aa3c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить (усеченную) копию сегмента в конец контура.  <a href="class_mb_composite_function.html#a46e89be56a697c8a710ca4d5f2aa3c95">Подробнее...</a><br /></td></tr>
+<tr class="separator:a46e89be56a697c8a710ca4d5f2aa3c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae3dd08088c71db93f1fae3f6c14eae"><td class="memItemLeft" align="right" valign="top"><a id="a3ae3dd08088c71db93f1fae3f6c14eae"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a3ae3dd08088c71db93f1fae3f6c14eae">SegmentsAdd</a> (<a class="el" href="class_mb_function.html">MbFunction</a> &amp;newSegment, bool calculateParamLength=true)</td></tr>
+<tr class="memdesc:a3ae3dd08088c71db93f1fae3f6c14eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить сегмент в контур без проверки. Сбросить переменные кэширования. <br /></td></tr>
+<tr class="separator:a3ae3dd08088c71db93f1fae3f6c14eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f219dbcd0245a32d4dcb4ad12785b7"><td class="memItemLeft" align="right" valign="top"><a id="af4f219dbcd0245a32d4dcb4ad12785b7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="separator:af4f219dbcd0245a32d4dcb4ad12785b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c283a2cf7f3b2b33034ef7681f996e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a75c283a2cf7f3b2b33034ef7681f996e">SegmentsReserve</a> (size_t additionalSpace)</td></tr>
+<tr class="memdesc:a75c283a2cf7f3b2b33034ef7681f996e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Управление распределением памяти в массиве segments.  <a href="class_mb_composite_function.html#a75c283a2cf7f3b2b33034ef7681f996e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a75c283a2cf7f3b2b33034ef7681f996e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849e256e31d65a9358b78cc2243f566d"><td class="memItemLeft" align="right" valign="top"><a id="a849e256e31d65a9358b78cc2243f566d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a849e256e31d65a9358b78cc2243f566d">SegmentsAdjust</a> ()</td></tr>
+<tr class="memdesc:a849e256e31d65a9358b78cc2243f566d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить лишнюю память. <br /></td></tr>
+<tr class="separator:a849e256e31d65a9358b78cc2243f566d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b54aa92a883b6ca7ea7f6c9426109a"><td class="memItemLeft" align="right" valign="top"><a id="ad3b54aa92a883b6ca7ea7f6c9426109a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#ad3b54aa92a883b6ca7ea7f6c9426109a">CheckConnection</a> (double eps=<a class="el" href="mb__variables_8h.html#a23f9b7a7647adc72d8e98b0b149d8c96">METRIC_PRECISION</a>) const</td></tr>
+<tr class="memdesc:ad3b54aa92a883b6ca7ea7f6c9426109a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка непрерывности контура. <br /></td></tr>
+<tr class="separator:ad3b54aa92a883b6ca7ea7f6c9426109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73db6274ceac32a06aa9be8aed861400"><td class="memItemLeft" align="right" valign="top"><a id="a73db6274ceac32a06aa9be8aed861400"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a73db6274ceac32a06aa9be8aed861400">CalculateParamLength</a> ()</td></tr>
+<tr class="memdesc:a73db6274ceac32a06aa9be8aed861400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать параметрическую длину. <br /></td></tr>
+<tr class="separator:a73db6274ceac32a06aa9be8aed861400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e4d9fa5a1126ca2756ae97e5888c54"><td class="memItemLeft" align="right" valign="top"><a id="a10e4d9fa5a1126ca2756ae97e5888c54"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_function.html#a10e4d9fa5a1126ca2756ae97e5888c54">CheckClosed</a> (double eps)</td></tr>
+<tr class="memdesc:a10e4d9fa5a1126ca2756ae97e5888c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить признак замкнутости контура. <br /></td></tr>
+<tr class="separator:a10e4d9fa5a1126ca2756ae97e5888c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Составная функция. </p>
+<p>Скалярная составная функция скалярного параметра состоит из набора функций (сегментов). <br  />
+ В составной функции начало каждого последующего сегмента стыкуется с концом предыдущего. Составная функция является замкнутой, если конец последнего сегмента стыкуется с началом первого сегмента.<br  />
+ Начальное значение параметра составной функции равно нулю. Параметрическая длина составной функции равна сумме параметрических длин составляющих её сегментов. <br  />
+ В качестве сегментов составной функции не используются другие составные функции. Если составную функцию нужно построить на основе других составных функций, то последние должны рассматриваться как совокупность составляющих их функций, а не как единые функции.<br  />
+</p>
+<p>The beginning of each subsequent segment of composite function is joined to the end of the previous one. Composite function is closed if the end of last segment is joined to the beginning of the first segment.<br  />
+ If the segments of a composite function are not smoothly joined then the composite function will have breaks. The initial value of the composite function is equal to zero. The parametric length of a composite function is equal to the sum of the parametric lengths of components of its segments. <br  />
+ Other composite curves are not used as segments of the composite function. If it is required to create a composite function based on other composite functions, then the latter must be regarded as a set of their functions, and not as single functions. <br  />
+ </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a5df601079f126ade19e82200ffb8f929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df601079f126ade19e82200ffb8f929">&#9670;&nbsp;</a></span>Explore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCompositeFunction::Explore </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>fir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>thr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычислить значение и производные для заданного параметра. </p>
+<p>Значение и производных вычисляются в пределах области определения и на расширенной оси.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- Параметр.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ext</td><td>- В пределах области определения (false), на расширенной оси (true).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">val</td><td>- Значение.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fir</td><td>- Производная.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sec</td><td>- Вторая производная по t, если не ноль.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">thr</td><td>- Третья производная по t, если не ноль. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Переопределяет метод предка <a class="el" href="group___curves__3_d.html#ga20ef74d3a4e4452f41fa38c9ebf9612f">MbFunction</a>.</p>
+
+</div>
+</div>
+<a id="a590528a081f376f325afbd27f7c193aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590528a081f376f325afbd27f7c193aa">&#9670;&nbsp;</a></span>FindSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ptrdiff_t MbCompositeFunction::FindSegment </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>tSeg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти сегмент контура. </p>
+<p>Найти сегмент контура по параметру контура. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t</td><td>- Параметр контура.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tSeg</td><td>- Параметр сегмента контура.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает номер сегмента в случае успешного выполнения или -1. </dd></dl>
+
+</div>
+</div>
+<a id="a5bd7ae56deb1a92d749f312b290c2d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd7ae56deb1a92d749f312b290c2d6a">&#9670;&nbsp;</a></span>FindParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MbCompositeFunction::FindParameter </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iSeg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tSeg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти параметр контура. </p>
+<p>Найти параметр контура по номеру сегмента и параметру сегмента. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iSeg</td><td>- Номер сегмента (индекс).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tSeg</td><td>- Параметр сегмента контура.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает параметр контура или UNDEFINED_DBL в случае неудачи. </dd></dl>
+
+</div>
+</div>
+<a id="a46e89be56a697c8a710ca4d5f2aa3c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e89be56a697c8a710ca4d5f2aa3c95">&#9670;&nbsp;</a></span>AddSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_function.html">MbFunction</a>* MbCompositeFunction::AddSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_function.html">MbFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>pBasis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sense</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить (усеченную) копию сегмента в конец контура. </p>
+<p>Добавить (усеченную) копию сегмента в конец контура. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pBasis-</td><td>Исходная функция.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1</td><td>- Начальный параметр усечения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t2</td><td>- Конечный параметр усечения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sense</td><td>- Направление усеченной функции относительно исходной. <br  />
+ sense = 1 - направление функции сохраняется. sense = -1 - направление функции меняется на обратное.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает в случае успешного выполнения ненулевой указатель на добавленную кривую. </dd></dl>
+
+</div>
+</div>
+<a id="a75c283a2cf7f3b2b33034ef7681f996e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c283a2cf7f3b2b33034ef7681f996e">&#9670;&nbsp;</a></span>SegmentsReserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCompositeFunction::SegmentsReserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>additionalSpace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Управление распределением памяти в массиве segments. </p>
+<p>Зарезервировать место. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="func__composite__function_8h.html">func_composite_function.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_composite_function.html">MbCompositeFunction</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:01. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

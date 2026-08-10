@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Структура MedianShellValues</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('struct_median_shell_values.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_median_shell_values-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура MedianShellValues<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___build___parameters.html">Параметры операций</a> &raquo; <a class="el" href="group___shell___building___parameters.html">Параметры построения оболочек</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Параметры создания срединной оболочки между выбранными гранями тела.  
+ <a href="struct_median_shell_values.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;op_shell_parameter.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:aa7c69deb0433a246cad16166c2f349de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349de">FilletType</a> { <a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349dea4494636255b7e7e3df9069306051d3f6">tf_none</a> = 0
+, <a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349dea13cc62939e79dcf48cdd070611700ad7">tf_internal</a> = 1
+, <a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349dea079ad46f84e801e17f5dd29dd335bf09">tf_external</a> = 2
+, <a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349deabcd83392fa2bf3ff629c02b82a0ec980">tf_average</a> = 3
+ }</td></tr>
+<tr class="memdesc:aa7c69deb0433a246cad16166c2f349de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип расчета радиуса скругления между гранями срединной оболочки.  <a href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349de">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa7c69deb0433a246cad16166c2f349de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca93e0ec9fa823de88be5220ca579767"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767">MedianAttr</a> { <a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767a44b5e846ef432e7c81f28ab4f0c208c3">ma_none</a> = 0
+, <a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767a97d692d395a1d6d2d980a5bfa3f53260">ma_min</a> = 1
+, <a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767a82e13fee785fa5e791f2a07783266f26">ma_mid</a> = 2
+, <a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767acc1d5a5695f324d982f7c44ae0f2a370">ma_max</a> = 3
+ }</td></tr>
+<tr class="memdesc:aca93e0ec9fa823de88be5220ca579767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг расчета и записи в атрибуты грани значения толщины срединной оболочки.  <a href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767">Подробнее...</a><br /></td></tr>
+<tr class="separator:aca93e0ec9fa823de88be5220ca579767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7948035bf29586c95b2fb270996b91"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#ade7948035bf29586c95b2fb270996b91">InputMode</a> { <a class="el" href="struct_median_shell_values.html#ade7948035bf29586c95b2fb270996b91ae80c15a9992c71d98d55ecc50a7d83c6">im_pairs</a> = 0
+, <a class="el" href="struct_median_shell_values.html#ade7948035bf29586c95b2fb270996b91a1874ca8bf99d4281c2e146f6c086a4d7">im_twogroups</a> = 1
+ }</td></tr>
+<tr class="memdesc:ade7948035bf29586c95b2fb270996b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вид входных граней.  <a href="struct_median_shell_values.html#ade7948035bf29586c95b2fb270996b91">Подробнее...</a><br /></td></tr>
+<tr class="separator:ade7948035bf29586c95b2fb270996b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae94d09a19c1456edca998ab9f8aa24a1"><td class="memItemLeft" align="right" valign="top"><a id="ae94d09a19c1456edca998ab9f8aa24a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#ae94d09a19c1456edca998ab9f8aa24a1">MedianShellValues</a> ()</td></tr>
+<tr class="memdesc:ae94d09a19c1456edca998ab9f8aa24a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:ae94d09a19c1456edca998ab9f8aa24a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74db0d2cc524c67883f37e68374e8ba"><td class="memItemLeft" align="right" valign="top"><a id="ae74db0d2cc524c67883f37e68374e8ba"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#ae74db0d2cc524c67883f37e68374e8ba">MedianShellValues</a> (const <a class="el" href="struct_median_shell_values.html">MedianShellValues</a> &amp;other)</td></tr>
+<tr class="memdesc:ae74db0d2cc524c67883f37e68374e8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:ae74db0d2cc524c67883f37e68374e8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadfcfceae619215ae538619235c7f2b"><td class="memItemLeft" align="right" valign="top"><a id="adadfcfceae619215ae538619235c7f2b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#adadfcfceae619215ae538619235c7f2b">MedianShellValues</a> (double pos, double d1, double d2, bool cut)</td></tr>
+<tr class="memdesc:adadfcfceae619215ae538619235c7f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по параметрам. <br /></td></tr>
+<tr class="separator:adadfcfceae619215ae538619235c7f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5adb738bcb3ad30df6db15a4f51b2052"><td class="memItemLeft" align="right" valign="top"><a id="a5adb738bcb3ad30df6db15a4f51b2052"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#a5adb738bcb3ad30df6db15a4f51b2052">IsSame</a> (const <a class="el" href="struct_median_shell_values.html">MedianShellValues</a> &amp;obj, double accuracy) const</td></tr>
+<tr class="memdesc:a5adb738bcb3ad30df6db15a4f51b2052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными? <br /></td></tr>
+<tr class="separator:a5adb738bcb3ad30df6db15a4f51b2052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc445995c029c461d7d5e726144c066"><td class="memItemLeft" align="right" valign="top"><a id="a3cc445995c029c461d7d5e726144c066"></a>
+<a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349de">FilletType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#a3cc445995c029c461d7d5e726144c066">GetType</a> () const</td></tr>
+<tr class="memdesc:a3cc445995c029c461d7d5e726144c066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип скругления. <br /></td></tr>
+<tr class="separator:a3cc445995c029c461d7d5e726144c066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34b1503f30fec0b3264ab1a8c2066b8"><td class="memItemLeft" align="right" valign="top"><a id="ab34b1503f30fec0b3264ab1a8c2066b8"></a>
+<a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349de">FilletType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#ab34b1503f30fec0b3264ab1a8c2066b8">SetType</a> ()</td></tr>
+<tr class="memdesc:ab34b1503f30fec0b3264ab1a8c2066b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип скругления для изменения. <br /></td></tr>
+<tr class="separator:ab34b1503f30fec0b3264ab1a8c2066b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb487fc482dc9ec63ecffed7611c4e2e"><td class="memItemLeft" align="right" valign="top"><a id="adb487fc482dc9ec63ecffed7611c4e2e"></a>
+<a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767">MedianAttr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#adb487fc482dc9ec63ecffed7611c4e2e">GetMedianAttr</a> () const</td></tr>
+<tr class="memdesc:adb487fc482dc9ec63ecffed7611c4e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип скругления. <br /></td></tr>
+<tr class="separator:adb487fc482dc9ec63ecffed7611c4e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae925816e35818604de55d24cdc34994b"><td class="memItemLeft" align="right" valign="top"><a id="ae925816e35818604de55d24cdc34994b"></a>
+<a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767">MedianAttr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#ae925816e35818604de55d24cdc34994b">SetMedianAttr</a> ()</td></tr>
+<tr class="memdesc:ae925816e35818604de55d24cdc34994b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип скругления для изменения. <br /></td></tr>
+<tr class="separator:ae925816e35818604de55d24cdc34994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefb9d502eed8bb6322ae71a705ddb70"><td class="memItemLeft" align="right" valign="top"><a id="aaefb9d502eed8bb6322ae71a705ddb70"></a>
+<a class="el" href="struct_median_shell_values.html">MedianShellValues</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#aaefb9d502eed8bb6322ae71a705ddb70">operator=</a> (const <a class="el" href="struct_median_shell_values.html">MedianShellValues</a> &amp;other)</td></tr>
+<tr class="memdesc:aaefb9d502eed8bb6322ae71a705ddb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания. <br /></td></tr>
+<tr class="separator:aaefb9d502eed8bb6322ae71a705ddb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a887edad8f6b0fcb1b3d8cf6811dc9598"><td class="memItemLeft" align="right" valign="top"><a id="a887edad8f6b0fcb1b3d8cf6811dc9598"></a>
+<a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349de">FilletType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#a887edad8f6b0fcb1b3d8cf6811dc9598">filletType</a></td></tr>
+<tr class="memdesc:a887edad8f6b0fcb1b3d8cf6811dc9598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг обработки скруглений. <br /></td></tr>
+<tr class="separator:a887edad8f6b0fcb1b3d8cf6811dc9598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5a8d4b4865b2d22cb5b237888cb8f8"><td class="memItemLeft" align="right" valign="top"><a id="aed5a8d4b4865b2d22cb5b237888cb8f8"></a>
+<a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767">MedianAttr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#aed5a8d4b4865b2d22cb5b237888cb8f8">medianAttribute</a></td></tr>
+<tr class="memdesc:aed5a8d4b4865b2d22cb5b237888cb8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг расчета и записи толщины срединной оболочки в атрибуты граней. <br /></td></tr>
+<tr class="separator:aed5a8d4b4865b2d22cb5b237888cb8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ec8a3c8d4374ba0aa929cfe081c15c"><td class="memItemLeft" align="right" valign="top"><a id="a31ec8a3c8d4374ba0aa929cfe081c15c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#a31ec8a3c8d4374ba0aa929cfe081c15c">position</a></td></tr>
+<tr class="memdesc:a31ec8a3c8d4374ba0aa929cfe081c15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметр смещения срединной оболочки относительно первой грани из пары. По умолчанию равен 50% расстояния между гранями. <br /></td></tr>
+<tr class="separator:a31ec8a3c8d4374ba0aa929cfe081c15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0035969c9edaac92839b91ae1d6f5fb7"><td class="memItemLeft" align="right" valign="top"><a id="a0035969c9edaac92839b91ae1d6f5fb7"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#a0035969c9edaac92839b91ae1d6f5fb7">dmin</a></td></tr>
+<tr class="memdesc:a0035969c9edaac92839b91ae1d6f5fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальный параметр эквидистантности. <br /></td></tr>
+<tr class="separator:a0035969c9edaac92839b91ae1d6f5fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36a137210b41ad162b1063677733ce0"><td class="memItemLeft" align="right" valign="top"><a id="ad36a137210b41ad162b1063677733ce0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#ad36a137210b41ad162b1063677733ce0">dmax</a></td></tr>
+<tr class="memdesc:ad36a137210b41ad162b1063677733ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальный параметр эквидистантности. <br /></td></tr>
+<tr class="separator:ad36a137210b41ad162b1063677733ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d3a02c1a130df27733c354ad2a2134"><td class="memItemLeft" align="right" valign="top"><a id="ad8d3a02c1a130df27733c354ad2a2134"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#ad8d3a02c1a130df27733c354ad2a2134">cutByBordes</a></td></tr>
+<tr class="memdesc:ad8d3a02c1a130df27733c354ad2a2134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг подрезки срединной оболочки границами родительской оболочки. <br /></td></tr>
+<tr class="separator:ad8d3a02c1a130df27733c354ad2a2134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985d47d9554514472f07ea2f24904bc4"><td class="memItemLeft" align="right" valign="top"><a id="a985d47d9554514472f07ea2f24904bc4"></a>
+<a class="el" href="struct_median_shell_values.html#ade7948035bf29586c95b2fb270996b91">InputMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#a985d47d9554514472f07ea2f24904bc4">inputMode</a></td></tr>
+<tr class="memdesc:a985d47d9554514472f07ea2f24904bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вид входных граней. <br /></td></tr>
+<tr class="separator:a985d47d9554514472f07ea2f24904bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec128f2afe8b640eedda072b023731e4"><td class="memItemLeft" align="right" valign="top"><a id="aec128f2afe8b640eedda072b023731e4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#aec128f2afe8b640eedda072b023731e4">detectPairs</a></td></tr>
+<tr class="memdesc:aec128f2afe8b640eedda072b023731e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">При заданном построении по двум наборам граней, попробовать распознать в них пары эквидистантных граней. <br /></td></tr>
+<tr class="separator:aec128f2afe8b640eedda072b023731e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3e3d043d0256db58abdd6c268bbed5"><td class="memItemLeft" align="right" valign="top"><a id="afa3e3d043d0256db58abdd6c268bbed5"></a>
+<a class="el" href="namespacec3d.html#a4b493e9f421508072486b2a5bd88bbfe">c3d::BoolPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#afa3e3d043d0256db58abdd6c268bbed5">groupsInvNormals</a></td></tr>
+<tr class="memdesc:afa3e3d043d0256db58abdd6c268bbed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">При заданном построении по двум наборам граней каждый флаг из пары задает признак инвертирования нормалей для соответствующего набора граней. <br /></td></tr>
+<tr class="separator:afa3e3d043d0256db58abdd6c268bbed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67828de0d279c91ce3b705239c6deaef"><td class="memItemLeft" align="right" valign="top"><a id="a67828de0d279c91ce3b705239c6deaef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_median_shell_values.html#a67828de0d279c91ce3b705239c6deaef">respGroupExt</a></td></tr>
+<tr class="memdesc:a67828de0d279c91ce3b705239c6deaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">При заданном построении по двум наборам граней, флаг определяет, будут ли при необходимости продолжены грани из ответного (второго) набора граней. <br /></td></tr>
+<tr class="separator:a67828de0d279c91ce3b705239c6deaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Параметры создания срединной оболочки между выбранными гранями тела. </p>
+<p>Параметры создания срединной оболочки между выбранными гранями тела. Выбранные грани должны быть эквидистантны по отношению друг к другу. Грани должны принадлежать одному и тому же телу. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="aa7c69deb0433a246cad16166c2f349de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c69deb0433a246cad16166c2f349de">&#9670;&nbsp;</a></span>FilletType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_median_shell_values.html#aa7c69deb0433a246cad16166c2f349de">MedianShellValues::FilletType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип расчета радиуса скругления между гранями срединной оболочки. </p>
+<p>Флаг можно установить через вызов <a class="el" href="struct_median_shell_values.html#ab34b1503f30fec0b3264ab1a8c2066b8" title="Выдать тип скругления для изменения.">MedianShellValues::SetType()</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aa7c69deb0433a246cad16166c2f349dea4494636255b7e7e3df9069306051d3f6"></a>tf_none&#160;</td><td class="fielddoc"><p>Не определено. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa7c69deb0433a246cad16166c2f349dea13cc62939e79dcf48cdd070611700ad7"></a>tf_internal&#160;</td><td class="fielddoc"><p>По внутренней грани скругления. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa7c69deb0433a246cad16166c2f349dea079ad46f84e801e17f5dd29dd335bf09"></a>tf_external&#160;</td><td class="fielddoc"><p>По внешней грани скругления. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa7c69deb0433a246cad16166c2f349deabcd83392fa2bf3ff629c02b82a0ec980"></a>tf_average&#160;</td><td class="fielddoc"><p>По среднему значению. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aca93e0ec9fa823de88be5220ca579767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca93e0ec9fa823de88be5220ca579767">&#9670;&nbsp;</a></span>MedianAttr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_median_shell_values.html#aca93e0ec9fa823de88be5220ca579767">MedianShellValues::MedianAttr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаг расчета и записи в атрибуты грани значения толщины срединной оболочки. </p>
+<p>Флаг можно установить через вызов <a class="el" href="struct_median_shell_values.html#ae925816e35818604de55d24cdc34994b" title="Выдать тип скругления для изменения.">MedianShellValues::SetMedianAttr()</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aca93e0ec9fa823de88be5220ca579767a44b5e846ef432e7c81f28ab4f0c208c3"></a>ma_none&#160;</td><td class="fielddoc"><p>Не записывать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aca93e0ec9fa823de88be5220ca579767a97d692d395a1d6d2d980a5bfa3f53260"></a>ma_min&#160;</td><td class="fielddoc"><p>Записывать, для граней скругления, создаваемых при filletType !=tf_none, принимать толщину как минимальное значение среди соседних граней. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aca93e0ec9fa823de88be5220ca579767a82e13fee785fa5e791f2a07783266f26"></a>ma_mid&#160;</td><td class="fielddoc"><p>Записывать, для граней скругления, создаваемых при filletType !=tf_none, принимать толщину как среднее значение среди соседних граней. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aca93e0ec9fa823de88be5220ca579767acc1d5a5695f324d982f7c44ae0f2a370"></a>ma_max&#160;</td><td class="fielddoc"><p>Записывать, для граней скругления, создаваемых при filletType !=tf_none, принимать толщину как максимальное значение среди соседних граней. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ade7948035bf29586c95b2fb270996b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7948035bf29586c95b2fb270996b91">&#9670;&nbsp;</a></span>InputMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_median_shell_values.html#ade7948035bf29586c95b2fb270996b91">MedianShellValues::InputMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вид входных граней. </p>
+<p>Уточняет как трактуются заданные пары граней. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ade7948035bf29586c95b2fb270996b91ae80c15a9992c71d98d55ecc50a7d83c6"></a>im_pairs&#160;</td><td class="fielddoc"><p>Пары граней. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ade7948035bf29586c95b2fb270996b91a1874ca8bf99d4281c2e146f6c086a4d7"></a>im_twogroups&#160;</td><td class="fielddoc"><p>Две группы граней. Первая грань в каждой паре идет в первую группу, вторая - во вторую. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li><a class="el" href="op__shell__parameter_8h.html">op_shell_parameter.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_median_shell_values.html">MedianShellValues</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbCurveIntoNurbsInfo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_curve_into_nurbs_info.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_mb_curve_into_nurbs_info-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbCurveIntoNurbsInfo<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___data___structures.html">Структуры данных</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Дополнительная информация для преобразования кривой или поверхности в Nurbs.  
+ <a href="class_mb_curve_into_nurbs_info.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_nurbs_function.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa48ff4cab9c355b0fdce446bbd130b6b"><td class="memTemplParams" colspan="2"><a id="aa48ff4cab9c355b0fdce446bbd130b6b"></a>
+template&lt;class Curve &gt; </td></tr>
+<tr class="memitem:aa48ff4cab9c355b0fdce446bbd130b6b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#aa48ff4cab9c355b0fdce446bbd130b6b">MbCurveIntoNurbsInfo</a> (const Curve &amp;c, bool match, bool ext, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> ver=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:aa48ff4cab9c355b0fdce446bbd130b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:aa48ff4cab9c355b0fdce446bbd130b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e439042ea5805618ef5fa0af583537"><td class="memItemLeft" align="right" valign="top"><a id="a36e439042ea5805618ef5fa0af583537"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a36e439042ea5805618ef5fa0af583537">MbCurveIntoNurbsInfo</a> (double t1, double t2, int s, bool match, bool ext, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> ver=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:a36e439042ea5805618ef5fa0af583537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a36e439042ea5805618ef5fa0af583537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9719b6a8933352e8dc0a2dc60fe67169"><td class="memItemLeft" align="right" valign="top"><a id="a9719b6a8933352e8dc0a2dc60fe67169"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a9719b6a8933352e8dc0a2dc60fe67169">MbCurveIntoNurbsInfo</a> (double t1, double t2, int s, bool match, bool ext, double tRegion, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> ver=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:a9719b6a8933352e8dc0a2dc60fe67169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a9719b6a8933352e8dc0a2dc60fe67169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0388b648360e92872c61b9786a25f53c"><td class="memItemLeft" align="right" valign="top"><a id="a0388b648360e92872c61b9786a25f53c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a0388b648360e92872c61b9786a25f53c">MbCurveIntoNurbsInfo</a> (const <a class="el" href="class_mb_curve_into_nurbs_info.html">MbCurveIntoNurbsInfo</a> &amp;other, double t1, double t2, int s)</td></tr>
+<tr class="memdesc:a0388b648360e92872c61b9786a25f53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a0388b648360e92872c61b9786a25f53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2110cbed8a6f5d04a29f446f87eb813"><td class="memItemLeft" align="right" valign="top"><a id="ae2110cbed8a6f5d04a29f446f87eb813"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#ae2110cbed8a6f5d04a29f446f87eb813">Assign</a> (const <a class="el" href="class_mb_curve_into_nurbs_info.html">MbCurveIntoNurbsInfo</a> &amp;other)</td></tr>
+<tr class="memdesc:ae2110cbed8a6f5d04a29f446f87eb813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция присвоения. <br /></td></tr>
+<tr class="separator:ae2110cbed8a6f5d04a29f446f87eb813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf92e79efa7370670694f92afc18cc4c"><td class="memItemLeft" align="right" valign="top"><a id="abf92e79efa7370670694f92afc18cc4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#abf92e79efa7370670694f92afc18cc4c">Init</a> (double t1, double t2, int s)</td></tr>
+<tr class="memdesc:abf92e79efa7370670694f92afc18cc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция инициализации. <br /></td></tr>
+<tr class="separator:abf92e79efa7370670694f92afc18cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd90af95c4d0f4764fe759c09b4833b"><td class="memItemLeft" align="right" valign="top"><a id="accd90af95c4d0f4764fe759c09b4833b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#accd90af95c4d0f4764fe759c09b4833b">Init</a> (double t1, double t2, int s, bool match, bool ext)</td></tr>
+<tr class="memdesc:accd90af95c4d0f4764fe759c09b4833b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция инициализации. <br /></td></tr>
+<tr class="separator:accd90af95c4d0f4764fe759c09b4833b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195efd9955988c0d6f65b780f291ef28"><td class="memItemLeft" align="right" valign="top"><a id="a195efd9955988c0d6f65b780f291ef28"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a195efd9955988c0d6f65b780f291ef28">GetTBeg</a> () const</td></tr>
+<tr class="memdesc:a195efd9955988c0d6f65b780f291ef28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить параметр начала участка кривой. <br /></td></tr>
+<tr class="separator:a195efd9955988c0d6f65b780f291ef28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac214a3718eff4b1f63260f62d49ee4"><td class="memItemLeft" align="right" valign="top"><a id="a2ac214a3718eff4b1f63260f62d49ee4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a2ac214a3718eff4b1f63260f62d49ee4">GetTEnd</a> () const</td></tr>
+<tr class="memdesc:a2ac214a3718eff4b1f63260f62d49ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить параметр конца участка кривой. <br /></td></tr>
+<tr class="separator:a2ac214a3718eff4b1f63260f62d49ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98aa6eba5d9dc40953cb49755a24dec8"><td class="memItemLeft" align="right" valign="top"><a id="a98aa6eba5d9dc40953cb49755a24dec8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a98aa6eba5d9dc40953cb49755a24dec8">GetSense</a> () const</td></tr>
+<tr class="memdesc:a98aa6eba5d9dc40953cb49755a24dec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить направление сплайн-кривой. <br /></td></tr>
+<tr class="separator:a98aa6eba5d9dc40953cb49755a24dec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f40d229671af13babeafcab78856f2f"><td class="memItemLeft" align="right" valign="top"><a id="a6f40d229671af13babeafcab78856f2f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a6f40d229671af13babeafcab78856f2f">MatchParams</a> () const</td></tr>
+<tr class="memdesc:a6f40d229671af13babeafcab78856f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохранять ли при преобразовании однозначное соответствие параметрических областей. <br /></td></tr>
+<tr class="separator:a6f40d229671af13babeafcab78856f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0685ba18cb55010f587807353920a39"><td class="memItemLeft" align="right" valign="top"><a id="af0685ba18cb55010f587807353920a39"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#af0685ba18cb55010f587807353920a39">ExtendRange</a> () const</td></tr>
+<tr class="memdesc:af0685ba18cb55010f587807353920a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строится ли преобразование на продолжении для незамкнутой подложки. <br /></td></tr>
+<tr class="separator:af0685ba18cb55010f587807353920a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179e5876f623d5c7a200d79dabd45dcb"><td class="memItemLeft" align="right" valign="top"><a id="a179e5876f623d5c7a200d79dabd45dcb"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#a179e5876f623d5c7a200d79dabd45dcb">GetMathVersion</a> () const</td></tr>
+<tr class="memdesc:a179e5876f623d5c7a200d79dabd45dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить версию исполнения. <br /></td></tr>
+<tr class="separator:a179e5876f623d5c7a200d79dabd45dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14a1bac5d5373e5ab5771a3e6eff93f"><td class="memItemLeft" align="right" valign="top"><a id="ae14a1bac5d5373e5ab5771a3e6eff93f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html#ae14a1bac5d5373e5ab5771a3e6eff93f">GetTRegion</a> () const</td></tr>
+<tr class="memdesc:ae14a1bac5d5373e5ab5771a3e6eff93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить парметрическую точность. <br /></td></tr>
+<tr class="separator:ae14a1bac5d5373e5ab5771a3e6eff93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Дополнительная информация для преобразования кривой или поверхности в Nurbs. </p>
+<p>Дополнительная информация для преобразования кривой или поверхности в Nurbs. <br  />
+</p>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__nurbs__function_8h.html">mb_nurbs_function.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_curve_into_nurbs_info.html">MbCurveIntoNurbsInfo</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:02. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

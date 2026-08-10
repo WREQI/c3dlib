@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл hash32.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('hash32_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл hash32.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Хэш-функция с вероятностью совпадения значений 1/(2^32).  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="io__define_8h.html">io_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tool__cstring_8h.html">tool_cstring.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_str_hash.html">c3d::StrHash</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш с типом строки.  <a href="classc3d_1_1_str_hash.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ga602a7f1e190ed81f380a8870f2c08289"><td class="memItemLeft" align="right" valign="top">typedef uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a></td></tr>
+<tr class="memdesc:ga602a7f1e190ed81f380a8870f2c08289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение простого имени.  <a href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga602a7f1e190ed81f380a8870f2c08289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga39ee31ccc9d2f4d06b5f25b6a154496d"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga39ee31ccc9d2f4d06b5f25b6a154496d">SimpleNameCompare</a> (const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> &amp;h1, const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> &amp;h2)</td></tr>
+<tr class="memdesc:ga39ee31ccc9d2f4d06b5f25b6a154496d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сравнить простые имена. <br /></td></tr>
+<tr class="separator:ga39ee31ccc9d2f4d06b5f25b6a154496d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga128b2ea4dc0234b25ddbe9354b068fec"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga128b2ea4dc0234b25ddbe9354b068fec">IsGoodSimpleName</a> (const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> &amp;s)</td></tr>
+<tr class="memdesc:ga128b2ea4dc0234b25ddbe9354b068fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить валидность простого имени. <br /></td></tr>
+<tr class="separator:ga128b2ea4dc0234b25ddbe9354b068fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5243daec9200aaae885fa90dbfeb2070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga5243daec9200aaae885fa90dbfeb2070">c3d::Hash32</a> (uint8 *k, size_t length, <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> _c=INIT_HASH32_VAL)</td></tr>
+<tr class="memdesc:ga5243daec9200aaae885fa90dbfeb2070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш-функция.  <a href="group___base___tools.html#ga5243daec9200aaae885fa90dbfeb2070">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5243daec9200aaae885fa90dbfeb2070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21a7f8286774abc75bb075d3b0dc1db1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga21a7f8286774abc75bb075d3b0dc1db1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga21a7f8286774abc75bb075d3b0dc1db1">c3d::Hash32Ptr</a> (T *k)</td></tr>
+<tr class="memdesc:ga21a7f8286774abc75bb075d3b0dc1db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш указателя.  <a href="group___base___tools.html#ga21a7f8286774abc75bb075d3b0dc1db1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga21a7f8286774abc75bb075d3b0dc1db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4509411e82ae5d3ce0700f4f31a2adc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga4509411e82ae5d3ce0700f4f31a2adc5">c3d::HashStr</a> (const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a> &amp;str)</td></tr>
+<tr class="memdesc:ga4509411e82ae5d3ce0700f4f31a2adc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш строки.  <a href="group___base___tools.html#ga4509411e82ae5d3ce0700f4f31a2adc5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4509411e82ae5d3ce0700f4f31a2adc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee806c5bcdc20c78f57a0bf261cee82d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#gaee806c5bcdc20c78f57a0bf261cee82d">c3d::HashStr</a> (const char *c_str)</td></tr>
+<tr class="memdesc:gaee806c5bcdc20c78f57a0bf261cee82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш строки.  <a href="group___base___tools.html#gaee806c5bcdc20c78f57a0bf261cee82d">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaee806c5bcdc20c78f57a0bf261cee82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6252b7cd2799c395415da2670e9e4a8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga6252b7cd2799c395415da2670e9e4a8d">c3d::HashStr</a> (const wchar_t *w_str)</td></tr>
+<tr class="memdesc:ga6252b7cd2799c395415da2670e9e4a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш строки.  <a href="group___base___tools.html#ga6252b7cd2799c395415da2670e9e4a8d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6252b7cd2799c395415da2670e9e4a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga307da9df2d065b111b995aa8a7ed1226"><td class="memItemLeft" align="right" valign="top">const StrHash&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga307da9df2d065b111b995aa8a7ed1226">c3d::NullStrHash</a> (0, StrHash::htp_undef)</td></tr>
+<tr class="memdesc:ga307da9df2d065b111b995aa8a7ed1226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш пустой строки.  <a href="group___base___tools.html#ga307da9df2d065b111b995aa8a7ed1226">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga307da9df2d065b111b995aa8a7ed1226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4335453c60149a09e63c668a8d41f32"><td class="memItemLeft" align="right" valign="top">const StrHash&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#gaa4335453c60149a09e63c668a8d41f32">c3d::UndefStrHash</a> (<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>(-1), StrHash::htp_undef)</td></tr>
+<tr class="memdesc:gaa4335453c60149a09e63c668a8d41f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш при отсутствии строки.  <a href="group___base___tools.html#gaa4335453c60149a09e63c668a8d41f32">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa4335453c60149a09e63c668a8d41f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2042ab71d2d767b9a500487e618edee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga2042ab71d2d767b9a500487e618edee9">c3d::Hash32SN</a> (<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> k1, <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> k2)</td></tr>
+<tr class="memdesc:ga2042ab71d2d767b9a500487e618edee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хэш двух простых имен.  <a href="group___base___tools.html#ga2042ab71d2d767b9a500487e618edee9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2042ab71d2d767b9a500487e618edee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ga637c7003cd381d1dc8c5b53caa84a4c5"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#ga637c7003cd381d1dc8c5b53caa84a4c5">c3d::SIMPLENAME_MAX</a> = size_t(<a class="el" href="group___base___tools.html#gab7a348a1feb184c9ccb4a76ab12ed5f6">SYS_MAX_UINT32</a>)</td></tr>
+<tr class="memdesc:ga637c7003cd381d1dc8c5b53caa84a4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимально допустимое простое имя. <br /></td></tr>
+<tr class="separator:ga637c7003cd381d1dc8c5b53caa84a4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad381ba4620f4154eedcedaf005e13b74"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#gad381ba4620f4154eedcedaf005e13b74">c3d::UNDEFINED_SNAME</a> = size_t(<a class="el" href="group___base___tools.html#gab7a348a1feb184c9ccb4a76ab12ed5f6">SYS_MAX_UINT32</a>)</td></tr>
+<tr class="memdesc:gad381ba4620f4154eedcedaf005e13b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение используемое, в качестве "неопределенного", еще не назначенного имени. <br /></td></tr>
+<tr class="separator:gad381ba4620f4154eedcedaf005e13b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac883151adfd9f5d39ff1c3eaebd62303"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#gac883151adfd9f5d39ff1c3eaebd62303">c3d::INIT_HASH32_VAL</a> = size_t( 31415926 )</td></tr>
+<tr class="memdesc:gac883151adfd9f5d39ff1c3eaebd62303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начальное число для хэш-функции. <br /></td></tr>
+<tr class="separator:gac883151adfd9f5d39ff1c3eaebd62303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe17057a8d7d06fe0a372d0c3abaf58"><td class="memItemLeft" align="right" valign="top">
+constexpr uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools.html#gabbe17057a8d7d06fe0a372d0c3abaf58">c3d::GOLDENRATIO</a> = 0x9e3779b9</td></tr>
+<tr class="memdesc:gabbe17057a8d7d06fe0a372d0c3abaf58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Золотое сечение - произвольное число для хэш-функции. <br /></td></tr>
+<tr class="separator:gabbe17057a8d7d06fe0a372d0c3abaf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Хэш-функция с вероятностью совпадения значений 1/(2^32). </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="hash32_8h.html">hash32.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

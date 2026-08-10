@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mb_pmi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mb__pmi_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mb_pmi.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Элемент аннотации. Элемент аннотации и сопутствующие классы: текстовые элементы, выноски, хранилище номинала и диапазона.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="legend_8h.html">legend.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="topology__item_8h.html">topology_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="model__item_8h.html">model_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__placement_8h.html">mb_placement.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve_8h.html">curve.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve3d_8h.html">curve3d.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_text_item.html">MbTextItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Элемент текста объекта аннотации.  <a href="class_mb_text_item.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_text_literal.html">MbTextLiteral</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовый элемент, несущий содержание.  <a href="class_mb_text_literal.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_composite_text.html">MbCompositeText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Составной текст.  <a href="class_mb_composite_text.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_value_range.html">MbValueRange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение и диапазон изменения величины.  <a href="class_mb_value_range.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_terminator.html">MbTerminator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображаемый знак.  <a href="class_mb_terminator.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_callout_curve.html">MbCalloutCurve</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кривая с терминаторами.  <a href="class_mb_callout_curve.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_numerical_characteristic.html">MbNumericalCharacteristic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Численная характеристика объекта.  <a href="class_mb_numerical_characteristic.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_p_m_i.html">MbPMI</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Элемент аннотации.  <a href="class_mb_p_m_i.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ae3838a0c3462cd8d4938947b86a58d30"><td class="memItemLeft" align="right" valign="top"><a id="ae3838a0c3462cd8d4938947b86a58d30"></a>
+typedef std::vector&lt; <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_text_item.html">MbTextItem</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#ae3838a0c3462cd8d4938947b86a58d30">vector_of_mbtext</a></td></tr>
+<tr class="memdesc:ae3838a0c3462cd8d4938947b86a58d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер текстовых блоков. <br /></td></tr>
+<tr class="separator:ae3838a0c3462cd8d4938947b86a58d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5116fdf03f2d12766b6a03da00ae3fc"><td class="memItemLeft" align="right" valign="top"><a id="ab5116fdf03f2d12766b6a03da00ae3fc"></a>
+typedef std::vector&lt; <a class="el" href="class_s_ptr.html">PmiSPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#ab5116fdf03f2d12766b6a03da00ae3fc">vector_of_pmi</a></td></tr>
+<tr class="memdesc:ab5116fdf03f2d12766b6a03da00ae3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер объектов аннотации. <br /></td></tr>
+<tr class="separator:ab5116fdf03f2d12766b6a03da00ae3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gaf24a3a1e8ba0fa4661acd6d210565658"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___legend.html#gaf24a3a1e8ba0fa4661acd6d210565658">MbeTextLiteralForm</a> { <a class="el" href="group___legend.html#ggaf24a3a1e8ba0fa4661acd6d210565658ae58919af76d92f96aea5a7a17ea5c3a9">unformattedString</a> = 0
+, <a class="el" href="group___legend.html#ggaf24a3a1e8ba0fa4661acd6d210565658a1969de3067803ad1072e78bd0eced9a9">preDefinedCode</a> = 1
+, <a class="el" href="group___legend.html#ggaf24a3a1e8ba0fa4661acd6d210565658ac974c9e9b1b037464600d74ed9835c89">formattedString</a> = 2
+ }</td></tr>
+<tr class="memdesc:gaf24a3a1e8ba0fa4661acd6d210565658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерпретация текста.  <a href="group___legend.html#gaf24a3a1e8ba0fa4661acd6d210565658">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf24a3a1e8ba0fa4661acd6d210565658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88d946b2cb66a825538ebb5c379448f7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___legend.html#ga88d946b2cb66a825538ebb5c379448f7">MbeCalloutCurveType</a> { <a class="el" href="group___legend.html#gga88d946b2cb66a825538ebb5c379448f7a374f5a5cc060303f7e4f6096bdc3f7ec">callout</a> = 0
+, <a class="el" href="group___legend.html#gga88d946b2cb66a825538ebb5c379448f7a229896ac857cdb584a3ba25eb86b99c2">dimensionCurve</a> = 1
+, <a class="el" href="group___legend.html#gga88d946b2cb66a825538ebb5c379448f7a3a2c6446758a5763cdabe8a6865691b2">projectionCurve</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga88d946b2cb66a825538ebb5c379448f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип кривой с терминаторами.  <a href="group___legend.html#ga88d946b2cb66a825538ebb5c379448f7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga88d946b2cb66a825538ebb5c379448f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ffd721fed70286678c660c5f57a5cc4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___legend.html#ga9ffd721fed70286678c660c5f57a5cc4">MbeNumericCharacteristicType</a> { <br />
+&#160;&#160;<a class="el" href="group___legend.html#gga9ffd721fed70286678c660c5f57a5cc4a6be56f6e1e92a15d0b06a790a192ffc8">linearDimension</a>
+, <a class="el" href="group___legend.html#gga9ffd721fed70286678c660c5f57a5cc4afd6a30c3b8a4cd2716685cc63f97a31e">angularDimension</a>
+, <a class="el" href="group___legend.html#gga9ffd721fed70286678c660c5f57a5cc4af1eba0a9f649037f351923a94a252330">radialDimension</a>
+, <a class="el" href="group___legend.html#gga9ffd721fed70286678c660c5f57a5cc4a004d4feb30a59915875f6598997bd57e">diameterDimension</a>
+, <br />
+&#160;&#160;<a class="el" href="group___legend.html#gga9ffd721fed70286678c660c5f57a5cc4a76033a277b9d9fb3e07110a80f96575f">shapeTolerance</a>
+, <a class="el" href="group___legend.html#gga9ffd721fed70286678c660c5f57a5cc4a666798ac85fcba0906556f8568baa845">surfaceRoughness</a>
+, <a class="el" href="group___legend.html#gga9ffd721fed70286678c660c5f57a5cc4ac3b618078b03dec9b16e5dcf5a2f379c">voidNumeric</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga9ffd721fed70286678c660c5f57a5cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип численной характеристики.  <a href="group___legend.html#ga9ffd721fed70286678c660c5f57a5cc4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9ffd721fed70286678c660c5f57a5cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae03eb309f4ac495da076d740f4cd3bb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___legend.html#gaae03eb309f4ac495da076d740f4cd3bb">MbePMIType</a> { <br />
+&#160;&#160;<a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba958153f1b8b96ec4c4eb2147429105d9">general</a> = 0
+, <a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba26027d1f0086a87924c4f2e99765e90b">numericalCharacteristic</a> = 1
+, <a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bbab7fc4648f5d90e3369927ead6cfbf730">technicalRequiremets</a> = 2
+, <a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba374f5a5cc060303f7e4f6096bdc3f7ec">callout</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba429113c10189d97682ed02acac76068c">calloutMarking</a> = 4
+, <a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba23ef08f3e8badc4938d274e3a7251a3c">calloutDatum</a> = 5
+, <a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bbad5f16a4f2f1609d81b85564858516a00">calloutNote</a> = 6
+, <a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba791058459e543bd5ca18cb652a369767">calloutCenterLine</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba076dcb38a2f77b1059d9b06c7554ab3c">calloutFeatureControlFrame</a> = 8
+, <a class="el" href="group___legend.html#ggaae03eb309f4ac495da076d740f4cd3bba82652591f67c848a68631d0e0b366958">calloutReferencePoint</a> = 9
+<br />
+ }</td></tr>
+<tr class="memdesc:gaae03eb309f4ac495da076d740f4cd3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип элемента аннотации.  <a href="group___legend.html#gaae03eb309f4ac495da076d740f4cd3bb">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaae03eb309f4ac495da076d740f4cd3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a3fe7e60081ff553c8a74e59d6877c1a3"><td class="memItemLeft" align="right" valign="top"><a id="a3fe7e60081ff553c8a74e59d6877c1a3"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#a3fe7e60081ff553c8a74e59d6877c1a3">c3d_terminatorFilledArrow</a> = _T(&quot;C3D TERMINATOR FILLED ARROW&quot;)</td></tr>
+<tr class="memdesc:a3fe7e60081ff553c8a74e59d6877c1a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - закрашенная стрелка. <br /></td></tr>
+<tr class="separator:a3fe7e60081ff553c8a74e59d6877c1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22e42371a2658a009107150165ec8c5"><td class="memItemLeft" align="right" valign="top"><a id="aa22e42371a2658a009107150165ec8c5"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#aa22e42371a2658a009107150165ec8c5">c3d_terminatorFilledBox</a> = _T(&quot;C3D TERMINATOR FILLED BOX&quot;)</td></tr>
+<tr class="memdesc:aa22e42371a2658a009107150165ec8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - закрашенный квадрат. <br /></td></tr>
+<tr class="separator:aa22e42371a2658a009107150165ec8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ec6521ccf2536b02cd31ddfbdb9477"><td class="memItemLeft" align="right" valign="top"><a id="a87ec6521ccf2536b02cd31ddfbdb9477"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#a87ec6521ccf2536b02cd31ddfbdb9477">c3d_terminatorFilledCircle</a> = _T(&quot;C3D TERMINATOR FILLED CIRCLE&quot;)</td></tr>
+<tr class="memdesc:a87ec6521ccf2536b02cd31ddfbdb9477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - закрашенная окружность. <br /></td></tr>
+<tr class="separator:a87ec6521ccf2536b02cd31ddfbdb9477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328033c24f192a7b3f6b5a26012da005"><td class="memItemLeft" align="right" valign="top"><a id="a328033c24f192a7b3f6b5a26012da005"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#a328033c24f192a7b3f6b5a26012da005">c3d_terminatorUnfilledArrow</a> = _T(&quot;C3D TERMINATOR UNFILLED ARROW&quot;)</td></tr>
+<tr class="memdesc:a328033c24f192a7b3f6b5a26012da005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - незакрашенная стрелка. <br /></td></tr>
+<tr class="separator:a328033c24f192a7b3f6b5a26012da005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b4f9cc4e3ea22cdf6088970f5e3c6c"><td class="memItemLeft" align="right" valign="top"><a id="ab8b4f9cc4e3ea22cdf6088970f5e3c6c"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#ab8b4f9cc4e3ea22cdf6088970f5e3c6c">c3d_terminatorUnfilledBox</a> = _T(&quot;C3D TERMINATOR UNFILLED BOX&quot;)</td></tr>
+<tr class="memdesc:ab8b4f9cc4e3ea22cdf6088970f5e3c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - незакрашенный прямоугольник. <br /></td></tr>
+<tr class="separator:ab8b4f9cc4e3ea22cdf6088970f5e3c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71bfe20a4d4150b85c114800467fdb1"><td class="memItemLeft" align="right" valign="top"><a id="ad71bfe20a4d4150b85c114800467fdb1"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#ad71bfe20a4d4150b85c114800467fdb1">c3d_terminatorUnfilledCircle</a> = _T(&quot;C3D TERMINATOR UNFILLED CIRCLE&quot;)</td></tr>
+<tr class="memdesc:ad71bfe20a4d4150b85c114800467fdb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - незакрашенная окружность. <br /></td></tr>
+<tr class="separator:ad71bfe20a4d4150b85c114800467fdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da6e4407d4fc3a03661b25c92e0dfb2"><td class="memItemLeft" align="right" valign="top"><a id="a7da6e4407d4fc3a03661b25c92e0dfb2"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#a7da6e4407d4fc3a03661b25c92e0dfb2">c3d_terminatorOpenArrow</a> = _T(&quot;C3D TERMINATOR OPEN ARROW&quot;)</td></tr>
+<tr class="memdesc:a7da6e4407d4fc3a03661b25c92e0dfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - открытая стрелка . <br /></td></tr>
+<tr class="separator:a7da6e4407d4fc3a03661b25c92e0dfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1297f4f7da02322f591127383545ba8"><td class="memItemLeft" align="right" valign="top"><a id="ae1297f4f7da02322f591127383545ba8"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#ae1297f4f7da02322f591127383545ba8">c3d_terminatorSlash</a> = _T(&quot;C3D TERMINATOR SLASH&quot;)</td></tr>
+<tr class="memdesc:ae1297f4f7da02322f591127383545ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - косая черта. <br /></td></tr>
+<tr class="separator:ae1297f4f7da02322f591127383545ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe83db801a828b6e57e612041c22d571"><td class="memItemLeft" align="right" valign="top"><a id="afe83db801a828b6e57e612041c22d571"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#afe83db801a828b6e57e612041c22d571">c3d_terminatorIntegral</a> = _T(&quot;C3D TERMINATOR INTEGRAL&quot;)</td></tr>
+<tr class="memdesc:afe83db801a828b6e57e612041c22d571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - знак интеграла. <br /></td></tr>
+<tr class="separator:afe83db801a828b6e57e612041c22d571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21be2f0e4365a36cf676ac8a02d4b94"><td class="memItemLeft" align="right" valign="top"><a id="ad21be2f0e4365a36cf676ac8a02d4b94"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#ad21be2f0e4365a36cf676ac8a02d4b94">c3d_terminatorDimensionOrigin</a> = _T(&quot;C3D TERMINATOR DIMENSION ORIGIN&quot;)</td></tr>
+<tr class="memdesc:ad21be2f0e4365a36cf676ac8a02d4b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - начало размера - незакрашенная окружность. <br /></td></tr>
+<tr class="separator:ad21be2f0e4365a36cf676ac8a02d4b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc2be6fbdd4c86fff4d3578b49228aa"><td class="memItemLeft" align="right" valign="top"><a id="afbc2be6fbdd4c86fff4d3578b49228aa"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#afbc2be6fbdd4c86fff4d3578b49228aa">c3d_terminatorDatumArrow</a> = _T( &quot;C3D TERMINATOR DATUM ARROW&quot; )</td></tr>
+<tr class="memdesc:afbc2be6fbdd4c86fff4d3578b49228aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - стрелка базы отсчета. <br /></td></tr>
+<tr class="separator:afbc2be6fbdd4c86fff4d3578b49228aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f0b364c5cd0add1f08743c07adbe60"><td class="memItemLeft" align="right" valign="top"><a id="aa3f0b364c5cd0add1f08743c07adbe60"></a>
+const <a class="el" href="group___base___tools___string.html#gaf9c262c61dd991901b226adf0c452064">c3d::string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mb__pmi_8h.html#aa3f0b364c5cd0add1f08743c07adbe60">c3d_terminatorDatumUnfilledArrow</a> = _T( &quot;C3D TERMINATOR DATUM UNFILLED ARROW&quot; )</td></tr>
+<tr class="memdesc:aa3f0b364c5cd0add1f08743c07adbe60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Предопределённый тип терминатора - незакрашенная стрелка базы отсчета. <br /></td></tr>
+<tr class="separator:aa3f0b364c5cd0add1f08743c07adbe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Элемент аннотации. Элемент аннотации и сопутствующие классы: текстовые элементы, выноски, хранилище номинала и диапазона. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mb__pmi_8h.html">mb_pmi.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

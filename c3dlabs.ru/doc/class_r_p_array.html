@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Шаблон класса RPArray&lt; Type &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_r_p_array.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_r_p_array-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Шаблон класса RPArray&lt; Type &gt;<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___tools.html">Библиотека шаблонов и сериализации</a> &raquo; <a class="el" href="group___base___tools___containers.html">Контейнеры</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Одномерный массив указателей на объекты.  
+ <a href="class_r_p_array.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;templ_rp_array.h&gt;</code></p>
+
+<p>Производные классы:<a class="el" href="class_p_array.html">PArray&lt; MbAnnotationEdgeVestige &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbProperty &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbContourWithBreaks &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; CurveWType &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbBendIndices &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbRough &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; DXFCompositeRef &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbEdgeVestige &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; DXFFace &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbVertexVestige &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbNamedContoursTree &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbPartSolidIndex &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; std::vector&lt; size_t &gt; &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MpEdge &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; RPArray&lt; MbCreator &gt; &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbFaceVestige &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbName &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; FileSpace &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; DXFLoop &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; DXFSolidBody &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbSymbolVestige &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbCompContourArray &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; DXFSegment &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MpLoop &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; PrimitiveDifference &gt;</a>, <a class="el" href="class_p_array.html">PArray&lt; MbCurveVestige &gt;</a>, <a class="el" href="class_f_d_p_array.html">FDPArray&lt; Type &gt;</a>, <a class="el" href="class_i_f_c___array.html">IFC_Array&lt; Type &gt;</a><code> [private]</code>, <a class="el" href="class_p_array.html">PArray&lt; Type &gt;</a> и <a class="el" href="class_r_p_stack.html">RPStack&lt; Type &gt;</a><code> [private]</code>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:ac039387cfc1bea63fc6a441ae6d045bc"><td class="memItemLeft" align="right" valign="top"><a id="ac039387cfc1bea63fc6a441ae6d045bc"></a>
+typedef Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a></td></tr>
+<tr class="memdesc:ac039387cfc1bea63fc6a441ae6d045bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя указателя на объект. <br /></td></tr>
+<tr class="separator:ac039387cfc1bea63fc6a441ae6d045bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1352eeae39e67719eb67ddd1ca409ca3"><td class="memItemLeft" align="right" valign="top"><a id="a1352eeae39e67719eb67ddd1ca409ca3"></a>
+typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a1352eeae39e67719eb67ddd1ca409ca3">CompFunc</a>) (const Type **, const Type **)</td></tr>
+<tr class="memdesc:a1352eeae39e67719eb67ddd1ca409ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон функции сортировки. <br /></td></tr>
+<tr class="separator:a1352eeae39e67719eb67ddd1ca409ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a84d49c2a99d1e2350833aa6c012e1359"><td class="memItemLeft" align="right" valign="top"><a id="a84d49c2a99d1e2350833aa6c012e1359"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a84d49c2a99d1e2350833aa6c012e1359">RPArray</a> ()</td></tr>
+<tr class="memdesc:a84d49c2a99d1e2350833aa6c012e1359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a84d49c2a99d1e2350833aa6c012e1359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacbe9f2c8bdc42e7b47faaeda676823"><td class="memItemLeft" align="right" valign="top"><a id="adacbe9f2c8bdc42e7b47faaeda676823"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#adacbe9f2c8bdc42e7b47faaeda676823">RPArray</a> (size_t i_upper, uint16 i_delta=1)</td></tr>
+<tr class="memdesc:adacbe9f2c8bdc42e7b47faaeda676823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:adacbe9f2c8bdc42e7b47faaeda676823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159a2cc1551a69700e30bbf8f1d25b06"><td class="memItemLeft" align="right" valign="top"><a id="a159a2cc1551a69700e30bbf8f1d25b06"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a159a2cc1551a69700e30bbf8f1d25b06">~RPArray</a> ()</td></tr>
+<tr class="memdesc:a159a2cc1551a69700e30bbf8f1d25b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a159a2cc1551a69700e30bbf8f1d25b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37cee7074b9cfa95ba182f2f2b37fcfc"><td class="memItemLeft" align="right" valign="top"><a id="a37cee7074b9cfa95ba182f2f2b37fcfc"></a>
+uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a37cee7074b9cfa95ba182f2f2b37fcfc">Delta</a> () const</td></tr>
+<tr class="memdesc:a37cee7074b9cfa95ba182f2f2b37fcfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить приращение по количеству элементов при выделении дополнительной памяти. <br /></td></tr>
+<tr class="separator:a37cee7074b9cfa95ba182f2f2b37fcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288bb434c55dcc8730a7121cbed42442"><td class="memItemLeft" align="right" valign="top"><a id="a288bb434c55dcc8730a7121cbed42442"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a288bb434c55dcc8730a7121cbed42442">Upper</a> () const</td></tr>
+<tr class="memdesc:a288bb434c55dcc8730a7121cbed42442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество элементов, для которых выделена память? <br /></td></tr>
+<tr class="separator:a288bb434c55dcc8730a7121cbed42442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7a9b633f3f6080b3b75a0b9fd1aea1"><td class="memItemLeft" align="right" valign="top"><a id="a6b7a9b633f3f6080b3b75a0b9fd1aea1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a6b7a9b633f3f6080b3b75a0b9fd1aea1">Delta</a> (uint16 newDelta)</td></tr>
+<tr class="memdesc:a6b7a9b633f3f6080b3b75a0b9fd1aea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить приращение по количеству элементов при выделении дополнительной памяти (1 - автоприращение). <br /></td></tr>
+<tr class="separator:a6b7a9b633f3f6080b3b75a0b9fd1aea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40c645f787a868130bcec1fca222f51"><td class="memItemLeft" align="right" valign="top"><a id="ae40c645f787a868130bcec1fca222f51"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ae40c645f787a868130bcec1fca222f51">SetMaxDelta</a> (uint16 newDelta)</td></tr>
+<tr class="memdesc:ae40c645f787a868130bcec1fca222f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить максимальное из приращений. <br /></td></tr>
+<tr class="separator:ae40c645f787a868130bcec1fca222f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0afe8fcdcb02d05afade0bc3806d191"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#af0afe8fcdcb02d05afade0bc3806d191">SetSize</a> (size_t newSize)</td></tr>
+<tr class="memdesc:af0afe8fcdcb02d05afade0bc3806d191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функции, выделяющие потенциально большие участки памяти, возвращают результат операции (успех/ошибка).  <a href="class_r_p_array.html#af0afe8fcdcb02d05afade0bc3806d191">Подробнее...</a><br /></td></tr>
+<tr class="separator:af0afe8fcdcb02d05afade0bc3806d191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e09cf8f79b595c9d446aff8b4ef7e5"><td class="memItemLeft" align="right" valign="top"><a id="a46e09cf8f79b595c9d446aff8b4ef7e5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a46e09cf8f79b595c9d446aff8b4ef7e5">Reserve</a> (size_t n, bool addAdditionalSpace=true)</td></tr>
+<tr class="memdesc:a46e09cf8f79b595c9d446aff8b4ef7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зарезервировать место под столько элементов. <br /></td></tr>
+<tr class="separator:a46e09cf8f79b595c9d446aff8b4ef7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2ae7c727f6247f7f92ae4fac13e538"><td class="memItemLeft" align="right" valign="top"><a id="a2e2ae7c727f6247f7f92ae4fac13e538"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a2e2ae7c727f6247f7f92ae4fac13e538">Add</a> (Type *)</td></tr>
+<tr class="memdesc:a2e2ae7c727f6247f7f92ae4fac13e538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить элемент в конец массива. <br /></td></tr>
+<tr class="separator:a2e2ae7c727f6247f7f92ae4fac13e538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f85604435ca76331ad3da335f036190"><td class="memItemLeft" align="right" valign="top"><a id="a5f85604435ca76331ad3da335f036190"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a5f85604435ca76331ad3da335f036190">AddAt</a> (Type *e, size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memdesc:a5f85604435ca76331ad3da335f036190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставить элемент в указанную позицию. <br /></td></tr>
+<tr class="separator:a5f85604435ca76331ad3da335f036190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2e66c7f9cb6b3fae59a858946490ca"><td class="memItemLeft" align="right" valign="top"><a id="adb2e66c7f9cb6b3fae59a858946490ca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#adb2e66c7f9cb6b3fae59a858946490ca">AddAfter</a> (Type *e, size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memdesc:adb2e66c7f9cb6b3fae59a858946490ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить элемент после указанного. <br /></td></tr>
+<tr class="separator:adb2e66c7f9cb6b3fae59a858946490ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b1a15bacdffba49767241a57d4bb0b"><td class="memItemLeft" align="right" valign="top"><a id="a68b1a15bacdffba49767241a57d4bb0b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a68b1a15bacdffba49767241a57d4bb0b">Insert</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, Type *)</td></tr>
+<tr class="memdesc:a68b1a15bacdffba49767241a57d4bb0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставить элемент перед указанным. <br /></td></tr>
+<tr class="separator:a68b1a15bacdffba49767241a57d4bb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746d55b0fc91b0f9c3f3a3dff7b36c9f"><td class="memItemLeft" align="right" valign="top"><a id="a746d55b0fc91b0f9c3f3a3dff7b36c9f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a746d55b0fc91b0f9c3f3a3dff7b36c9f">AddArray</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;)</td></tr>
+<tr class="memdesc:a746d55b0fc91b0f9c3f3a3dff7b36c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить массив. <br /></td></tr>
+<tr class="separator:a746d55b0fc91b0f9c3f3a3dff7b36c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b04ae5122f64c158974afab2403ca86"><td class="memItemLeft" align="right" valign="top"><a id="a1b04ae5122f64c158974afab2403ca86"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a1b04ae5122f64c158974afab2403ca86">AddCArray</a> (const Type **, size_t <a class="el" href="class_r_p_array.html#a74701ee582beac8b182c3fe388dbd94c">count</a>)</td></tr>
+<tr class="memdesc:a1b04ae5122f64c158974afab2403ca86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить C-массив. <br /></td></tr>
+<tr class="separator:a1b04ae5122f64c158974afab2403ca86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3a841530146eeec4e0930a4d08de90"><td class="memItemLeft" align="right" valign="top"><a id="a7f3a841530146eeec4e0930a4d08de90"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a7f3a841530146eeec4e0930a4d08de90">InsertArray</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;, size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memdesc:a7f3a841530146eeec4e0930a4d08de90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить массив в позицию. <br /></td></tr>
+<tr class="separator:a7f3a841530146eeec4e0930a4d08de90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af577cd6696b201c17b4a973b0ae71030"><td class="memItemLeft" align="right" valign="top"><a id="af577cd6696b201c17b4a973b0ae71030"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#af577cd6696b201c17b4a973b0ae71030">DetachAll</a> ()</td></tr>
+<tr class="memdesc:af577cd6696b201c17b4a973b0ae71030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить все элементы обнулить количество элементов. <br /></td></tr>
+<tr class="separator:af577cd6696b201c17b4a973b0ae71030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9cc27d4f137d026c2f54c8cb00512a"><td class="memItemLeft" align="right" valign="top"><a id="add9cc27d4f137d026c2f54c8cb00512a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#add9cc27d4f137d026c2f54c8cb00512a">Adjust</a> ()</td></tr>
+<tr class="memdesc:add9cc27d4f137d026c2f54c8cb00512a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить лишнюю память. <br /></td></tr>
+<tr class="separator:add9cc27d4f137d026c2f54c8cb00512a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ae9a233165fd1d26e357e9770414ea"><td class="memItemLeft" align="right" valign="top"><a id="a59ae9a233165fd1d26e357e9770414ea"></a>
+Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a59ae9a233165fd1d26e357e9770414ea">DetachInd</a> (size_t delIndex)</td></tr>
+<tr class="memdesc:a59ae9a233165fd1d26e357e9770414ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить элемент от массива. <br /></td></tr>
+<tr class="separator:a59ae9a233165fd1d26e357e9770414ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8a3b2da40008708474ce77ecc4c5aa"><td class="memItemLeft" align="right" valign="top"><a id="aed8a3b2da40008708474ce77ecc4c5aa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#aed8a3b2da40008708474ce77ecc4c5aa">DetachObj</a> (const Type *delObject)</td></tr>
+<tr class="memdesc:aed8a3b2da40008708474ce77ecc4c5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить элемент от массива. <br /></td></tr>
+<tr class="separator:aed8a3b2da40008708474ce77ecc4c5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c6a9e9dfd7a50248d317dc3db54fcd"><td class="memItemLeft" align="right" valign="top"><a id="a54c6a9e9dfd7a50248d317dc3db54fcd"></a>
+virtual Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a54c6a9e9dfd7a50248d317dc3db54fcd">RemoveInd</a> (size_t delIndex, <a class="el" href="group___base___tools.html#ga83ab0a860f9905ff5149853e471a594f">DelType</a>=<a class="el" href="group___base___tools.html#gga83ab0a860f9905ff5149853e471a594fa06b3f04f4fbf3963144e8a7da2f4d5f1">defDelete</a>)</td></tr>
+<tr class="memdesc:a54c6a9e9dfd7a50248d317dc3db54fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить элемент из массива по индексу. <br /></td></tr>
+<tr class="separator:a54c6a9e9dfd7a50248d317dc3db54fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea67daa30194ed95eefb5315e65d188"><td class="memItemLeft" align="right" valign="top"><a id="acea67daa30194ed95eefb5315e65d188"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#acea67daa30194ed95eefb5315e65d188">Swap</a> (<a class="el" href="class_r_p_array.html">RPArray</a> &amp;arr)</td></tr>
+<tr class="memdesc:acea67daa30194ed95eefb5315e65d188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обменять местами данные массивов. <br /></td></tr>
+<tr class="separator:acea67daa30194ed95eefb5315e65d188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28d5e33af5282783dff82e189bf3840"><td class="memItemLeft" align="right" valign="top"><a id="ac28d5e33af5282783dff82e189bf3840"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ac28d5e33af5282783dff82e189bf3840">FindIt</a> (const Type *) const</td></tr>
+<tr class="memdesc:ac28d5e33af5282783dff82e189bf3840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти элемент по указателю. <br /></td></tr>
+<tr class="separator:ac28d5e33af5282783dff82e189bf3840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d1c1b0502c1a46d310c2825d269277"><td class="memItemLeft" align="right" valign="top"><a id="ac0d1c1b0502c1a46d310c2825d269277"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ac0d1c1b0502c1a46d310c2825d269277">IsExist</a> (const Type *) const</td></tr>
+<tr class="memdesc:ac0d1c1b0502c1a46d310c2825d269277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли элемент в массиве. <br /></td></tr>
+<tr class="separator:ac0d1c1b0502c1a46d310c2825d269277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb97b1706b1a5e7028b44af9374f9973"><td class="memItemLeft" align="right" valign="top"><a id="abb97b1706b1a5e7028b44af9374f9973"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#abb97b1706b1a5e7028b44af9374f9973">Count</a> () const</td></tr>
+<tr class="memdesc:abb97b1706b1a5e7028b44af9374f9973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество элементов массива. <br /></td></tr>
+<tr class="separator:abb97b1706b1a5e7028b44af9374f9973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fc9da15b4a174a86123dd3ca62da4f"><td class="memItemLeft" align="right" valign="top"><a id="a06fc9da15b4a174a86123dd3ca62da4f"></a>
+ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a06fc9da15b4a174a86123dd3ca62da4f">MaxIndex</a> () const</td></tr>
+<tr class="memdesc:a06fc9da15b4a174a86123dd3ca62da4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить индекс последнего объект в массиве. <br /></td></tr>
+<tr class="separator:a06fc9da15b4a174a86123dd3ca62da4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ea5365f729f6d3080d901734942aa1"><td class="memItemLeft" align="right" valign="top"><a id="ab2ea5365f729f6d3080d901734942aa1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ab2ea5365f729f6d3080d901734942aa1">Sort</a> (<a class="el" href="class_r_p_array.html#a1352eeae39e67719eb67ddd1ca409ca3">CompFunc</a> comp)</td></tr>
+<tr class="memdesc:ab2ea5365f729f6d3080d901734942aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировать массив. <br /></td></tr>
+<tr class="separator:ab2ea5365f729f6d3080d901734942aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f7a3f5a06658b39a88a0cb199dba85"><td class="memItemLeft" align="right" valign="top"><a id="ac5f7a3f5a06658b39a88a0cb199dba85"></a>
+Type *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ac5f7a3f5a06658b39a88a0cb199dba85">operator[]</a> (size_t loc) const</td></tr>
+<tr class="memdesc:ac5f7a3f5a06658b39a88a0cb199dba85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор доступа по индексу. <br /></td></tr>
+<tr class="separator:ac5f7a3f5a06658b39a88a0cb199dba85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9da65ba5bffcb1441f8ed857a2606d6"><td class="memItemLeft" align="right" valign="top"><a id="ac9da65ba5bffcb1441f8ed857a2606d6"></a>
+Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ac9da65ba5bffcb1441f8ed857a2606d6">GetLast</a> () const</td></tr>
+<tr class="memdesc:ac9da65ba5bffcb1441f8ed857a2606d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить адрес последнего элемента в массиве. <br /></td></tr>
+<tr class="separator:ac9da65ba5bffcb1441f8ed857a2606d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a383978c4b28e29c46634350c41de92"><td class="memItemLeft" align="right" valign="top"><a id="a1a383978c4b28e29c46634350c41de92"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a1a383978c4b28e29c46634350c41de92">size</a> () const</td></tr>
+<tr class="memdesc:a1a383978c4b28e29c46634350c41de92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать количество элементов массива. <br /></td></tr>
+<tr class="separator:a1a383978c4b28e29c46634350c41de92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab221c7d9a02735e442b91e32849d79ee"><td class="memItemLeft" align="right" valign="top"><a id="ab221c7d9a02735e442b91e32849d79ee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ab221c7d9a02735e442b91e32849d79ee">reserve</a> (size_t n)</td></tr>
+<tr class="memdesc:ab221c7d9a02735e442b91e32849d79ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зарезервировать место под столько элементов. <br /></td></tr>
+<tr class="separator:ab221c7d9a02735e442b91e32849d79ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da69fc27bdd77067dbedd832505043e"><td class="memItemLeft" align="right" valign="top"><a id="a5da69fc27bdd77067dbedd832505043e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a5da69fc27bdd77067dbedd832505043e">capacity</a> () const</td></tr>
+<tr class="memdesc:a5da69fc27bdd77067dbedd832505043e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Под какое количество элементов выделена память? <br /></td></tr>
+<tr class="separator:a5da69fc27bdd77067dbedd832505043e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a8aa3c36b3ab1f1c50229ba761c49e"><td class="memItemLeft" align="right" valign="top"><a id="a64a8aa3c36b3ab1f1c50229ba761c49e"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a64a8aa3c36b3ab1f1c50229ba761c49e">push_back</a> (const Type *e)</td></tr>
+<tr class="memdesc:a64a8aa3c36b3ab1f1c50229ba761c49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить элемент в конец массива. <br /></td></tr>
+<tr class="separator:a64a8aa3c36b3ab1f1c50229ba761c49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7cb08f0f291dfef3955f3e623b5b27"><td class="memItemLeft" align="right" valign="top"><a id="a4b7cb08f0f291dfef3955f3e623b5b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a4b7cb08f0f291dfef3955f3e623b5b27">emplace_back</a> (const Type *e)</td></tr>
+<tr class="memdesc:a4b7cb08f0f291dfef3955f3e623b5b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить элемент в конец массива. <br /></td></tr>
+<tr class="separator:a4b7cb08f0f291dfef3955f3e623b5b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0b2d61497d5fab43fa897eac8ae099"><td class="memTemplParams" colspan="2"><a id="a5f0b2d61497d5fab43fa897eac8ae099"></a>
+template&lt;class Iterator &gt; </td></tr>
+<tr class="memitem:a5f0b2d61497d5fab43fa897eac8ae099"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a5f0b2d61497d5fab43fa897eac8ae099">insert</a> (Iterator pos, const Type *e)</td></tr>
+<tr class="memdesc:a5f0b2d61497d5fab43fa897eac8ae099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставить элемент перед указанным. <br /></td></tr>
+<tr class="separator:a5f0b2d61497d5fab43fa897eac8ae099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace2f8e4a76528704537bb1d79648bd1"><td class="memTemplParams" colspan="2"><a id="aace2f8e4a76528704537bb1d79648bd1"></a>
+template&lt;class Iterator &gt; </td></tr>
+<tr class="memitem:aace2f8e4a76528704537bb1d79648bd1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#aace2f8e4a76528704537bb1d79648bd1">erase</a> (Iterator pos)</td></tr>
+<tr class="memdesc:aace2f8e4a76528704537bb1d79648bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить элемент из массива по индексу. <br /></td></tr>
+<tr class="separator:aace2f8e4a76528704537bb1d79648bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f19f72204873a9b35b32514f3fda994"><td class="memTemplParams" colspan="2"><a id="a7f19f72204873a9b35b32514f3fda994"></a>
+template&lt;class Iterator &gt; </td></tr>
+<tr class="memitem:a7f19f72204873a9b35b32514f3fda994"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a7f19f72204873a9b35b32514f3fda994">erase</a> (Iterator <a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45a8b04d5e3775d298e78455efc5ca404d5">first</a>, Iterator last)</td></tr>
+<tr class="memdesc:a7f19f72204873a9b35b32514f3fda994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить элементы из массива начиная с индекса first до last-1 включительно. <br /></td></tr>
+<tr class="separator:a7f19f72204873a9b35b32514f3fda994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0484653c678c117a19d83b2f83f2d918"><td class="memItemLeft" align="right" valign="top"><a id="a0484653c678c117a19d83b2f83f2d918"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a0484653c678c117a19d83b2f83f2d918">clear</a> ()</td></tr>
+<tr class="memdesc:a0484653c678c117a19d83b2f83f2d918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обнулить количество элементов. <br /></td></tr>
+<tr class="separator:a0484653c678c117a19d83b2f83f2d918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad277954a74d46857f1b811cc1db6a1c7"><td class="memItemLeft" align="right" valign="top"><a id="ad277954a74d46857f1b811cc1db6a1c7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ad277954a74d46857f1b811cc1db6a1c7">shrink_to_fit</a> ()</td></tr>
+<tr class="memdesc:ad277954a74d46857f1b811cc1db6a1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить лишнюю память. <br /></td></tr>
+<tr class="separator:ad277954a74d46857f1b811cc1db6a1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85961303f3377c2d4a20934e17e7f5f"><td class="memItemLeft" align="right" valign="top"><a id="ac85961303f3377c2d4a20934e17e7f5f"></a>
+const <a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ac85961303f3377c2d4a20934e17e7f5f">begin</a> () const</td></tr>
+<tr class="memdesc:ac85961303f3377c2d4a20934e17e7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на первый элемент массива. <br /></td></tr>
+<tr class="separator:ac85961303f3377c2d4a20934e17e7f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e03519f4d52ba464f73b205e83267b"><td class="memItemLeft" align="right" valign="top"><a id="a67e03519f4d52ba464f73b205e83267b"></a>
+<a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a67e03519f4d52ba464f73b205e83267b">begin</a> ()</td></tr>
+<tr class="memdesc:a67e03519f4d52ba464f73b205e83267b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на первый элемент массива. <br /></td></tr>
+<tr class="separator:a67e03519f4d52ba464f73b205e83267b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc7ae1fcebcfd1bfe8aef20a2739a39"><td class="memItemLeft" align="right" valign="top"><a id="a0cc7ae1fcebcfd1bfe8aef20a2739a39"></a>
+const <a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a0cc7ae1fcebcfd1bfe8aef20a2739a39">end</a> () const</td></tr>
+<tr class="memdesc:a0cc7ae1fcebcfd1bfe8aef20a2739a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на участок памяти после массива. <br /></td></tr>
+<tr class="separator:a0cc7ae1fcebcfd1bfe8aef20a2739a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99c9d029620187528a9f611c99ddc48"><td class="memItemLeft" align="right" valign="top"><a id="ab99c9d029620187528a9f611c99ddc48"></a>
+<a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ab99c9d029620187528a9f611c99ddc48">end</a> ()</td></tr>
+<tr class="memdesc:ab99c9d029620187528a9f611c99ddc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на участок памяти после массива. <br /></td></tr>
+<tr class="separator:ab99c9d029620187528a9f611c99ddc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3342d4d60a4ac0cb55c28ca864df2ac"><td class="memItemLeft" align="right" valign="top"><a id="aa3342d4d60a4ac0cb55c28ca864df2ac"></a>
+const <a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#aa3342d4d60a4ac0cb55c28ca864df2ac">cbegin</a> () const</td></tr>
+<tr class="memdesc:aa3342d4d60a4ac0cb55c28ca864df2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на первый элемент массива. <br /></td></tr>
+<tr class="separator:aa3342d4d60a4ac0cb55c28ca864df2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0f325197cb6fa8aa62a7c3526a17e4"><td class="memItemLeft" align="right" valign="top"><a id="a7d0f325197cb6fa8aa62a7c3526a17e4"></a>
+const <a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a7d0f325197cb6fa8aa62a7c3526a17e4">cend</a> () const</td></tr>
+<tr class="memdesc:a7d0f325197cb6fa8aa62a7c3526a17e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на участок памяти после массива. <br /></td></tr>
+<tr class="separator:a7d0f325197cb6fa8aa62a7c3526a17e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda779b3d62df95311f76623a1191fbe"><td class="memItemLeft" align="right" valign="top"><a id="adda779b3d62df95311f76623a1191fbe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#adda779b3d62df95311f76623a1191fbe">RPArray</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;&amp;)</td></tr>
+<tr class="memdesc:adda779b3d62df95311f76623a1191fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор перемещения массива. <br /></td></tr>
+<tr class="separator:adda779b3d62df95311f76623a1191fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba06a17a3fb8150f9e02b32e7227af2"><td class="memItemLeft" align="right" valign="top"><a id="aeba06a17a3fb8150f9e02b32e7227af2"></a>
+<a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#aeba06a17a3fb8150f9e02b32e7227af2">operator=</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt; &amp;&amp;)</td></tr>
+<tr class="memdesc:aeba06a17a3fb8150f9e02b32e7227af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перемещения массива. <br /></td></tr>
+<tr class="separator:aeba06a17a3fb8150f9e02b32e7227af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a8d2dacde80ba13b9bb919d67129f7795"><td class="memItemLeft" align="right" valign="top"><a id="a8d2dacde80ba13b9bb919d67129f7795"></a>
+const Type **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a8d2dacde80ba13b9bb919d67129f7795">GetAddr</a> () const</td></tr>
+<tr class="memdesc:a8d2dacde80ba13b9bb919d67129f7795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на первый элемент массива. <br /></td></tr>
+<tr class="separator:a8d2dacde80ba13b9bb919d67129f7795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401d046943e3118cc1db12756ec83997"><td class="memItemLeft" align="right" valign="top"><a id="a401d046943e3118cc1db12756ec83997"></a>
+const <a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a401d046943e3118cc1db12756ec83997">_Begin</a> () const</td></tr>
+<tr class="memdesc:a401d046943e3118cc1db12756ec83997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на первый элемент массива. <br /></td></tr>
+<tr class="separator:a401d046943e3118cc1db12756ec83997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da0ea8146984fcd54f9f53c230ae287"><td class="memItemLeft" align="right" valign="top"><a id="a0da0ea8146984fcd54f9f53c230ae287"></a>
+<a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a0da0ea8146984fcd54f9f53c230ae287">_Begin</a> ()</td></tr>
+<tr class="memdesc:a0da0ea8146984fcd54f9f53c230ae287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на первый элемент массива. <br /></td></tr>
+<tr class="separator:a0da0ea8146984fcd54f9f53c230ae287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80dba2e7905ec64c5fd516c25d8a269"><td class="memItemLeft" align="right" valign="top"><a id="ad80dba2e7905ec64c5fd516c25d8a269"></a>
+const <a class="el" href="class_r_p_array.html#ac039387cfc1bea63fc6a441ae6d045bc">TPtr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#ad80dba2e7905ec64c5fd516c25d8a269">_End</a> () const</td></tr>
+<tr class="memdesc:ad80dba2e7905ec64c5fd516c25d8a269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить указатель на участок памяти после массива. <br /></td></tr>
+<tr class="separator:ad80dba2e7905ec64c5fd516c25d8a269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1434df3d252aebc18f15b41434190179"><td class="memItemLeft" align="right" valign="top"><a id="a1434df3d252aebc18f15b41434190179"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a1434df3d252aebc18f15b41434190179">CatchMemory</a> ()</td></tr>
+<tr class="memdesc:a1434df3d252aebc18f15b41434190179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Захватить память. <br /></td></tr>
+<tr class="separator:a1434df3d252aebc18f15b41434190179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adbc9471b62ee6fe114271c322daa6d"><td class="memItemLeft" align="right" valign="top"><a id="a7adbc9471b62ee6fe114271c322daa6d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a7adbc9471b62ee6fe114271c322daa6d">AddMemory</a> (size_t n)</td></tr>
+<tr class="memdesc:a7adbc9471b62ee6fe114271c322daa6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обеспечить место в памяти под n элементов, независимо от AutoDelta. <br /></td></tr>
+<tr class="separator:a7adbc9471b62ee6fe114271c322daa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560a109de21c0ac142dacc1a23143caa"><td class="memItemLeft" align="right" valign="top"><a id="a560a109de21c0ac142dacc1a23143caa"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a560a109de21c0ac142dacc1a23143caa">AutoDelta</a> () const</td></tr>
+<tr class="memdesc:a560a109de21c0ac142dacc1a23143caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить автоприращение. <br /></td></tr>
+<tr class="separator:a560a109de21c0ac142dacc1a23143caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a74701ee582beac8b182c3fe388dbd94c"><td class="memItemLeft" align="right" valign="top"><a id="a74701ee582beac8b182c3fe388dbd94c"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a74701ee582beac8b182c3fe388dbd94c">count</a></td></tr>
+<tr class="memdesc:a74701ee582beac8b182c3fe388dbd94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество элементов в массиве. <br /></td></tr>
+<tr class="separator:a74701ee582beac8b182c3fe388dbd94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3db87f8f5b21b05c9992f5aa794128"><td class="memItemLeft" align="right" valign="top"><a id="aca3db87f8f5b21b05c9992f5aa794128"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#aca3db87f8f5b21b05c9992f5aa794128">upper</a></td></tr>
+<tr class="memdesc:aca3db87f8f5b21b05c9992f5aa794128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Под какое количество элементов выделена память. <br /></td></tr>
+<tr class="separator:aca3db87f8f5b21b05c9992f5aa794128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693712302c7896e313bfbe88d531d5e4"><td class="memItemLeft" align="right" valign="top"><a id="a693712302c7896e313bfbe88d531d5e4"></a>
+uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_p_array.html#a693712302c7896e313bfbe88d531d5e4">delta</a></td></tr>
+<tr class="memdesc:a693712302c7896e313bfbe88d531d5e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приращение по количеству элементов при выделении дополнительной памяти. <br /></td></tr>
+<tr class="separator:a693712302c7896e313bfbe88d531d5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;class Type&gt;<br />
+class RPArray&lt; Type &gt;</h3>
+
+<p>Одномерный массив указателей на объекты. </p>
+<p>Шаблонный массив, работающий с указателями на объекты. <br  />
+</p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="af0afe8fcdcb02d05afade0bc3806d191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0afe8fcdcb02d05afade0bc3806d191">&#9670;&nbsp;</a></span>SetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_r_p_array.html">RPArray</a>&lt; Type &gt;::SetSize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>newSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функции, выделяющие потенциально большие участки памяти, возвращают результат операции (успех/ошибка). </p>
+<p>Установить новый размер массива. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="action__direct_8h.html">action_direct.h</a></li>
+<li><a class="el" href="templ__rp__array_8h.html">templ_rp_array.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_r_p_array.html">RPArray</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

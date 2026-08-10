@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Шаблон класса MbCubeTree&lt; Type, Cube, Point, Vector &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_cube_tree.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_mb_cube_tree-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Шаблон класса MbCubeTree&lt; Type, Cube, Point, Vector &gt;<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Дерево объектов с габаритными кубами.  
+ <a href="class_mb_cube_tree.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_cube_tree.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:ae32a4113dfc4454d1366f1dd99d990bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a> { <a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a> = 0
+, <a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda180dc3d6340eae107e22905d003a9257">edm_CubeCenter</a>
+ }</td></tr>
+<tr class="memdesc:ae32a4113dfc4454d1366f1dd99d990bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип алгоритма вычисления расстояния от точки до габарита.  <a href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae32a4113dfc4454d1366f1dd99d990bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c9475fbfc34ba60ba0d4c3577bd3b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a00c9475fbfc34ba60ba0d4c3577bd3b5">BranchingDirections</a> { <a class="el" href="class_mb_cube_tree.html#a00c9475fbfc34ba60ba0d4c3577bd3b5a89d204d5e3c810c560e5abab68a71342">ebd_WasDirX</a> = 0x01
+, <a class="el" href="class_mb_cube_tree.html#a00c9475fbfc34ba60ba0d4c3577bd3b5adabe5a40e1914c656c9e638a3a906179">ebd_WasDirY</a> = 0x02
+, <a class="el" href="class_mb_cube_tree.html#a00c9475fbfc34ba60ba0d4c3577bd3b5a80c189160b9de540a2493c66965811c8">ebd_WasDirZ</a> = 0x04
+ }</td></tr>
+<tr class="memdesc:a00c9475fbfc34ba60ba0d4c3577bd3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Битовые флаги направлений ветвления.  <a href="class_mb_cube_tree.html#a00c9475fbfc34ba60ba0d4c3577bd3b5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a00c9475fbfc34ba60ba0d4c3577bd3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a346d51549dd5b870bf43bf461439cf5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a346d51549dd5b870bf43bf461439cf5b">MbCubeTree</a> (std::vector&lt; ItemIndex &gt; &amp;objects, <a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a> dm=<a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a>)</td></tr>
+<tr class="memdesc:a346d51549dd5b870bf43bf461439cf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор дерева по объектам.  <a href="class_mb_cube_tree.html#a346d51549dd5b870bf43bf461439cf5b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a346d51549dd5b870bf43bf461439cf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb586b978b49cac5ee66a00403913206"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#afb586b978b49cac5ee66a00403913206">MbCubeTree</a> (std::vector&lt; ItemIndex &gt; &amp;objects, const Cube &amp;gabarit, <a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a> dm=<a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a>)</td></tr>
+<tr class="memdesc:afb586b978b49cac5ee66a00403913206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор дерева по объектам.  <a href="class_mb_cube_tree.html#afb586b978b49cac5ee66a00403913206">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb586b978b49cac5ee66a00403913206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776bf7ef76e69ba1aef4c0b79a0a9182"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a776bf7ef76e69ba1aef4c0b79a0a9182">MbCubeTree</a> (<a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a> dm=<a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a>)</td></tr>
+<tr class="memdesc:a776bf7ef76e69ba1aef4c0b79a0a9182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор пустого дерева.  <a href="class_mb_cube_tree.html#a776bf7ef76e69ba1aef4c0b79a0a9182">Подробнее...</a><br /></td></tr>
+<tr class="separator:a776bf7ef76e69ba1aef4c0b79a0a9182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb22aa9ec78ba76d546f60cd7c0de64a"><td class="memItemLeft" align="right" valign="top"><a id="afb22aa9ec78ba76d546f60cd7c0de64a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#afb22aa9ec78ba76d546f60cd7c0de64a">~MbCubeTree</a> ()</td></tr>
+<tr class="memdesc:afb22aa9ec78ba76d546f60cd7c0de64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:afb22aa9ec78ba76d546f60cd7c0de64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53be58987cb6296a470c6fd53889959"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#ac53be58987cb6296a470c6fd53889959">InitTree</a> (std::vector&lt; ItemIndex &gt; &amp;objects, const Cube &amp;gabarit, <a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a> dm=<a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a>)</td></tr>
+<tr class="memdesc:ac53be58987cb6296a470c6fd53889959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация дерева по объектам.  <a href="class_mb_cube_tree.html#ac53be58987cb6296a470c6fd53889959">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac53be58987cb6296a470c6fd53889959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896bfeca7007ac539d5aff36fc8c2bd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a896bfeca7007ac539d5aff36fc8c2bd2">InitTree</a> (const <a class="el" href="class_mb_cube_tree.html">MbCubeTree</a> &amp;srcTree, const std::vector&lt; ItemIndex &gt; &amp;srcObjects, const std::vector&lt; ItemIndex &gt; &amp;dstObjects)</td></tr>
+<tr class="memdesc:a896bfeca7007ac539d5aff36fc8c2bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копировать дерево.  <a href="class_mb_cube_tree.html#a896bfeca7007ac539d5aff36fc8c2bd2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a896bfeca7007ac539d5aff36fc8c2bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70205f8f9c62a772b92e7da34e298e2d"><td class="memItemLeft" align="right" valign="top"><a id="a70205f8f9c62a772b92e7da34e298e2d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a70205f8f9c62a772b92e7da34e298e2d">Clear</a> ()</td></tr>
+<tr class="memdesc:a70205f8f9c62a772b92e7da34e298e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить дерево. <br /></td></tr>
+<tr class="separator:a70205f8f9c62a772b92e7da34e298e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9da5b7ded5531a472b6473edca74703"><td class="memItemLeft" align="right" valign="top"><a id="ac9da5b7ded5531a472b6473edca74703"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#ac9da5b7ded5531a472b6473edca74703">Move</a> (const Vector &amp;)</td></tr>
+<tr class="memdesc:ac9da5b7ded5531a472b6473edca74703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть дерево. <br /></td></tr>
+<tr class="separator:ac9da5b7ded5531a472b6473edca74703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7805703161ad65684967da7ad10a15b6"><td class="memItemLeft" align="right" valign="top"><a id="a7805703161ad65684967da7ad10a15b6"></a>
+<a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a7805703161ad65684967da7ad10a15b6">GetDistanceMeasure</a> () const</td></tr>
+<tr class="memdesc:a7805703161ad65684967da7ad10a15b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип алгоритма вычисления расстояния от точки до габарита. <br /></td></tr>
+<tr class="separator:a7805703161ad65684967da7ad10a15b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9928fee73b29c2471381dd8b65ce8052"><td class="memItemLeft" align="right" valign="top"><a id="a9928fee73b29c2471381dd8b65ce8052"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a9928fee73b29c2471381dd8b65ce8052">Count</a> () const</td></tr>
+<tr class="memdesc:a9928fee73b29c2471381dd8b65ce8052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество объектов в дереве (не хранит, считает обходом дерева). <br /></td></tr>
+<tr class="separator:a9928fee73b29c2471381dd8b65ce8052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f734fca4dc3e9a9184f3dd119ccebd"><td class="memItemLeft" align="right" valign="top"><a id="a11f734fca4dc3e9a9184f3dd119ccebd"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a11f734fca4dc3e9a9184f3dd119ccebd">NodeCount</a> () const</td></tr>
+<tr class="memdesc:a11f734fca4dc3e9a9184f3dd119ccebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество узлов в дереве. <br /></td></tr>
+<tr class="separator:a11f734fca4dc3e9a9184f3dd119ccebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af096d5dc3bdb721ef4570f41af9b32ba"><td class="memItemLeft" align="right" valign="top"><a id="af096d5dc3bdb721ef4570f41af9b32ba"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#af096d5dc3bdb721ef4570f41af9b32ba">IsReady</a> () const</td></tr>
+<tr class="memdesc:af096d5dc3bdb721ef4570f41af9b32ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Готово ли дерево. <br /></td></tr>
+<tr class="separator:af096d5dc3bdb721ef4570f41af9b32ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef7d018ee85c0c4e397dbc417d79837"><td class="memItemLeft" align="right" valign="top"><a id="afef7d018ee85c0c4e397dbc417d79837"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#afef7d018ee85c0c4e397dbc417d79837">GetTreeDepth</a> () const</td></tr>
+<tr class="memdesc:afef7d018ee85c0c4e397dbc417d79837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить глубину дерева (общая переменная). <br /></td></tr>
+<tr class="separator:afef7d018ee85c0c4e397dbc417d79837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d12f224a6fee35385a83ad105f7aa5a"><td class="memItemLeft" align="right" valign="top"><a id="a2d12f224a6fee35385a83ad105f7aa5a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a2d12f224a6fee35385a83ad105f7aa5a">SetTreeDepth</a> (size_t k)</td></tr>
+<tr class="memdesc:a2d12f224a6fee35385a83ad105f7aa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить глубину дерева (общая переменная). <br /></td></tr>
+<tr class="separator:a2d12f224a6fee35385a83ad105f7aa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1ecc1c6014ae6a4b3ccdf5bd36d8fb"><td class="memItemLeft" align="right" valign="top"><a id="aaa1ecc1c6014ae6a4b3ccdf5bd36d8fb"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#aaa1ecc1c6014ae6a4b3ccdf5bd36d8fb">ResetTreeDepth</a> ()</td></tr>
+<tr class="memdesc:aaa1ecc1c6014ae6a4b3ccdf5bd36d8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбросить глубину дерева (общая переменная). <br /></td></tr>
+<tr class="separator:aaa1ecc1c6014ae6a4b3ccdf5bd36d8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8205bfa86412437ed047ea477ecbcf00"><td class="memItemLeft" align="right" valign="top"><a id="a8205bfa86412437ed047ea477ecbcf00"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a8205bfa86412437ed047ea477ecbcf00">GetLeafMinElementsCount</a> () const</td></tr>
+<tr class="memdesc:a8205bfa86412437ed047ea477ecbcf00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить минимальное количество элементов в конечной ветви (общая переменная). <br /></td></tr>
+<tr class="separator:a8205bfa86412437ed047ea477ecbcf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b1c239c4e04e3c64800011676e782a"><td class="memItemLeft" align="right" valign="top"><a id="af4b1c239c4e04e3c64800011676e782a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#af4b1c239c4e04e3c64800011676e782a">SetLeafMinElementsCount</a> (size_t k)</td></tr>
+<tr class="memdesc:af4b1c239c4e04e3c64800011676e782a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить минимальное количество элементов в конечной ветви (общая переменная). <br /></td></tr>
+<tr class="separator:af4b1c239c4e04e3c64800011676e782a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbacc392acb5b6bc8e1b4a310a4c14c"><td class="memItemLeft" align="right" valign="top"><a id="a8fbacc392acb5b6bc8e1b4a310a4c14c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a8fbacc392acb5b6bc8e1b4a310a4c14c">ResetLeafMinElementsCount</a> ()</td></tr>
+<tr class="memdesc:a8fbacc392acb5b6bc8e1b4a310a4c14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбросить минимальное количество элементов в конечной ветви (общая переменная). <br /></td></tr>
+<tr class="separator:a8fbacc392acb5b6bc8e1b4a310a4c14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac311e741ebe88b9b2c262d619fb9e1eb"><td class="memItemLeft" align="right" valign="top"><a id="ac311e741ebe88b9b2c262d619fb9e1eb"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#ac311e741ebe88b9b2c262d619fb9e1eb">GetContainsObjects</a> (const Point &amp;pnt, double epsilon, std::vector&lt; const Type * &gt; &amp;objects) const</td></tr>
+<tr class="memdesc:ac311e741ebe88b9b2c262d619fb9e1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать содержащие точку объекты дерева. <br /></td></tr>
+<tr class="separator:ac311e741ebe88b9b2c262d619fb9e1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d58d034d6945fbcf644bdde7581b5ff"><td class="memItemLeft" align="right" valign="top"><a id="a2d58d034d6945fbcf644bdde7581b5ff"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a2d58d034d6945fbcf644bdde7581b5ff">GetContainsObjects</a> (const Point &amp;pnt, double epsilon, std::vector&lt; size_t &gt; &amp;indices) const</td></tr>
+<tr class="memdesc:a2d58d034d6945fbcf644bdde7581b5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать содержащие точку объекты дерева. <br /></td></tr>
+<tr class="separator:a2d58d034d6945fbcf644bdde7581b5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f33bf085b846e95ac1f677b1732415"><td class="memItemLeft" align="right" valign="top"><a id="a22f33bf085b846e95ac1f677b1732415"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a22f33bf085b846e95ac1f677b1732415">GetIntersectObjects</a> (const Cube &amp;gabarit, double epsilon, std::vector&lt; const Type * &gt; &amp;objects, bool skipOwnself=false) const</td></tr>
+<tr class="memdesc:a22f33bf085b846e95ac1f677b1732415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать пересекающиеся с габаритным кубом объекты дерева. <br /></td></tr>
+<tr class="separator:a22f33bf085b846e95ac1f677b1732415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb744af564d49da2765f0efa1f604ca"><td class="memItemLeft" align="right" valign="top"><a id="a3cb744af564d49da2765f0efa1f604ca"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a3cb744af564d49da2765f0efa1f604ca">GetIntersectObjects</a> (const Cube &amp;gabarit, double epsilon, std::vector&lt; size_t &gt; &amp;indices, bool skipOwnself=false) const</td></tr>
+<tr class="memdesc:a3cb744af564d49da2765f0efa1f604ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать пересекающиеся с габаритным кубом объекты дерева. <br /></td></tr>
+<tr class="separator:a3cb744af564d49da2765f0efa1f604ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff5f88cd051e146842e505a2989cbd8"><td class="memItemLeft" align="right" valign="top"><a id="a2ff5f88cd051e146842e505a2989cbd8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a2ff5f88cd051e146842e505a2989cbd8">GetIntersectObjects</a> (const Point &amp;rayPnt1, const Point &amp;rayPnt2, double epsilon, std::vector&lt; size_t &gt; &amp;indices) const</td></tr>
+<tr class="memdesc:a2ff5f88cd051e146842e505a2989cbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать пересекающиеся с отрезком луча кубом объекты дерева. <br /></td></tr>
+<tr class="separator:a2ff5f88cd051e146842e505a2989cbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3be23dbded5f2db29a64adedd118f0"><td class="memItemLeft" align="right" valign="top"><a id="a5e3be23dbded5f2db29a64adedd118f0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a5e3be23dbded5f2db29a64adedd118f0">FindNearestObject</a> (const Cube &amp;gabarit, double &amp;distance, const Type *&amp;object, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:a5e3be23dbded5f2db29a64adedd118f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайший к кубу объект дерева. <br /></td></tr>
+<tr class="separator:a5e3be23dbded5f2db29a64adedd118f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fde42163e20582d17081d6bf9b190c"><td class="memItemLeft" align="right" valign="top"><a id="ae5fde42163e20582d17081d6bf9b190c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#ae5fde42163e20582d17081d6bf9b190c">FindNearestObject</a> (const Cube &amp;gabarit, double &amp;distance, size_t &amp;<a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:ae5fde42163e20582d17081d6bf9b190c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайший к кубу объект дерева в виде индекса в исходном массиве. <br /></td></tr>
+<tr class="separator:ae5fde42163e20582d17081d6bf9b190c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9aff7dfc2bb912498e8c16971662043"><td class="memItemLeft" align="right" valign="top"><a id="ab9aff7dfc2bb912498e8c16971662043"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#ab9aff7dfc2bb912498e8c16971662043">FindNearestObject</a> (const Point &amp;pnt, double &amp;distance, const Type *&amp;object, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:ab9aff7dfc2bb912498e8c16971662043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайший к точке объект дерева. <br /></td></tr>
+<tr class="separator:ab9aff7dfc2bb912498e8c16971662043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec824df3a8437bc6e9691da1e94a47b"><td class="memItemLeft" align="right" valign="top"><a id="a2ec824df3a8437bc6e9691da1e94a47b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a2ec824df3a8437bc6e9691da1e94a47b">FindNearestObject</a> (const Point &amp;pnt, double &amp;distance, size_t &amp;<a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:a2ec824df3a8437bc6e9691da1e94a47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайший к точке объект дерева в виде индекса в исходном массиве. <br /></td></tr>
+<tr class="separator:a2ec824df3a8437bc6e9691da1e94a47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d29d12a12b90ad29e1925b042ffe42"><td class="memItemLeft" align="right" valign="top"><a id="a15d29d12a12b90ad29e1925b042ffe42"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a15d29d12a12b90ad29e1925b042ffe42">GetNearestObjects</a> (const Cube &amp;gabarit, const double distance, std::vector&lt; IndexDistance &gt; &amp;itemDistances, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:a15d29d12a12b90ad29e1925b042ffe42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать объекты дерева, расположенные к кубу ближе заданного расстояния. <br /></td></tr>
+<tr class="separator:a15d29d12a12b90ad29e1925b042ffe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4cb9fa13cc64ea6860bea30cf857ed"><td class="memItemLeft" align="right" valign="top"><a id="abd4cb9fa13cc64ea6860bea30cf857ed"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#abd4cb9fa13cc64ea6860bea30cf857ed">GetNearestObjects</a> (const Point &amp;pnt, const double distance, std::vector&lt; ItemDistance &gt; &amp;itemDistances, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:abd4cb9fa13cc64ea6860bea30cf857ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать объекты дерева, расположенные к точке ближе заданного расстояния. <br /></td></tr>
+<tr class="separator:abd4cb9fa13cc64ea6860bea30cf857ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f974a7104a336d65c38ba684478791"><td class="memItemLeft" align="right" valign="top"><a id="a92f974a7104a336d65c38ba684478791"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a92f974a7104a336d65c38ba684478791">GetNearestObjects</a> (const Point &amp;pnt, const double distance, std::vector&lt; IndexDistance &gt; &amp;indexDistances, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:a92f974a7104a336d65c38ba684478791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать индексы объектов дерева, расположенные к точке ближе заданного расстояния. <br /></td></tr>
+<tr class="separator:a92f974a7104a336d65c38ba684478791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad11709bf2066732215fac35d903265"><td class="memItemLeft" align="right" valign="top"><a id="a8ad11709bf2066732215fac35d903265"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a8ad11709bf2066732215fac35d903265">GetNearestObjects</a> (const Point &amp;pnt, const double distance, std::vector&lt; size_t &gt; &amp;indices, double eps=MbCubeTree::defaultEpsilon) const</td></tr>
+<tr class="memdesc:a8ad11709bf2066732215fac35d903265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать индексы объектов дерева, расположенные к точке ближе заданного расстояния. <br /></td></tr>
+<tr class="separator:a8ad11709bf2066732215fac35d903265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1cc0e215d74d204d256d034afe25ff"><td class="memItemLeft" align="right" valign="top"><a id="a4d1cc0e215d74d204d256d034afe25ff"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a4d1cc0e215d74d204d256d034afe25ff">FindNearestObject</a> (const Point &amp;pnt, const <a class="el" href="class_mb_tree_distance_to_element_base.html">MbTreeDistanceToElementBase</a>&lt; Point &gt; &amp;calc, size_t &amp;<a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:a4d1cc0e215d74d204d256d034afe25ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать индекс объекта дерева, ближайшего к точке, и квадрат расстояния до него. <br /></td></tr>
+<tr class="separator:a4d1cc0e215d74d204d256d034afe25ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d52c9bced9190a21be1c0ddb4f869bb"><td class="memItemLeft" align="right" valign="top"><a id="a6d52c9bced9190a21be1c0ddb4f869bb"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube_tree.html#a6d52c9bced9190a21be1c0ddb4f869bb">FindObjectsInsideSphere</a> (const Point &amp;pnt, double radius, const <a class="el" href="class_mb_tree_distance_to_element_base.html">MbTreeDistanceToElementBase</a>&lt; Point &gt; &amp;calc, <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;indices) const</td></tr>
+<tr class="memdesc:a6d52c9bced9190a21be1c0ddb4f869bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать набор индексов объектов дерева, которые хотя бы частично лежат внутри заданной сферы. <br /></td></tr>
+<tr class="separator:a6d52c9bced9190a21be1c0ddb4f869bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;class Type, class Cube, class Point, class Vector&gt;<br />
+class MbCubeTree&lt; Type, Cube, Point, Vector &gt;</h3>
+
+<p>Дерево объектов с габаритными кубами. </p>
+<p>Дерево объектов с габаритными кубами.<br  />
+ Объекты дерева должны иметь функции "const Cube &amp; Type::GetCube() const", "double Type::DistanceToCube( const Cube &amp; cube, double eps )". </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="ae32a4113dfc4454d1366f1dd99d990bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32a4113dfc4454d1366f1dd99d990bd">&#9670;&nbsp;</a></span>DistanceMeasure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Cube , class Point , class Vector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">MbCubeTree::DistanceMeasure</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип алгоритма вычисления расстояния от точки до габарита. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c"></a>edm_MaxCoord&#160;</td><td class="fielddoc"><p>Максимальное расстояние вдоль одной из координатных осей. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae32a4113dfc4454d1366f1dd99d990bda180dc3d6340eae107e22905d003a9257"></a>edm_CubeCenter&#160;</td><td class="fielddoc"><p>Расстояние до центра габарита объекта. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a00c9475fbfc34ba60ba0d4c3577bd3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c9475fbfc34ba60ba0d4c3577bd3b5">&#9670;&nbsp;</a></span>BranchingDirections</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Cube , class Point , class Vector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_cube_tree.html#a00c9475fbfc34ba60ba0d4c3577bd3b5">MbCubeTree::BranchingDirections</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Битовые флаги направлений ветвления. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a00c9475fbfc34ba60ba0d4c3577bd3b5a89d204d5e3c810c560e5abab68a71342"></a>ebd_WasDirX&#160;</td><td class="fielddoc"><p>Была попытка ветвления по оси Ox. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a00c9475fbfc34ba60ba0d4c3577bd3b5adabe5a40e1914c656c9e638a3a906179"></a>ebd_WasDirY&#160;</td><td class="fielddoc"><p>Была попытка ветвления по оси Oy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a00c9475fbfc34ba60ba0d4c3577bd3b5a80c189160b9de540a2493c66965811c8"></a>ebd_WasDirZ&#160;</td><td class="fielddoc"><p>Была попытка ветвления по оси Oz. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a346d51549dd5b870bf43bf461439cf5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346d51549dd5b870bf43bf461439cf5b">&#9670;&nbsp;</a></span>MbCubeTree() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Cube , class Point , class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_cube_tree.html">MbCubeTree</a>&lt; Type, Cube, Point, Vector &gt;::<a class="el" href="class_mb_cube_tree.html">MbCubeTree</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; ItemIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a>&#160;</td>
+          <td class="paramname"><em>dm</em> = <code><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор дерева по объектам. </p>
+<p>Конструктор дерева по объектам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">objects</td><td>- Объекты дерева.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dm</td><td>- Тип вычисления расстояния от точки до габарита. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb586b978b49cac5ee66a00403913206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb586b978b49cac5ee66a00403913206">&#9670;&nbsp;</a></span>MbCubeTree() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Cube , class Point , class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_cube_tree.html">MbCubeTree</a>&lt; Type, Cube, Point, Vector &gt;::<a class="el" href="class_mb_cube_tree.html">MbCubeTree</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; ItemIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Cube &amp;&#160;</td>
+          <td class="paramname"><em>gabarit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a>&#160;</td>
+          <td class="paramname"><em>dm</em> = <code><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор дерева по объектам. </p>
+<p>Конструктор дерева по объектам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">objects</td><td>- Объекты дерева.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gabarit</td><td>- Общий габарит всех объектов дерева, должен быть не пустым.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dm</td><td>- Тип вычисления расстояния от точки до габарита. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a776bf7ef76e69ba1aef4c0b79a0a9182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776bf7ef76e69ba1aef4c0b79a0a9182">&#9670;&nbsp;</a></span>MbCubeTree() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Cube , class Point , class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_cube_tree.html">MbCubeTree</a>&lt; Type, Cube, Point, Vector &gt;::<a class="el" href="class_mb_cube_tree.html">MbCubeTree</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a>&#160;</td>
+          <td class="paramname"><em>dm</em> = <code><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор пустого дерева. </p>
+<p>Конструктор пустого дерева. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dm</td><td>- Тип вычисления расстояния от точки до габарита. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ac53be58987cb6296a470c6fd53889959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53be58987cb6296a470c6fd53889959">&#9670;&nbsp;</a></span>InitTree() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Cube , class Point , class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_mb_cube_tree.html">MbCubeTree</a>&lt; Type, Cube, Point, Vector &gt;::InitTree </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; ItemIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Cube &amp;&#160;</td>
+          <td class="paramname"><em>gabarit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bd">DistanceMeasure</a>&#160;</td>
+          <td class="paramname"><em>dm</em> = <code><a class="el" href="class_mb_cube_tree.html#ae32a4113dfc4454d1366f1dd99d990bda639039450566bf92df0d0990a8363a1c">edm_MaxCoord</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализация дерева по объектам. </p>
+<p>Инициализация дерева по объектам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">objects</td><td>- Объекты дерева.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gabarit</td><td>- Общий габарит всех объектов дерева, должен быть не пустым.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dm</td><td>- Тип вычисления расстояния от точки до габарита. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a896bfeca7007ac539d5aff36fc8c2bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a896bfeca7007ac539d5aff36fc8c2bd2">&#9670;&nbsp;</a></span>InitTree() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Cube , class Point , class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_mb_cube_tree.html">MbCubeTree</a>&lt; Type, Cube, Point, Vector &gt;::InitTree </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube_tree.html">MbCubeTree</a>&lt; Type, Cube, Point, Vector &gt; &amp;&#160;</td>
+          <td class="paramname"><em>srcTree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; ItemIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>srcObjects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; ItemIndex &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dstObjects</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Копировать дерево. </p>
+<p>Копировать дерево. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcTree</td><td>- Исходное дерево.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">copiedObjects</td><td>- Копии объектов дерева. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__cube__tree_8h.html">mb_cube_tree.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_cube_tree.html">MbCubeTree</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:02. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

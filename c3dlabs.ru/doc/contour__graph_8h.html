@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл contour_graph.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('contour__graph_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл contour_graph.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Построение контуров.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__p__array_8h.html">templ_p_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cur__contour_8h.html">cur_contour.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve_8h.html">curve.h</a>&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mp_vertex.html">MpVertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вершина.  <a href="class_mp_vertex.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mp_edge.html">MpEdge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ребро.  <a href="class_mp_edge.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mp_loop.html">MpLoop</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цикл.  <a href="class_mp_loop.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mp_graph.html">MpGraph</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Граф построения контуров.  <a href="class_mp_graph.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a93ee0f6ef0b57e2b3d52343aa65ea704"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="contour__graph_8h.html#a93ee0f6ef0b57e2b3d52343aa65ea704">DeleteVertex</a> (<a class="el" href="class_mp_vertex.html">MpVertex</a> *&amp;vertex)</td></tr>
+<tr class="memdesc:a93ee0f6ef0b57e2b3d52343aa65ea704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить вершину.  <a href="contour__graph_8h.html#a93ee0f6ef0b57e2b3d52343aa65ea704">Подробнее...</a><br /></td></tr>
+<tr class="separator:a93ee0f6ef0b57e2b3d52343aa65ea704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481ee20373e3c9c009af715b37bb37d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="contour__graph_8h.html#a481ee20373e3c9c009af715b37bb37d9">DeleteEdge</a> (<a class="el" href="class_mp_edge.html">MpEdge</a> *&amp;edge)</td></tr>
+<tr class="memdesc:a481ee20373e3c9c009af715b37bb37d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить ребро.  <a href="contour__graph_8h.html#a481ee20373e3c9c009af715b37bb37d9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a481ee20373e3c9c009af715b37bb37d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a05dcb849053da752775648997c4d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="contour__graph_8h.html#a21a05dcb849053da752775648997c4d0">DeleteLoop</a> (<a class="el" href="class_mp_loop.html">MpLoop</a> *&amp;loop)</td></tr>
+<tr class="memdesc:a21a05dcb849053da752775648997c4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить цикл.  <a href="contour__graph_8h.html#a21a05dcb849053da752775648997c4d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a21a05dcb849053da752775648997c4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accddb7044e654c68c65ca693e319bfa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="contour__graph_8h.html#accddb7044e654c68c65ca693e319bfa3">DeleteGraph</a> (<a class="el" href="class_mp_graph.html">MpGraph</a> *&amp;graph)</td></tr>
+<tr class="memdesc:accddb7044e654c68c65ca693e319bfa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить граф.  <a href="contour__graph_8h.html#accddb7044e654c68c65ca693e319bfa3">Подробнее...</a><br /></td></tr>
+<tr class="separator:accddb7044e654c68c65ca693e319bfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4132c3dfc9a3facbf4e225fc49fb0e7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga4132c3dfc9a3facbf4e225fc49fb0e7c">RemoveContourGaps</a> (<a class="el" href="class_mb_contour.html">MbContour</a> &amp;contour, double accuracy, bool canInsert, bool canReplace)</td></tr>
+<tr class="memdesc:ga4132c3dfc9a3facbf4e225fc49fb0e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устранить разрывы в контуре.  <a href="group___algorithms__2_d.html#ga4132c3dfc9a3facbf4e225fc49fb0e7c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4132c3dfc9a3facbf4e225fc49fb0e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08441604e8f0ed5ed8de517f1992f241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mp_graph.html">MpGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga08441604e8f0ed5ed8de517f1992f241">EncloseContoursBuilder</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> &gt; &amp;curveList, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> &gt; &amp;usedCurves, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;contourArray, double accuracy, bool strict, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *progInd=nullptr)</td></tr>
+<tr class="memdesc:ga08441604e8f0ed5ed8de517f1992f241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить контуры вокруг заданной точки.  <a href="group___algorithms__2_d.html#ga08441604e8f0ed5ed8de517f1992f241">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga08441604e8f0ed5ed8de517f1992f241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b694c5e3a981b3666908970af4cc930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mp_graph.html">MpGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga8b694c5e3a981b3666908970af4cc930">EncloseContoursBuilder</a> (const c3d::PlaneCurvesSPtrVector &amp;curveList, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p, c3d::PlaneCurvesSPtrVector &amp;usedCurves, c3d::PlaneContoursSPtrVector &amp;contourArray, double accuracy, bool strict, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *progInd=nullptr)</td></tr>
+<tr class="memdesc:ga8b694c5e3a981b3666908970af4cc930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить контуры вокруг заданной точки.  <a href="group___algorithms__2_d.html#ga8b694c5e3a981b3666908970af4cc930">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8b694c5e3a981b3666908970af4cc930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a842e7513d3793e257ac354b649f65d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mp_graph.html">MpGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga7a842e7513d3793e257ac354b649f65d">OuterContoursBuilder</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> &gt; &amp;curveList, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;contourArray, double accuracy, bool strict, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *progInd=nullptr)</td></tr>
+<tr class="memdesc:ga7a842e7513d3793e257ac354b649f65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить объемлющие контуры на основе заданных кривых.  <a href="group___algorithms__2_d.html#ga7a842e7513d3793e257ac354b649f65d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7a842e7513d3793e257ac354b649f65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga304e427b5d96a6847fdb88ab2cc30ca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mp_graph.html">MpGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga304e427b5d96a6847fdb88ab2cc30ca0">OuterContoursBuilder</a> (const c3d::PlaneCurvesSPtrVector &amp;curveList, c3d::PlaneContoursSPtrVector &amp;contourArray, double accuracy, bool strict, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *progInd=nullptr)</td></tr>
+<tr class="memdesc:ga304e427b5d96a6847fdb88ab2cc30ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить объемлющие контуры на основе заданных кривых.  <a href="group___algorithms__2_d.html#ga304e427b5d96a6847fdb88ab2cc30ca0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga304e427b5d96a6847fdb88ab2cc30ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe51689e382ba50a8034c3498468f20e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mp_graph.html">MpGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#gabe51689e382ba50a8034c3498468f20e">ContoursReconstructor</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> &gt; &amp;curveList, <a class="el" href="class_mp_graph.html">MpGraph</a> *graph, <a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_mb_contour.html">MbContour</a> &gt; &amp;contourArray, double accuracy, bool strict, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *progInd=nullptr)</td></tr>
+<tr class="memdesc:gabe51689e382ba50a8034c3498468f20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перестроить контуры, построенные ранее вокруг точки.  <a href="group___algorithms__2_d.html#gabe51689e382ba50a8034c3498468f20e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabe51689e382ba50a8034c3498468f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8dfc40add661a49abe21f8c1138efe98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mp_graph.html">MpGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__2_d.html#ga8dfc40add661a49abe21f8c1138efe98">ContoursReconstructor</a> (const c3d::PlaneCurvesSPtrVector &amp;curveList, <a class="el" href="class_mp_graph.html">MpGraph</a> *graph, c3d::PlaneContoursSPtrVector contourArray, double accuracy, bool strict, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_i_progress_indicator.html">IProgressIndicator</a> *progInd=nullptr)</td></tr>
+<tr class="memdesc:ga8dfc40add661a49abe21f8c1138efe98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перестроить контуры, построенные ранее вокруг точки.  <a href="group___algorithms__2_d.html#ga8dfc40add661a49abe21f8c1138efe98">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8dfc40add661a49abe21f8c1138efe98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Построение контуров. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a93ee0f6ef0b57e2b3d52343aa65ea704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ee0f6ef0b57e2b3d52343aa65ea704">&#9670;&nbsp;</a></span>DeleteVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> DeleteVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mp_vertex.html">MpVertex</a> *&amp;&#160;</td>
+          <td class="paramname"><em>vertex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить вершину. </p>
+<p>Удалить вершину и обнулить указатель.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">vertex</td><td>- Вершина для удаления. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a481ee20373e3c9c009af715b37bb37d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481ee20373e3c9c009af715b37bb37d9">&#9670;&nbsp;</a></span>DeleteEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> DeleteEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mp_edge.html">MpEdge</a> *&amp;&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить ребро. </p>
+<p>Удалить ребро и обнулить указатель.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">edge</td><td>- Ребро для удаления. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a21a05dcb849053da752775648997c4d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a05dcb849053da752775648997c4d0">&#9670;&nbsp;</a></span>DeleteLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> DeleteLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mp_loop.html">MpLoop</a> *&amp;&#160;</td>
+          <td class="paramname"><em>loop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить цикл. </p>
+<p>Удалить цикл и обнулить указатель.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">loop</td><td>- Цикл для удаления. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="accddb7044e654c68c65ca693e319bfa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accddb7044e654c68c65ca693e319bfa3">&#9670;&nbsp;</a></span>DeleteGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> DeleteGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mp_graph.html">MpGraph</a> *&amp;&#160;</td>
+          <td class="paramname"><em>graph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить граф. </p>
+<p>Удалить граф и обнулить указатель.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">graph</td><td>- Граф для удаления. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="contour__graph_8h.html">contour_graph.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

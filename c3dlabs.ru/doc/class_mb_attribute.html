@@ -1,0 +1,1110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbAttribute</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_attribute.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="class_mb_attribute-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbAttribute<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___model___attributes.html">Атрибуты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Атрибуты объекта.  
+ <a href="class_mb_attribute.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;attribute_item.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbAttribute:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_mb_attribute__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbAttribute:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_attribute__coll__graph.svg" width="200" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:ae9918b8a3a0387f53fdb69cbe5052286"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286">OnChangeOwnerAction</a> { <a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286ad74517e24606883d411320967336537c">chn_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286a4f2e1890efb5e927b9357e3e455f2b55">chn_Free</a>
+, <a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286a55b0d9d93ea06dc6fcaba3cae7bfd8a7">chn_Keep</a>
+, <a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286a49337caaae76aeeb65f3cb9409478445">chn_ActCount</a>
+ }</td></tr>
+<tr class="separator:ae9918b8a3a0387f53fdb69cbe5052286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6063483872e0353f8c2cb8c340ce58"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58">OnConvertOwnerAction</a> { <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58a73209c5c8cd2120bfc38875566aa183e">cnv_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58a8311b4252a05961fedd472373548ef6b">cnv_Free</a>
+, <a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58a3a65f87e7819224ab7749135b2b714d5">cnv_Keep</a>
+, <a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58a2a7318b0f77a4aaf7db23469d11221f1">cnv_Copy</a>
+, <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58a6867c1d0797ae7af215e911eff14cc1e">cnv_Convert</a>
+, <a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58a99155d668d18e303def3da1266c5cc05">cnv_ActCount</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5f6063483872e0353f8c2cb8c340ce58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10b041b4a953a3a22f80798c6152baa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baa">OnTransformOwnerAction</a> { <a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baaa56aaa9d8cd9a289a9d3753f7f526c912">trn_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baaa2e17edbb0ff67bc407f9745e2f4fe5dd">trn_Free</a>
+, <a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baaae43b02cafb619ba15de799037cc143d2">trn_Keep</a>
+, <a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baaa450eb3cf4c99cf2e0f9334354b546e84">trn_ActCount</a>
+ }</td></tr>
+<tr class="separator:ae10b041b4a953a3a22f80798c6152baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655e666bf91c9c3f28da853bd34e0291"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291">OnCopyOwnerAction</a> { <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291a991852638328788dc5ce125e18edcb44">cpy_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291ac9cb2efe323d7d6d96c5b79625cddaf0">cpy_Free</a>
+, <a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291a1fe06a329fd13045b5844a72079e92a0">cpy_Keep</a>
+, <a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291af2fcb8a4964349e20a3302b84849f788">cpy_Copy</a>
+, <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291a2520a921a0e69f1383b87ee40842be57">cpy_ActCount</a>
+<br />
+ }</td></tr>
+<tr class="separator:a655e666bf91c9c3f28da853bd34e0291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3dc572fc5747f2bfabb6592f3545ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545ea">OnMergeOwnerAction</a> { <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545eaa418454e81be9f0222de3f11a2608305e">mrg_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545eaa20164e37467fbd5726948992ad6db051">mrg_Free</a>
+, <a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545eaa76265a57fa2e1814d2530db7a97f6a22">mrg_Keep</a>
+, <a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545eaa129543f4030f45636cd7ed6f7155c42f">mrg_KeepAll</a>
+, <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545eaa686b98c63df21cc0737193fa125874b8">mrg_KeepRep</a>
+, <a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545eaa9c57c5749f415a61822ec14d0aed721f">mrg_ActCount</a>
+<br />
+ }</td></tr>
+<tr class="separator:abf3dc572fc5747f2bfabb6592f3545ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebcefc014160b4adfca06f1a116a684"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684">OnReplaceOwnerAction</a> { <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684a0bac5fa0e88d5951e56bd7f680fd8ce0">rep_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684a9d354d73b5e3d3210304fb9393fbf6bc">rep_Free</a>
+, <a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684ae946374f347f62353c8d9472e5ff3523">rep_Keep</a>
+, <a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684a031e7f1e3f4551ee0962ccc67c10d21b">rep_KeepAll</a>
+, <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684ad291d4a5f26e8d29161fd79c2787e6a4">rep_KeepRep</a>
+, <a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684a53d2513848dd0e5bad663ae21e9a4a58">rep_ActCount</a>
+<br />
+ }</td></tr>
+<tr class="separator:a5ebcefc014160b4adfca06f1a116a684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134fcd590b5946bcc3f0394f7c3c226b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226b">OnSplitOwnerAction</a> { <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226ba71e410fdab0742e2e21fddfa2f47815d">spl_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226bafad4cf306b867f4809e6adaf7982546f">spl_Free</a>
+, <a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226ba8cebde90dc1611a299f60e590bdbaed0">spl_Keep</a>
+, <a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226bad9ac82b317967cbbe628eb7bc9a8aa9e">spl_Copy</a>
+, <br />
+&#160;&#160;<a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226ba1584e36704b28637002a6c447cc6fadf">spl_ActCount</a>
+<br />
+ }</td></tr>
+<tr class="separator:a134fcd590b5946bcc3f0394f7c3c226b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9ad6618351ea85b0c0338cf88e1eab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a0f9ad6618351ea85b0c0338cf88e1eab">OnDeleteOwnerAction</a> { <a class="el" href="class_mb_attribute.html#a0f9ad6618351ea85b0c0338cf88e1eaba6ce6ab21ac252c37ea7d273c4c85c27f">del_Self</a> = 0
+, <a class="el" href="class_mb_attribute.html#a0f9ad6618351ea85b0c0338cf88e1eabad523ef01be42f5e49f2181c54c5f1a41">del_Free</a>
+, <a class="el" href="class_mb_attribute.html#a0f9ad6618351ea85b0c0338cf88e1eaba5638f63f7c281e23e06656093a357e71">del_ActCount</a>
+ }</td></tr>
+<tr class="separator:a0f9ad6618351ea85b0c0338cf88e1eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:abd578c8220612b69d9a13f74c732f53d"><td class="memItemLeft" align="right" valign="top"><a id="abd578c8220612b69d9a13f74c732f53d"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#abd578c8220612b69d9a13f74c732f53d">~MbAttribute</a> ()</td></tr>
+<tr class="memdesc:abd578c8220612b69d9a13f74c732f53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:abd578c8220612b69d9a13f74c732f53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f9c62f7d254f69f27c39faaeeab13c"><td class="memItemLeft" align="right" valign="top"><a id="ac6f9c62f7d254f69f27c39faaeeab13c"></a>
+<a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286">OnChangeOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ac6f9c62f7d254f69f27c39faaeeab13c">GetActionForChange</a> () const</td></tr>
+<tr class="memdesc:ac6f9c62f7d254f69f27c39faaeeab13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при изменении владельца. <br /></td></tr>
+<tr class="separator:ac6f9c62f7d254f69f27c39faaeeab13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643bb9d139b981df3c0973126821925b"><td class="memItemLeft" align="right" valign="top"><a id="a643bb9d139b981df3c0973126821925b"></a>
+<a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58">OnConvertOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a643bb9d139b981df3c0973126821925b">GetActionForConvert</a> () const</td></tr>
+<tr class="memdesc:a643bb9d139b981df3c0973126821925b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при конвертации владельца. <br /></td></tr>
+<tr class="separator:a643bb9d139b981df3c0973126821925b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cd6e6beed2f7f164a6236695b873db"><td class="memItemLeft" align="right" valign="top"><a id="a15cd6e6beed2f7f164a6236695b873db"></a>
+<a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baa">OnTransformOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a15cd6e6beed2f7f164a6236695b873db">GetActionForTransform</a> () const</td></tr>
+<tr class="memdesc:a15cd6e6beed2f7f164a6236695b873db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при трансформировании владельца. <br /></td></tr>
+<tr class="separator:a15cd6e6beed2f7f164a6236695b873db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c93d10470eac3306e8c0ce27e05a96b"><td class="memItemLeft" align="right" valign="top"><a id="a1c93d10470eac3306e8c0ce27e05a96b"></a>
+<a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291">OnCopyOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a1c93d10470eac3306e8c0ce27e05a96b">GetActionForCopy</a> () const</td></tr>
+<tr class="memdesc:a1c93d10470eac3306e8c0ce27e05a96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при копировании владельца. <br /></td></tr>
+<tr class="separator:a1c93d10470eac3306e8c0ce27e05a96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fd58f77f096839a6cb1bffe29838f5"><td class="memItemLeft" align="right" valign="top"><a id="a64fd58f77f096839a6cb1bffe29838f5"></a>
+<a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545ea">OnMergeOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a64fd58f77f096839a6cb1bffe29838f5">GetActionForMerge</a> () const</td></tr>
+<tr class="memdesc:a64fd58f77f096839a6cb1bffe29838f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при объединении владельца. <br /></td></tr>
+<tr class="separator:a64fd58f77f096839a6cb1bffe29838f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b42425b81808a6e4417fb5454d433a"><td class="memItemLeft" align="right" valign="top"><a id="ac1b42425b81808a6e4417fb5454d433a"></a>
+<a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684">OnReplaceOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ac1b42425b81808a6e4417fb5454d433a">GetActionForReplace</a> () const</td></tr>
+<tr class="memdesc:ac1b42425b81808a6e4417fb5454d433a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при замене владельца. <br /></td></tr>
+<tr class="separator:ac1b42425b81808a6e4417fb5454d433a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce8d20cf7b4a2671eb3edd59cc0fa83"><td class="memItemLeft" align="right" valign="top"><a id="adce8d20cf7b4a2671eb3edd59cc0fa83"></a>
+<a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226b">OnSplitOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#adce8d20cf7b4a2671eb3edd59cc0fa83">GetActionForSplit</a> () const</td></tr>
+<tr class="memdesc:adce8d20cf7b4a2671eb3edd59cc0fa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при разделении владельца. <br /></td></tr>
+<tr class="separator:adce8d20cf7b4a2671eb3edd59cc0fa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b2c41733737fc5d31066c73171a26b"><td class="memItemLeft" align="right" valign="top"><a id="a64b2c41733737fc5d31066c73171a26b"></a>
+<a class="el" href="class_mb_attribute.html#a0f9ad6618351ea85b0c0338cf88e1eab">OnDeleteOwnerAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a64b2c41733737fc5d31066c73171a26b">GetActionForDelete</a> () const</td></tr>
+<tr class="memdesc:a64b2c41733737fc5d31066c73171a26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поведение атрибута при удалении владельца. <br /></td></tr>
+<tr class="separator:a64b2c41733737fc5d31066c73171a26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f99bebba8a763c8cf08239a36e5b0e"><td class="memItemLeft" align="right" valign="top"><a id="a47f99bebba8a763c8cf08239a36e5b0e"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a47f99bebba8a763c8cf08239a36e5b0e">SetActionForChange</a> (<a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286">OnChangeOwnerAction</a> a)</td></tr>
+<tr class="memdesc:a47f99bebba8a763c8cf08239a36e5b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при изменении владельца. <br /></td></tr>
+<tr class="separator:a47f99bebba8a763c8cf08239a36e5b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fbb9e6aad1a0538fd13bc33de4f680"><td class="memItemLeft" align="right" valign="top"><a id="a71fbb9e6aad1a0538fd13bc33de4f680"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a71fbb9e6aad1a0538fd13bc33de4f680">SetActionForConvert</a> (<a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58">OnConvertOwnerAction</a> a)</td></tr>
+<tr class="memdesc:a71fbb9e6aad1a0538fd13bc33de4f680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при конвертации владельца. <br /></td></tr>
+<tr class="separator:a71fbb9e6aad1a0538fd13bc33de4f680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713c60ca0adc85471d69eebce926f0e1"><td class="memItemLeft" align="right" valign="top"><a id="a713c60ca0adc85471d69eebce926f0e1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a713c60ca0adc85471d69eebce926f0e1">SetActionForTransform</a> (<a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baa">OnTransformOwnerAction</a> a)</td></tr>
+<tr class="memdesc:a713c60ca0adc85471d69eebce926f0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при трансформировании владельца. <br /></td></tr>
+<tr class="separator:a713c60ca0adc85471d69eebce926f0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0730f811c07cd7ad4d734b64c55912f6"><td class="memItemLeft" align="right" valign="top"><a id="a0730f811c07cd7ad4d734b64c55912f6"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a0730f811c07cd7ad4d734b64c55912f6">SetActionForCopy</a> (<a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291">OnCopyOwnerAction</a> a)</td></tr>
+<tr class="memdesc:a0730f811c07cd7ad4d734b64c55912f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при копировании владельца. <br /></td></tr>
+<tr class="separator:a0730f811c07cd7ad4d734b64c55912f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692e44fbbf182f85c541db9512c39518"><td class="memItemLeft" align="right" valign="top"><a id="a692e44fbbf182f85c541db9512c39518"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a692e44fbbf182f85c541db9512c39518">SetActionForMerge</a> (<a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545ea">OnMergeOwnerAction</a> a)</td></tr>
+<tr class="memdesc:a692e44fbbf182f85c541db9512c39518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при объедении владельца. <br /></td></tr>
+<tr class="separator:a692e44fbbf182f85c541db9512c39518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f02a29d06b9ad3335110698bac906f"><td class="memItemLeft" align="right" valign="top"><a id="a81f02a29d06b9ad3335110698bac906f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a81f02a29d06b9ad3335110698bac906f">SetActionForReplace</a> (<a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684">OnReplaceOwnerAction</a> a)</td></tr>
+<tr class="memdesc:a81f02a29d06b9ad3335110698bac906f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при замене владельца. <br /></td></tr>
+<tr class="separator:a81f02a29d06b9ad3335110698bac906f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad398d2553654100b2d432171b12f8099"><td class="memItemLeft" align="right" valign="top"><a id="ad398d2553654100b2d432171b12f8099"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ad398d2553654100b2d432171b12f8099">SetActionForSplit</a> (<a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226b">OnSplitOwnerAction</a> a)</td></tr>
+<tr class="memdesc:ad398d2553654100b2d432171b12f8099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при разбиении владельца. <br /></td></tr>
+<tr class="separator:ad398d2553654100b2d432171b12f8099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f11c96d9c2facd308206398e851eb9"><td class="memItemLeft" align="right" valign="top"><a id="a06f11c96d9c2facd308206398e851eb9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a06f11c96d9c2facd308206398e851eb9">SetActionForDelete</a> (<a class="el" href="class_mb_attribute.html#a0f9ad6618351ea85b0c0338cf88e1eab">OnDeleteOwnerAction</a> a)</td></tr>
+<tr class="memdesc:a06f11c96d9c2facd308206398e851eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать поведение атрибута при удалении владельца. <br /></td></tr>
+<tr class="separator:a06f11c96d9c2facd308206398e851eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f86b921cf236610103b1c140fae440"><td class="memItemLeft" align="right" valign="top"><a id="ac4f86b921cf236610103b1c140fae440"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ac4f86b921cf236610103b1c140fae440">InitActions</a> (const <a class="el" href="class_mb_attribute.html">MbAttribute</a> &amp;)</td></tr>
+<tr class="memdesc:ac4f86b921cf236610103b1c140fae440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить поведение атрибута по другому атрибуту. <br /></td></tr>
+<tr class="separator:ac4f86b921cf236610103b1c140fae440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bf819fca8ec027cd11ca387e292fef"><td class="memItemLeft" align="right" valign="top"><a id="a42bf819fca8ec027cd11ca387e292fef"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a42bf819fca8ec027cd11ca387e292fef">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;)</td></tr>
+<tr class="memdesc:a42bf819fca8ec027cd11ca387e292fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта. <br /></td></tr>
+<tr class="separator:a42bf819fca8ec027cd11ca387e292fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6332cdc26b753e2143356dbf0315c0"><td class="memItemLeft" align="right" valign="top"><a id="a0c6332cdc26b753e2143356dbf0315c0"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a0c6332cdc26b753e2143356dbf0315c0">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;)</td></tr>
+<tr class="memdesc:a0c6332cdc26b753e2143356dbf0315c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить свойства объекта. <br /></td></tr>
+<tr class="separator:a0c6332cdc26b753e2143356dbf0315c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbf4f341b961d6a6162571dd7f007a7"><td class="memItemLeft" align="right" valign="top"><a id="a0dbf4f341b961d6a6162571dd7f007a7"></a>
+virtual <a class="el" href="mb__property__title_8h.html#aff36a02591ff535f7cab841a4b0dd312">MbePrompt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a0dbf4f341b961d6a6162571dd7f007a7">GetPropertyName</a> ()=0</td></tr>
+<tr class="memdesc:a0dbf4f341b961d6a6162571dd7f007a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать заголовок свойства объекта. <br /></td></tr>
+<tr class="separator:a0dbf4f341b961d6a6162571dd7f007a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480bcd09f7134174dcab99e0a284adc0"><td class="memItemLeft" align="right" valign="top"><a id="a480bcd09f7134174dcab99e0a284adc0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a480bcd09f7134174dcab99e0a284adc0">IsFamilyRegistrable</a> () const override</td></tr>
+<tr class="memdesc:a480bcd09f7134174dcab99e0a284adc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:a480bcd09f7134174dcab99e0a284adc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Общие функции атрибутов</div></td></tr>
+<tr class="memitem:a64b20c1e6519b72c404c4d1daf2959b8"><td class="memItemLeft" align="right" valign="top"><a id="a64b20c1e6519b72c404c4d1daf2959b8"></a>
+<a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a64b20c1e6519b72c404c4d1daf2959b8">RefType</a> () const override</td></tr>
+<tr class="memdesc:a64b20c1e6519b72c404c4d1daf2959b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:a64b20c1e6519b72c404c4d1daf2959b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e8ef2a848470f45c99d96d042320bd"><td class="memItemLeft" align="right" valign="top"><a id="a27e8ef2a848470f45c99d96d042320bd"></a>
+virtual <a class="el" href="group___model___attributes.html#gad6ed8a69f208bbf4a0c9623e527f509b">MbeImplicationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a27e8ef2a848470f45c99d96d042320bd">ImplicationType</a> () const</td></tr>
+<tr class="memdesc:a27e8ef2a848470f45c99d96d042320bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип контейнера атрибутов. <br /></td></tr>
+<tr class="separator:a27e8ef2a848470f45c99d96d042320bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50db8e37a9c7552ba9868f5f7f28d30"><td class="memItemLeft" align="right" valign="top"><a id="ae50db8e37a9c7552ba9868f5f7f28d30"></a>
+virtual <a class="el" href="group___model___attributes.html#ga2b1a66ae5775e1d0d3e327b114a7667e">MbeAttributeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ae50db8e37a9c7552ba9868f5f7f28d30">AttributeFamily</a> () const =0</td></tr>
+<tr class="memdesc:ae50db8e37a9c7552ba9868f5f7f28d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать тип атрибута. <br /></td></tr>
+<tr class="separator:ae50db8e37a9c7552ba9868f5f7f28d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785ed783b739bc3d0504a227bf16db19"><td class="memItemLeft" align="right" valign="top"><a id="a785ed783b739bc3d0504a227bf16db19"></a>
+virtual <a class="el" href="group___model___attributes.html#ga2b1a66ae5775e1d0d3e327b114a7667e">MbeAttributeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a785ed783b739bc3d0504a227bf16db19">AttributeType</a> () const =0</td></tr>
+<tr class="memdesc:a785ed783b739bc3d0504a227bf16db19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать подтип атрибута. <br /></td></tr>
+<tr class="separator:a785ed783b739bc3d0504a227bf16db19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259be243d0b4c5cf08469ee8b0b15649"><td class="memItemLeft" align="right" valign="top"><a id="a259be243d0b4c5cf08469ee8b0b15649"></a>
+virtual <a class="el" href="class_mb_attribute.html">MbAttribute</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a259be243d0b4c5cf08469ee8b0b15649">Duplicate</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *=nullptr) const =0</td></tr>
+<tr class="memdesc:a259be243d0b4c5cf08469ee8b0b15649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать копию элемента. <br /></td></tr>
+<tr class="separator:a259be243d0b4c5cf08469ee8b0b15649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d87812f275f5661c1e2c12ff68e4d1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a63d87812f275f5661c1e2c12ff68e4d1">IsSame</a> (const <a class="el" href="class_mb_attribute.html">MbAttribute</a> &amp;item, double accuracy) const =0</td></tr>
+<tr class="memdesc:a63d87812f275f5661c1e2c12ff68e4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты равными.  <a href="class_mb_attribute.html#a63d87812f275f5661c1e2c12ff68e4d1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a63d87812f275f5661c1e2c12ff68e4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f14d04bfc7706388ba3509dc3b9996"><td class="memItemLeft" align="right" valign="top"><a id="a45f14d04bfc7706388ba3509dc3b9996"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a45f14d04bfc7706388ba3509dc3b9996">Init</a> (const <a class="el" href="class_mb_attribute.html">MbAttribute</a> &amp;)=0</td></tr>
+<tr class="memdesc:a45f14d04bfc7706388ba3509dc3b9996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать данные по присланным. <br /></td></tr>
+<tr class="separator:a45f14d04bfc7706388ba3509dc3b9996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c8c581dbd2018ce8ec1dc7eb6c5914"><td class="memItemLeft" align="right" valign="top"><a id="a94c8c581dbd2018ce8ec1dc7eb6c5914"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a94c8c581dbd2018ce8ec1dc7eb6c5914">IsA</a> (<a class="el" href="group___model___attributes.html#ga2b1a66ae5775e1d0d3e327b114a7667e">MbeAttributeType</a> t) const</td></tr>
+<tr class="memdesc:a94c8c581dbd2018ce8ec1dc7eb6c5914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить тип атрибута. <br /></td></tr>
+<tr class="separator:a94c8c581dbd2018ce8ec1dc7eb6c5914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Действия над объектами геометрического ядра, влияющие на состояние атрибутов</div></td></tr>
+<tr class="memitem:a56855f5aff94a1233afef62afd72480f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a56855f5aff94a1233afef62afd72480f">OnChangeOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner)=0</td></tr>
+<tr class="memdesc:a56855f5aff94a1233afef62afd72480f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполнить действия при изменении владельца, не связанное с другими действиями.  <a href="class_mb_attribute.html#a56855f5aff94a1233afef62afd72480f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56855f5aff94a1233afef62afd72480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2ea11a70ea103f3733b628f9a74c99"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a7d2ea11a70ea103f3733b628f9a74c99">OnConvertOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;other)=0</td></tr>
+<tr class="separator:a7d2ea11a70ea103f3733b628f9a74c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82d85b1a6474f84aa36085635e501c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ad82d85b1a6474f84aa36085635e501c5">OnTransformOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr)=0</td></tr>
+<tr class="separator:ad82d85b1a6474f84aa36085635e501c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb438df2b537bb311066ee7fa8f2b853"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#abb438df2b537bb311066ee7fa8f2b853">OnMoveOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr)=0</td></tr>
+<tr class="separator:abb438df2b537bb311066ee7fa8f2b853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fccd1fd290871efd1bb4996e2dbe227"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a1fccd1fd290871efd1bb4996e2dbe227">OnRotateOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;, double angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *=nullptr)=0</td></tr>
+<tr class="separator:a1fccd1fd290871efd1bb4996e2dbe227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf4a9e831db322d75290424b29e0eb9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#aacf4a9e831db322d75290424b29e0eb9">OnCopyOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;other, <a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *=nullptr)=0</td></tr>
+<tr class="separator:aacf4a9e831db322d75290424b29e0eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8861f9d380a4f28c8277e53f8b159b6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ac8861f9d380a4f28c8277e53f8b159b6">OnMergeOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;other)=0</td></tr>
+<tr class="separator:ac8861f9d380a4f28c8277e53f8b159b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428b7888f404bf92cbcdb0660886a562"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a428b7888f404bf92cbcdb0660886a562">OnReplaceOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;other)=0</td></tr>
+<tr class="separator:a428b7888f404bf92cbcdb0660886a562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb993c4667dca6031ac0aa49ab7b6c3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#afdb993c4667dca6031ac0aa49ab7b6c3">OnSplitOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner, const std::vector&lt; <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> * &gt; &amp;others)=0</td></tr>
+<tr class="separator:afdb993c4667dca6031ac0aa49ab7b6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27dbdd9c5337924453bfdd0b7ecf466d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a27dbdd9c5337924453bfdd0b7ecf466d">OnDeleteOwner</a> (const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;owner)=0</td></tr>
+<tr class="separator:a27dbdd9c5337924453bfdd0b7ecf466d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a5551f2b69ef77bf9b38e6cec0f6d7f76"><td class="memItemLeft" align="right" valign="top"><a id="a5551f2b69ef77bf9b38e6cec0f6d7f76"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#a5551f2b69ef77bf9b38e6cec0f6d7f76">MbAttribute</a> ()</td></tr>
+<tr class="memdesc:a5551f2b69ef77bf9b38e6cec0f6d7f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров для наследников. <br /></td></tr>
+<tr class="separator:a5551f2b69ef77bf9b38e6cec0f6d7f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14b6374032b982a2badfbe7f34a0590"><td class="memItemLeft" align="right" valign="top"><a id="ad14b6374032b982a2badfbe7f34a0590"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_attribute.html#ad14b6374032b982a2badfbe7f34a0590">MbAttribute</a> (const <a class="el" href="class_mb_attribute.html">MbAttribute</a> &amp;)</td></tr>
+<tr class="memdesc:ad14b6374032b982a2badfbe7f34a0590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования для наследников. <br /></td></tr>
+<tr class="separator:ad14b6374032b982a2badfbe7f34a0590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Атрибуты объекта. </p>
+<p>Атрибуты содержат информацию, дополняющую описание геометрической формы объекта. Атрибут не является неотъемлемой частью объекта, а является элементом данных, которыми может быть наделен объект.<br  />
+ Атрибуты являются агентами передачи данных геометрического ядра от одного приложения другому приложению.<br  />
+ Атрибуты могут быть следующих типов.<br  />
+ Простой атрибут - атрибут несущий простую, однозначно интерпретируемую, информацию, например, цвет, признак выбора.<br  />
+ Обобщенный атрибут - атрибут стандартного типа со строковым наименованием, например, имя, целое число, вещественное число, строка, точка, вектор, указатель.<br  />
+ С помощью таких атрибутов приложения могут обмениваться какой либо специфичной информацией без необходимости разработки дополнительных комплексных атрибутов.<br  />
+ Комплексный атрибут - атрибут состоящий из предопределенного набора данных, описывающих природу атрибута и его смысловую нагрузку, а так же способ его интерпретации. Такими атрибутами могут описываться некоторые ограничения или простые зависимости а так же аннотационные объекты.<br  />
+ Директивный атрибут - атрибут определяющий предназначения объекта или действия которые необходимо с ним произвести, например атрибут "вычитание" подразумевает что некое тело предназначено для вычитания из другого тела, и не важно из какого. Связующий атрибут - атрибут предназначенный для связи объекта геометрического ядра с абстрактным контейнером данных, то есть набором данных, формат и смысловая нагрузка которых не может быть описана в рамках других атрибутов.<br  />
+</p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="ae9918b8a3a0387f53fdb69cbe5052286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9918b8a3a0387f53fdb69cbe5052286">&#9670;&nbsp;</a></span>OnChangeOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#ae9918b8a3a0387f53fdb69cbe5052286">MbAttribute::OnChangeOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при изменении владельца, не связанном с другими описанными действия. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ae9918b8a3a0387f53fdb69cbe5052286ad74517e24606883d411320967336537c"></a>chn_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnChangeOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae9918b8a3a0387f53fdb69cbe5052286a4f2e1890efb5e927b9357e3e455f2b55"></a>chn_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae9918b8a3a0387f53fdb69cbe5052286a55b0d9d93ea06dc6fcaba3cae7bfd8a7"></a>chn_Keep&#160;</td><td class="fielddoc"><p>Сохранить атрибут, т.е. ничего с ним не делать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae9918b8a3a0387f53fdb69cbe5052286a49337caaae76aeeb65f3cb9409478445"></a>chn_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5f6063483872e0353f8c2cb8c340ce58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6063483872e0353f8c2cb8c340ce58">&#9670;&nbsp;</a></span>OnConvertOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#a5f6063483872e0353f8c2cb8c340ce58">MbAttribute::OnConvertOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при перерождении объекта в другой объект. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a5f6063483872e0353f8c2cb8c340ce58a73209c5c8cd2120bfc38875566aa183e"></a>cnv_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnConvertOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5f6063483872e0353f8c2cb8c340ce58a8311b4252a05961fedd472373548ef6b"></a>cnv_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5f6063483872e0353f8c2cb8c340ce58a3a65f87e7819224ab7749135b2b714d5"></a>cnv_Keep&#160;</td><td class="fielddoc"><p>Сохранить атрибут, т.е. ничего с ним не делать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5f6063483872e0353f8c2cb8c340ce58a2a7318b0f77a4aaf7db23469d11221f1"></a>cnv_Copy&#160;</td><td class="fielddoc"><p>Скопировать атрибут и прицепить его копию к копии владельца. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5f6063483872e0353f8c2cb8c340ce58a6867c1d0797ae7af215e911eff14cc1e"></a>cnv_Convert&#160;</td><td class="fielddoc"><p>Конвертировать атрибут и прицепить результат к копии владельца. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5f6063483872e0353f8c2cb8c340ce58a99155d668d18e303def3da1266c5cc05"></a>cnv_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae10b041b4a953a3a22f80798c6152baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10b041b4a953a3a22f80798c6152baa">&#9670;&nbsp;</a></span>OnTransformOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#ae10b041b4a953a3a22f80798c6152baa">MbAttribute::OnTransformOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при преобразовании владельца (по матрице). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ae10b041b4a953a3a22f80798c6152baaa56aaa9d8cd9a289a9d3753f7f526c912"></a>trn_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnTransformOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae10b041b4a953a3a22f80798c6152baaa2e17edbb0ff67bc407f9745e2f4fe5dd"></a>trn_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae10b041b4a953a3a22f80798c6152baaae43b02cafb619ba15de799037cc143d2"></a>trn_Keep&#160;</td><td class="fielddoc"><p>Сохранить атрибут, т.е. ничего с ним не делать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae10b041b4a953a3a22f80798c6152baaa450eb3cf4c99cf2e0f9334354b546e84"></a>trn_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a655e666bf91c9c3f28da853bd34e0291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a655e666bf91c9c3f28da853bd34e0291">&#9670;&nbsp;</a></span>OnCopyOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#a655e666bf91c9c3f28da853bd34e0291">MbAttribute::OnCopyOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при копировании владельца. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a655e666bf91c9c3f28da853bd34e0291a991852638328788dc5ce125e18edcb44"></a>cpy_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnCopyOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a655e666bf91c9c3f28da853bd34e0291ac9cb2efe323d7d6d96c5b79625cddaf0"></a>cpy_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a655e666bf91c9c3f28da853bd34e0291a1fe06a329fd13045b5844a72079e92a0"></a>cpy_Keep&#160;</td><td class="fielddoc"><p>Сохранить атрибут, т.е. ничего с ним не делать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a655e666bf91c9c3f28da853bd34e0291af2fcb8a4964349e20a3302b84849f788"></a>cpy_Copy&#160;</td><td class="fielddoc"><p>Скопировать атрибут и прицепить его копию к копии владельца. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a655e666bf91c9c3f28da853bd34e0291a2520a921a0e69f1383b87ee40842be57"></a>cpy_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="abf3dc572fc5747f2bfabb6592f3545ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3dc572fc5747f2bfabb6592f3545ea">&#9670;&nbsp;</a></span>OnMergeOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#abf3dc572fc5747f2bfabb6592f3545ea">MbAttribute::OnMergeOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при объединении владельца с другим объектом. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="abf3dc572fc5747f2bfabb6592f3545eaa418454e81be9f0222de3f11a2608305e"></a>mrg_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnMergeOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf3dc572fc5747f2bfabb6592f3545eaa20164e37467fbd5726948992ad6db051"></a>mrg_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf3dc572fc5747f2bfabb6592f3545eaa76265a57fa2e1814d2530db7a97f6a22"></a>mrg_Keep&#160;</td><td class="fielddoc"><p>Сохранить атрибут, т.е. ничего с ним не делать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf3dc572fc5747f2bfabb6592f3545eaa129543f4030f45636cd7ed6f7155c42f"></a>mrg_KeepAll&#160;</td><td class="fielddoc"><p>Передать атрибут от поглощаемого объекта поглощающему объекту без замещения. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf3dc572fc5747f2bfabb6592f3545eaa686b98c63df21cc0737193fa125874b8"></a>mrg_KeepRep&#160;</td><td class="fielddoc"><p>Передать атрибут от поглощаемого объекта поглощающему объекту с замещением. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf3dc572fc5747f2bfabb6592f3545eaa9c57c5749f415a61822ec14d0aed721f"></a>mrg_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5ebcefc014160b4adfca06f1a116a684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ebcefc014160b4adfca06f1a116a684">&#9670;&nbsp;</a></span>OnReplaceOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#a5ebcefc014160b4adfca06f1a116a684">MbAttribute::OnReplaceOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при замещении владельца с другим объектом. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a5ebcefc014160b4adfca06f1a116a684a0bac5fa0e88d5951e56bd7f680fd8ce0"></a>rep_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnReplaceOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ebcefc014160b4adfca06f1a116a684a9d354d73b5e3d3210304fb9393fbf6bc"></a>rep_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ebcefc014160b4adfca06f1a116a684ae946374f347f62353c8d9472e5ff3523"></a>rep_Keep&#160;</td><td class="fielddoc"><p>Сохранить атрибут, т.е. ничего с ним не делать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ebcefc014160b4adfca06f1a116a684a031e7f1e3f4551ee0962ccc67c10d21b"></a>rep_KeepAll&#160;</td><td class="fielddoc"><p>Передать атрибут от замещаемого объекта замещающему объекту без замещения. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ebcefc014160b4adfca06f1a116a684ad291d4a5f26e8d29161fd79c2787e6a4"></a>rep_KeepRep&#160;</td><td class="fielddoc"><p>Передать атрибут от замещаемого объекта замещающему объекту с замещением. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ebcefc014160b4adfca06f1a116a684a53d2513848dd0e5bad663ae21e9a4a58"></a>rep_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a134fcd590b5946bcc3f0394f7c3c226b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134fcd590b5946bcc3f0394f7c3c226b">&#9670;&nbsp;</a></span>OnSplitOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#a134fcd590b5946bcc3f0394f7c3c226b">MbAttribute::OnSplitOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при разделении владельца. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a134fcd590b5946bcc3f0394f7c3c226ba71e410fdab0742e2e21fddfa2f47815d"></a>spl_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnSplitOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a134fcd590b5946bcc3f0394f7c3c226bafad4cf306b867f4809e6adaf7982546f"></a>spl_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a134fcd590b5946bcc3f0394f7c3c226ba8cebde90dc1611a299f60e590bdbaed0"></a>spl_Keep&#160;</td><td class="fielddoc"><p>Сохранить атрибут, т.е. ничего с ним не делать. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a134fcd590b5946bcc3f0394f7c3c226bad9ac82b317967cbbe628eb7bc9a8aa9e"></a>spl_Copy&#160;</td><td class="fielddoc"><p>Размножить(скопировать) атрибут для каждого результата разбиения. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a134fcd590b5946bcc3f0394f7c3c226ba1584e36704b28637002a6c447cc6fadf"></a>spl_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0f9ad6618351ea85b0c0338cf88e1eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9ad6618351ea85b0c0338cf88e1eab">&#9670;&nbsp;</a></span>OnDeleteOwnerAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_attribute.html#a0f9ad6618351ea85b0c0338cf88e1eab">MbAttribute::OnDeleteOwnerAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Поведение атрибута при удалении владельца. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a0f9ad6618351ea85b0c0338cf88e1eaba6ce6ab21ac252c37ea7d273c4c85c27f"></a>del_Self&#160;</td><td class="fielddoc"><p>Поведение, определяемое виртуальной функцией OnDeleteOwner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0f9ad6618351ea85b0c0338cf88e1eabad523ef01be42f5e49f2181c54c5f1a41"></a>del_Free&#160;</td><td class="fielddoc"><p>Освободить атрибут, если это возможно, в противном случае удалить. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0f9ad6618351ea85b0c0338cf88e1eaba5638f63f7c281e23e06656093a357e71"></a>del_ActCount&#160;</td><td class="fielddoc"><p>Количество элементов в перечислении (добавлять перед данным значением). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a63d87812f275f5661c1e2c12ff68e4d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d87812f275f5661c1e2c12ff68e4d1">&#9670;&nbsp;</a></span>IsSame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbAttribute::IsSame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute.html">MbAttribute</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты равными. </p>
+<p>Равными считаются однотипные объекты, все данные которых одинаковы (равны).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для сравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Точность сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Равны ли объекты. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_mb_embodiment_attribute.html#a40a90bf5012676ec79aa25fb70a73e85">MbEmbodimentAttribute</a>, <a class="el" href="class_mb_visual.html#ac72b5b8cc0094924a1b890592df84e70">MbVisual</a>, <a class="el" href="class_mb_external_attribute.html#a48d0afd31fa4c778f2848fb22e6422aa">MbExternalAttribute</a>, <a class="el" href="class_mb_uuid_instance_attribute.html#a1c8daf6f044505a14cc4d3b70d20ed5f">MbUuidInstanceAttribute</a>, <a class="el" href="class_mb_user_attribute.html#afb8b24609579b96a7ab0b7561062e57a">MbUserAttribute</a>, <a class="el" href="class_mb_stamp_rib_attribute.html#a5e2d827726aec839a90aae4fa26ee100">MbStampRibAttribute</a>, <a class="el" href="class_mb_changed.html#a6149c95fc7be624f47d98bd9410dc182">MbChanged</a>, <a class="el" href="class_mb_visible.html#ab1c7c61402af3ff0334e1c4ea501c61b">MbVisible</a>, <a class="el" href="class_mb_selected.html#ae675941e8081a956250e5cd1ebf1676f">MbSelected</a>, <a class="el" href="class_mb_product_info.html#a354053b595b9286e7ce6cfbfef7002ae">MbProductInfo</a>, <a class="el" href="class_mb_person_organization_info.html#acc8ee40307b1ee5456aa3ac9d3afa4b2">MbPersonOrganizationInfo</a>, <a class="el" href="class_mb_anchor_attribute.html#a443cd2ef7e8495eb2e8c8a6cf9f7a725">MbAnchorAttribute</a>, <a class="el" href="class_mb_update_stamp.html#a58585d278b1a7810aa4fe853241edde1">MbUpdateStamp</a>, <a class="el" href="class_mb_name_attribute.html#af2417525e86a548e8750b3dd2adb6d92">MbNameAttribute</a>, <a class="el" href="class_mb_identifier.html#a8ab779be1c3a75590462144c7dd32e77">MbIdentifier</a>, <a class="el" href="class_mb_composite_hot_point_attribute.html#a83eda2bb05d861d698c2c70845493827">MbCompositeHotPointAttribute</a>, <a class="el" href="class_mb_hot_point_attribute.html#a5fd3bec758f6abc7ddd731ec151480cf">MbHotPointAttribute</a>, <a class="el" href="class_mb_base_hot_point_attribute.html#a0b2fe4111d1de485b91fef36e140087f">MbBaseHotPointAttribute</a>, <a class="el" href="class_mb_ref_item_attribute.html#afd174cb62f248d8ea09c145507c86fc5">MbRefItemAttribute</a>, <a class="el" href="class_mb_geom_attribute.html#aec3e79d7020414380632d587d4d5281b">MbGeomAttribute</a>, <a class="el" href="class_mb_sheet_flanging_attribute.html#a43d724b138d7d9b7eb027decf3985848">MbSheetFlangingAttribute</a>, <a class="el" href="class_mb_shell_thickness.html#a0effaf234f0ccd896bde49ffc523b7f9">MbShellThickness</a>, <a class="el" href="class_mb_strains.html#af94921e322a2537388d0c6367402e020">MbStrains</a>, <a class="el" href="class_mb_elasticity.html#a95830415ab1c79d757232fbd2ae9afa0">MbElasticity</a>, <a class="el" href="class_mb_dencity.html#ae00005f74c193b5e47166ae148f2021b">MbDencity</a>, <a class="el" href="class_mb_double_range_attribute.html#ac425961109f638776524cc2b0b4c594a">MbDoubleRangeAttribute</a>, <a class="el" href="class_mb_double_vector_attribute.html#a9c1c92cb6945a7b3ae52386d015ca6ae">MbDoubleVectorAttribute</a>, <a class="el" href="class_mb_int64_vector_attribute.html#a5af457a323446cc9a46ca08ddcbaba34">MbInt64VectorAttribute</a>, <a class="el" href="class_mb_int32_vector_attribute.html#a961f1104e63ad682171301c89b5069ef">MbInt32VectorAttribute</a>, <a class="el" href="class_mb_binary_attribute.html#a93d3b3cd9623933171f2dbdc18986651">MbBinaryAttribute</a>, <a class="el" href="class_mb_string_attribute.html#a2336822bcbd3c9ca3fc8d420f9b00b2f">MbStringAttribute</a>, <a class="el" href="class_mb_double_attribute.html#ab46749407326351da4a516aba1d1ccbb">MbDoubleAttribute</a>, <a class="el" href="class_mb_int64_attribute.html#a6727813e67c8a1736c95d2672b7d14e4">MbInt64Attribute</a>, <a class="el" href="class_mb_int_attribute.html#a979d09705fcb75d1045ec2c0e4905c40">MbIntAttribute</a>, <a class="el" href="class_mb_bool_attribute.html#ac52fa77a5e811f460629c92c285095bd">MbBoolAttribute</a>, <a class="el" href="class_mb_common_attribute.html#acf0ff35f69a5927c9ce34b9d3417a13a">MbCommonAttribute</a>, <a class="el" href="class_mb_wire_count.html#af25ee3785b3dc2ef98daab813dc3caa1">MbWireCount</a>, <a class="el" href="class_mb_style.html#a420ac199f2d091b84260dbdeab0b6f97">MbStyle</a>, <a class="el" href="class_mb_width.html#ad3ff7015a548538cd097b09d479dfe69">MbWidth</a> и <a class="el" href="class_mb_color.html#a06338bb3fddc1165260d9f599fc0ce06">MbColor</a>.</p>
+
+</div>
+</div>
+<a id="a56855f5aff94a1233afef62afd72480f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56855f5aff94a1233afef62afd72480f">&#9670;&nbsp;</a></span>OnChangeOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnChangeOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполнить действия при изменении владельца, не связанное с другими действиями. </p>
+<p>Действия при изменении владельца, не связанное с другими действиями. <br  />
+Вызывается после изменения владеющего объекта при условии <a class="el" href="class_mb_attribute.html#ac6f9c62f7d254f69f27c39faaeeab13c" title="Выдать поведение атрибута при изменении владельца.">GetActionForChange()</a> == chn_Self. </p>
+
+<p>Замещается в <a class="el" href="class_mb_uuid_instance_attribute.html#a6aa8f02ed07621601d5f2c977cdb2215">MbUuidInstanceAttribute</a>, <a class="el" href="class_mb_external_attribute.html#a159eaa17c753ec67bfd762fc7c5fa666">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#a677c0b96318a5d4f9b271d77635b3034">MbUserAttribute</a>, <a class="el" href="class_mb_product_attribute.html#aef22347d11fd1e3b3286881ee6002f9b">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#a3578708d4402fd429eb52d399bea650d">MbAnchorAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#adc2bd2d8712cbe1dbc5aaa5f36f47f6b">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#a8617e7444157ae6c97142e603ba5e42b">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="a7d2ea11a70ea103f3733b628f9a74c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2ea11a70ea103f3733b628f9a74c99">&#9670;&nbsp;</a></span>OnConvertOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnConvertOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при конвертации владельца, <br  />
+ Вызывается после конвертирования владеющего объекта при условии <a class="el" href="class_mb_attribute.html#a643bb9d139b981df3c0973126821925b" title="Выдать поведение атрибута при конвертации владельца.">GetActionForConvert()</a> == cnv_Self. <br  />
+ В качестве входного параметра передается результат конвертирования объекта. </p>
+
+<p>Замещается в <a class="el" href="class_mb_uuid_instance_attribute.html#a218efb67abdf5381b81c52c3f52a8e28">MbUuidInstanceAttribute</a>, <a class="el" href="class_mb_external_attribute.html#abdabc8ebea9c5c93ffce82d20505460d">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#ae3ee86ad2dc554a9bd0e11a47c62db7d">MbUserAttribute</a>, <a class="el" href="class_mb_product_attribute.html#a29946efdece379fbe562c40015c1fc4a">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#a89b1fdad5d3bc8dfaa8e4507a2ae7387">MbAnchorAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#a3311e3e28c07addbf1f4f08544763735">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#a90a2d839d7a0ac622452a428ee88c3d6">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="ad82d85b1a6474f84aa36085635e501c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82d85b1a6474f84aa36085635e501c5">&#9670;&nbsp;</a></span>OnTransformOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnTransformOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при трансформировании владельца, <br  />
+ Вызывается после трансформирования владеющего объекта при условии <a class="el" href="class_mb_attribute.html#a15cd6e6beed2f7f164a6236695b873db" title="Выдать поведение атрибута при трансформировании владельца.">GetActionForTransform()</a> == trn_Self. В качестве входного параметра может передаваться регистратор трансформированных объектов. </p>
+
+<p>Замещается в <a class="el" href="class_mb_external_attribute.html#abd58757760588e3434a03f446add0a4c">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#a472eac0cbaa2c602ddce42007fb6bc96">MbUserAttribute</a>, <a class="el" href="class_mb_stamp_rib_attribute.html#adae861ae240ec3944fb12450b3ee0a61">MbStampRibAttribute</a>, <a class="el" href="class_mb_product_attribute.html#aa462c3567d981b92a48a572d99df5dc4">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#afa53f1d9d4955865aa6959c90228874e">MbAnchorAttribute</a>, <a class="el" href="class_mb_composite_hot_point_attribute.html#a50e6cbc8eba3d7ca492ea5fe98d0836f">MbCompositeHotPointAttribute</a>, <a class="el" href="class_mb_hot_point_attribute.html#a902d6c2a80b86c4a7fdd52c1b1bcc1da">MbHotPointAttribute</a>, <a class="el" href="class_mb_base_hot_point_attribute.html#a8f52e4873b0b125be6395085e8047c13">MbBaseHotPointAttribute</a>, <a class="el" href="class_mb_geom_attribute.html#a779f86caffd3013bc39dc43bb82211b2">MbGeomAttribute</a>, <a class="el" href="class_mb_sheet_flanging_attribute.html#af4722daec0614e47d9fcacde844e44d9">MbSheetFlangingAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#ab74929de761b0f7f35a725b53850200e">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#a71606779b81ce11d824388cfe6779cd1">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="abb438df2b537bb311066ee7fa8f2b853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb438df2b537bb311066ee7fa8f2b853">&#9670;&nbsp;</a></span>OnMoveOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnMoveOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при перемещении владельца. <br  />
+ Вызывается после перемещения владеющего объекта при условии <a class="el" href="class_mb_attribute.html#a15cd6e6beed2f7f164a6236695b873db" title="Выдать поведение атрибута при трансформировании владельца.">GetActionForTransform()</a> == trn_Self. В качестве входного параметра может передаваться регистратор трансформированных объектов. </p>
+
+<p>Замещается в <a class="el" href="class_mb_external_attribute.html#af0f46836bb42a454a11f38667eea3d6e">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#a0eff465b1395ed6af1fbcc8e6beaa36c">MbUserAttribute</a>, <a class="el" href="class_mb_stamp_rib_attribute.html#a1104f108f3ac59d2fba489e4d87a878d">MbStampRibAttribute</a>, <a class="el" href="class_mb_product_attribute.html#ac9dff61c0b0bbdd7a7a62c7ab578fd3a">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#a9609734e6870c957866c6dd74718d8dd">MbAnchorAttribute</a>, <a class="el" href="class_mb_composite_hot_point_attribute.html#ac040a48536775c36cc0d78b5ffd9e32f">MbCompositeHotPointAttribute</a>, <a class="el" href="class_mb_hot_point_attribute.html#a583846e7b7a549410e70d42051df7123">MbHotPointAttribute</a>, <a class="el" href="class_mb_base_hot_point_attribute.html#a7d3d11376c717a151e04c4b3877415b3">MbBaseHotPointAttribute</a>, <a class="el" href="class_mb_geom_attribute.html#a62a8b9d6a30f3cccb17cae46beb0474e">MbGeomAttribute</a>, <a class="el" href="class_mb_sheet_flanging_attribute.html#a95e1dd545f377e040564ade00978b423">MbSheetFlangingAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#a80a0db027cf98ccb36b2800ed7b2946c">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#aea7a9fb14a0a5331d425d1b85d892d13">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="a1fccd1fd290871efd1bb4996e2dbe227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fccd1fd290871efd1bb4996e2dbe227">&#9670;&nbsp;</a></span>OnRotateOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnRotateOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при вращении владельца. <br  />
+ Вызывается после вращения владеющего объекта при условии <a class="el" href="class_mb_attribute.html#a15cd6e6beed2f7f164a6236695b873db" title="Выдать поведение атрибута при трансформировании владельца.">GetActionForTransform()</a> == trn_Self. В качестве входного параметра может передаваться регистратор трансформированных объектов. </p>
+
+<p>Замещается в <a class="el" href="class_mb_external_attribute.html#a880224af386ff1a8020a8a553709a53d">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#a38c33b03f276630a409759050d179e27">MbUserAttribute</a>, <a class="el" href="class_mb_stamp_rib_attribute.html#ae01d088486b060fdb56e514e04a8732e">MbStampRibAttribute</a>, <a class="el" href="class_mb_product_attribute.html#a231ff10c101ee3d3c3e8c067b4da8f50">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#ae5a8d86b9d2b954511234b5e9dc35673">MbAnchorAttribute</a>, <a class="el" href="class_mb_composite_hot_point_attribute.html#a3dec71bfe42cc14e43f152c09981116a">MbCompositeHotPointAttribute</a>, <a class="el" href="class_mb_hot_point_attribute.html#a70c9697d1b4b421dbeffe91e3eb6bed5">MbHotPointAttribute</a>, <a class="el" href="class_mb_base_hot_point_attribute.html#aa1b15447a7605c41cbafa359f922fe70">MbBaseHotPointAttribute</a>, <a class="el" href="class_mb_geom_attribute.html#ab1aefe96181abc0389900a02f7c923eb">MbGeomAttribute</a>, <a class="el" href="class_mb_sheet_flanging_attribute.html#a25ee3cf7882157051c6ef93ced8ce2e5">MbSheetFlangingAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#a13f0aa09cbb53c9cfab6311c74a0594f">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#a267399a23422fd98167a34b12836b90f">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="aacf4a9e831db322d75290424b29e0eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf4a9e831db322d75290424b29e0eb9">&#9670;&nbsp;</a></span>OnCopyOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnCopyOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *&#160;</td>
+          <td class="paramname"> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при копировании владельца. <br  />
+ Вызывается после копирования владеющего объекта при условии <a class="el" href="class_mb_attribute.html#a1c93d10470eac3306e8c0ce27e05a96b" title="Выдать поведение атрибута при копировании владельца.">GetActionForCopy()</a> == cpy_Self. <br  />
+ В качестве входных параметров передаются: копия владеющего объекта и регистратор скопированных объектов. </p>
+
+<p>Замещается в <a class="el" href="class_mb_external_attribute.html#adb2223648ef15791d22c86cca91b50c2">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#abdf4c88f327dd2333c1a72207ea796f4">MbUserAttribute</a>, <a class="el" href="class_mb_stamp_rib_attribute.html#a43dbfe8b9969acf461e462173094240e">MbStampRibAttribute</a>, <a class="el" href="class_mb_product_attribute.html#a5c687cac82985f407c34b42a492345e2">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#a3062873b0b0ae927e01b3ed2bf6ad163">MbAnchorAttribute</a>, <a class="el" href="class_mb_composite_hot_point_attribute.html#a1c4f7d1fddbeb0e7e2f78e84975dc079">MbCompositeHotPointAttribute</a>, <a class="el" href="class_mb_hot_point_attribute.html#a4de4c0d18a9b868c53b51b2412425140">MbHotPointAttribute</a>, <a class="el" href="class_mb_base_hot_point_attribute.html#a767b7206c52f15c73ee1e7a2a5d2a9b0">MbBaseHotPointAttribute</a>, <a class="el" href="class_mb_geom_attribute.html#aca3b179e15a2c0cb944edd9fe2cd6185">MbGeomAttribute</a>, <a class="el" href="class_mb_sheet_flanging_attribute.html#a0f29cbfb876862e3b224a9c98aa2f506">MbSheetFlangingAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#a996707f993125103570ef37ea682af1d">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#ac39d2ca5b77e153e14577e29059208a2">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="ac8861f9d380a4f28c8277e53f8b159b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8861f9d380a4f28c8277e53f8b159b6">&#9670;&nbsp;</a></span>OnMergeOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnMergeOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при объединении владельца. <br  />
+ Вызывается перед слиянием владельца при условии <a class="el" href="class_mb_attribute.html#a64fd58f77f096839a6cb1bffe29838f5" title="Выдать поведение атрибута при объединении владельца.">GetActionForMerge()</a> == mrg_Self. <br  />
+ В качестве входного параметра передается объект который будет поглощен. </p>
+
+<p>Замещается в <a class="el" href="class_mb_external_attribute.html#ac147ab568ec72e13364e00de7ed642dd">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#a31bda6fb44546e360a18ee6a01c83956">MbUserAttribute</a>, <a class="el" href="class_mb_stamp_rib_attribute.html#a623b1037b4c7858a35584bdd85d11fe1">MbStampRibAttribute</a>, <a class="el" href="class_mb_product_attribute.html#a1802b0c975f032bd4bd091663c2d4236">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#aa5a01f23720c5b0232b7059f5ea837ee">MbAnchorAttribute</a>, <a class="el" href="class_mb_name_attribute.html#a9df6527eafb3689d5bddd3000477b7d9">MbNameAttribute</a>, <a class="el" href="class_mb_composite_hot_point_attribute.html#a2017a19ab8bb2f2c1585085651ebff45">MbCompositeHotPointAttribute</a>, <a class="el" href="class_mb_hot_point_attribute.html#ad17d687268a2aad8964703197076d7c1">MbHotPointAttribute</a>, <a class="el" href="class_mb_base_hot_point_attribute.html#ac7277113bec8713d001594c1c85ef458">MbBaseHotPointAttribute</a>, <a class="el" href="class_mb_geom_attribute.html#a78b2f11c123859ab293aed72e27704f6">MbGeomAttribute</a>, <a class="el" href="class_mb_sheet_flanging_attribute.html#aacfcdfd8603115326408c9e9405f1e3d">MbSheetFlangingAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#a87a6f7760e7b2b843c8b87998b8da069">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#af7e9193b33ebb4a588477ccd3ce3283b">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="a428b7888f404bf92cbcdb0660886a562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428b7888f404bf92cbcdb0660886a562">&#9670;&nbsp;</a></span>OnReplaceOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnReplaceOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при замене владельца. <br  />
+ Вызывается перед выполнением замены владельца при условии <a class="el" href="class_mb_attribute.html#ac1b42425b81808a6e4417fb5454d433a" title="Выдать поведение атрибута при замене владельца.">GetActionForReplace()</a> == rep_Self. <br  />
+ В качестве входного параметра передается объект - заместитель. </p>
+
+<p>Замещается в <a class="el" href="class_mb_uuid_instance_attribute.html#abc477eb3531a84ddab89aaaa4dfcd5ef">MbUuidInstanceAttribute</a>, <a class="el" href="class_mb_external_attribute.html#a59f873b98453ec98b0df57d3ec700cbb">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#a8dc29941278886b3882931b4bc7c99d5">MbUserAttribute</a>, <a class="el" href="class_mb_product_attribute.html#a12dc9652b9621e7ee63b74c693f1fbbf">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#ae427cfc52748b26c7dcc180ae65d37f9">MbAnchorAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#ab07252e55f410ab323cca55a6f14c55f">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#a5961bfcf22c44d55d0508d164c49fedc">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="afdb993c4667dca6031ac0aa49ab7b6c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb993c4667dca6031ac0aa49ab7b6c3">&#9670;&nbsp;</a></span>OnSplitOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnSplitOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>others</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при разделении владельца. <br  />
+ Вызывается после разбиения владеющего объекта при условии <a class="el" href="class_mb_attribute.html#adce8d20cf7b4a2671eb3edd59cc0fa83" title="Выдать поведение атрибута при разделении владельца.">GetActionForSplit()</a> == spl_Self. <br  />
+ В качестве входного параметра передается контейнер результатов разбиения. </p>
+
+<p>Замещается в <a class="el" href="class_mb_external_attribute.html#a4e8e1f27922c01ac7be68e8a34c95619">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#a681801bcaf7134d605157c8ee7b80e4d">MbUserAttribute</a>, <a class="el" href="class_mb_product_attribute.html#a47ff1d2aa8742d7f0e70aef9f1b5102e">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#ae86675a258ff351c6d3d039b67362643">MbAnchorAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#a9df0562cf73f305be1d0b841d81edf0d">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#a2d3cb1740111a0a71f6bb20f8ff70167">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<a id="a27dbdd9c5337924453bfdd0b7ecf466d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27dbdd9c5337924453bfdd0b7ecf466d">&#9670;&nbsp;</a></span>OnDeleteOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbAttribute::OnDeleteOwner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Выполнить действия при удалении владельца. <br  />
+ Вызывается перед удалением объекта при условии <a class="el" href="class_mb_attribute.html#a64b2c41733737fc5d31066c73171a26b" title="Выдать поведение атрибута при удалении владельца.">GetActionForDelete()</a> == spl_Self. </p>
+
+<p>Замещается в <a class="el" href="class_mb_uuid_instance_attribute.html#ad6eb2aedf186eff77cb9fcd0a25dd68c">MbUuidInstanceAttribute</a>, <a class="el" href="class_mb_external_attribute.html#a49420d63d2fd141b6fac3480bff5f1b6">MbExternalAttribute</a>, <a class="el" href="class_mb_user_attribute.html#ad95aec34b3e507945134d4eb70cf6640">MbUserAttribute</a>, <a class="el" href="class_mb_product_attribute.html#a7db86d043bc73702eb78a9a48ed9ad7f">MbProductAttribute</a>, <a class="el" href="class_mb_anchor_attribute.html#a99d8e5c43c893c557a8c6f9660d5b6d8">MbAnchorAttribute</a>, <a class="el" href="class_mb_elementary_attribute.html#a2e6a65b2026c3c22cd61d35758f8fba9">MbElementaryAttribute</a> и <a class="el" href="class_mb_common_attribute.html#a11a3ed27d9d19daf496d89c16dc62601">MbCommonAttribute</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="attribute__item_8h.html">attribute_item.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_attribute.html">MbAttribute</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:01. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

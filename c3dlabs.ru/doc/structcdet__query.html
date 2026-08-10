@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Структура cdet_query</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structcdet__query.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="structcdet__query-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура cdet_query<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___computation.html">Методы геометрических вычислений</a> &raquo; <a class="el" href="group___collision___detection.html">Определение столкновений</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура данных и обратных вызовов для запроса на поиск соударений. Базовый класс, предназначенный для реализации на стороне приложения структуры запроса к алгоритму поиска соударений. С помощью обратных вызовов приложение управляет поиском соударений и получает сведения o найденных пересечениях.  
+ <a href="structcdet__query.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;cdet_data.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:cdet_query:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structcdet__query__inherit__graph.svg" width="147" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query_1_1cback__data.html">cback_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Data structure that notifies an app about collision detection event.  <a href="structcdet__query_1_1cback__data.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query_1_1geom__element.html">geom_element</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Structure representing a collision detection geometry.  <a href="structcdet__query_1_1geom__element.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a99ae34917380b5f3a42d8858b43586c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query.html#a99ae34917380b5f3a42d8858b43586c8">cback_res</a> { <br />
+ }</td></tr>
+<tr class="memdesc:a99ae34917380b5f3a42d8858b43586c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Result code of the callback function  <a href="structcdet__query.html#a99ae34917380b5f3a42d8858b43586c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a99ae34917380b5f3a42d8858b43586c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467e1f1f8087fea76a4a6b204484ab2e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2e">message</a> { <br />
+&#160;&#160;<a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2eaed9a307c8720507c60dbf669fe8f20f4">CDET_NONE</a>
+, <a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2ea507361208f7326e7d3b57b9cea946f8c">CDET_QUERY_STARTED</a>
+, <a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2eab0c956f01e62e25d1f09809b4c0fe4dc">CDET_STARTED</a>
+, <a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2eaf973de9b030ee288cbb537cf190b6ac7">CDET_FINISHED</a>
+, <br />
+&#160;&#160;<a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2eaf1e00917cbf2ed82221e9f95ffd249bd">CDET_NO_INTERSECTION</a>
+, <a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2ea37a9506cc52ded45ba39cff32e7e1ca9">CDET_TOUCHED</a>
+, <a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2ea1bd0add9de5e41ae86be4fa93dd4f3e9">CDET_INTERSECTED</a>
+, <a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2ea33b3fced38d6611d22f6c95cff302439">CDET_INCLUDED</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a467e1f1f8087fea76a4a6b204484ab2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Code of notification  <a href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a467e1f1f8087fea76a4a6b204484ab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура данных и обратных вызовов для запроса на поиск соударений. Базовый класс, предназначенный для реализации на стороне приложения структуры запроса к алгоритму поиска соударений. С помощью обратных вызовов приложение управляет поиском соударений и получает сведения o найденных пересечениях. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a99ae34917380b5f3a42d8858b43586c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ae34917380b5f3a42d8858b43586c8">&#9670;&nbsp;</a></span>cback_res</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structcdet__query.html#a99ae34917380b5f3a42d8858b43586c8">cdet_query::cback_res</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; Result code of the callback function </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a99ae34917380b5f3a42d8858b43586c8a46b2e46fb830ab7dda7ca61373ec687e"></a>CBACK_SUFFICIENT&#160;</td><td class="fielddoc"><p>This code means that an app stops collision query for the given pair of geometric objects. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99ae34917380b5f3a42d8858b43586c8aa8532c71b90f7c471cc573b04f0d0fd1"></a>CBACK_SKIP&#160;</td><td class="fielddoc"><p>Skip testing the given pair. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99ae34917380b5f3a42d8858b43586c8a4dbc2e0dac87d82f07f3462f64fa0269"></a>CBACK_NEED&#160;</td><td class="fielddoc"><p>Enable testing the given pair. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99ae34917380b5f3a42d8858b43586c8afc6b2fe3f2af616289ca184d8faf02e2"></a>CBACK_BREAK&#160;</td><td class="fielddoc"><p>Break search of all collisions of the set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99ae34917380b5f3a42d8858b43586c8a0d0a87b0cff9da3cde0f8bd0428761e1"></a>CBACK_SEARCH_MORE&#160;</td><td class="fielddoc"><p>This code notifies a collision detector to continue working at cases CDET_INTERSECTED, CDET_TOUCHED. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a467e1f1f8087fea76a4a6b204484ab2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a467e1f1f8087fea76a4a6b204484ab2e">&#9670;&nbsp;</a></span>message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structcdet__query.html#a467e1f1f8087fea76a4a6b204484ab2e">cdet_query::message</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; Code of notification </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2eaed9a307c8720507c60dbf669fe8f20f4"></a>CDET_NONE&#160;</td><td class="fielddoc"><p>No messages. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2ea507361208f7326e7d3b57b9cea946f8c"></a>CDET_QUERY_STARTED&#160;</td><td class="fielddoc"><p>The collision query is started for the all objects of the scene set. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2eab0c956f01e62e25d1f09809b4c0fe4dc"></a>CDET_STARTED&#160;</td><td class="fielddoc"><p>The collision query is started for the given pair of geometric objects. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2eaf973de9b030ee288cbb537cf190b6ac7"></a>CDET_FINISHED&#160;</td><td class="fielddoc"><p>Collision detector complete searching collisions for the given pair of geometric objects. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2eaf1e00917cbf2ed82221e9f95ffd249bd"></a>CDET_NO_INTERSECTION&#160;</td><td class="fielddoc"><p>Definitely the pair has no intersection (this enum value for internal use only). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2ea37a9506cc52ded45ba39cff32e7e1ca9"></a>CDET_TOUCHED&#160;</td><td class="fielddoc"><p>Touched faces has been founded with no penetration of the solids. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2ea1bd0add9de5e41ae86be4fa93dd4f3e9"></a>CDET_INTERSECTED&#160;</td><td class="fielddoc"><p>The collided pair of objects founded. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a467e1f1f8087fea76a4a6b204484ab2ea33b3fced38d6611d22f6c95cff302439"></a>CDET_INCLUDED&#160;</td><td class="fielddoc"><p>The included pair of objects founded. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li><a class="el" href="cdet__data_8h.html">cdet_data.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="structcdet__query.html">cdet_query</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

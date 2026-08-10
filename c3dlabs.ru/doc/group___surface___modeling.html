@@ -1,0 +1,2378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Построение поверхностей</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group___surface___modeling.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Построение поверхностей<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___modelling___functions.html">Методы геометрических построений</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Построение поверхностей:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___surface___modeling.svg" width="335" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine_data.html">MbSpineData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Направляющая кинематической операции.  <a href="class_mb_spine_data.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_spine.html">MbSpine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Криволинейная направляющая для кинематической поверхности.  <a href="class_mb_spine.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_spine_data.html">SpineData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Направляющая кривая и её окружение.  <a href="struct_spine_data.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga42eceb2a049dee2148ba0ec5985097c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga42eceb2a049dee2148ba0ec5985097c2">RectifyFace</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;face, const <a class="el" href="struct_rectify_values.html">RectifyValues</a> values, <a class="el" href="class_mb_solid.html">MbSolid</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga42eceb2a049dee2148ba0ec5985097c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение развёртки грани на плоскость.  <a href="group___surface___modeling.html#ga42eceb2a049dee2148ba0ec5985097c2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga42eceb2a049dee2148ba0ec5985097c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f750cd35723bd3d951979407c5359a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga4f750cd35723bd3d951979407c5359a6">ElementarySurface</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point2, <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a> surfaceType, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga4f750cd35723bd3d951979407c5359a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать элементарную поверхность.  <a href="group___surface___modeling.html#ga4f750cd35723bd3d951979407c5359a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4f750cd35723bd3d951979407c5359a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf08320412604f8f17c585302eba3f3b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaf08320412604f8f17c585302eba3f3b8">SplineSurface</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMinVMin, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMaxVMin, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMaxVMax, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMinVMax, size_t uCount, size_t vCount, size_t uDegree, size_t vDegree, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaf08320412604f8f17c585302eba3f3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плоскую NURBS - поверхность.  <a href="group___surface___modeling.html#gaf08320412604f8f17c585302eba3f3b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf08320412604f8f17c585302eba3f3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6498db6c77bbfee32a8045ed8df37850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga6498db6c77bbfee32a8045ed8df37850">SplineSurface</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;pointList, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;weightList, size_t uCount, size_t vCount, size_t uDegree, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;uKnotList, bool uClosed, size_t vDegree, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;vKnotList, bool vClosed, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga6498db6c77bbfee32a8045ed8df37850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS - поверхность.  <a href="group___surface___modeling.html#ga6498db6c77bbfee32a8045ed8df37850">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6498db6c77bbfee32a8045ed8df37850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3f27754100e1d3eb5664a4b1b61e967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gae3f27754100e1d3eb5664a4b1b61e967">ExtrusionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;direction, bool simplify, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gae3f27754100e1d3eb5664a4b1b61e967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность выдавливания.  <a href="group___surface___modeling.html#gae3f27754100e1d3eb5664a4b1b61e967">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae3f27754100e1d3eb5664a4b1b61e967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1bf9a5129bba9049aab1443be784e9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gab1bf9a5129bba9049aab1443be784e9f">RevolutionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;origin, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;axis, double angle, bool simplify, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gab1bf9a5129bba9049aab1443be784e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность вращения.  <a href="group___surface___modeling.html#gab1bf9a5129bba9049aab1443be784e9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab1bf9a5129bba9049aab1443be784e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ae1e9dcdc767f0915e53fe9eef13c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga5ae1e9dcdc767f0915e53fe9eef13c8d">ExpansionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *curve1, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga5ae1e9dcdc767f0915e53fe9eef13c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность движения.  <a href="group___surface___modeling.html#ga5ae1e9dcdc767f0915e53fe9eef13c8d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5ae1e9dcdc767f0915e53fe9eef13c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5681037c4bf7850797bac4004998c948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga5681037c4bf7850797bac4004998c948">EvolutionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga5681037c4bf7850797bac4004998c948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кинематическую поверхность.  <a href="group___surface___modeling.html#ga5681037c4bf7850797bac4004998c948">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5681037c4bf7850797bac4004998c948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga360f6a1792f53cc6d1854b12c8b1caf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga360f6a1792f53cc6d1854b12c8b1caf6">SpiralSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, bool sameCurve, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p2, double step, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga360f6a1792f53cc6d1854b12c8b1caf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать спиральную поверхность.  <a href="group___surface___modeling.html#ga360f6a1792f53cc6d1854b12c8b1caf6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga360f6a1792f53cc6d1854b12c8b1caf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga140f96cca0a680df170d23dd294f3f00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga140f96cca0a680df170d23dd294f3f00">SectorSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga140f96cca0a680df170d23dd294f3f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать секториальную поверхность.  <a href="group___surface___modeling.html#ga140f96cca0a680df170d23dd294f3f00">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga140f96cca0a680df170d23dd294f3f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a411141bbaebfbdb633a036b4c86d75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga6a411141bbaebfbdb633a036b4c86d75">RuledSurface</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, bool simplify, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga6a411141bbaebfbdb633a036b4c86d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать линейчатую поверхность.  <a href="group___surface___modeling.html#ga6a411141bbaebfbdb633a036b4c86d75">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6a411141bbaebfbdb633a036b4c86d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab034aa8d6ab06c9ccd7dcf73326ae00f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gab034aa8d6ab06c9ccd7dcf73326ae00f">CornerSurface</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve3, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gab034aa8d6ab06c9ccd7dcf73326ae00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать треугольную поверхность.  <a href="group___surface___modeling.html#gab034aa8d6ab06c9ccd7dcf73326ae00f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab034aa8d6ab06c9ccd7dcf73326ae00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga016d26a5ebefd91452454e945695339b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga016d26a5ebefd91452454e945695339b">CoverSurface</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve3, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve4, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga016d26a5ebefd91452454e945695339b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать билинейную поверхность.  <a href="group___surface___modeling.html#ga016d26a5ebefd91452454e945695339b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga016d26a5ebefd91452454e945695339b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae792a2e579bf595f03bfd6fcec2fcdd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gae792a2e579bf595f03bfd6fcec2fcdd2">LoftedSurface</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;curveList, bool closed, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;begDirection, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;endDirection, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gae792a2e579bf595f03bfd6fcec2fcdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность по семейству кривых.  <a href="group___surface___modeling.html#gae792a2e579bf595f03bfd6fcec2fcdd2">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae792a2e579bf595f03bfd6fcec2fcdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b29a93d1b47a72c8192943daf6e3392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga3b29a93d1b47a72c8192943daf6e3392">LoftedSurface</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;curveList, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result, bool isSimToEvol=true)</td></tr>
+<tr class="memdesc:ga3b29a93d1b47a72c8192943daf6e3392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность по семейству кривых и направляющей.  <a href="group___surface___modeling.html#ga3b29a93d1b47a72c8192943daf6e3392">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3b29a93d1b47a72c8192943daf6e3392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab40cfba128653853bb77f0574a356efd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gab40cfba128653853bb77f0574a356efd">MeshSurface</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;uCurveList, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;vCurveList, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gab40cfba128653853bb77f0574a356efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность на сетке кривых.  <a href="group___surface___modeling.html#gab40cfba128653853bb77f0574a356efd">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab40cfba128653853bb77f0574a356efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga266deb9ae017c88bb7df581b3b5544bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga266deb9ae017c88bb7df581b3b5544bc">OffsetSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, double distance, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga266deb9ae017c88bb7df581b3b5544bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать эквидистантную поверхность.  <a href="group___surface___modeling.html#ga266deb9ae017c88bb7df581b3b5544bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga266deb9ae017c88bb7df581b3b5544bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7457bc8c8bde3bc3eaa2bc587d4d3990"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga7457bc8c8bde3bc3eaa2bc587d4d3990">OffsetSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, double offsetUminVmin, double offsetUmaxVmin, double offsetUminVmax, double offsetUmaxVmax, <a class="el" href="group___data___structures.html#ga8779515558c436a0cf818cbd800d503b">MbeOffsetType</a> type, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga7457bc8c8bde3bc3eaa2bc587d4d3990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать эквидистантную поверхность.  <a href="group___surface___modeling.html#ga7457bc8c8bde3bc3eaa2bc587d4d3990">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7457bc8c8bde3bc3eaa2bc587d4d3990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9278f4b569a8f0ee02217dcc9fa0469"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaa9278f4b569a8f0ee02217dcc9fa0469">ExtendedSurface</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, double uMin, double uMax, double vMin, double vMax, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaa9278f4b569a8f0ee02217dcc9fa0469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать продленную поверхность.  <a href="group___surface___modeling.html#gaa9278f4b569a8f0ee02217dcc9fa0469">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa9278f4b569a8f0ee02217dcc9fa0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c546de5a15b305dddf5c2a346abb1e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga8c546de5a15b305dddf5c2a346abb1e5">DeformedSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, size_t uCount, size_t vCount, size_t uDegree, size_t vDegree, double dist, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga8c546de5a15b305dddf5c2a346abb1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать деформированную поверхность.  <a href="group___surface___modeling.html#ga8c546de5a15b305dddf5c2a346abb1e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8c546de5a15b305dddf5c2a346abb1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49aded1f65171708150e44ab8089cf04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga49aded1f65171708150e44ab8089cf04">BoundedSurface</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> &gt; &amp;boundList, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga49aded1f65171708150e44ab8089cf04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность с заданной границей.  <a href="group___surface___modeling.html#ga49aded1f65171708150e44ab8089cf04">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga49aded1f65171708150e44ab8089cf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec250b57773bee8526a47c141a5525be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaec250b57773bee8526a47c141a5525be">BoundedSurface</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, const <a class="el" href="class_mb_region.html">MbRegion</a> &amp;region, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaec250b57773bee8526a47c141a5525be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность с заданной границей.  <a href="group___surface___modeling.html#gaec250b57773bee8526a47c141a5525be">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaec250b57773bee8526a47c141a5525be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5ccebb762afcec1019b2a46eacc3505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaf5ccebb762afcec1019b2a46eacc3505">NurbsSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaf5ccebb762afcec1019b2a46eacc3505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS копию поверхности, ограниченную двумерными границами.  <a href="group___surface___modeling.html#gaf5ccebb762afcec1019b2a46eacc3505">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf5ccebb762afcec1019b2a46eacc3505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40160ea20286b02ae48e6ef80ba6a5cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga40160ea20286b02ae48e6ef80ba6a5cb">NurbsSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, const <a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a> &amp;uParam, const <a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a> &amp;vParam, <a class="el" href="class_s_ptr.html">c3d::SurfaceSPtr</a> &amp;result)</td></tr>
+<tr class="memdesc:ga40160ea20286b02ae48e6ef80ba6a5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS копию поверхности, по заданным параметрам.  <a href="group___surface___modeling.html#ga40160ea20286b02ae48e6ef80ba6a5cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga40160ea20286b02ae48e6ef80ba6a5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70566bd5ce73456a4e5b53da7eb69c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga70566bd5ce73456a4e5b53da7eb69c8f">SimplexSplineSurface</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;pList, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;resSurface)</td></tr>
+<tr class="memdesc:ga70566bd5ce73456a4e5b53da7eb69c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность симплексного сплайна.  <a href="group___surface___modeling.html#ga70566bd5ce73456a4e5b53da7eb69c8f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga70566bd5ce73456a4e5b53da7eb69c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12a4d37d5a22d096cfb938cf7f49233a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga12a4d37d5a22d096cfb938cf7f49233a">TriBezierSurface</a> (ptrdiff_t k, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p2, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p3, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;resSurface)</td></tr>
+<tr class="memdesc:ga12a4d37d5a22d096cfb938cf7f49233a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать треугольную поверхность Безье.  <a href="group___surface___modeling.html#ga12a4d37d5a22d096cfb938cf7f49233a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga12a4d37d5a22d096cfb938cf7f49233a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa47d9f37856f4f3401d4797ff3dcfa95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaa47d9f37856f4f3401d4797ff3dcfa95">SimplexSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, size_t degree, size_t uCount, size_t vCount, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaa47d9f37856f4f3401d4797ff3dcfa95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать треугольную В-сплайн поверхность.  <a href="group___surface___modeling.html#gaa47d9f37856f4f3401d4797ff3dcfa95">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa47d9f37856f4f3401d4797ff3dcfa95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada4ff50bcb458bb294a1d5496c9f038b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gada4ff50bcb458bb294a1d5496c9f038b">GridSurface</a> (const <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;grid, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gada4ff50bcb458bb294a1d5496c9f038b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание поверхности на сетке точек.  <a href="group___surface___modeling.html#gada4ff50bcb458bb294a1d5496c9f038b">Подробнее...</a><br /></td></tr>
+<tr class="separator:gada4ff50bcb458bb294a1d5496c9f038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga451a3bd1459bc2bce0435d8180863056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga451a3bd1459bc2bce0435d8180863056">MiddlePlaces</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, std::vector&lt; <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &gt; &amp;places)</td></tr>
+<tr class="memdesc:ga451a3bd1459bc2bce0435d8180863056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать средние плоскости.  <a href="group___surface___modeling.html#ga451a3bd1459bc2bce0435d8180863056">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga451a3bd1459bc2bce0435d8180863056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb62f76c32c8e2b62571be6eababb9bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gafb62f76c32c8e2b62571be6eababb9bf">SectionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;rc, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;g1, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;g2, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *c0, size_t form, bool sense, double uBeg, double uEnd, <a class="el" href="class_mb_function.html">MbFunction</a> *func, <a class="el" href="class_mb_curve.html">MbCurve</a> *patt, double accuracy, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gafb62f76c32c8e2b62571be6eababb9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение поверхности переменного сечения.  <a href="group___surface___modeling.html#gafb62f76c32c8e2b62571be6eababb9bf">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafb62f76c32c8e2b62571be6eababb9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf8ff19fd7e1a1f423b49584d005318e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gadf8ff19fd7e1a1f423b49584d005318e">CreateCoonsSurface</a> (const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve0, const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve1, const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve2, const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve3, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gadf8ff19fd7e1a1f423b49584d005318e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение поверхности Кунса.  <a href="group___surface___modeling.html#gadf8ff19fd7e1a1f423b49584d005318e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadf8ff19fd7e1a1f423b49584d005318e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade5dfc5191b2167805c4931c2f84c319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gade5dfc5191b2167805c4931c2f84c319">CreateSplinePatch</a> (const c3d::ConstEdgesVector &amp;edges, c3d::SurfacesVector &amp;result)</td></tr>
+<tr class="memdesc:gade5dfc5191b2167805c4931c2f84c319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение поверхности-заплатки для заданных рёбер.  <a href="group___surface___modeling.html#gade5dfc5191b2167805c4931c2f84c319">Подробнее...</a><br /></td></tr>
+<tr class="separator:gade5dfc5191b2167805c4931c2f84c319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf145ca07b525c49297df98b9290b2306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaf145ca07b525c49297df98b9290b2306">CreateEvolutionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;spine, bool samec, bool sames=false)</td></tr>
+<tr class="memdesc:gaf145ca07b525c49297df98b9290b2306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кинематическую поверхность.  <a href="group___surface___modeling.html#gaf145ca07b525c49297df98b9290b2306">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf145ca07b525c49297df98b9290b2306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71aebb8385fb2d6a9f30f3450d291259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga71aebb8385fb2d6a9f30f3450d291259">CreateEvolutionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, bool samec, bool sames)</td></tr>
+<tr class="memdesc:ga71aebb8385fb2d6a9f30f3450d291259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кинематическую поверхность.  <a href="group___surface___modeling.html#ga71aebb8385fb2d6a9f30f3450d291259">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga71aebb8385fb2d6a9f30f3450d291259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadffe9022a3753a33926424ea649acf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaadffe9022a3753a33926424ea649acf6">CreatePipeSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spineDirection, bool samec, bool sames, bool samed)</td></tr>
+<tr class="memdesc:gaadffe9022a3753a33926424ea649acf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кинематическую поверхность.  <a href="group___surface___modeling.html#gaadffe9022a3753a33926424ea649acf6">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaadffe9022a3753a33926424ea649acf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Общие функции поверхности</h2></td></tr>
+<tr class="memitem:gaf088c171c14e7e59f8bc7b50effd4a01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaf088c171c14e7e59f8bc7b50effd4a01">MbExplorationSurface::Create</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;<a class="el" href="class_mb_swept_surface.html#a335a10eb85fd4bc829672f393bdc916d">curve</a>, const <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;<a class="el" href="class_mb_evolution_surface.html#aa90e790516cb352484846e1c18d9d25b">spine</a>, bool samec, bool sames, <a class="el" href="class_mb_function.html">MbFunction</a> &amp;_scaling, <a class="el" href="class_mb_function.html">MbFunction</a> &amp;_winding)</td></tr>
+<tr class="memdesc:gaf088c171c14e7e59f8bc7b50effd4a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кинематическую поверхность.  <a href="group___surface___modeling.html#gaf088c171c14e7e59f8bc7b50effd4a01">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf088c171c14e7e59f8bc7b50effd4a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Функции</h2>
+<a id="ga42eceb2a049dee2148ba0ec5985097c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42eceb2a049dee2148ba0ec5985097c2">&#9670;&nbsp;</a></span>RectifyFace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> RectifyFace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_face.html">MbFace</a> &amp;&#160;</td>
+          <td class="paramname"><em>face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rectify_values.html">RectifyValues</a>&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_solid.html">MbSolid</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построение развёртки грани на плоскость. </p>
+<p>Построение развёртки грани на плоскость.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>- Исходная грань.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">values</td><td>- Параметры построения: локальная система координат развернутой поверхности грани, данные для вычисления шага при триангуляции, коэффициент Пуассона материала грани.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Тело - плоская развертка исходной грани.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<a id="ga4f750cd35723bd3d951979407c5359a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f750cd35723bd3d951979407c5359a6">&#9670;&nbsp;</a></span>ElementarySurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ElementarySurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td>
+          <td class="paramname"><em>surfaceType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать элементарную поверхность. </p>
+<p>Создать одну из элементарных поверхностей по трем управляющим точкам и типу: <br  />
+ surfaceType == st_Plane - плоскость <br  />
+ surfaceType == st_ConeSurface - коническая поверхность <br  />
+ surfaceType == st_CylinderSurface - цилиндрическая поверхность <br  />
+ surfaceType == st_SphereSurface - сферическая поверхность <br  />
+ surfaceType == st_TorusSurface - поверхность тора <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">point0</td><td>- Точка, определяющая начало локальной системы координат поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point1</td><td>- Точка, определяющая направление оси X локальной системы и радиус поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point2</td><td>- Точка, определяющая направление оси Y локальной системы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surfaceType</td><td>- Тип поверхности.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Построенная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gaf08320412604f8f17c585302eba3f3b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf08320412604f8f17c585302eba3f3b8">&#9670;&nbsp;</a></span>SplineSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SplineSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pUMinVMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pUMaxVMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pUMaxVMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pUMinVMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uDegree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vDegree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать плоскую NURBS - поверхность. </p>
+<p>Создать плоскую NURBS - поверхность по угловым точкам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUMinVMin</td><td>- Угловая точка поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUMaxVMin</td><td>- Угловая точка поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUMaxVMax</td><td>- Угловая точка поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUMinVMax</td><td>- Угловая точка поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uCount</td><td>- Количество точек по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>- Количество точек по V.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uDegree</td><td>- Порядок сплайнов по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vDegree</td><td>- Порядок сплайнов по V.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga6498db6c77bbfee32a8045ed8df37850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6498db6c77bbfee32a8045ed8df37850">&#9670;&nbsp;</a></span>SplineSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SplineSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pointList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>weightList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uDegree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>uKnotList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>uClosed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vDegree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vKnotList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>vClosed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать NURBS - поверхность. </p>
+<p>Создать NURBS - поверхность по массивам точек и весов. <br  />
+ контейнер weightList может быть пустым. <br  />
+ контейнер uKnotList может быть пустым. <br  />
+ контейнер vKnotList может быть пустым. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointList</td><td>- Множество точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">weightList</td><td>- Множество весов</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uCount</td><td>- Размерность массива точек по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>- Размерность массива точек по V.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uDegree</td><td>- Порядок сплайнов по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uKnotList</td><td>- Узловой вектор по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uClosed</td><td>- Замкнутость по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vDegree</td><td>- Порядок сплайнов по V.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vKnotList</td><td>- Узловой вектор по V.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vClosed</td><td>- Замкнутость по V.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gae3f27754100e1d3eb5664a4b1b61e967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3f27754100e1d3eb5664a4b1b61e967">&#9670;&nbsp;</a></span>ExtrusionSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ExtrusionSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>simplify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность выдавливания. </p>
+<p>Создать поверхность выдавливания кривой. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>- Вектор выдавливания.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">simplify</td><td>- Упрощать поверхность, если возможно.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность выдавливания.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gab1bf9a5129bba9049aab1443be784e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1bf9a5129bba9049aab1443be784e9f">&#9670;&nbsp;</a></span>RevolutionSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> RevolutionSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>simplify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность вращения. </p>
+<p>Создать поверхность вращения кривой. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">origin</td><td>- Точка положения оси вращения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>- Направление оси вращения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол вращения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">simplify</td><td>- Упрощать поверхность, если возможно.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность вращения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga5ae1e9dcdc767f0915e53fe9eef13c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ae1e9dcdc767f0915e53fe9eef13c8d">&#9670;&nbsp;</a></span>ExpansionSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ExpansionSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>spine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td>
+          <td class="paramname"><em>curve1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность движения. </p>
+<p>Создать поверхность движения кривой. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spine</td><td>- Направляющая кривая.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность движения с доворотами.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga5681037c4bf7850797bac4004998c948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5681037c4bf7850797bac4004998c948">&#9670;&nbsp;</a></span>EvolutionSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> EvolutionSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>spine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать кинематическую поверхность. </p>
+<p>Создать кинематическую поверхность по образующей и направляющей. <br  />
+ В случае, если spine имеет тип st_ConeSpiral, результатом построения является спиральная поверхность. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spine</td><td>- Направляющая кривая.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Кинематическая поверхность или спиральная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga360f6a1792f53cc6d1854b12c8b1caf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga360f6a1792f53cc6d1854b12c8b1caf6">&#9670;&nbsp;</a></span>SpiralSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SpiralSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sameCurve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать спиральную поверхность. </p>
+<p>Создать спиральную поверхность по образующей и 3 точкам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая спирали.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameCurve</td><td>- Использовать копию образующей кривой, если sameCurve равен false.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p0</td><td>- Начало локальной системы координат (ЛСК).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Точка для формирования оси Z ЛСК.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>- Точка для формирования оси X ЛСК.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>- Шаг спирали.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Спиральная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga140f96cca0a680df170d23dd294f3f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga140f96cca0a680df170d23dd294f3f00">&#9670;&nbsp;</a></span>SectorSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SectorSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать секториальную поверхность. </p>
+<p>Создать секториальную поверхность по кривой и точке. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Линейчатая поверхность в виде сектора.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga6a411141bbaebfbdb633a036b4c86d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a411141bbaebfbdb633a036b4c86d75">&#9670;&nbsp;</a></span>RuledSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> RuledSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>simplify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать линейчатую поверхность. </p>
+<p>Создать линейчатую поверхность по двум кривым. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve1</td><td>- Первая образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve2</td><td>- Вторая образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">simplify</td><td>- Упрощать поверхность, если возможно.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Линейчатая поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gab034aa8d6ab06c9ccd7dcf73326ae00f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab034aa8d6ab06c9ccd7dcf73326ae00f">&#9670;&nbsp;</a></span>CornerSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> CornerSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать треугольную поверхность. </p>
+<p>Создать треугольную поверхность по трем кривым. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve1</td><td>- Первая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve2</td><td>- Вторая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve3</td><td>- Третья кривая.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Треугольная поверхность по трём кривым.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga016d26a5ebefd91452454e945695339b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga016d26a5ebefd91452454e945695339b">&#9670;&nbsp;</a></span>CoverSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> CoverSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать билинейную поверхность. </p>
+<p>Создать билинейную поверхность по четырем кривым. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve1</td><td>- Первая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve2</td><td>- Вторая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve3</td><td>- Третья кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve4</td><td>- Четвертая кривая.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Билинейная поверхность по четырём кривым.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gae792a2e579bf595f03bfd6fcec2fcdd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae792a2e579bf595f03bfd6fcec2fcdd2">&#9670;&nbsp;</a></span>LoftedSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> LoftedSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>curveList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>begDirection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>endDirection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность по семейству кривых. </p>
+<p>Создать поверхность по семейству кривых. <br  />
+ begDirection направление в начале поверхности может быть нулевой длины. <br  />
+ endDirection направление в конце поверхности может быть нулевой длины. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curveList</td><td>- Семейство образующих кривых вдоль U-направления.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Замкнутость вдоль V-направления.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">begDirection</td><td>- Вектор направления в начале поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endDirection</td><td>- Вектор направления в конце поверхности.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность по семейству кривых.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga3b29a93d1b47a72c8192943daf6e3392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b29a93d1b47a72c8192943daf6e3392">&#9670;&nbsp;</a></span>LoftedSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> LoftedSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>curveList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>spine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isSimToEvol</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность по семейству кривых и направляющей. </p>
+<p>Создать поверхность по семейству кривых и направляющей. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curveList</td><td>- Семейство образующих кривых вдоль U-направления.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spine</td><td>- Направляющая кривая.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность по семейству кривых и направляющей.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gab40cfba128653853bb77f0574a356efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab40cfba128653853bb77f0574a356efd">&#9670;&nbsp;</a></span>MeshSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> MeshSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>uCurveList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vCurveList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность на сетке кривых. </p>
+<p>Создать поверхность на сетке кривых по двум семействам кривых. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uCurveList</td><td>- Семейство кривых вдоль U-направления.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCurveList</td><td>- Семейство кривых вдоль V-направления.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность на сетке кривых.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga266deb9ae017c88bb7df581b3b5544bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga266deb9ae017c88bb7df581b3b5544bc">&#9670;&nbsp;</a></span>OffsetSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> OffsetSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать эквидистантную поверхность. </p>
+<p>Создать эквидистантную поверхность к исходной поверхности. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Исходная поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>- Величина эквидистанты (знаковая).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Эквидистантная поверхность. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga7457bc8c8bde3bc3eaa2bc587d4d3990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7457bc8c8bde3bc3eaa2bc587d4d3990">&#9670;&nbsp;</a></span>OffsetSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> OffsetSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offsetUminVmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offsetUmaxVmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offsetUminVmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offsetUmaxVmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___data___structures.html#ga8779515558c436a0cf818cbd800d503b">MbeOffsetType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать эквидистантную поверхность. </p>
+<p>Создать эквидистантную поверхность по исходной поверхности. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Базовая поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetUminVmin</td><td>- Смещение в точке Umin Vmin базовой поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetUmaxVmin</td><td>- Смещение в точке Umax Vmin базовой поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetUminVmax</td><td>- Смещение в точке Umin Vmax базовой поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offsetUmaxVmax</td><td>- Смещение в точке Umax Vmax базовой поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Тип смещения точек: константный, линейный или кубический.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Эквидистантная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gaa9278f4b569a8f0ee02217dcc9fa0469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9278f4b569a8f0ee02217dcc9fa0469">&#9670;&nbsp;</a></span>ExtendedSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ExtendedSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>uMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>uMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать продленную поверхность. </p>
+<p>Создать продленную поверхность по исходной поверхности. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Исходная поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uMin</td><td>- Минимальное значение по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uMax</td><td>- Максимальное значение по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vMin</td><td>- Минимальное значение по V.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vMax</td><td>- Максимальное значение по V.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Продлённая поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga8c546de5a15b305dddf5c2a346abb1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c546de5a15b305dddf5c2a346abb1e5">&#9670;&nbsp;</a></span>DeformedSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> DeformedSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uDegree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vDegree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать деформированную поверхность. </p>
+<p>Создать деформированную поверхность по исходной поверхности. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Исходная поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uCount</td><td>- Количество точек по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>- Количество точек по V.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uDegree</td><td>- Порядок сплайнов по U.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vDegree</td><td>- Порядок сплайнов по V.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dist</td><td>- Величина сдвига вдоль нормали.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Деформированная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga49aded1f65171708150e44ab8089cf04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49aded1f65171708150e44ab8089cf04">&#9670;&nbsp;</a></span>BoundedSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> BoundedSurface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность с заданной границей. </p>
+<p>Создать поверхность с заданной границей по массиву двумерных кривых. <br  />
+ Контейнер boundList может быть пустым. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Исходная поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">boundList</td><td>- Множество двумерных границ в виде кривых (первая кривая - внешний контур).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность, ограниченная кривыми.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gaec250b57773bee8526a47c141a5525be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec250b57773bee8526a47c141a5525be">&#9670;&nbsp;</a></span>BoundedSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> BoundedSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_region.html">MbRegion</a> &amp;&#160;</td>
+          <td class="paramname"><em>region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность с заданной границей. </p>
+<p>Создать поверхность с заданной границей по массиву двумерных контуров. <br  />
+</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Локальная система координат плоскости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">region</td><td>- Множество двумерных границ в виде региона (первая контур - внешний).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность, ограниченная кривыми.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gaf5ccebb762afcec1019b2a46eacc3505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5ccebb762afcec1019b2a46eacc3505">&#9670;&nbsp;</a></span>NurbsSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> NurbsSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать NURBS копию поверхности, ограниченную двумерными границами. </p>
+<p>Создать NURBS копию поверхности, ограниченную двумерными границами проецированием пространственных границ <br  />
+ (предполагается, что пространственные граничные кривые лежат на поверхности). <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surf</td><td>- Исходная поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>- Версия исполнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая поверхность (ограниченная кривыми).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga40160ea20286b02ae48e6ef80ba6a5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40160ea20286b02ae48e6ef80ba6a5cb">&#9670;&nbsp;</a></span>NurbsSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> NurbsSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>uParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>vParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">c3d::SurfaceSPtr</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать NURBS копию поверхности, по заданным параметрам. </p>
+<p>Создать NURBS копию поверхности, по заданным параметрам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surf</td><td>- Исходная поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uParam</td><td>- Параметры построения NURBS копии объекта.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vParam</td><td>- Параметры построения NURBS копии объекта.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga70566bd5ce73456a4e5b53da7eb69c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70566bd5ce73456a4e5b53da7eb69c8f">&#9670;&nbsp;</a></span>SimplexSplineSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SimplexSplineSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>resSurface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать поверхность симплексного сплайна. </p>
+<p>Создать поверхность симплексного сплайна по массиву вершин. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pList</td><td>- Множество вершин.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resSurface</td><td>- Поверхность симплексного сплайна.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga12a4d37d5a22d096cfb938cf7f49233a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12a4d37d5a22d096cfb938cf7f49233a">&#9670;&nbsp;</a></span>TriBezierSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> TriBezierSurface </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>resSurface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать треугольную поверхность Безье. </p>
+<p>Создать треугольную поверхность Безье по 3 точкам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">k</td><td>- Порядок поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Первая точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>- Вторая точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p3</td><td>- Третья точка.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resSurface</td><td>- Треугольная поверхность Безье.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gaa47d9f37856f4f3401d4797ff3dcfa95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa47d9f37856f4f3401d4797ff3dcfa95">&#9670;&nbsp;</a></span>SimplexSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SimplexSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>vCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать треугольную В-сплайн поверхность. </p>
+<p>Создать треугольную В-сплайн поверхность по 3 точкам. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surface</td><td>- Исходная поверхность.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uCount</td><td>- Число элементов вдоль первого направления.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vCount</td><td>- Число элементов вдоль второго направления.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Симплексная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="gada4ff50bcb458bb294a1d5496c9f038b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada4ff50bcb458bb294a1d5496c9f038b">&#9670;&nbsp;</a></span>GridSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> GridSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание поверхности на сетке точек. </p>
+<p>Создание поверхности на сетке точек и триангуляции. <br  />
+ Множество треугольников должен представлять собой правильную триангуляцию.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">grid</td><td>- Триангуляция.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Поверхность на сетке точек.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ga451a3bd1459bc2bce0435d8180863056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga451a3bd1459bc2bce0435d8180863056">&#9670;&nbsp;</a></span>MiddlePlaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> MiddlePlaces </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>places</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать средние плоскости. </p>
+<p>Создать средние плоскости по двум кривым.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve1</td><td>- Первая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve2</td><td>- Вторая кривая.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">places</td><td>- Набор систем координат, задающих плоскости.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<a id="gafb62f76c32c8e2b62571be6eababb9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb62f76c32c8e2b62571be6eababb9bf">&#9670;&nbsp;</a></span>SectionSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SectionSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>rc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>g1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>g2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td>
+          <td class="paramname"><em>c0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sense</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>uBeg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>uEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_function.html">MbFunction</a> *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve.html">MbCurve</a> *&#160;</td>
+          <td class="paramname"><em>patt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>vers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построение поверхности переменного сечения. </p>
+<p>Поверхность переменного (конического) сечения образуется путем движения плоской кривой, являющейся коническим сечением, вдоль опорной кривой. В процессе движения форма плоской кривой меняется в соответствии с дискриминантом конического сечения. Начало плоской кривой располагается на начальной направляющей кривой, а конец - на конечной направляющей кривой. Плоскость переменного сечения сохраняет ортогональность опорной кривой в процессе движения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rc</td><td>- Опорная кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g1</td><td>- Первая направляющая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g2</td><td>- Вторая направляющая кривая (g1==g2 совпадает с первой при cs_Round).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c0</td><td>- Дополнительная направляющая кривая (может быть nullptr).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">form</td><td>- Форма сечения поверхности (0, 1, 2, 3).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sense</td><td>- Направление нормали поверхности направляющей кривой (для guide1==guide2).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uBeg</td><td>- Минимальное значение первого параметра поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uEnd</td><td>- Максимальное значение первого параметра поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>- Функция управления сечением поверхности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">patt</td><td>- Образующая кривая при form==cs_Shape.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Точность построения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vers</td><td>- Версия поверхности.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Построенная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<a id="gadf8ff19fd7e1a1f423b49584d005318e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf8ff19fd7e1a1f423b49584d005318e">&#9670;&nbsp;</a></span>CreateCoonsSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> CreateCoonsSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;&#160;</td>
+          <td class="paramname"><em>surfaceCurve0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;&#160;</td>
+          <td class="paramname"><em>surfaceCurve1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;&#160;</td>
+          <td class="paramname"><em>surfaceCurve2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;&#160;</td>
+          <td class="paramname"><em>surfaceCurve3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построение поверхности Кунса. </p>
+<p>Построение бикубической поверхности Кунса на четырех кривых и их поперечных производных, касательной к четырём кривым на прверхностях. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">surfaceCurve0</td><td>- Кривая на поверхности 0.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surfaceCurve1</td><td>- Кривая на поверхности 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surfaceCurve2</td><td>- Кривая на поверхности 2.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">surfaceCurve3</td><td>- Кривая на поверхности 3.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Построенная поверхность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата построения.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<a id="gade5dfc5191b2167805c4931c2f84c319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade5dfc5191b2167805c4931c2f84c319">&#9670;&nbsp;</a></span>CreateSplinePatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> CreateSplinePatch </td>
+          <td>(</td>
+          <td class="paramtype">const c3d::ConstEdgesVector &amp;&#160;</td>
+          <td class="paramname"><em>edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c3d::SurfacesVector &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построение поверхности-заплатки для заданных рёбер. </p>
+<p>Построение поверхности-заплатки, гладко стыкующейся с поверхностями ребер. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edges</td><td>- Ребра, с которыми требуется стыковать новую поверхность.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Построенные поверхности.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата построения.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+
+</div>
+</div>
+<a id="gaf145ca07b525c49297df98b9290b2306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf145ca07b525c49297df98b9290b2306">&#9670;&nbsp;</a></span>CreateEvolutionSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_surface.html">MbSurface</a>&amp; CreateEvolutionSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;&#160;</td>
+          <td class="paramname"><em>spine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>samec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sames</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать кинематическую поверхность. </p>
+<p>Создать кинематическую поверхность.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spine</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">samec</td><td>- Признак использования оригинала образующей кривой, а не копии.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sames</td><td>- Признак использования оригинала направляющей кривой spine, а не копии.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает созданную поверхность. </dd></dl>
+
+</div>
+</div>
+<a id="ga71aebb8385fb2d6a9f30f3450d291259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71aebb8385fb2d6a9f30f3450d291259">&#9670;&nbsp;</a></span>CreateEvolutionSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_surface.html">MbSurface</a>&amp; CreateEvolutionSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>spine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>samec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать кинематическую поверхность. </p>
+<p>Создать кинематическую поверхность.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spine</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">samec</td><td>- Признак использования оригинала образующей кривой, а не копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sames</td><td>- Признак использования оригинала направляющей кривой, а не копии</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает созданную поверхность. </dd></dl>
+
+</div>
+</div>
+<a id="gaadffe9022a3753a33926424ea649acf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadffe9022a3753a33926424ea649acf6">&#9670;&nbsp;</a></span>CreatePipeSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_surface.html">MbSurface</a>&amp; CreatePipeSurface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>spine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>spineDirection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>samec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>samed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать кинематическую поверхность. </p>
+<p>Создать кинематическую поверхность.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spine</td><td>- Направляющая кривая</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spineDirection</td><td>- Направляющая кривая для направляющей кривой</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">samec</td><td>- Признак использования оригинала образующей кривой, а не копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sames</td><td>- Признак использования оригинала направляющей кривой, а не копии</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">samed</td><td>- Признак использования оригинала кривой spineDirection, а не копии</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает созданную поверхность. </dd></dl>
+
+</div>
+</div>
+<a id="gaf088c171c14e7e59f8bc7b50effd4a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf088c171c14e7e59f8bc7b50effd4a01">&#9670;&nbsp;</a></span>Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_surface.html">MbSurface</a>* MbExplorationSurface::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_spine.html">MbSpine</a> &amp;&#160;</td>
+          <td class="paramname"><em>spine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>samec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_function.html">MbFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>_scaling</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_function.html">MbFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>_winding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать кинематическую поверхность. </p>
+<p>Создать кинематическую поверхность.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Образующая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spine</td><td>- Направляющая кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">samec</td><td>- Признак использования оригинала образующей кривой, а не копии.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_scaling</td><td>- Функция масштабирования образующей кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_winding</td><td>- Функция вращения образующей кривой.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает созданную поверхность. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

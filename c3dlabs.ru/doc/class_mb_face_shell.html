@@ -1,0 +1,2056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbFaceShell</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_face_shell.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_mb_face_shell-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbFaceShell<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___items.html">Геометрические объекты</a> &raquo; <a class="el" href="group___topology___items.html">Топологические объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Множество граней или оболочка.  
+ <a href="class_mb_face_shell.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;topology_faceset.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbFaceShell:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_face_shell__inherit__graph.svg" width="268" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbFaceShell:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_mb_face_shell__coll__graph.svg" width="100%" height="518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_face_shell_1_1_mb_face_shell_auxiliary_data.html">MbFaceShellAuxiliaryData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательные данные для множества граней.  <a href="struct_mb_face_shell_1_1_mb_face_shell_auxiliary_data.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a0cce4a94be9df104308dcddd8a0303a7"><td class="memItemLeft" align="right" valign="top"><a id="a0cce4a94be9df104308dcddd8a0303a7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a0cce4a94be9df104308dcddd8a0303a7">MbFaceShell</a> ()</td></tr>
+<tr class="memdesc:a0cce4a94be9df104308dcddd8a0303a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:a0cce4a94be9df104308dcddd8a0303a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac128be4580bb90dcfe33eb6b2021ae5c"><td class="memTemplParams" colspan="2"><a id="ac128be4580bb90dcfe33eb6b2021ae5c"></a>
+template&lt;class FacesVector &gt; </td></tr>
+<tr class="memitem:ac128be4580bb90dcfe33eb6b2021ae5c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac128be4580bb90dcfe33eb6b2021ae5c">MbFaceShell</a> (const FacesVector &amp;initFaces)</td></tr>
+<tr class="memdesc:ac128be4580bb90dcfe33eb6b2021ae5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по набору граней. <br /></td></tr>
+<tr class="separator:ac128be4580bb90dcfe33eb6b2021ae5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed2701bc83c61b607dfb81fd41b6787"><td class="memItemLeft" align="right" valign="top"><a id="a4ed2701bc83c61b607dfb81fd41b6787"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a4ed2701bc83c61b607dfb81fd41b6787">MbFaceShell</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;face)</td></tr>
+<tr class="memdesc:a4ed2701bc83c61b607dfb81fd41b6787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по грани. <br /></td></tr>
+<tr class="separator:a4ed2701bc83c61b607dfb81fd41b6787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9674a4bfe3b658b0881b86cab85296a"><td class="memItemLeft" align="right" valign="top"><a id="ae9674a4bfe3b658b0881b86cab85296a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ae9674a4bfe3b658b0881b86cab85296a">MbFaceShell</a> (const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;init)</td></tr>
+<tr class="memdesc:ae9674a4bfe3b658b0881b86cab85296a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по граням другой оболочки. <br /></td></tr>
+<tr class="separator:ae9674a4bfe3b658b0881b86cab85296a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7895315a1a244ee982ad39b8ae6b72ad"><td class="memItemLeft" align="right" valign="top"><a id="a7895315a1a244ee982ad39b8ae6b72ad"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7895315a1a244ee982ad39b8ae6b72ad">~MbFaceShell</a> ()</td></tr>
+<tr class="memdesc:a7895315a1a244ee982ad39b8ae6b72ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a7895315a1a244ee982ad39b8ae6b72ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a47630de8f0a78d5547d9e82d7a205"><td class="memItemLeft" align="right" valign="top"><a id="ac5a47630de8f0a78d5547d9e82d7a205"></a>
+<a class="el" href="group___topology___items.html#gae3d982b676a82de0b9154d19d3bec78f">MbeTopologyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac5a47630de8f0a78d5547d9e82d7a205">IsA</a> () const override</td></tr>
+<tr class="memdesc:ac5a47630de8f0a78d5547d9e82d7a205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функции оболочки. <br /></td></tr>
+<tr class="separator:ac5a47630de8f0a78d5547d9e82d7a205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4a8ce16c11313ef465e9c7f92b8ee6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_face_shell.html">MbFaceShell</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a5c4a8ce16c11313ef465e9c7f92b8ee6">Copy</a> (<a class="el" href="group___data___structures.html#ga7c08af1e254cba91e7babf2b2a6c8bb5">MbeCopyMode</a> sameShell, <a class="el" href="class_mb_shell_history.html">MbShellHistory</a> *history=nullptr, <a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:a5c4a8ce16c11313ef465e9c7f92b8ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию.  <a href="class_mb_face_shell.html#a5c4a8ce16c11313ef465e9c7f92b8ee6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5c4a8ce16c11313ef465e9c7f92b8ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc97bfc1ec2b24f5630b93f4c455d2b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_face_shell.html">MbFaceShell</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#abc97bfc1ec2b24f5630b93f4c455d2b2">Duplicate</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *iReg=nullptr) const</td></tr>
+<tr class="memdesc:abc97bfc1ec2b24f5630b93f4c455d2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию.  <a href="class_mb_face_shell.html#abc97bfc1ec2b24f5630b93f4c455d2b2">Подробнее...</a><br /></td></tr>
+<tr class="separator:abc97bfc1ec2b24f5630b93f4c455d2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4261ce97796fad44be5f1aa245060c0b"><td class="memItemLeft" align="right" valign="top"><a id="a4261ce97796fad44be5f1aa245060c0b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a4261ce97796fad44be5f1aa245060c0b">IsClosed</a> () const</td></tr>
+<tr class="memdesc:a4261ce97796fad44be5f1aa245060c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Замкнутая ли оболочка? <br /></td></tr>
+<tr class="separator:a4261ce97796fad44be5f1aa245060c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af335343e1e323ad3dd4afdc9f1311a5a"><td class="memItemLeft" align="right" valign="top"><a id="af335343e1e323ad3dd4afdc9f1311a5a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af335343e1e323ad3dd4afdc9f1311a5a">SetClosed</a> (bool c)</td></tr>
+<tr class="memdesc:af335343e1e323ad3dd4afdc9f1311a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить (не)замкнутость оболочки. <br /></td></tr>
+<tr class="separator:af335343e1e323ad3dd4afdc9f1311a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4453a657f73ee1c9be3e161fe10ef7d0"><td class="memItemLeft" align="right" valign="top"><a id="a4453a657f73ee1c9be3e161fe10ef7d0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a4453a657f73ee1c9be3e161fe10ef7d0">GetFacesCount</a> () const</td></tr>
+<tr class="memdesc:a4453a657f73ee1c9be3e161fe10ef7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество граней. <br /></td></tr>
+<tr class="separator:a4453a657f73ee1c9be3e161fe10ef7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa736e6bfec3e17e7697518c52914ab34"><td class="memItemLeft" align="right" valign="top"><a id="aa736e6bfec3e17e7697518c52914ab34"></a>
+ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aa736e6bfec3e17e7697518c52914ab34">GetFacesMaxIndex</a> () const</td></tr>
+<tr class="memdesc:aa736e6bfec3e17e7697518c52914ab34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать максимальный индекс грани. <br /></td></tr>
+<tr class="separator:aa736e6bfec3e17e7697518c52914ab34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5df864acf211136945f38729442e76"><td class="memItemLeft" align="right" valign="top"><a id="aab5df864acf211136945f38729442e76"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aab5df864acf211136945f38729442e76">AddFace</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;)</td></tr>
+<tr class="memdesc:aab5df864acf211136945f38729442e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить грань в оболочку. <br /></td></tr>
+<tr class="separator:aab5df864acf211136945f38729442e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9beecdb3b0b4547d329b9deb893e1ad4"><td class="memTemplParams" colspan="2"><a id="a9beecdb3b0b4547d329b9deb893e1ad4"></a>
+template&lt;class FacesVector &gt; </td></tr>
+<tr class="memitem:a9beecdb3b0b4547d329b9deb893e1ad4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a9beecdb3b0b4547d329b9deb893e1ad4">AddFaces</a> (const FacesVector &amp;newFaces, bool justAdd)</td></tr>
+<tr class="memdesc:a9beecdb3b0b4547d329b9deb893e1ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить грани в оболочку. <br /></td></tr>
+<tr class="separator:a9beecdb3b0b4547d329b9deb893e1ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5fd389d444e61d19b67e3f136d1997"><td class="memItemLeft" align="right" valign="top"><a id="a3b5fd389d444e61d19b67e3f136d1997"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a3b5fd389d444e61d19b67e3f136d1997">InsertFace</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, const <a class="el" href="class_mb_face.html">MbFace</a> &amp;)</td></tr>
+<tr class="memdesc:a3b5fd389d444e61d19b67e3f136d1997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставить грань перед гранью с заданным индексом. <br /></td></tr>
+<tr class="separator:a3b5fd389d444e61d19b67e3f136d1997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba570d8a1e3140fd5d0af238c4da94c"><td class="memItemLeft" align="right" valign="top"><a id="aeba570d8a1e3140fd5d0af238c4da94c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aeba570d8a1e3140fd5d0af238c4da94c">ChangeFace</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, const <a class="el" href="class_mb_face.html">MbFace</a> &amp;)</td></tr>
+<tr class="memdesc:aeba570d8a1e3140fd5d0af238c4da94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменить грань с заданным индексом. <br /></td></tr>
+<tr class="separator:aeba570d8a1e3140fd5d0af238c4da94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec4fc8ea245fc9b8d354e8888269ab6"><td class="memItemLeft" align="right" valign="top"><a id="a5ec4fc8ea245fc9b8d354e8888269ab6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a5ec4fc8ea245fc9b8d354e8888269ab6">DeleteFace</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memdesc:a5ec4fc8ea245fc9b8d354e8888269ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить грань с заданным индексом. <br /></td></tr>
+<tr class="separator:a5ec4fc8ea245fc9b8d354e8888269ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea173556b327c0045fbcddfac52224d"><td class="memItemLeft" align="right" valign="top"><a id="a7ea173556b327c0045fbcddfac52224d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7ea173556b327c0045fbcddfac52224d">DeleteFace</a> (const <a class="el" href="class_mb_face.html">MbFace</a> *)</td></tr>
+<tr class="memdesc:a7ea173556b327c0045fbcddfac52224d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить грань. <br /></td></tr>
+<tr class="separator:a7ea173556b327c0045fbcddfac52224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d75a4c46149f1f3d24b8d38f4fe68d"><td class="memItemLeft" align="right" valign="top"><a id="a31d75a4c46149f1f3d24b8d38f4fe68d"></a>
+<a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a31d75a4c46149f1f3d24b8d38f4fe68d">DetachFace</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memdesc:a31d75a4c46149f1f3d24b8d38f4fe68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить грань от оболочки с заданным индексом. <br /></td></tr>
+<tr class="separator:a31d75a4c46149f1f3d24b8d38f4fe68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883c3cf17939051e51e34366c35711b2"><td class="memItemLeft" align="right" valign="top"><a id="a883c3cf17939051e51e34366c35711b2"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a883c3cf17939051e51e34366c35711b2">DetachFace</a> (const <a class="el" href="class_mb_face.html">MbFace</a> *)</td></tr>
+<tr class="memdesc:a883c3cf17939051e51e34366c35711b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить грань. <br /></td></tr>
+<tr class="separator:a883c3cf17939051e51e34366c35711b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc583f2d5d76d4cd68528b7cdd6e6af4"><td class="memItemLeft" align="right" valign="top"><a id="afc583f2d5d76d4cd68528b7cdd6e6af4"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#afc583f2d5d76d4cd68528b7cdd6e6af4">DeleteFaces</a> ()</td></tr>
+<tr class="memdesc:afc583f2d5d76d4cd68528b7cdd6e6af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить все грани оболочки. <br /></td></tr>
+<tr class="separator:afc583f2d5d76d4cd68528b7cdd6e6af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60720b7db57d081831854cc0ae23f0e4"><td class="memItemLeft" align="right" valign="top"><a id="a60720b7db57d081831854cc0ae23f0e4"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a60720b7db57d081831854cc0ae23f0e4">DetachFaces</a> ()</td></tr>
+<tr class="memdesc:a60720b7db57d081831854cc0ae23f0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить все грани оболочки. <br /></td></tr>
+<tr class="separator:a60720b7db57d081831854cc0ae23f0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff69075c6b726e2d47edeb050cce780"><td class="memTemplParams" colspan="2"><a id="afff69075c6b726e2d47edeb050cce780"></a>
+template&lt;class FacesVector &gt; </td></tr>
+<tr class="memitem:afff69075c6b726e2d47edeb050cce780"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#afff69075c6b726e2d47edeb050cce780">DetachFaces</a> (FacesVector &amp;detachFaces)</td></tr>
+<tr class="memdesc:afff69075c6b726e2d47edeb050cce780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсоединить все грани оболочки. <br /></td></tr>
+<tr class="separator:afff69075c6b726e2d47edeb050cce780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b05ecf592b47f398fc3d420fda4cf60"><td class="memItemLeft" align="right" valign="top"><a id="a0b05ecf592b47f398fc3d420fda4cf60"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a0b05ecf592b47f398fc3d420fda4cf60">ExchangeFaces</a> (size_t i1, size_t i2)</td></tr>
+<tr class="memdesc:a0b05ecf592b47f398fc3d420fda4cf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять местами грани оболочки. <br /></td></tr>
+<tr class="separator:a0b05ecf592b47f398fc3d420fda4cf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4b3ee8176b76e2a7e0cdd2e03f74d8"><td class="memItemLeft" align="right" valign="top"><a id="ade4b3ee8176b76e2a7e0cdd2e03f74d8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ade4b3ee8176b76e2a7e0cdd2e03f74d8">MakeRight</a> (bool setBounds=false)</td></tr>
+<tr class="memdesc:ade4b3ee8176b76e2a7e0cdd2e03f74d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить правильную (текущую) информацию в ребрах о соединяемых ими гранях и параметры поверхностей по данным циклов граней (setBounds = true). <br /></td></tr>
+<tr class="separator:ade4b3ee8176b76e2a7e0cdd2e03f74d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add99a49614b634b7a48f20eabc331071"><td class="memItemLeft" align="right" valign="top"><a id="add99a49614b634b7a48f20eabc331071"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#add99a49614b634b7a48f20eabc331071">UpdateBoundary</a> ()</td></tr>
+<tr class="memdesc:add99a49614b634b7a48f20eabc331071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить оболочку на наличие краевых рёбер. <br /></td></tr>
+<tr class="separator:add99a49614b634b7a48f20eabc331071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f73b5550bd100c159eed6ecca8a050"><td class="memItemLeft" align="right" valign="top"><a id="a95f73b5550bd100c159eed6ecca8a050"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a95f73b5550bd100c159eed6ecca8a050">IsRight</a> () const</td></tr>
+<tr class="memdesc:a95f73b5550bd100c159eed6ecca8a050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Верно ли установлены указатели в ребрах на соединяемые ими грани. <br /></td></tr>
+<tr class="separator:a95f73b5550bd100c159eed6ecca8a050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2783869a7af78c4f31094ffbe2c4d465"><td class="memItemLeft" align="right" valign="top"><a id="a2783869a7af78c4f31094ffbe2c4d465"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a2783869a7af78c4f31094ffbe2c4d465">SetNullToFace</a> (const <a class="el" href="class_mb_face.html">MbFace</a> *delFace)</td></tr>
+<tr class="memdesc:a2783869a7af78c4f31094ffbe2c4d465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обнулить указатели в ребрах на отсутствующую в оболочке грань. <br /></td></tr>
+<tr class="separator:a2783869a7af78c4f31094ffbe2c4d465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b79a26004967df0e87bb8ef0cc0ae6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aa8b79a26004967df0e87bb8ef0cc0ae6">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matr, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:aa8b79a26004967df0e87bb8ef0cc0ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать согласно матрице.  <a href="class_mb_face_shell.html#aa8b79a26004967df0e87bb8ef0cc0ae6">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa8b79a26004967df0e87bb8ef0cc0ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9bde4289ceff91c2d833bb0ae16106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a0c9bde4289ceff91c2d833bb0ae16106">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;to, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:a0c9bde4289ceff91c2d833bb0ae16106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль вектора.  <a href="class_mb_face_shell.html#a0c9bde4289ceff91c2d833bb0ae16106">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0c9bde4289ceff91c2d833bb0ae16106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207a25709b4d3cf92853aa2767bec574"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a207a25709b4d3cf92853aa2767bec574">Rotate</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;axis, double angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)</td></tr>
+<tr class="memdesc:a207a25709b4d3cf92853aa2767bec574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг оси.  <a href="class_mb_face_shell.html#a207a25709b4d3cf92853aa2767bec574">Подробнее...</a><br /></td></tr>
+<tr class="separator:a207a25709b4d3cf92853aa2767bec574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796161ed7a7355edd52514d8c570e407"><td class="memItemLeft" align="right" valign="top"><a id="a796161ed7a7355edd52514d8c570e407"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a796161ed7a7355edd52514d8c570e407">DistanceToPoint</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;to) const</td></tr>
+<tr class="memdesc:a796161ed7a7355edd52514d8c570e407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать расстояние до точки. <br /></td></tr>
+<tr class="separator:a796161ed7a7355edd52514d8c570e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1799781b95883d8718f77dc76b03dad2"><td class="memItemLeft" align="right" valign="top"><a id="a1799781b95883d8718f77dc76b03dad2"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a1799781b95883d8718f77dc76b03dad2">Reverse</a> ()</td></tr>
+<tr class="memdesc:a1799781b95883d8718f77dc76b03dad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывернуть оболочку наизнанку - переориентировать все грани. <br /></td></tr>
+<tr class="separator:a1799781b95883d8718f77dc76b03dad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc8615f66d4f2f20ace8d85c10221b8"><td class="memItemLeft" align="right" valign="top"><a id="a4fc8615f66d4f2f20ace8d85c10221b8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a4fc8615f66d4f2f20ace8d85c10221b8">IsSame</a> (const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;faces, double accuracy) const</td></tr>
+<tr class="memdesc:a4fc8615f66d4f2f20ace8d85c10221b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными. <br /></td></tr>
+<tr class="separator:a4fc8615f66d4f2f20ace8d85c10221b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9675517d7d067285513e5029c6c29d3a"><td class="memItemLeft" align="right" valign="top"><a id="a9675517d7d067285513e5029c6c29d3a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a9675517d7d067285513e5029c6c29d3a">IsSameFaces</a> (const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;faces, double accuracy) const</td></tr>
+<tr class="memdesc:a9675517d7d067285513e5029c6c29d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Содержат ли оболочки идентичные грани. <br /></td></tr>
+<tr class="separator:a9675517d7d067285513e5029c6c29d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6989b0a8f6477b8a397cdaed844ba0"><td class="memItemLeft" align="right" valign="top"><a id="a9a6989b0a8f6477b8a397cdaed844ba0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a9a6989b0a8f6477b8a397cdaed844ba0">SetLabelThrough</a> (<a class="el" href="group___data___structures.html#ga00f1594de7a992101498b0a905ebcef7">MbeLabelState</a>, <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *=nullptr) const</td></tr>
+<tr class="memdesc:a9a6989b0a8f6477b8a397cdaed844ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить метки всем объектам, имеющим таковые. <br /></td></tr>
+<tr class="separator:a9a6989b0a8f6477b8a397cdaed844ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10de30cc0bda27d6a16277f37131734a"><td class="memItemLeft" align="right" valign="top"><a id="a10de30cc0bda27d6a16277f37131734a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a10de30cc0bda27d6a16277f37131734a">SetLabelThrough</a> (<a class="el" href="group___data___structures.html#ga00f1594de7a992101498b0a905ebcef7">MbeLabelState</a>, <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *, bool) const</td></tr>
+<tr class="memdesc:a10de30cc0bda27d6a16277f37131734a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить метки всем объектам, имеющим таковые. <br /></td></tr>
+<tr class="separator:a10de30cc0bda27d6a16277f37131734a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505df9b4ebf9c22d965016c2363b1db1"><td class="memItemLeft" align="right" valign="top"><a id="a505df9b4ebf9c22d965016c2363b1db1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a505df9b4ebf9c22d965016c2363b1db1">RemovePrivateLabelThrough</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *) const</td></tr>
+<tr class="memdesc:a505df9b4ebf9c22d965016c2363b1db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить частные метки всем объектам, имеющим таковые. <br /></td></tr>
+<tr class="separator:a505df9b4ebf9c22d965016c2363b1db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4596134bd07c52410a48b6d3ca044b72"><td class="memItemLeft" align="right" valign="top"><a id="a4596134bd07c52410a48b6d3ca044b72"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a4596134bd07c52410a48b6d3ca044b72">SetOwnChangedThrough</a> (<a class="el" href="group___topology___items.html#gad98e191b04fad6277caf12e804fb9b65">MbeChangedType</a> n)</td></tr>
+<tr class="memdesc:a4596134bd07c52410a48b6d3ca044b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить флаги изменённости объектов. <br /></td></tr>
+<tr class="separator:a4596134bd07c52410a48b6d3ca044b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5b7ab7b27bcd025557cae348d929de"><td class="memItemLeft" align="right" valign="top"><a id="a7b5b7ab7b27bcd025557cae348d929de"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7b5b7ab7b27bcd025557cae348d929de">ResetFlags</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *=nullptr)</td></tr>
+<tr class="memdesc:a7b5b7ab7b27bcd025557cae348d929de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить флаги в начальное состояние. <br /></td></tr>
+<tr class="separator:a7b5b7ab7b27bcd025557cae348d929de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f023e871858dc5849c4acac6563904"><td class="memItemLeft" align="right" valign="top"><a id="a67f023e871858dc5849c4acac6563904"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a67f023e871858dc5849c4acac6563904">UnionWith</a> (<a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;faces, c3d::FacesSet *sharedSet=nullptr)</td></tr>
+<tr class="memdesc:a67f023e871858dc5849c4acac6563904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Забрать в оболочку множество граней из оболочки faces. <br /></td></tr>
+<tr class="separator:a67f023e871858dc5849c4acac6563904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76c10721970b752b70406697625dd98"><td class="memItemLeft" align="right" valign="top"><a id="af76c10721970b752b70406697625dd98"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af76c10721970b752b70406697625dd98">SetVerticesLabel</a> (<a class="el" href="group___data___structures.html#ga00f1594de7a992101498b0a905ebcef7">MbeLabelState</a>, <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *=nullptr) const</td></tr>
+<tr class="memdesc:af76c10721970b752b70406697625dd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить заданную метку всем вершинам оболочки. <br /></td></tr>
+<tr class="separator:af76c10721970b752b70406697625dd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e442b0d7c9ff62487a1c854e17e7f8"><td class="memItemLeft" align="right" valign="top"><a id="ad2e442b0d7c9ff62487a1c854e17e7f8"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ad2e442b0d7c9ff62487a1c854e17e7f8">SetEdgesLabel</a> (<a class="el" href="group___data___structures.html#ga00f1594de7a992101498b0a905ebcef7">MbeLabelState</a>, <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *=nullptr) const</td></tr>
+<tr class="memdesc:ad2e442b0d7c9ff62487a1c854e17e7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить заданную метку всем рёбрам оболочки. <br /></td></tr>
+<tr class="separator:ad2e442b0d7c9ff62487a1c854e17e7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d73b3a1f77b50031cb2daf85563028"><td class="memItemLeft" align="right" valign="top"><a id="a18d73b3a1f77b50031cb2daf85563028"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a18d73b3a1f77b50031cb2daf85563028">SetFacesLabel</a> (<a class="el" href="group___data___structures.html#ga00f1594de7a992101498b0a905ebcef7">MbeLabelState</a>, <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *=nullptr) const</td></tr>
+<tr class="memdesc:a18d73b3a1f77b50031cb2daf85563028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить заданную метку всем граням оболочки. <br /></td></tr>
+<tr class="separator:a18d73b3a1f77b50031cb2daf85563028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0262111d0a3a4126732b1994196075"><td class="memTemplParams" colspan="2"><a id="afb0262111d0a3a4126732b1994196075"></a>
+template&lt;class VerticesVector &gt; </td></tr>
+<tr class="memitem:afb0262111d0a3a4126732b1994196075"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#afb0262111d0a3a4126732b1994196075">GetVertices</a> (VerticesVector &amp;) const</td></tr>
+<tr class="memdesc:afb0262111d0a3a4126732b1994196075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество вершин оболочки. <br /></td></tr>
+<tr class="separator:afb0262111d0a3a4126732b1994196075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa27c86531f1a7146d4dc180187cee474"><td class="memTemplParams" colspan="2"><a id="aa27c86531f1a7146d4dc180187cee474"></a>
+template&lt;class EdgesSet &gt; </td></tr>
+<tr class="memitem:aa27c86531f1a7146d4dc180187cee474"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aa27c86531f1a7146d4dc180187cee474">GetEdgesSet</a> (EdgesSet &amp;edges) const</td></tr>
+<tr class="memdesc:aa27c86531f1a7146d4dc180187cee474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество ребер оболочки. <br /></td></tr>
+<tr class="separator:aa27c86531f1a7146d4dc180187cee474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add636bd97987f2b9c55e9050405e16a0"><td class="memTemplParams" colspan="2"><a id="add636bd97987f2b9c55e9050405e16a0"></a>
+template&lt;class EdgesVector , class EdgesSet &gt; </td></tr>
+<tr class="memitem:add636bd97987f2b9c55e9050405e16a0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#add636bd97987f2b9c55e9050405e16a0">GetEdges</a> (EdgesVector &amp;edges, EdgesSet &amp;edgesCache) const</td></tr>
+<tr class="memdesc:add636bd97987f2b9c55e9050405e16a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество уникальных ребер оболочки. <br /></td></tr>
+<tr class="separator:add636bd97987f2b9c55e9050405e16a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9465e3ac26ae46f66d3bfb966da51a"><td class="memTemplParams" colspan="2"><a id="a8e9465e3ac26ae46f66d3bfb966da51a"></a>
+template&lt;class EdgesVector &gt; </td></tr>
+<tr class="memitem:a8e9465e3ac26ae46f66d3bfb966da51a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a8e9465e3ac26ae46f66d3bfb966da51a">GetEdges</a> (EdgesVector &amp;edges) const</td></tr>
+<tr class="memdesc:a8e9465e3ac26ae46f66d3bfb966da51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество ребер оболочки. <br /></td></tr>
+<tr class="separator:a8e9465e3ac26ae46f66d3bfb966da51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b67878a108a544720f0311b51aed22"><td class="memTemplParams" colspan="2"><a id="a42b67878a108a544720f0311b51aed22"></a>
+template&lt;class FacesVector &gt; </td></tr>
+<tr class="memitem:a42b67878a108a544720f0311b51aed22"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a42b67878a108a544720f0311b51aed22">GetFaces</a> (FacesVector &amp;faces) const</td></tr>
+<tr class="memdesc:a42b67878a108a544720f0311b51aed22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество граней оболочки. <br /></td></tr>
+<tr class="separator:a42b67878a108a544720f0311b51aed22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565ff7b30dfeb940b91aa4df48f778f3"><td class="memTemplParams" colspan="2"><a id="a565ff7b30dfeb940b91aa4df48f778f3"></a>
+template&lt;class FacesSet &gt; </td></tr>
+<tr class="memitem:a565ff7b30dfeb940b91aa4df48f778f3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a565ff7b30dfeb940b91aa4df48f778f3">GetFacesSet</a> (FacesSet &amp;faces) const</td></tr>
+<tr class="memdesc:a565ff7b30dfeb940b91aa4df48f778f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество граней оболочки. <br /></td></tr>
+<tr class="separator:a565ff7b30dfeb940b91aa4df48f778f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ddd58f32013649b10f8c43c28eee00"><td class="memTemplParams" colspan="2"><a id="a50ddd58f32013649b10f8c43c28eee00"></a>
+template&lt;class VerticesVector , class EdgesVector &gt; </td></tr>
+<tr class="memitem:a50ddd58f32013649b10f8c43c28eee00"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a50ddd58f32013649b10f8c43c28eee00">GetItems</a> (VerticesVector &amp;vertices, EdgesVector &amp;edges) const</td></tr>
+<tr class="memdesc:a50ddd58f32013649b10f8c43c28eee00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество вершин и множество ребер оболочки. <br /></td></tr>
+<tr class="separator:a50ddd58f32013649b10f8c43c28eee00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d45a221b39c33bb74764d2cb2a7983"><td class="memTemplParams" colspan="2"><a id="af2d45a221b39c33bb74764d2cb2a7983"></a>
+template&lt;class TopologyItemsVector &gt; </td></tr>
+<tr class="memitem:af2d45a221b39c33bb74764d2cb2a7983"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af2d45a221b39c33bb74764d2cb2a7983">GetItems</a> (TopologyItemsVector &amp;) const</td></tr>
+<tr class="memdesc:af2d45a221b39c33bb74764d2cb2a7983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать множество вершин, множество ребер и множество граней оболочки. <br /></td></tr>
+<tr class="separator:af2d45a221b39c33bb74764d2cb2a7983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c308e1732293095bc792249524fd6c"><td class="memItemLeft" align="right" valign="top"><a id="ac4c308e1732293095bc792249524fd6c"></a>
+<a class="el" href="class_mb_vertex.html">MbVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac4c308e1732293095bc792249524fd6c">GetVertex</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:ac4c308e1732293095bc792249524fd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать вершину по индексу. <br /></td></tr>
+<tr class="separator:ac4c308e1732293095bc792249524fd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df5d9cd58673d573726275795d62238"><td class="memItemLeft" align="right" valign="top"><a id="a5df5d9cd58673d573726275795d62238"></a>
+<a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a5df5d9cd58673d573726275795d62238">GetEdge</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:a5df5d9cd58673d573726275795d62238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать ребро по индексу. <br /></td></tr>
+<tr class="separator:a5df5d9cd58673d573726275795d62238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2fc3781efc169a57cbf8c9d1db4640"><td class="memItemLeft" align="right" valign="top"><a id="a1a2fc3781efc169a57cbf8c9d1db4640"></a>
+<a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a1a2fc3781efc169a57cbf8c9d1db4640">GetFace</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:a1a2fc3781efc169a57cbf8c9d1db4640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать грань по индексу. <br /></td></tr>
+<tr class="separator:a1a2fc3781efc169a57cbf8c9d1db4640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83207d7f0f76de24603b94835d64e1b"><td class="memItemLeft" align="right" valign="top"><a id="ad83207d7f0f76de24603b94835d64e1b"></a>
+<a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ad83207d7f0f76de24603b94835d64e1b">_GetFace</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:ad83207d7f0f76de24603b94835d64e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать грань по индексу без проверки корректности индекса. <br /></td></tr>
+<tr class="separator:ad83207d7f0f76de24603b94835d64e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f921f7966a02af0523c02c6840d91e"><td class="memItemLeft" align="right" valign="top"><a id="ac8f921f7966a02af0523c02c6840d91e"></a>
+const <a class="el" href="class_mb_surface.html">MbSurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac8f921f7966a02af0523c02c6840d91e">GetSurface</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:ac8f921f7966a02af0523c02c6840d91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать поверхность грани по индексу. <br /></td></tr>
+<tr class="separator:ac8f921f7966a02af0523c02c6840d91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e390726d7199312ee23ab84ec59751"><td class="memItemLeft" align="right" valign="top"><a id="ae5e390726d7199312ee23ab84ec59751"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ae5e390726d7199312ee23ab84ec59751">GetVertexIndex</a> (const <a class="el" href="class_mb_vertex.html">MbVertex</a> &amp;vertex) const</td></tr>
+<tr class="memdesc:ae5e390726d7199312ee23ab84ec59751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать индекс вершины. <br /></td></tr>
+<tr class="separator:ae5e390726d7199312ee23ab84ec59751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb96fa1bee2b5b25733935b2ca2fe0d"><td class="memItemLeft" align="right" valign="top"><a id="a7fb96fa1bee2b5b25733935b2ca2fe0d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7fb96fa1bee2b5b25733935b2ca2fe0d">GetEdgeIndex</a> (const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &amp;edge) const</td></tr>
+<tr class="memdesc:a7fb96fa1bee2b5b25733935b2ca2fe0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать индекс ребра. <br /></td></tr>
+<tr class="separator:a7fb96fa1bee2b5b25733935b2ca2fe0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5e83912d9a292281cf785818c3760f"><td class="memItemLeft" align="right" valign="top"><a id="abb5e83912d9a292281cf785818c3760f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#abb5e83912d9a292281cf785818c3760f">GetFaceIndex</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;face) const</td></tr>
+<tr class="memdesc:abb5e83912d9a292281cf785818c3760f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать индекс грани. <br /></td></tr>
+<tr class="separator:abb5e83912d9a292281cf785818c3760f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b4222d3f6d96fdc092844bed6ec755"><td class="memItemLeft" align="right" valign="top"><a id="a66b4222d3f6d96fdc092844bed6ec755"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a66b4222d3f6d96fdc092844bed6ec755">Find</a> (const <a class="el" href="class_mb_face.html">MbFace</a> *face) const</td></tr>
+<tr class="memdesc:a66b4222d3f6d96fdc092844bed6ec755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти индекс грани в оболочке. <br /></td></tr>
+<tr class="separator:a66b4222d3f6d96fdc092844bed6ec755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef3c47af0745c0cc8733928aab406ea"><td class="memItemLeft" align="right" valign="top"><a id="a5ef3c47af0745c0cc8733928aab406ea"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a5ef3c47af0745c0cc8733928aab406ea">GetShellCount</a> () const</td></tr>
+<tr class="memdesc:a5ef3c47af0745c0cc8733928aab406ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить количество связных поверхностей, описываемых оболочкой. <br /></td></tr>
+<tr class="separator:a5ef3c47af0745c0cc8733928aab406ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f7c43259c802137a2a1b7fb5a967c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a78f7c43259c802137a2a1b7fb5a967c4">DistanceToShell</a> (const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;shell, double lowerLimitDistance, bool tillFirstLowerLimit, double epsilon, std::vector&lt; <a class="el" href="class_mb_shells_distance_data.html">MbShellsDistanceData</a> &gt; &amp;shellsDistanceData) const</td></tr>
+<tr class="memdesc:a78f7c43259c802137a2a1b7fb5a967c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить ближайшее расстояние до оболочки.  <a href="class_mb_face_shell.html#a78f7c43259c802137a2a1b7fb5a967c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a78f7c43259c802137a2a1b7fb5a967c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac909eae7eaac92fcbffe0a5e2423a20e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac909eae7eaac92fcbffe0a5e2423a20e">DistanceToBound</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pnt, double accuracy, <a class="el" href="class_mb_pnt_loc.html">MbPntLoc</a> &amp;finFaceData, <a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a> &amp;rShell) const</td></tr>
+<tr class="memdesc:ac909eae7eaac92fcbffe0a5e2423a20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить расстояния от точки до оболочки.  <a href="class_mb_face_shell.html#ac909eae7eaac92fcbffe0a5e2423a20e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac909eae7eaac92fcbffe0a5e2423a20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f5f5e472fedaf83d4e5cf42890eca0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a57f5f5e472fedaf83d4e5cf42890eca0">PointClassification</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pnt, double accuracy, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;shellPoint, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;shellNormal, <a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a> &amp;rShell) const</td></tr>
+<tr class="memdesc:a57f5f5e472fedaf83d4e5cf42890eca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить положение точки относительно оболочки.  <a href="class_mb_face_shell.html#a57f5f5e472fedaf83d4e5cf42890eca0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a57f5f5e472fedaf83d4e5cf42890eca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc4ed7dac96c538d62616201f08fde5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a1fc4ed7dac96c538d62616201f08fde5">PointClassification</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pnt, double accuracy, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;shellPoint, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;shellNormal, <a class="el" href="class_mb_pnt_loc.html">MbPntLoc</a> &amp;rShell) const</td></tr>
+<tr class="memdesc:a1fc4ed7dac96c538d62616201f08fde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить положение точки относительно оболочки.  <a href="class_mb_face_shell.html#a1fc4ed7dac96c538d62616201f08fde5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1fc4ed7dac96c538d62616201f08fde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fcd9c9ce09bea1c0c10e86e00c60c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ab1fcd9c9ce09bea1c0c10e86e00c60c3">PointOn</a> (size_t n, double &amp;u, double &amp;v, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:ab1fcd9c9ce09bea1c0c10e86e00c60c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить точку оболочки.  <a href="class_mb_face_shell.html#ab1fcd9c9ce09bea1c0c10e86e00c60c3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab1fcd9c9ce09bea1c0c10e86e00c60c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab962834d23106fe91723395d04333b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a1ab962834d23106fe91723395d04333b">Normal</a> (size_t n, double &amp;u, double &amp;v, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a1ab962834d23106fe91723395d04333b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить нормаль оболочки.  <a href="class_mb_face_shell.html#a1ab962834d23106fe91723395d04333b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1ab962834d23106fe91723395d04333b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bed4975ff2573b13a4664bfb604c68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a28bed4975ff2573b13a4664bfb604c68">NearPointProjection</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p, <a class="el" href="class_s_array.html">SArray</a>&lt; size_t &gt; &amp;nums, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;uv) const</td></tr>
+<tr class="memdesc:a28bed4975ff2573b13a4664bfb604c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти все проекции точки на оболочку.  <a href="class_mb_face_shell.html#a28bed4975ff2573b13a4664bfb604c68">Подробнее...</a><br /></td></tr>
+<tr class="separator:a28bed4975ff2573b13a4664bfb604c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4bf16d4ebcb0167817cd9dc63438e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#afd4bf16d4ebcb0167817cd9dc63438e2">NearPointProjection</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p, size_t &amp;faceIndex, double &amp;u, double &amp;v) const</td></tr>
+<tr class="memdesc:afd4bf16d4ebcb0167817cd9dc63438e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайшую проекцию точки на оболочку.  <a href="class_mb_face_shell.html#afd4bf16d4ebcb0167817cd9dc63438e2">Подробнее...</a><br /></td></tr>
+<tr class="separator:afd4bf16d4ebcb0167817cd9dc63438e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fc757e367b92dee4dac4473ba40736"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ad9fc757e367b92dee4dac4473ba40736">DirectPointProjection</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vect, <a class="el" href="class_s_array.html">SArray</a>&lt; size_t &gt; &amp;nums, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;uv) const</td></tr>
+<tr class="memdesc:ad9fc757e367b92dee4dac4473ba40736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти все проекции точки на оболочку вдоль вектора в любом из двух направлений.  <a href="class_mb_face_shell.html#ad9fc757e367b92dee4dac4473ba40736">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad9fc757e367b92dee4dac4473ba40736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac705de2825679b5712fc22fd7067cad8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac705de2825679b5712fc22fd7067cad8">NearDirectPointProjection</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p, size_t &amp;faceIndex, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vect, double &amp;u, double &amp;v, bool onlyPositiveDirection=false) const</td></tr>
+<tr class="memdesc:ac705de2825679b5712fc22fd7067cad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайшую проекцию точки на оболочку в направлении вектора.  <a href="class_mb_face_shell.html#ac705de2825679b5712fc22fd7067cad8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac705de2825679b5712fc22fd7067cad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d0990b0481bd509ac4ab4a2f73c86f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af4d0990b0481bd509ac4ab4a2f73c86f">DirectPointProjection</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vect) const</td></tr>
+<tr class="memdesc:af4d0990b0481bd509ac4ab4a2f73c86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Существует ли проекция в направлении вектора?  <a href="class_mb_face_shell.html#af4d0990b0481bd509ac4ab4a2f73c86f">Подробнее...</a><br /></td></tr>
+<tr class="separator:af4d0990b0481bd509ac4ab4a2f73c86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43fc19778ba5288ce77819b25dc04b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af43fc19778ba5288ce77819b25dc04b8">CurveIntersection</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, <a class="el" href="class_s_array.html">SArray</a>&lt; size_t &gt; &amp;nn, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;uv, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;tt) const</td></tr>
+<tr class="memdesc:af43fc19778ba5288ce77819b25dc04b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересечение оболочки и кривой.  <a href="class_mb_face_shell.html#af43fc19778ba5288ce77819b25dc04b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:af43fc19778ba5288ce77819b25dc04b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00126b7846ba2c467c6b9ea743d0b79b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a00126b7846ba2c467c6b9ea743d0b79b">AddYourGabaritTo</a> (<a class="el" href="class_mb_cube.html">MbCube</a> &amp;gab, <a class="el" href="namespacec3d.html#a834d3423fdc5965b53abc41aad9f9ba3">c3d::IndexCubeVector</a> *extTolCubes=nullptr) const</td></tr>
+<tr class="memdesc:a00126b7846ba2c467c6b9ea743d0b79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить свой габарит в габаритный куб.  <a href="class_mb_face_shell.html#a00126b7846ba2c467c6b9ea743d0b79b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a00126b7846ba2c467c6b9ea743d0b79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f56b82c4ada0631092c3f4920b60142"><td class="memItemLeft" align="right" valign="top"><a id="a6f56b82c4ada0631092c3f4920b60142"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a6f56b82c4ada0631092c3f4920b60142">CalculateGabarit</a> (<a class="el" href="class_mb_cube.html">MbCube</a> &amp;) const</td></tr>
+<tr class="memdesc:a6f56b82c4ada0631092c3f4920b60142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит оболочки. <br /></td></tr>
+<tr class="separator:a6f56b82c4ada0631092c3f4920b60142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21142fae5307b3eb77d9e4516da2fb5"><td class="memItemLeft" align="right" valign="top"><a id="af21142fae5307b3eb77d9e4516da2fb5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af21142fae5307b3eb77d9e4516da2fb5">CalculateLocalGabarit</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrToLocal, <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube) const</td></tr>
+<tr class="memdesc:af21142fae5307b3eb77d9e4516da2fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит в локальной системы координат, заданной матрицей matrToLocal преобразования в неё <br /></td></tr>
+<tr class="separator:af21142fae5307b3eb77d9e4516da2fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93dd9b1d03a1da808a871b2f8ed6d622"><td class="memItemLeft" align="right" valign="top"><a id="a93dd9b1d03a1da808a871b2f8ed6d622"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a93dd9b1d03a1da808a871b2f8ed6d622">CalculateLocalGabarit</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;localPlace, <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube) const</td></tr>
+<tr class="memdesc:a93dd9b1d03a1da808a871b2f8ed6d622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит в локальной системы координат localPlace. <br /></td></tr>
+<tr class="separator:a93dd9b1d03a1da808a871b2f8ed6d622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53b820ca7c45a6f58a838c9abb7c0c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aa53b820ca7c45a6f58a838c9abb7c0c2">CalculateMesh</a> (const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;note, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const</td></tr>
+<tr class="memdesc:aa53b820ca7c45a6f58a838c9abb7c0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить полигональную копию оболочки.  <a href="class_mb_face_shell.html#aa53b820ca7c45a6f58a838c9abb7c0c2">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa53b820ca7c45a6f58a838c9abb7c0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ca2db1c8c8ccd2ee111108273c0014"><td class="memItemLeft" align="right" valign="top"><a id="af5ca2db1c8c8ccd2ee111108273c0014"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af5ca2db1c8c8ccd2ee111108273c0014">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;)</td></tr>
+<tr class="memdesc:af5ca2db1c8c8ccd2ee111108273c0014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта. <br /></td></tr>
+<tr class="separator:af5ca2db1c8c8ccd2ee111108273c0014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6628ca7ffab7f771e9482844dda747"><td class="memItemLeft" align="right" valign="top"><a id="a7e6628ca7ffab7f771e9482844dda747"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7e6628ca7ffab7f771e9482844dda747">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;)</td></tr>
+<tr class="memdesc:a7e6628ca7ffab7f771e9482844dda747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить свойства объекта. <br /></td></tr>
+<tr class="separator:a7e6628ca7ffab7f771e9482844dda747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1515058746cfab4395117aa8270948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7a1515058746cfab4395117aa8270948">SetItemsMainName</a> (const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &amp;newNameMaker, bool addOldMainName)</td></tr>
+<tr class="memdesc:a7a1515058746cfab4395117aa8270948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить главное имя и вставить старое в индекс копирования.  <a href="class_mb_face_shell.html#a7a1515058746cfab4395117aa8270948">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7a1515058746cfab4395117aa8270948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad5bb22c48674f22499c12a2702c07d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7ad5bb22c48674f22499c12a2702c07d">SetNamesCopyIndex</a> (<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memdesc:a7ad5bb22c48674f22499c12a2702c07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставить индекс копирования.  <a href="class_mb_face_shell.html#a7ad5bb22c48674f22499c12a2702c07d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7ad5bb22c48674f22499c12a2702c07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6477566fb89ba9ca10d54fd4c80d6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aee6477566fb89ba9ca10d54fd4c80d6d">SetNamesCopyIndex</a> (<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &amp;newNameMaker)</td></tr>
+<tr class="memdesc:aee6477566fb89ba9ca10d54fd4c80d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменить главное имя, вставить старое главное имя и индекс копирования в индексы копирования.  <a href="class_mb_face_shell.html#aee6477566fb89ba9ca10d54fd4c80d6d">Подробнее...</a><br /></td></tr>
+<tr class="separator:aee6477566fb89ba9ca10d54fd4c80d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f64c8ef7be5fba5dde5f402d546f03d"><td class="memItemLeft" align="right" valign="top"><a id="a3f64c8ef7be5fba5dde5f402d546f03d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a3f64c8ef7be5fba5dde5f402d546f03d">MakeItemsNewNames</a> (const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &amp;, <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> modifier)</td></tr>
+<tr class="memdesc:a3f64c8ef7be5fba5dde5f402d546f03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить главное имя и модифицировать имена граней, рёбер и вершин для оболочки-копии для предотвращения совпадения имен нескольких копий. <br /></td></tr>
+<tr class="separator:a3f64c8ef7be5fba5dde5f402d546f03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34f721b326f192f8a90e1308e00c717"><td class="memItemLeft" align="right" valign="top"><a id="ad34f721b326f192f8a90e1308e00c717"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ad34f721b326f192f8a90e1308e00c717">MakeFacesNewNames</a> (const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &amp;, <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> modifier)</td></tr>
+<tr class="memdesc:ad34f721b326f192f8a90e1308e00c717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить главное имя и модифицировать имена граней для оболочки-копии для предотвращения совпадения имен нескольких копий. <br /></td></tr>
+<tr class="separator:ad34f721b326f192f8a90e1308e00c717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433b84de322945ee650ec8c3db72be82"><td class="memItemLeft" align="right" valign="top"><a id="a433b84de322945ee650ec8c3db72be82"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a433b84de322945ee650ec8c3db72be82">SetShellNames</a> (const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &amp;)</td></tr>
+<tr class="memdesc:a433b84de322945ee650ec8c3db72be82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проименовать грани, рёбра и вершины оболочки. <br /></td></tr>
+<tr class="separator:a433b84de322945ee650ec8c3db72be82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadc6b3cfac6cf79f2ee163f9b4adcde"><td class="memItemLeft" align="right" valign="top"><a id="aeadc6b3cfac6cf79f2ee163f9b4adcde"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aeadc6b3cfac6cf79f2ee163f9b4adcde">SetShellNames</a> (const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;)</td></tr>
+<tr class="memdesc:aeadc6b3cfac6cf79f2ee163f9b4adcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проименовать элементы оболочки именами оболочки s. <br /></td></tr>
+<tr class="separator:aeadc6b3cfac6cf79f2ee163f9b4adcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b59835819d56317a2b1ee14f9cb968"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ae8b59835819d56317a2b1ee14f9cb968">ClearShellNames</a> ()</td></tr>
+<tr class="memdesc:ae8b59835819d56317a2b1ee14f9cb968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить все имена в оболочке.  <a href="class_mb_face_shell.html#ae8b59835819d56317a2b1ee14f9cb968">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae8b59835819d56317a2b1ee14f9cb968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8519cf9c63aa52f8a0287a5bb1d0221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac8519cf9c63aa52f8a0287a5bb1d0221">ClearEdgesNames</a> (bool clearVerticesNames=true)</td></tr>
+<tr class="memdesc:ac8519cf9c63aa52f8a0287a5bb1d0221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить имена ребер в оболочке.  <a href="class_mb_face_shell.html#ac8519cf9c63aa52f8a0287a5bb1d0221">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac8519cf9c63aa52f8a0287a5bb1d0221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad0dc87964000fd919e7ce06aee6ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a8ad0dc87964000fd919e7ce06aee6ebc">CheckTopology</a> (<a class="el" href="class_mb_check_topology_params.html">MbCheckTopologyParams</a> &amp;checkParams)</td></tr>
+<tr class="memdesc:a8ad0dc87964000fd919e7ce06aee6ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка оболочки: вершин (удаление совпадающих и лишних), ребер (со слиянием).  <a href="class_mb_face_shell.html#a8ad0dc87964000fd919e7ce06aee6ebc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8ad0dc87964000fd919e7ce06aee6ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23435e1024806937cf8761dfad404a98"><td class="memItemLeft" align="right" valign="top"><a id="a23435e1024806937cf8761dfad404a98"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a23435e1024806937cf8761dfad404a98">CheckClosed</a> (bool checkChangedOnly=false)</td></tr>
+<tr class="memdesc:a23435e1024806937cf8761dfad404a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение замкнутости оболочки с модификацией флага. <br /></td></tr>
+<tr class="separator:a23435e1024806937cf8761dfad404a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3188a3143b05d721f227e444257b4a"><td class="memItemLeft" align="right" valign="top"><a id="aef3188a3143b05d721f227e444257b4a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aef3188a3143b05d721f227e444257b4a">MakeBoundaryCurve</a> ()</td></tr>
+<tr class="memdesc:aef3188a3143b05d721f227e444257b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти граничные рёбра и сделать граничными их кривые. <br /></td></tr>
+<tr class="separator:aef3188a3143b05d721f227e444257b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bed9be3eb08ffc7f595eacd71c888d8"><td class="memTemplParams" colspan="2"><a id="a5bed9be3eb08ffc7f595eacd71c888d8"></a>
+template&lt;class ConstEdgesVector &gt; </td></tr>
+<tr class="memitem:a5bed9be3eb08ffc7f595eacd71c888d8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a5bed9be3eb08ffc7f595eacd71c888d8">GetBoundaryEdges</a> (ConstEdgesVector &amp;) const</td></tr>
+<tr class="memdesc:a5bed9be3eb08ffc7f595eacd71c888d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить краевые ребра оболочки. <br /></td></tr>
+<tr class="separator:a5bed9be3eb08ffc7f595eacd71c888d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c8538a0ec65bad6a55318801e52c91"><td class="memTemplParams" colspan="2"><a id="a96c8538a0ec65bad6a55318801e52c91"></a>
+template&lt;class ConstEdgesSet &gt; </td></tr>
+<tr class="memitem:a96c8538a0ec65bad6a55318801e52c91"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a96c8538a0ec65bad6a55318801e52c91">GetBoundaryEdgesSet</a> (ConstEdgesSet &amp;) const</td></tr>
+<tr class="memdesc:a96c8538a0ec65bad6a55318801e52c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить краевые ребра оболочки. <br /></td></tr>
+<tr class="separator:a96c8538a0ec65bad6a55318801e52c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2118fdab13b42af3e0a72d7f4e6578"><td class="memTemplParams" colspan="2"><a id="a0d2118fdab13b42af3e0a72d7f4e6578"></a>
+template&lt;class CurvesArray , class IndexesArray &gt; </td></tr>
+<tr class="memitem:a0d2118fdab13b42af3e0a72d7f4e6578"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a0d2118fdab13b42af3e0a72d7f4e6578">FindFacesIndexByEdges</a> (const CurvesArray &amp;init, IndexesArray &amp;indexes, bool any=false) const</td></tr>
+<tr class="memdesc:a0d2118fdab13b42af3e0a72d7f4e6578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества ребер найти номера ребер и номера ее граней. <br /></td></tr>
+<tr class="separator:a0d2118fdab13b42af3e0a72d7f4e6578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96f572805145dae7e167893fe978ff0"><td class="memItemLeft" align="right" valign="top"><a id="ab96f572805145dae7e167893fe978ff0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ab96f572805145dae7e167893fe978ff0">FindFacesIndexByEdges</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &gt; &amp;init, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_edge_faces_indexes.html">MbEdgeFacesIndexes</a> &gt; &amp;indexes, bool any=false) const</td></tr>
+<tr class="memdesc:ab96f572805145dae7e167893fe978ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества ребер найти номера ребер и номера ее граней. <br /></td></tr>
+<tr class="separator:ab96f572805145dae7e167893fe978ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9fc88dac298e260a6e8a3b16ff5778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a2a9fc88dac298e260a6e8a3b16ff5778">FindFacesIndexByEdges</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_edge_function.html">MbEdgeFunction</a> &gt; &amp;init, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt; &amp;functions, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;slideways, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_edge_faces_indexes.html">MbEdgeFacesIndexes</a> &gt; &amp;indexes) const</td></tr>
+<tr class="memdesc:a2a9fc88dac298e260a6e8a3b16ff5778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества структур (ребер, функций изменения радиусов и опорных кривых скругления) найти номера ребер и номера смежных граней.  <a href="class_mb_face_shell.html#a2a9fc88dac298e260a6e8a3b16ff5778">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2a9fc88dac298e260a6e8a3b16ff5778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc61f55cd5159e79090cc4c8c0e2641"><td class="memTemplParams" colspan="2"><a id="affc61f55cd5159e79090cc4c8c0e2641"></a>
+template&lt;class EdgeFuncsArray , class FuncsArray , class CurvesArray , class IndexesArray &gt; </td></tr>
+<tr class="memitem:affc61f55cd5159e79090cc4c8c0e2641"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#affc61f55cd5159e79090cc4c8c0e2641">FindFacesIndexByEdges</a> (const EdgeFuncsArray &amp;init, FuncsArray &amp;functions, CurvesArray &amp;slideways, IndexesArray &amp;indexes) const</td></tr>
+<tr class="memdesc:affc61f55cd5159e79090cc4c8c0e2641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества структур (ребер, функций изменения радиусов и опорных кривых скругления) найти номера ребер и номера смежных граней. <br /></td></tr>
+<tr class="separator:affc61f55cd5159e79090cc4c8c0e2641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40df575f7d8a094e2a6928c9a8ee253e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a40df575f7d8a094e2a6928c9a8ee253e">FindEdgesByFacesIndex</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_edge_faces_indexes.html">MbEdgeFacesIndexes</a> &gt; &amp;indexes, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt; *functions, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; *slideways, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &gt; &amp;eEdges, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt; &amp;eFunctions, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;eSlideways) const</td></tr>
+<tr class="memdesc:a40df575f7d8a094e2a6928c9a8ee253e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества номеров ребер и номеров смежных граней найти ребра.  <a href="class_mb_face_shell.html#a40df575f7d8a094e2a6928c9a8ee253e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a40df575f7d8a094e2a6928c9a8ee253e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f44d284e61253a8b8fd65163a3d8633"><td class="memItemLeft" align="right" valign="top"><a id="a8f44d284e61253a8b8fd65163a3d8633"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a8f44d284e61253a8b8fd65163a3d8633">FindFacesIndexByEdge</a> (const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &amp;edge, size_t &amp;ind1, size_t &amp;ind2, bool any=false) const</td></tr>
+<tr class="memdesc:a8f44d284e61253a8b8fd65163a3d8633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти номера граней по ребру. <br /></td></tr>
+<tr class="separator:a8f44d284e61253a8b8fd65163a3d8633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9773144345ca8297d7eb6372ad7639e8"><td class="memTemplParams" colspan="2"><a id="a9773144345ca8297d7eb6372ad7639e8"></a>
+template&lt;class FacesPointersVector , class FacesIndicesVector &gt; </td></tr>
+<tr class="memitem:a9773144345ca8297d7eb6372ad7639e8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a9773144345ca8297d7eb6372ad7639e8">FindFacesIndexByFaces</a> (const FacesPointersVector &amp;, FacesIndicesVector &amp;, size_t mapThreshold=50) const</td></tr>
+<tr class="memdesc:a9773144345ca8297d7eb6372ad7639e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества граней найти множество их номеров. <br /></td></tr>
+<tr class="separator:a9773144345ca8297d7eb6372ad7639e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95fdbdd2be97bc774cfb2f126b8f16ca"><td class="memTemplParams" colspan="2"><a id="a95fdbdd2be97bc774cfb2f126b8f16ca"></a>
+template&lt;class FacesPointersVector , class ItemIndicesVector &gt; </td></tr>
+<tr class="memitem:a95fdbdd2be97bc774cfb2f126b8f16ca"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a95fdbdd2be97bc774cfb2f126b8f16ca">FindIndexByFaces</a> (const FacesPointersVector &amp;, ItemIndicesVector &amp;, size_t mapThreshold=50) const</td></tr>
+<tr class="memdesc:a95fdbdd2be97bc774cfb2f126b8f16ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества граней найти множество их комбинированных номеров. <br /></td></tr>
+<tr class="separator:a95fdbdd2be97bc774cfb2f126b8f16ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69554f75c51180401adb500c7164c1d"><td class="memTemplParams" colspan="2"><a id="ac69554f75c51180401adb500c7164c1d"></a>
+template&lt;class FacesPointersVector , class ItemIndices &gt; </td></tr>
+<tr class="memitem:ac69554f75c51180401adb500c7164c1d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac69554f75c51180401adb500c7164c1d">FindIndexBySameFaces</a> (const FacesPointersVector &amp;, ItemIndices &amp;, double accuracy=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const</td></tr>
+<tr class="memdesc:ac69554f75c51180401adb500c7164c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества граней найти множество их комбинированных номеров. <br /></td></tr>
+<tr class="separator:ac69554f75c51180401adb500c7164c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238b6030425124ea30207ad0a7ec7720"><td class="memTemplParams" colspan="2"><a id="a238b6030425124ea30207ad0a7ec7720"></a>
+template&lt;class ItemIndices , class ConstFacesPointersVector &gt; </td></tr>
+<tr class="memitem:a238b6030425124ea30207ad0a7ec7720"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a238b6030425124ea30207ad0a7ec7720">FindConstFacesByIndex</a> (const ItemIndices &amp;, ConstFacesPointersVector &amp;) const</td></tr>
+<tr class="memdesc:a238b6030425124ea30207ad0a7ec7720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти множество граней по множеству комбинированных индексов. <br /></td></tr>
+<tr class="separator:a238b6030425124ea30207ad0a7ec7720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1c6da8fa494b2597ea063cb0a64a23"><td class="memTemplParams" colspan="2"><a id="aae1c6da8fa494b2597ea063cb0a64a23"></a>
+template&lt;class ConstVertexPointers , class ItemIndices &gt; </td></tr>
+<tr class="memitem:aae1c6da8fa494b2597ea063cb0a64a23"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aae1c6da8fa494b2597ea063cb0a64a23">FindIndexByVertices</a> (const ConstVertexPointers &amp;init, ItemIndices &amp;indexes) const</td></tr>
+<tr class="memdesc:aae1c6da8fa494b2597ea063cb0a64a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для множества вершин найти множество их комбинированных номеров. <br /></td></tr>
+<tr class="separator:aae1c6da8fa494b2597ea063cb0a64a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c0b3442a42cadb21d0d73846077582"><td class="memItemLeft" align="right" valign="top"><a id="af1c0b3442a42cadb21d0d73846077582"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af1c0b3442a42cadb21d0d73846077582">FindVerticesByIndex</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_item_index.html">MbItemIndex</a> &gt; &amp;indexes, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_vertex.html">MbVertex</a> &gt; &amp;init) const</td></tr>
+<tr class="memdesc:af1c0b3442a42cadb21d0d73846077582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти множество вершин по множеству комбинированных индексов. <br /></td></tr>
+<tr class="separator:af1c0b3442a42cadb21d0d73846077582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04edf774f33ebc6b9717918174c18635"><td class="memItemLeft" align="right" valign="top"><a id="a04edf774f33ebc6b9717918174c18635"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a04edf774f33ebc6b9717918174c18635">FindIndexByFace</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;, <a class="el" href="struct_mb_item_index.html">MbItemIndex</a> &amp;) const</td></tr>
+<tr class="memdesc:a04edf774f33ebc6b9717918174c18635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти комбинированный индекс грани. <br /></td></tr>
+<tr class="separator:a04edf774f33ebc6b9717918174c18635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b2fe9ec427aab6c1ef45d241ac57b1"><td class="memItemLeft" align="right" valign="top"><a id="a14b2fe9ec427aab6c1ef45d241ac57b1"></a>
+const <a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a14b2fe9ec427aab6c1ef45d241ac57b1">FindFaceByIndex</a> (<a class="el" href="struct_mb_item_index.html">MbItemIndex</a> &amp;) const</td></tr>
+<tr class="memdesc:a14b2fe9ec427aab6c1ef45d241ac57b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти грань по комбинированному индексу. <br /></td></tr>
+<tr class="separator:a14b2fe9ec427aab6c1ef45d241ac57b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93affa2ac3161b2fb76ed8eb1323a06"><td class="memItemLeft" align="right" valign="top"><a id="ad93affa2ac3161b2fb76ed8eb1323a06"></a>
+<a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ad93affa2ac3161b2fb76ed8eb1323a06">FindFaceByIndex</a> (<a class="el" href="struct_mb_item_index.html">MbItemIndex</a> &amp;)</td></tr>
+<tr class="memdesc:ad93affa2ac3161b2fb76ed8eb1323a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти грань по комбинированному индексу. <br /></td></tr>
+<tr class="separator:ad93affa2ac3161b2fb76ed8eb1323a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e3388786586921b53fd690370936b8"><td class="memItemLeft" align="right" valign="top"><a id="aa5e3388786586921b53fd690370936b8"></a>
+const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aa5e3388786586921b53fd690370936b8">FindEdgeByIndex</a> (<a class="el" href="struct_mb_item_index.html">MbItemIndex</a> &amp;) const</td></tr>
+<tr class="memdesc:aa5e3388786586921b53fd690370936b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ребро по комбинированному индексу. <br /></td></tr>
+<tr class="separator:aa5e3388786586921b53fd690370936b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5960d4f9957cfe0cc9d41f6cd68632c3"><td class="memItemLeft" align="right" valign="top"><a id="a5960d4f9957cfe0cc9d41f6cd68632c3"></a>
+<a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a5960d4f9957cfe0cc9d41f6cd68632c3">FindEdgeByIndex</a> (<a class="el" href="struct_mb_item_index.html">MbItemIndex</a> &amp;)</td></tr>
+<tr class="memdesc:a5960d4f9957cfe0cc9d41f6cd68632c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ребро по комбинированному индексу. <br /></td></tr>
+<tr class="separator:a5960d4f9957cfe0cc9d41f6cd68632c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b736190a7e399f5289941f7554de51c"><td class="memItemLeft" align="right" valign="top"><a id="a5b736190a7e399f5289941f7554de51c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a5b736190a7e399f5289941f7554de51c">FindEdgesByIndex</a> (const std::vector&lt; <a class="el" href="struct_mb_item_index.html">MbItemIndex</a> &gt; &amp;indexes, std::vector&lt; <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> * &gt; &amp;initCurves) const</td></tr>
+<tr class="memdesc:a5b736190a7e399f5289941f7554de51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ребра по номерам. <br /></td></tr>
+<tr class="separator:a5b736190a7e399f5289941f7554de51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c137fb889763c8b413f0eddf1d89d5"><td class="memItemLeft" align="right" valign="top"><a id="aa7c137fb889763c8b413f0eddf1d89d5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aa7c137fb889763c8b413f0eddf1d89d5">FindEdgesForVertex</a> (const <a class="el" href="class_mb_vertex.html">MbVertex</a> &amp;vertex, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &gt; &amp;findEdges) const</td></tr>
+<tr class="memdesc:aa7c137fb889763c8b413f0eddf1d89d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти множество ребер с общей заданной вершиной. <br /></td></tr>
+<tr class="separator:aa7c137fb889763c8b413f0eddf1d89d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6ce61b9d865576dfce8ef8714f6ae0"><td class="memItemLeft" align="right" valign="top"><a id="a0a6ce61b9d865576dfce8ef8714f6ae0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a0a6ce61b9d865576dfce8ef8714f6ae0">FindFacesForVertex</a> (const <a class="el" href="class_mb_vertex.html">MbVertex</a> &amp;vertex, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_face.html">MbFace</a> &gt; &amp;findFaces) const</td></tr>
+<tr class="memdesc:a0a6ce61b9d865576dfce8ef8714f6ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти множество граней с общей заданной вершиной. <br /></td></tr>
+<tr class="separator:a0a6ce61b9d865576dfce8ef8714f6ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b253dbf9d5a2f1a120a8781424b734"><td class="memItemLeft" align="right" valign="top"><a id="af6b253dbf9d5a2f1a120a8781424b734"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af6b253dbf9d5a2f1a120a8781424b734">FindEdgeNumbers</a> (const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &amp;edge, size_t &amp;faceN, size_t &amp;loopN, size_t &amp;edgeN) const</td></tr>
+<tr class="memdesc:af6b253dbf9d5a2f1a120a8781424b734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для ребра edge найти индекс грани, индекс цикла и индекс ребра в этом цикле. <br /></td></tr>
+<tr class="separator:af6b253dbf9d5a2f1a120a8781424b734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fc190721aa88698d760c6c51f97fcf"><td class="memItemLeft" align="right" valign="top"><a id="a01fc190721aa88698d760c6c51f97fcf"></a>
+const <a class="el" href="class_mb_vertex.html">MbVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a01fc190721aa88698d760c6c51f97fcf">FindVertexByName</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;) const</td></tr>
+<tr class="memdesc:a01fc190721aa88698d760c6c51f97fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти вершину по имени. <br /></td></tr>
+<tr class="separator:a01fc190721aa88698d760c6c51f97fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4488b0cc492aaef5a396d4364420c603"><td class="memItemLeft" align="right" valign="top"><a id="a4488b0cc492aaef5a396d4364420c603"></a>
+const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a4488b0cc492aaef5a396d4364420c603">FindEdgeByName</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;) const</td></tr>
+<tr class="memdesc:a4488b0cc492aaef5a396d4364420c603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ребро по имени. <br /></td></tr>
+<tr class="separator:a4488b0cc492aaef5a396d4364420c603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16f10862548e29c933f269b34b4bc39"><td class="memItemLeft" align="right" valign="top"><a id="af16f10862548e29c933f269b34b4bc39"></a>
+const <a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af16f10862548e29c933f269b34b4bc39">FindFaceByName</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;) const</td></tr>
+<tr class="memdesc:af16f10862548e29c933f269b34b4bc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти грань по имени. <br /></td></tr>
+<tr class="separator:af16f10862548e29c933f269b34b4bc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa439e509711d1fe1a653be86799642e2"><td class="memItemLeft" align="right" valign="top"><a id="aa439e509711d1fe1a653be86799642e2"></a>
+<a class="el" href="class_mb_vertex.html">MbVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aa439e509711d1fe1a653be86799642e2">FindVertexByName</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;)</td></tr>
+<tr class="memdesc:aa439e509711d1fe1a653be86799642e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти вершину по имени. <br /></td></tr>
+<tr class="separator:aa439e509711d1fe1a653be86799642e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a0a4a2266957252d2b438ada9192ce"><td class="memItemLeft" align="right" valign="top"><a id="ac0a0a4a2266957252d2b438ada9192ce"></a>
+<a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ac0a0a4a2266957252d2b438ada9192ce">FindEdgeByName</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;)</td></tr>
+<tr class="memdesc:ac0a0a4a2266957252d2b438ada9192ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ребро по имени. <br /></td></tr>
+<tr class="separator:ac0a0a4a2266957252d2b438ada9192ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23e01841c1cc72dad3f7b3b905d0177"><td class="memItemLeft" align="right" valign="top"><a id="af23e01841c1cc72dad3f7b3b905d0177"></a>
+<a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af23e01841c1cc72dad3f7b3b905d0177">FindFaceByName</a> (const <a class="el" href="class_mb_name.html">MbName</a> &amp;)</td></tr>
+<tr class="memdesc:af23e01841c1cc72dad3f7b3b905d0177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти грань по имени. <br /></td></tr>
+<tr class="separator:af23e01841c1cc72dad3f7b3b905d0177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ac9ec5bc5b7a3bea6301e3c9947871"><td class="memItemLeft" align="right" valign="top"><a id="a16ac9ec5bc5b7a3bea6301e3c9947871"></a>
+const <a class="el" href="class_mb_vertex.html">MbVertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a16ac9ec5bc5b7a3bea6301e3c9947871">FindVertexByHash</a> (const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> h) const</td></tr>
+<tr class="memdesc:a16ac9ec5bc5b7a3bea6301e3c9947871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти вершину по хешу имени. <br /></td></tr>
+<tr class="separator:a16ac9ec5bc5b7a3bea6301e3c9947871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de0f747de54695f11de23cb17edc5c1"><td class="memItemLeft" align="right" valign="top"><a id="a9de0f747de54695f11de23cb17edc5c1"></a>
+const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a9de0f747de54695f11de23cb17edc5c1">FindEdgeByHash</a> (const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> h) const</td></tr>
+<tr class="memdesc:a9de0f747de54695f11de23cb17edc5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ребро по хешу имени. <br /></td></tr>
+<tr class="separator:a9de0f747de54695f11de23cb17edc5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7531ab90b785d90a25faa25e4fb7d41c"><td class="memItemLeft" align="right" valign="top"><a id="a7531ab90b785d90a25faa25e4fb7d41c"></a>
+const <a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a7531ab90b785d90a25faa25e4fb7d41c">FindFaceByHash</a> (const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> h) const</td></tr>
+<tr class="memdesc:a7531ab90b785d90a25faa25e4fb7d41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти грань по хешу имени. <br /></td></tr>
+<tr class="separator:a7531ab90b785d90a25faa25e4fb7d41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b479a95c07f383764527d0b60dc89f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a6b479a95c07f383764527d0b60dc89f1">MergeSimilarFaces</a> (<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> simMainName=<a class="el" href="group___base___tools.html#ga637c7003cd381d1dc8c5b53caa84a4c5">c3d::SIMPLENAME_MAX</a>)</td></tr>
+<tr class="memdesc:a6b479a95c07f383764527d0b60dc89f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объединить подобные грани.  <a href="class_mb_face_shell.html#a6b479a95c07f383764527d0b60dc89f1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6b479a95c07f383764527d0b60dc89f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa04979930c40fbce2f72267fe1456e2"><td class="memItemLeft" align="right" valign="top"><a id="afa04979930c40fbce2f72267fe1456e2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#afa04979930c40fbce2f72267fe1456e2">IsTemporal</a> () const</td></tr>
+<tr class="memdesc:afa04979930c40fbce2f72267fe1456e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создан ли временный объект сопровождения? <br /></td></tr>
+<tr class="separator:afa04979930c40fbce2f72267fe1456e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8eb7cc4e4ff3d8bf55524db4975f5cf"><td class="memItemLeft" align="right" valign="top"><a id="ad8eb7cc4e4ff3d8bf55524db4975f5cf"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ad8eb7cc4e4ff3d8bf55524db4975f5cf">RemoveTemporal</a> (bool removeFacesTemporal=false) const</td></tr>
+<tr class="memdesc:ad8eb7cc4e4ff3d8bf55524db4975f5cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить временный объект сопровождения. <br /></td></tr>
+<tr class="separator:ad8eb7cc4e4ff3d8bf55524db4975f5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b1330e2809683c78e6d646cd789ecc"><td class="memItemLeft" align="right" valign="top"><a id="af3b1330e2809683c78e6d646cd789ecc"></a>
+const MbFaceSetTemp *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#af3b1330e2809683c78e6d646cd789ecc">CreateTemporal</a> (bool keepExisting) const</td></tr>
+<tr class="memdesc:af3b1330e2809683c78e6d646cd789ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать новый временный объект сопровождения. <br /></td></tr>
+<tr class="separator:af3b1330e2809683c78e6d646cd789ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64cd657e965c1b21fb5b9d4e892919b"><td class="memItemLeft" align="right" valign="top"><a id="ae64cd657e965c1b21fb5b9d4e892919b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#ae64cd657e965c1b21fb5b9d4e892919b">UpdateTemporal</a> (bool changedOnly=false) const</td></tr>
+<tr class="memdesc:ae64cd657e965c1b21fb5b9d4e892919b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить временный объект сопровождения грани. changedOnly = true использовать только при не измененной оболочке (после резки ребер), не обновляется дерево габаритов. <br /></td></tr>
+<tr class="separator:ae64cd657e965c1b21fb5b9d4e892919b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab71cebe340a85d9b5f16387bae169a0"><td class="memItemLeft" align="right" valign="top"><a id="aab71cebe340a85d9b5f16387bae169a0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aab71cebe340a85d9b5f16387bae169a0">IsTemporal</a> (size_t k) const</td></tr>
+<tr class="memdesc:aab71cebe340a85d9b5f16387bae169a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создан ли временный объект сопровождения грани? <br /></td></tr>
+<tr class="separator:aab71cebe340a85d9b5f16387bae169a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3510ff9b23a4f810a710bdc22ae1dfef"><td class="memItemLeft" align="right" valign="top"><a id="a3510ff9b23a4f810a710bdc22ae1dfef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a3510ff9b23a4f810a710bdc22ae1dfef">CreateTemporal</a> (size_t k, bool keepExisting) const</td></tr>
+<tr class="memdesc:a3510ff9b23a4f810a710bdc22ae1dfef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить временный объект сопровождения грани. <br /></td></tr>
+<tr class="separator:a3510ff9b23a4f810a710bdc22ae1dfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d13410b5797d2b3e4224cea8e188f39"><td class="memItemLeft" align="right" valign="top"><a id="a0d13410b5797d2b3e4224cea8e188f39"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a0d13410b5797d2b3e4224cea8e188f39">RemoveParentNamesAttributes</a> ()</td></tr>
+<tr class="memdesc:a0d13410b5797d2b3e4224cea8e188f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить атрибуты типа имя с родительскими именами. <br /></td></tr>
+<tr class="separator:a0d13410b5797d2b3e4224cea8e188f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_top_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_top_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_top_item.html">MbTopItem</a></td></tr>
+<tr class="memitem:ad75e0163f1a43fa9ffabf96665682786 inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="ad75e0163f1a43fa9ffabf96665682786"></a>
+<a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#ad75e0163f1a43fa9ffabf96665682786">RefType</a> () const override</td></tr>
+<tr class="memdesc:ad75e0163f1a43fa9ffabf96665682786 inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:ad75e0163f1a43fa9ffabf96665682786 inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd78e7144811b7417142e2da1b1daee5 inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="afd78e7144811b7417142e2da1b1daee5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#afd78e7144811b7417142e2da1b1daee5">PrepareWrite</a> () const</td></tr>
+<tr class="memdesc:afd78e7144811b7417142e2da1b1daee5 inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подготовить объект к записи. <br /></td></tr>
+<tr class="separator:afd78e7144811b7417142e2da1b1daee5 inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff3180b2e1d7c22d5060b471c899b23 inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="a0ff3180b2e1d7c22d5060b471c899b23"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#a0ff3180b2e1d7c22d5060b471c899b23">IsAVertex</a> () const</td></tr>
+<tr class="memdesc:a0ff3180b2e1d7c22d5060b471c899b23 inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Это вершина? <br /></td></tr>
+<tr class="separator:a0ff3180b2e1d7c22d5060b471c899b23 inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712c3495bec55d9efb2c167cc6378aba inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="a712c3495bec55d9efb2c167cc6378aba"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#a712c3495bec55d9efb2c167cc6378aba">IsAWireEdge</a> () const</td></tr>
+<tr class="memdesc:a712c3495bec55d9efb2c167cc6378aba inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Это ребро каркаса? <br /></td></tr>
+<tr class="separator:a712c3495bec55d9efb2c167cc6378aba inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9684df5e8f8136141fae2c81eb5a8142 inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="a9684df5e8f8136141fae2c81eb5a8142"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#a9684df5e8f8136141fae2c81eb5a8142">IsAnEdge</a> () const</td></tr>
+<tr class="memdesc:a9684df5e8f8136141fae2c81eb5a8142 inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Это ребро? <br /></td></tr>
+<tr class="separator:a9684df5e8f8136141fae2c81eb5a8142 inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517d5a426672e8bd589e81ed5681bd82 inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="a517d5a426672e8bd589e81ed5681bd82"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#a517d5a426672e8bd589e81ed5681bd82">IsAFace</a> () const</td></tr>
+<tr class="memdesc:a517d5a426672e8bd589e81ed5681bd82 inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Это грань? <br /></td></tr>
+<tr class="separator:a517d5a426672e8bd589e81ed5681bd82 inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5affc1e4774db2d8cf26b51543a18f6c inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="a5affc1e4774db2d8cf26b51543a18f6c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#a5affc1e4774db2d8cf26b51543a18f6c">IsAShell</a> () const</td></tr>
+<tr class="memdesc:a5affc1e4774db2d8cf26b51543a18f6c inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Это оболочка? <br /></td></tr>
+<tr class="separator:a5affc1e4774db2d8cf26b51543a18f6c inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a82f6dc7ed0ae509537bc4a587709e inherit pub_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="ae4a82f6dc7ed0ae509537bc4a587709e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#ae4a82f6dc7ed0ae509537bc4a587709e">IsAProxy</a> () const</td></tr>
+<tr class="memdesc:ae4a82f6dc7ed0ae509537bc4a587709e inherit pub_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Это заменитель? <br /></td></tr>
+<tr class="separator:ae4a82f6dc7ed0ae509537bc4a587709e inherit pub_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a305e3712ee6124e354115f4da5ad63bb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a305e3712ee6124e354115f4da5ad63bb">IsFamilyRegistrable</a> () const</td></tr>
+<tr class="memdesc:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:a305e3712ee6124e354115f4da5ad63bb inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_sync_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_sync_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_sync_item.html">MbSyncItem</a></td></tr>
+<tr class="memitem:a37faf933c140c1ff077fc0c716a134d8 inherit pub_methods_class_mb_sync_item"><td class="memItemLeft" align="right" valign="top"><a id="a37faf933c140c1ff077fc0c716a134d8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sync_item.html#a37faf933c140c1ff077fc0c716a134d8">Lock</a> () const</td></tr>
+<tr class="memdesc:a37faf933c140c1ff077fc0c716a134d8 inherit pub_methods_class_mb_sync_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить блокировку (блокировка происходит только при наличии параллельности). <br /></td></tr>
+<tr class="separator:a37faf933c140c1ff077fc0c716a134d8 inherit pub_methods_class_mb_sync_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568c227922d8092a40d21c7a1f2a6f53 inherit pub_methods_class_mb_sync_item"><td class="memItemLeft" align="right" valign="top"><a id="a568c227922d8092a40d21c7a1f2a6f53"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sync_item.html#a568c227922d8092a40d21c7a1f2a6f53">Unlock</a> () const</td></tr>
+<tr class="memdesc:a568c227922d8092a40d21c7a1f2a6f53 inherit pub_methods_class_mb_sync_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Снять блокировку, если она была установлена. <br /></td></tr>
+<tr class="separator:a568c227922d8092a40d21c7a1f2a6f53 inherit pub_methods_class_mb_sync_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:afc8a4bd64cdbd18df1194d6c03d4b71e"><td class="memItemLeft" align="right" valign="top"><a id="afc8a4bd64cdbd18df1194d6c03d4b71e"></a>
+<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_face.html">MbFace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#afc8a4bd64cdbd18df1194d6c03d4b71e">faceSet</a></td></tr>
+<tr class="memdesc:afc8a4bd64cdbd18df1194d6c03d4b71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество граней. <br /></td></tr>
+<tr class="separator:afc8a4bd64cdbd18df1194d6c03d4b71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e25fcce5428aad6641d469df42d0c4d"><td class="memItemLeft" align="right" valign="top"><a id="a3e25fcce5428aad6641d469df42d0c4d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#a3e25fcce5428aad6641d469df42d0c4d">closed</a></td></tr>
+<tr class="memdesc:a3e25fcce5428aad6641d469df42d0c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак замкнутости указывает на отсутствие края. <br /></td></tr>
+<tr class="separator:a3e25fcce5428aad6641d469df42d0c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb59c1eb3eddfb3a0da8fcecc21357f"><td class="memItemLeft" align="right" valign="top"><a id="aebb59c1eb3eddfb3a0da8fcecc21357f"></a>
+<a class="el" href="class_cache_manager.html">CacheManager</a>&lt; <a class="el" href="struct_mb_face_shell_1_1_mb_face_shell_auxiliary_data.html">MbFaceShellAuxiliaryData</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_face_shell.html#aebb59c1eb3eddfb3a0da8fcecc21357f">cache</a></td></tr>
+<tr class="memdesc:aebb59c1eb3eddfb3a0da8fcecc21357f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательные данные для множества граней. <br /></td></tr>
+<tr class="separator:aebb59c1eb3eddfb3a0da8fcecc21357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_class_mb_top_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_top_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_top_item.html">MbTopItem</a></td></tr>
+<tr class="memitem:a303e235cbdd4153c804fc84b372e5f77 inherit pro_methods_class_mb_top_item"><td class="memItemLeft" align="right" valign="top"><a id="a303e235cbdd4153c804fc84b372e5f77"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html#a303e235cbdd4153c804fc84b372e5f77">MbTopItem</a> ()</td></tr>
+<tr class="memdesc:a303e235cbdd4153c804fc84b372e5f77 inherit pro_methods_class_mb_top_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a303e235cbdd4153c804fc84b372e5f77 inherit pro_methods_class_mb_top_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Множество граней или оболочка. </p>
+<p>Оболочка представляет собой составную поверхность, образованную конечным множеством граней <a class="el" href="class_mb_face.html" title="Грань.">MbFace</a>, стыкующихся друг с другом по рёбрам <a class="el" href="class_mb_curve_edge.html" title="Ребро грани.">MbCurveEdge</a>. <br  />
+ В общем случае оболочка может быть многосвязной, то есть описывать несколько не связанных между собой поверхностей. <br  />
+ Оболочка называется замкнутой, если она не имеет края, в противном случае оболочка называется незамкнутой. <br  />
+ Замкнутость оболочки указывает на возможность использования множества её внутренних точек в операциях над телами <a class="el" href="class_mb_solid.html" title="Твердое тело.">MbSolid</a>. Формально множество граней не ограничено никакими условиями, но реально грани множества удовлетворяют некоторым условиям. Чтобы подчеркнуть эту особенность оболочки, вводится понятие "Однородная оболочка". Оболочки, удовлетворяющие нижеперечисленным требованиям, называются однородными. <br  />
+</p><ol type="1">
+<li>Оболочки являются конечными. <br  />
+</li>
+<li>Оболочки не пересекают сами себя. <br  />
+</li>
+<li>Оболочки являются двусторонними (ориентируемыми). <br  />
+</li>
+<li>В каждом ребре оболочки стыкуются не более двух граней. Две грани оболочки стыкуются так, что внешняя сторона одной грани переходит во внешнюю сторону другой грани.<br  />
+</li>
+<li>При любом обходе любой вершины замкнутой оболочки по её поверхности, мы обязательно посетим все примыкающие к данной вершине грани и пересечём все выходящие из неё рёбра.<br  />
+ Так как внешняя сторона грани переходит во внешнюю сторону соседней грани, то однородная оболочка также имеет внешнюю и внутреннюю стороны. Замкнутая однородная оболочка делит трёхмерное пространство на две части, одна из которых находится внутри оболочки. Назовем замкнутую однородную оболочку внешней, если её внешняя сторона направлена вне ограничиваемой оболочкой части пространства.<br  />
+ Назовем замкнутую однородную оболочку внутренней, если её внешняя сторона направлена внутрь ограничиваемой оболочкой части пространства. </li>
+</ol>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a5c4a8ce16c11313ef465e9c7f92b8ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4a8ce16c11313ef465e9c7f92b8ee6">&#9670;&nbsp;</a></span>Copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_face_shell.html">MbFaceShell</a>* MbFaceShell::Copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___data___structures.html#ga7c08af1e254cba91e7babf2b2a6c8bb5">MbeCopyMode</a>&#160;</td>
+          <td class="paramname"><em>sameShell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_shell_history.html">MbShellHistory</a> *&#160;</td>
+          <td class="paramname"><em>history</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать копию. </p>
+<p>Создать копию оболочки с копированием части данных и перекладыванием из оригинала в копию остальной части данных. <br  />
+ Параметр history используется, если режим копирования cm_KeepHistory.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sameShell</td><td>- Способ передачи данных при копировании оболочки MbeCopyMode: <br  />
+ sameShell == cm_Same - в качестве копии возвращается исходная оболочка (оболочка не копируется, но выставляются правильно указатели в рёбрах на грани справа и грани слева); <br  />
+ sameShell == cm_KeepHistory - копируется часть данных (исходная оболочка и её копия имеют общие базовые поверхности и вершины) и заполняются множества граней объекта history; <br  />
+ sameShell == cm_KeepSurface - копируется часть данных (исходная оболочка и её копия имеют общие базовые поверхности); <br  />
+ sameShell == cm_Copy - обычное копирование (исходная оболочка и её копия не имеет общих данных). <br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">history</td><td>- История копий граней используется после операции для замены неизменённых копий граней их оригиналами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор копирования.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Копия объекта или оригинал(в случае режима копирования cm_Same). </dd></dl>
+
+</div>
+</div>
+<a id="abc97bfc1ec2b24f5630b93f4c455d2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc97bfc1ec2b24f5630b93f4c455d2b2">&#9670;&nbsp;</a></span>Duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_face_shell.html">MbFaceShell</a>* MbFaceShell::Duplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать копию. </p>
+<p>Создать копию оболочки с регистратором.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Копия объекта. </dd></dl>
+
+</div>
+</div>
+<a id="aa8b79a26004967df0e87bb8ef0cc0ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b79a26004967df0e87bb8ef0cc0ae6">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразовать согласно матрице. </p>
+<p>Преобразование оболочки согласно матрице. В оболочке одни и те же геометрические объекты, например поверхности, используются как в гранях, так и в рёбрах. Для преобразования каждого геометрического объекта только один раз используется регистратор.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">matr</td><td>- Матрица преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор объектов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0c9bde4289ceff91c2d833bb0ae16106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9bde4289ceff91c2d833bb0ae16106">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::Move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сдвинуть вдоль вектора. </p>
+<p>Сдвиг оболочки вдоль вектора. В оболочке одни и те же геометрические объекты, например поверхности, используются как в гранях, так и в рёбрах. Для преобразования каждого геометрического объекта только один раз используется регистратор.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>- Вектор сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a207a25709b4d3cf92853aa2767bec574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207a25709b4d3cf92853aa2767bec574">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть вокруг оси. </p>
+<p>Поворот оболочки вокруг оси. В оболочке одни и те же геометрические объекты, например поверхности, используются как в гранях, так и в рёбрах. Для преобразования каждого геометрического объекта только один раз используется регистратор.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>- Ось поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a78f7c43259c802137a2a1b7fb5a967c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f7c43259c802137a2a1b7fb5a967c4">&#9670;&nbsp;</a></span>DistanceToShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::DistanceToShell </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;&#160;</td>
+          <td class="paramname"><em>shell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lowerLimitDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tillFirstLowerLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_mb_shells_distance_data.html">MbShellsDistanceData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shellsDistanceData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить ближайшее расстояние до оболочки. </p>
+<p>Вычислить ближайшее расстояние до оболочки с заданным допуском с той же системой координат. В случае пересечения или касания оболочек возвращается нулевая дистанция.</p>
+<dl class="section note"><dt>Заметки</dt><dd>При многократном использовании оболочки следует создать объекты сопровождения оболочки и её граней.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shell</td><td>- Оболочка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowerLimitDistance</td><td>- Минимально допустимое расстояние.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tillFirstLowerLimit</td><td>- Остановить поиск после первого найденного расстояния меньшего либо равного минимально допустимому.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">epsilon</td><td>- Погрешность вычисления расстояния между поверхностями граней оболочек.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">shellsDistanceData</td><td>- Данные ближайщего расстояния между оболочками.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Удалось ли определить минимальное расстояние между оболочками. </dd></dl>
+
+</div>
+</div>
+<a id="ac909eae7eaac92fcbffe0a5e2423a20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac909eae7eaac92fcbffe0a5e2423a20e">&#9670;&nbsp;</a></span>DistanceToBound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::DistanceToBound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_pnt_loc.html">MbPntLoc</a> &amp;&#160;</td>
+          <td class="paramname"><em>finFaceData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a> &amp;&#160;</td>
+          <td class="paramname"><em>rShell</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить расстояния от точки до оболочки. </p>
+<p>Определить расстояния от точки до оболочки и положение точки: снаружи оболочки, на оболочке, внутри оболочки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Заданная точность определения положения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">finFaceData</td><td>- Информация об окружении проекции точки pnt на ближайшую грань оболочки.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rShell</td><td>- Результат определения: снаружи оболочки (-1), на оболочке (0), внутри оболочки (+1).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Удалось ли определить расстояния от точки до оболочки. </dd></dl>
+
+</div>
+</div>
+<a id="a57f5f5e472fedaf83d4e5cf42890eca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f5f5e472fedaf83d4e5cf42890eca0">&#9670;&nbsp;</a></span>PointClassification() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::PointClassification </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>shellPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>shellNormal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a> &amp;&#160;</td>
+          <td class="paramname"><em>rShell</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить положение точки относительно оболочки. </p>
+<p>Определить положение точки относительно оболочки: снаружи оболочки, на оболочке, внутри оболочки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Заданная точность определения положения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">shellPoint</td><td>- Ближайшая к точке pnt точка оболочки.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">shellNormal</td><td>- Нормаль в ближайшей к точке pnt точке оболочки.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rShell</td><td>- Результат определения: снаружи оболочки (-1), на оболочке (0), внутри оболочки (+1).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Удалось ли определить положение точки относительно оболочки. </dd></dl>
+
+</div>
+</div>
+<a id="a1fc4ed7dac96c538d62616201f08fde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc4ed7dac96c538d62616201f08fde5">&#9670;&nbsp;</a></span>PointClassification() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::PointClassification </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>shellPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>shellNormal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_pnt_loc.html">MbPntLoc</a> &amp;&#160;</td>
+          <td class="paramname"><em>rShell</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить положение точки относительно оболочки. </p>
+<p>Определить положение точки относительно оболочки: снаружи оболочки, на оболочке, внутри оболочки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Заданная точность определения положения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">shellPoint</td><td>- Ближайшая к точке pnt точка оболочки.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">shellNormal</td><td>- Нормаль в ближайшей к точке pnt точке оболочки.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rShell</td><td>- Положение точки относительно оболочки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Удалось ли определить положение точки относительно оболочки. </dd></dl>
+
+</div>
+</div>
+<a id="ab1fcd9c9ce09bea1c0c10e86e00c60c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1fcd9c9ce09bea1c0c10e86e00c60c3">&#9670;&nbsp;</a></span>PointOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::PointOn </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить точку оболочки. </p>
+<p>Вычислить точку оболочки для заданной грани по заданным параметрам её поверхности.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>- Индекс грани оболочки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>- Первый параметр поверхности грани.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- Второй параметр поверхности грани.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td>- Вычисленная точка оболочки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ab962834d23106fe91723395d04333b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab962834d23106fe91723395d04333b">&#9670;&nbsp;</a></span>Normal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::Normal </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить нормаль оболочки. </p>
+<p>Вычислить нормаль оболочки для заданной грани по заданным параметрам её поверхности. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>- Индекс грани оболочки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>- Первый параметр поверхности грани.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- Второй параметр поверхности грани.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td>- Вычисленная нормаль оболочки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28bed4975ff2573b13a4664bfb604c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bed4975ff2573b13a4664bfb604c68">&#9670;&nbsp;</a></span>NearPointProjection() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::NearPointProjection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nums</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>uv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти все проекции точки на оболочку. </p>
+<p>Найти все проекции точки на все грани оболочки. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Проецируемая точка.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nums</td><td>- Массив номера граней в оболочки, синхронный с массивом параметров проекций.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uv</td><td>- Массив параметров проекций. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd4bf16d4ebcb0167817cd9dc63438e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4bf16d4ebcb0167817cd9dc63438e2">&#9670;&nbsp;</a></span>NearPointProjection() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::NearPointProjection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>faceIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти ближайшую проекцию точки на оболочку. </p>
+<p>Найти номер грани и параметры её поверхности для ближайшей проекции точки на оболочку. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Проецируемая точка.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">faceIndex</td><td>- Номер грани в оболочке для ближайшей проекции.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">u</td><td>- Первый параметр поверхности грани проекций для ближайшей проекции точки на оболочку.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">v</td><td>- Второй параметр поверхности грани проекций для ближайшей проекции точки на оболочку.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Удалось ли определить положение точки. </dd></dl>
+
+</div>
+</div>
+<a id="ad9fc757e367b92dee4dac4473ba40736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9fc757e367b92dee4dac4473ba40736">&#9670;&nbsp;</a></span>DirectPointProjection() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::DirectPointProjection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nums</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>uv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти все проекции точки на оболочку вдоль вектора в любом из двух направлений. </p>
+<p>Найти все проекции точки на все грани оболочки вдоль вектора в любом из двух направлений. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Проецируемая точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vect</td><td>- Вектор направления проецирования.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nums</td><td>- Массив номера граней в оболочки, синхронный с массивом параметров проекций.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uv</td><td>- Массив параметров проекций. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac705de2825679b5712fc22fd7067cad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac705de2825679b5712fc22fd7067cad8">&#9670;&nbsp;</a></span>NearDirectPointProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::NearDirectPointProjection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>faceIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>onlyPositiveDirection</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти ближайшую проекцию точки на оболочку в направлении вектора. </p>
+<p>Найти номер грани и параметры её поверхности для ближайшей проекции точки на оболочку в направлении вектора. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Проецируемая точка.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">faceIndex</td><td>- Номер грани в оболочке для ближайшей проекции.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vect</td><td>- Вектор направления проецирования.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">u</td><td>- Первый параметр поверхности грани проекций для ближайшей проекции точки на оболочку в направлении вектора.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">v</td><td>- Второй параметр поверхности грани проекций для ближайшей проекции точки на оболочку в направлении вектора.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onlyPositiveDirection</td><td>- Искать только в положительном направлении вектора vect от точки p.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Удалось ли определить положение точки. </dd></dl>
+
+</div>
+</div>
+<a id="af4d0990b0481bd509ac4ab4a2f73c86f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d0990b0481bd509ac4ab4a2f73c86f">&#9670;&nbsp;</a></span>DirectPointProjection() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::DirectPointProjection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Существует ли проекция в направлении вектора? </p>
+<p>Определить, существует ли хотя бы одна проекция точки на оболочку в направлении вектора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Проецируемая точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vect</td><td>- Вектор, задающий направление проецирования.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если нашлась хотя бы одна проекция. </dd></dl>
+
+</div>
+</div>
+<a id="af43fc19778ba5288ce77819b25dc04b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43fc19778ba5288ce77819b25dc04b8">&#9670;&nbsp;</a></span>CurveIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::CurveIntersection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>uv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пересечение оболочки и кривой. </p>
+<p>Найти пересечения кривой с гранями оболочки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Кривая.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nn</td><td>- Номера граней оболочки, у которых есть пересечения с кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uv</td><td>- Параметрические точки пересечений на поверхностях граней оболочки.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tt</td><td>- Параметры пересечений на кривой. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00126b7846ba2c467c6b9ea743d0b79b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00126b7846ba2c467c6b9ea743d0b79b">&#9670;&nbsp;</a></span>AddYourGabaritTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::AddYourGabaritTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>gab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a834d3423fdc5965b53abc41aad9f9ba3">c3d::IndexCubeVector</a> *&#160;</td>
+          <td class="paramname"><em>extTolCubes</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить свой габарит в габаритный куб. </p>
+<p>Добавить свой габарит в габаритный куб.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">gab</td><td>- Габаритный куб для добавления габарита оболочки.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">extTolCubes</td><td>- Контейнер для расширенных габаритов граней оболочки с неточными ребрам. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa53b820ca7c45a6f58a838c9abb7c0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa53b820ca7c45a6f58a838c9abb7c0c2">&#9670;&nbsp;</a></span>CalculateMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::CalculateMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;&#160;</td>
+          <td class="paramname"><em>stepData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построить полигональную копию оболочки. </p>
+<p>Построить полигональную копию оболочки заполнить ею полигональный объект (сетку) mesh.</p>
+<dl class="section note"><dt>Заметки</dt><dd>В многопоточном режиме m_Items выполняется параллельно. </dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepData</td><td>- Данные для вычисления шага при триангуляции.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">note</td><td>- Способ построения полигонального объекта.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mesh</td><td>- Заполняемый полигональный объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a1515058746cfab4395117aa8270948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a1515058746cfab4395117aa8270948">&#9670;&nbsp;</a></span>SetItemsMainName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::SetItemsMainName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &amp;&#160;</td>
+          <td class="paramname"><em>newNameMaker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addOldMainName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установить главное имя и вставить старое в индекс копирования. </p>
+<p>Установить главное имя элементам оболочки и вставить старое в индекс копирования. Объекты с пустыми имена пропускаются.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newNameMaker</td><td>- Именователь с новым главным именем.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addOldMainName</td><td>- Вставить старое в индекс копирования. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ad5bb22c48674f22499c12a2702c07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad5bb22c48674f22499c12a2702c07d">&#9670;&nbsp;</a></span>SetNamesCopyIndex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::SetNamesCopyIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вставить индекс копирования. </p>
+<p>Вставить индекс копирования.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Индекс копирования. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee6477566fb89ba9ca10d54fd4c80d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6477566fb89ba9ca10d54fd4c80d6d">&#9670;&nbsp;</a></span>SetNamesCopyIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::SetNamesCopyIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_s_name_maker.html">MbSNameMaker</a> &amp;&#160;</td>
+          <td class="paramname"><em>newNameMaker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Заменить главное имя, вставить старое главное имя и индекс копирования в индексы копирования. </p>
+<p>Заменить главное имя, вставить старое главное имя и индекс копирования в индексы копирования. Объекты с пустыми имена пропускаются.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Индекс копирования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newMainName</td><td>- Именователь с новым главным именем. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8b59835819d56317a2b1ee14f9cb968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b59835819d56317a2b1ee14f9cb968">&#9670;&nbsp;</a></span>ClearShellNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::ClearShellNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очистить все имена в оболочке. </p>
+<p>Очистить имена всех элементов оболочки : граней, ребер и вершин. </p>
+
+</div>
+</div>
+<a id="ac8519cf9c63aa52f8a0287a5bb1d0221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8519cf9c63aa52f8a0287a5bb1d0221">&#9670;&nbsp;</a></span>ClearEdgesNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbFaceShell::ClearEdgesNames </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>clearVerticesNames</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очистить имена ребер в оболочке. </p>
+<p>Очистить имена ребер (и вершин) в оболочке.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">clearVerticesNames</td><td>- Очистить также и имена вершин. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ad0dc87964000fd919e7ce06aee6ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad0dc87964000fd919e7ce06aee6ebc">&#9670;&nbsp;</a></span>CheckTopology()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> MbFaceShell::CheckTopology </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_check_topology_params.html">MbCheckTopologyParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>checkParams</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка оболочки: вершин (удаление совпадающих и лишних), ребер (со слиянием). </p>
+<p>Проверка оболочки: вершин (удаление совпадающих и лишних), ребер (со слиянием).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkParams</td><td>- Параметры функции. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a9fc88dac298e260a6e8a3b16ff5778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9fc88dac298e260a6e8a3b16ff5778">&#9670;&nbsp;</a></span>FindFacesIndexByEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::FindFacesIndexByEdges </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_edge_function.html">MbEdgeFunction</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>functions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>slideways</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_edge_faces_indexes.html">MbEdgeFacesIndexes</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indexes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Для множества структур (ребер, функций изменения радиусов и опорных кривых скругления) найти номера ребер и номера смежных граней. </p>
+<p>Проверка оболочки: вершин (удаление совпадающих и лишних), ребер (со слиянием).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>- Структуры, несущие ребра, функции изменения радиуса и опорные кривые скруглений.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">functions</td><td>- Функции изменения радиуса.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">slideways</td><td>- Опорные кривые скруглений.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indexes</td><td>- Индексы рёбер и смежных граней теле. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a40df575f7d8a094e2a6928c9a8ee253e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40df575f7d8a094e2a6928c9a8ee253e">&#9670;&nbsp;</a></span>FindEdgesByFacesIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::FindEdgesByFacesIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="struct_mb_edge_faces_indexes.html">MbEdgeFacesIndexes</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indexes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt; *&#160;</td>
+          <td class="paramname"><em>functions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; *&#160;</td>
+          <td class="paramname"><em>slideways</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>eEdges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_function.html">MbFunction</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>eFunctions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>eSlideways</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Для множества номеров ребер и номеров смежных граней найти ребра. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">indexes</td><td>- Индексы рёбер и смежных граней теле.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">functions</td><td>- Функции изменения радиуса (может быть nullptr).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">slideways</td><td>- Опорные кривые скруглений (может быть nullptr).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eEdges</td><td>- Ребра.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eFunctions</td><td>- Функции изменения радиуса для рёбер, если functions != nullptr.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eSlideways</td><td>- Опорные кривые скруглений для рёбер, если slideways != nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b479a95c07f383764527d0b60dc89f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b479a95c07f383764527d0b60dc89f1">&#9670;&nbsp;</a></span>MergeSimilarFaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbFaceShell::MergeSimilarFaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td>
+          <td class="paramname"><em>simMainName</em> = <code><a class="el" href="group___base___tools.html#ga637c7003cd381d1dc8c5b53caa84a4c5">c3d::SIMPLENAME_MAX</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объединить подобные грани. </p>
+<p>Объединить подобные грани.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">simMainName</td><td>- Новое главное имя для объединенных граней (если не равно <a class="el" href="group___base___tools.html#ga637c7003cd381d1dc8c5b53caa84a4c5" title="Максимально допустимое простое имя.">c3d::SIMPLENAME_MAX</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="topology__faceset_8h.html">topology_faceset.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_face_shell.html">MbFaceShell</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:03. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

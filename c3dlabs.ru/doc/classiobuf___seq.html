@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс iobuf_Seq</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classiobuf___seq.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="classiobuf___seq-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс iobuf_Seq<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___tools.html">Библиотека шаблонов и сериализации</a> &raquo; <a class="el" href="group___base___tools___i_o.html">Работа с потоками</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписать файл.  
+ <a href="classiobuf___seq.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;io_buffer.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:iobuf_Seq:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classiobuf___seq__inherit__graph.svg" width="90" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса iobuf_Seq:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classiobuf___seq__coll__graph.svg" width="491" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae12d836668c70261e71737d015ce3a78"><td class="memItemLeft" align="right" valign="top"><a id="ae12d836668c70261e71737d015ce3a78"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ae12d836668c70261e71737d015ce3a78">iobuf_Seq</a> (uint16 <a class="el" href="classiobuf___seq.html#ac11ded3546464c711ef505cde7fdf2d6">clusterSize</a>)</td></tr>
+<tr class="memdesc:ae12d836668c70261e71737d015ce3a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор <br /></td></tr>
+<tr class="separator:ae12d836668c70261e71737d015ce3a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab967f549111fa462198f27cb97eb9ed0"><td class="memItemLeft" align="right" valign="top"><a id="ab967f549111fa462198f27cb97eb9ed0"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ab967f549111fa462198f27cb97eb9ed0">~iobuf_Seq</a> ()</td></tr>
+<tr class="memdesc:ab967f549111fa462198f27cb97eb9ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ab967f549111fa462198f27cb97eb9ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9afcae2c8f0f3a31646ad65f9cf76793"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a9afcae2c8f0f3a31646ad65f9cf76793">Reserve</a> (size_t n, bool addAdditionalSpace=true)</td></tr>
+<tr class="memdesc:a9afcae2c8f0f3a31646ad65f9cf76793"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Зарезервировать место под заданное количество элементов.  <a href="classiobuf___seq.html#a9afcae2c8f0f3a31646ad65f9cf76793">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9afcae2c8f0f3a31646ad65f9cf76793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330fed097b1e4d7002fb64272de1f372"><td class="memItemLeft" align="right" valign="top"><a id="a330fed097b1e4d7002fb64272de1f372"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a330fed097b1e4d7002fb64272de1f372">Flush</a> ()</td></tr>
+<tr class="memdesc:a330fed097b1e4d7002fb64272de1f372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освободить всю память. <br /></td></tr>
+<tr class="separator:a330fed097b1e4d7002fb64272de1f372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa491411cf99d764d677abca5ea5b4ca0"><td class="memItemLeft" align="right" valign="top"><a id="aa491411cf99d764d677abca5ea5b4ca0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#aa491411cf99d764d677abca5ea5b4ca0">HardFlush</a> ()</td></tr>
+<tr class="memdesc:aa491411cf99d764d677abca5ea5b4ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить лишнюю память. <br /></td></tr>
+<tr class="separator:aa491411cf99d764d677abca5ea5b4ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1274fcfe0d6f6f86bd159663b92adb82"><td class="memItemLeft" align="right" valign="top"><a id="a1274fcfe0d6f6f86bd159663b92adb82"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a1274fcfe0d6f6f86bd159663b92adb82">Adjust</a> ()</td></tr>
+<tr class="memdesc:a1274fcfe0d6f6f86bd159663b92adb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить элемент в конец массива. <br /></td></tr>
+<tr class="separator:a1274fcfe0d6f6f86bd159663b92adb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823f3b7e62a715dab3d46b0585518288"><td class="memItemLeft" align="right" valign="top"><a id="a823f3b7e62a715dab3d46b0585518288"></a>
+<a class="el" href="class_cluster.html">Cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a823f3b7e62a715dab3d46b0585518288">Add</a> ()</td></tr>
+<tr class="memdesc:a823f3b7e62a715dab3d46b0585518288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить данный элемент в конец массива. <br /></td></tr>
+<tr class="separator:a823f3b7e62a715dab3d46b0585518288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977132d3b954e784826d3b0635fa684c"><td class="memItemLeft" align="right" valign="top"><a id="a977132d3b954e784826d3b0635fa684c"></a>
+<a class="el" href="class_cluster.html">Cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a977132d3b954e784826d3b0635fa684c">Add</a> (const <a class="el" href="class_cluster.html">Cluster</a> &amp;e)</td></tr>
+<tr class="memdesc:a977132d3b954e784826d3b0635fa684c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать количество элементов массива. <br /></td></tr>
+<tr class="separator:a977132d3b954e784826d3b0635fa684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295563e5a8614d6d407776fac550156a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cluster.html">Cluster</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a295563e5a8614d6d407776fac550156a">operator[]</a> (size_t loc) const</td></tr>
+<tr class="memdesc:a295563e5a8614d6d407776fac550156a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор доступа по индексу.  <a href="classiobuf___seq.html#a295563e5a8614d6d407776fac550156a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a295563e5a8614d6d407776fac550156a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b22693d07db8a5e22a7b443df1bd61"><td class="memItemLeft" align="right" valign="top"><a id="a99b22693d07db8a5e22a7b443df1bd61"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a99b22693d07db8a5e22a7b443df1bd61">gc</a> ()</td></tr>
+<tr class="memdesc:a99b22693d07db8a5e22a7b443df1bd61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить следующий байт из буфера. <br /></td></tr>
+<tr class="separator:a99b22693d07db8a5e22a7b443df1bd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860d8f199bfa1b1238bb5101c0740841"><td class="memItemLeft" align="right" valign="top"><a id="a860d8f199bfa1b1238bb5101c0740841"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a860d8f199bfa1b1238bb5101c0740841">getn</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *, size_t)</td></tr>
+<tr class="memdesc:a860d8f199bfa1b1238bb5101c0740841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить следующие n байт из буфера поэлементно. <br /></td></tr>
+<tr class="separator:a860d8f199bfa1b1238bb5101c0740841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade296cf63c800e547da181902523b8ae"><td class="memItemLeft" align="right" valign="top"><a id="ade296cf63c800e547da181902523b8ae"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ade296cf63c800e547da181902523b8ae">getln</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *, size_t)</td></tr>
+<tr class="memdesc:ade296cf63c800e547da181902523b8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить следующие n байт из буфера копированием участка памяти. <br /></td></tr>
+<tr class="separator:ade296cf63c800e547da181902523b8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac466c606f36119a10eb919e09871cc6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ac466c606f36119a10eb919e09871cc6c">pc</a> (uint8 c)</td></tr>
+<tr class="memdesc:ac466c606f36119a10eb919e09871cc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить очередной байт из буфера, но указатель на следующий не сдвигать.  <a href="classiobuf___seq.html#ac466c606f36119a10eb919e09871cc6c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac466c606f36119a10eb919e09871cc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10054d22b5ff58faffb3a543955e4bb0"><td class="memItemLeft" align="right" valign="top"><a id="a10054d22b5ff58faffb3a543955e4bb0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a10054d22b5ff58faffb3a543955e4bb0">putn</a> (const <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *, size_t)</td></tr>
+<tr class="memdesc:a10054d22b5ff58faffb3a543955e4bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поместить следующие n байт в буфер поэлементно <br /></td></tr>
+<tr class="separator:a10054d22b5ff58faffb3a543955e4bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c5c6f3b0dc567854669eb706a820d2"><td class="memItemLeft" align="right" valign="top"><a id="a54c5c6f3b0dc567854669eb706a820d2"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a54c5c6f3b0dc567854669eb706a820d2">putln</a> (const <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *, size_t)</td></tr>
+<tr class="memdesc:a54c5c6f3b0dc567854669eb706a820d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поместить следующие n байт в буфер копированием участка памяти. <br /></td></tr>
+<tr class="separator:a54c5c6f3b0dc567854669eb706a820d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30071be51dc52ed1125f4a03ac4ff364"><td class="memItemLeft" align="right" valign="top"><a id="a30071be51dc52ed1125f4a03ac4ff364"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a30071be51dc52ed1125f4a03ac4ff364">advance</a> ()</td></tr>
+<tr class="memdesc:a30071be51dc52ed1125f4a03ac4ff364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Если кончился текущий буфер, переместить указатель на следующий. <br /></td></tr>
+<tr class="separator:a30071be51dc52ed1125f4a03ac4ff364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957790ec377b573c3701ca448cea839b"><td class="memItemLeft" align="right" valign="top"><a id="a957790ec377b573c3701ca448cea839b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a957790ec377b573c3701ca448cea839b">good</a> () const</td></tr>
+<tr class="memdesc:a957790ec377b573c3701ca448cea839b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Корректно ли состояние буфера. <br /></td></tr>
+<tr class="separator:a957790ec377b573c3701ca448cea839b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5f36a3889186ec791f3afa618f0269"><td class="memItemLeft" align="right" valign="top"><a id="aab5f36a3889186ec791f3afa618f0269"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#aab5f36a3889186ec791f3afa618f0269">eof</a> () const</td></tr>
+<tr class="memdesc:aab5f36a3889186ec791f3afa618f0269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Достигнут ли конец файла? <br /></td></tr>
+<tr class="separator:aab5f36a3889186ec791f3afa618f0269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd77f40e234fa787f075b441c27b3647"><td class="memItemLeft" align="right" valign="top"><a id="acd77f40e234fa787f075b441c27b3647"></a>
+uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#acd77f40e234fa787f075b441c27b3647">state</a> () const</td></tr>
+<tr class="memdesc:acd77f40e234fa787f075b441c27b3647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить состояние буфера. <br /></td></tr>
+<tr class="separator:acd77f40e234fa787f075b441c27b3647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d606684fcd7838a82c484f7017e39a"><td class="memItemLeft" align="right" valign="top"><a id="a79d606684fcd7838a82c484f7017e39a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a79d606684fcd7838a82c484f7017e39a">setState</a> (io::state add)</td></tr>
+<tr class="memdesc:a79d606684fcd7838a82c484f7017e39a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить состояние буфера. <br /></td></tr>
+<tr class="separator:a79d606684fcd7838a82c484f7017e39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab727d22f4549eb5f87b4336eddfba9f"><td class="memItemLeft" align="right" valign="top"><a id="aab727d22f4549eb5f87b4336eddfba9f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#aab727d22f4549eb5f87b4336eddfba9f">clearState</a> (io::state sub)</td></tr>
+<tr class="memdesc:aab727d22f4549eb5f87b4336eddfba9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Убрать состояние буфера. <br /></td></tr>
+<tr class="separator:aab727d22f4549eb5f87b4336eddfba9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb8bda1aae7ac37d20d8512d1e75381"><td class="memItemLeft" align="right" valign="top"><a id="aeeb8bda1aae7ac37d20d8512d1e75381"></a>
+io::pos&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#aeeb8bda1aae7ac37d20d8512d1e75381">size</a> () const</td></tr>
+<tr class="memdesc:aeeb8bda1aae7ac37d20d8512d1e75381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Посчитать размер текущего файла. <br /></td></tr>
+<tr class="separator:aeeb8bda1aae7ac37d20d8512d1e75381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72c30f67ba59ecde3d94b3fe9e0fac2"><td class="memItemLeft" align="right" valign="top"><a id="ab72c30f67ba59ecde3d94b3fe9e0fac2"></a>
+io::pos&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ab72c30f67ba59ecde3d94b3fe9e0fac2">tell</a> () const</td></tr>
+<tr class="memdesc:ab72c30f67ba59ecde3d94b3fe9e0fac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущую позицию в файле <br /></td></tr>
+<tr class="separator:ab72c30f67ba59ecde3d94b3fe9e0fac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2a1885b30b55b7606256b537a311a0"><td class="memItemLeft" align="right" valign="top"><a id="a0c2a1885b30b55b7606256b537a311a0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a0c2a1885b30b55b7606256b537a311a0">lseek</a> (size_t pos=<a class="el" href="group___base___tools.html#ga0c13cfe0532138c3d34962277b441914">SYS_MAX_T</a>)</td></tr>
+<tr class="memdesc:a0c2a1885b30b55b7606256b537a311a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить текущую позицию в буфере <br /></td></tr>
+<tr class="separator:a0c2a1885b30b55b7606256b537a311a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699465dbf6a17c7e789bae2d0f8c8695"><td class="memItemLeft" align="right" valign="top"><a id="a699465dbf6a17c7e789bae2d0f8c8695"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a699465dbf6a17c7e789bae2d0f8c8695">attach</a> (<a class="el" href="class_file_space.html">FileSpace</a> &amp;file, bool check=true)</td></tr>
+<tr class="memdesc:a699465dbf6a17c7e789bae2d0f8c8695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присоединить файл к буферу с проверкой или без. <br /></td></tr>
+<tr class="separator:a699465dbf6a17c7e789bae2d0f8c8695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b89b461f3d289bb6074e7201419413"><td class="memItemLeft" align="right" valign="top"><a id="a90b89b461f3d289bb6074e7201419413"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a90b89b461f3d289bb6074e7201419413">open</a> (<a class="el" href="class_file_space.html">FileSpace</a> &amp;file, uint8 om, const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;, bool fullCheck=true)</td></tr>
+<tr class="memdesc:a90b89b461f3d289bb6074e7201419413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть файл, если он свой. Флаг fullCheck == false отключает избыточные проверки (ради производительности). <br /></td></tr>
+<tr class="separator:a90b89b461f3d289bb6074e7201419413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada202044a801f089ed107989e78f03c2"><td class="memItemLeft" align="right" valign="top"><a id="ada202044a801f089ed107989e78f03c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ada202044a801f089ed107989e78f03c2">openSys</a> (uint8 om)</td></tr>
+<tr class="memdesc:ada202044a801f089ed107989e78f03c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть системный файл. <br /></td></tr>
+<tr class="separator:ada202044a801f089ed107989e78f03c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118bd5c2795455f2736f3520d03e430e"><td class="memItemLeft" align="right" valign="top"><a id="a118bd5c2795455f2736f3520d03e430e"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a118bd5c2795455f2736f3520d03e430e">close</a> ()</td></tr>
+<tr class="memdesc:a118bd5c2795455f2736f3520d03e430e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрыть файл. <br /></td></tr>
+<tr class="separator:a118bd5c2795455f2736f3520d03e430e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b745be7a94a4d53e2e85bdaf6d4016"><td class="memItemLeft" align="right" valign="top"><a id="a96b745be7a94a4d53e2e85bdaf6d4016"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a96b745be7a94a4d53e2e85bdaf6d4016">closeBuff</a> ()</td></tr>
+<tr class="memdesc:a96b745be7a94a4d53e2e85bdaf6d4016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрыть буфер. <br /></td></tr>
+<tr class="separator:a96b745be7a94a4d53e2e85bdaf6d4016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49456aaf820f07fdd834154b711b443"><td class="memItemLeft" align="right" valign="top"><a id="ad49456aaf820f07fdd834154b711b443"></a>
+virtual <a class="el" href="class_file_space.html">FileSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ad49456aaf820f07fdd834154b711b443">enterFileSpace</a> (uint8)</td></tr>
+<tr class="memdesc:ad49456aaf820f07fdd834154b711b443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить для записи <a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a> с заданным индексом (при необходимости создать новый). <br /></td></tr>
+<tr class="separator:ad49456aaf820f07fdd834154b711b443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecc1a72429b00bef7ca2cf2f3ebbc67"><td class="memItemLeft" align="right" valign="top"><a id="a2ecc1a72429b00bef7ca2cf2f3ebbc67"></a>
+virtual <a class="el" href="class_file_space.html">FileSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a2ecc1a72429b00bef7ca2cf2f3ebbc67">enterFileSpace</a> (const <a class="el" href="struct_cluster_reference.html">ClusterReference</a> &amp;, bool)</td></tr>
+<tr class="memdesc:a2ecc1a72429b00bef7ca2cf2f3ebbc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить позицию для записи/чтения по заданному <a class="el" href="struct_cluster_reference.html" title="Позиция в кластере для чтения/записи.">ClusterReference</a>. Сохранить предыдущую позицию, если saveCurr = true. <br /></td></tr>
+<tr class="separator:a2ecc1a72429b00bef7ca2cf2f3ebbc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b7bf2207aea6f2e3e4ea91f95c4fe5"><td class="memItemLeft" align="right" valign="top"><a id="a56b7bf2207aea6f2e3e4ea91f95c4fe5"></a>
+virtual <a class="el" href="class_file_space.html">FileSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a56b7bf2207aea6f2e3e4ea91f95c4fe5">enterFileSpace</a> (const <a class="el" href="struct_cluster_reference.html">ClusterReference</a> &amp;, <a class="el" href="class_file_space.html">FileSpace</a> *, bool)</td></tr>
+<tr class="memdesc:a56b7bf2207aea6f2e3e4ea91f95c4fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить позицию для записи/чтения по заданным <a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a> и <a class="el" href="struct_cluster_reference.html" title="Позиция в кластере для чтения/записи.">ClusterReference</a>. Внимание, здесь <a class="el" href="struct_cluster_reference.html#a177baae1a41ab63e905d96b93f7f0aaa" title="Индекс кластера в массиве кластеров iobuf_Seq.">ClusterReference.clusterIndex</a> должен содержать индекс в массиве индексов кластеров в FileSpace! Сохранить предыдущую позицию, если saveCurr = true. <br /></td></tr>
+<tr class="separator:a56b7bf2207aea6f2e3e4ea91f95c4fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28632b2b97b9efe6c5bce542f1757062"><td class="memItemLeft" align="right" valign="top"><a id="a28632b2b97b9efe6c5bce542f1757062"></a>
+virtual <a class="el" href="class_file_space.html">FileSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a28632b2b97b9efe6c5bce542f1757062">returnToPreviousFileSpace</a> ()</td></tr>
+<tr class="memdesc:a28632b2b97b9efe6c5bce542f1757062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить предыдущий <a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a> для записи/чтения. <br /></td></tr>
+<tr class="separator:a28632b2b97b9efe6c5bce542f1757062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff896ce13371fa5436f3a786d6b4f08e"><td class="memItemLeft" align="right" valign="top"><a id="aff896ce13371fa5436f3a786d6b4f08e"></a>
+<a class="el" href="struct_cluster_reference.html">ClusterReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#aff896ce13371fa5436f3a786d6b4f08e">getCurrentClusterPos</a> ()</td></tr>
+<tr class="memdesc:aff896ce13371fa5436f3a786d6b4f08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить текущую позицию в буфере. <br /></td></tr>
+<tr class="separator:aff896ce13371fa5436f3a786d6b4f08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899bee7056874d1e0e9f0db53ebe220b"><td class="memItemLeft" align="right" valign="top"><a id="a899bee7056874d1e0e9f0db53ebe220b"></a>
+<a class="el" href="class_file_space.html">FileSpace</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a899bee7056874d1e0e9f0db53ebe220b">sysFile</a> ()</td></tr>
+<tr class="memdesc:a899bee7056874d1e0e9f0db53ebe220b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить доступ к системному файлу. <br /></td></tr>
+<tr class="separator:a899bee7056874d1e0e9f0db53ebe220b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f1e6c3418ce5f0ff36769515ab0872"><td class="memItemLeft" align="right" valign="top"><a id="a84f1e6c3418ce5f0ff36769515ab0872"></a>
+<a class="el" href="class_file_space.html">FileSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a84f1e6c3418ce5f0ff36769515ab0872">openedFile</a> () const</td></tr>
+<tr class="memdesc:a84f1e6c3418ce5f0ff36769515ab0872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить доступ к открытому файлу. <br /></td></tr>
+<tr class="separator:a84f1e6c3418ce5f0ff36769515ab0872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbadaf8ee2dbba4ac44bdfb33b0ed4a"><td class="memItemLeft" align="right" valign="top"><a id="a2fbadaf8ee2dbba4ac44bdfb33b0ed4a"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a2fbadaf8ee2dbba4ac44bdfb33b0ed4a">DOSFileLen</a> () const</td></tr>
+<tr class="memdesc:a2fbadaf8ee2dbba4ac44bdfb33b0ed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер данных хранилища (файла на диске). <br /></td></tr>
+<tr class="separator:a2fbadaf8ee2dbba4ac44bdfb33b0ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88543a974ed381c21e6bec8a8338585"><td class="memItemLeft" align="right" valign="top"><a id="ad88543a974ed381c21e6bec8a8338585"></a>
+virtual const TCHAR *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ad88543a974ed381c21e6bec8a8338585">DOSFileName</a> () const</td></tr>
+<tr class="memdesc:ad88543a974ed381c21e6bec8a8338585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя хранилища (файла на диске). <br /></td></tr>
+<tr class="separator:ad88543a974ed381c21e6bec8a8338585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721d52067ec7e77ff280e86a9d48a02b"><td class="memItemLeft" align="right" valign="top"><a id="a721d52067ec7e77ff280e86a9d48a02b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a721d52067ec7e77ff280e86a9d48a02b">fresh</a> () const</td></tr>
+<tr class="memdesc:a721d52067ec7e77ff280e86a9d48a02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свежий ли буфер? <br /></td></tr>
+<tr class="separator:a721d52067ec7e77ff280e86a9d48a02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa41f5754f7bf49349e8c34d5afa818c"><td class="memItemLeft" align="right" valign="top"><a id="afa41f5754f7bf49349e8c34d5afa818c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#afa41f5754f7bf49349e8c34d5afa818c">fresh</a> (bool f)</td></tr>
+<tr class="memdesc:afa41f5754f7bf49349e8c34d5afa818c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние свежести буфера. <br /></td></tr>
+<tr class="separator:afa41f5754f7bf49349e8c34d5afa818c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e3c5b759e7c70fcd9d84e606d77a4e"><td class="memItemLeft" align="right" valign="top"><a id="a48e3c5b759e7c70fcd9d84e606d77a4e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a48e3c5b759e7c70fcd9d84e606d77a4e">modified</a> () const</td></tr>
+<tr class="memdesc:a48e3c5b759e7c70fcd9d84e606d77a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Модифицирован ли буфер? <br /></td></tr>
+<tr class="separator:a48e3c5b759e7c70fcd9d84e606d77a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3462c630a95c5eb0e580dfe7e8bf63"><td class="memItemLeft" align="right" valign="top"><a id="a3c3462c630a95c5eb0e580dfe7e8bf63"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a3c3462c630a95c5eb0e580dfe7e8bf63">modified</a> (bool m)</td></tr>
+<tr class="memdesc:a3c3462c630a95c5eb0e580dfe7e8bf63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние модифицированности буфера. <br /></td></tr>
+<tr class="separator:a3c3462c630a95c5eb0e580dfe7e8bf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24961d5d4e1821c566b89b82fb2d7ca4"><td class="memItemLeft" align="right" valign="top"><a id="a24961d5d4e1821c566b89b82fb2d7ca4"></a>
+uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a24961d5d4e1821c566b89b82fb2d7ca4">mode</a> () const</td></tr>
+<tr class="memdesc:a24961d5d4e1821c566b89b82fb2d7ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать режим работы буфера. <br /></td></tr>
+<tr class="separator:a24961d5d4e1821c566b89b82fb2d7ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59eca457768875710d2cb1d9a8ef283"><td class="memItemLeft" align="right" valign="top"><a id="ae59eca457768875710d2cb1d9a8ef283"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ae59eca457768875710d2cb1d9a8ef283">mode</a> (uint8 m)</td></tr>
+<tr class="memdesc:ae59eca457768875710d2cb1d9a8ef283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить режим работы буфера. <br /></td></tr>
+<tr class="separator:ae59eca457768875710d2cb1d9a8ef283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3f7e2152a13945ef9fb6f7d286485c"><td class="memItemLeft" align="right" valign="top"><a id="ade3f7e2152a13945ef9fb6f7d286485c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ade3f7e2152a13945ef9fb6f7d286485c">IsInMode</a> () const</td></tr>
+<tr class="memdesc:ade3f7e2152a13945ef9fb6f7d286485c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находимся в режиме чтения? <br /></td></tr>
+<tr class="separator:ade3f7e2152a13945ef9fb6f7d286485c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe90b18a336ac7c5a51ada6411937f1"><td class="memItemLeft" align="right" valign="top"><a id="a5fe90b18a336ac7c5a51ada6411937f1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a5fe90b18a336ac7c5a51ada6411937f1">IsOutMode</a> () const</td></tr>
+<tr class="memdesc:a5fe90b18a336ac7c5a51ada6411937f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находимся в режиме записи? <br /></td></tr>
+<tr class="separator:a5fe90b18a336ac7c5a51ada6411937f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f6cfdea70b1d222f6cea6570c63db9"><td class="memItemLeft" align="right" valign="top"><a id="a30f6cfdea70b1d222f6cea6570c63db9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a30f6cfdea70b1d222f6cea6570c63db9">IsInOrOutMode</a> () const</td></tr>
+<tr class="memdesc:a30f6cfdea70b1d222f6cea6570c63db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находимся в режиме чтения или записи? <br /></td></tr>
+<tr class="separator:a30f6cfdea70b1d222f6cea6570c63db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f6f3843fd1f3f1c2eac5b46ce0cd78"><td class="memItemLeft" align="right" valign="top"><a id="a65f6f3843fd1f3f1c2eac5b46ce0cd78"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a65f6f3843fd1f3f1c2eac5b46ce0cd78">deleteIfEmpty</a> () const</td></tr>
+<tr class="memdesc:a65f6f3843fd1f3f1c2eac5b46ce0cd78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нужно ли удалять пустой файл? <br /></td></tr>
+<tr class="separator:a65f6f3843fd1f3f1c2eac5b46ce0cd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba57f216acf417957d49b091ce4a9b1f"><td class="memItemLeft" align="right" valign="top"><a id="aba57f216acf417957d49b091ce4a9b1f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#aba57f216acf417957d49b091ce4a9b1f">deleteIfEmpty</a> (bool s)</td></tr>
+<tr class="memdesc:aba57f216acf417957d49b091ce4a9b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить флаг необходимости удаления пустого файла. <br /></td></tr>
+<tr class="separator:aba57f216acf417957d49b091ce4a9b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1818d9e8ba19ac695d133f2446b9393d"><td class="memItemLeft" align="right" valign="top"><a id="a1818d9e8ba19ac695d133f2446b9393d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a1818d9e8ba19ac695d133f2446b9393d">deleteOnClose</a> () const</td></tr>
+<tr class="memdesc:a1818d9e8ba19ac695d133f2446b9393d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нужно ли удалять файл при закрытии буфера? <br /></td></tr>
+<tr class="separator:a1818d9e8ba19ac695d133f2446b9393d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2d61f2fd791899c3a33102dec49073"><td class="memItemLeft" align="right" valign="top"><a id="a5e2d61f2fd791899c3a33102dec49073"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a5e2d61f2fd791899c3a33102dec49073">deleteOnClose</a> (bool s)</td></tr>
+<tr class="memdesc:a5e2d61f2fd791899c3a33102dec49073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить флаг необходимости удаления файла при закрытии буфера. <br /></td></tr>
+<tr class="separator:a5e2d61f2fd791899c3a33102dec49073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d78c730dfb7a580f2db820119c5461"><td class="memItemLeft" align="right" valign="top"><a id="ac9d78c730dfb7a580f2db820119c5461"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ac9d78c730dfb7a580f2db820119c5461">SetVersionsByStorage</a> ()</td></tr>
+<tr class="memdesc:ac9d78c730dfb7a580f2db820119c5461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить текущую версию равной версии хранилища. <br /></td></tr>
+<tr class="separator:ac9d78c730dfb7a580f2db820119c5461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7776444bdd91bca9bc5a97ad0a5d478"><td class="memItemLeft" align="right" valign="top"><a id="af7776444bdd91bca9bc5a97ad0a5d478"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#af7776444bdd91bca9bc5a97ad0a5d478">MathVersion</a> () const</td></tr>
+<tr class="memdesc:af7776444bdd91bca9bc5a97ad0a5d478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть главную версию (математического ядра). <br /></td></tr>
+<tr class="separator:af7776444bdd91bca9bc5a97ad0a5d478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329e1cacf889090ba728b48290bee98d"><td class="memItemLeft" align="right" valign="top"><a id="a329e1cacf889090ba728b48290bee98d"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a329e1cacf889090ba728b48290bee98d">AppVersion</a> (size_t ind=-1) const</td></tr>
+<tr class="memdesc:a329e1cacf889090ba728b48290bee98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть дополнительную версию (конечного приложения). <br /></td></tr>
+<tr class="separator:a329e1cacf889090ba728b48290bee98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e228840b8237b0db029b52b64f8759a"><td class="memItemLeft" align="right" valign="top"><a id="a3e228840b8237b0db029b52b64f8759a"></a>
+const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a3e228840b8237b0db029b52b64f8759a">GetVersionsContainer</a> () const</td></tr>
+<tr class="memdesc:a3e228840b8237b0db029b52b64f8759a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить версии буфера. <br /></td></tr>
+<tr class="separator:a3e228840b8237b0db029b52b64f8759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e9823809fac61c89568af741c974c5"><td class="memItemLeft" align="right" valign="top"><a id="ae0e9823809fac61c89568af741c974c5"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ae0e9823809fac61c89568af741c974c5">GetStorageVersion</a> ()</td></tr>
+<tr class="memdesc:ae0e9823809fac61c89568af741c974c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать версию хранилища. <br /></td></tr>
+<tr class="separator:ae0e9823809fac61c89568af741c974c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08973ade4bfb74af41d538ff99331201"><td class="memItemLeft" align="right" valign="top"><a id="a08973ade4bfb74af41d538ff99331201"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a08973ade4bfb74af41d538ff99331201">GetFormatVersion</a> () const</td></tr>
+<tr class="memdesc:a08973ade4bfb74af41d538ff99331201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать версию формата. <br /></td></tr>
+<tr class="separator:a08973ade4bfb74af41d538ff99331201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409de596f184f8ea6e466aba302e06c9"><td class="memItemLeft" align="right" valign="top"><a id="a409de596f184f8ea6e466aba302e06c9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a409de596f184f8ea6e466aba302e06c9">SetFormatVersion</a> (<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version)</td></tr>
+<tr class="memdesc:a409de596f184f8ea6e466aba302e06c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить версию формата. <br /></td></tr>
+<tr class="separator:a409de596f184f8ea6e466aba302e06c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a1875aea6588133dbb5a1c380824c5745"><td class="memItemLeft" align="right" valign="top"><a id="a1875aea6588133dbb5a1c380824c5745"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a1875aea6588133dbb5a1c380824c5745">underflow</a> ()</td></tr>
+<tr class="memdesc:a1875aea6588133dbb5a1c380824c5745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызывается когда прочитан весь буфер, а еще хочется. <br /></td></tr>
+<tr class="separator:a1875aea6588133dbb5a1c380824c5745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bdbcc3271fd56db72d37df6499a0e9"><td class="memItemLeft" align="right" valign="top"><a id="ab3bdbcc3271fd56db72d37df6499a0e9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ab3bdbcc3271fd56db72d37df6499a0e9">overflow</a> (uint8 ch)</td></tr>
+<tr class="memdesc:ab3bdbcc3271fd56db72d37df6499a0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызывается когда заполнен весь буфер, а еще хочется. <br /></td></tr>
+<tr class="separator:ab3bdbcc3271fd56db72d37df6499a0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a629273f1783d4eafa1be2f64b7431"><td class="memItemLeft" align="right" valign="top"><a id="ac4a629273f1783d4eafa1be2f64b7431"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ac4a629273f1783d4eafa1be2f64b7431">setup</a> ()=0</td></tr>
+<tr class="memdesc:ac4a629273f1783d4eafa1be2f64b7431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить следующий буфер. <br /></td></tr>
+<tr class="separator:ac4a629273f1783d4eafa1be2f64b7431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9ddce02e208d535d28515d9797f5df"><td class="memItemLeft" align="right" valign="top"><a id="a1c9ddce02e208d535d28515d9797f5df"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a1c9ddce02e208d535d28515d9797f5df">flush</a> ()=0</td></tr>
+<tr class="memdesc:a1c9ddce02e208d535d28515d9797f5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбросить буфер. <br /></td></tr>
+<tr class="separator:a1c9ddce02e208d535d28515d9797f5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2575a273ce74f8d0439c2deed0754bc"><td class="memItemLeft" align="right" valign="top"><a id="ad2575a273ce74f8d0439c2deed0754bc"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ad2575a273ce74f8d0439c2deed0754bc">checkEof</a> ()</td></tr>
+<tr class="memdesc:ad2575a273ce74f8d0439c2deed0754bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить конец файла, если необходимо. <br /></td></tr>
+<tr class="separator:ad2575a273ce74f8d0439c2deed0754bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5861a99567c6ca78a00425c54f5cd04d"><td class="memItemLeft" align="right" valign="top"><a id="a5861a99567c6ca78a00425c54f5cd04d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a5861a99567c6ca78a00425c54f5cd04d">avail</a> () const</td></tr>
+<tr class="memdesc:a5861a99567c6ca78a00425c54f5cd04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать количество необработанных байт в буфере. <br /></td></tr>
+<tr class="separator:a5861a99567c6ca78a00425c54f5cd04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade48710deb32509afeece9e781a79a24"><td class="memItemLeft" align="right" valign="top"><a id="ade48710deb32509afeece9e781a79a24"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ade48710deb32509afeece9e781a79a24">waiting</a> () const</td></tr>
+<tr class="memdesc:ade48710deb32509afeece9e781a79a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать количество обработанных байт в буфере. <br /></td></tr>
+<tr class="separator:ade48710deb32509afeece9e781a79a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7268928337ced2b2c1167e3bc90f6d"><td class="memItemLeft" align="right" valign="top"><a id="a1c7268928337ced2b2c1167e3bc90f6d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a1c7268928337ced2b2c1167e3bc90f6d">mine</a> (<a class="el" href="class_file_space.html">FileSpace</a> &amp;)</td></tr>
+<tr class="memdesc:a1c7268928337ced2b2c1167e3bc90f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, мой ли это файл. <br /></td></tr>
+<tr class="separator:a1c7268928337ced2b2c1167e3bc90f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae3afedd974c919b8e1ab2600c798af"><td class="memItemLeft" align="right" valign="top"><a id="abae3afedd974c919b8e1ab2600c798af"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#abae3afedd974c919b8e1ab2600c798af">SetVersionsContainer</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;vers)</td></tr>
+<tr class="memdesc:abae3afedd974c919b8e1ab2600c798af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить версию открытого файла. <br /></td></tr>
+<tr class="separator:abae3afedd974c919b8e1ab2600c798af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e199d9af501c106921d99d7b581f1e"><td class="memItemLeft" align="right" valign="top"><a id="a51e199d9af501c106921d99d7b581f1e"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a51e199d9af501c106921d99d7b581f1e">SetStorageVersion</a> (<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>)</td></tr>
+<tr class="memdesc:a51e199d9af501c106921d99d7b581f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить версию хранилища. <br /></td></tr>
+<tr class="separator:a51e199d9af501c106921d99d7b581f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a706386ed1997143cd5bb6077ba6cceca"><td class="memItemLeft" align="right" valign="top"><a id="a706386ed1997143cd5bb6077ba6cceca"></a>
+uint8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a706386ed1997143cd5bb6077ba6cceca">base</a></td></tr>
+<tr class="memdesc:a706386ed1997143cd5bb6077ba6cceca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на начало буфера. <br /></td></tr>
+<tr class="separator:a706386ed1997143cd5bb6077ba6cceca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8aa0a5a2df64528645a51c3d1316530"><td class="memItemLeft" align="right" valign="top"><a id="ac8aa0a5a2df64528645a51c3d1316530"></a>
+uint8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ac8aa0a5a2df64528645a51c3d1316530">ptr</a></td></tr>
+<tr class="memdesc:ac8aa0a5a2df64528645a51c3d1316530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на следующий байт. <br /></td></tr>
+<tr class="separator:ac8aa0a5a2df64528645a51c3d1316530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca29bef06cdb7151307c9734e2af317"><td class="memItemLeft" align="right" valign="top"><a id="a6ca29bef06cdb7151307c9734e2af317"></a>
+uint8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a6ca29bef06cdb7151307c9734e2af317">end</a></td></tr>
+<tr class="memdesc:a6ca29bef06cdb7151307c9734e2af317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на конец буфера. <br /></td></tr>
+<tr class="separator:a6ca29bef06cdb7151307c9734e2af317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0f13dffa9d7b79e6f79f85c18fb44a"><td class="memItemLeft" align="right" valign="top"><a id="a1a0f13dffa9d7b79e6f79f85c18fb44a"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a1a0f13dffa9d7b79e6f79f85c18fb44a">storageVers</a></td></tr>
+<tr class="memdesc:a1a0f13dffa9d7b79e6f79f85c18fb44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Версия хранилища (должна быть ранее curFileVers). <br /></td></tr>
+<tr class="separator:a1a0f13dffa9d7b79e6f79f85c18fb44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcd826541edb32f3b76ed9a4854f624"><td class="memItemLeft" align="right" valign="top"><a id="adfcd826541edb32f3b76ed9a4854f624"></a>
+<a class="el" href="class_version_container.html">VersionContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#adfcd826541edb32f3b76ed9a4854f624">curFileVers</a></td></tr>
+<tr class="memdesc:adfcd826541edb32f3b76ed9a4854f624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Версии текущего открытого файла (потока). <br /></td></tr>
+<tr class="separator:adfcd826541edb32f3b76ed9a4854f624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9d11a6cd9301fe1f8f1606b25966d5"><td class="memItemLeft" align="right" valign="top"><a id="a3d9d11a6cd9301fe1f8f1606b25966d5"></a>
+<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a3d9d11a6cd9301fe1f8f1606b25966d5">formatVersion</a></td></tr>
+<tr class="memdesc:a3d9d11a6cd9301fe1f8f1606b25966d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Версия формата. <br /></td></tr>
+<tr class="separator:a3d9d11a6cd9301fe1f8f1606b25966d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839ba703c688fc635f28d976d6cdf8eb"><td class="memItemLeft" align="right" valign="top"><a id="a839ba703c688fc635f28d976d6cdf8eb"></a>
+<a class="el" href="class_file_space.html">FileSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a839ba703c688fc635f28d976d6cdf8eb">sys</a></td></tr>
+<tr class="memdesc:a839ba703c688fc635f28d976d6cdf8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Системный файл. <br /></td></tr>
+<tr class="separator:a839ba703c688fc635f28d976d6cdf8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6420bf2ee0c37a4f3d4cea169d9a9f64"><td class="memItemLeft" align="right" valign="top"><a id="a6420bf2ee0c37a4f3d4cea169d9a9f64"></a>
+<a class="el" href="class_p_array.html">PArray</a>&lt; <a class="el" href="class_file_space.html">FileSpace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a6420bf2ee0c37a4f3d4cea169d9a9f64">files</a></td></tr>
+<tr class="memdesc:a6420bf2ee0c37a4f3d4cea169d9a9f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список файлов содержащихся в <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a> (первый элемент - адрес sys). <br /></td></tr>
+<tr class="separator:a6420bf2ee0c37a4f3d4cea169d9a9f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b30d3d5dc5a219dd77cfc34b8a9029"><td class="memItemLeft" align="right" valign="top"><a id="a23b30d3d5dc5a219dd77cfc34b8a9029"></a>
+<a class="el" href="class_file_space.html">FileSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a23b30d3d5dc5a219dd77cfc34b8a9029">curr</a></td></tr>
+<tr class="memdesc:a23b30d3d5dc5a219dd77cfc34b8a9029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий открытый файл (поток). <br /></td></tr>
+<tr class="separator:a23b30d3d5dc5a219dd77cfc34b8a9029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb927d843f259e7062b9b958530c11e2"><td class="memItemLeft" align="right" valign="top"><a id="acb927d843f259e7062b9b958530c11e2"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#acb927d843f259e7062b9b958530c11e2">part</a></td></tr>
+<tr class="memdesc:acb927d843f259e7062b9b958530c11e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий кластер в текущем открытом файле. <br /></td></tr>
+<tr class="separator:acb927d843f259e7062b9b958530c11e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11ded3546464c711ef505cde7fdf2d6"><td class="memItemLeft" align="right" valign="top"><a id="ac11ded3546464c711ef505cde7fdf2d6"></a>
+uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#ac11ded3546464c711ef505cde7fdf2d6">clusterSize</a></td></tr>
+<tr class="memdesc:ac11ded3546464c711ef505cde7fdf2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер кластера. <br /></td></tr>
+<tr class="separator:ac11ded3546464c711ef505cde7fdf2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a097d74688aa130963146bd74f7956"><td class="memItemLeft" align="right" valign="top"><a id="a70a097d74688aa130963146bd74f7956"></a>
+uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a70a097d74688aa130963146bd74f7956">bufferMode</a></td></tr>
+<tr class="memdesc:a70a097d74688aa130963146bd74f7956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим работы буфера. <br /></td></tr>
+<tr class="separator:a70a097d74688aa130963146bd74f7956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbd5befee2c78e1bb3ff893072463ce"><td class="memItemLeft" align="right" valign="top"><a id="acfbd5befee2c78e1bb3ff893072463ce"></a>
+uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#acfbd5befee2c78e1bb3ff893072463ce">curFileMode</a></td></tr>
+<tr class="memdesc:acfbd5befee2c78e1bb3ff893072463ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим открытия текущего файла. <br /></td></tr>
+<tr class="separator:acfbd5befee2c78e1bb3ff893072463ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebfea3bcde4d7ca6cf06230d7781d55"><td class="memItemLeft" align="right" valign="top"><a id="a4ebfea3bcde4d7ca6cf06230d7781d55"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a4ebfea3bcde4d7ca6cf06230d7781d55">modifiedFlag</a></td></tr>
+<tr class="memdesc:a4ebfea3bcde4d7ca6cf06230d7781d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буфер модифицирован. <br /></td></tr>
+<tr class="separator:a4ebfea3bcde4d7ca6cf06230d7781d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dc3327122d0a9864db1685c0f500b4"><td class="memItemLeft" align="right" valign="top"><a id="a96dc3327122d0a9864db1685c0f500b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html#a96dc3327122d0a9864db1685c0f500b4">freshFlag</a></td></tr>
+<tr class="memdesc:a96dc3327122d0a9864db1685c0f500b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свежий ли буфер. <br /></td></tr>
+<tr class="separator:a96dc3327122d0a9864db1685c0f500b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a005b378bc46ddd2d68e364e281a5eacc"><td class="memItemLeft" align="right" valign="top"><a id="a005b378bc46ddd2d68e364e281a5eacc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>tape</b></td></tr>
+<tr class="separator:a005b378bc46ddd2d68e364e281a5eacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписать файл. </p>
+<p>Потоковый буфер - базовый класс. <br  />
+ Буфер <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a> и его наследники служат для выполнения операций чтения и записи в интересах потока (класс tape). <br  />
+ Классы <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a>, tape и их наследников следует рассматривать в совокупности. <br  />
+ Терминология: <br  />
+</p><ul>
+<li>Хранилище - файл на диске или область памяти. <br  />
+</li>
+<li>Файл - файл внутри хранилища. <br  />
+ Класс <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a> содержит массив кластеров. <br  />
+ Класс Кластер (<a class="el" href="class_cluster.html" title="Кластер.">Cluster</a>) - это структурированная информация о кластере (его начало и длина). Он используется для операций с диском, где тогда начало - это смещение, и операций с памятью, где начало - это адрес в памяти. Все операции чтения и записи производятся по-кластерно, используя индекс в массиве кластеров <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a>. <br  />
+ Класс Файловое пространство (<a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a>) - это место, отведенное под файл, это массив индексов в массиве кластеров. Это как раз то, что здесь мы называем файлом. <br  />
+ Внимание: с этого места и далее вместо слова кластер следует читать - индекс кластера в массиве кластеров <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a>. <br  />
+ <br  />
+ Важнейшие поля данных <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a>: <br  />
+ <a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a> sys - "системный" файл. Он открывается в конструктор класса tape. <br  />
+<ol type="1">
+<li>Если класс <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a> используется классом tape непосредственно (например: writer potok( "file.ext" ); или reader * potok = new reader( "file.ext" ), то в файле sys содержится непосредственно информация, которая записывалась в file.ext. <br  />
+</li>
+<li>Если класс <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a> используется классом Catalog, то в sys хранится структура каталогов и файлов внутри Catalog (он зачитывается в конструкторе класса Catalog). <br  />
+ <a class="el" href="class_p_array.html">PArray&lt;FileSpace&gt;</a> files - список файлов содержащихся в <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a>. Первым эл-том в нем всегда лежит адрес sys. При записи Catalog содержимое files записывается в sys, исключая, естественно, первый элемент. <br  />
+ uint32 stateFlag - состояние буфера. Предполагается, что все операции чтения-записи устанавливают этот флаг когда надо и проверяют его состояние перед реальным выполнением. С этим флагом работают следующие функции: <a class="el" href="classiobuf___seq.html#a957790ec377b573c3701ca448cea839b" title="Корректно ли состояние буфера.">iobuf_Seq::good</a>, <a class="el" href="classiobuf___seq.html#aab5f36a3889186ec791f3afa618f0269" title="Достигнут ли конец файла?">iobuf_Seq::eof</a>, <a class="el" href="classiobuf___seq.html#acd77f40e234fa787f075b441c27b3647" title="Получить состояние буфера.">iobuf_Seq::state</a>, <a class="el" href="classiobuf___seq.html#a79d606684fcd7838a82c484f7017e39a" title="Добавить состояние буфера.">iobuf_Seq::setState</a>, <a class="el" href="classiobuf___seq.html#aab727d22f4549eb5f87b4336eddfba9f" title="Убрать состояние буфера.">iobuf_Seq::clearState</a>; <a class="el" href="classtape.html#ac6dcf98a4d9d6b4a2f43c5f666d9c4ff" title="Корректно ли состояние буфера..">tape::good</a>, <a class="el" href="classtape.html#aa14d8da175767e5afbcab43a67f10401" title="Достигнут ли конец файла?">tape::eof</a>, <a class="el" href="classtape.html#aa1042939d53079809a60397cb9ebcde8" title="Получить флаг состояния буфера.">tape::state</a>; Catalog::good, Catalog::goodeof, Catalog::goodstate. <br  />
+ VERSION storageVers - версия хранилища. <br  />
+ VERSION curFileVers - версия текущего открытого файла (потока). <br  />
+ В общем случае версия хранилища и версия любого файла в нем могут не совпадать. <br  />
+ uint8 bufferMode - Режим, в котором может работать буфер. <br  />
+ uint8 curFileMode - Режим открытия текущего файла. <br  />
+ В общем случае режим хранилища и режим открытого файла в нем могут не совпадать. Ограничение - если режим буфера io::in, то попытка открыть файл на запись (io::out) не приводит к открытию. <br  />
+ uint8 * base - Указатель на начало буфера в памяти. <br  />
+ uint8 * ptr - Указатель на след символ в памяти. <br  />
+ uint8 * end - Указатель на конец буфера в памяти. <br  />
+ При работе с диском указатели устанавливаются на фиксированный участок памяти, куда подгружаются участки файла при чтении. При работе с памятью membuf устанавливает их на выделенную под кластер память. <br  />
+ <br  />
+ Важнейшие функции <a class="el" href="classiobuf___seq.html" title="Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписат...">iobuf_Seq</a>: <br  />
+ Функция <a class="el" href="classiobuf___seq.html#ac4a629273f1783d4eafa1be2f64b7431" title="Установить следующий буфер.">setup()</a> - установить в buffer(переменные base,ptr,end) следующий кластер. Вызывается из функций overflow (при записи) и underflow (при чтении), когда заканчивается очередной буфер. Они в свою очередь вызываются из функций чтения-записи символов из потока (<a class="el" href="classiobuf___seq.html#a99b22693d07db8a5e22a7b443df1bd61" title="Получить следующий байт из буфера.">gc()</a>, <a class="el" href="classiobuf___seq.html#a860d8f199bfa1b1238bb5101c0740841" title="Получить следующие n байт из буфера поэлементно.">getn()</a>, <a class="el" href="classiobuf___seq.html#ade296cf63c800e547da181902523b8ae" title="Получить следующие n байт из буфера копированием участка памяти.">getln()</a>, <a class="el" href="classiobuf___seq.html#ac466c606f36119a10eb919e09871cc6c" title="Получить очередной байт из буфера, но указатель на следующий не сдвигать.">pc()</a>, <a class="el" href="classiobuf___seq.html#a10054d22b5ff58faffb3a543955e4bb0" title="Поместить следующие n байт в буфер поэлементно">putn()</a>, <a class="el" href="classiobuf___seq.html#a54c5c6f3b0dc567854669eb706a820d2" title="Поместить следующие n байт в буфер копированием участка памяти.">putln()</a>).</li>
+</ol>
+</li>
+</ul>
+<p>Функция <a class="el" href="classiobuf___seq.html#a1c9ddce02e208d535d28515d9797f5df" title="Сбросить буфер.">flush()</a> - сбросить буфер. Вызывается перед подъемом следующего кластера. При чтении ничего не делает. При записи, при работе с диском, сохраняет предыдущий кластер на диск, а при работе с памятью запоминает размер последнего заполненного кластера. <br  />
+ Операции чтения выполняются внутри открытого в данный момент файла, не выходя за его конец. <br  />
+</p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a9afcae2c8f0f3a31646ad65f9cf76793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afcae2c8f0f3a31646ad65f9cf76793">&#9670;&nbsp;</a></span>Reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> iobuf_Seq::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addAdditionalSpace</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; Зарезервировать место под заданное количество элементов. </p>
+<p>Обнулить количество элементов. </p>
+
+</div>
+</div>
+<a id="a295563e5a8614d6d407776fac550156a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295563e5a8614d6d407776fac550156a">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cluster.html">Cluster</a>&amp; iobuf_Seq::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>loc</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор доступа по индексу. </p>
+<p>Зарезервировать место под заданное количество файлов. </p>
+
+</div>
+</div>
+<a id="ac466c606f36119a10eb919e09871cc6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac466c606f36119a10eb919e09871cc6c">&#9670;&nbsp;</a></span>pc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int iobuf_Seq::pc </td>
+          <td>(</td>
+          <td class="paramtype">uint8&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить очередной байт из буфера, но указатель на следующий не сдвигать. </p>
+<p>Поместить байт в буфер. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>io_buffer.h</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classiobuf___seq.html">iobuf_Seq</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

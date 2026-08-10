@@ -1,0 +1,1489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbMatrix</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_matrix.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_mb_matrix-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbMatrix<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___mathematic___base__2_d.html">Двумерные базовые объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Расширенная матрица преобразования в двумерном пространстве.  
+ <a href="class_mb_matrix.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_matrix.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса MbMatrix:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_matrix__coll__graph.svg" width="158" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9679095dee2fed79688fb048f3e742d3"><td class="memItemLeft" align="right" valign="top"><a id="a9679095dee2fed79688fb048f3e742d3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a9679095dee2fed79688fb048f3e742d3">MbMatrix</a> ()</td></tr>
+<tr class="memdesc:a9679095dee2fed79688fb048f3e742d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a9679095dee2fed79688fb048f3e742d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7ea4857f0ca659a4c42dfa694769ac"><td class="memItemLeft" align="right" valign="top"><a id="a9f7ea4857f0ca659a4c42dfa694769ac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a9f7ea4857f0ca659a4c42dfa694769ac">MbMatrix</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;init)</td></tr>
+<tr class="memdesc:a9f7ea4857f0ca659a4c42dfa694769ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:a9f7ea4857f0ca659a4c42dfa694769ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa88d92809c8a7f0b2018f576e9c45b9"><td class="memItemLeft" align="right" valign="top"><a id="aaa88d92809c8a7f0b2018f576e9c45b9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#aaa88d92809c8a7f0b2018f576e9c45b9">MbMatrix</a> (const <a class="el" href="class_mb_placement.html">MbPlacement</a> &amp;place)</td></tr>
+<tr class="memdesc:aaa88d92809c8a7f0b2018f576e9c45b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по локальной системе координат. <br /></td></tr>
+<tr class="separator:aaa88d92809c8a7f0b2018f576e9c45b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23bacb6a7779cd632cf4f1f9adfc401"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ad23bacb6a7779cd632cf4f1f9adfc401">MbMatrix</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;dir)</td></tr>
+<tr class="memdesc:ad23bacb6a7779cd632cf4f1f9adfc401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по точке и нормализованному вектору.  <a href="class_mb_matrix.html#ad23bacb6a7779cd632cf4f1f9adfc401">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad23bacb6a7779cd632cf4f1f9adfc401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5894c471c08b87fa37fbcf2f75886c7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a5894c471c08b87fa37fbcf2f75886c7a">MbMatrix</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pc, double sx, double sy)</td></tr>
+<tr class="memdesc:a5894c471c08b87fa37fbcf2f75886c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор матрицы масштабирования по x и y.  <a href="class_mb_matrix.html#a5894c471c08b87fa37fbcf2f75886c7a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5894c471c08b87fa37fbcf2f75886c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ba4e50a185a050df61c8ac88f0ad76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a24ba4e50a185a050df61c8ac88f0ad76">MbMatrix</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pc, double angle)</td></tr>
+<tr class="memdesc:a24ba4e50a185a050df61c8ac88f0ad76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор матрицы поворота.  <a href="class_mb_matrix.html#a24ba4e50a185a050df61c8ac88f0ad76">Подробнее...</a><br /></td></tr>
+<tr class="separator:a24ba4e50a185a050df61c8ac88f0ad76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85e6014b8146d4570eb1bd485d1bafa"><td class="memItemLeft" align="right" valign="top"><a id="ac85e6014b8146d4570eb1bd485d1bafa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ac85e6014b8146d4570eb1bd485d1bafa">~MbMatrix</a> ()</td></tr>
+<tr class="memdesc:ac85e6014b8146d4570eb1bd485d1bafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac85e6014b8146d4570eb1bd485d1bafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58060e77049817a9c8a1e80b38657bb"><td class="memItemLeft" align="right" valign="top"><a id="ac58060e77049817a9c8a1e80b38657bb"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ac58060e77049817a9c8a1e80b38657bb">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)</td></tr>
+<tr class="memdesc:ac58060e77049817a9c8a1e80b38657bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта. <br /></td></tr>
+<tr class="separator:ac58060e77049817a9c8a1e80b38657bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38af39c451e3f50988019160a73c309e"><td class="memItemLeft" align="right" valign="top"><a id="a38af39c451e3f50988019160a73c309e"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a38af39c451e3f50988019160a73c309e">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)</td></tr>
+<tr class="memdesc:a38af39c451e3f50988019160a73c309e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать свойства объекта. <br /></td></tr>
+<tr class="separator:a38af39c451e3f50988019160a73c309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции инициализации.</div></td></tr>
+<tr class="memitem:af7e50b9dcdba26e2ae00de0e544ee399"><td class="memItemLeft" align="right" valign="top"><a id="af7e50b9dcdba26e2ae00de0e544ee399"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af7e50b9dcdba26e2ae00de0e544ee399">Init</a> ()</td></tr>
+<tr class="memdesc:af7e50b9dcdba26e2ae00de0e544ee399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать матрицу как единичную. <br /></td></tr>
+<tr class="separator:af7e50b9dcdba26e2ae00de0e544ee399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81eab99c509af8afb3b8a1c6bf24cc7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a81eab99c509af8afb3b8a1c6bf24cc7b">Init</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;dir)</td></tr>
+<tr class="memdesc:a81eab99c509af8afb3b8a1c6bf24cc7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать матрицу по точке и нормализованному вектору.  <a href="class_mb_matrix.html#a81eab99c509af8afb3b8a1c6bf24cc7b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a81eab99c509af8afb3b8a1c6bf24cc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6185626df61459b1e4d7c7a3d6a7612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ab6185626df61459b1e4d7c7a3d6a7612">Init</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pc, double sx, double sy)</td></tr>
+<tr class="memdesc:ab6185626df61459b1e4d7c7a3d6a7612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать матрицу масштабирования по x и y.  <a href="class_mb_matrix.html#ab6185626df61459b1e4d7c7a3d6a7612">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab6185626df61459b1e4d7c7a3d6a7612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de5433786c27de545f0c11b60b3dcc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a3de5433786c27de545f0c11b60b3dcc2">Init</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pc, double angle)</td></tr>
+<tr class="memdesc:a3de5433786c27de545f0c11b60b3dcc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать матрицу поворота.  <a href="class_mb_matrix.html#a3de5433786c27de545f0c11b60b3dcc2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3de5433786c27de545f0c11b60b3dcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8a67dd7ada81a202f61d90c27afcf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#acf8a67dd7ada81a202f61d90c27afcf8">Set</a> (const <a class="el" href="class_mb_placement.html">MbPlacement</a> &amp;place)</td></tr>
+<tr class="memdesc:acf8a67dd7ada81a202f61d90c27afcf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать матрицу согласно плейсменту.  <a href="class_mb_matrix.html#acf8a67dd7ada81a202f61d90c27afcf8">Подробнее...</a><br /></td></tr>
+<tr class="separator:acf8a67dd7ada81a202f61d90c27afcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d44f73833d5f9815e9df7b84ac5a6e0"><td class="memItemLeft" align="right" valign="top"><a id="a4d44f73833d5f9815e9df7b84ac5a6e0"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a4d44f73833d5f9815e9df7b84ac5a6e0">SetZero</a> ()</td></tr>
+<tr class="memdesc:a4d44f73833d5f9815e9df7b84ac5a6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать нулевую матрицу. <br /></td></tr>
+<tr class="separator:a4d44f73833d5f9815e9df7b84ac5a6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции проверки свойств матриц.</div></td></tr>
+<tr class="memitem:a25412873892cd825bbc202ffb19f20f5"><td class="memItemLeft" align="right" valign="top"><a id="a25412873892cd825bbc202ffb19f20f5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a25412873892cd825bbc202ffb19f20f5">IsInvert</a> () const</td></tr>
+<tr class="memdesc:a25412873892cd825bbc202ffb19f20f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак отрицательности детерминанта матрицы вращения. <br /></td></tr>
+<tr class="separator:a25412873892cd825bbc202ffb19f20f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8854e808f4d0c708fff9d38765d0fc9"><td class="memItemLeft" align="right" valign="top"><a id="af8854e808f4d0c708fff9d38765d0fc9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af8854e808f4d0c708fff9d38765d0fc9">IsInvertEps</a> (double eps=<a class="el" href="mb__variables_8h.html#a602d939a0f94df238f45f78caf760ae1">EXTENT_EPSILON</a>) const</td></tr>
+<tr class="memdesc:af8854e808f4d0c708fff9d38765d0fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак отрицательности детерминанта матрицы вращения. <br /></td></tr>
+<tr class="separator:af8854e808f4d0c708fff9d38765d0fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5837dd55f7b52744b780ac8321fb0d2c"><td class="memItemLeft" align="right" valign="top"><a id="a5837dd55f7b52744b780ac8321fb0d2c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a5837dd55f7b52744b780ac8321fb0d2c">IsSingle</a> () const</td></tr>
+<tr class="memdesc:a5837dd55f7b52744b780ac8321fb0d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак единичности матрицы. <br /></td></tr>
+<tr class="separator:a5837dd55f7b52744b780ac8321fb0d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13029219b6646c432eec564984c31f92"><td class="memItemLeft" align="right" valign="top"><a id="a13029219b6646c432eec564984c31f92"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a13029219b6646c432eec564984c31f92">IsSingleEps</a> (double eps=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const</td></tr>
+<tr class="memdesc:a13029219b6646c432eec564984c31f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак единичности матрицы с заданной точностью. <br /></td></tr>
+<tr class="separator:a13029219b6646c432eec564984c31f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c33cc3256caa673eef3be5753709151"><td class="memItemLeft" align="right" valign="top"><a id="a7c33cc3256caa673eef3be5753709151"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a7c33cc3256caa673eef3be5753709151">IsTranslation</a> () const</td></tr>
+<tr class="memdesc:a7c33cc3256caa673eef3be5753709151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак не равенства нулю вектора трансляции. <br /></td></tr>
+<tr class="separator:a7c33cc3256caa673eef3be5753709151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb43c9fda82d58d7ee0597c60951f6d"><td class="memItemLeft" align="right" valign="top"><a id="a8bb43c9fda82d58d7ee0597c60951f6d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a8bb43c9fda82d58d7ee0597c60951f6d">IsRotation</a> () const</td></tr>
+<tr class="memdesc:a8bb43c9fda82d58d7ee0597c60951f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак не единичности матрицы вращения. <br /></td></tr>
+<tr class="separator:a8bb43c9fda82d58d7ee0597c60951f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490358072be3f7df6cdade21974dffe3"><td class="memItemLeft" align="right" valign="top"><a id="a490358072be3f7df6cdade21974dffe3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a490358072be3f7df6cdade21974dffe3">IsLeft</a> () const</td></tr>
+<tr class="memdesc:a490358072be3f7df6cdade21974dffe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак лево-определенной матрицы. <br /></td></tr>
+<tr class="separator:a490358072be3f7df6cdade21974dffe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2467e748681c131ac21b3eb5a53f64fe"><td class="memItemLeft" align="right" valign="top"><a id="a2467e748681c131ac21b3eb5a53f64fe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a2467e748681c131ac21b3eb5a53f64fe">IsOrt</a> () const</td></tr>
+<tr class="memdesc:a2467e748681c131ac21b3eb5a53f64fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак ортогональности для случая аффинной матрицы. <br /></td></tr>
+<tr class="separator:a2467e748681c131ac21b3eb5a53f64fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af661ac71a5b2ffc4996590ac6b95bfcc"><td class="memItemLeft" align="right" valign="top"><a id="af661ac71a5b2ffc4996590ac6b95bfcc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af661ac71a5b2ffc4996590ac6b95bfcc">IsOrthogonal</a> () const</td></tr>
+<tr class="memdesc:af661ac71a5b2ffc4996590ac6b95bfcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак ортогональности для матрицы вращения. <br /></td></tr>
+<tr class="separator:af661ac71a5b2ffc4996590ac6b95bfcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2629ece6bfe21fa1c90479c2f707efdc"><td class="memItemLeft" align="right" valign="top"><a id="a2629ece6bfe21fa1c90479c2f707efdc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a2629ece6bfe21fa1c90479c2f707efdc">IsAffine</a> () const</td></tr>
+<tr class="memdesc:a2629ece6bfe21fa1c90479c2f707efdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак того, что матрица вращения произвольная аффинная. <br /></td></tr>
+<tr class="separator:a2629ece6bfe21fa1c90479c2f707efdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36399b74c9c808b00a7259fd2475706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ad36399b74c9c808b00a7259fd2475706">IsScaling</a> () const</td></tr>
+<tr class="memdesc:ad36399b74c9c808b00a7259fd2475706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак не равенства 1.0 масштабного компонента.  <a href="class_mb_matrix.html#ad36399b74c9c808b00a7259fd2475706">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad36399b74c9c808b00a7259fd2475706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa929b32ef596be4381ca5e55f5adb950"><td class="memItemLeft" align="right" valign="top"><a id="aa929b32ef596be4381ca5e55f5adb950"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPerspective</b> () const</td></tr>
+<tr class="separator:aa929b32ef596be4381ca5e55f5adb950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392793dcf1ca11233f1c653370ae71d3"><td class="memItemLeft" align="right" valign="top"><a id="a392793dcf1ca11233f1c653370ae71d3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a392793dcf1ca11233f1c653370ae71d3">IsUnSet</a> () const</td></tr>
+<tr class="memdesc:a392793dcf1ca11233f1c653370ae71d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, что битовые флаги не установлены. <br /></td></tr>
+<tr class="separator:a392793dcf1ca11233f1c653370ae71d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a7d9ffc5afe7b9d02fa10c2cae4ec7"><td class="memItemLeft" align="right" valign="top"><a id="a38a7d9ffc5afe7b9d02fa10c2cae4ec7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a38a7d9ffc5afe7b9d02fa10c2cae4ec7">IsSame</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;, double accuracy) const</td></tr>
+<tr class="memdesc:a38a7d9ffc5afe7b9d02fa10c2cae4ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными? <br /></td></tr>
+<tr class="separator:a38a7d9ffc5afe7b9d02fa10c2cae4ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9d5ccad72d77ab125294aa9df58c7e"><td class="memItemLeft" align="right" valign="top"><a id="a1e9d5ccad72d77ab125294aa9df58c7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a1e9d5ccad72d77ab125294aa9df58c7e">IsTranslationOnly</a> () const</td></tr>
+<tr class="memdesc:a1e9d5ccad72d77ab125294aa9df58c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак, что есть только перенос. <br /></td></tr>
+<tr class="separator:a1e9d5ccad72d77ab125294aa9df58c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c045fa5fa57f02f2303efa681323ec"><td class="memItemLeft" align="right" valign="top"><a id="a15c045fa5fa57f02f2303efa681323ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a15c045fa5fa57f02f2303efa681323ec">IsSubstitutionOnly</a> (double epsilon=<a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a>) const</td></tr>
+<tr class="memdesc:a15c045fa5fa57f02f2303efa681323ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Совпадают ли оси описываемой матрицей ЛСК с глобальными осями с точностью до поворотов на 90 градусов? <br /></td></tr>
+<tr class="separator:a15c045fa5fa57f02f2303efa681323ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099f9b2fd74ee25e0a787994ab96a24f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a099f9b2fd74ee25e0a787994ab96a24f">IsIsotropic</a> (double &amp;l) const</td></tr>
+<tr class="memdesc:a099f9b2fd74ee25e0a787994ab96a24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать признак изотропности.  <a href="class_mb_matrix.html#a099f9b2fd74ee25e0a787994ab96a24f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a099f9b2fd74ee25e0a787994ab96a24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b621d4e56feeb284599ccc6aa5293f"><td class="memItemLeft" align="right" valign="top"><a id="a12b621d4e56feeb284599ccc6aa5293f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a12b621d4e56feeb284599ccc6aa5293f">CanTransformGabarit</a> () const</td></tr>
+<tr class="memdesc:a12b621d4e56feeb284599ccc6aa5293f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Можно ли трансформировать габарит без искажений? <br /></td></tr>
+<tr class="separator:a12b621d4e56feeb284599ccc6aa5293f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции доступа к элементам матрицы.</div></td></tr>
+<tr class="memitem:af64ddece5230533e610a7495f19ccee3"><td class="memItemLeft" align="right" valign="top"><a id="af64ddece5230533e610a7495f19ccee3"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af64ddece5230533e610a7495f19ccee3">El</a> (size_t i, size_t j) const</td></tr>
+<tr class="memdesc:af64ddece5230533e610a7495f19ccee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать элемент матрицы. <br /></td></tr>
+<tr class="separator:af64ddece5230533e610a7495f19ccee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e3dbf188da889aaaa32e0919eb6053"><td class="memItemLeft" align="right" valign="top"><a id="af3e3dbf188da889aaaa32e0919eb6053"></a>
+const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af3e3dbf188da889aaaa32e0919eb6053">GetEl</a> () const</td></tr>
+<tr class="memdesc:af3e3dbf188da889aaaa32e0919eb6053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать указатель на первый элемент матрицы. <br /></td></tr>
+<tr class="separator:af3e3dbf188da889aaaa32e0919eb6053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e38729e726cb0109a6274c452367e99"><td class="memItemLeft" align="right" valign="top"><a id="a7e38729e726cb0109a6274c452367e99"></a>
+const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a7e38729e726cb0109a6274c452367e99">GetAxisX</a> () const</td></tr>
+<tr class="memdesc:a7e38729e726cb0109a6274c452367e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать первую строку (ось X). <br /></td></tr>
+<tr class="separator:a7e38729e726cb0109a6274c452367e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fd029d258083e6a7455a575d3660da"><td class="memItemLeft" align="right" valign="top"><a id="a72fd029d258083e6a7455a575d3660da"></a>
+const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a72fd029d258083e6a7455a575d3660da">GetAxisY</a> () const</td></tr>
+<tr class="memdesc:a72fd029d258083e6a7455a575d3660da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать вторую строку (ось Y). <br /></td></tr>
+<tr class="separator:a72fd029d258083e6a7455a575d3660da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8e2bf2ddcae6ac88fe6447e246b9c3"><td class="memItemLeft" align="right" valign="top"><a id="a9d8e2bf2ddcae6ac88fe6447e246b9c3"></a>
+const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a9d8e2bf2ddcae6ac88fe6447e246b9c3">GetOrigin</a> () const</td></tr>
+<tr class="memdesc:a9d8e2bf2ddcae6ac88fe6447e246b9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать третью строку (начало системы координат). <br /></td></tr>
+<tr class="separator:a9d8e2bf2ddcae6ac88fe6447e246b9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296e99f3321d2b67e6105f5a17c1c31b"><td class="memItemLeft" align="right" valign="top"><a id="a296e99f3321d2b67e6105f5a17c1c31b"></a>
+<a class="el" href="class_mb_vector.html">MbVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a296e99f3321d2b67e6105f5a17c1c31b">GetColumn</a> (size_t i) const</td></tr>
+<tr class="memdesc:a296e99f3321d2b67e6105f5a17c1c31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать i-ый вектор-столбец матрицы. <br /></td></tr>
+<tr class="separator:a296e99f3321d2b67e6105f5a17c1c31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297f8afe9ae79c315e7382ca1303c1e3"><td class="memItemLeft" align="right" valign="top"><a id="a297f8afe9ae79c315e7382ca1303c1e3"></a>
+<a class="el" href="class_mb_vector.html">MbVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a297f8afe9ae79c315e7382ca1303c1e3">GetRow</a> (size_t i) const</td></tr>
+<tr class="memdesc:a297f8afe9ae79c315e7382ca1303c1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать i-ую вектор-строку матрицы. <br /></td></tr>
+<tr class="separator:a297f8afe9ae79c315e7382ca1303c1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936189a7a2d508e61e9c94bab0abd5a3"><td class="memItemLeft" align="right" valign="top"><a id="a936189a7a2d508e61e9c94bab0abd5a3"></a>
+<a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a936189a7a2d508e61e9c94bab0abd5a3">GetFullColumn</a> (size_t i) const</td></tr>
+<tr class="memdesc:a936189a7a2d508e61e9c94bab0abd5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать i-ый вектор-столбец матрицы. <br /></td></tr>
+<tr class="separator:a936189a7a2d508e61e9c94bab0abd5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f7d2dc03a9176c19361bd9788f5c69"><td class="memItemLeft" align="right" valign="top"><a id="a79f7d2dc03a9176c19361bd9788f5c69"></a>
+<a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a79f7d2dc03a9176c19361bd9788f5c69">GetFullRow</a> (size_t i) const</td></tr>
+<tr class="memdesc:a79f7d2dc03a9176c19361bd9788f5c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать i-ую вектор-строку матрицы. <br /></td></tr>
+<tr class="separator:a79f7d2dc03a9176c19361bd9788f5c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции модификации элементов матрицы.</div></td></tr>
+<tr class="memitem:af8dbb9059a50a81643f82bacdc10bf75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af8dbb9059a50a81643f82bacdc10bf75">El</a> (size_t i, size_t j, double e)</td></tr>
+<tr class="memdesc:af8dbb9059a50a81643f82bacdc10bf75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить значение элементу матрицы.  <a href="class_mb_matrix.html#af8dbb9059a50a81643f82bacdc10bf75">Подробнее...</a><br /></td></tr>
+<tr class="separator:af8dbb9059a50a81643f82bacdc10bf75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cfa23b0e91666e353e9530aba6da3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af7cfa23b0e91666e353e9530aba6da3d">AddEl</a> (size_t i, size_t j, double e)</td></tr>
+<tr class="memdesc:af7cfa23b0e91666e353e9530aba6da3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прибавить число к элементу матрицы.  <a href="class_mb_matrix.html#af7cfa23b0e91666e353e9530aba6da3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:af7cfa23b0e91666e353e9530aba6da3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79775101eee0026928b7906983a7575"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ad79775101eee0026928b7906983a7575">MulEl</a> (size_t i, size_t j, double e)</td></tr>
+<tr class="memdesc:ad79775101eee0026928b7906983a7575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножить элемент матрицы на число.  <a href="class_mb_matrix.html#ad79775101eee0026928b7906983a7575">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad79775101eee0026928b7906983a7575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db48e63f52e71f8a0b69b1b468a126d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a4db48e63f52e71f8a0b69b1b468a126d">SetColumn</a> (size_t icol, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;column)</td></tr>
+<tr class="memdesc:a4db48e63f52e71f8a0b69b1b468a126d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить элементам столбца значения координат точки.  <a href="class_mb_matrix.html#a4db48e63f52e71f8a0b69b1b468a126d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4db48e63f52e71f8a0b69b1b468a126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fec5ac36ba2c77e227fa9b291b43f96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a1fec5ac36ba2c77e227fa9b291b43f96">SetColumn</a> (size_t icol, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;column)</td></tr>
+<tr class="memdesc:a1fec5ac36ba2c77e227fa9b291b43f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить элементам столбца значения компонент вектора.  <a href="class_mb_matrix.html#a1fec5ac36ba2c77e227fa9b291b43f96">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1fec5ac36ba2c77e227fa9b291b43f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcbd0da63076db5750b85a967d5a4ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a3fcbd0da63076db5750b85a967d5a4ab">SetColumn</a> (size_t icol, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;column)</td></tr>
+<tr class="memdesc:a3fcbd0da63076db5750b85a967d5a4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить элементам столбца значения координат однородной точки.  <a href="class_mb_matrix.html#a3fcbd0da63076db5750b85a967d5a4ab">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3fcbd0da63076db5750b85a967d5a4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8866f9703c7e8f694dc407f80d99c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#af8866f9703c7e8f694dc407f80d99c2d">SetRow</a> (size_t irow, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;row)</td></tr>
+<tr class="memdesc:af8866f9703c7e8f694dc407f80d99c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить элементам строки значения компонент вектора.  <a href="class_mb_matrix.html#af8866f9703c7e8f694dc407f80d99c2d">Подробнее...</a><br /></td></tr>
+<tr class="separator:af8866f9703c7e8f694dc407f80d99c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255e1afee585469ea9e4b1fa477da223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a255e1afee585469ea9e4b1fa477da223">SetRow</a> (size_t irow, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;row)</td></tr>
+<tr class="memdesc:a255e1afee585469ea9e4b1fa477da223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить элементам строки значения координат точки.  <a href="class_mb_matrix.html#a255e1afee585469ea9e4b1fa477da223">Подробнее...</a><br /></td></tr>
+<tr class="separator:a255e1afee585469ea9e4b1fa477da223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7933fd0dc3e8ec18a2686f79b589541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ac7933fd0dc3e8ec18a2686f79b589541">SetRow</a> (size_t irow, const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;row)</td></tr>
+<tr class="memdesc:ac7933fd0dc3e8ec18a2686f79b589541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить элементам строки значения координат однородной точки.  <a href="class_mb_matrix.html#ac7933fd0dc3e8ec18a2686f79b589541">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac7933fd0dc3e8ec18a2686f79b589541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc049b56a1e7173c29d77b1c80ca79df"><td class="memItemLeft" align="right" valign="top"><a id="acc049b56a1e7173c29d77b1c80ca79df"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#acc049b56a1e7173c29d77b1c80ca79df">SetOrigin</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p)</td></tr>
+<tr class="memdesc:acc049b56a1e7173c29d77b1c80ca79df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить компоненты сдвига матрицы. <br /></td></tr>
+<tr class="separator:acc049b56a1e7173c29d77b1c80ca79df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции умножения матриц.</div></td></tr>
+<tr class="memitem:a9b25107055587456022107385b070ed8"><td class="memItemLeft" align="right" valign="top"><a id="a9b25107055587456022107385b070ed8"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a9b25107055587456022107385b070ed8">PreMultiply</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;)</td></tr>
+<tr class="memdesc:a9b25107055587456022107385b070ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Домножить матрицу слева <br /></td></tr>
+<tr class="separator:a9b25107055587456022107385b070ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bae1f40d2336e50cc21fffc6bc329a6"><td class="memItemLeft" align="right" valign="top"><a id="a7bae1f40d2336e50cc21fffc6bc329a6"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a7bae1f40d2336e50cc21fffc6bc329a6">PostMultiply</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;)</td></tr>
+<tr class="memdesc:a7bae1f40d2336e50cc21fffc6bc329a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Домножить матрицу справа <br /></td></tr>
+<tr class="separator:a7bae1f40d2336e50cc21fffc6bc329a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции масштабирования.</div></td></tr>
+<tr class="memitem:a9f33e60152b15990e9b8657edb4339b1"><td class="memItemLeft" align="right" valign="top"><a id="a9f33e60152b15990e9b8657edb4339b1"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a9f33e60152b15990e9b8657edb4339b1">Scale</a> (double s)</td></tr>
+<tr class="memdesc:a9f33e60152b15990e9b8657edb4339b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштабировать по X и Y. <br /></td></tr>
+<tr class="separator:a9f33e60152b15990e9b8657edb4339b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03fa5d09302d20555bb58b7967453d3"><td class="memItemLeft" align="right" valign="top"><a id="ab03fa5d09302d20555bb58b7967453d3"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ab03fa5d09302d20555bb58b7967453d3">ScaleX</a> (double s)</td></tr>
+<tr class="memdesc:ab03fa5d09302d20555bb58b7967453d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштабировать по X. <br /></td></tr>
+<tr class="separator:ab03fa5d09302d20555bb58b7967453d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad566d15ceba04045d7cac2b8a08ef769"><td class="memItemLeft" align="right" valign="top"><a id="ad566d15ceba04045d7cac2b8a08ef769"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ad566d15ceba04045d7cac2b8a08ef769">ScaleY</a> (double s)</td></tr>
+<tr class="memdesc:ad566d15ceba04045d7cac2b8a08ef769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштабировать по Y. <br /></td></tr>
+<tr class="separator:ad566d15ceba04045d7cac2b8a08ef769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880351515c6e5c01dc8e8ee2b3246515"><td class="memItemLeft" align="right" valign="top"><a id="a880351515c6e5c01dc8e8ee2b3246515"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a880351515c6e5c01dc8e8ee2b3246515">GetScaleX</a> () const</td></tr>
+<tr class="memdesc:a880351515c6e5c01dc8e8ee2b3246515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать коэффициент масштабирования по X. <br /></td></tr>
+<tr class="separator:a880351515c6e5c01dc8e8ee2b3246515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8556f20aa4c7fec531be0180a1bf88"><td class="memItemLeft" align="right" valign="top"><a id="a4e8556f20aa4c7fec531be0180a1bf88"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a4e8556f20aa4c7fec531be0180a1bf88">GetScaleY</a> () const</td></tr>
+<tr class="memdesc:a4e8556f20aa4c7fec531be0180a1bf88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать коэффициент масштабирования по Y. <br /></td></tr>
+<tr class="separator:a4e8556f20aa4c7fec531be0180a1bf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ba0b7947cbd98adf0adf1f1b869aee"><td class="memItemLeft" align="right" valign="top"><a id="a78ba0b7947cbd98adf0adf1f1b869aee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a78ba0b7947cbd98adf0adf1f1b869aee">IsDifferentScale</a> () const</td></tr>
+<tr class="memdesc:a78ba0b7947cbd98adf0adf1f1b869aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, различаются ли коэффициенты масштабирования по X и Y. <br /></td></tr>
+<tr class="separator:a78ba0b7947cbd98adf0adf1f1b869aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции преобразований матрицы: сдвиг, поворот и т.д.</div></td></tr>
+<tr class="memitem:a5f992dfe3fea0d8197c51c0399857a28"><td class="memItemLeft" align="right" valign="top"><a id="a5f992dfe3fea0d8197c51c0399857a28"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a5f992dfe3fea0d8197c51c0399857a28">Shift</a> (double shift)</td></tr>
+<tr class="memdesc:a5f992dfe3fea0d8197c51c0399857a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сместить по X и Y. <br /></td></tr>
+<tr class="separator:a5f992dfe3fea0d8197c51c0399857a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e622a13fa4d61e9bc186abd95e9ea81"><td class="memItemLeft" align="right" valign="top"><a id="a4e622a13fa4d61e9bc186abd95e9ea81"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a4e622a13fa4d61e9bc186abd95e9ea81">ShiftX</a> (double shift)</td></tr>
+<tr class="memdesc:a4e622a13fa4d61e9bc186abd95e9ea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сместить по X. <br /></td></tr>
+<tr class="separator:a4e622a13fa4d61e9bc186abd95e9ea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cfbbb7740c4fd4c5f8ba8ad5315ebc"><td class="memItemLeft" align="right" valign="top"><a id="aa4cfbbb7740c4fd4c5f8ba8ad5315ebc"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#aa4cfbbb7740c4fd4c5f8ba8ad5315ebc">ShiftY</a> (double shift)</td></tr>
+<tr class="memdesc:aa4cfbbb7740c4fd4c5f8ba8ad5315ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сместить по Y. <br /></td></tr>
+<tr class="separator:aa4cfbbb7740c4fd4c5f8ba8ad5315ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f97ac8af60d76b7ad6059cf01c36f4c"><td class="memItemLeft" align="right" valign="top"><a id="a4f97ac8af60d76b7ad6059cf01c36f4c"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a4f97ac8af60d76b7ad6059cf01c36f4c">Move</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v)</td></tr>
+<tr class="memdesc:a4f97ac8af60d76b7ad6059cf01c36f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть на вектор (домножение справа на матрицу сдвига). <br /></td></tr>
+<tr class="separator:a4f97ac8af60d76b7ad6059cf01c36f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f2474cdde65e92efd29cb8f944cf24"><td class="memItemLeft" align="right" valign="top"><a id="ad4f2474cdde65e92efd29cb8f944cf24"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ad4f2474cdde65e92efd29cb8f944cf24">Move</a> (double dx, double dy)</td></tr>
+<tr class="memdesc:ad4f2474cdde65e92efd29cb8f944cf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть на заданные приращения. <br /></td></tr>
+<tr class="separator:ad4f2474cdde65e92efd29cb8f944cf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24020aeea25db8a9bdbabfed58c68aef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a24020aeea25db8a9bdbabfed58c68aef">Rotate</a> (double angle)</td></tr>
+<tr class="memdesc:a24020aeea25db8a9bdbabfed58c68aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть на угол.  <a href="class_mb_matrix.html#a24020aeea25db8a9bdbabfed58c68aef">Подробнее...</a><br /></td></tr>
+<tr class="separator:a24020aeea25db8a9bdbabfed58c68aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87fdc3af41e41ef2e63d0f6979e0d7ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a87fdc3af41e41ef2e63d0f6979e0d7ba">Rotate</a> (const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;)</td></tr>
+<tr class="memdesc:a87fdc3af41e41ef2e63d0f6979e0d7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть согласно вектору направления.  <a href="class_mb_matrix.html#a87fdc3af41e41ef2e63d0f6979e0d7ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:a87fdc3af41e41ef2e63d0f6979e0d7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42adc1d31ec63da0b20159428be422c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a42adc1d31ec63da0b20159428be422c9">Rotate</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;angle)</td></tr>
+<tr class="memdesc:a42adc1d31ec63da0b20159428be422c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг точки на угол.  <a href="class_mb_matrix.html#a42adc1d31ec63da0b20159428be422c9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a42adc1d31ec63da0b20159428be422c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e65bfebe05972364b7688e14308e341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a0e65bfebe05972364b7688e14308e341">TransformCoord</a> (double x, double y, double &amp;xn, double &amp;yn) const</td></tr>
+<tr class="memdesc:a0e65bfebe05972364b7688e14308e341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать координаты.  <a href="class_mb_matrix.html#a0e65bfebe05972364b7688e14308e341">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0e65bfebe05972364b7688e14308e341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb378eac27f28431a2a8e290c1e48a42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#afb378eac27f28431a2a8e290c1e48a42">TransformScalarX</a> (double &amp;len) const</td></tr>
+<tr class="memdesc:afb378eac27f28431a2a8e290c1e48a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать длину по направлению 0X.  <a href="class_mb_matrix.html#afb378eac27f28431a2a8e290c1e48a42">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb378eac27f28431a2a8e290c1e48a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588798bf2dccc9f98f39213d5550fa07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a588798bf2dccc9f98f39213d5550fa07">Symmetry</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;origin, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;normal)</td></tr>
+<tr class="memdesc:a588798bf2dccc9f98f39213d5550fa07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать матрицу преобразования симметрии (отражение).  <a href="class_mb_matrix.html#a588798bf2dccc9f98f39213d5550fa07">Подробнее...</a><br /></td></tr>
+<tr class="separator:a588798bf2dccc9f98f39213d5550fa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a2b45f6d1713055f3a2d4457f0af99"><td class="memItemLeft" align="right" valign="top"><a id="a29a2b45f6d1713055f3a2d4457f0af99"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a29a2b45f6d1713055f3a2d4457f0af99">Symmetry</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;origin, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;direction)</td></tr>
+<tr class="memdesc:a29a2b45f6d1713055f3a2d4457f0af99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти матрицу для преобразования симметрии относительно прямой, заданной точкой и направлением. <br /></td></tr>
+<tr class="separator:a29a2b45f6d1713055f3a2d4457f0af99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Расчет алгебраических свойств матрицы.</div></td></tr>
+<tr class="memitem:a6e5cb5385bd72acd985600b15b0e8e04"><td class="memItemLeft" align="right" valign="top"><a id="a6e5cb5385bd72acd985600b15b0e8e04"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a6e5cb5385bd72acd985600b15b0e8e04">Adj</a> ()</td></tr>
+<tr class="memdesc:a6e5cb5385bd72acd985600b15b0e8e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Транспонировать матрицу. <br /></td></tr>
+<tr class="separator:a6e5cb5385bd72acd985600b15b0e8e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2957ae66383082a27f680f505b458777"><td class="memItemLeft" align="right" valign="top"><a id="a2957ae66383082a27f680f505b458777"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a2957ae66383082a27f680f505b458777">Delta</a> (size_t line, size_t column, size_t dim) const</td></tr>
+<tr class="memdesc:a2957ae66383082a27f680f505b458777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить алгебраическое дополнение. <br /></td></tr>
+<tr class="separator:a2957ae66383082a27f680f505b458777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82aef1322e0a7b6c92251032c5f8dae0"><td class="memItemLeft" align="right" valign="top"><a id="a82aef1322e0a7b6c92251032c5f8dae0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a82aef1322e0a7b6c92251032c5f8dae0">Det</a> (size_t dim) const</td></tr>
+<tr class="memdesc:a82aef1322e0a7b6c92251032c5f8dae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить определитель матрицы. <br /></td></tr>
+<tr class="separator:a82aef1322e0a7b6c92251032c5f8dae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850c4aa7afb0ee5886930fd708455de1"><td class="memItemLeft" align="right" valign="top"><a id="a850c4aa7afb0ee5886930fd708455de1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a850c4aa7afb0ee5886930fd708455de1">Div</a> (<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;, double eps=<a class="el" href="mb__variables_8h.html#a51704aa32421a94b305d492709fec1d4">DOUBLE_EPSILON</a>) const</td></tr>
+<tr class="memdesc:a850c4aa7afb0ee5886930fd708455de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить обратную матрицу. <br /></td></tr>
+<tr class="separator:a850c4aa7afb0ee5886930fd708455de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa950b1db7e7d1031be84a7846f9ad897"><td class="memItemLeft" align="right" valign="top"><a id="aa950b1db7e7d1031be84a7846f9ad897"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#aa950b1db7e7d1031be84a7846f9ad897">NormMax</a> () const</td></tr>
+<tr class="memdesc:aa950b1db7e7d1031be84a7846f9ad897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Наибольший элемент матрицы по абсолютному значению. <br /></td></tr>
+<tr class="separator:aa950b1db7e7d1031be84a7846f9ad897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Перегрузка алгебраических и логических операций.</div></td></tr>
+<tr class="memitem:a9b1c5e25fca9da9e845afd5617ec1369"><td class="memItemLeft" align="right" valign="top"><a id="a9b1c5e25fca9da9e845afd5617ec1369"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a9b1c5e25fca9da9e845afd5617ec1369">operator*</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;) const</td></tr>
+<tr class="memdesc:a9b1c5e25fca9da9e845afd5617ec1369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножить на матрицу справа. <br /></td></tr>
+<tr class="separator:a9b1c5e25fca9da9e845afd5617ec1369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfe0c5d3b9a9ce78766f78adb36e31d"><td class="memItemLeft" align="right" valign="top"><a id="a3cfe0c5d3b9a9ce78766f78adb36e31d"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a3cfe0c5d3b9a9ce78766f78adb36e31d">operator*=</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;m)</td></tr>
+<tr class="memdesc:a3cfe0c5d3b9a9ce78766f78adb36e31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Домножить на матрицу справа. <br /></td></tr>
+<tr class="separator:a3cfe0c5d3b9a9ce78766f78adb36e31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1060e80ed44c6a9bcfb9075df863ff"><td class="memItemLeft" align="right" valign="top"><a id="abf1060e80ed44c6a9bcfb9075df863ff"></a>
+<a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#abf1060e80ed44c6a9bcfb9075df863ff">operator=</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;m)</td></tr>
+<tr class="memdesc:abf1060e80ed44c6a9bcfb9075df863ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить значение. <br /></td></tr>
+<tr class="separator:abf1060e80ed44c6a9bcfb9075df863ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63be78e55cbe5ca95dbafa94b93a3647"><td class="memItemLeft" align="right" valign="top"><a id="a63be78e55cbe5ca95dbafa94b93a3647"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a63be78e55cbe5ca95dbafa94b93a3647">operator==</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;) const</td></tr>
+<tr class="memdesc:a63be78e55cbe5ca95dbafa94b93a3647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на равенство с точностью LENGTH_EPSILON. Рекомендуется вместо оператора == использовать функцию IsSame с явным указанием точности сравнения на равенство. <br /></td></tr>
+<tr class="separator:a63be78e55cbe5ca95dbafa94b93a3647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76391190c22b3af031bc90d1db3dd298"><td class="memItemLeft" align="right" valign="top"><a id="a76391190c22b3af031bc90d1db3dd298"></a>
+double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a76391190c22b3af031bc90d1db3dd298">operator()</a> (size_t i, size_t j)</td></tr>
+<tr class="memdesc:a76391190c22b3af031bc90d1db3dd298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ по ссылке к элементу матрицы. <br /></td></tr>
+<tr class="separator:a76391190c22b3af031bc90d1db3dd298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae748ae5a73582c66bef238d5950ea2ef"><td class="memItemLeft" align="right" valign="top"><a id="ae748ae5a73582c66bef238d5950ea2ef"></a>
+const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#ae748ae5a73582c66bef238d5950ea2ef">operator()</a> (size_t i, size_t j) const</td></tr>
+<tr class="memdesc:ae748ae5a73582c66bef238d5950ea2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение элемента матрицы. <br /></td></tr>
+<tr class="separator:ae748ae5a73582c66bef238d5950ea2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a0c2c95aa9ebe2af833ebd24dcc4437a2"><td class="memItemLeft" align="right" valign="top"><a id="a0c2c95aa9ebe2af833ebd24dcc4437a2"></a>
+static const <a class="el" href="class_mb_matrix.html">MbMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a0c2c95aa9ebe2af833ebd24dcc4437a2">identity</a></td></tr>
+<tr class="memdesc:a0c2c95aa9ebe2af833ebd24dcc4437a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Единичная матрица, I = diag(1,1,1);. <br /></td></tr>
+<tr class="separator:a0c2c95aa9ebe2af833ebd24dcc4437a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a781b6da9d74b366284ef599a4c4911e6"><td class="memItemLeft" align="right" valign="top"><a id="a781b6da9d74b366284ef599a4c4911e6"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a781b6da9d74b366284ef599a4c4911e6">el</a> [MATRIX_DIM_2D][MATRIX_DIM_2D]</td></tr>
+<tr class="memdesc:a781b6da9d74b366284ef599a4c4911e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Элементы матрицы. <br /></td></tr>
+<tr class="separator:a781b6da9d74b366284ef599a4c4911e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a0b8deca55902845105e1ec928c3498da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_matrix.html#a0b8deca55902845105e1ec928c3498da">MulMatrix</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;, const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;, <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;)</td></tr>
+<tr class="memdesc:a0b8deca55902845105e1ec928c3498da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемножить матрицы.  <a href="class_mb_matrix.html#a0b8deca55902845105e1ec928c3498da">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0b8deca55902845105e1ec928c3498da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Расширенная матрица преобразования в двумерном пространстве. </p>
+<p>Расширенная матрица преобразования в двумерном пространстве. <br  />
+ Расширенная матрица имеет размерность (3, 3) и представляет собой обычную матрицу, окаймлённую снизу вектором сдвига а справа нулевым столбцом. Трансформация точки p по матрице M имеет вид: r = p * M (строка координат умножается на матрицу слева).<br  />
+ Матрица преобразования из локальной системы координат может быть получена следующим образом:<br  />
+ первая строка матрицы должна быть заполнена соответствующими компонентами первого вектора локальной системы, вторая строка матрицы должна быть заполнена соответствующими компонентами второго вектора локальной системы, последняя строка матрицы должна быть заполнена соответствующими координатами положения начала локальной системы. Матрица трансформации состоит из четырёх блоков:<br  />
+ | R, P | | V, S | где R - матрица вращения, тензор размерностью (2, 2), V - вектор сдвига, тензор (0, 2), P - вектор перспективы, тензор (2, 0) (всегда ноль), S - скаляр масштабного преобразования (единица).<br  />
+</p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ad23bacb6a7779cd632cf4f1f9adfc401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23bacb6a7779cd632cf4f1f9adfc401">&#9670;&nbsp;</a></span>MbMatrix() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbMatrix::MbMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по точке и нормализованному вектору. </p>
+<p>Конструктор по точке и нормализованному вектору.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка. Задает сдвиг относительно нуля.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>- Единичный вектор. Задает поворот. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5894c471c08b87fa37fbcf2f75886c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5894c471c08b87fa37fbcf2f75886c7a">&#9670;&nbsp;</a></span>MbMatrix() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbMatrix::MbMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор матрицы масштабирования по x и y. </p>
+<p>Конструктор матрицы масштабирования по x и y.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка. Задает сдвиг относительно нуля.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sx,sy</td><td>- Коэффициенты масштабирования по x и y соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24ba4e50a185a050df61c8ac88f0ad76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ba4e50a185a050df61c8ac88f0ad76">&#9670;&nbsp;</a></span>MbMatrix() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbMatrix::MbMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор матрицы поворота. </p>
+<p>Конструктор матрицы поворота вокруг точки pc на угол angle.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pc</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол поворота. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a81eab99c509af8afb3b8a1c6bf24cc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81eab99c509af8afb3b8a1c6bf24cc7b">&#9670;&nbsp;</a></span>Init() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp; MbMatrix::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализировать матрицу по точке и нормализованному вектору. </p>
+<p>Инициализировать матрицу по точке и нормализованному вектору.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка. Задает сдвиг относительно нуля.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>- Единичный вектор. Задает поворот. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab6185626df61459b1e4d7c7a3d6a7612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6185626df61459b1e4d7c7a3d6a7612">&#9670;&nbsp;</a></span>Init() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a>&amp; MbMatrix::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализировать матрицу масштабирования по x и y. </p>
+<p>Инициализировать матрицу масштабирования по x и y.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка. Задает сдвиг относительно нуля.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sx,sy</td><td>- Коэффициенты масштабирования по x и y соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3de5433786c27de545f0c11b60b3dcc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de5433786c27de545f0c11b60b3dcc2">&#9670;&nbsp;</a></span>Init() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a>&amp; MbMatrix::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализировать матрицу поворота. </p>
+<p>Инициализировать матрицу поворота вокруг точки pc на угол angle.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pc</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол поворота. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acf8a67dd7ada81a202f61d90c27afcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8a67dd7ada81a202f61d90c27afcf8">&#9670;&nbsp;</a></span>Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a>&amp; MbMatrix::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement.html">MbPlacement</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализировать матрицу согласно плейсменту. </p>
+<p>Инициализировать матрицу согласно плейсменту.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Исходный плейсмент. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad36399b74c9c808b00a7259fd2475706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad36399b74c9c808b00a7259fd2475706">&#9670;&nbsp;</a></span>IsScaling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbMatrix::IsScaling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать признак не равенства 1.0 масштабного компонента. </p>
+<p>Выдать признак не равенства нулю вектора перспективы. </p>
+
+</div>
+</div>
+<a id="a099f9b2fd74ee25e0a787994ab96a24f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099f9b2fd74ee25e0a787994ab96a24f">&#9670;&nbsp;</a></span>IsIsotropic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbMatrix::IsIsotropic </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать признак изотропности. </p>
+<p>Выполняется проверка, является ли матрица ортогональной с равными по длине осями X, Y (круг остается кругом).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">l</td><td>- Длина ортов осей X, Y.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если матрица изотропна. </dd></dl>
+
+</div>
+</div>
+<a id="af8dbb9059a50a81643f82bacdc10bf75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8dbb9059a50a81643f82bacdc10bf75">&#9670;&nbsp;</a></span>El()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::El </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Присвоить значение элементу матрицы. </p>
+<p>Присвоить значение элементу матрицы.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>- Индекс строки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>- Исходное значение, которое надо присвоить элементу матрицы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af7cfa23b0e91666e353e9530aba6da3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7cfa23b0e91666e353e9530aba6da3d">&#9670;&nbsp;</a></span>AddEl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::AddEl </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Прибавить число к элементу матрицы. </p>
+<p>Прибавить число к элементу матрицы.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>- Индекс строки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>- Исходное число, которое надо прибавить к элементу матрицы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad79775101eee0026928b7906983a7575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79775101eee0026928b7906983a7575">&#9670;&nbsp;</a></span>MulEl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::MulEl </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Умножить элемент матрицы на число. </p>
+<p>Умножить элемент матрицы на число.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>- Индекс строки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>- Исходное число, на которое надо умножить элемент матрицы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4db48e63f52e71f8a0b69b1b468a126d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db48e63f52e71f8a0b69b1b468a126d">&#9670;&nbsp;</a></span>SetColumn() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::SetColumn </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>icol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>column</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Присвоить элементам столбца значения координат точки. </p>
+<p>Присвоить элементам столбца значения координат точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">icol</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">column</td><td>- Исходная точка. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fec5ac36ba2c77e227fa9b291b43f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fec5ac36ba2c77e227fa9b291b43f96">&#9670;&nbsp;</a></span>SetColumn() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::SetColumn </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>icol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>column</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Присвоить элементам столбца значения компонент вектора. </p>
+<p>Присвоить элементам столбца значения компонент вектора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">icol</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">column</td><td>- Исходный вектор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3fcbd0da63076db5750b85a967d5a4ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcbd0da63076db5750b85a967d5a4ab">&#9670;&nbsp;</a></span>SetColumn() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::SetColumn </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>icol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;&#160;</td>
+          <td class="paramname"><em>column</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Присвоить элементам столбца значения координат однородной точки. </p>
+<p>Присвоить элементам столбца значения координат однородной точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">icol</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">column</td><td>- Исходная точка. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8866f9703c7e8f694dc407f80d99c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8866f9703c7e8f694dc407f80d99c2d">&#9670;&nbsp;</a></span>SetRow() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::SetRow </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>irow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Присвоить элементам строки значения компонент вектора. </p>
+<p>Присвоить элементам строки значения компонент вектора.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">irow</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>- Исходный вектор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a255e1afee585469ea9e4b1fa477da223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255e1afee585469ea9e4b1fa477da223">&#9670;&nbsp;</a></span>SetRow() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::SetRow </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>irow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Присвоить элементам строки значения координат точки. </p>
+<p>Присвоить элементам строки значения координат точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">irow</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>- Исходная точка. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7933fd0dc3e8ec18a2686f79b589541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7933fd0dc3e8ec18a2686f79b589541">&#9670;&nbsp;</a></span>SetRow() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::SetRow </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>irow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_homogeneous.html">MbHomogeneous</a> &amp;&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Присвоить элементам строки значения координат однородной точки. </p>
+<p>Присвоить элементам строки значения координат однородной точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">irow</td><td>- Индекс столбца.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>- Исходная точка. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24020aeea25db8a9bdbabfed58c68aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24020aeea25db8a9bdbabfed58c68aef">&#9670;&nbsp;</a></span>Rotate() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a>&amp; MbMatrix::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть на угол. </p>
+<p>Поворот совершается вокруг оси Z.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87fdc3af41e41ef2e63d0f6979e0d7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87fdc3af41e41ef2e63d0f6979e0d7ba">&#9670;&nbsp;</a></span>Rotate() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a>&amp; MbMatrix::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть согласно вектору направления. </p>
+<p>Поворот совершается вокруг оси Z, т.к. матрица двумерная. Вектор направления определяет угол поворота.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>Вектор направления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42adc1d31ec63da0b20159428be422c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42adc1d31ec63da0b20159428be422c9">&#9670;&nbsp;</a></span>Rotate() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a>&amp; MbMatrix::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть вокруг точки на угол. </p>
+<p>Повернуть вокруг точки на угол.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Вектор направления, задающий угол вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e65bfebe05972364b7688e14308e341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e65bfebe05972364b7688e14308e341">&#9670;&nbsp;</a></span>TransformCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::TransformCoord </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>xn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>yn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразовать координаты. </p>
+<p>Координаты преобразуются согласно матрице.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x,y</td><td>- Старые координаты по x и y.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xn,yn</td><td>- Преобразованные координаты. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb378eac27f28431a2a8e290c1e48a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb378eac27f28431a2a8e290c1e48a42">&#9670;&nbsp;</a></span>TransformScalarX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbMatrix::TransformScalarX </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразовать длину по направлению 0X. </p>
+<p>Длина преобразуются согласно матрице. Если матрица имеет разные масштабы по X и Y, то масштаб по Y проигнорируется.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">len</td><td>- Длина по направлению 0X. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a588798bf2dccc9f98f39213d5550fa07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588798bf2dccc9f98f39213d5550fa07">&#9670;&nbsp;</a></span>Symmetry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_matrix.html">MbMatrix</a>&amp; MbMatrix::Symmetry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Задать матрицу преобразования симметрии (отражение). </p>
+<p>Находится матрица для преобразования симметрии относительно прямой, заданной точкой и нормалью к прямой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">origin</td><td>- Точка прямой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normal</td><td>- Нормаль прямой. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="a0b8deca55902845105e1ec928c3498da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8deca55902845105e1ec928c3498da">&#9670;&nbsp;</a></span>MulMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MulMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перемножить матрицы. </p>
+<p>Умножение матрицы m1 на матрицу m2 (вместо res = m1 * m2).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m1,m2</td><td>- Исходные матрицы.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">res</td><td>- Результирующая матрица. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__matrix_8h.html">mb_matrix.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_matrix.html">MbMatrix</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:04. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

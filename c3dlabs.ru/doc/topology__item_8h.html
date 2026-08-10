@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл topology_item.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('topology__item_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл topology_item.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Топологический объект в трехмерном пространстве.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="io__tape__define_8h.html">io_tape_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="name__item_8h.html">name_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__enum_8h.html">mb_enum.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="reference__item_8h.html">reference_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="attribute__container_8h.html">attribute_container.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__visitor_8h.html">templ_visitor.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tool__mutex_8h.html">tool_mutex.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_label.html">MbLabel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метка для выполнения операций.  <a href="class_mb_label.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_top_item.html">MbTopItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Топологический объект в трехмерном пространстве.  <a href="class_mb_top_item.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_topology_item.html">MbTopologyItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Топологический объект с именем.  <a href="class_mb_topology_item.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_topology_proxy.html">MbTopologyProxy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменитель топологического объекта.  <a href="class_mb_topology_proxy.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gae3d982b676a82de0b9154d19d3bec78f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___topology___items.html#gae3d982b676a82de0b9154d19d3bec78f">MbeTopologyType</a> { <br />
+&#160;&#160;<a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fa2551d9392d76b7f46d79b88598e9b666">tt_Undefined</a> = 0
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fad2681458a8b22bbe0316e48223e05634">tt_TopItem</a> = 1
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fa6f65e55ae688f28f3cb274ee7c276ec0">tt_Proxy</a> = 10
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78faccfa4d2e9a33f3596bf32ef955c55091">tt_Vertex</a> = 101
+, <br />
+&#160;&#160;<a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fa7e49ba1b76f9d3ec44fcd409b54cd183">tt_Edge</a> = 201
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78faa5ba467c1531ffacb8b4dfb6b1f59848">tt_CurveEdge</a> = 202
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fa9a302af7cf9828316369ba3f47702884">tt_OrientedEdge</a> = 203
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fa9948012ede8c5e8f43f7507efc0931eb">tt_Loop</a> = 301
+, <br />
+&#160;&#160;<a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fafdf7f511c2a5d9e64162f9f7778e79a7">tt_Face</a> = 401
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78faa3baf285ce83932e245ffb5a670d88c6">tt_FaceShell</a> = 501
+, <a class="el" href="group___topology___items.html#ggae3d982b676a82de0b9154d19d3bec78fa992ef174231bb06011a431f7561819c9">tt_FreeItem</a> = 600
+<br />
+ }</td></tr>
+<tr class="memdesc:gae3d982b676a82de0b9154d19d3bec78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы топологических объектов.  <a href="group___topology___items.html#gae3d982b676a82de0b9154d19d3bec78f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae3d982b676a82de0b9154d19d3bec78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad98e191b04fad6277caf12e804fb9b65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___topology___items.html#gad98e191b04fad6277caf12e804fb9b65">MbeChangedType</a> { <br />
+&#160;&#160;<a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a4114fe5d18c51494750f550d7aae1185">tct_Unchanged</a> = 0x0000
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a95d0adad005ca1cdc8745336e748f07d">tct_Modified</a> = 0x0001
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a2b55586a61d126f78058115ca257b1eb">tct_Created</a> = 0x0002
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65ad46d11ffee02dd28eaa224c86d1465bd">tct_Transformed</a> = 0x0004
+, <br />
+&#160;&#160;<a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a365296d2c9a7a5ac0b1739e2a20d6b31">tct_Reoriented</a> = 0x0008
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65afe30d146d570b2e9d359bf50b3d8109c">tct_Deleted</a> = 0x0010
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a19f526b4658563e005586a06d015cba3">tct_Truncated</a> = 0x0020
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a87bbfe10ad16d63008c545da88ddf7ca">tct_Merged</a> = 0x0040
+, <br />
+&#160;&#160;<a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a4483daa46b803f750ced88e64177c40a">tct_Replaced</a> = 0x0080
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a36cbabf81dd2f761f25559aa7785e474">tct_Added</a> = 0x0100
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a3f8cf3f62df2b9d51cd1265932e60224">tct_Renamed</a> = 0x0200
+, <a class="el" href="group___topology___items.html#ggad98e191b04fad6277caf12e804fb9b65a6cd1b73ae6a819c6e241ea9c8b246199">tct_Divided</a> = 0x0400
+<br />
+ }</td></tr>
+<tr class="memdesc:gad98e191b04fad6277caf12e804fb9b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы состояний модификации топологического объекта.  <a href="group___topology___items.html#gad98e191b04fad6277caf12e804fb9b65">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad98e191b04fad6277caf12e804fb9b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Топологический объект в трехмерном пространстве. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="topology__item_8h.html">topology_item.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

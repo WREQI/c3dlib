@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbSheetRibHotPointCalculator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_sheet_rib_hot_point_calculator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_mb_sheet_rib_hot_point_calculator-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbSheetRibHotPointCalculator<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___modelling___functions.html">Методы геометрических построений</a> &raquo; <a class="el" href="group___sheet___metal___modeling.html">Построения листовых тел</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Расчётчик расположения хот-точек для ребра жесткости листового тела.  
+ <a href="class_mb_sheet_rib_hot_point_calculator.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;action_sheet.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a833d6ba8468165189e1cc07a2aa87b76"><td class="memItemLeft" align="right" valign="top"><a id="a833d6ba8468165189e1cc07a2aa87b76"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a833d6ba8468165189e1cc07a2aa87b76">MbSheetRibHotPointCalculator</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, const <a class="el" href="class_mb_contour.html">MbContour</a> &amp;contour, const <a class="el" href="struct_sheet_rib_values.html">SheetRibValues</a> &amp;params, double thickness, bool <a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45a8b04d5e3775d298e78455efc5ca404d5">first</a>=true)</td></tr>
+<tr class="memdesc:a833d6ba8468165189e1cc07a2aa87b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a833d6ba8468165189e1cc07a2aa87b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff205f1786e07caadc4ba192de3e613b"><td class="memItemLeft" align="right" valign="top"><a id="aff205f1786e07caadc4ba192de3e613b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#aff205f1786e07caadc4ba192de3e613b">MbSheetRibHotPointCalculator</a> (const <a class="el" href="class_mb_sheet_rib_hot_point_calculator.html">MbSheetRibHotPointCalculator</a> &amp;init)</td></tr>
+<tr class="memdesc:aff205f1786e07caadc4ba192de3e613b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:aff205f1786e07caadc4ba192de3e613b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa29b38de5db259322b11c96b207fbb"><td class="memItemLeft" align="right" valign="top"><a id="a4aa29b38de5db259322b11c96b207fbb"></a>
+<a class="el" href="class_mb_sheet_rib_hot_point_calculator.html">MbSheetRibHotPointCalculator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a4aa29b38de5db259322b11c96b207fbb">operator=</a> (const <a class="el" href="class_mb_sheet_rib_hot_point_calculator.html">MbSheetRibHotPointCalculator</a> &amp;init)</td></tr>
+<tr class="memdesc:a4aa29b38de5db259322b11c96b207fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания. <br /></td></tr>
+<tr class="separator:a4aa29b38de5db259322b11c96b207fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f9eb73d0069cb20393a8e715cb48de"><td class="memItemLeft" align="right" valign="top"><a id="ae8f9eb73d0069cb20393a8e715cb48de"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#ae8f9eb73d0069cb20393a8e715cb48de">CalcContourL1HotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:ae8f9eb73d0069cb20393a8e715cb48de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : длина отступа вдоль первой стороны угла профиля (L1). <br /></td></tr>
+<tr class="separator:ae8f9eb73d0069cb20393a8e715cb48de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f56dbf63c061b08b4839bc63658d1cc"><td class="memItemLeft" align="right" valign="top"><a id="a8f56dbf63c061b08b4839bc63658d1cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a8f56dbf63c061b08b4839bc63658d1cc">CalcContourL2HotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:a8f56dbf63c061b08b4839bc63658d1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : длина отступа вдоль второй стороны угла профиля (L2). <br /></td></tr>
+<tr class="separator:a8f56dbf63c061b08b4839bc63658d1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068cc9b7978f4028511b02027cdfde57"><td class="memItemLeft" align="right" valign="top"><a id="a068cc9b7978f4028511b02027cdfde57"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a068cc9b7978f4028511b02027cdfde57">CalcContourAngleHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:a068cc9b7978f4028511b02027cdfde57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : угол наклона профиля в способе «По стороне и углу» (a). <br /></td></tr>
+<tr class="separator:a068cc9b7978f4028511b02027cdfde57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c261df8abb8dabf1fc656cea91a7ab4"><td class="memItemLeft" align="right" valign="top"><a id="a3c261df8abb8dabf1fc656cea91a7ab4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a3c261df8abb8dabf1fc656cea91a7ab4">CalcContourDepthHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:a3c261df8abb8dabf1fc656cea91a7ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : глубина профиля (H) в способе «По глубине и углу». <br /></td></tr>
+<tr class="separator:a3c261df8abb8dabf1fc656cea91a7ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac268690cd29be2e7774c8a94cf591ed6"><td class="memItemLeft" align="right" valign="top"><a id="ac268690cd29be2e7774c8a94cf591ed6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#ac268690cd29be2e7774c8a94cf591ed6">CalcRibRadHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:ac268690cd29be2e7774c8a94cf591ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : радиус скругления ребра (дна формы) в сечении (R). <br /></td></tr>
+<tr class="separator:ac268690cd29be2e7774c8a94cf591ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad371835c4a2f7ca0c87ad23acc737f27"><td class="memItemLeft" align="right" valign="top"><a id="ad371835c4a2f7ca0c87ad23acc737f27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#ad371835c4a2f7ca0c87ad23acc737f27">CalcRibRadBaseHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:ad371835c4a2f7ca0c87ad23acc737f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : радиус скругления основания. <br /></td></tr>
+<tr class="separator:ad371835c4a2f7ca0c87ad23acc737f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0e7ea31492068d7f3eb51fc94868b8"><td class="memItemLeft" align="right" valign="top"><a id="aac0e7ea31492068d7f3eb51fc94868b8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#aac0e7ea31492068d7f3eb51fc94868b8">CalcRibWidthHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:aac0e7ea31492068d7f3eb51fc94868b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : ширина ребра в сечении. <br /></td></tr>
+<tr class="separator:aac0e7ea31492068d7f3eb51fc94868b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7830ba463951900827110a3a6c912f00"><td class="memItemLeft" align="right" valign="top"><a id="a7830ba463951900827110a3a6c912f00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a7830ba463951900827110a3a6c912f00">CalcRibSlopeHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;rotationAxis) const</td></tr>
+<tr class="memdesc:a7830ba463951900827110a3a6c912f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : угол наклона боковой грани. <br /></td></tr>
+<tr class="separator:a7830ba463951900827110a3a6c912f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d875db8a998b72ed9fb985c8ec12cf"><td class="memItemLeft" align="right" valign="top"><a id="a04d875db8a998b72ed9fb985c8ec12cf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a04d875db8a998b72ed9fb985c8ec12cf">CalcContourBendDepthHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:a04d875db8a998b72ed9fb985c8ec12cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : глубина прогиба профиля. <br /></td></tr>
+<tr class="separator:a04d875db8a998b72ed9fb985c8ec12cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323185b0b606919c82df93b808d80c5d"><td class="memItemLeft" align="right" valign="top"><a id="a323185b0b606919c82df93b808d80c5d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html#a323185b0b606919c82df93b808d80c5d">CalcContourRadHotPoint</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir) const</td></tr>
+<tr class="memdesc:a323185b0b606919c82df93b808d80c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать положение "хот"-точки : радиус скругления при прогибе профиля. <br /></td></tr>
+<tr class="separator:a323185b0b606919c82df93b808d80c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Расчётчик расположения хот-точек для ребра жесткости листового тела. </p>
+<p>Расчётчик расположения хот-точек для ребра жесткости листового тела.<br  />
+ Контур должен быть рассчитан с помощью одной из функций MakeSheetRiContourByTwoSides, <br  />
+ MakeSheetRiContourBySideAndAngle или MakeSheetRiContourByDepthAndAngle. </p>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="action__sheet_8h.html">action_sheet.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_sheet_rib_hot_point_calculator.html">MbSheetRibHotPointCalculator</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:06. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

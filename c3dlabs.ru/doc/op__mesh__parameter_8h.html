@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл op_mesh_parameter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('op__mesh__parameter_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл op_mesh_parameter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Параметры операций над полигональными сетками.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh__plane__grid_8h.html">mesh_plane_grid.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh__float__point_8h.html">mesh_float_point.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="model__item_8h.html">model_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cur__contour_8h.html">cur_contour.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="op__binding__data_8h.html">op_binding_data.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve3d_8h.html">curve3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve_8h.html">curve.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh_8h.html">mesh.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="polymesh_8h.html">polymesh.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_simplification_params.html">MbMeshSimplificationParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры операции упрощения триангуляции.  <a href="class_mb_mesh_simplification_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_convex_hull_params.html">MbConvexHullParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры операции создания выпуклого многоугольника в 2D.  <a href="class_mb_convex_hull_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_convex_hull_results.html">MbConvexHullResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты создания выпуклого многоугольника в 2D.  <a href="struct_mb_convex_hull_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_convex_hull_params3_d.html">MbConvexHullParams3D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры операции создания выпуклой оболочки в 3D.  <a href="class_mb_convex_hull_params3_d.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_repair_inconsistent_mesh_params.html">MbRepairInconsistentMeshParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры для исправления несогласованных полигональных объектов (<a class="el" href="class_mb_mesh.html" title="Полигональный объект модели - фасетный объект.">MbMesh</a>).  <a href="class_mb_repair_inconsistent_mesh_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_to_instance_params.html">MbMeshToInstanceParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры для поиска и замены повторяющихся полигональных объектов (<a class="el" href="class_mb_mesh.html" title="Полигональный объект модели - фасетный объект.">MbMesh</a>) на вставки <a class="el" href="class_mb_instance.html" title="Вставка объекта.">MbInstance</a>.  <a href="class_mb_mesh_to_instance_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_to_instance_results.html">MbMeshToInstanceResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результаты поиска и замены повторяющихся полигональных объектов (<a class="el" href="class_mb_mesh.html" title="Полигональный объект модели - фасетный объект.">MbMesh</a>) на вставки <a class="el" href="class_mb_instance.html" title="Вставка объекта.">MbInstance</a>.  <a href="class_mb_mesh_to_instance_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_fit_parameters_base.html">MbCurveFitParametersBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс для параметров вписывания кривых.  <a href="class_mb_curve_fit_parameters_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_fit_parameters.html">MbCurveFitParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры вписывания 2Д кривых.  <a href="class_mb_curve_fit_parameters.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_fit_parameters3_d.html">MbCurveFitParameters3D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры вписывания 3Д кривых.  <a href="class_mb_curve_fit_parameters3_d.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_fit_results_base.html">MbFitResultsBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс для результатов вписывания.  <a href="class_mb_fit_results_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_fit_results.html">MbCurveFitResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат вписывания 2Д кривой.  <a href="class_mb_curve_fit_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_fit_results3_d.html">MbCurveFitResults3D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат вписывания 3Д кривой.  <a href="class_mb_curve_fit_results3_d.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_unwrap_params.html">MbMeshUnwrapParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры развёртки триангуляции на плоскость.  <a href="class_mb_mesh_unwrap_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_mesh_unwrap_result.html">MbMeshUnwrapResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат развёртки триангуляции на плоскость.  <a href="class_mb_mesh_unwrap_result.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_object_alignment_params.html">MbObjectAlignmentParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры совмещения объектов.  <a href="class_mb_object_alignment_params.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_object_alignment_result.html">MbObjectAlignmentResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат совмещения объектов.  <a href="class_mb_object_alignment_result.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_constraint_fixed_values.html">MbConstraintFixedValues</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фиксированные значения параметров поверхности.  <a href="struct_mb_constraint_fixed_values.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_surface_fit_constraint.html">MbSurfaceFitConstraint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ограничение на вписывание примитива.  <a href="class_mb_surface_fit_constraint.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_surface_fit_to_grid_parameters.html">MbSurfaceFitToGridParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры вписывания поверхности.  <a href="class_mb_surface_fit_to_grid_parameters.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_surface_fit_to_grid_results.html">MbSurfaceFitToGridResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат вписывания поверхности.  <a href="class_mb_surface_fit_to_grid_results.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ga31c7c3327e5f0266982a3a4cb4fac0ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga31c7c3327e5f0266982a3a4cb4fac0ba">MbeRejectOutliersType</a> { <a class="el" href="group___polygonal___objects.html#gga31c7c3327e5f0266982a3a4cb4fac0baae26cd5e1fe8b0677c5db69fcdd5fa116">rot_NoReject</a> = 0
+, <a class="el" href="group___polygonal___objects.html#gga31c7c3327e5f0266982a3a4cb4fac0baac21f9d910438bf3dc798dee1a3b97c16">rot_Sigma</a> = 1
+, <a class="el" href="group___polygonal___objects.html#gga31c7c3327e5f0266982a3a4cb4fac0baafd86121d11eec859860cc8cb25d48daa">rot_Percent</a> = 2
+, <a class="el" href="group___polygonal___objects.html#gga31c7c3327e5f0266982a3a4cb4fac0baae442ed55423aadce4dacca2130818614">rot_MaxDistance</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga31c7c3327e5f0266982a3a4cb4fac0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим отбраковки выбросов при вписывании поверхности в набор точек.  <a href="group___polygonal___objects.html#ga31c7c3327e5f0266982a3a4cb4fac0ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga31c7c3327e5f0266982a3a4cb4fac0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8e56352f2f5b7902efd4d513979722"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="op__mesh__parameter_8h.html#a1b8e56352f2f5b7902efd4d513979722">MbeIcpHintUsageMode</a> { <a class="el" href="op__mesh__parameter_8h.html#a1b8e56352f2f5b7902efd4d513979722a3ac9be0b66f32254e675c91001100093">noHint</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a1b8e56352f2f5b7902efd4d513979722a4ddcb4c259229154572d2f29a68fd344">autoHint</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a1b8e56352f2f5b7902efd4d513979722ab1b414f8e5ff62614a4ad9dcecb93236">givenHint</a>
+ }</td></tr>
+<tr class="memdesc:a1b8e56352f2f5b7902efd4d513979722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим использования подсказки при совмещении объектов по алгоритму ICP.  <a href="op__mesh__parameter_8h.html#a1b8e56352f2f5b7902efd4d513979722">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1b8e56352f2f5b7902efd4d513979722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac961fd6eb07300d0c42d9a93402f58df"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="op__mesh__parameter_8h.html#ac961fd6eb07300d0c42d9a93402f58df">MbeIcpPointRejectionMode</a> { <a class="el" href="op__mesh__parameter_8h.html#ac961fd6eb07300d0c42d9a93402f58dfa908763cdaf037bb4ec9f3bcc9398ba41">noReject</a>
+, <a class="el" href="op__mesh__parameter_8h.html#ac961fd6eb07300d0c42d9a93402f58dfa2bd9c0ed00116be1258e0cc66617d7c8">automatic</a>
+, <a class="el" href="op__mesh__parameter_8h.html#ac961fd6eb07300d0c42d9a93402f58dfa617ac08757d38a5a7ed91c224f0e90a0">constant</a>
+ }</td></tr>
+<tr class="memdesc:ac961fd6eb07300d0c42d9a93402f58df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим отбраковки точек при совмещении объектов по алгоритму ICP.  <a href="op__mesh__parameter_8h.html#ac961fd6eb07300d0c42d9a93402f58df">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac961fd6eb07300d0c42d9a93402f58df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a18bcd92ae1e698dfffacace4f34a2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2">MbePositionConstraintType</a> { <br />
+&#160;&#160;<a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2afbade9e36a3f36d3d676c1b808451dd7">z</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2af1290186a5d0b1ceab27f4e77c0c5d68">w</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2aa1555463c361e7036a274a8b44e29192">zw</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2ad16fb36f0911f878998c136191af705e">xyz</a>
+, <br />
+&#160;&#160;<a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2a42a09bdddc63daafe2ecb2859f5ff220">xyw</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2a74b2848277ccb7edb89ae0bbdc3f751d">xyzw</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2a53f21197fd88556f12d066faea1684e9">uvw</a>
+, <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2aaa2d6e4f578eb0cfaba23beef76c2194">free</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a34a18bcd92ae1e698dfffacace4f34a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип позиционного ограничения.  <a href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a34a18bcd92ae1e698dfffacace4f34a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac161b368deeb69886f78fcff9d340d45"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45">MbeDimensionalConstraintType</a> { <a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
+, <a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45a8b04d5e3775d298e78455efc5ca404d5">first</a>
+, <a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45aa9f0e61a137d86aa9db53465e0801612">second</a>
+, <a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45af6cb3e816496528d4187db53bc66567f">both</a>
+ }</td></tr>
+<tr class="memdesc:ac161b368deeb69886f78fcff9d340d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип размерного ограничения.  <a href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac161b368deeb69886f78fcff9d340d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Параметры операций над полигональными сетками. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a1b8e56352f2f5b7902efd4d513979722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8e56352f2f5b7902efd4d513979722">&#9670;&nbsp;</a></span>MbeIcpHintUsageMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="op__mesh__parameter_8h.html#a1b8e56352f2f5b7902efd4d513979722">MbeIcpHintUsageMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Режим использования подсказки при совмещении объектов по алгоритму ICP. </p>
+<p>Режим использования подсказки при совмещении объектов по алгоритму ICP. Режим без использования подсказки подразумевает совмещение объектов в их исходном положении. Другие режимы допускают начальную трансформацию движущегося объекта.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a1b8e56352f2f5b7902efd4d513979722a3ac9be0b66f32254e675c91001100093"></a>noHint&#160;</td><td class="fielddoc"><p>Не использовать подсказку. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b8e56352f2f5b7902efd4d513979722a4ddcb4c259229154572d2f29a68fd344"></a>autoHint&#160;</td><td class="fielddoc"><p>Автоопределение подсказки по инерционным характеристикам. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b8e56352f2f5b7902efd4d513979722ab1b414f8e5ff62614a4ad9dcecb93236"></a>givenHint&#160;</td><td class="fielddoc"><p>Использовать подсказку, заданную пользователем. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac961fd6eb07300d0c42d9a93402f58df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac961fd6eb07300d0c42d9a93402f58df">&#9670;&nbsp;</a></span>MbeIcpPointRejectionMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="op__mesh__parameter_8h.html#ac961fd6eb07300d0c42d9a93402f58df">MbeIcpPointRejectionMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Режим отбраковки точек при совмещении объектов по алгоритму ICP. </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ac961fd6eb07300d0c42d9a93402f58dfa908763cdaf037bb4ec9f3bcc9398ba41"></a>noReject&#160;</td><td class="fielddoc"><p>Не отбраковывать точки. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac961fd6eb07300d0c42d9a93402f58dfa2bd9c0ed00116be1258e0cc66617d7c8"></a>automatic&#160;</td><td class="fielddoc"><p>Автоопределение порога для отбраковки. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac961fd6eb07300d0c42d9a93402f58dfa617ac08757d38a5a7ed91c224f0e90a0"></a>constant&#160;</td><td class="fielddoc"><p>Отбраковка заданной доли из общего числа точек. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a34a18bcd92ae1e698dfffacace4f34a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a18bcd92ae1e698dfffacace4f34a2">&#9670;&nbsp;</a></span>MbePositionConstraintType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2">MbePositionConstraintType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тип позиционного ограничения. </p>
+<p>Тип позиционного ограничения. Определяет вариант фиксации положения объекта в пространстве. Можно ограничить перемещения вдоль и повороты вокруг координатных осей некоторой локальной системы координат в разных комбинациях.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2afbade9e36a3f36d3d676c1b808451dd7"></a>z&#160;</td><td class="fielddoc"><p>Разрешен только сдвиг вдоль оси OZ плейсмента параметров. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2af1290186a5d0b1ceab27f4e77c0c5d68"></a>w&#160;</td><td class="fielddoc"><p>Разрешен только поворот вокруг оси OZ плейсмента параметров. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2aa1555463c361e7036a274a8b44e29192"></a>zw&#160;</td><td class="fielddoc"><p>Разрешен только сдвиг вдоль оси OZ и поворот вокруг оси OZ плейсмента параметров. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2ad16fb36f0911f878998c136191af705e"></a>xyz&#160;</td><td class="fielddoc"><p>Разрешен только параллельный перенос (запрещены повороты вокруг координатных осей плейсмента параметров). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2a42a09bdddc63daafe2ecb2859f5ff220"></a>xyw&#160;</td><td class="fielddoc"><p>Разрешен только параллельный перенос вдоль осей OX и OY и поворот вокруг оси OZ плейсмента параметров. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2a74b2848277ccb7edb89ae0bbdc3f751d"></a>xyzw&#160;</td><td class="fielddoc"><p>Разрешен параллельный перенос вдоль координатных осей и поворот вокруг оси OZ плейсмента параметров. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2a53f21197fd88556f12d066faea1684e9"></a>uvw&#160;</td><td class="fielddoc"><p>Разрешен только поворот вокруг координатных осей плейсмента параметров (запрещен любой параллельный перенос). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34a18bcd92ae1e698dfffacace4f34a2aaa2d6e4f578eb0cfaba23beef76c2194"></a>free&#160;</td><td class="fielddoc"><p>Без ограничений. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac161b368deeb69886f78fcff9d340d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac161b368deeb69886f78fcff9d340d45">&#9670;&nbsp;</a></span>MbeDimensionalConstraintType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="op__mesh__parameter_8h.html#ac161b368deeb69886f78fcff9d340d45">MbeDimensionalConstraintType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тип размерного ограничения. </p>
+<p>Тип размерного ограничения. Определяет вариант фиксации размеров объекта. Можно зафиксировать радиус сферы, радиус цилиндра, уклон конуса, большой и малый радиусы тора (только один их них или сразу оба).</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В разработке. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ac161b368deeb69886f78fcff9d340d45a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"><p>Без ограничений. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac161b368deeb69886f78fcff9d340d45a8b04d5e3775d298e78455efc5ca404d5"></a>first&#160;</td><td class="fielddoc"><p>Зафиксирован только первый размерный параметр объекта. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac161b368deeb69886f78fcff9d340d45aa9f0e61a137d86aa9db53465e0801612"></a>second&#160;</td><td class="fielddoc"><p>Зафиксирован только второй размерный параметр объекта (корректно только для тора). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac161b368deeb69886f78fcff9d340d45af6cb3e816496528d4187db53bc66567f"></a>both&#160;</td><td class="fielddoc"><p>Зафиксированы оба размерных параметра объекта (корректно только для тора). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="op__mesh__parameter_8h.html">op_mesh_parameter.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

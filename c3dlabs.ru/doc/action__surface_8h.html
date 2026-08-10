@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл action_surface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('action__surface_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл action_surface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Методы построения поверхностей.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point3d_8h.html">mb_cart_point3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="surface_8h.html">surface.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="topology_8h.html">topology.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__operation__result_8h.html">mb_operation_result.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga4f750cd35723bd3d951979407c5359a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga4f750cd35723bd3d951979407c5359a6">ElementarySurface</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point2, <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a> surfaceType, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga4f750cd35723bd3d951979407c5359a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать элементарную поверхность.  <a href="group___surface___modeling.html#ga4f750cd35723bd3d951979407c5359a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4f750cd35723bd3d951979407c5359a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf08320412604f8f17c585302eba3f3b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaf08320412604f8f17c585302eba3f3b8">SplineSurface</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMinVMin, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMaxVMin, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMaxVMax, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pUMinVMax, size_t uCount, size_t vCount, size_t uDegree, size_t vDegree, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaf08320412604f8f17c585302eba3f3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плоскую NURBS - поверхность.  <a href="group___surface___modeling.html#gaf08320412604f8f17c585302eba3f3b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf08320412604f8f17c585302eba3f3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6498db6c77bbfee32a8045ed8df37850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga6498db6c77bbfee32a8045ed8df37850">SplineSurface</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;pointList, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;weightList, size_t uCount, size_t vCount, size_t uDegree, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;uKnotList, bool uClosed, size_t vDegree, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;vKnotList, bool vClosed, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga6498db6c77bbfee32a8045ed8df37850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS - поверхность.  <a href="group___surface___modeling.html#ga6498db6c77bbfee32a8045ed8df37850">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6498db6c77bbfee32a8045ed8df37850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3f27754100e1d3eb5664a4b1b61e967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gae3f27754100e1d3eb5664a4b1b61e967">ExtrusionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;direction, bool simplify, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gae3f27754100e1d3eb5664a4b1b61e967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность выдавливания.  <a href="group___surface___modeling.html#gae3f27754100e1d3eb5664a4b1b61e967">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae3f27754100e1d3eb5664a4b1b61e967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1bf9a5129bba9049aab1443be784e9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gab1bf9a5129bba9049aab1443be784e9f">RevolutionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;origin, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;axis, double angle, bool simplify, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gab1bf9a5129bba9049aab1443be784e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность вращения.  <a href="group___surface___modeling.html#gab1bf9a5129bba9049aab1443be784e9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab1bf9a5129bba9049aab1443be784e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ae1e9dcdc767f0915e53fe9eef13c8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga5ae1e9dcdc767f0915e53fe9eef13c8d">ExpansionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *curve1, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga5ae1e9dcdc767f0915e53fe9eef13c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность движения.  <a href="group___surface___modeling.html#ga5ae1e9dcdc767f0915e53fe9eef13c8d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5ae1e9dcdc767f0915e53fe9eef13c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5681037c4bf7850797bac4004998c948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga5681037c4bf7850797bac4004998c948">EvolutionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga5681037c4bf7850797bac4004998c948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кинематическую поверхность.  <a href="group___surface___modeling.html#ga5681037c4bf7850797bac4004998c948">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5681037c4bf7850797bac4004998c948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga360f6a1792f53cc6d1854b12c8b1caf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga360f6a1792f53cc6d1854b12c8b1caf6">SpiralSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, bool sameCurve, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p2, double step, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga360f6a1792f53cc6d1854b12c8b1caf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать спиральную поверхность.  <a href="group___surface___modeling.html#ga360f6a1792f53cc6d1854b12c8b1caf6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga360f6a1792f53cc6d1854b12c8b1caf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga140f96cca0a680df170d23dd294f3f00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga140f96cca0a680df170d23dd294f3f00">SectorSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga140f96cca0a680df170d23dd294f3f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать секториальную поверхность.  <a href="group___surface___modeling.html#ga140f96cca0a680df170d23dd294f3f00">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga140f96cca0a680df170d23dd294f3f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a411141bbaebfbdb633a036b4c86d75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga6a411141bbaebfbdb633a036b4c86d75">RuledSurface</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, bool simplify, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga6a411141bbaebfbdb633a036b4c86d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать линейчатую поверхность.  <a href="group___surface___modeling.html#ga6a411141bbaebfbdb633a036b4c86d75">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6a411141bbaebfbdb633a036b4c86d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab034aa8d6ab06c9ccd7dcf73326ae00f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gab034aa8d6ab06c9ccd7dcf73326ae00f">CornerSurface</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve3, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gab034aa8d6ab06c9ccd7dcf73326ae00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать треугольную поверхность.  <a href="group___surface___modeling.html#gab034aa8d6ab06c9ccd7dcf73326ae00f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab034aa8d6ab06c9ccd7dcf73326ae00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga016d26a5ebefd91452454e945695339b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga016d26a5ebefd91452454e945695339b">CoverSurface</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve3, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve4, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga016d26a5ebefd91452454e945695339b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать билинейную поверхность.  <a href="group___surface___modeling.html#ga016d26a5ebefd91452454e945695339b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga016d26a5ebefd91452454e945695339b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae792a2e579bf595f03bfd6fcec2fcdd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gae792a2e579bf595f03bfd6fcec2fcdd2">LoftedSurface</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;curveList, bool closed, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;begDirection, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;endDirection, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gae792a2e579bf595f03bfd6fcec2fcdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность по семейству кривых.  <a href="group___surface___modeling.html#gae792a2e579bf595f03bfd6fcec2fcdd2">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae792a2e579bf595f03bfd6fcec2fcdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b29a93d1b47a72c8192943daf6e3392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga3b29a93d1b47a72c8192943daf6e3392">LoftedSurface</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;curveList, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;spine, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result, bool isSimToEvol=true)</td></tr>
+<tr class="memdesc:ga3b29a93d1b47a72c8192943daf6e3392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность по семейству кривых и направляющей.  <a href="group___surface___modeling.html#ga3b29a93d1b47a72c8192943daf6e3392">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3b29a93d1b47a72c8192943daf6e3392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab40cfba128653853bb77f0574a356efd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gab40cfba128653853bb77f0574a356efd">MeshSurface</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;uCurveList, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;vCurveList, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gab40cfba128653853bb77f0574a356efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность на сетке кривых.  <a href="group___surface___modeling.html#gab40cfba128653853bb77f0574a356efd">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab40cfba128653853bb77f0574a356efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga266deb9ae017c88bb7df581b3b5544bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga266deb9ae017c88bb7df581b3b5544bc">OffsetSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, double distance, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga266deb9ae017c88bb7df581b3b5544bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать эквидистантную поверхность.  <a href="group___surface___modeling.html#ga266deb9ae017c88bb7df581b3b5544bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga266deb9ae017c88bb7df581b3b5544bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7457bc8c8bde3bc3eaa2bc587d4d3990"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga7457bc8c8bde3bc3eaa2bc587d4d3990">OffsetSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, double offsetUminVmin, double offsetUmaxVmin, double offsetUminVmax, double offsetUmaxVmax, <a class="el" href="group___data___structures.html#ga8779515558c436a0cf818cbd800d503b">MbeOffsetType</a> type, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga7457bc8c8bde3bc3eaa2bc587d4d3990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать эквидистантную поверхность.  <a href="group___surface___modeling.html#ga7457bc8c8bde3bc3eaa2bc587d4d3990">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7457bc8c8bde3bc3eaa2bc587d4d3990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9278f4b569a8f0ee02217dcc9fa0469"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaa9278f4b569a8f0ee02217dcc9fa0469">ExtendedSurface</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, double uMin, double uMax, double vMin, double vMax, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaa9278f4b569a8f0ee02217dcc9fa0469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать продленную поверхность.  <a href="group___surface___modeling.html#gaa9278f4b569a8f0ee02217dcc9fa0469">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa9278f4b569a8f0ee02217dcc9fa0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c546de5a15b305dddf5c2a346abb1e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga8c546de5a15b305dddf5c2a346abb1e5">DeformedSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, size_t uCount, size_t vCount, size_t uDegree, size_t vDegree, double dist, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga8c546de5a15b305dddf5c2a346abb1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать деформированную поверхность.  <a href="group___surface___modeling.html#ga8c546de5a15b305dddf5c2a346abb1e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8c546de5a15b305dddf5c2a346abb1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49aded1f65171708150e44ab8089cf04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga49aded1f65171708150e44ab8089cf04">BoundedSurface</a> (<a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve.html">MbCurve</a> &gt; &amp;boundList, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga49aded1f65171708150e44ab8089cf04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность с заданной границей.  <a href="group___surface___modeling.html#ga49aded1f65171708150e44ab8089cf04">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga49aded1f65171708150e44ab8089cf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec250b57773bee8526a47c141a5525be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaec250b57773bee8526a47c141a5525be">BoundedSurface</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, const <a class="el" href="class_mb_region.html">MbRegion</a> &amp;region, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaec250b57773bee8526a47c141a5525be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность с заданной границей.  <a href="group___surface___modeling.html#gaec250b57773bee8526a47c141a5525be">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaec250b57773bee8526a47c141a5525be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5ccebb762afcec1019b2a46eacc3505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaf5ccebb762afcec1019b2a46eacc3505">NurbsSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaf5ccebb762afcec1019b2a46eacc3505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS копию поверхности, ограниченную двумерными границами.  <a href="group___surface___modeling.html#gaf5ccebb762afcec1019b2a46eacc3505">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf5ccebb762afcec1019b2a46eacc3505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40160ea20286b02ae48e6ef80ba6a5cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga40160ea20286b02ae48e6ef80ba6a5cb">NurbsSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, const <a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a> &amp;uParam, const <a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a> &amp;vParam, <a class="el" href="class_s_ptr.html">c3d::SurfaceSPtr</a> &amp;result)</td></tr>
+<tr class="memdesc:ga40160ea20286b02ae48e6ef80ba6a5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS копию поверхности, по заданным параметрам.  <a href="group___surface___modeling.html#ga40160ea20286b02ae48e6ef80ba6a5cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga40160ea20286b02ae48e6ef80ba6a5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70566bd5ce73456a4e5b53da7eb69c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga70566bd5ce73456a4e5b53da7eb69c8f">SimplexSplineSurface</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;pList, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;resSurface)</td></tr>
+<tr class="memdesc:ga70566bd5ce73456a4e5b53da7eb69c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхность симплексного сплайна.  <a href="group___surface___modeling.html#ga70566bd5ce73456a4e5b53da7eb69c8f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga70566bd5ce73456a4e5b53da7eb69c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12a4d37d5a22d096cfb938cf7f49233a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga12a4d37d5a22d096cfb938cf7f49233a">TriBezierSurface</a> (ptrdiff_t k, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p2, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p3, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;resSurface)</td></tr>
+<tr class="memdesc:ga12a4d37d5a22d096cfb938cf7f49233a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать треугольную поверхность Безье.  <a href="group___surface___modeling.html#ga12a4d37d5a22d096cfb938cf7f49233a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga12a4d37d5a22d096cfb938cf7f49233a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa47d9f37856f4f3401d4797ff3dcfa95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gaa47d9f37856f4f3401d4797ff3dcfa95">SimplexSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, size_t degree, size_t uCount, size_t vCount, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaa47d9f37856f4f3401d4797ff3dcfa95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать треугольную В-сплайн поверхность.  <a href="group___surface___modeling.html#gaa47d9f37856f4f3401d4797ff3dcfa95">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa47d9f37856f4f3401d4797ff3dcfa95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae093e490555e774bd5dc6a404b63e7da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__3_d.html#gae093e490555e774bd5dc6a404b63e7da">GetLineSegmentNURBSSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;segments)</td></tr>
+<tr class="memdesc:gae093e490555e774bd5dc6a404b63e7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить характеристическую ломаную сплайновой поверхности.  <a href="group___algorithms__3_d.html#gae093e490555e774bd5dc6a404b63e7da">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae093e490555e774bd5dc6a404b63e7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada4ff50bcb458bb294a1d5496c9f038b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gada4ff50bcb458bb294a1d5496c9f038b">GridSurface</a> (const <a class="el" href="class_mb_grid.html">MbGrid</a> &amp;grid, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gada4ff50bcb458bb294a1d5496c9f038b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание поверхности на сетке точек.  <a href="group___surface___modeling.html#gada4ff50bcb458bb294a1d5496c9f038b">Подробнее...</a><br /></td></tr>
+<tr class="separator:gada4ff50bcb458bb294a1d5496c9f038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga451a3bd1459bc2bce0435d8180863056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#ga451a3bd1459bc2bce0435d8180863056">MiddlePlaces</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, std::vector&lt; <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &gt; &amp;places)</td></tr>
+<tr class="memdesc:ga451a3bd1459bc2bce0435d8180863056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать средние плоскости.  <a href="group___surface___modeling.html#ga451a3bd1459bc2bce0435d8180863056">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga451a3bd1459bc2bce0435d8180863056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb62f76c32c8e2b62571be6eababb9bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gafb62f76c32c8e2b62571be6eababb9bf">SectionSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;rc, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;g1, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;g2, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *c0, size_t form, bool sense, double uBeg, double uEnd, <a class="el" href="class_mb_function.html">MbFunction</a> *func, <a class="el" href="class_mb_curve.html">MbCurve</a> *patt, double accuracy, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> vers, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gafb62f76c32c8e2b62571be6eababb9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение поверхности переменного сечения.  <a href="group___surface___modeling.html#gafb62f76c32c8e2b62571be6eababb9bf">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafb62f76c32c8e2b62571be6eababb9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf8ff19fd7e1a1f423b49584d005318e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gadf8ff19fd7e1a1f423b49584d005318e">CreateCoonsSurface</a> (const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve0, const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve1, const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve2, const <a class="el" href="class_mb_surface_curve.html">MbSurfaceCurve</a> &amp;surfaceCurve3, <a class="el" href="class_mb_surface.html">MbSurface</a> *&amp;result)</td></tr>
+<tr class="memdesc:gadf8ff19fd7e1a1f423b49584d005318e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение поверхности Кунса.  <a href="group___surface___modeling.html#gadf8ff19fd7e1a1f423b49584d005318e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadf8ff19fd7e1a1f423b49584d005318e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade5dfc5191b2167805c4931c2f84c319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___surface___modeling.html#gade5dfc5191b2167805c4931c2f84c319">CreateSplinePatch</a> (const c3d::ConstEdgesVector &amp;edges, c3d::SurfacesVector &amp;result)</td></tr>
+<tr class="memdesc:gade5dfc5191b2167805c4931c2f84c319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение поверхности-заплатки для заданных рёбер.  <a href="group___surface___modeling.html#gade5dfc5191b2167805c4931c2f84c319">Подробнее...</a><br /></td></tr>
+<tr class="separator:gade5dfc5191b2167805c4931c2f84c319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Методы построения поверхностей. </p>
+<p>Поверхности являются основным элементом описания формы моделируемых объектов. На базе поверхностей строятся грани, которые используются в твёрдых телах. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="action__surface_8h.html">action_surface.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

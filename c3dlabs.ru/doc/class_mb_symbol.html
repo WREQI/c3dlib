@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbSymbol</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_symbol.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_mb_symbol-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbSymbol<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___items.html">Геометрические объекты</a> &raquo; <a class="el" href="group___legend.html">Вспомогательные объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Условное обозначение.  
+ <a href="class_mb_symbol.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_symbol.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbSymbol:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_symbol__inherit__graph.svg" width="235" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbSymbol:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_symbol__coll__graph.svg" width="434" height="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:af670e24e3dc98539f096a907451797f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">StateCalc</a> { <a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9a649ce8a6ddf272176985ee778473f470">st_strong</a> = 0
+, <a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9a07aaf9e3e020297eb3ada8bc2d1179e2">st_loose</a> = 1
+ }</td></tr>
+<tr class="memdesc:af670e24e3dc98539f096a907451797f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип расчета видимости.  <a href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">Подробнее...</a><br /></td></tr>
+<tr class="separator:af670e24e3dc98539f096a907451797f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Общие функции геометрического объекта.</div></td></tr>
+<tr class="memitem:a488137c8b5c148f5d0e3585999a8e37f"><td class="memItemLeft" align="right" valign="top"><a id="a488137c8b5c148f5d0e3585999a8e37f"></a>
+<a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a488137c8b5c148f5d0e3585999a8e37f">Type</a> () const override</td></tr>
+<tr class="memdesc:a488137c8b5c148f5d0e3585999a8e37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить групповой тип объекта. <br /></td></tr>
+<tr class="separator:a488137c8b5c148f5d0e3585999a8e37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae937b6654483fdd0ab34926c57bc72b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ae937b6654483fdd0ab34926c57bc72b3">IsSimilar</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;) const override</td></tr>
+<tr class="memdesc:ae937b6654483fdd0ab34926c57bc72b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты подобными.  <a href="class_mb_symbol.html#ae937b6654483fdd0ab34926c57bc72b3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae937b6654483fdd0ab34926c57bc72b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788846187f141017f1dbb095fadd6587"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a788846187f141017f1dbb095fadd6587">DistanceToPoint</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const override</td></tr>
+<tr class="memdesc:a788846187f141017f1dbb095fadd6587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить расстояние до точки.  <a href="class_mb_symbol.html#a788846187f141017f1dbb095fadd6587">Подробнее...</a><br /></td></tr>
+<tr class="separator:a788846187f141017f1dbb095fadd6587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225954df67e4295b96f6e785586f31af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a225954df67e4295b96f6e785586f31af">AddYourGabaritTo</a> (<a class="el" href="class_mb_cube.html">MbCube</a> &amp;) const override</td></tr>
+<tr class="memdesc:a225954df67e4295b96f6e785586f31af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расширить присланный габаритный куб так, чтобы он включал в себя данный объект.  <a href="class_mb_symbol.html#a225954df67e4295b96f6e785586f31af">Подробнее...</a><br /></td></tr>
+<tr class="separator:a225954df67e4295b96f6e785586f31af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a9f1e9fc6a759af4fb53471dd78648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ac0a9f1e9fc6a759af4fb53471dd78648">CalculateMesh</a> (const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;note, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const override</td></tr>
+<tr class="memdesc:ac0a9f1e9fc6a759af4fb53471dd78648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить полигональную копию mesh.  <a href="class_mb_symbol.html#ac0a9f1e9fc6a759af4fb53471dd78648">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac0a9f1e9fc6a759af4fb53471dd78648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac159a29199ec9c46a0f38ffc9958a5f5"><td class="memItemLeft" align="right" valign="top"><a id="ac159a29199ec9c46a0f38ffc9958a5f5"></a>
+<a class="el" href="class_mb_property.html">MbProperty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ac159a29199ec9c46a0f38ffc9958a5f5">CreateProperty</a> (<a class="el" href="mb__property__title_8h.html#aff36a02591ff535f7cab841a4b0dd312">MbePrompt</a> <a class="el" href="class_mb_symbol.html#a5a30487df5ef017022db2a570c830fb1">name</a>) const override</td></tr>
+<tr class="memdesc:ac159a29199ec9c46a0f38ffc9958a5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать собственное свойство с заданием его имени. <br /></td></tr>
+<tr class="separator:ac159a29199ec9c46a0f38ffc9958a5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Собственные функции условного обозначения.</div></td></tr>
+<tr class="memitem:ab1ccc721a09a0781e687d95360a336b6"><td class="memItemLeft" align="right" valign="top"><a id="ab1ccc721a09a0781e687d95360a336b6"></a>
+<a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">StateCalc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ab1ccc721a09a0781e687d95360a336b6">GetStateCalc</a> () const</td></tr>
+<tr class="memdesc:ab1ccc721a09a0781e687d95360a336b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип расчета видимости. <br /></td></tr>
+<tr class="separator:ab1ccc721a09a0781e687d95360a336b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cb7be6e0e1be56977191621d9e994f"><td class="memItemLeft" align="right" valign="top"><a id="af2cb7be6e0e1be56977191621d9e994f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#af2cb7be6e0e1be56977191621d9e994f">IsStrongStateCalc</a> () const</td></tr>
+<tr class="memdesc:af2cb7be6e0e1be56977191621d9e994f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точный ли тип расчета видимости. <br /></td></tr>
+<tr class="separator:af2cb7be6e0e1be56977191621d9e994f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4375529000904f0a198e03aa924aaa"><td class="memItemLeft" align="right" valign="top"><a id="a8b4375529000904f0a198e03aa924aaa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a8b4375529000904f0a198e03aa924aaa">SetStateCalc</a> (<a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">StateCalc</a> _stateCalc)</td></tr>
+<tr class="memdesc:a8b4375529000904f0a198e03aa924aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить тип расчета видимости. <br /></td></tr>
+<tr class="separator:a8b4375529000904f0a198e03aa924aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5022d85f6b9146cf8a99c2b786bf2702"><td class="memItemLeft" align="right" valign="top"><a id="a5022d85f6b9146cf8a99c2b786bf2702"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a5022d85f6b9146cf8a99c2b786bf2702">IsName</a> () const</td></tr>
+<tr class="memdesc:a5022d85f6b9146cf8a99c2b786bf2702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли непустое имя. <br /></td></tr>
+<tr class="separator:a5022d85f6b9146cf8a99c2b786bf2702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56091b93b7083a052956bacc918be41e"><td class="memItemLeft" align="right" valign="top"><a id="a56091b93b7083a052956bacc918be41e"></a>
+<a class="el" href="class_mb_name.html">MbName</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a56091b93b7083a052956bacc918be41e">GetName</a> () const</td></tr>
+<tr class="memdesc:a56091b93b7083a052956bacc918be41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя обозначения. <br /></td></tr>
+<tr class="separator:a56091b93b7083a052956bacc918be41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b1bbd8366f82c063e5a59e09a5bde0"><td class="memItemLeft" align="right" valign="top"><a id="aa8b1bbd8366f82c063e5a59e09a5bde0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#aa8b1bbd8366f82c063e5a59e09a5bde0">SetName</a> (<a class="el" href="class_mb_name.html">MbName</a> &amp;)</td></tr>
+<tr class="memdesc:aa8b1bbd8366f82c063e5a59e09a5bde0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить имя обозначения. <br /></td></tr>
+<tr class="separator:aa8b1bbd8366f82c063e5a59e09a5bde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86d42f053a70ac4703cc64f8864aab4"><td class="memItemLeft" align="right" valign="top"><a id="ac86d42f053a70ac4703cc64f8864aab4"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ac86d42f053a70ac4703cc64f8864aab4">GetComponent</a> () const</td></tr>
+<tr class="memdesc:ac86d42f053a70ac4703cc64f8864aab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить компонент обозначения. <br /></td></tr>
+<tr class="separator:ac86d42f053a70ac4703cc64f8864aab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09df6763deca8d7d07f00f69da49e05"><td class="memItemLeft" align="right" valign="top"><a id="ac09df6763deca8d7d07f00f69da49e05"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ac09df6763deca8d7d07f00f69da49e05">SetComponent</a> (uint)</td></tr>
+<tr class="memdesc:ac09df6763deca8d7d07f00f69da49e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить компонент обозначения. <br /></td></tr>
+<tr class="separator:ac09df6763deca8d7d07f00f69da49e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6ebcbb5bf4963c07a36415d7038fee"><td class="memItemLeft" align="right" valign="top"><a id="a1b6ebcbb5bf4963c07a36415d7038fee"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a1b6ebcbb5bf4963c07a36415d7038fee">GetIdentifier</a> () const</td></tr>
+<tr class="memdesc:a1b6ebcbb5bf4963c07a36415d7038fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор нити. <br /></td></tr>
+<tr class="separator:a1b6ebcbb5bf4963c07a36415d7038fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15db0d967e9566be0da890aa15a81cb9"><td class="memItemLeft" align="right" valign="top"><a id="a15db0d967e9566be0da890aa15a81cb9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a15db0d967e9566be0da890aa15a81cb9">SetIdentifier</a> (size_t)</td></tr>
+<tr class="memdesc:a15db0d967e9566be0da890aa15a81cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить идентификатор нити. <br /></td></tr>
+<tr class="separator:a15db0d967e9566be0da890aa15a81cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2782dec442f1d110f19d7aad3c25899"><td class="memItemLeft" align="right" valign="top"><a id="ae2782dec442f1d110f19d7aad3c25899"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ae2782dec442f1d110f19d7aad3c25899">IncludeGab</a> (<a class="el" href="class_mb_cube.html">MbCube</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ae2782dec442f1d110f19d7aad3c25899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить свой габарит в габаритный куб cube. <br /></td></tr>
+<tr class="separator:ae2782dec442f1d110f19d7aad3c25899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729fa15c2b15e7e5367d1b2a849d5bfb"><td class="memItemLeft" align="right" valign="top"><a id="a729fa15c2b15e7e5367d1b2a849d5bfb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a729fa15c2b15e7e5367d1b2a849d5bfb">IsSymbolOnPlace</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;) const =0</td></tr>
+<tr class="memdesc:a729fa15c2b15e7e5367d1b2a849d5bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находится ли условное обозначение на плоскости OXY плейсмента. <br /></td></tr>
+<tr class="separator:a729fa15c2b15e7e5367d1b2a849d5bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f78e05c53ad37e8feeab4549a7c019d"><td class="memItemLeft" align="right" valign="top"><a id="a6f78e05c53ad37e8feeab4549a7c019d"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a6f78e05c53ad37e8feeab4549a7c019d">IsSymbolUnderPlace</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;) const =0</td></tr>
+<tr class="memdesc:a6f78e05c53ad37e8feeab4549a7c019d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находится ли условное обозначение на или под плоскостью OXY плейсмента. <br /></td></tr>
+<tr class="separator:a6f78e05c53ad37e8feeab4549a7c019d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb460df3123efc4bc25a425635a1559c"><td class="memItemLeft" align="right" valign="top"><a id="adb460df3123efc4bc25a425635a1559c"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#adb460df3123efc4bc25a425635a1559c">IsSymbolInShell</a> (const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;) const =0</td></tr>
+<tr class="memdesc:adb460df3123efc4bc25a425635a1559c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находится ли обозначение внутри или на оболочке. <br /></td></tr>
+<tr class="separator:adb460df3123efc4bc25a425635a1559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188a6cd6dd3c93a1a9cc808a3a8e823e"><td class="memItemLeft" align="right" valign="top"><a id="a188a6cd6dd3c93a1a9cc808a3a8e823e"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a188a6cd6dd3c93a1a9cc808a3a8e823e">GetPointsSymbols</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_symbol.html">MbSymbol</a> &gt; &amp;) const =0</td></tr>
+<tr class="memdesc:a188a6cd6dd3c93a1a9cc808a3a8e823e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить массив условных обозначений на базовых точках, принадлежащих данному обозначению. <br /></td></tr>
+<tr class="separator:a188a6cd6dd3c93a1a9cc808a3a8e823e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_legend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_legend')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_legend.html">MbLegend</a></td></tr>
+<tr class="memitem:afa696b1452e8cf76e5845625a3777358 inherit pub_methods_class_mb_legend"><td class="memItemLeft" align="right" valign="top"><a id="afa696b1452e8cf76e5845625a3777358"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_legend.html#afa696b1452e8cf76e5845625a3777358">~MbLegend</a> ()</td></tr>
+<tr class="memdesc:afa696b1452e8cf76e5845625a3777358 inherit pub_methods_class_mb_legend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:afa696b1452e8cf76e5845625a3777358 inherit pub_methods_class_mb_legend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6d98eb10515fe7bccc437e3afd0564 inherit pub_methods_class_mb_legend"><td class="memItemLeft" align="right" valign="top"><a id="afe6d98eb10515fe7bccc437e3afd0564"></a>
+<a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_legend.html#afe6d98eb10515fe7bccc437e3afd0564">Family</a> () const override</td></tr>
+<tr class="memdesc:afe6d98eb10515fe7bccc437e3afd0564 inherit pub_methods_class_mb_legend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить семейство объекта. <br /></td></tr>
+<tr class="separator:afe6d98eb10515fe7bccc437e3afd0564 inherit pub_methods_class_mb_legend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d99249d26139733a6b926f17125da26 inherit pub_methods_class_mb_legend"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_legend.html#a5d99249d26139733a6b926f17125da26">CalculateLocalGabarit</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;into, <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube) const override</td></tr>
+<tr class="memdesc:a5d99249d26139733a6b926f17125da26 inherit pub_methods_class_mb_legend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит в локальной системы координат.  <a href="class_mb_legend.html#a5d99249d26139733a6b926f17125da26">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5d99249d26139733a6b926f17125da26 inherit pub_methods_class_mb_legend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_space_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_space_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_space_item.html">MbSpaceItem</a></td></tr>
+<tr class="memitem:a23bc52fccf5304c4c0b7836e954b5840 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a23bc52fccf5304c4c0b7836e954b5840"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a23bc52fccf5304c4c0b7836e954b5840">~MbSpaceItem</a> ()</td></tr>
+<tr class="memdesc:a23bc52fccf5304c4c0b7836e954b5840 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a23bc52fccf5304c4c0b7836e954b5840 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860e3b9fc0fa49b8920d2a275049eb21 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a860e3b9fc0fa49b8920d2a275049eb21">PrepareWrite</a> () const</td></tr>
+<tr class="memdesc:a860e3b9fc0fa49b8920d2a275049eb21 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация объекта.  <a href="class_mb_space_item.html#a860e3b9fc0fa49b8920d2a275049eb21">Подробнее...</a><br /></td></tr>
+<tr class="separator:a860e3b9fc0fa49b8920d2a275049eb21 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45589d642ef2d36c9d1898be4b48156 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="af45589d642ef2d36c9d1898be4b48156"></a>
+<a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#af45589d642ef2d36c9d1898be4b48156">RefType</a> () const override</td></tr>
+<tr class="memdesc:af45589d642ef2d36c9d1898be4b48156 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:af45589d642ef2d36c9d1898be4b48156 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7ca3883146d3d69b9afe970f9c7d0c inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="afa7ca3883146d3d69b9afe970f9c7d0c"></a>
+virtual <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#afa7ca3883146d3d69b9afe970f9c7d0c">IsA</a> () const =0</td></tr>
+<tr class="memdesc:afa7ca3883146d3d69b9afe970f9c7d0c inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип объекта. <br /></td></tr>
+<tr class="separator:afa7ca3883146d3d69b9afe970f9c7d0c inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74eb49881b4cda0c731ade63ba830e8 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="ac74eb49881b4cda0c731ade63ba830e8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#ac74eb49881b4cda0c731ade63ba830e8">IsFamilyRegistrable</a> () const override</td></tr>
+<tr class="memdesc:ac74eb49881b4cda0c731ade63ba830e8 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:ac74eb49881b4cda0c731ade63ba830e8 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f3e80f6f21819c27ffe75506636911 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a77f3e80f6f21819c27ffe75506636911">Duplicate</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *iReg=nullptr) const =0</td></tr>
+<tr class="memdesc:a77f3e80f6f21819c27ffe75506636911 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию объекта.  <a href="class_mb_space_item.html#a77f3e80f6f21819c27ffe75506636911">Подробнее...</a><br /></td></tr>
+<tr class="separator:a77f3e80f6f21819c27ffe75506636911 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff953fe5ad2edb37acdfbbdbb7148043 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#aff953fe5ad2edb37acdfbbdbb7148043">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matr, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)=0</td></tr>
+<tr class="memdesc:aff953fe5ad2edb37acdfbbdbb7148043 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать объект согласно матрице.  <a href="class_mb_space_item.html#aff953fe5ad2edb37acdfbbdbb7148043">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff953fe5ad2edb37acdfbbdbb7148043 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2006b7fff304a10dfa973b72759cb65 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#ae2006b7fff304a10dfa973b72759cb65">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;to, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)=0</td></tr>
+<tr class="memdesc:ae2006b7fff304a10dfa973b72759cb65 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть объект вдоль вектора.  <a href="class_mb_space_item.html#ae2006b7fff304a10dfa973b72759cb65">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae2006b7fff304a10dfa973b72759cb65 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a49b34182dfe467e37dae1c0982f4dd inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a1a49b34182dfe467e37dae1c0982f4dd">Rotate</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;axis, double angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)=0</td></tr>
+<tr class="memdesc:a1a49b34182dfe467e37dae1c0982f4dd inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть объект вокруг оси на заданный угол.  <a href="class_mb_space_item.html#a1a49b34182dfe467e37dae1c0982f4dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1a49b34182dfe467e37dae1c0982f4dd inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d7fa6cb8c01be0c9456ae36e122f68 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a51d7fa6cb8c01be0c9456ae36e122f68">IsSame</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;other, double accuracy=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const =0</td></tr>
+<tr class="memdesc:a51d7fa6cb8c01be0c9456ae36e122f68 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты равными.  <a href="class_mb_space_item.html#a51d7fa6cb8c01be0c9456ae36e122f68">Подробнее...</a><br /></td></tr>
+<tr class="separator:a51d7fa6cb8c01be0c9456ae36e122f68 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5093771e43c5eab4fc1f6d603b22e1 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#aff5093771e43c5eab4fc1f6d603b22e1">SetEqual</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;item)=0</td></tr>
+<tr class="memdesc:aff5093771e43c5eab4fc1f6d603b22e1 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать объекты равным, если они подобны.  <a href="class_mb_space_item.html#aff5093771e43c5eab4fc1f6d603b22e1">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff5093771e43c5eab4fc1f6d603b22e1 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061f4ed9211c507b116c5b0ec433fd7f inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a061f4ed9211c507b116c5b0ec433fd7f"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a061f4ed9211c507b116c5b0ec433fd7f">Refresh</a> ()</td></tr>
+<tr class="memdesc:a061f4ed9211c507b116c5b0ec433fd7f inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевести все временные (mutable) данные объекта в неопределённое (исходное) состояние. <br /></td></tr>
+<tr class="separator:a061f4ed9211c507b116c5b0ec433fd7f inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0377f42bedf917440fb6dace05d16c07 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a0377f42bedf917440fb6dace05d16c07">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)=0</td></tr>
+<tr class="memdesc:a0377f42bedf917440fb6dace05d16c07 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта.  <a href="class_mb_space_item.html#a0377f42bedf917440fb6dace05d16c07">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0377f42bedf917440fb6dace05d16c07 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38908f7d2f0b34269140fefeb3c6cd11 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a38908f7d2f0b34269140fefeb3c6cd11">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)=0</td></tr>
+<tr class="memdesc:a38908f7d2f0b34269140fefeb3c6cd11 inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить свойства объекта.  <a href="class_mb_space_item.html#a38908f7d2f0b34269140fefeb3c6cd11">Подробнее...</a><br /></td></tr>
+<tr class="separator:a38908f7d2f0b34269140fefeb3c6cd11 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bd72d51277eba72f1372b0f137a0de inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a28bd72d51277eba72f1372b0f137a0de"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWire</b> (const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const</td></tr>
+<tr class="separator:a28bd72d51277eba72f1372b0f137a0de inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da943ddec0381a8ad89c73fae99d4a3 inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a0da943ddec0381a8ad89c73fae99d4a3"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWire</b> (double sag, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const</td></tr>
+<tr class="separator:a0da943ddec0381a8ad89c73fae99d4a3 inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b7d14509866775298811fd124eac5b inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a85b7d14509866775298811fd124eac5b"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a85b7d14509866775298811fd124eac5b">GetBasisItems</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:a85b7d14509866775298811fd124eac5b inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать базовые объекты в присланный контейнер. <br /></td></tr>
+<tr class="separator:a85b7d14509866775298811fd124eac5b inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ecdfa8659289dd12ff54b0f35e385b inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="aa7ecdfa8659289dd12ff54b0f35e385b"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#aa7ecdfa8659289dd12ff54b0f35e385b">GetBasisPoints</a> (<a class="el" href="struct_mb_control_data3_d.html">MbControlData3D</a> &amp;) const</td></tr>
+<tr class="memdesc:aa7ecdfa8659289dd12ff54b0f35e385b inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать контрольные точки объекта. <br /></td></tr>
+<tr class="separator:aa7ecdfa8659289dd12ff54b0f35e385b inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee09411ad5e5ec9154327a80cf1419f inherit pub_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a4ee09411ad5e5ec9154327a80cf1419f"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a4ee09411ad5e5ec9154327a80cf1419f">SetBasisPoints</a> (const <a class="el" href="struct_mb_control_data3_d.html">MbControlData3D</a> &amp;)</td></tr>
+<tr class="memdesc:a4ee09411ad5e5ec9154327a80cf1419f inherit pub_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить объект по контрольным точкам. <br /></td></tr>
+<tr class="separator:a4ee09411ad5e5ec9154327a80cf1419f inherit pub_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:adeca21b8bf680d30b0f54a444d755717"><td class="memItemLeft" align="right" valign="top"><a id="adeca21b8bf680d30b0f54a444d755717"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#adeca21b8bf680d30b0f54a444d755717">MbSymbol</a> ()</td></tr>
+<tr class="memdesc:adeca21b8bf680d30b0f54a444d755717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умолчательный конструктор. <br /></td></tr>
+<tr class="separator:adeca21b8bf680d30b0f54a444d755717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75acb239e8637d555d441ce0d139a325"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a75acb239e8637d555d441ce0d139a325">MbSymbol</a> (<a class="el" href="class_mb_name.html">MbName</a> *_name, uint _component, <a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">StateCalc</a> _stateCalc=<a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9a649ce8a6ddf272176985ee778473f470">st_strong</a>)</td></tr>
+<tr class="memdesc:a75acb239e8637d555d441ce0d139a325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_mb_symbol.html#a75acb239e8637d555d441ce0d139a325">Подробнее...</a><br /></td></tr>
+<tr class="separator:a75acb239e8637d555d441ce0d139a325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cd78ea3fc1ac4c8f69742aa2c6679d"><td class="memItemLeft" align="right" valign="top"><a id="a57cd78ea3fc1ac4c8f69742aa2c6679d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a57cd78ea3fc1ac4c8f69742aa2c6679d">MbSymbol</a> (const <a class="el" href="class_mb_symbol.html">MbSymbol</a> &amp;)</td></tr>
+<tr class="memdesc:a57cd78ea3fc1ac4c8f69742aa2c6679d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор-копия. <br /></td></tr>
+<tr class="separator:a57cd78ea3fc1ac4c8f69742aa2c6679d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_legend"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_legend')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_legend.html">MbLegend</a></td></tr>
+<tr class="memitem:af0ba81db19ba23a7262401b3afce663f inherit pro_methods_class_mb_legend"><td class="memItemLeft" align="right" valign="top"><a id="af0ba81db19ba23a7262401b3afce663f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_legend.html#af0ba81db19ba23a7262401b3afce663f">MbLegend</a> ()</td></tr>
+<tr class="memdesc:af0ba81db19ba23a7262401b3afce663f inherit pro_methods_class_mb_legend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:af0ba81db19ba23a7262401b3afce663f inherit pro_methods_class_mb_legend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_space_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_space_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_space_item.html">MbSpaceItem</a></td></tr>
+<tr class="memitem:a64964a5fe986724fb4ba3f52ba615cad inherit pro_methods_class_mb_space_item"><td class="memItemLeft" align="right" valign="top"><a id="a64964a5fe986724fb4ba3f52ba615cad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a64964a5fe986724fb4ba3f52ba615cad">MbSpaceItem</a> ()</td></tr>
+<tr class="memdesc:a64964a5fe986724fb4ba3f52ba615cad inherit pro_methods_class_mb_space_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:a64964a5fe986724fb4ba3f52ba615cad inherit pro_methods_class_mb_space_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a037eb3b2fb795ac39f8bc2fd429c2e99"><td class="memItemLeft" align="right" valign="top"><a id="a037eb3b2fb795ac39f8bc2fd429c2e99"></a>
+<a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">StateCalc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a037eb3b2fb795ac39f8bc2fd429c2e99">stateCalc</a></td></tr>
+<tr class="memdesc:a037eb3b2fb795ac39f8bc2fd429c2e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип расчета видимости. <br /></td></tr>
+<tr class="separator:a037eb3b2fb795ac39f8bc2fd429c2e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a30487df5ef017022db2a570c830fb1"><td class="memItemLeft" align="right" valign="top"><a id="a5a30487df5ef017022db2a570c830fb1"></a>
+<a class="el" href="class_t_own_pointer.html">TOwnPointer</a>&lt; <a class="el" href="class_mb_name.html">MbName</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#a5a30487df5ef017022db2a570c830fb1">name</a></td></tr>
+<tr class="memdesc:a5a30487df5ef017022db2a570c830fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя обозначения <br /></td></tr>
+<tr class="separator:a5a30487df5ef017022db2a570c830fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c66256fc4de2a34f1f21291ab37692"><td class="memItemLeft" align="right" valign="top"><a id="aa0c66256fc4de2a34f1f21291ab37692"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#aa0c66256fc4de2a34f1f21291ab37692">compHash</a></td></tr>
+<tr class="memdesc:aa0c66256fc4de2a34f1f21291ab37692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Компонент условного обозначения (не владеет). <br /></td></tr>
+<tr class="separator:aa0c66256fc4de2a34f1f21291ab37692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7559cd09d65902748734ac9ed2d9795"><td class="memItemLeft" align="right" valign="top"><a id="ae7559cd09d65902748734ac9ed2d9795"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_symbol.html#ae7559cd09d65902748734ac9ed2d9795">ident</a></td></tr>
+<tr class="memdesc:ae7559cd09d65902748734ac9ed2d9795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор нити. <br /></td></tr>
+<tr class="separator:ae7559cd09d65902748734ac9ed2d9795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Условное обозначение. </p>
+<p>Абстрактный базовый класс условного обозначения <a class="el" href="class_mb_symbol.html" title="Условное обозначение.">MbSymbol</a>. <br  />
+</p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="af670e24e3dc98539f096a907451797f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af670e24e3dc98539f096a907451797f9">&#9670;&nbsp;</a></span>StateCalc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">MbSymbol::StateCalc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип расчета видимости. </p>
+<p>Тип расчета видимости. <br  />
+ </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="af670e24e3dc98539f096a907451797f9a649ce8a6ddf272176985ee778473f470"></a>st_strong&#160;</td><td class="fielddoc"><p>Точно, все точки должны быть видимы. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af670e24e3dc98539f096a907451797f9a07aaf9e3e020297eb3ada8bc2d1179e2"></a>st_loose&#160;</td><td class="fielddoc"><p>Не строго, хотя бы одна точка должна быть видима. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a75acb239e8637d555d441ce0d139a325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75acb239e8637d555d441ce0d139a325">&#9670;&nbsp;</a></span>MbSymbol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbSymbol::MbSymbol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_name.html">MbName</a> *&#160;</td>
+          <td class="paramname"><em>_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>_component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9">StateCalc</a>&#160;</td>
+          <td class="paramname"><em>_stateCalc</em> = <code><a class="el" href="class_mb_symbol.html#af670e24e3dc98539f096a907451797f9a649ce8a6ddf272176985ee778473f470">st_strong</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор условного обозначения. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_name</td><td>- Имя обозначения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_component</td><td>- Компонент условного обозначения</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_ident</td><td>- Идентификатор нити.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_stateCalc</td><td>- Тип расчета видимости. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae937b6654483fdd0ab34926c57bc72b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae937b6654483fdd0ab34926c57bc72b3">&#9670;&nbsp;</a></span>IsSimilar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbSymbol::IsSimilar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты подобными. </p>
+<p>Подобными считаются однотипные объекты, данные которых можно приравнять или данные так же являются подобными (указатели). Подобный объект можно инициализировать по данным подобного ему объекта (приравнять один другому без изменения адресов).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Подобны ли объекты. </dd></dl>
+
+<p>Переопределяет метод предка <a class="el" href="class_mb_space_item.html#a0a575283df807ac23404a47d6ac85590">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a788846187f141017f1dbb095fadd6587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788846187f141017f1dbb095fadd6587">&#9670;&nbsp;</a></span>DistanceToPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MbSymbol::DistanceToPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить расстояние до точки. </p>
+<p>Определить расстояние до точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>- Точка.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расстояние от объекта до точки. </dd></dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#aef4c927c97e93b6661c646bf673f6f83">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="a225954df67e4295b96f6e785586f31af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225954df67e4295b96f6e785586f31af">&#9670;&nbsp;</a></span>AddYourGabaritTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSymbol::AddYourGabaritTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расширить присланный габаритный куб так, чтобы он включал в себя данный объект. </p>
+<p>Расширить присланный габаритный куб так, чтобы он включал в себя данный объект.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cube</td><td>- Принимающий габаритный куб с информацией по габаритам. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a4cf96cb312c266eb1ae2340f4c870ad4">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<a id="ac0a9f1e9fc6a759af4fb53471dd78648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a9f1e9fc6a759af4fb53471dd78648">&#9670;&nbsp;</a></span>CalculateMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSymbol::CalculateMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;&#160;</td>
+          <td class="paramname"><em>stepData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Построить полигональную копию mesh. </p>
+<p>Построить полигональную копию данного объекта, представленную полигонами, или/и плоскими пластинами.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepData</td><td>- Данные для вычисления шага при построении полигонального.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">note</td><td>- Способ построения полигонального объекта.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">mesh</td><td>- Построенный полигональный объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="class_mb_space_item.html#a11d81f6ac0f5711398cf707d7ffabb54">MbSpaceItem</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__symbol_8h.html">mb_symbol.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_symbol.html">MbSymbol</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

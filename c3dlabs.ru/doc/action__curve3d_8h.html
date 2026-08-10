@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл action_curve3d.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('action__curve3d_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл action_curve3d.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Методы построения трехмерных кривых.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="hash32_8h.html">hash32.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point3d_8h.html">mb_cart_point3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="space__item_8h.html">space_item.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve3d_8h.html">curve3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__operation__result_8h.html">mb_operation_result.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gab06c41aa4a204ef18a99d82a8f50a617"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gab06c41aa4a204ef18a99d82a8f50a617">Line</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point2, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:gab06c41aa4a204ef18a99d82a8f50a617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать прямую.  <a href="group___curve3_d___modeling.html#gab06c41aa4a204ef18a99d82a8f50a617">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab06c41aa4a204ef18a99d82a8f50a617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga550a6222c432efa9388d73813c09e994"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga550a6222c432efa9388d73813c09e994">Segment</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point2, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga550a6222c432efa9388d73813c09e994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать отрезок прямой.  <a href="group___curve3_d___modeling.html#ga550a6222c432efa9388d73813c09e994">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga550a6222c432efa9388d73813c09e994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a5304b9fff7c54f876a18956150b98e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga5a5304b9fff7c54f876a18956150b98e">Arc</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;centre, const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;points, bool curveClosed, double angle, double &amp;a, double &amp;b, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga5a5304b9fff7c54f876a18956150b98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать эллипс (окружность) или его дугу.  <a href="group___curve3_d___modeling.html#ga5a5304b9fff7c54f876a18956150b98e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5a5304b9fff7c54f876a18956150b98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d3f6139abec8d89c93da001afbe8a0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga4d3f6139abec8d89c93da001afbe8a0d">SplineCurve</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;pointList, bool curveClosed, <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a> curveType, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga4d3f6139abec8d89c93da001afbe8a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кривую, проходящую по набору точек.  <a href="group___curve3_d___modeling.html#ga4d3f6139abec8d89c93da001afbe8a0d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4d3f6139abec8d89c93da001afbe8a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3855cb8d32d4ec6e0af26bcbd522a349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga3855cb8d32d4ec6e0af26bcbd522a349">NurbsCurve</a> (const <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;pointList, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;weightList, size_t degree, const <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;knotList, bool curveClosed, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga3855cb8d32d4ec6e0af26bcbd522a349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS-кривую.  <a href="group___curve3_d___modeling.html#ga3855cb8d32d4ec6e0af26bcbd522a349">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3855cb8d32d4ec6e0af26bcbd522a349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0cf48f1aeb351c78e6e9237119be970"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gad0cf48f1aeb351c78e6e9237119be970">NurbsCopy</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:gad0cf48f1aeb351c78e6e9237119be970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию кривой в виде NURBS.  <a href="group___curve3_d___modeling.html#gad0cf48f1aeb351c78e6e9237119be970">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad0cf48f1aeb351c78e6e9237119be970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d83e82265724f6ec160c58b4650ded2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga4d83e82265724f6ec160c58b4650ded2">NurbsCopy</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a> &amp;params, <a class="el" href="class_mb_nurbs_copy_curve_result.html">MbNurbsCopyCurveResult</a> &amp;result)</td></tr>
+<tr class="memdesc:ga4d83e82265724f6ec160c58b4650ded2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать NURBS копию кривой, по заданным параметрам.  <a href="group___curve3_d___modeling.html#ga4d83e82265724f6ec160c58b4650ded2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4d83e82265724f6ec160c58b4650ded2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98df158bb45ac0c933872bbbadc832a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga98df158bb45ac0c933872bbbadc832a8">RegularPolygon</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;centre, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;axisZ, size_t vertexCount, bool describe, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga98df158bb45ac0c933872bbbadc832a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать правильный многоугольник, вписанный в окружность.  <a href="group___curve3_d___modeling.html#ga98df158bb45ac0c933872bbbadc832a8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga98df158bb45ac0c933872bbbadc832a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9088e8f7ed6828d30fd0686ef936d58a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga9088e8f7ed6828d30fd0686ef936d58a">SpiralCurve</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, double radius, double step, <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;lawCurve, bool spiralAxis, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga9088e8f7ed6828d30fd0686ef936d58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать спираль.  <a href="group___curve3_d___modeling.html#ga9088e8f7ed6828d30fd0686ef936d58a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9088e8f7ed6828d30fd0686ef936d58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d3d6632a45f6d1b17392b52184e2049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga1d3d6632a45f6d1b17392b52184e2049">SpiralCurve</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point2, double radius, double step, double angle, <a class="el" href="class_mb_curve.html">MbCurve</a> *lawCurve, bool spiralAxis, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga1d3d6632a45f6d1b17392b52184e2049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать спираль.  <a href="group___curve3_d___modeling.html#ga1d3d6632a45f6d1b17392b52184e2049">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1d3d6632a45f6d1b17392b52184e2049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca654164ad6d29b4f26656b4681c8a2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gaca654164ad6d29b4f26656b4681c8a2b">CreateContour</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, <a class="el" href="class_mb_contour3_d.html">MbContour3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:gaca654164ad6d29b4f26656b4681c8a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать составную кривую (контур).  <a href="group___curve3_d___modeling.html#gaca654164ad6d29b4f26656b4681c8a2b">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaca654164ad6d29b4f26656b4681c8a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa12511d14f9c89a33e8e524a7d90932d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gaa12511d14f9c89a33e8e524a7d90932d">DuplicateCurve</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:gaa12511d14f9c89a33e8e524a7d90932d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию кривой.  <a href="group___curve3_d___modeling.html#gaa12511d14f9c89a33e8e524a7d90932d">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa12511d14f9c89a33e8e524a7d90932d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae61c245c84e26fe917133e3369b7fec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gae61c245c84e26fe917133e3369b7fec5">AddCurveToContour</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;contour, bool toEnd)</td></tr>
+<tr class="memdesc:gae61c245c84e26fe917133e3369b7fec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить кривую в составную кривую (контур).  <a href="group___curve3_d___modeling.html#gae61c245c84e26fe917133e3369b7fec5">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae61c245c84e26fe917133e3369b7fec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9243bcfc5791b816d5432294cd54db0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga9243bcfc5791b816d5432294cd54db0f">PlaneCurve</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga9243bcfc5791b816d5432294cd54db0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить кривую в пространстве по двумерной кривой.  <a href="group___curve3_d___modeling.html#ga9243bcfc5791b816d5432294cd54db0f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9243bcfc5791b816d5432294cd54db0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96025fc455c8cc6a006fefce14190e76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga96025fc455c8cc6a006fefce14190e76">SurfaceCurve</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga96025fc455c8cc6a006fefce14190e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить кривую на поверхности по двумерной кривой.  <a href="group___curve3_d___modeling.html#ga96025fc455c8cc6a006fefce14190e76">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga96025fc455c8cc6a006fefce14190e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d5dedf8133d58216e49a34c4be501c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga7d5dedf8133d58216e49a34c4be501c0">CurveOnSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, bool sameSurf, bool extSurf, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result, bool strictOnSurface=false)</td></tr>
+<tr class="memdesc:ga7d5dedf8133d58216e49a34c4be501c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать поверхностную кривую, если пространственная кривая лежит на поверхности.  <a href="group___curve3_d___modeling.html#ga7d5dedf8133d58216e49a34c4be501c0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7d5dedf8133d58216e49a34c4be501c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga151d873c6a8c4a039b3203cecb478988"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga151d873c6a8c4a039b3203cecb478988">IsCurveOnSurface</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, bool ext, bool strictOnSurface, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:ga151d873c6a8c4a039b3203cecb478988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли кривая на поверхности.  <a href="group___curve3_d___modeling.html#ga151d873c6a8c4a039b3203cecb478988">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga151d873c6a8c4a039b3203cecb478988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe5e40b0413cc20179fcfd80422deee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gabe5e40b0413cc20179fcfd80422deee1">CreateContours</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;curves, double metricEps, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_contour3_d.html">MbContour3D</a> &gt; &amp;result, bool onlySmoothConnected=false, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:gabe5e40b0413cc20179fcfd80422deee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать массив контуров по массиву кривых.  <a href="group___curve3_d___modeling.html#gabe5e40b0413cc20179fcfd80422deee1">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabe5e40b0413cc20179fcfd80422deee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1806c197b3c974259501088659fab519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga1806c197b3c974259501088659fab519">CreateContours</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;curves, double metricAcc, bool onlySmoothConnected=false, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:ga1806c197b3c974259501088659fab519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать контуры по набору кривых с удалением вырожденных.  <a href="group___curve3_d___modeling.html#ga1806c197b3c974259501088659fab519">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1806c197b3c974259501088659fab519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga555b8eb5cf78314aac23be5317b2d023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga555b8eb5cf78314aac23be5317b2d023">WireFrame</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_name.html">MbName</a> &amp;curveName, <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> mainName, <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga555b8eb5cf78314aac23be5317b2d023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать именованный трехмерный каркас.  <a href="group___curve3_d___modeling.html#ga555b8eb5cf78314aac23be5317b2d023">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga555b8eb5cf78314aac23be5317b2d023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga611debc51c8c2cb875d16fc71410aa29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga611debc51c8c2cb875d16fc71410aa29">WireFrame</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &gt; &amp;curves, const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_name.html">MbName</a> &gt; &amp;curveNames, <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> mainName, <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga611debc51c8c2cb875d16fc71410aa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать именованный трехмерный каркас.  <a href="group___curve3_d___modeling.html#ga611debc51c8c2cb875d16fc71410aa29">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga611debc51c8c2cb875d16fc71410aa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga784adbcafd115de96cf7cdc23fe87cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga784adbcafd115de96cf7cdc23fe87cf4">CreatePolyArcCurve3D</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result, double &amp;eps, double minRad=<a class="el" href="class_math.html#a24f3e1db6119bd9d184bdb3dd0f44e09">Math::minRadius</a>, double maxRad=<a class="el" href="class_math.html#a93f719a3494d1c4c358971ebaaed4d42">Math::maxRadius</a>)</td></tr>
+<tr class="memdesc:ga784adbcafd115de96cf7cdc23fe87cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аппроксимировать контур дугами и отрезками.  <a href="group___curve3_d___modeling.html#ga784adbcafd115de96cf7cdc23fe87cf4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga784adbcafd115de96cf7cdc23fe87cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90acb9bd7af2fcab59ba768e65a2e134"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga90acb9bd7af2fcab59ba768e65a2e134">GetSpaceCurve</a> (<a class="el" href="class_mb_item.html">MbItem</a> &amp;item, bool keepPlacement, <a class="el" href="class_s_ptr.html">c3d::SpaceCurveSPtr</a> &amp;curve0, c3d::SpaceCurvesSPtrVector *curves=nullptr)</td></tr>
+<tr class="memdesc:ga90acb9bd7af2fcab59ba768e65a2e134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить или создать пространственную кривую.  <a href="group___curve3_d___modeling.html#ga90acb9bd7af2fcab59ba768e65a2e134">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga90acb9bd7af2fcab59ba768e65a2e134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9675d764b71b56b5067a7cd94b6fdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a4c9675d764b71b56b5067a7cd94b6fdf">UnwrapCurve</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;placement, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, double deviationAngle=<a class="el" href="mb__variables_8h.html#a3cbf8dad8aa17e01f90a48d932e13314">DEVIATION_SAG</a>)</td></tr>
+<tr class="memdesc:a4c9675d764b71b56b5067a7cd94b6fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить развертку кривой/контура на плоскость.  <a href="action__curve3d_8h.html#a4c9675d764b71b56b5067a7cd94b6fdf">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4c9675d764b71b56b5067a7cd94b6fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab161b5309299dd820042bac23a08c710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gab161b5309299dd820042bac23a08c710">EvolutionSection</a> (const <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;generCurves, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;guideCurve, double guideParam, const <a class="el" href="struct_evolution_values.html">EvolutionValues</a> &amp;params, <a class="el" href="class_mb_swept_data.html">MbSweptData</a> &amp;result, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>(), double angleEpsilon=<a class="el" href="mb__variables_8h.html#a6b84b7e20090353fb4d465ff25bb5759">ANGLE_EPSILON</a>)</td></tr>
+<tr class="memdesc:gab161b5309299dd820042bac23a08c710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать сечение кинематического тела для заданного параметра на направляющей.  <a href="group___curve3_d___modeling.html#gab161b5309299dd820042bac23a08c710">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab161b5309299dd820042bac23a08c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga838e9c69ed3b78d120e98f33aca662a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga838e9c69ed3b78d120e98f33aca662a1">IsLikeStraightLine</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, double eps)</td></tr>
+<tr class="memdesc:ga838e9c69ed3b78d120e98f33aca662a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли кривая прямолинейной независимо от ее параметризации.  <a href="group___curve3_d___modeling.html#ga838e9c69ed3b78d120e98f33aca662a1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga838e9c69ed3b78d120e98f33aca662a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8540059f550eea7031dc847c915e4332"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga8540059f550eea7031dc847c915e4332">CreateCenterLineCurves</a> (const <a class="el" href="class_mb_face.html">MbFace</a> &amp;face, std::vector&lt; <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> * &gt; &amp;clCurves)</td></tr>
+<tr class="memdesc:ga8540059f550eea7031dc847c915e4332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать осевые (центральные) линии для грани оболочки.  <a href="group___curve___modeling.html#ga8540059f550eea7031dc847c915e4332">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8540059f550eea7031dc847c915e4332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17b2a6c3a795f89229758c03896fac67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga17b2a6c3a795f89229758c03896fac67">CreateFairBSplineCurveOnBasePolyline</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga17b2a6c3a795f89229758c03896fac67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную B-сплайновую кривую на опорной ломаной.  <a href="group___curve3_d___modeling.html#ga17b2a6c3a795f89229758c03896fac67">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga17b2a6c3a795f89229758c03896fac67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb62a0756eabf29c3f099ea1cefb156d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gabb62a0756eabf29c3f099ea1cefb156d">CreateFairBSplineCurveOnTangentPolyline</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:gabb62a0756eabf29c3f099ea1cefb156d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную B-сплайновую кривую на касательной ломаной.  <a href="group___curve3_d___modeling.html#gabb62a0756eabf29c3f099ea1cefb156d">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabb62a0756eabf29c3f099ea1cefb156d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga731f22acad21b9713f4ed745cdb84f84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga731f22acad21b9713f4ed745cdb84f84">CreateFairBezierCurveOnBasePolyline</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga731f22acad21b9713f4ed745cdb84f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную кривую Безье на опорной ломаной.  <a href="group___curve3_d___modeling.html#ga731f22acad21b9713f4ed745cdb84f84">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga731f22acad21b9713f4ed745cdb84f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0ea14445e706b110287ace86ea7d647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gaf0ea14445e706b110287ace86ea7d647">CreateFairBezierFilletOnPolyline</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *pllne, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;resCurve)</td></tr>
+<tr class="memdesc:gaf0ea14445e706b110287ace86ea7d647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную кривую Безье сопряжения на опорной ломаной.  <a href="group___curve3_d___modeling.html#gaf0ea14445e706b110287ace86ea7d647">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf0ea14445e706b110287ace86ea7d647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e09acb75935a2f0b5352c446f646f0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga0e09acb75935a2f0b5352c446f646f0a">CreateFairBezierCurveOnTangentPolyline</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga0e09acb75935a2f0b5352c446f646f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную кривую Безье на касательной ломаной.  <a href="group___curve3_d___modeling.html#ga0e09acb75935a2f0b5352c446f646f0a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0e09acb75935a2f0b5352c446f646f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb7e6dcb5d8f31d9a9ca299dd0168ea7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gacb7e6dcb5d8f31d9a9ca299dd0168ea7">KernelCreateHermiteGDOnBezierCurve</a> (const <a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="group___data___structures.html#ga606055ecd84832347962ac1905ca56aa">MbeFairCurveType</a> type, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;polyline)</td></tr>
+<tr class="memdesc:gacb7e6dcb5d8f31d9a9ca299dd0168ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать ГО Эрмита на кривой Безье.  <a href="group___curve3_d___modeling.html#gacb7e6dcb5d8f31d9a9ca299dd0168ea7">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacb7e6dcb5d8f31d9a9ca299dd0168ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97db851fb135121d319161249a82caab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga97db851fb135121d319161249a82caab">CreateBezierCurveOnHermiteGD</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga97db851fb135121d319161249a82caab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать кривую Безье на ГО Эрмита.  <a href="group___curve3_d___modeling.html#ga97db851fb135121d319161249a82caab">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga97db851fb135121d319161249a82caab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga735eda462bf20c7338f19aece1e78b00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga735eda462bf20c7338f19aece1e78b00">CreateBSplineCurveOnHermiteGD</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga735eda462bf20c7338f19aece1e78b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать B-сплайновую кривую на ГО Эрмита.  <a href="group___curve3_d___modeling.html#ga735eda462bf20c7338f19aece1e78b00">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga735eda462bf20c7338f19aece1e78b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14bc3f2bad770cd1f12f5f3be33b51a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga14bc3f2bad770cd1f12f5f3be33b51a8">CreateFairBezierCurveOnBasePolylineOfHermiteGD</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga14bc3f2bad770cd1f12f5f3be33b51a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную кривую Безье на опорной ломаной ГО Эрмита.  <a href="group___curve3_d___modeling.html#ga14bc3f2bad770cd1f12f5f3be33b51a8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga14bc3f2bad770cd1f12f5f3be33b51a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd605737313840f97221b0c3c518b993"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gacd605737313840f97221b0c3c518b993">CreateFairBezierCurveOnTangentsOfHermiteGD</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:gacd605737313840f97221b0c3c518b993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную кривую Безье на касательных прямых ГО Эрмита.  <a href="group___curve3_d___modeling.html#gacd605737313840f97221b0c3c518b993">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacd605737313840f97221b0c3c518b993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8237872cca6172298715f67b140f3855"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga8237872cca6172298715f67b140f3855">CreateFairBSplineCurveOnBasePolylineOfHermiteGD</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ga8237872cca6172298715f67b140f3855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную B-сплайновую кривую на опорной ломаной ГО Эрмита.  <a href="group___curve3_d___modeling.html#ga8237872cca6172298715f67b140f3855">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8237872cca6172298715f67b140f3855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39e24556b5572c4370840679c4a2ee87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga39e24556b5572c4370840679c4a2ee87">CreateFairBSplineCurveOnBasePolylineOfHermiteGDInflex</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *pllne, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;resCurve)</td></tr>
+<tr class="memdesc:ga39e24556b5572c4370840679c4a2ee87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную и сглаживающую B-сплайновую кривую на опорной ломаной ГО Эрмита.  <a href="group___curve3_d___modeling.html#ga39e24556b5572c4370840679c4a2ee87">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga39e24556b5572c4370840679c4a2ee87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2505b3680741ddd1e3e4fd367e74e22a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga2505b3680741ddd1e3e4fd367e74e22a">CreateFairBSplineCurveOnNoisyData</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *pllne, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *plnNoisy, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;resCurve)</td></tr>
+<tr class="memdesc:ga2505b3680741ddd1e3e4fd367e74e22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную B-сплайновую кривую (со сглаживанием и репараметризацией) на зашумленных данных.  <a href="group___curve3_d___modeling.html#ga2505b3680741ddd1e3e4fd367e74e22a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2505b3680741ddd1e3e4fd367e74e22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb9b20b3a6a98e9eb87363c1cd440ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gafb9b20b3a6a98e9eb87363c1cd440ea5">CreateFairBSplineCurveOnTangentsOfHermiteGD</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:gafb9b20b3a6a98e9eb87363c1cd440ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать плавную B-сплайновую кривую на касательных прямых ГО Эрмита.  <a href="group___curve3_d___modeling.html#gafb9b20b3a6a98e9eb87363c1cd440ea5">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafb9b20b3a6a98e9eb87363c1cd440ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446081564372c70ee6fb9c3452c4d52c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a446081564372c70ee6fb9c3452c4d52c">KernelCreateClothoid</a> (<a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:a446081564372c70ee6fb9c3452c4d52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать клотоиду.  <a href="action__curve3d_8h.html#a446081564372c70ee6fb9c3452c4d52c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a446081564372c70ee6fb9c3452c4d52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e26cf22d412114d8fd9d4d38e41070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#ac2e26cf22d412114d8fd9d4d38e41070">KernelCreateSectrix</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *polyline, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ac2e26cf22d412114d8fd9d4d38e41070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать сектрису.  <a href="action__curve3d_8h.html#ac2e26cf22d412114d8fd9d4d38e41070">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac2e26cf22d412114d8fd9d4d38e41070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab649fd8e5313d80d79f58bbd6b6d7b25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#ab649fd8e5313d80d79f58bbd6b6d7b25">ElevateDegreeNurbzs</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:ab649fd8e5313d80d79f58bbd6b6d7b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить степень NURBzS кривой.  <a href="action__curve3d_8h.html#ab649fd8e5313d80d79f58bbd6b6d7b25">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab649fd8e5313d80d79f58bbd6b6d7b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9290400218e2990e0ef5e174ad7e0fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#ae9290400218e2990e0ef5e174ad7e0fa">ReparamNurbs</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;resCurve)</td></tr>
+<tr class="memdesc:ae9290400218e2990e0ef5e174ad7e0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Репараметризировать NURBS кривую.  <a href="action__curve3d_8h.html#ae9290400218e2990e0ef5e174ad7e0fa">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae9290400218e2990e0ef5e174ad7e0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142cda64c2afaaf16cb7ff6390ff92e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a142cda64c2afaaf16cb7ff6390ff92e9">SubdivideNurbs</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:a142cda64c2afaaf16cb7ff6390ff92e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уплотнить NURBS кривую.  <a href="action__curve3d_8h.html#a142cda64c2afaaf16cb7ff6390ff92e9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a142cda64c2afaaf16cb7ff6390ff92e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed1735141901ee77cd4d71786f33276"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a7ed1735141901ee77cd4d71786f33276">ExtractChangeNurbs</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:a7ed1735141901ee77cd4d71786f33276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить участок NURBS кривой / изменить формат NURBS кривой.  <a href="action__curve3d_8h.html#a7ed1735141901ee77cd4d71786f33276">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7ed1735141901ee77cd4d71786f33276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8c534ee9bea2d0182bf42c235176d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#acf8c534ee9bea2d0182bf42c235176d2">ExtractChangeNurbsParams</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;resWts, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;resKnots, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;resCurve)</td></tr>
+<tr class="memdesc:acf8c534ee9bea2d0182bf42c235176d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить участок NURBS кривой / изменить формат NURBS кривой. Выдать параметры созданной кривой.  <a href="action__curve3d_8h.html#acf8c534ee9bea2d0182bf42c235176d2">Подробнее...</a><br /></td></tr>
+<tr class="separator:acf8c534ee9bea2d0182bf42c235176d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d66fe8d3aca09e830da8e0b86d04d9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a5d66fe8d3aca09e830da8e0b86d04d9f">AddKnotNurbs</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:a5d66fe8d3aca09e830da8e0b86d04d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставить узел в NURBS.  <a href="action__curve3d_8h.html#a5d66fe8d3aca09e830da8e0b86d04d9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5d66fe8d3aca09e830da8e0b86d04d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565db3878ab4fb1fbcd036ad08929510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a565db3878ab4fb1fbcd036ad08929510">ExtractExtrapolFromSegment</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;resCurve)</td></tr>
+<tr class="memdesc:a565db3878ab4fb1fbcd036ad08929510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполнить вставку узла в односегментную NURBS кривую произвольного формата.  <a href="action__curve3d_8h.html#a565db3878ab4fb1fbcd036ad08929510">Подробнее...</a><br /></td></tr>
+<tr class="separator:a565db3878ab4fb1fbcd036ad08929510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce570325e5779317b5b668f6ab55899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a9ce570325e5779317b5b668f6ab55899">ConicNurbs</a> (<a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *curve, <a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;data, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:a9ce570325e5779317b5b668f6ab55899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать конический NURBzS в конический NURBS.  <a href="action__curve3d_8h.html#a9ce570325e5779317b5b668f6ab55899">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9ce570325e5779317b5b668f6ab55899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ae6d34ab273af907eadf161bb93248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#af0ae6d34ab273af907eadf161bb93248">Cabling</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;begPoint, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;begDirection, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;endPoint, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;endDirection, double length, double accuracy, double &amp;maxCurvature, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;result)</td></tr>
+<tr class="memdesc:af0ae6d34ab273af907eadf161bb93248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение сплайна заданной длины, соединяющего заданные точки.  <a href="action__curve3d_8h.html#af0ae6d34ab273af907eadf161bb93248">Подробнее...</a><br /></td></tr>
+<tr class="separator:af0ae6d34ab273af907eadf161bb93248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1300eb26847e8af3c010ea060a22216"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#ae1300eb26847e8af3c010ea060a22216">SetProportionalParametrization</a> (<a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *curve, double tMin, double tMax)</td></tr>
+<tr class="memdesc:ae1300eb26847e8af3c010ea060a22216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить параметризацию кривой пропорционально длине кривой.  <a href="action__curve3d_8h.html#ae1300eb26847e8af3c010ea060a22216">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae1300eb26847e8af3c010ea060a22216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210c07c05b1603a43bb663c8c2d54c28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__curve3d_8h.html#a210c07c05b1603a43bb663c8c2d54c28">ExtendCurve</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;sourceCurve, const <a class="el" href="class_mb_curve_extension_parameters3_d.html">MbCurveExtensionParameters3D</a> &amp;parameters, <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &gt; &amp;resFrame)</td></tr>
+<tr class="memdesc:a210c07c05b1603a43bb663c8c2d54c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Продлить заданную кривую.  <a href="action__curve3d_8h.html#a210c07c05b1603a43bb663c8c2d54c28">Подробнее...</a><br /></td></tr>
+<tr class="separator:a210c07c05b1603a43bb663c8c2d54c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d39ffb63e5df24d8b92c9b4e692e603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga5d39ffb63e5df24d8b92c9b4e692e603">CreateContourChamfer</a> (const <a class="el" href="class_mb_contour_chamfer_params.html">MbContourChamferParams</a> &amp;paramList, <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;resultChamferContour)</td></tr>
+<tr class="memdesc:ga5d39ffb63e5df24d8b92c9b4e692e603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать фаски на стыках кривых контура.  <a href="group___curve3_d___modeling.html#ga5d39ffb63e5df24d8b92c9b4e692e603">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5d39ffb63e5df24d8b92c9b4e692e603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa967249a2ec3fc00511ec2dfd990a470"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#gaa967249a2ec3fc00511ec2dfd990a470">UnwrapCurve</a> (const <a class="el" href="class_mb_curves_wrapping_params.html">MbCurvesWrappingParams</a> &amp;parameters, <a class="el" href="class_mb_curves_wrapping_results.html">MbCurvesWrappingResults</a> &amp;result)</td></tr>
+<tr class="memdesc:gaa967249a2ec3fc00511ec2dfd990a470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить развертку кривых и точек на плоскость.  <a href="group___curve3_d___modeling.html#gaa967249a2ec3fc00511ec2dfd990a470">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa967249a2ec3fc00511ec2dfd990a470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga709f85f91e5972443666fb5f9282fe9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curve3_d___modeling.html#ga709f85f91e5972443666fb5f9282fe9e">WrapCurve</a> (const <a class="el" href="class_mb_curves_wrapping_params.html">MbCurvesWrappingParams</a> &amp;parameters, <a class="el" href="class_mb_curves_wrapping_results.html">MbCurvesWrappingResults</a> &amp;result)</td></tr>
+<tr class="memdesc:ga709f85f91e5972443666fb5f9282fe9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполнить операцию сворачивания кривых и точек на поверхность.  <a href="group___curve3_d___modeling.html#ga709f85f91e5972443666fb5f9282fe9e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga709f85f91e5972443666fb5f9282fe9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga031d555a23e97cd9f7121e03c5d3de8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___polygonal___objects.html#ga031d555a23e97cd9f7121e03c5d3de8b">FitCurve</a> (const <a class="el" href="class_mb_curve_fit_parameters3_d.html">MbCurveFitParameters3D</a> &amp;params, <a class="el" href="class_mb_curve_fit_results3_d.html">MbCurveFitResults3D</a> &amp;results)</td></tr>
+<tr class="memdesc:ga031d555a23e97cd9f7121e03c5d3de8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вписать кривую в множество точек.  <a href="group___polygonal___objects.html#ga031d555a23e97cd9f7121e03c5d3de8b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga031d555a23e97cd9f7121e03c5d3de8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Методы построения трехмерных кривых. </p>
+<p>На базе кривых строятся рёбра. Рёбра используются в твёрдотельной и каркасной модели. Кроме того, кривые используются для построения поверхностей, а также могут служить вспомогательными элементами модели. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a4c9675d764b71b56b5067a7cd94b6fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9675d764b71b56b5067a7cd94b6fdf">&#9670;&nbsp;</a></span>UnwrapCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a>* UnwrapCurve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>placement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deviationAngle</em> = <code><a class="el" href="mb__variables_8h.html#a3cbf8dad8aa17e01f90a48d932e13314">DEVIATION_SAG</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построить развертку кривой/контура на плоскость. </p>
+<p>Построение развертки кривой/контура на плоскость. Контур разворачивается посегментно, функцией UnwrapCurve. Первым разворачивается сегмент, который лежит в плоскости и находиться ближе всех к точке, если лежащих в плоскости нет, то ближащий к точке из тех что пересекают контур, если и таких нет то просто ближайший к точке. Первый сегмент разворачивается так, чтобы точка пересечения или ближайшей проекции была неподвижной. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Разворачиваемая кривая/контур.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">placement</td><td>- Локальная система координат плоскости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>- Точка для определения первого сегмента.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviationAngle</td><td>- Параметру точности.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на построенную кривую с нулевум счетчиком ссылок <br  />
+ или nullptr, если не удалось построить развертку для заданных параметров. </dd></dl>
+
+</div>
+</div>
+<a id="a446081564372c70ee6fb9c3452c4d52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446081564372c70ee6fb9c3452c4d52c">&#9670;&nbsp;</a></span>KernelCreateClothoid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> KernelCreateClothoid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать клотоиду. </p>
+<p>Создать начальный участок клотоиды. <br  />
+ В переменных data задаются параметры построения клотоиды. Максимальная длина начального участка клотоиды в переменной clothoidMax и минимальный радиус на конце участка в переменной clothoidRMin. В переменной clothoidSegms задается количество сегментов аппроксимирующей клотоиду сплайновой кривой Безье.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ac2e26cf22d412114d8fd9d4d38e41070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e26cf22d412114d8fd9d4d38e41070">&#9670;&nbsp;</a></span>KernelCreateSectrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> KernelCreateSectrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td>
+          <td class="paramname"><em>polyline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать сектрису. </p>
+<p>Создать сектрису Маклорена. <br  />
+ На касательной ломаной из двух звеньев генерируются точки сектрисы Маклорена - кривой с монотонным изменением кривизны. Сектриса Маклорена изогеометрически с сохранением монотонности аппроксимируется сплайновой кривой Безье.</p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">polyline</td><td>- Исходная ломаная.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ab649fd8e5313d80d79f58bbd6b6d7b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab649fd8e5313d80d79f58bbd6b6d7b25">&#9670;&nbsp;</a></span>ElevateDegreeNurbzs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ElevateDegreeNurbzs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Увеличить степень NURBzS кривой. </p>
+<p>Увеличить степень NURBzS кривой. <br  />
+ Степень кубической кривой увеличивается до шестой степени. Степени больше 6 увеличиваются на единцу. Максимальная степень - 10.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ae9290400218e2990e0ef5e174ad7e0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9290400218e2990e0ef5e174ad7e0fa">&#9670;&nbsp;</a></span>ReparamNurbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ReparamNurbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>resCurve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Репараметризировать NURBS кривую. </p>
+<p>Репараметризировать NURBS кривую. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные репараметризации кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resCurve</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="a142cda64c2afaaf16cb7ff6390ff92e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142cda64c2afaaf16cb7ff6390ff92e9">&#9670;&nbsp;</a></span>SubdivideNurbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> SubdivideNurbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уплотнить NURBS кривую. </p>
+<p>Однократно уплотнить NURBS кривую. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения и преобразования кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="a7ed1735141901ee77cd4d71786f33276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed1735141901ee77cd4d71786f33276">&#9670;&nbsp;</a></span>ExtractChangeNurbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ExtractChangeNurbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выделить участок NURBS кривой / изменить формат NURBS кривой. </p>
+<p>Выделить участок NURBS кривой / изменить формат NURBS кривой. <br  />
+ В data устанавливаются переменные преобразований. Выделяемый участок определяется номером начального сегмента в переменной numSegment и количеством сегментов в переменной numSegments. Выходной формат сплайна определяется в переменной outFormat. При значении 2 - NURBS кривая с управляющим S-полигоном. При значении 3 - рациональная кривая Безье с управляющим GB-полигоном.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения и преобразования кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="acf8c534ee9bea2d0182bf42c235176d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8c534ee9bea2d0182bf42c235176d2">&#9670;&nbsp;</a></span>ExtractChangeNurbsParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ExtractChangeNurbsParams </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resWts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resKnots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>resCurve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выделить участок NURBS кривой / изменить формат NURBS кривой. Выдать параметры созданной кривой. </p>
+<p>Выделить участок NURBS кривой / изменить формат NURBS кривой. Выдать параметры созданной кривой. <br  />
+ В data устанавливаются переменные преобразований. Выделяемый участок определяется номером начального сегмента в переменной numSegment и количеством сегментов в переменной numSegments. Выходной формат сплайна определяется в переменной outFormat. При значении 2 - NURBS кривая с управляющим S-полигоном. При значении 3 - рациональная кривая Безье с управляющим GB-полигоном.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения и преобразования кривой. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resWts</td><td>- Веса результирующей кривой. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resKnots</td><td>- Узлы результирующей кривой. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="a5d66fe8d3aca09e830da8e0b86d04d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d66fe8d3aca09e830da8e0b86d04d9f">&#9670;&nbsp;</a></span>AddKnotNurbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> AddKnotNurbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вставить узел в NURBS. </p>
+<p>Вставить узел в NURBS. <br  />
+ В data устанавливаются переменные преобразований. Место вставки узла определяется переменными nSegment и tParam. В переменной nSegment устанавливается номер сегмента, в переменной tParam (0.1 &lt; tParam &lt; 0.9) задается значение внутреннего параметра на сегменте сплайна.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="a565db3878ab4fb1fbcd036ad08929510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a565db3878ab4fb1fbcd036ad08929510">&#9670;&nbsp;</a></span>ExtractExtrapolFromSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ExtractExtrapolFromSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>resCurve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполнить вставку узла в односегментную NURBS кривую произвольного формата. </p>
+<p>Выполнить вставку узла в односегментную NURBS кривую произвольного формата.<br  />
+ Выходным параметром метода является NURBS кривая первого или второго сегмента. <br  />
+</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- NURBS кривая в произвольном формате.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resCurve</td><td>- NURBS Кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="a9ce570325e5779317b5b668f6ab55899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce570325e5779317b5b668f6ab55899">&#9670;&nbsp;</a></span>ConicNurbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ConicNurbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_nurbs3_d.html">MbNurbs3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_mb_fair_curve_data.html">MbFairCurveData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразовать конический NURBzS в конический NURBS. </p>
+<p>Преобразовать NURBzS кривую, геометрически точно представляющую коническую кривую, в коническую рациональную B-сплайновую кривую 6-ой степени, геометрически точно представляющую коническую кривую. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- Данные построения кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Сплайновая кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="af0ae6d34ab273af907eadf161bb93248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ae6d34ab273af907eadf161bb93248">&#9670;&nbsp;</a></span>Cabling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> Cabling </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>begPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>begDirection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>endPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>endDirection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>maxCurvature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Построение сплайна заданной длины, соединяющего заданные точки. </p>
+<p>Построенная кривая должна выходить из заданной точки в заданном направлении и заканчиваться в заданной точке в заданном направлении. Кривизна кривой не должна превосходить заданного максимального значения. <br  />
+ <br  />
+</p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">begPoint</td><td>- Начальная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">begDirection</td><td>- Направление кривой в начальной точке.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endPoint</td><td>- Конечная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endDirection</td><td>- Направление кривой в конечной точке.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>- Примерная длина кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Относительная точность рассчёта длины кривой.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">maxCurvatre</td><td>- Максимально допустимая кривизна кривой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Построенная кривая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает значение результата операции. </dd></dl>
+
+</div>
+</div>
+<a id="ae1300eb26847e8af3c010ea060a22216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1300eb26847e8af3c010ea060a22216">&#9670;&nbsp;</a></span>SetProportionalParametrization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a>* SetProportionalParametrization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> *&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установить параметризацию кривой пропорционально длине кривой. </p>
+<p>Если параметризация кривой не пропорциональна длине кривой, то изменить параметризацию кривой, сделав её пропорциональной длине кривой. <br  />
+ В общем случае кривая будет заменена на репараметризованную кривую <a class="el" href="class_mb_reparam_curve3_d.html" title="Репараметризованная кривая в трехмерном пространстве.">MbReparamCurve3D</a> с пропорциональной длине параметризацией. В частных случаях, когда исходная кривая имеет пропорциональную параметризацию с требуемыми границами, будет возвращена исходная кривая. <br  />
+ <br  />
+</p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">curve</td><td>- Исходная кривая, подлежащая репараметризации.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tMin</td><td>- Новый минимальный параметр кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tMax</td><td>- Новый максимальный параметр кривой.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает построенную кривую с пропорциональной длине параметризацией. </dd></dl>
+
+</div>
+</div>
+<a id="a210c07c05b1603a43bb663c8c2d54c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210c07c05b1603a43bb663c8c2d54c28">&#9670;&nbsp;</a></span>ExtendCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> ExtendCurve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceCurve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_curve_extension_parameters3_d.html">MbCurveExtensionParameters3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_wire_frame.html">MbWireFrame</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resFrame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Продлить заданную кривую. </p>
+<p>Продлить заданную кривую в соответствии с заданными параметрами. <br  />
+ <br  />
+</p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sourceCurve</td><td>- Исходная (продлеваемая) кривая.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parameters</td><td>- Параметры продления.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resFrame</td><td>- Результирующая кривая внутри каркаса.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает код результата операции. В случае успеха всегда вернется ненулевая кривая (возможно, она будет совпадать с исходной кривой). </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="action__curve3d_8h.html">action_curve3d.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

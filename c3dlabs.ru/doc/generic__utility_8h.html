@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл generic_utility.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('generic__utility_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл generic_utility.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Шаблонные утилиты.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;memory.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sptr_8h.html">templ_sptr.h</a>&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__variables_8h.html">mb_variables.h</a>&gt;</code><br />
+<code>#include &lt;new&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnull__type.html">null_type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой тип данных.  <a href="structnull__type.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structindex__tag.html">index_tag&lt; size_t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон для получения индексного типа (для статического сопоставления типов на этапе компиляции)  <a href="structindex__tag.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__traits.html">graph_traits&lt; Graph &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Графовые характеристики типов.  <a href="structgraph__traits.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structproperty__map.html">property_map&lt; Graph, Property &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подходящий тип ассоциативного контейнера для хранения данных, ассоциированных с вершинами графа. <a href="structproperty__map.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstatic__array.html">static_array&lt; Elem, arrSize &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статический вектор. Требуется, что бы элементы вектора имели конструктор по умолчанию, конструктор копирования и оператор присвоения.  <a href="classstatic__array.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstatic__pair.html">static_pair&lt; Elem &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статический вектор двух элементов (пара).  <a href="structstatic__pair.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdbg__inspector.html">dbg_inspector&lt; _PairUnion &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отладочный инспектор union-контейнера (НЕдоделан!).  <a href="structdbg__inspector.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structempty__variant.html">empty_variant</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хвостовой элемент для рекурсивного определения типа recursive_union&lt;T1,T2&gt;.  <a href="structempty__variant.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwhich__type.html">which_type&lt; _PairUnion, _Type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить номер типа из списка union-контейнера.  <a href="structwhich__type.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtype__which.html">type_which&lt; T, idx &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип варианта с заданным номером.  <a href="structtype__which.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunion__conductor.html">union_conductor&lt; _PairUnion, typeNb, power &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проводник посетителя для рекурсивно-заданного контейнера.  <a href="structunion__conductor.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecursive__union.html">recursive_union&lt; Type, Tail &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивное определение класса "union-контейнер". Контейнер, который может хранить элемент типа "value_type" или один из типов хвостового контейнера.  <a href="classrecursive__union.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaligned__union.html">aligned_union&lt; T0, T1, T2, T3, T4, T5 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">union-контейнер для экземпляра типа из определенного набора типов. Позволяет создать тип, принимающий значения из некоторого набора разнородных типов.  <a href="classaligned__union.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc3d_1_1ref__pair.html">c3d::ref_pair&lt; _Ty1, _Ty2 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пара ссылок.  <a href="structc3d_1_1ref__pair.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsorting__array.html">sorting_array&lt; KeyType, _Pr &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Динамический контейнер для хранения элементов упорядоченного множества. Тип элемента контейнера должен иметь операторы порядка. Не стоит путать этот тип контейнера с set или map. Он вовсе не обязан всегда поддерживаться в отсортированном состоянии, а только тогда, когда это закажут (с кэшированием алгоритма сортировки). Гарантируется, что вектор отсортирован сразу после вызова функций get_sorted или sort. Константные методы, а также метод erase не нарушают сортировки.<br  />
+.  <a href="classsorting__array.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacec3d"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacec3d.html">c3d</a></td></tr>
+<tr class="memdesc:namespacec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление пространства имен C3D. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a49c5eb27e91f6c1aeae5570b788d704c"><td class="memItemLeft" align="right" valign="top"><a id="a49c5eb27e91f6c1aeae5570b788d704c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#a49c5eb27e91f6c1aeae5570b788d704c">color_code</a> : char </td></tr>
+<tr class="memdesc:a49c5eb27e91f6c1aeae5570b788d704c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цветовая маркировка (применяется для графов) <br /></td></tr>
+<tr class="separator:a49c5eb27e91f6c1aeae5570b788d704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aaa65bcb471ed46d83711a418d00f3c38"><td class="memTemplParams" colspan="2"><a id="aaa65bcb471ed46d83711a418d00f3c38"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:aaa65bcb471ed46d83711a418d00f3c38"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#aaa65bcb471ed46d83711a418d00f3c38">max_of</a> (const T &amp;elem1, const T &amp;elem2)</td></tr>
+<tr class="memdesc:aaa65bcb471ed46d83711a418d00f3c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Наибольшее из двух. <br /></td></tr>
+<tr class="separator:aaa65bcb471ed46d83711a418d00f3c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f08d2bdef5c57f77585c21cc7f46a07"><td class="memTemplParams" colspan="2"><a id="a1f08d2bdef5c57f77585c21cc7f46a07"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a1f08d2bdef5c57f77585c21cc7f46a07"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#a1f08d2bdef5c57f77585c21cc7f46a07">min_of</a> (const T &amp;elem1, const T &amp;elem2)</td></tr>
+<tr class="memdesc:a1f08d2bdef5c57f77585c21cc7f46a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Наибольшее из двух. <br /></td></tr>
+<tr class="separator:a1f08d2bdef5c57f77585c21cc7f46a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1959870f9a8b6c188e59e4b2957b94a"><td class="memTemplParams" colspan="2"><a id="aa1959870f9a8b6c188e59e4b2957b94a"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa1959870f9a8b6c188e59e4b2957b94a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#aa1959870f9a8b6c188e59e4b2957b94a">swap_vals</a> (T &amp;elem1, T &amp;elem2)</td></tr>
+<tr class="memdesc:aa1959870f9a8b6c188e59e4b2957b94a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять местами значения. <br /></td></tr>
+<tr class="separator:aa1959870f9a8b6c188e59e4b2957b94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59648587a47e1bfa7ad9da91b6c65d92"><td class="memTemplParams" colspan="2"><a id="a59648587a47e1bfa7ad9da91b6c65d92"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a59648587a47e1bfa7ad9da91b6c65d92"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#a59648587a47e1bfa7ad9da91b6c65d92">swap_ptrs</a> (T *&amp;elem1, T *&amp;elem2)</td></tr>
+<tr class="memdesc:a59648587a47e1bfa7ad9da91b6c65d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять местами значения указателей. <br /></td></tr>
+<tr class="separator:a59648587a47e1bfa7ad9da91b6c65d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5904517e457082a857cf78373e2d6a"><td class="memTemplParams" colspan="2"><a id="aed5904517e457082a857cf78373e2d6a"></a>
+template&lt;class Type &gt; </td></tr>
+<tr class="memitem:aed5904517e457082a857cf78373e2d6a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#aed5904517e457082a857cf78373e2d6a">swap_ptrs</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &amp;p1, <a class="el" href="class_s_ptr.html">SPtr</a>&lt; Type &gt; &amp;p2)</td></tr>
+<tr class="memdesc:aed5904517e457082a857cf78373e2d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять местами значения указателей. <br /></td></tr>
+<tr class="separator:aed5904517e457082a857cf78373e2d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffaaee82b275047ecd6c10c28c7d1e8"><td class="memTemplParams" colspan="2"><a id="afffaaee82b275047ecd6c10c28c7d1e8"></a>
+template&lt;typename IntegerType &gt; </td></tr>
+<tr class="memitem:afffaaee82b275047ecd6c10c28c7d1e8"><td class="memTemplItemLeft" align="right" valign="top">IntegerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#afffaaee82b275047ecd6c10c28c7d1e8">gcd</a> (IntegerType a, IntegerType b)</td></tr>
+<tr class="memdesc:afffaaee82b275047ecd6c10c28c7d1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить НОД для пары целых чисел <br /></td></tr>
+<tr class="separator:afffaaee82b275047ecd6c10c28c7d1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c8d04ee3331b1e87de4bd71825f24a"><td class="memTemplParams" colspan="2"><a id="a33c8d04ee3331b1e87de4bd71825f24a"></a>
+template&lt;class DataSt &gt; </td></tr>
+<tr class="memitem:a33c8d04ee3331b1e87de4bd71825f24a"><td class="memTemplItemLeft" align="right" valign="top">DataSt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#a33c8d04ee3331b1e87de4bd71825f24a">null_struct</a> ()</td></tr>
+<tr class="memdesc:a33c8d04ee3331b1e87de4bd71825f24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обнулить структуру данных (использовать осторожно!). <br /></td></tr>
+<tr class="separator:a33c8d04ee3331b1e87de4bd71825f24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0acac0f3f64e029862cd043877c79c"><td class="memTemplParams" colspan="2"><a id="a2d0acac0f3f64e029862cd043877c79c"></a>
+template&lt;typename Type1 , typename Type2 &gt; </td></tr>
+<tr class="memitem:a2d0acac0f3f64e029862cd043877c79c"><td class="memTemplItemLeft" align="right" valign="top">ref_pair&lt; Type1, Type2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacec3d.html#a2d0acac0f3f64e029862cd043877c79c">c3d::tie</a> (Type1 &amp;iter1, Type2 &amp;iter2)</td></tr>
+<tr class="memdesc:a2d0acac0f3f64e029862cd043877c79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать ссылки одной связкой. <br /></td></tr>
+<tr class="separator:a2d0acac0f3f64e029862cd043877c79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4626f32b8f96d8ea35c15312f842d049"><td class="memTemplParams" colspan="2"><a id="a4626f32b8f96d8ea35c15312f842d049"></a>
+template&lt;class SortedArray &gt; </td></tr>
+<tr class="memitem:a4626f32b8f96d8ea35c15312f842d049"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic__utility_8h.html#a4626f32b8f96d8ea35c15312f842d049">check_ordering</a> (const SortedArray &amp;arr)</td></tr>
+<tr class="memdesc:a4626f32b8f96d8ea35c15312f842d049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка упорядоченности массива <br /></td></tr>
+<tr class="separator:a4626f32b8f96d8ea35c15312f842d049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Шаблонные утилиты. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="generic__utility_8h.html">generic_utility.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

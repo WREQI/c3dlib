@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл action_point.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('action__point_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл action_point.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Функции создания точек.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__operation__result_8h.html">mb_operation_result.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__enum_8h.html">mb_enum.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point_8h.html">mb_cart_point.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point3d_8h.html">mb_cart_point3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cur__line_8h.html">cur_line.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__variables_8h.html">mb_variables.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_param_pnt.html">MbSpaceParamPnt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пространственно-параметрическая точка.  <a href="class_mb_space_param_pnt.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ab3a8cb17ba5924b61c9df1af52a36436"><td class="memItemLeft" align="right" valign="top"><a id="ab3a8cb17ba5924b61c9df1af52a36436"></a>
+typedef std::pair&lt; <a class="el" href="class_mb_space_param_pnt.html">MbSpaceParamPnt</a>, <a class="el" href="namespacec3d.html#a472fe8db944e34bf3083cbb326e7aec6">c3d::UintPair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="action__point_8h.html#ab3a8cb17ba5924b61c9df1af52a36436">MbLocPnt</a></td></tr>
+<tr class="memdesc:ab3a8cb17ba5924b61c9df1af52a36436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пространственно-параметрическая точка с индексированным положением. <br /></td></tr>
+<tr class="separator:ab3a8cb17ba5924b61c9df1af52a36436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga79b83cb0d9fa09abd804b9318c97e37f"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:ga79b83cb0d9fa09abd804b9318c97e37f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_s_array.html">SArray</a>&lt; Type &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___algorithms__3_d.html#ga79b83cb0d9fa09abd804b9318c97e37f">CreateArray</a> (size_t cnt, <a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> &amp;res)</td></tr>
+<tr class="memdesc:ga79b83cb0d9fa09abd804b9318c97e37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать массив.  <a href="group___algorithms__3_d.html#ga79b83cb0d9fa09abd804b9318c97e37f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga79b83cb0d9fa09abd804b9318c97e37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e44d6101524368edbe5c47136e72f83"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:ga5e44d6101524368edbe5c47136e72f83"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___algorithms__3_d.html#ga5e44d6101524368edbe5c47136e72f83">ReserveArray</a> (<a class="el" href="class_s_array.html">SArray</a>&lt; Type &gt; &amp;arr, size_t n, <a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> &amp;res)</td></tr>
+<tr class="memdesc:ga5e44d6101524368edbe5c47136e72f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить в массиве память под n элементов.  <a href="group___algorithms__3_d.html#ga5e44d6101524368edbe5c47136e72f83">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5e44d6101524368edbe5c47136e72f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga133d6c5fadffe77d314cf35e00aa67fb"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:ga133d6c5fadffe77d314cf35e00aa67fb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___algorithms__3_d.html#ga133d6c5fadffe77d314cf35e00aa67fb">AddItem</a> (<a class="el" href="class_s_array.html">SArray</a>&lt; Type &gt; &amp;arr, const Type &amp;item, <a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> &amp;res)</td></tr>
+<tr class="memdesc:ga133d6c5fadffe77d314cf35e00aa67fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в массив элемент.  <a href="group___algorithms__3_d.html#ga133d6c5fadffe77d314cf35e00aa67fb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga133d6c5fadffe77d314cf35e00aa67fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6a6925555c8be7c9482fffe562042c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gac6a6925555c8be7c9482fffe562042c5">PointsOnSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, <a class="el" href="group___data___structures.html#ga789817d97fc2902d72491af289f08c2f">MbeStepType</a> stepType, double uValue, double vValue, bool truncateByBounds, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="action__point_8h.html#ab3a8cb17ba5924b61c9df1af52a36436">MbLocPnt</a> &gt; &gt; &amp;result)</td></tr>
+<tr class="memdesc:gac6a6925555c8be7c9482fffe562042c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать точки на поверхности.  <a href="group___point___modeling.html#gac6a6925555c8be7c9482fffe562042c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac6a6925555c8be7c9482fffe562042c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf22c51b1ebc9de836edc67795b6f2f42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gaf22c51b1ebc9de836edc67795b6f2f42">PointsOnSurface</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, <a class="el" href="group___data___structures.html#gaf46d27a19429b20548c10c4658bec550">MbeItemGridType</a> &amp;gridType, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;uv0, double angle, <a class="el" href="group___data___structures.html#ga789817d97fc2902d72491af289f08c2f">MbeStepType</a> stepType, double step1, double step2, bool truncateByBounds, <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="action__point_8h.html#ab3a8cb17ba5924b61c9df1af52a36436">MbLocPnt</a> &gt; &gt; &amp;result, size_t maxPntsCnt=<a class="el" href="namespacec3d.html#acf27d3dcb216295f1cb4fca44a4f2032">c3d::ARRAY_MAX_COUNT</a>)</td></tr>
+<tr class="memdesc:gaf22c51b1ebc9de836edc67795b6f2f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать точки на поверхности.  <a href="group___point___modeling.html#gaf22c51b1ebc9de836edc67795b6f2f42">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf22c51b1ebc9de836edc67795b6f2f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf17d5d39e9738f5b236b635681f23682"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gaf17d5d39e9738f5b236b635681f23682">DefinePointsOnSurfaceCounts</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, size_t &amp;uPntsCnt, size_t &amp;vPntsCnt)</td></tr>
+<tr class="memdesc:gaf17d5d39e9738f5b236b635681f23682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить разбивку поверхности по умолчанию.  <a href="group___point___modeling.html#gaf17d5d39e9738f5b236b635681f23682">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf17d5d39e9738f5b236b635681f23682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga705783aca9dbb2df4407540ee4140759"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___data___structures.html#gadb77ddf41d8820cc754f7febf34d7106">MbeNewtonResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga705783aca9dbb2df4407540ee4140759">IntersectionPoint</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf0, bool ext0, const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf1, bool ext1, const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf2, bool ext2, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;uv0, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;uv1, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;uv2)</td></tr>
+<tr class="memdesc:ga705783aca9dbb2df4407540ee4140759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точку пересечения трех поверхностей.  <a href="group___point___modeling.html#ga705783aca9dbb2df4407540ee4140759">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga705783aca9dbb2df4407540ee4140759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1972f9f0affacfe5418814893842b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gaa1972f9f0affacfe5418814893842b59">IntersectionPoints</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf, bool surfExt, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curv, bool curveExt, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;uv, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;tt, bool touchInclude=false)</td></tr>
+<tr class="memdesc:gaa1972f9f0affacfe5418814893842b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти все точки пересечения поверхности и кривой.  <a href="group___point___modeling.html#gaa1972f9f0affacfe5418814893842b59">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa1972f9f0affacfe5418814893842b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafce7d6d5ec79c82fe1c0928492381ede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__3_d.html#gafce7d6d5ec79c82fe1c0928492381ede">LineLineNearestParams</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;origin1, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;direction1, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;origin2, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;direction2, double &amp;t1, double &amp;t2)</td></tr>
+<tr class="memdesc:gafce7d6d5ec79c82fe1c0928492381ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить параметры ближайших точек прямых.  <a href="group___algorithms__3_d.html#gafce7d6d5ec79c82fe1c0928492381ede">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafce7d6d5ec79c82fe1c0928492381ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga183f16c1e470f1c0e2c11c7b79a290ca"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__3_d.html#ga183f16c1e470f1c0e2c11c7b79a290ca">LineLineNearestPoints</a> (const <a class="el" href="class_mb_line3_d.html">MbLine3D</a> &amp;line1, const <a class="el" href="class_mb_line3_d.html">MbLine3D</a> &amp;line2, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p2)</td></tr>
+<tr class="memdesc:ga183f16c1e470f1c0e2c11c7b79a290ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение расстояния между ближайшими точками p1 и p2 прямых line1 и line2.  <a href="group___algorithms__3_d.html#ga183f16c1e470f1c0e2c11c7b79a290ca">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga183f16c1e470f1c0e2c11c7b79a290ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c1613bd4c29571aabd2ba9f789d9252"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___algorithms__3_d.html#ga2c1613bd4c29571aabd2ba9f789d9252">LineLineNearestParams</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;origin1, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;direction1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;origin2, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;direction2, double &amp;t1, double &amp;t2)</td></tr>
+<tr class="memdesc:ga2c1613bd4c29571aabd2ba9f789d9252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить параметры ближайших точек прямых.  <a href="group___algorithms__3_d.html#ga2c1613bd4c29571aabd2ba9f789d9252">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2c1613bd4c29571aabd2ba9f789d9252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc0b0bc9de22f0ac534f226642de8761"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gafc0b0bc9de22f0ac534f226642de8761">FastLineLine</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line1, const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line2, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;result)</td></tr>
+<tr class="memdesc:gafc0b0bc9de22f0ac534f226642de8761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точку пересечения двух прямых.  <a href="group___point___modeling.html#gafc0b0bc9de22f0ac534f226642de8761">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafc0b0bc9de22f0ac534f226642de8761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga073ed745a51ebb9bc2ceb7d8930f8b9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga073ed745a51ebb9bc2ceb7d8930f8b9a">LineLine</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line1, const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line2, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;result)</td></tr>
+<tr class="memdesc:ga073ed745a51ebb9bc2ceb7d8930f8b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точку пересечения двух прямых.  <a href="group___point___modeling.html#ga073ed745a51ebb9bc2ceb7d8930f8b9a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga073ed745a51ebb9bc2ceb7d8930f8b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga755326a2d7a2a9c976e33e3b2f3b4226"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga755326a2d7a2a9c976e33e3b2f3b4226">LineLine</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line1, const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line2, <a class="el" href="class_mb_cross_point.html">MbCrossPoint</a> &amp;result)</td></tr>
+<tr class="memdesc:ga755326a2d7a2a9c976e33e3b2f3b4226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точку пересечения двух прямых.  <a href="group___point___modeling.html#ga755326a2d7a2a9c976e33e3b2f3b4226">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga755326a2d7a2a9c976e33e3b2f3b4226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b176b6dcd25f415905f56aede894ec4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga2b176b6dcd25f415905f56aede894ec4">LineLineSeg</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line, const <a class="el" href="class_mb_line_segment.html">MbLineSegment</a> &amp;lseg, <a class="el" href="class_mb_cross_point.html">MbCrossPoint</a> &amp;result)</td></tr>
+<tr class="memdesc:ga2b176b6dcd25f415905f56aede894ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точку пересечения прямой и отрезка.  <a href="group___point___modeling.html#ga2b176b6dcd25f415905f56aede894ec4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2b176b6dcd25f415905f56aede894ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab224e976710279d5cdf0ed85adbc1981"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gab224e976710279d5cdf0ed85adbc1981">LineCircle</a> (const <a class="el" href="class_mb_line.html">MbLine</a> &amp;line, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;centre, double radius, <a class="el" href="class_mb_cross_point.html">MbCrossPoint</a> *result)</td></tr>
+<tr class="memdesc:gab224e976710279d5cdf0ed85adbc1981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точки пересечения прямой и окружности.  <a href="group___point___modeling.html#gab224e976710279d5cdf0ed85adbc1981">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab224e976710279d5cdf0ed85adbc1981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb94395adddd37e8162cec48c956a63e"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gacb94395adddd37e8162cec48c956a63e">IntersectTwoCurves</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve1, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;pCurve2, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cross_point.html">MbCrossPoint</a> &gt; &amp;result, bool touchInclude, double epsilon=<a class="el" href="class_math.html#ab286036ac6d326204428d62aadc062a4">Math::LengthEps</a> *<a class="el" href="namespacec3d.html#ab8cce22245f0c2818ef4037c1eb1d8ec">c3d::METRIC_DELTA</a>, bool allowInaccuracy=true)</td></tr>
+<tr class="memdesc:gacb94395adddd37e8162cec48c956a63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точки пересечения двух кривых.  <a href="group___point___modeling.html#gacb94395adddd37e8162cec48c956a63e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacb94395adddd37e8162cec48c956a63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9acbfaebbfb7c5326748b6c4b60454fc"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga9acbfaebbfb7c5326748b6c4b60454fc">CurveCurveIntersection</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve1, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve2, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result1, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result2, double xEpsilon, double yEpsilon, bool touchInclude, bool allowInaccuracy=true)</td></tr>
+<tr class="memdesc:ga9acbfaebbfb7c5326748b6c4b60454fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точки пересечения двух кривых.  <a href="group___point___modeling.html#ga9acbfaebbfb7c5326748b6c4b60454fc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9acbfaebbfb7c5326748b6c4b60454fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33481ea96d7834a26d962ffbf0ad4b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga33481ea96d7834a26d962ffbf0ad4b3e">CurveSelfIntersect</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve, double xEpsilon, double yEpsilon, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result1, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result2, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:ga33481ea96d7834a26d962ffbf0ad4b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точки самопересечения кривой.  <a href="group___point___modeling.html#ga33481ea96d7834a26d962ffbf0ad4b3e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga33481ea96d7834a26d962ffbf0ad4b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f3c20950e89624eab4940a257820bd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga6f3c20950e89624eab4940a257820bd4">RemoveAllTouchParams</a> (const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve1, const <a class="el" href="class_mb_curve.html">MbCurve</a> &amp;curve2, <a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cross_point.html">MbCrossPoint</a> &gt; &amp;result, double eps=<a class="el" href="mb__variables_8h.html#a363d9f52a28cae9314350a5b6caa8dad">PARAM_NEAR</a>)</td></tr>
+<tr class="memdesc:ga6f3c20950e89624eab4940a257820bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить точки касания.  <a href="group___point___modeling.html#ga6f3c20950e89624eab4940a257820bd4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6f3c20950e89624eab4940a257820bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc5e67de29053563041f677e0d013871"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gacc5e67de29053563041f677e0d013871">CurveCurveIntersection</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result1, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result2, double mEps, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version=<a class="el" href="class_math.html#ae252a62a6b9ad1b9d3e979369f2c54fe">Math::DefaultMathVersion</a>())</td></tr>
+<tr class="memdesc:gacc5e67de29053563041f677e0d013871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точки пересечения двух кривых.  <a href="group___point___modeling.html#gacc5e67de29053563041f677e0d013871">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacc5e67de29053563041f677e0d013871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadef8cf9df1689e5983b2b23d6061074d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gadef8cf9df1689e5983b2b23d6061074d">IsSelfIntersect</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, double mEps=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>)</td></tr>
+<tr class="memdesc:gadef8cf9df1689e5983b2b23d6061074d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить кривую на самопересечение.  <a href="group___point___modeling.html#gadef8cf9df1689e5983b2b23d6061074d">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadef8cf9df1689e5983b2b23d6061074d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1563b223063508dcd51365d1ae95a616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga1563b223063508dcd51365d1ae95a616">FilterTouchParams</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result1, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result2, double mEps=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>)</td></tr>
+<tr class="memdesc:ga1563b223063508dcd51365d1ae95a616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Убрать касательные точки пересечения.  <a href="group___point___modeling.html#ga1563b223063508dcd51365d1ae95a616">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1563b223063508dcd51365d1ae95a616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d9fa8cc6a97e746d6781b19a4f307a0"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga2d9fa8cc6a97e746d6781b19a4f307a0">CurveCurveCrossing</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve1, const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve2, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result1, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;result2, double epsilon=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>)</td></tr>
+<tr class="memdesc:ga2d9fa8cc6a97e746d6781b19a4f307a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точки скрещения двух кривых.  <a href="group___point___modeling.html#ga2d9fa8cc6a97e746d6781b19a4f307a0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2d9fa8cc6a97e746d6781b19a4f307a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81cfd04eb2542cc035052e309135a03b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga81cfd04eb2542cc035052e309135a03b">PointProjectionRelativeOuterLoop</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pnt, bool byOuterRectOnly, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;result)</td></tr>
+<tr class="memdesc:ga81cfd04eb2542cc035052e309135a03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти проекцию точки на поверхность относительно внешнего контура поверхности.  <a href="group___point___modeling.html#ga81cfd04eb2542cc035052e309135a03b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga81cfd04eb2542cc035052e309135a03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga150777a826de13c13d157f6351e947c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga150777a826de13c13d157f6351e947c1">IsMultipleProjection</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surface, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;result)</td></tr>
+<tr class="memdesc:ga150777a826de13c13d157f6351e947c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли проекция точки точно неоднозначной.  <a href="group___point___modeling.html#ga150777a826de13c13d157f6351e947c1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga150777a826de13c13d157f6351e947c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46969702d7cf789aa7e7f5f3d8d384dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#ga46969702d7cf789aa7e7f5f3d8d384dd">TouchIntersectionPoints</a> (const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf1, bool ext1, const <a class="el" href="class_mb_surface.html">MbSurface</a> &amp;surf2, bool ext2, std::vector&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;uv1arr, std::vector&lt; <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &gt; &amp;uv2arr)</td></tr>
+<tr class="memdesc:ga46969702d7cf789aa7e7f5f3d8d384dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти точки касания двух поверхностей.  <a href="group___point___modeling.html#ga46969702d7cf789aa7e7f5f3d8d384dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga46969702d7cf789aa7e7f5f3d8d384dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7cc9bbcf5a92033a892d2513e59304e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___point___modeling.html#gaf7cc9bbcf5a92033a892d2513e59304e">PointsRelativeShell</a> (const std::vector&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;points, const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> &amp;shell, std::vector&lt; <a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a> &gt; &amp;pLocs)</td></tr>
+<tr class="memdesc:gaf7cc9bbcf5a92033a892d2513e59304e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить положение точек относительно оболочки.  <a href="group___point___modeling.html#gaf7cc9bbcf5a92033a892d2513e59304e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf7cc9bbcf5a92033a892d2513e59304e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Функции создания точек. </p>
+<p>Функции, использующие в качестве выходных параметров точки или массивы точек. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="action__point_8h.html">action_point.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

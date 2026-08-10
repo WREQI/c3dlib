@@ -1,0 +1,875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MtGeomSolver</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mt_geom_solver.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="class_mt_geom_solver-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MtGeomSolver<div class="ingroups"><a class="el" href="group___geometric___constraints.html">C3D Solver: Модуль геометрических ограничений</a> &raquo; <a class="el" href="group___solver__3_d.html">Геометрические ограничения трёхмерных объектов</a> &raquo; <a class="el" href="group___g_c_m__3_d___object_a_p_i.html">Объектный интерфейс</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Геометрический решатель.  
+ <a href="class_mt_geom_solver.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;gcm_manager.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MtGeomSolver:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mt_geom_solver__inherit__graph.svg" width="118" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MtGeomSolver:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mt_geom_solver__coll__graph.svg" width="118" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции задания системы сопряжений.</div></td></tr>
+<tr class="memitem:a23aec36b7fd94985235c7d119effbd99"><td class="memItemLeft" align="right" valign="top"><a id="a23aec36b7fd94985235c7d119effbd99"></a>
+MtPatternId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a23aec36b7fd94985235c7d119effbd99">AddPattern</a> (<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga7551eabba894d4b407dd9955ee4c919f">MtMateType</a>, <a class="el" href="class_mt_argument.html">MtArgument</a>, <a class="el" href="class_mt_argument.html">MtArgument</a>, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> par=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>)</td></tr>
+<tr class="memdesc:a23aec36b7fd94985235c7d119effbd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить паттерн. <br /></td></tr>
+<tr class="separator:a23aec36b7fd94985235c7d119effbd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682b1b6264e3690645a0091b55a2cc52"><td class="memItemLeft" align="right" valign="top"><a id="a682b1b6264e3690645a0091b55a2cc52"></a>
+MtPatternId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a682b1b6264e3690645a0091b55a2cc52">SubPattern</a> (MtPatternId ptrn, <a class="el" href="group___g_c_m__3_d___a_p_i.html#gaae7c08e9d534275d17ceeb4b31215035">GCM_coord_name</a>, <a class="el" href="class_mt_argument.html">MtArgument</a> axis)</td></tr>
+<tr class="memdesc:a682b1b6264e3690645a0091b55a2cc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать координату паттерна - Система Координат. <br /></td></tr>
+<tr class="separator:a682b1b6264e3690645a0091b55a2cc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5472e45993d03cac521cd3d4e041737"><td class="memItemLeft" align="right" valign="top"><a id="ab5472e45993d03cac521cd3d4e041737"></a>
+MtConstraintId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ab5472e45993d03cac521cd3d4e041737">AddGeomToPattern</a> (MtPatternId ptrn, <a class="el" href="class_mt_argument.html">MtArgument</a> ptrnObj, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> par1=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> par2=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>, <a class="el" href="group___g_c_m__3_d___a_p_i.html#ga6aea5c46f98e0224edd0a1bddb26daa9">GCM_scale</a> scale=<a class="el" href="group___g_c_m__3_d___a_p_i.html#gga6aea5c46f98e0224edd0a1bddb26daa9a2b54c89631a8c3c284eab7ceae83f4fd">GCM_RIGID</a>)</td></tr>
+<tr class="memdesc:ab5472e45993d03cac521cd3d4e041737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить геометрический объект в паттерн. <br /></td></tr>
+<tr class="separator:ab5472e45993d03cac521cd3d4e041737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d0fd751b56b13a0399c0238ce373d0"><td class="memItemLeft" align="right" valign="top"><a id="a48d0fd751b56b13a0399c0238ce373d0"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a48d0fd751b56b13a0399c0238ce373d0">AddConstraintItem</a> (<a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> &amp;)</td></tr>
+<tr class="memdesc:a48d0fd751b56b13a0399c0238ce373d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить ограничение. Вернет GCM_RESULT_Ok, если ограничение успешно добавлено, в противном случае вернет код ошибки. <br /></td></tr>
+<tr class="separator:a48d0fd751b56b13a0399c0238ce373d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fedda30c7768355433c8b5a26291172"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a5fedda30c7768355433c8b5a26291172">AddConstraint</a> (<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga7551eabba894d4b407dd9955ee4c919f">MtMateType</a> t, <a class="el" href="class_mt_argument.html">MtArgument</a> g1, <a class="el" href="class_mt_argument.html">MtArgument</a> g2, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> p1=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> p2=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> p3=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>)</td></tr>
+<tr class="memdesc:a5fedda30c7768355433c8b5a26291172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить сопряжение для пары геометрических объектов(ограничение).  <a href="class_mt_geom_solver.html#a5fedda30c7768355433c8b5a26291172">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5fedda30c7768355433c8b5a26291172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7989afc6b5adf6e439e9b65c35964e3e"><td class="memItemLeft" align="right" valign="top"><a id="a7989afc6b5adf6e439e9b65c35964e3e"></a>
+<a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a7989afc6b5adf6e439e9b65c35964e3e">AddConstraint</a> (<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga7551eabba894d4b407dd9955ee4c919f">MtMateType</a>, <a class="el" href="class_mt_argument.html">MtArgument</a>, <a class="el" href="class_mt_argument.html">MtArgument</a>, <a class="el" href="class_mt_argument.html">MtArgument</a>, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> p1=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>, <a class="el" href="class_mt_par_variant.html">MtParVariant</a> p2=<a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a>)</td></tr>
+<tr class="memdesc:a7989afc6b5adf6e439e9b65c35964e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить ограничение для тройки геометрических объектов. <br /></td></tr>
+<tr class="separator:a7989afc6b5adf6e439e9b65c35964e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bca86974f339bc2ba10de1ae56d1c79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_it_geom.html">ItGeomPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a0bca86974f339bc2ba10de1ae56d1c79">AddGeom</a> (<a class="el" href="class_mt_geom_variant.html">MtGeomVariant</a>)</td></tr>
+<tr class="memdesc:a0bca86974f339bc2ba10de1ae56d1c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить черный ящик в систему ограничений.  <a href="class_mt_geom_solver.html#a0bca86974f339bc2ba10de1ae56d1c79">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0bca86974f339bc2ba10de1ae56d1c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768507adaee7f7577fb1c6fb6ebea04b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a768507adaee7f7577fb1c6fb6ebea04b">MoveGeom</a> (<a class="el" href="struct_it_geom.html">ItGeom</a> &amp;g, <a class="el" href="struct_it_geom.html">ItGeomPtr</a> tgtCl)</td></tr>
+<tr class="memdesc:a768507adaee7f7577fb1c6fb6ebea04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перенести геометрический объект системы ограничений в подсистему твврдого тела (сделать подчиненным объектом жесткого кластера).  <a href="class_mt_geom_solver.html#a768507adaee7f7577fb1c6fb6ebea04b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a768507adaee7f7577fb1c6fb6ebea04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087b38cb1cfb2e84a5b65a5fb7f6c0c1"><td class="memItemLeft" align="right" valign="top"><a id="a087b38cb1cfb2e84a5b65a5fb7f6c0c1"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddBlackbox</b> (<a class="el" href="struct_it_g_c_blackbox.html">ItGCBlackbox</a> &amp;)</td></tr>
+<tr class="separator:a087b38cb1cfb2e84a5b65a5fb7f6c0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accadc7e3005bf5f6221885dd7b088e90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_it_geom.html">ItGeomPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#accadc7e3005bf5f6221885dd7b088e90">DependentGeom</a> (<a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> *)</td></tr>
+<tr class="memdesc:accadc7e3005bf5f6221885dd7b088e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать зависимый объект данного ограничения. Get a dependent object of constraint. <br  />
+  <a href="class_mt_geom_solver.html#accadc7e3005bf5f6221885dd7b088e90">Подробнее...</a><br /></td></tr>
+<tr class="separator:accadc7e3005bf5f6221885dd7b088e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac160c20e09e2d2fc61d5e7c5922b403e"><td class="memItemLeft" align="right" valign="top"><a id="ac160c20e09e2d2fc61d5e7c5922b403e"></a>
+<a class="el" href="struct_it_geom.html">ItGeomPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ac160c20e09e2d2fc61d5e7c5922b403e">SetDependentGeom</a> (<a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> *, <a class="el" href="struct_it_geom.html">ItGeomPtr</a>)</td></tr>
+<tr class="memdesc:ac160c20e09e2d2fc61d5e7c5922b403e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать для данного ограничения зависимый объект. Set a dependent object of constraint. <br /></td></tr>
+<tr class="separator:ac160c20e09e2d2fc61d5e7c5922b403e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aae2a5448b448941339eb3e1866f50d"><td class="memItemLeft" align="right" valign="top"><a id="a8aae2a5448b448941339eb3e1866f50d"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a8aae2a5448b448941339eb3e1866f50d">ChangeDefinition</a> (<a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> &amp;)</td></tr>
+<tr class="memdesc:a8aae2a5448b448941339eb3e1866f50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщить об изменении данных, определяющих сопряжение. <br /></td></tr>
+<tr class="separator:a8aae2a5448b448941339eb3e1866f50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac964e82fbb5866a3d363e2a28ff81f3c"><td class="memItemLeft" align="right" valign="top"><a id="ac964e82fbb5866a3d363e2a28ff81f3c"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ac964e82fbb5866a3d363e2a28ff81f3c">ChangeDimension</a> (<a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> &amp;)</td></tr>
+<tr class="memdesc:ac964e82fbb5866a3d363e2a28ff81f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщить об изменении вещественного параметра размерного сопряжения. <br /></td></tr>
+<tr class="separator:ac964e82fbb5866a3d363e2a28ff81f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea5007b173ddb56ca9014255281e6f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a2ea5007b173ddb56ca9014255281e6f6">ChangeGeomPositions</a> ()</td></tr>
+<tr class="memdesc:a2ea5007b173ddb56ca9014255281e6f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщить о изменении положения сопрягаемых тел.  <a href="class_mt_geom_solver.html#a2ea5007b173ddb56ca9014255281e6f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2ea5007b173ddb56ca9014255281e6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53524d95992aec1da67a9f95d8173b79"><td class="memItemLeft" align="right" valign="top"><a id="a53524d95992aec1da67a9f95d8173b79"></a>
+<a class="el" href="struct_it_geom.html">ItGeom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a53524d95992aec1da67a9f95d8173b79">CreateCluster</a> (std::vector&lt; <a class="el" href="struct_it_geom.html">ItGeom</a> * &gt; &amp;)</td></tr>
+<tr class="memdesc:a53524d95992aec1da67a9f95d8173b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать пользовательский кластер. Объекты объединяемого множества не должны иметь ограничений на момент вызова. Создавайте кластер перед добавлением ограничений. <br /></td></tr>
+<tr class="separator:a53524d95992aec1da67a9f95d8173b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35b55a4174058ad6267b24825efb670"><td class="memItemLeft" align="right" valign="top"><a id="ad35b55a4174058ad6267b24825efb670"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ad35b55a4174058ad6267b24825efb670">FixGeom</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> *)</td></tr>
+<tr class="memdesc:ad35b55a4174058ad6267b24825efb670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заморозить геометрический объект, сделав неподвижным в ЛСК надкластера (или ГСК, если последний отсутствует). Устарел. Используйте <a class="el" href="class_mt_geom_solver.html#a20209f292d09b274e690ac13309b0977" title="Заморозить геометрический объект, сделав неподвижным в ЛСК надкластера (или ГСК, если последний отсут...">MtGeomSolver::FreezeGeom</a> как замену. <br /></td></tr>
+<tr class="separator:ad35b55a4174058ad6267b24825efb670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20209f292d09b274e690ac13309b0977"><td class="memItemLeft" align="right" valign="top"><a id="a20209f292d09b274e690ac13309b0977"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a20209f292d09b274e690ac13309b0977">FreezeGeom</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> *)</td></tr>
+<tr class="memdesc:a20209f292d09b274e690ac13309b0977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заморозить геометрический объект, сделав неподвижным в ЛСК надкластера (или ГСК, если последний отсутствует). <br /></td></tr>
+<tr class="separator:a20209f292d09b274e690ac13309b0977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58e281c5053007cb9132b6dca4acc1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#af58e281c5053007cb9132b6dca4acc1c">IsFixed</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> *)</td></tr>
+<tr class="memdesc:af58e281c5053007cb9132b6dca4acc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать, заморожен ли геометрический объект.  <a href="class_mt_geom_solver.html#af58e281c5053007cb9132b6dca4acc1c">Подробнее...</a><br /></td></tr>
+<tr class="separator:af58e281c5053007cb9132b6dca4acc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30969192fb0906c82e6e4a2ea45f9a71"><td class="memItemLeft" align="right" valign="top"><a id="a30969192fb0906c82e6e4a2ea45f9a71"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a30969192fb0906c82e6e4a2ea45f9a71">IsFrozen</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> *)</td></tr>
+<tr class="memdesc:a30969192fb0906c82e6e4a2ea45f9a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать, заморожен ли геометрический объект. <br /></td></tr>
+<tr class="separator:a30969192fb0906c82e6e4a2ea45f9a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c12f8eacc99be2534617be10c28fbb"><td class="memItemLeft" align="right" valign="top"><a id="ad1c12f8eacc99be2534617be10c28fbb"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ad1c12f8eacc99be2534617be10c28fbb">Flush</a> ()</td></tr>
+<tr class="memdesc:ad1c12f8eacc99be2534617be10c28fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить систему ограничений. <br /></td></tr>
+<tr class="separator:ad1c12f8eacc99be2534617be10c28fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7358baa02d179df2414893702429abc"><td class="memItemLeft" align="right" valign="top"><a id="af7358baa02d179df2414893702429abc"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#af7358baa02d179df2414893702429abc">RemoveAllBlackboxes</a> ()</td></tr>
+<tr class="memdesc:af7358baa02d179df2414893702429abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить из системы ограничений все черные ящики. <br /></td></tr>
+<tr class="separator:af7358baa02d179df2414893702429abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8133c84c9a35c0142e05b9f586239bc2"><td class="memItemLeft" align="right" valign="top"><a id="a8133c84c9a35c0142e05b9f586239bc2"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a8133c84c9a35c0142e05b9f586239bc2">RemoveConstraint</a> (<a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> *)</td></tr>
+<tr class="memdesc:a8133c84c9a35c0142e05b9f586239bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить ограничение из системы. <br /></td></tr>
+<tr class="separator:a8133c84c9a35c0142e05b9f586239bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719a9c9b083420fe722e3b74b62b65b7"><td class="memItemLeft" align="right" valign="top"><a id="a719a9c9b083420fe722e3b74b62b65b7"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a719a9c9b083420fe722e3b74b62b65b7">RemoveBlackbox</a> (<a class="el" href="struct_it_g_c_blackbox.html">ItGCBlackbox</a> &amp;)</td></tr>
+<tr class="memdesc:a719a9c9b083420fe722e3b74b62b65b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить чёрный ящик из системы ограничений. <br /></td></tr>
+<tr class="separator:a719a9c9b083420fe722e3b74b62b65b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec44d870a0c502bfaa94da0f38896da"><td class="memItemLeft" align="right" valign="top"><a id="a3ec44d870a0c502bfaa94da0f38896da"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a3ec44d870a0c502bfaa94da0f38896da">RemoveGeom</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> *)</td></tr>
+<tr class="memdesc:a3ec44d870a0c502bfaa94da0f38896da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить геометрический объект из системы ограничений. <br /></td></tr>
+<tr class="separator:a3ec44d870a0c502bfaa94da0f38896da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6eb5ee20fb3d2b943864678420784fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ad6eb5ee20fb3d2b943864678420784fa">UnfixGeom</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> &amp;)</td></tr>
+<tr class="memdesc:ad6eb5ee20fb3d2b943864678420784fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освободить замороженный геометрический объект.  <a href="class_mt_geom_solver.html#ad6eb5ee20fb3d2b943864678420784fa">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad6eb5ee20fb3d2b943864678420784fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53eec3134c29b3d1571258047e9f79db"><td class="memItemLeft" align="right" valign="top"><a id="a53eec3134c29b3d1571258047e9f79db"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a53eec3134c29b3d1571258047e9f79db">FreeGeom</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> &amp;)</td></tr>
+<tr class="memdesc:a53eec3134c29b3d1571258047e9f79db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освободить замороженный геометрический объект. <br /></td></tr>
+<tr class="separator:a53eec3134c29b3d1571258047e9f79db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции решения и диагностики</div></td></tr>
+<tr class="memitem:aa55c025ee01bc15875937c6a74c04973"><td class="memItemLeft" align="right" valign="top"><a id="aa55c025ee01bc15875937c6a74c04973"></a>
+<a class="el" href="struct_g_c_m__closest__params.html">GCM_closest_params</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#aa55c025ee01bc15875937c6a74c04973">ClosestParams</a> (const <a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> *) const</td></tr>
+<tr class="memdesc:aa55c025ee01bc15875937c6a74c04973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оценить наилучшее приближение параметров, удовлетворяющих сопряжение. <br /></td></tr>
+<tr class="separator:aa55c025ee01bc15875937c6a74c04973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f6edc192d0b3d3606d71b6417936ad"><td class="memItemLeft" align="right" valign="top"><a id="af3f6edc192d0b3d3606d71b6417936ad"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#af3f6edc192d0b3d3606d71b6417936ad">IsSatisfied</a> (const <a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> &amp;)</td></tr>
+<tr class="memdesc:af3f6edc192d0b3d3606d71b6417936ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать удовлетворено ли ограничение? <br /></td></tr>
+<tr class="separator:af3f6edc192d0b3d3606d71b6417936ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87890d10854fabefe8fd2d43f58f90a1"><td class="memItemLeft" align="right" valign="top"><a id="a87890d10854fabefe8fd2d43f58f90a1"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga9dd39d269f4610ce79734fe4f202d49b">GCM_dof_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a87890d10854fabefe8fd2d43f58f90a1">IsWellConstrained</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> &amp;)</td></tr>
+<tr class="memdesc:a87890d10854fabefe8fd2d43f58f90a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать является ли тело полно-заданным или фиксированным ? <br /></td></tr>
+<tr class="separator:a87890d10854fabefe8fd2d43f58f90a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8834d6feb0e0a42c01091fd0e797036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ab8834d6feb0e0a42c01091fd0e797036">DiagnoseConstraints</a> ()</td></tr>
+<tr class="memdesc:ab8834d6feb0e0a42c01091fd0e797036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разослать диагностические коды ограничениям.  <a href="class_mt_geom_solver.html#ab8834d6feb0e0a42c01091fd0e797036">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab8834d6feb0e0a42c01091fd0e797036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace53654f795f68936ec78497b7ab26e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ace53654f795f68936ec78497b7ab26e2">Evaluate</a> ()</td></tr>
+<tr class="memdesc:ace53654f795f68936ec78497b7ab26e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить систему сопряжений.  <a href="class_mt_geom_solver.html#ace53654f795f68936ec78497b7ab26e2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ace53654f795f68936ec78497b7ab26e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7416ce8265d3bfdf954b52ac355420"><td class="memItemLeft" align="right" valign="top"><a id="a6b7416ce8265d3bfdf954b52ac355420"></a>
+<a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a6b7416ce8265d3bfdf954b52ac355420">TransMatrix</a> (<a class="el" href="struct_it_geom.html">ItGeomPtr</a>) const</td></tr>
+<tr class="memdesc:a6b7416ce8265d3bfdf954b52ac355420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее или вычисленное положение геометрического объекта <br /></td></tr>
+<tr class="separator:a6b7416ce8265d3bfdf954b52ac355420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0785c7357ec3ea78b289412e4681703d"><td class="memItemLeft" align="right" valign="top"><a id="a0785c7357ec3ea78b289412e4681703d"></a>
+const <a class="el" href="struct_it_geom.html">ItGeom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a0785c7357ec3ea78b289412e4681703d">Cluster</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> *subGeom) const</td></tr>
+<tr class="memdesc:a0785c7357ec3ea78b289412e4681703d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить кластер, в котором содержится данный геометрический объект. <br /></td></tr>
+<tr class="separator:a0785c7357ec3ea78b289412e4681703d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции для интерактивной манипуляции системой сопряжений</div></td></tr>
+<tr class="memitem:a6e5cf975006803a7cc76e312f2c4f493"><td class="memItemLeft" align="right" valign="top"><a id="a6e5cf975006803a7cc76e312f2c4f493"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a6e5cf975006803a7cc76e312f2c4f493">FinishReposition</a> ()</td></tr>
+<tr class="memdesc:a6e5cf975006803a7cc76e312f2c4f493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Завершить режим "перетаскивания". <br /></td></tr>
+<tr class="separator:a6e5cf975006803a7cc76e312f2c4f493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b7109f085ba5c574eb5532253aff7d"><td class="memItemLeft" align="right" valign="top"><a id="a87b7109f085ba5c574eb5532253aff7d"></a>
+<a class="el" href="struct_it_geom.html">ItGeom</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a87b7109f085ba5c574eb5532253aff7d">GetMovingGeom</a> () const</td></tr>
+<tr class="memdesc:a87b7109f085ba5c574eb5532253aff7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать объект манипуляции, с которым работает решатель, находясь в режиме вращения/перемещения объектом (драггинг). <br /></td></tr>
+<tr class="separator:a87b7109f085ba5c574eb5532253aff7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad595526df6d5561dab28bfdc6b6a3531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ad595526df6d5561dab28bfdc6b6a3531">PrepareReposition</a> (<a class="el" href="struct_it_geom.html">ItGeom</a> &amp;movGeom, const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;projPlane, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;curPnt)</td></tr>
+<tr class="memdesc:ad595526df6d5561dab28bfdc6b6a3531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать режим перетаскивания объектов в плоскости экрана. Компонент, деталь, которой манипулируют.  <a href="class_mt_geom_solver.html#ad595526df6d5561dab28bfdc6b6a3531">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad595526df6d5561dab28bfdc6b6a3531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100c5bd2a113b2ea64f1b41e04427c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a100c5bd2a113b2ea64f1b41e04427c67">PrepareReposition</a> (<a class="el" href="struct_it_geom.html">ItGeom</a> &amp;rotGeom, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;org, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;axis)</td></tr>
+<tr class="memdesc:a100c5bd2a113b2ea64f1b41e04427c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать режим вращения компонента вокруг фиксированной оси. Геометрический объект, на которое направлено воздействие.  <a href="class_mt_geom_solver.html#a100c5bd2a113b2ea64f1b41e04427c67">Подробнее...</a><br /></td></tr>
+<tr class="separator:a100c5bd2a113b2ea64f1b41e04427c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0615b8092142a20a0d75debed0c2bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a5d0615b8092142a20a0d75debed0c2bd">SolveReposition</a> (<a class="el" href="struct_it_geom.html">ItGeom</a> &amp;gItem, const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;newPos, <a class="el" href="group___g_c_m__3_d___a_p_i.html#ga7bd2ada04a427885d6f9a22ed86c2d0d">MtRepositionMode</a> movType)</td></tr>
+<tr class="memdesc:a5d0615b8092142a20a0d75debed0c2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить систему для произвольного изменения положения одного тела.  <a href="class_mt_geom_solver.html#a5d0615b8092142a20a0d75debed0c2bd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5d0615b8092142a20a0d75debed0c2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40eef4d72b35669ccef728070eaf8f74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a40eef4d72b35669ccef728070eaf8f74">SolveReposition</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;curXYZ)</td></tr>
+<tr class="memdesc:a40eef4d72b35669ccef728070eaf8f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить систему сопряжений для новой позиции курсора в режиме драггинга. curXYZ текущее положение курсора в ГСК.  <a href="class_mt_geom_solver.html#a40eef4d72b35669ccef728070eaf8f74">Подробнее...</a><br /></td></tr>
+<tr class="separator:a40eef4d72b35669ccef728070eaf8f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae933149b4b7087c20c15dd1c1a92014d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ae933149b4b7087c20c15dd1c1a92014d">SolveReposition</a> (double alpha)</td></tr>
+<tr class="memdesc:ae933149b4b7087c20c15dd1c1a92014d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить систему с изменением положения компонента через одну координату.  <a href="class_mt_geom_solver.html#ae933149b4b7087c20c15dd1c1a92014d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae933149b4b7087c20c15dd1c1a92014d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cf6551967965d0ec3b9c1a5f6cc32f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a71cf6551967965d0ec3b9c1a5f6cc32f">DynamicReposition</a> (<a class="el" href="struct_it_geom.html">ItGeom</a> &amp;g, const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;manip, const <a class="el" href="struct_g_c_m__dragging.html">GCM_dragging</a> &amp;mode)</td></tr>
+<tr class="memdesc:a71cf6551967965d0ec3b9c1a5f6cc32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перетащить геометрический объект системы ограничений посредством динамического репозиционирования его манипулятора.  <a href="class_mt_geom_solver.html#a71cf6551967965d0ec3b9c1a5f6cc32f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a71cf6551967965d0ec3b9c1a5f6cc32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mt_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mt_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mt_ref_item.html">MtRefItem</a></td></tr>
+<tr class="memitem:a17ed6e139a8a282c75181cde34568b07 inherit pub_methods_class_mt_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a17ed6e139a8a282c75181cde34568b07"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_ref_item.html#a17ed6e139a8a282c75181cde34568b07">AddRef</a> () const</td></tr>
+<tr class="memdesc:a17ed6e139a8a282c75181cde34568b07 inherit pub_methods_class_mt_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить одну ссылку на объект. <br /></td></tr>
+<tr class="separator:a17ed6e139a8a282c75181cde34568b07 inherit pub_methods_class_mt_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa11ac6396f381b1b1299936849a200 inherit pub_methods_class_mt_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a1aa11ac6396f381b1b1299936849a200"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_ref_item.html#a1aa11ac6396f381b1b1299936849a200">Release</a> () const</td></tr>
+<tr class="memdesc:a1aa11ac6396f381b1b1299936849a200 inherit pub_methods_class_mt_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Освободить одну ссылку на объект. <br /></td></tr>
+<tr class="separator:a1aa11ac6396f381b1b1299936849a200 inherit pub_methods_class_mt_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc5411d79865d290f99f7ba6194797a inherit pub_methods_class_mt_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a8bc5411d79865d290f99f7ba6194797a"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_ref_item.html#a8bc5411d79865d290f99f7ba6194797a">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a8bc5411d79865d290f99f7ba6194797a inherit pub_methods_class_mt_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть количество объектов, ссылающихся на данный. <br /></td></tr>
+<tr class="separator:a8bc5411d79865d290f99f7ba6194797a inherit pub_methods_class_mt_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Вспомогательные функции и запросы.</h2></td></tr>
+<tr class="memitem:ac5cdfe8835cef1fdc8bc3c3c4fa13fcf"><td class="memItemLeft" align="right" valign="top"><a id="ac5cdfe8835cef1fdc8bc3c3c4fa13fcf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#ac5cdfe8835cef1fdc8bc3c3c4fa13fcf">IsMyGeom</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> &amp;) const</td></tr>
+<tr class="memdesc:ac5cdfe8835cef1fdc8bc3c3c4fa13fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать принадлежит ли системе ограничений геометрический объект. <br /></td></tr>
+<tr class="separator:ac5cdfe8835cef1fdc8bc3c3c4fa13fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af77102e1c55a99dee8bb571790b42f"><td class="memItemLeft" align="right" valign="top"><a id="a5af77102e1c55a99dee8bb571790b42f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a5af77102e1c55a99dee8bb571790b42f">IsMyConstraint</a> (const <a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> &amp;) const</td></tr>
+<tr class="memdesc:a5af77102e1c55a99dee8bb571790b42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать принадлежит ли системе ограничений геометрическое ограничение. <br /></td></tr>
+<tr class="separator:a5af77102e1c55a99dee8bb571790b42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd136fa15a1f21d44f3bb8d264f579d1"><td class="memItemLeft" align="right" valign="top"><a id="acd136fa15a1f21d44f3bb8d264f579d1"></a>
+<a class="el" href="struct_it_geom.html">ItGeomPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#acd136fa15a1f21d44f3bb8d264f579d1">Ground</a> () const</td></tr>
+<tr class="memdesc:acd136fa15a1f21d44f3bb8d264f579d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать кластер неподвижных объектов, заданных в глобальной системой координат. <br  />
+ <br /></td></tr>
+<tr class="separator:acd136fa15a1f21d44f3bb8d264f579d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9243738a1c9e160cc10c138042f747"><td class="memItemLeft" align="right" valign="top"><a id="a9c9243738a1c9e160cc10c138042f747"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga9ff511fc17eb5e691aed1625918d5f06">GCM_system</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a9c9243738a1c9e160cc10c138042f747">System</a> () const</td></tr>
+<tr class="memdesc:a9c9243738a1c9e160cc10c138042f747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать систему геометрических ограничений, которую обслуживает решатель. <br /></td></tr>
+<tr class="separator:a9c9243738a1c9e160cc10c138042f747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1af8a4976a0fb7f757ea3b3b4c25fd"><td class="memItemLeft" align="right" valign="top"><a id="a0a1af8a4976a0fb7f757ea3b3b4c25fd"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WriteSystem</b> (TCHAR *fileName)</td></tr>
+<tr class="separator:a0a1af8a4976a0fb7f757ea3b3b4c25fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd829b2dad5efac5d2659b204c077a6"><td class="memItemLeft" align="right" valign="top"><a id="a7cd829b2dad5efac5d2659b204c077a6"></a>
+<a class="el" href="class_s_ptr.html">SPtr</a>&lt; ItConstraintsEnum &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a7cd829b2dad5efac5d2659b204c077a6">GetConstraintsEnum</a> ()</td></tr>
+<tr class="memdesc:a7cd829b2dad5efac5d2659b204c077a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать ограничения. <br /></td></tr>
+<tr class="separator:a7cd829b2dad5efac5d2659b204c077a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038795869203fec44f18987065e2fdbb"><td class="memItemLeft" align="right" valign="top"><a id="a038795869203fec44f18987065e2fdbb"></a>
+<a class="el" href="class_mt_adjacent_constrs_range.html">MtAdjacentConstrsRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a038795869203fec44f18987065e2fdbb">AdjacentConstraints</a> (const <a class="el" href="struct_it_geom.html">ItGeom</a> *) const</td></tr>
+<tr class="memdesc:a038795869203fec44f18987065e2fdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить диапазон смежных ограничений геометрического объекта. <br /></td></tr>
+<tr class="separator:a038795869203fec44f18987065e2fdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2f7894320d19313717e3ef70abb1ae"><td class="memItemLeft" align="right" valign="top"><a id="acd2f7894320d19313717e3ef70abb1ae"></a>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#gaa3e51b6a9727b83f0e486e5d46736ac5">GCM_geom</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_QueryArgument</b> (const <a class="el" href="class_mt_argument.html">MtArgument</a> &amp;gArg)</td></tr>
+<tr class="separator:acd2f7894320d19313717e3ef70abb1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03124aef700bdd7804cadb662f3001dc"><td class="memItemLeft" align="right" valign="top"><a id="a03124aef700bdd7804cadb662f3001dc"></a>
+const <a class="el" href="struct_it_geom.html">ItGeom</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_SetDependencyGeom</b> (MtGeomId gId, const <a class="el" href="struct_it_geom.html">ItGeom</a> *gItem)</td></tr>
+<tr class="separator:a03124aef700bdd7804cadb662f3001dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf60a6ed82153866c69256319bac9c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mt_geom_solver.html">MtGeomSolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mt_geom_solver.html#a7bf60a6ed82153866c69256319bac9c1">GCM_CreateSolver</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="struct_it_position_manager.html">ItPositionManager</a> &gt; posMan)</td></tr>
+<tr class="memdesc:a7bf60a6ed82153866c69256319bac9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать объектно-ориентированный интерфейс 3D солвера.  <a href="class_mt_geom_solver.html#a7bf60a6ed82153866c69256319bac9c1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7bf60a6ed82153866c69256319bac9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38347c819465a03b996fbca9493ef262"><td class="memItemLeft" align="right" valign="top"><a id="a38347c819465a03b996fbca9493ef262"></a>
+<a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mt_geom_solver.html">MtGeomSolver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GCT_GetSolver</b> (<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga9ff511fc17eb5e691aed1625918d5f06">GCM_system</a> gSys)</td></tr>
+<tr class="separator:a38347c819465a03b996fbca9493ef262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Геометрический решатель. </p>
+<p>Интерфейс геометрического решателя. Клиентское приложение может работать с любым количеством систем ограничений, для каждой из них заводится по одному экземпляру решателя с помощью вызова <a class="el" href="class_mt_geom_solver.html#a7bf60a6ed82153866c69256319bac9c1" title="Создать объектно-ориентированный интерфейс 3D солвера.">GCM_CreateSolver</a>. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a5fedda30c7768355433c8b5a26291172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fedda30c7768355433c8b5a26291172">&#9670;&nbsp;</a></span>AddConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a>* MtGeomSolver::AddConstraint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga7551eabba894d4b407dd9955ee4c919f">MtMateType</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mt_argument.html">MtArgument</a>&#160;</td>
+          <td class="paramname"><em>g1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mt_argument.html">MtArgument</a>&#160;</td>
+          <td class="paramname"><em>g2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mt_par_variant.html">MtParVariant</a>&#160;</td>
+          <td class="paramname"><em>p1</em> = <code><a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mt_par_variant.html">MtParVariant</a>&#160;</td>
+          <td class="paramname"><em>p2</em> = <code><a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mt_par_variant.html">MtParVariant</a>&#160;</td>
+          <td class="paramname"><em>p3</em> = <code><a class="el" href="class_mt_par_variant.html#a9d3391df7c4b39dee3f20a304070fb47">MtParVariant::undef</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить сопряжение для пары геометрических объектов(ограничение). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- Тип геометрического ограничения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g1,g2</td><td>- Пара геометрических объектов - аргументы ограничения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Условие выравнивания для таких типов ограничений, как GCM_COINCIDENT, GCM_PARALLEL, GCM_PERPENDICULAR, GCM_CONCENTRIC, GCM_IN_PLACE, GCM_TANGENT. Значения данного параметра берутся из <a class="el" href="group___g_c_m__3_d___a_p_i.html#ga24a415f967b3f637a6d36d57108fa831" title="Варианты выравнивания направлений.">GCM_alignment</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Числовой параметр (double) размерных ограничений с типами GCM_ANGLE, GCM_DISTANCE.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>- Вариант касания <a class="el" href="group___g_c_m__3_d___a_p_i.html#ga23c7f2fcbe7440590865d264945c439a" title="Варианты касания поверхностей или кривых.">GCM_tan_choice</a> для ограничения типа GCM_TANGENCY или значение <a class="el" href="group___g_c_m__3_d___a_p_i.html#ga24a415f967b3f637a6d36d57108fa831" title="Варианты выравнивания направлений.">GCM_alignment</a> для размерных ограничений.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p3</td><td>- Не имеет значения. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Геометрическое ограничение. </dd></dl>
+
+</div>
+</div>
+<a id="a0bca86974f339bc2ba10de1ae56d1c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bca86974f339bc2ba10de1ae56d1c79">&#9670;&nbsp;</a></span>AddGeom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_it_geom.html">ItGeomPtr</a> MtGeomSolver::AddGeom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mt_geom_variant.html">MtGeomVariant</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить черный ящик в систему ограничений. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bBox</td><td>- Интерфейс чёрного ящика.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата. <br  />
+ Добавить геометрический объект. </dd></dl>
+
+</div>
+</div>
+<a id="a768507adaee7f7577fb1c6fb6ebea04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768507adaee7f7577fb1c6fb6ebea04b">&#9670;&nbsp;</a></span>MoveGeom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::MoveGeom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_it_geom.html">ItGeom</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_it_geom.html">ItGeomPtr</a>&#160;</td>
+          <td class="paramname"><em>tgtCl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перенести геометрический объект системы ограничений в подсистему твврдого тела (сделать подчиненным объектом жесткого кластера). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>- Геометрический объект.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tgtCl</td><td>- Целевой кластер.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата операции.</dd></dl>
+<p>Для переноса геометрического объекта в глобальную систему необходимо в качестве целевого кластера указать <code>nullptr</code>. В случае успеха функция возвращает код GCM_RESULT_Ok. Если геометрический объект относится к <a class="el" href="class_mt_geom_solver.html#acd136fa15a1f21d44f3bb8d264f579d1" title="Выдать кластер неподвижных объектов, заданных в глобальной системой координат.">MtGeomSolver::Ground()</a> или был использован как аргумент при вызове метода <a class="el" href="class_mt_geom_solver.html#a53524d95992aec1da67a9f95d8173b79" title="Создать пользовательский кластер. Объекты объединяемого множества не должны иметь ограничений на моме...">MtGeomSolver::CreateCluster</a>, то функция оставляет иерархию системы без изменений и возвращает специальный код GCM_RESULT_ImmovableGeom. Если целевой кластер был использован как аргумент при вызове метода <a class="el" href="class_mt_geom_solver.html#a53524d95992aec1da67a9f95d8173b79" title="Создать пользовательский кластер. Объекты объединяемого множества не должны иметь ограничений на моме...">MtGeomSolver::CreateCluster</a>, то функция оставляет иерархию системы без изменений и возвращает специальный код GCM_RESULT_UnacceptableCluster. Если целевой кластер вложен в геометрический объект (в том числе совпадает с ним), то функция оставляет иерархию системы без изменений и возвращает специальный код GCM_RESULT_CyclicMove. При удалении кластера методом <a class="el" href="class_mt_geom_solver.html#a3ec44d870a0c502bfaa94da0f38896da" title="Удалить геометрический объект из системы ограничений.">MtGeomSolver::RemoveGeom</a> все перенесенные в него геометрические объекты автоматически переносятся в его надкластер, если такой имеется, иначе &ndash; в глобальную систему. </p>
+
+</div>
+</div>
+<a id="accadc7e3005bf5f6221885dd7b088e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accadc7e3005bf5f6221885dd7b088e90">&#9670;&nbsp;</a></span>DependentGeom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_it_geom.html">ItGeomPtr</a> MtGeomSolver::DependentGeom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_it_constraint_item.html">ItConstraintItem</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать зависимый объект данного ограничения. Get a dependent object of constraint. <br  />
+ </p>
+<p>Зависимый объект определен естественным образом для ограничения типа <code>GCM_DEPENDENT</code> или назначается с помощью вызова #MtGeomSolver::SetDependent. </p>
+
+</div>
+</div>
+<a id="a2ea5007b173ddb56ca9014255281e6f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea5007b173ddb56ca9014255281e6f6">&#9670;&nbsp;</a></span>ChangeGeomPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::ChangeGeomPositions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сообщить о изменении положения сопрягаемых тел. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата.</dd></dl>
+<p>Через эту функцию осуществляется синхронизация положения объектов системы ограничений по состоянию объектов стороне клиентского приложения. Надо сказать, что обновление положений происходит только для тех наследников <a class="el" href="struct_it_geom.html" title="Геометрический объект.">ItGeom</a>, которые реализованы на стороне приложения. Состояние объектов, добавленных методом <a class="el" href="class_mt_geom_solver.html#a0bca86974f339bc2ba10de1ae56d1c79" title="Добавить черный ящик в систему ограничений.">MtGeomSolver::AddGeom</a> остается неизменным. </p>
+
+</div>
+</div>
+<a id="af58e281c5053007cb9132b6dca4acc1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58e281c5053007cb9132b6dca4acc1c">&#9670;&nbsp;</a></span>IsFixed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MtGeomSolver::IsFixed </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_it_geom.html">ItGeom</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Узнать, заморожен ли геометрический объект. </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Устарел. Используйте <a class="el" href="class_mt_geom_solver.html#a30969192fb0906c82e6e4a2ea45f9a71" title="Узнать, заморожен ли геометрический объект.">MtGeomSolver::IsFrozen</a> как замену. </dd></dl>
+
+</div>
+</div>
+<a id="ad6eb5ee20fb3d2b943864678420784fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6eb5ee20fb3d2b943864678420784fa">&#9670;&nbsp;</a></span>UnfixGeom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::UnfixGeom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_it_geom.html">ItGeom</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Освободить замороженный геометрический объект. </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Устарел. Используйте <a class="el" href="class_mt_geom_solver.html#a53eec3134c29b3d1571258047e9f79db" title="Освободить замороженный геометрический объект.">MtGeomSolver::FreeGeom</a> как замену. </dd></dl>
+
+</div>
+</div>
+<a id="ab8834d6feb0e0a42c01091fd0e797036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8834d6feb0e0a42c01091fd0e797036">&#9670;&nbsp;</a></span>DiagnoseConstraints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MtGeomSolver::DiagnoseConstraints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разослать диагностические коды ограничениям. </p>
+<p>Осуществляется решение системы ограничений. Если она частично не решена, то по результатам решения рассылаются диагностические коды ошибок всем ограничениям. Функция не тратит существенного времени, если систему ограничений до этого уже пытались решать. </p>
+
+</div>
+</div>
+<a id="ace53654f795f68936ec78497b7ab26e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace53654f795f68936ec78497b7ab26e2">&#9670;&nbsp;</a></span>Evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::Evaluate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить систему сопряжений. </p>
+<p>Меняет положение геометрических объектов в соответствии с геометрическими ограничениями. </p>
+
+</div>
+</div>
+<a id="ad595526df6d5561dab28bfdc6b6a3531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad595526df6d5561dab28bfdc6b6a3531">&#9670;&nbsp;</a></span>PrepareReposition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::PrepareReposition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_it_geom.html">ItGeom</a> &amp;&#160;</td>
+          <td class="paramname"><em>movGeom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>projPlane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curPnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализировать режим перетаскивания объектов в плоскости экрана. Компонент, деталь, которой манипулируют. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">projPlane</td><td>- Плоскость экрана, заданная в ГСК сборки.</td></tr>
+    <tr><td class="paramname">curPnt</td><td>- Точка, принадлежащая компоненту, которая проецируется на плоскость экрана в положение курсора, и за которую осуществляется 'перетаскивание'. curPnt задана в ЛСК геом.объекта movGeom.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата. <br  />
+</dd></dl>
+<p><br  />
+ Функция запускается однократно перед входом в режим перетаскивания компонент, который управляется (по движению мыши) через команду MtResultCode3D <a class="el" href="class_mt_geom_solver.html#a40eef4d72b35669ccef728070eaf8f74" title="Решить систему сопряжений для новой позиции курсора в режиме драггинга. curXYZ текущее положение курс...">SolveReposition( const MbCartPoint3D &amp; )</a>. Режим прекращается вызовом любой иной команды, кроме этих двух; Также есть специальная функция для выхода из режима "перетаскивания" - void <a class="el" href="class_mt_geom_solver.html#a6e5cf975006803a7cc76e312f2c4f493" title="Завершить режим &quot;перетаскивания&quot;.">FinishReposition()</a>, для явного сбрасывания режима перемещения. </p>
+
+</div>
+</div>
+<a id="a100c5bd2a113b2ea64f1b41e04427c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100c5bd2a113b2ea64f1b41e04427c67">&#9670;&nbsp;</a></span>PrepareReposition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::PrepareReposition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_it_geom.html">ItGeom</a> &amp;&#160;</td>
+          <td class="paramname"><em>rotGeom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализировать режим вращения компонента вокруг фиксированной оси. Геометрический объект, на которое направлено воздействие. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">org,axis</td><td>- Точка и вектор в ГСК, которые задают постоянную ось вращения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код ошибки, перечисленный enum #MtResultCode3D</dd></dl>
+<dl class="section user"><dt></dt><dd>Функция запускается однократно перед входом в режим вращения, который управляется через команду MtResultCode3D <a class="el" href="class_mt_geom_solver.html#ae933149b4b7087c20c15dd1c1a92014d" title="Решить систему с изменением положения компонента через одну координату.">SolveReposition( double alpha )</a>, где alpha - входной параметр, определяющий угловое положение компонента, и заданный в радианах. Режим прекращается вызовом void <a class="el" href="class_mt_geom_solver.html#a6e5cf975006803a7cc76e312f2c4f493" title="Завершить режим &quot;перетаскивания&quot;.">FinishReposition()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a5d0615b8092142a20a0d75debed0c2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0615b8092142a20a0d75debed0c2bd">&#9670;&nbsp;</a></span>SolveReposition() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::SolveReposition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_it_geom.html">ItGeom</a> &amp;&#160;</td>
+          <td class="paramname"><em>gItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>newPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga7bd2ada04a427885d6f9a22ed86c2d0d">MtRepositionMode</a>&#160;</td>
+          <td class="paramname"><em>movType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить систему для произвольного изменения положения одного тела. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gItem</td><td>тело, положение которого меняется;</td></tr>
+    <tr><td class="paramname">newPos</td><td>новое пололожение тела g_item;</td></tr>
+    <tr><td class="paramname">movType</td><td>код желаемого поведения</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата.</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Эта функция не позволяет вывести систему сопряжений из состояния решаемости, кроме случаев, когда до вызова функции система уже находилась в нерешенном состоянии. Если новое положение 'newPos' не позволяет удовлетворять системе сопряжений, то новое положение тела окажется наиболее близким к newPos (при сохранении решаемости). </dd></dl>
+
+</div>
+</div>
+<a id="a40eef4d72b35669ccef728070eaf8f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40eef4d72b35669ccef728070eaf8f74">&#9670;&nbsp;</a></span>SolveReposition() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::SolveReposition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>curXYZ</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить систему сопряжений для новой позиции курсора в режиме драггинга. curXYZ текущее положение курсора в ГСК. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата.</dd></dl>
+<p>Рабочая процедура, управляющая режимом перетаскивания, который прекращается вызовом любой иной команды, например, добавить новое ограничение или перестроить. </p>
+
+</div>
+</div>
+<a id="ae933149b4b7087c20c15dd1c1a92014d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae933149b4b7087c20c15dd1c1a92014d">&#9670;&nbsp;</a></span>SolveReposition() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::SolveReposition </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить систему с изменением положения компонента через одну координату. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alpha</td><td>- Управляющий параметр (зачастую задается в радианах).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата.</dd></dl>
+<p>Это рабочая функция, управляющая режимом перепозиционирования, в котором положение тела управляется изменением одной координаты, например, угол вращения вокруг оси. Режим прекращается вызовом <a class="el" href="class_mt_geom_solver.html#a6e5cf975006803a7cc76e312f2c4f493" title="Завершить режим &quot;перетаскивания&quot;.">MtGeomSolver::FinishReposition</a> или любой иной командой, меняющей состояние решетеля, например, <a class="el" href="class_mt_geom_solver.html#a5fedda30c7768355433c8b5a26291172" title="Добавить сопряжение для пары геометрических объектов(ограничение).">MtGeomSolver::AddConstraint</a>. Функция для больших систем работает значительно быстрее, чем Solve(bool) или SolveReposition( ItGeom &amp;, const MbPlacement3D &amp;). </p>
+
+</div>
+</div>
+<a id="a71cf6551967965d0ec3b9c1a5f6cc32f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cf6551967965d0ec3b9c1a5f6cc32f">&#9670;&nbsp;</a></span>DynamicReposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___g_c_m__3_d___a_p_i.html#ga3a658bb50ac1eb529e8422f2eb5212db">MtResultCode3D</a> MtGeomSolver::DynamicReposition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_it_geom.html">ItGeom</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>manip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_g_c_m__dragging.html">GCM_dragging</a> &amp;&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перетащить геометрический объект системы ограничений посредством динамического репозиционирования его манипулятора. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>- Перетаскиваемый геометрический объект.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">manip</td><td>- Изначальное или целевое ГСК-положение манипулятора.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- Режим перетаскивания.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата.</dd></dl>
+<p>Процедура предназначена для серийных вызовов, динамически перетаскивающих геометрический объект. Манипулятор связывается с объектом при первом вызове и приводит его в движение при последующих.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Функционал в разработке. Текущая реализация поддерживает все представленные варианты влияния (<a class="el" href="group___g_c_m__3_d___a_p_i.html#gaca4ab2ae105d5649be11821a4d9814b5" title="Распространение влияния движения на связанные геометрические объекты.">GCM_drag_influence</a>) и аннотированные ниже значения управления (<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga80008922d3c0a74042b31f597fae8ea1" title="Способ управления приводящими ограничениями для реализации движения.">GCM_drag_control</a>) в зависимости от опции движения (<a class="el" href="group___g_c_m__3_d___a_p_i.html#ga70b34f869ebc0a1650e36296b766953e" title="Основной вид движения, используемый для репозиции.">GCM_drag_motion</a>).</dd>
+<dd>
+<a class="el" href="group___g_c_m__3_d___a_p_i.html#gga70b34f869ebc0a1650e36296b766953ea8e4f7b1f7552b11c38780f69fa58a558" title="Поступательное движение.">GCM_DRAGGING_Translation</a>: #GCM_DRAGGING_Adaptive, #GCM_DRAGGING_Specific <br  />
+ <a class="el" href="group___g_c_m__3_d___a_p_i.html#gga70b34f869ebc0a1650e36296b766953ead06639c55304e824cf5cf3362114b76b" title="Поступательное движение в плоскости.">GCM_DRAGGING_TranslationXY</a>: #GCM_DRAGGING_Adaptive</dd>
+<dd>
+Во избежание неожиданного поведения целевое положение манипулятора между последовательными вызовами рекомендуется изменять соответственно заказанному виду движения. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="a7bf60a6ed82153866c69256319bac9c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf60a6ed82153866c69256319bac9c1">&#9670;&nbsp;</a></span>GCM_CreateSolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_ptr.html">SPtr</a>&lt;<a class="el" href="class_mt_geom_solver.html">MtGeomSolver</a>&gt; GCM_CreateSolver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="struct_it_position_manager.html">ItPositionManager</a> &gt;&#160;</td>
+          <td class="paramname"><em>posMan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать объектно-ориентированный интерфейс 3D солвера. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pMan</td><td>- Интерфейс, предоставляющий функции репозиции геометрических объектов на стороне приложения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Вызов создает пустую систему ограничений. Кроме того, в памяти создаются внутренние структуры данных геометрического решателя, обслуживающего систему ограничений. Функция возвращает экземпляр класса, представляющего объектно-ориентированный интерфейс солвера.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель (с автоматическим подсчетом ссылок) на новый экземпляр геометрического решателя. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="gcm__manager_8h.html">gcm_manager.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mt_geom_solver.html">MtGeomSolver</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

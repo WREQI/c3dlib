@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Файл mb_nurbs_function.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mb__nurbs__function_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл mb_nurbs_function.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Модуль геометрических построений.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="templ__s__array_8h.html">templ_s_array.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__array2_8h.html">templ_array2.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__sparse__array2_8h.html">templ_sparse_array2.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="templ__dptr_8h.html">templ_dptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="math__define_8h.html">math_define.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__enum_8h.html">mb_enum.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve3d_8h.html">curve3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="surface_8h.html">surface.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__rect1d_8h.html">mb_rect1d.h</a>&gt;</code><br />
+<code>#include &lt;mb_matrixnn.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__vector3d_8h.html">mb_vector3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mb__cart__point3d_8h.html">mb_cart_point3d.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="op__binding__data_8h.html">op_binding_data.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="alg__base_8h.html">alg_base.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_curve_into_nurbs_info.html">MbCurveIntoNurbsInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дополнительная информация для преобразования кривой или поверхности в Nurbs.  <a href="class_mb_curve_into_nurbs_info.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_nurbs_parameters.html">MbNurbsParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры построения NURBS копии объекта.  <a href="struct_mb_nurbs_parameters.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_nurbs_copy_curve_result.html">MbNurbsCopyCurveResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выходные данные для операции создания NURBS копии кривой.  <a href="class_mb_nurbs_copy_curve_result.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_nurbs_copy_surface_result.html">MbNurbsCopySurfaceResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выходные данные для операции создания NURBS копии поверхности.  <a href="class_mb_nurbs_copy_surface_result.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mb_nurbs_point_info.html">MbNurbsPointInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметры узловой точки сплайновой копии объекта.  <a href="struct_mb_nurbs_point_info.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_weight_vector.html">MbWeightVector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Веса NURBS кривой.  <a href="class_mb_weight_vector.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ga31f172afb611121df61594a206eabbbe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___data___structures.html#ga31f172afb611121df61594a206eabbbe">MbeSplineCreateType</a> { <a class="el" href="group___data___structures.html#gga31f172afb611121df61594a206eabbbea89081f34eb8685c2a0c827cccd4f3bd0">sct_Version0</a> = 0
+, <a class="el" href="group___data___structures.html#gga31f172afb611121df61594a206eabbbea05e8f06148c8598345ff3a819b025c55">sct_Version1</a> = 1
+, <a class="el" href="group___data___structures.html#gga31f172afb611121df61594a206eabbbead15fe401b44051fe3c0870f234e4c29b">sct_Version2</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga31f172afb611121df61594a206eabbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг, определяющий построение сплайна, проходящего через точки.  <a href="group___data___structures.html#ga31f172afb611121df61594a206eabbbe">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga31f172afb611121df61594a206eabbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga0b92b1183644f386127643f5d08268c2"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:ga0b92b1183644f386127643f5d08268c2"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga0b92b1183644f386127643f5d08268c2">GetParamDistance</a> (const Type &amp;p1, const Type &amp;p2, <a class="el" href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">MbeSplineParamType</a> spType)</td></tr>
+<tr class="memdesc:ga0b92b1183644f386127643f5d08268c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать меру расстояния.  <a href="group___base___algorithms.html#ga0b92b1183644f386127643f5d08268c2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0b92b1183644f386127643f5d08268c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade70fe1c96b3bce08f3f1dfc249750bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gade70fe1c96b3bce08f3f1dfc249750bc">IsValidNurbsParams</a> (size_t degree, bool closed, size_t pcnt)</td></tr>
+<tr class="memdesc:gade70fe1c96b3bce08f3f1dfc249750bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-объекта.  <a href="group___base___algorithms.html#gade70fe1c96b3bce08f3f1dfc249750bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:gade70fe1c96b3bce08f3f1dfc249750bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3eecfd2a18613ac796c2f041ccb92b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad3eecfd2a18613ac796c2f041ccb92b9">IsValidNurbsParams</a> (size_t degree, bool closed, size_t pcnt, size_t wcnt)</td></tr>
+<tr class="memdesc:gad3eecfd2a18613ac796c2f041ccb92b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-объекта.  <a href="group___base___algorithms.html#gad3eecfd2a18613ac796c2f041ccb92b9">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad3eecfd2a18613ac796c2f041ccb92b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9c0bf8d62af089a555b471073906467"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gae9c0bf8d62af089a555b471073906467">IsValidNurbsParams</a> (size_t degree, bool closed, size_t pcnt, size_t wcnt, size_t kcnt)</td></tr>
+<tr class="memdesc:gae9c0bf8d62af089a555b471073906467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-объекта.  <a href="group___base___algorithms.html#gae9c0bf8d62af089a555b471073906467">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae9c0bf8d62af089a555b471073906467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga50daee8684278ea02b9d0b4cbaf361d9">IsValidNurbsParamsExt</a> (size_t degree, bool closed, size_t pcnt, const KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-кривой.  <a href="group___base___algorithms.html#ga50daee8684278ea02b9d0b4cbaf361d9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="memTemplParams" colspan="2">template&lt;class PointVector , class DoubleVector , class WeightVector &gt; </td></tr>
+<tr class="memitem:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaccb9c870e5a4aa84aedf6714456a9c72">IsValidNurbsParamsExt</a> (size_t degree, bool closed, const PointVector &amp;pnts, const WeightVector *wts, const DoubleVector *knots)</td></tr>
+<tr class="memdesc:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-кривой.  <a href="group___base___algorithms.html#gaccb9c870e5a4aa84aedf6714456a9c72">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc990cd2c44160f97de56591adc897f0"><td class="memTemplParams" colspan="2">template&lt;class PointVector , class WeightVector &gt; </td></tr>
+<tr class="memitem:gabc990cd2c44160f97de56591adc897f0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gabc990cd2c44160f97de56591adc897f0">IsValidNurbsParamsExt</a> (size_t degree, bool closed, const PointVector &amp;pnts, const WeightVector *wts)</td></tr>
+<tr class="memdesc:gabc990cd2c44160f97de56591adc897f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-кривой.  <a href="group___base___algorithms.html#gabc990cd2c44160f97de56591adc897f0">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabc990cd2c44160f97de56591adc897f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7193ff434101c3b0b316d2dadc6e69f"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:gae7193ff434101c3b0b316d2dadc6e69f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gae7193ff434101c3b0b316d2dadc6e69f">IsValidNurbsKnots</a> (const KnotsVector &amp;knots, double eps=<a class="el" href="mb__variables_8h.html#a602d939a0f94df238f45f78caf760ae1">EXTENT_EPSILON</a>)</td></tr>
+<tr class="memdesc:gae7193ff434101c3b0b316d2dadc6e69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить узловой вектор nurbs-объекта.  <a href="group___base___algorithms.html#gae7193ff434101c3b0b316d2dadc6e69f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae7193ff434101c3b0b316d2dadc6e69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b9c9373ad90b34e1be730603e323f9e"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga2b9c9373ad90b34e1be730603e323f9e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga2b9c9373ad90b34e1be730603e323f9e">RestoreClippedKnots</a> (size_t degree, bool closed, size_t pointsCnt, KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga2b9c9373ad90b34e1be730603e323f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить и попытаться починить обрезанный узловой вектор nurbs-объекта.  <a href="group___base___algorithms.html#ga2b9c9373ad90b34e1be730603e323f9e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2b9c9373ad90b34e1be730603e323f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac24ca29b2f1169b710e64a211a560912"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:gac24ca29b2f1169b710e64a211a560912"><td class="memTemplItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gac24ca29b2f1169b710e64a211a560912">KnotIndex</a> (size_t degree, const KnotsVector &amp;knots, double &amp;t)</td></tr>
+<tr class="memdesc:gac24ca29b2f1169b710e64a211a560912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение индекса узла left для первой ненулевой функции.  <a href="group___base___algorithms.html#gac24ca29b2f1169b710e64a211a560912">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac24ca29b2f1169b710e64a211a560912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="memTemplItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga0fdd4fa1a56de3d751ea6e91f3aa8c43">DefineKnotsVector</a> (ptrdiff_t degree, bool closed, ptrdiff_t uppPointsIndex, KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить узловой вектор (равномерная параметризация).  <a href="group___base___algorithms.html#ga0fdd4fa1a56de3d751ea6e91f3aa8c43">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga751a91ad19056d86b19a386bce27ebfa"><td class="memTemplParams" colspan="2">template&lt;class ParamsVector , class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga751a91ad19056d86b19a386bce27ebfa"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga751a91ad19056d86b19a386bce27ebfa">DefineKnotsVector</a> (size_t degree, bool closed, size_t count, const ParamsVector *paramsPtr, size_t kMode, KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga751a91ad19056d86b19a386bce27ebfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить узловой вектор.  <a href="group___base___algorithms.html#ga751a91ad19056d86b19a386bce27ebfa">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga751a91ad19056d86b19a386bce27ebfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35f74e50715b3602333b70edbb9d7d76"><td class="memTemplParams" colspan="2">template&lt;class PointsVector , class ParamsVector &gt; </td></tr>
+<tr class="memitem:ga35f74e50715b3602333b70edbb9d7d76"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga35f74e50715b3602333b70edbb9d7d76">DefineThroughPointsParams</a> (const PointsVector &amp;points, <a class="el" href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">MbeSplineParamType</a> spType, bool closed, ParamsVector &amp;params)</td></tr>
+<tr class="memdesc:ga35f74e50715b3602333b70edbb9d7d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить параметрическое распределение точек.  <a href="group___base___algorithms.html#ga35f74e50715b3602333b70edbb9d7d76">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga35f74e50715b3602333b70edbb9d7d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9af883dd781bad55a263934fb06a663f"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector , class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga9af883dd781bad55a263934fb06a663f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga9af883dd781bad55a263934fb06a663f">BasisFuns</a> (ptrdiff_t i, double t, ptrdiff_t p, const KnotsVector &amp;knots, DoubleVector &amp;nsplines, DoubleVector &amp;lrVect)</td></tr>
+<tr class="memdesc:ga9af883dd781bad55a263934fb06a663f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление B - базиса (degree - порядок B-сплайна, p = (degree - 1) - степень полинома(B-сплайна)).  <a href="group___base___algorithms.html#ga9af883dd781bad55a263934fb06a663f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9af883dd781bad55a263934fb06a663f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga629230ed3cd6c164712a921457ba8514"><td class="memTemplParams" colspan="2">template&lt;class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga629230ed3cd6c164712a921457ba8514"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga629230ed3cd6c164712a921457ba8514">CalcBsplvb</a> (const DoubleVector &amp;knots, double t, ptrdiff_t leftIndex, ptrdiff_t degree, DoubleVector &amp;biatx, DoubleVector &amp;lrVect)</td></tr>
+<tr class="memdesc:ga629230ed3cd6c164712a921457ba8514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить базисный сплайн по параметру t и узловому вектору.  <a href="group___base___algorithms.html#ga629230ed3cd6c164712a921457ba8514">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga629230ed3cd6c164712a921457ba8514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae17a8043373547c92e06466e86dc4be6"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector &gt; </td></tr>
+<tr class="memitem:gae17a8043373547c92e06466e86dc4be6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gae17a8043373547c92e06466e86dc4be6">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double *W, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, NurbsVector *PK)</td></tr>
+<tr class="memdesc:gae17a8043373547c92e06466e86dc4be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#gae17a8043373547c92e06466e86dc4be6">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae17a8043373547c92e06466e86dc4be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23674e1a07b5f921bfd9aa4f949de845"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga23674e1a07b5f921bfd9aa4f949de845"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga23674e1a07b5f921bfd9aa4f949de845">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double w, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, NurbsVector *PK)</td></tr>
+<tr class="memdesc:ga23674e1a07b5f921bfd9aa4f949de845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#ga23674e1a07b5f921bfd9aa4f949de845">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga23674e1a07b5f921bfd9aa4f949de845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector , class DoubleTriple &gt; </td></tr>
+<tr class="memitem:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaa3af2ee3c54851b06bc0660af45b5b02">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double *W, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, <a class="el" href="struct_double_triple.html">DoubleTriple</a> **DT, double **WT)</td></tr>
+<tr class="memdesc:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#gaa3af2ee3c54851b06bc0660af45b5b02">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga545dab23956f21347e9bd676847d645f"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector , class DoubleTriple &gt; </td></tr>
+<tr class="memitem:ga545dab23956f21347e9bd676847d645f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga545dab23956f21347e9bd676847d645f">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double w, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, <a class="el" href="struct_double_triple.html">DoubleTriple</a> **DT, double **WT)</td></tr>
+<tr class="memdesc:ga545dab23956f21347e9bd676847d645f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#ga545dab23956f21347e9bd676847d645f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga545dab23956f21347e9bd676847d645f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21a75118df88f3fba6ba120c24f0702d"><td class="memTemplParams" colspan="2">template&lt;class Point , class Homogeneous &gt; </td></tr>
+<tr class="memitem:ga21a75118df88f3fba6ba120c24f0702d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga21a75118df88f3fba6ba120c24f0702d">CurveDeriveCpts</a> (ptrdiff_t p, const double *U, const Point *P, const double *W, size_t pointCount, ptrdiff_t r1, ptrdiff_t r2, Homogeneous *H0, Homogeneous *H1, Homogeneous *H2, Homogeneous *H3)</td></tr>
+<tr class="memdesc:ga21a75118df88f3fba6ba120c24f0702d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#ga21a75118df88f3fba6ba120c24f0702d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga21a75118df88f3fba6ba120c24f0702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40db03907664d89f34c215c15deac936"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga40db03907664d89f34c215c15deac936">CheckParam</a> (const double &amp;tMin, const double &amp;tMax, bool closed, double &amp;t)</td></tr>
+<tr class="memdesc:ga40db03907664d89f34c215c15deac936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать параметр t в параметрическую область кривой.  <a href="group___base___algorithms.html#ga40db03907664d89f34c215c15deac936">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga40db03907664d89f34c215c15deac936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47e49905d84cff5a32f403e250480623"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector , class DoubleVector1 , class DoubleVector2 &gt; </td></tr>
+<tr class="memitem:ga47e49905d84cff5a32f403e250480623"><td class="memTemplItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga47e49905d84cff5a32f403e250480623">CalculateSplines</a> (size_t degree, const KnotsVector &amp;knots, bool closed, double &amp;t, DoubleVector1 &amp;nsplines, DoubleVector2 &amp;lrVect)</td></tr>
+<tr class="memdesc:ga47e49905d84cff5a32f403e250480623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать ненулевые сплайны при данном параметре.  <a href="group___base___algorithms.html#ga47e49905d84cff5a32f403e250480623">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga47e49905d84cff5a32f403e250480623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga105cec4325d07484e7b12b90410754ba"><td class="memTemplParams" colspan="2">template&lt;class Nurbs , class PointsVector , class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga105cec4325d07484e7b12b90410754ba"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga105cec4325d07484e7b12b90410754ba">CreateNurbsLSMClosed</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; Nurbs &gt; &amp;nurbs, const ptrdiff_t degree, const ptrdiff_t pCount, const PointsVector &amp;aPoints, const DoubleVector &amp;aKnots, const DoubleVector *aParams=nullptr)</td></tr>
+<tr class="memdesc:ga105cec4325d07484e7b12b90410754ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение замкнутого сплайна.  <a href="group___curve___modeling.html#ga105cec4325d07484e7b12b90410754ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga105cec4325d07484e7b12b90410754ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga781a02bee7ace74b2a7323b8cac6f8eb"><td class="memTemplParams" colspan="2">template&lt;class Nurbs , class PointsVector , class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga781a02bee7ace74b2a7323b8cac6f8eb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___curve___modeling.html#ga781a02bee7ace74b2a7323b8cac6f8eb">CreateNurbsLSM</a> (<a class="el" href="class_s_ptr.html">SPtr</a>&lt; Nurbs &gt; &amp;nurbs, const ptrdiff_t degree, const ptrdiff_t pCount, const PointsVector &amp;aPoints, const DoubleVector &amp;aKnots, const DoubleVector *aParams=nullptr)</td></tr>
+<tr class="memdesc:ga781a02bee7ace74b2a7323b8cac6f8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение незамкнутого сплайна.  <a href="group___curve___modeling.html#ga781a02bee7ace74b2a7323b8cac6f8eb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga781a02bee7ace74b2a7323b8cac6f8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd5f9732dcfdde1e608e043748c0e16"><td class="memTemplParams" colspan="2"><a id="a8dd5f9732dcfdde1e608e043748c0e16"></a>
+template&lt;class Curve , class Nurbs , class Point &gt; </td></tr>
+<tr class="memitem:a8dd5f9732dcfdde1e608e043748c0e16"><td class="memTemplItemLeft" align="right" valign="top">Nurbs *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="mb__nurbs__function_8h.html#a8dd5f9732dcfdde1e608e043748c0e16">CreateLineOutRgn</a> (const Curve &amp;curve, double tn1, double tn2, double t1, double t2, const <a class="el" href="class_mb_curve_into_nurbs_info.html">MbCurveIntoNurbsInfo</a> &amp;nci)</td></tr>
+<tr class="memdesc:a8dd5f9732dcfdde1e608e043748c0e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построение приямолинейногло сплайна. <br /></td></tr>
+<tr class="separator:a8dd5f9732dcfdde1e608e043748c0e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Модуль геометрических построений. </p>
+<p>Базовые алгоритмы Nurbs кривых и поверхностей. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_17151e69fc87016c227e3bc4a3cbd882.html">beta</a></li><li class="navelem"><a class="el" href="dir_bd29d7139eb2e3aed31751b1af1bd8b9.html">c3ddata</a></li><li class="navelem"><a class="el" href="dir_89aa2b9a8b68cabc2c17909be828e277.html">C3D_Toolkit_Distributives</a></li><li class="navelem"><a class="el" href="dir_fe054f17b100158382be5ebd3279b6ad.html">118065</a></li><li class="navelem"><a class="el" href="dir_aed91db32748fcdf6936a920fcdf7484.html">Kernel</a></li><li class="navelem"><a class="el" href="dir_d1405a8d79a2309508a4d965cd440602.html">Include</a></li><li class="navelem"><a class="el" href="mb__nurbs__function_8h.html">mb_nurbs_function.h</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:25:59. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

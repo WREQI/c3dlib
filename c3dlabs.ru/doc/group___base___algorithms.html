@@ -1,0 +1,3579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Базовые алгоритмы</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group___base___algorithms.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Базовые алгоритмы<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___modelling___functions.html">Методы геометрических построений</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Базовые алгоритмы:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___base___algorithms.svg" width="368" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистратор копируемых объектов.  <a href="class_mb_reg_duplicate.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_auto_reg_duplicate.html">MbAutoRegDuplicate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Авторегистратор дублирования.  <a href="class_mb_auto_reg_duplicate.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_if_auto_reg_duplicate.html">MbIfAutoRegDuplicate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Авторегистратор дублирования условию.  <a href="class_mb_if_auto_reg_duplicate.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистратор трансформируемых объектов.  <a href="class_mb_reg_transform.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_auto_reg_transform.html">MbAutoRegTransform</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Авторегистратор трансформации.  <a href="class_mb_auto_reg_transform.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga70201948152c3af9a97a6a7720725a2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga70201948152c3af9a97a6a7720725a2a">__REG_DUPLICATE_IMPL</a>(__CLASS)</td></tr>
+<tr class="memdesc:ga70201948152c3af9a97a6a7720725a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию объекта с использованием регистратора сдублированных объектов.  <a href="group___base___algorithms.html#ga70201948152c3af9a97a6a7720725a2a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga70201948152c3af9a97a6a7720725a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga6d58f77b031805804c115f31d445a5f6"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga6d58f77b031805804c115f31d445a5f6">c3d::NormalizeAngle</a> (double &amp;angle, double angleEpsilon=<a class="el" href="class_math.html#aa11ac2ecdd6f81c080e2b42f036793a0">Math::AngleEps</a>)</td></tr>
+<tr class="memdesc:ga6d58f77b031805804c115f31d445a5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализовать угол.  <a href="group___base___algorithms.html#ga6d58f77b031805804c115f31d445a5f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6d58f77b031805804c115f31d445a5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad564d7c43dbfb04caf10bc122432f6c9"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:gad564d7c43dbfb04caf10bc122432f6c9"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad564d7c43dbfb04caf10bc122432f6c9">c3d::AngleBetweenVectors</a> (const Type &amp;v1, const Type &amp;v2)</td></tr>
+<tr class="memdesc:gad564d7c43dbfb04caf10bc122432f6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить угол между двумерными векторами.  <a href="group___base___algorithms.html#gad564d7c43dbfb04caf10bc122432f6c9">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad564d7c43dbfb04caf10bc122432f6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e221948129c541d3be8fd908df8642b"><td class="memTemplParams" colspan="2">template&lt;class ParamsVector &gt; </td></tr>
+<tr class="memitem:ga1e221948129c541d3be8fd908df8642b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga1e221948129c541d3be8fd908df8642b">c3d::ArFind</a> (const ParamsVector &amp;arParam, double t, ptrdiff_t &amp;id)</td></tr>
+<tr class="memdesc:ga1e221948129c541d3be8fd908df8642b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти параметр в массиве.  <a href="group___base___algorithms.html#ga1e221948129c541d3be8fd908df8642b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1e221948129c541d3be8fd908df8642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06fe16a6dc3baff4d44b86420cc92c7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga06fe16a6dc3baff4d44b86420cc92c7f">c3d::InRange</a> (double x1, double x2, double x)</td></tr>
+<tr class="memdesc:ga06fe16a6dc3baff4d44b86420cc92c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли число в интервале [x1, x2].  <a href="group___base___algorithms.html#ga06fe16a6dc3baff4d44b86420cc92c7f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga06fe16a6dc3baff4d44b86420cc92c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa00af61c6ec03bafd6c7979d1ff2c6ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaa00af61c6ec03bafd6c7979d1ff2c6ad">c3d::IsParamOn</a> (double tmin, double tmax, double t, double treg)</td></tr>
+<tr class="memdesc:gaa00af61c6ec03bafd6c7979d1ff2c6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находится ли параметр в диапазоне кривой.  <a href="group___base___algorithms.html#gaa00af61c6ec03bafd6c7979d1ff2c6ad">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa00af61c6ec03bafd6c7979d1ff2c6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45c222a08b766afa03dc86475e40cd85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga45c222a08b766afa03dc86475e40cd85">c3d::InRangePlus</a> (double x1, double x, double eps=FLT_EPSILON)</td></tr>
+<tr class="memdesc:ga45c222a08b766afa03dc86475e40cd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли число в диапазоне [0, x1).  <a href="group___base___algorithms.html#ga45c222a08b766afa03dc86475e40cd85">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga45c222a08b766afa03dc86475e40cd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bdeb63304f32cf1740e430179b84bb1"><td class="memTemplParams" colspan="2">template&lt;class TypeVector &gt; </td></tr>
+<tr class="memitem:ga2bdeb63304f32cf1740e430179b84bb1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga2bdeb63304f32cf1740e430179b84bb1">c3d::IsMonotonic</a> (const TypeVector &amp;items, bool isAscending, bool allowEqual=false)</td></tr>
+<tr class="memdesc:ga2bdeb63304f32cf1740e430179b84bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализован ли массив объектов по возрастанию или убыванию.  <a href="group___base___algorithms.html#ga2bdeb63304f32cf1740e430179b84bb1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2bdeb63304f32cf1740e430179b84bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad33c21265a5635a1fd43b90d1ed5afec"><td class="memTemplParams" colspan="2">template&lt;class Point , class Vector , class PointsVector &gt; </td></tr>
+<tr class="memitem:gad33c21265a5635a1fd43b90d1ed5afec"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad33c21265a5635a1fd43b90d1ed5afec">c3d::ArePointsOnLine</a> (const PointsVector &amp;pnts, double metricEps=<a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a>)</td></tr>
+<tr class="memdesc:gad33c21265a5635a1fd43b90d1ed5afec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежат ли точки на линии.  <a href="group___base___algorithms.html#gad33c21265a5635a1fd43b90d1ed5afec">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad33c21265a5635a1fd43b90d1ed5afec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7512443b796fad2a67fb794fa3823888"><td class="memTemplParams" colspan="2">template&lt;class SpacePoints &gt; </td></tr>
+<tr class="memitem:ga7512443b796fad2a67fb794fa3823888"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga7512443b796fad2a67fb794fa3823888">c3d::IsPlanar</a> (const SpacePoints &amp;pnts, <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> *place, double mEps=<a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a>)</td></tr>
+<tr class="memdesc:ga7512443b796fad2a67fb794fa3823888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли набор точек на плоскости.  <a href="group___base___algorithms.html#ga7512443b796fad2a67fb794fa3823888">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7512443b796fad2a67fb794fa3823888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="memTemplParams" colspan="2">template&lt;class Point &gt; </td></tr>
+<tr class="memitem:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga804bacbc4c98d81afdee2bf13d39e0d2">c3d::IsPlanar2</a> (const <a class="el" href="class_array2.html">Array2</a>&lt; Point &gt; &amp;pnts, <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> *place, double mEps=<a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a>)</td></tr>
+<tr class="memdesc:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лежит ли набор точек на плоскости.  <a href="group___base___algorithms.html#ga804bacbc4c98d81afdee2bf13d39e0d2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga804bacbc4c98d81afdee2bf13d39e0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90d7618054de26417a4ae7d9815f8a6d"><td class="memTemplParams" colspan="2">template&lt;class PointsVector , class BBox &gt; </td></tr>
+<tr class="memitem:ga90d7618054de26417a4ae7d9815f8a6d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga90d7618054de26417a4ae7d9815f8a6d">c3d::CalculateBoundingBox</a> (const PointsVector &amp;pnts, BBox &amp;bbox)</td></tr>
+<tr class="memdesc:ga90d7618054de26417a4ae7d9815f8a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит набора точек.  <a href="group___base___algorithms.html#ga90d7618054de26417a4ae7d9815f8a6d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga90d7618054de26417a4ae7d9815f8a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8c4a80dba9b1934a521247f851df44c"><td class="memTemplParams" colspan="2">template&lt;class Point , class BBox &gt; </td></tr>
+<tr class="memitem:gaa8c4a80dba9b1934a521247f851df44c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaa8c4a80dba9b1934a521247f851df44c">c3d::CalculateBoundingBox2</a> (const <a class="el" href="class_array2.html">Array2</a>&lt; Point &gt; &amp;pnts, BBox &amp;bbox)</td></tr>
+<tr class="memdesc:gaa8c4a80dba9b1934a521247f851df44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит набора точек.  <a href="group___base___algorithms.html#gaa8c4a80dba9b1934a521247f851df44c">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa8c4a80dba9b1934a521247f851df44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6613a51135f29736a2748f71fac10e05"><td class="memTemplParams" colspan="2">template&lt;class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga6613a51135f29736a2748f71fac10e05"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga6613a51135f29736a2748f71fac10e05">c3d::SetLimitParam</a> (<a class="el" href="namespacec3d.html#ac1be80d720ec08ce4b01dc311674fd4a">DoubleVector</a> &amp;tarr, double tmin, double tmax, double teps=<a class="el" href="class_math.html#a96b07cfb0f21bb2ea10c50bc79c9c585">Math::paramEpsilon</a>)</td></tr>
+<tr class="memdesc:ga6613a51135f29736a2748f71fac10e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить область изменения параметра.  <a href="group___base___algorithms.html#ga6613a51135f29736a2748f71fac10e05">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6613a51135f29736a2748f71fac10e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga186a74f9511de75f73b590e444bebb35"><td class="memTemplParams" colspan="2">template&lt;class DoubleParamsVector &gt; </td></tr>
+<tr class="memitem:ga186a74f9511de75f73b590e444bebb35"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga186a74f9511de75f73b590e444bebb35">SortSynchroArrays</a> (DoubleParamsVector &amp;tt0, DoubleParamsVector &amp;tt2, double eps, bool checkCoincidentParams)</td></tr>
+<tr class="memdesc:ga186a74f9511de75f73b590e444bebb35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсортировать массив.  <a href="group___base___algorithms.html#ga186a74f9511de75f73b590e444bebb35">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga186a74f9511de75f73b590e444bebb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga349fda6b5779f1214705142c331f6135"><td class="memTemplParams" colspan="2">template&lt;class DoubleParamsVector &gt; </td></tr>
+<tr class="memitem:ga349fda6b5779f1214705142c331f6135"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga349fda6b5779f1214705142c331f6135">SortArray</a> (DoubleParamsVector &amp;tt0, double eps, bool checkCoincidentParams)</td></tr>
+<tr class="memdesc:ga349fda6b5779f1214705142c331f6135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отсортировать массив.  <a href="group___base___algorithms.html#ga349fda6b5779f1214705142c331f6135">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga349fda6b5779f1214705142c331f6135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6ed7929eb7d979532bdb21b1f7517b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad6ed7929eb7d979532bdb21b1f7517b6">CorrectCiclicParameter</a> (double period, double p0, double &amp;p)</td></tr>
+<tr class="memdesc:gad6ed7929eb7d979532bdb21b1f7517b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перебросить параметр на период.  <a href="group___base___algorithms.html#gad6ed7929eb7d979532bdb21b1f7517b6">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad6ed7929eb7d979532bdb21b1f7517b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51e4521bb173fabfc572f29bc9e942c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga51e4521bb173fabfc572f29bc9e942c8">CorrectParameter</a> (bool pext, bool pc, double pmin, double pmax, double &amp;p, double eps=<a class="el" href="class_math.html#a5ed3096fd796f242fee4e81ad6d6461a">Math::paramRegion</a>)</td></tr>
+<tr class="memdesc:ga51e4521bb173fabfc572f29bc9e942c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уточнить параметр.  <a href="group___base___algorithms.html#ga51e4521bb173fabfc572f29bc9e942c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga51e4521bb173fabfc572f29bc9e942c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4af4d21c865b040773536efeac74c346"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga4af4d21c865b040773536efeac74c346">CorrectCheckNearParameter</a> (const double &amp;tmin, const double &amp;tmax, const double &amp;tPeriod, const bool &amp;ext, const double &amp;tRegion, double &amp;t)</td></tr>
+<tr class="memdesc:ga4af4d21c865b040773536efeac74c346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коррекция параметра с проверкой.  <a href="group___base___algorithms.html#ga4af4d21c865b040773536efeac74c346">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4af4d21c865b040773536efeac74c346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74e0138d6489dc01317684d5e0e32ae9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga74e0138d6489dc01317684d5e0e32ae9">MatrixRoughInverse</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place3D, const <a class="el" href="class_mb_direction.html">MbDirection</a> *pDir, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeY, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeZ, <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;matrix)</td></tr>
+<tr class="memdesc:ga74e0138d6489dc01317684d5e0e32ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить матрицу инвертирования значка.  <a href="group___base___algorithms.html#ga74e0138d6489dc01317684d5e0e32ae9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga74e0138d6489dc01317684d5e0e32ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79016c718039de4213b63d066576405e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga79016c718039de4213b63d066576405e">MatrixTextInverse</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place3D, const <a class="el" href="class_mb_direction.html">MbDirection</a> *pDir, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeY, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;seeZ, <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;matrix)</td></tr>
+<tr class="memdesc:ga79016c718039de4213b63d066576405e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить матрицу инвертирования текста.  <a href="group___base___algorithms.html#ga79016c718039de4213b63d066576405e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga79016c718039de4213b63d066576405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bc16de71aa31848b0d4753e7a5205af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga5bc16de71aa31848b0d4753e7a5205af">RoundedValue</a> (double &amp;value, uint8 n)</td></tr>
+<tr class="memdesc:ga5bc16de71aa31848b0d4753e7a5205af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Округлить значение до n значащих цифр.  <a href="group___base___algorithms.html#ga5bc16de71aa31848b0d4753e7a5205af">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5bc16de71aa31848b0d4753e7a5205af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92c83571130b628819f4dd6ae87c09ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga92c83571130b628819f4dd6ae87c09ba">QuadraticEquation</a> (double a, double b, double c, double &amp;d, std::pair&lt; double, double &gt; &amp;res)</td></tr>
+<tr class="memdesc:ga92c83571130b628819f4dd6ae87c09ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить квадратное уравнение вида a * x^2 + b * x + c = 0 без внешнего управления погрешностью.  <a href="group___base___algorithms.html#ga92c83571130b628819f4dd6ae87c09ba">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga92c83571130b628819f4dd6ae87c09ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga539504eddb94dc853b19b092ccb41586"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga539504eddb94dc853b19b092ccb41586">QuadraticEquation</a> (double a, double b, double c, double &amp;x1, double &amp;x2, double epsilon=<a class="el" href="class_math.html#a96b07cfb0f21bb2ea10c50bc79c9c585">Math::paramEpsilon</a>)</td></tr>
+<tr class="memdesc:ga539504eddb94dc853b19b092ccb41586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить квадратное уравнение вида a * x^2 + b * x + c = 0.  <a href="group___base___algorithms.html#ga539504eddb94dc853b19b092ccb41586">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga539504eddb94dc853b19b092ccb41586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bff97f91fa2de7cadeea275b5b649eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga4bff97f91fa2de7cadeea275b5b649eb">QubicEquation</a> (double a, double b, double c, double d, double *x, double epsilon)</td></tr>
+<tr class="memdesc:ga4bff97f91fa2de7cadeea275b5b649eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить кубическое уравнение вида a * x^3 + b * x^2 + c * x + d = 0.  <a href="group___base___algorithms.html#ga4bff97f91fa2de7cadeea275b5b649eb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4bff97f91fa2de7cadeea275b5b649eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1540703d94455d31775828a542ed4093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga1540703d94455d31775828a542ed4093">CubicEquation</a> (double i1, double i2, double i3, double *x, double epsilon)</td></tr>
+<tr class="memdesc:ga1540703d94455d31775828a542ed4093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить кубическое уравнение вида x^3 - i1 * x^2 + i2 * x - i3 = 0.  <a href="group___base___algorithms.html#ga1540703d94455d31775828a542ed4093">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1540703d94455d31775828a542ed4093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b3d71a4c4be9110749d47f5743acdd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga3b3d71a4c4be9110749d47f5743acdd3">Degree4Equation</a> (double a, double b, double c, double d, double e, double *x, double epsilon)</td></tr>
+<tr class="memdesc:ga3b3d71a4c4be9110749d47f5743acdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Решить уравнение четвертой степени вида a * x^4 + b * x^3 + с * x^2 + d * x + e = 0.  <a href="group___base___algorithms.html#ga3b3d71a4c4be9110749d47f5743acdd3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3b3d71a4c4be9110749d47f5743acdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga950592a3c2e0189d53ad0ff3a5999b2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga950592a3c2e0189d53ad0ff3a5999b2f">EigenVector</a> (double a[<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>][<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>], <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;vect)</td></tr>
+<tr class="memdesc:ga950592a3c2e0189d53ad0ff3a5999b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить собственный вектор матрицы 3 x 3.  <a href="group___base___algorithms.html#ga950592a3c2e0189d53ad0ff3a5999b2f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga950592a3c2e0189d53ad0ff3a5999b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa613819e3f4623a098a436cd7f3ee092"><td class="memTemplParams" colspan="2">template&lt;class Point &gt; </td></tr>
+<tr class="memitem:gaa613819e3f4623a098a436cd7f3ee092"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaa613819e3f4623a098a436cd7f3ee092">c3d::EqualPoints</a> (const Point &amp;p1, const Point &amp;p2, double eps)</td></tr>
+<tr class="memdesc:gaa613819e3f4623a098a436cd7f3ee092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить точки на равенство.  <a href="group___base___algorithms.html#gaa613819e3f4623a098a436cd7f3ee092">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa613819e3f4623a098a436cd7f3ee092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8f98cd9f1b9f6c23a4df761d6f39d0e"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:gac8f98cd9f1b9f6c23a4df761d6f39d0e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gac8f98cd9f1b9f6c23a4df761d6f39d0e">c3d::EqualVectors</a> (const Vector &amp;p1, const Vector &amp;p2, double eps)</td></tr>
+<tr class="memdesc:gac8f98cd9f1b9f6c23a4df761d6f39d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить векторы на равенство с заданной точностью.  <a href="group___base___algorithms.html#gac8f98cd9f1b9f6c23a4df761d6f39d0e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac8f98cd9f1b9f6c23a4df761d6f39d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga378b0fd7fe809a8f7963cd11f05aeb6b"><td class="memTemplParams" colspan="2">template&lt;class Matrix &gt; </td></tr>
+<tr class="memitem:ga378b0fd7fe809a8f7963cd11f05aeb6b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga378b0fd7fe809a8f7963cd11f05aeb6b">c3d::EqualMatrices</a> (const Matrix &amp;m1, const Matrix &amp;m2, double accuracy)</td></tr>
+<tr class="memdesc:ga378b0fd7fe809a8f7963cd11f05aeb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сравнить матрицы.  <a href="group___base___algorithms.html#ga378b0fd7fe809a8f7963cd11f05aeb6b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga378b0fd7fe809a8f7963cd11f05aeb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac557ae753e312ae335981055ef3fa111"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gac557ae753e312ae335981055ef3fa111">c3d::GetCosSin</a> (const double &amp;tt, double &amp;cosT, double &amp;sinT)</td></tr>
+<tr class="memdesc:gac557ae753e312ae335981055ef3fa111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление косинуса и синуса.  <a href="group___base___algorithms.html#gac557ae753e312ae335981055ef3fa111">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac557ae753e312ae335981055ef3fa111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b92b1183644f386127643f5d08268c2"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:ga0b92b1183644f386127643f5d08268c2"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga0b92b1183644f386127643f5d08268c2">GetParamDistance</a> (const Type &amp;p1, const Type &amp;p2, <a class="el" href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">MbeSplineParamType</a> spType)</td></tr>
+<tr class="memdesc:ga0b92b1183644f386127643f5d08268c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать меру расстояния.  <a href="group___base___algorithms.html#ga0b92b1183644f386127643f5d08268c2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0b92b1183644f386127643f5d08268c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade70fe1c96b3bce08f3f1dfc249750bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gade70fe1c96b3bce08f3f1dfc249750bc">IsValidNurbsParams</a> (size_t degree, bool closed, size_t pcnt)</td></tr>
+<tr class="memdesc:gade70fe1c96b3bce08f3f1dfc249750bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-объекта.  <a href="group___base___algorithms.html#gade70fe1c96b3bce08f3f1dfc249750bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:gade70fe1c96b3bce08f3f1dfc249750bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3eecfd2a18613ac796c2f041ccb92b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gad3eecfd2a18613ac796c2f041ccb92b9">IsValidNurbsParams</a> (size_t degree, bool closed, size_t pcnt, size_t wcnt)</td></tr>
+<tr class="memdesc:gad3eecfd2a18613ac796c2f041ccb92b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-объекта.  <a href="group___base___algorithms.html#gad3eecfd2a18613ac796c2f041ccb92b9">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad3eecfd2a18613ac796c2f041ccb92b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9c0bf8d62af089a555b471073906467"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gae9c0bf8d62af089a555b471073906467">IsValidNurbsParams</a> (size_t degree, bool closed, size_t pcnt, size_t wcnt, size_t kcnt)</td></tr>
+<tr class="memdesc:gae9c0bf8d62af089a555b471073906467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-объекта.  <a href="group___base___algorithms.html#gae9c0bf8d62af089a555b471073906467">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae9c0bf8d62af089a555b471073906467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga50daee8684278ea02b9d0b4cbaf361d9">IsValidNurbsParamsExt</a> (size_t degree, bool closed, size_t pcnt, const KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-кривой.  <a href="group___base___algorithms.html#ga50daee8684278ea02b9d0b4cbaf361d9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga50daee8684278ea02b9d0b4cbaf361d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="memTemplParams" colspan="2">template&lt;class PointVector , class DoubleVector , class WeightVector &gt; </td></tr>
+<tr class="memitem:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaccb9c870e5a4aa84aedf6714456a9c72">IsValidNurbsParamsExt</a> (size_t degree, bool closed, const PointVector &amp;pnts, const WeightVector *wts, const DoubleVector *knots)</td></tr>
+<tr class="memdesc:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-кривой.  <a href="group___base___algorithms.html#gaccb9c870e5a4aa84aedf6714456a9c72">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaccb9c870e5a4aa84aedf6714456a9c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc990cd2c44160f97de56591adc897f0"><td class="memTemplParams" colspan="2">template&lt;class PointVector , class WeightVector &gt; </td></tr>
+<tr class="memitem:gabc990cd2c44160f97de56591adc897f0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gabc990cd2c44160f97de56591adc897f0">IsValidNurbsParamsExt</a> (size_t degree, bool closed, const PointVector &amp;pnts, const WeightVector *wts)</td></tr>
+<tr class="memdesc:gabc990cd2c44160f97de56591adc897f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить параметры инициализации nurbs-кривой.  <a href="group___base___algorithms.html#gabc990cd2c44160f97de56591adc897f0">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabc990cd2c44160f97de56591adc897f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7193ff434101c3b0b316d2dadc6e69f"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:gae7193ff434101c3b0b316d2dadc6e69f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gae7193ff434101c3b0b316d2dadc6e69f">IsValidNurbsKnots</a> (const KnotsVector &amp;knots, double eps=<a class="el" href="mb__variables_8h.html#a602d939a0f94df238f45f78caf760ae1">EXTENT_EPSILON</a>)</td></tr>
+<tr class="memdesc:gae7193ff434101c3b0b316d2dadc6e69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить узловой вектор nurbs-объекта.  <a href="group___base___algorithms.html#gae7193ff434101c3b0b316d2dadc6e69f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae7193ff434101c3b0b316d2dadc6e69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b9c9373ad90b34e1be730603e323f9e"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga2b9c9373ad90b34e1be730603e323f9e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga2b9c9373ad90b34e1be730603e323f9e">RestoreClippedKnots</a> (size_t degree, bool closed, size_t pointsCnt, KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga2b9c9373ad90b34e1be730603e323f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить и попытаться починить обрезанный узловой вектор nurbs-объекта.  <a href="group___base___algorithms.html#ga2b9c9373ad90b34e1be730603e323f9e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2b9c9373ad90b34e1be730603e323f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac24ca29b2f1169b710e64a211a560912"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:gac24ca29b2f1169b710e64a211a560912"><td class="memTemplItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gac24ca29b2f1169b710e64a211a560912">KnotIndex</a> (size_t degree, const KnotsVector &amp;knots, double &amp;t)</td></tr>
+<tr class="memdesc:gac24ca29b2f1169b710e64a211a560912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение индекса узла left для первой ненулевой функции.  <a href="group___base___algorithms.html#gac24ca29b2f1169b710e64a211a560912">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac24ca29b2f1169b710e64a211a560912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="memTemplItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga0fdd4fa1a56de3d751ea6e91f3aa8c43">DefineKnotsVector</a> (ptrdiff_t degree, bool closed, ptrdiff_t uppPointsIndex, KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить узловой вектор (равномерная параметризация).  <a href="group___base___algorithms.html#ga0fdd4fa1a56de3d751ea6e91f3aa8c43">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0fdd4fa1a56de3d751ea6e91f3aa8c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga751a91ad19056d86b19a386bce27ebfa"><td class="memTemplParams" colspan="2">template&lt;class ParamsVector , class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga751a91ad19056d86b19a386bce27ebfa"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga751a91ad19056d86b19a386bce27ebfa">DefineKnotsVector</a> (size_t degree, bool closed, size_t count, const ParamsVector *paramsPtr, size_t kMode, KnotsVector &amp;knots)</td></tr>
+<tr class="memdesc:ga751a91ad19056d86b19a386bce27ebfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить узловой вектор.  <a href="group___base___algorithms.html#ga751a91ad19056d86b19a386bce27ebfa">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga751a91ad19056d86b19a386bce27ebfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35f74e50715b3602333b70edbb9d7d76"><td class="memTemplParams" colspan="2">template&lt;class PointsVector , class ParamsVector &gt; </td></tr>
+<tr class="memitem:ga35f74e50715b3602333b70edbb9d7d76"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga35f74e50715b3602333b70edbb9d7d76">DefineThroughPointsParams</a> (const PointsVector &amp;points, <a class="el" href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">MbeSplineParamType</a> spType, bool closed, ParamsVector &amp;params)</td></tr>
+<tr class="memdesc:ga35f74e50715b3602333b70edbb9d7d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить параметрическое распределение точек.  <a href="group___base___algorithms.html#ga35f74e50715b3602333b70edbb9d7d76">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga35f74e50715b3602333b70edbb9d7d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9af883dd781bad55a263934fb06a663f"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector , class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga9af883dd781bad55a263934fb06a663f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga9af883dd781bad55a263934fb06a663f">BasisFuns</a> (ptrdiff_t i, double t, ptrdiff_t p, const KnotsVector &amp;knots, DoubleVector &amp;nsplines, DoubleVector &amp;lrVect)</td></tr>
+<tr class="memdesc:ga9af883dd781bad55a263934fb06a663f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление B - базиса (degree - порядок B-сплайна, p = (degree - 1) - степень полинома(B-сплайна)).  <a href="group___base___algorithms.html#ga9af883dd781bad55a263934fb06a663f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9af883dd781bad55a263934fb06a663f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga629230ed3cd6c164712a921457ba8514"><td class="memTemplParams" colspan="2">template&lt;class DoubleVector &gt; </td></tr>
+<tr class="memitem:ga629230ed3cd6c164712a921457ba8514"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga629230ed3cd6c164712a921457ba8514">CalcBsplvb</a> (const DoubleVector &amp;knots, double t, ptrdiff_t leftIndex, ptrdiff_t degree, DoubleVector &amp;biatx, DoubleVector &amp;lrVect)</td></tr>
+<tr class="memdesc:ga629230ed3cd6c164712a921457ba8514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить базисный сплайн по параметру t и узловому вектору.  <a href="group___base___algorithms.html#ga629230ed3cd6c164712a921457ba8514">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga629230ed3cd6c164712a921457ba8514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae17a8043373547c92e06466e86dc4be6"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector &gt; </td></tr>
+<tr class="memitem:gae17a8043373547c92e06466e86dc4be6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gae17a8043373547c92e06466e86dc4be6">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double *W, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, NurbsVector *PK)</td></tr>
+<tr class="memdesc:gae17a8043373547c92e06466e86dc4be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#gae17a8043373547c92e06466e86dc4be6">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae17a8043373547c92e06466e86dc4be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23674e1a07b5f921bfd9aa4f949de845"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector &gt; </td></tr>
+<tr class="memitem:ga23674e1a07b5f921bfd9aa4f949de845"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga23674e1a07b5f921bfd9aa4f949de845">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double w, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, NurbsVector *PK)</td></tr>
+<tr class="memdesc:ga23674e1a07b5f921bfd9aa4f949de845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#ga23674e1a07b5f921bfd9aa4f949de845">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga23674e1a07b5f921bfd9aa4f949de845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector , class DoubleTriple &gt; </td></tr>
+<tr class="memitem:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gaa3af2ee3c54851b06bc0660af45b5b02">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double *W, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, <a class="el" href="struct_double_triple.html">DoubleTriple</a> **DT, double **WT)</td></tr>
+<tr class="memdesc:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#gaa3af2ee3c54851b06bc0660af45b5b02">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa3af2ee3c54851b06bc0660af45b5b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga545dab23956f21347e9bd676847d645f"><td class="memTemplParams" colspan="2">template&lt;class Point , class NurbsVector , class KnotsVector , class DoubleTriple &gt; </td></tr>
+<tr class="memitem:ga545dab23956f21347e9bd676847d645f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga545dab23956f21347e9bd676847d645f">CurveDeriveCpts</a> (ptrdiff_t p, const KnotsVector &amp;U, const Point *P, const double w, size_t pointCount, const NurbsVector *PW, ptrdiff_t d, ptrdiff_t r1, ptrdiff_t r2, <a class="el" href="struct_double_triple.html">DoubleTriple</a> **DT, double **WT)</td></tr>
+<tr class="memdesc:ga545dab23956f21347e9bd676847d645f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#ga545dab23956f21347e9bd676847d645f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga545dab23956f21347e9bd676847d645f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21a75118df88f3fba6ba120c24f0702d"><td class="memTemplParams" colspan="2">template&lt;class Point , class Homogeneous &gt; </td></tr>
+<tr class="memitem:ga21a75118df88f3fba6ba120c24f0702d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga21a75118df88f3fba6ba120c24f0702d">CurveDeriveCpts</a> (ptrdiff_t p, const double *U, const Point *P, const double *W, size_t pointCount, ptrdiff_t r1, ptrdiff_t r2, Homogeneous *H0, Homogeneous *H1, Homogeneous *H2, Homogeneous *H3)</td></tr>
+<tr class="memdesc:ga21a75118df88f3fba6ba120c24f0702d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить все разностные формы кривой.  <a href="group___base___algorithms.html#ga21a75118df88f3fba6ba120c24f0702d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga21a75118df88f3fba6ba120c24f0702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40db03907664d89f34c215c15deac936"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga40db03907664d89f34c215c15deac936">CheckParam</a> (const double &amp;tMin, const double &amp;tMax, bool closed, double &amp;t)</td></tr>
+<tr class="memdesc:ga40db03907664d89f34c215c15deac936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать параметр t в параметрическую область кривой.  <a href="group___base___algorithms.html#ga40db03907664d89f34c215c15deac936">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga40db03907664d89f34c215c15deac936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47e49905d84cff5a32f403e250480623"><td class="memTemplParams" colspan="2">template&lt;class KnotsVector , class DoubleVector1 , class DoubleVector2 &gt; </td></tr>
+<tr class="memitem:ga47e49905d84cff5a32f403e250480623"><td class="memTemplItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga47e49905d84cff5a32f403e250480623">CalculateSplines</a> (size_t degree, const KnotsVector &amp;knots, bool closed, double &amp;t, DoubleVector1 &amp;nsplines, DoubleVector2 &amp;lrVect)</td></tr>
+<tr class="memdesc:ga47e49905d84cff5a32f403e250480623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать ненулевые сплайны при данном параметре.  <a href="group___base___algorithms.html#ga47e49905d84cff5a32f403e250480623">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga47e49905d84cff5a32f403e250480623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac81e951c80d51cc9762d7259ff5772dd"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:gac81e951c80d51cc9762d7259ff5772dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#gac81e951c80d51cc9762d7259ff5772dd">Swap</a> (Type *arr, size_t ind1, size_t ind2)</td></tr>
+<tr class="memdesc:gac81e951c80d51cc9762d7259ff5772dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перестановка 2 элементов в массиве.  <a href="group___base___algorithms.html#gac81e951c80d51cc9762d7259ff5772dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac81e951c80d51cc9762d7259ff5772dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28213721d039fdd7e2b6864514d8df40"><td class="memTemplParams" colspan="2">template&lt;class Type , class Type2 , class Type3 &gt; </td></tr>
+<tr class="memitem:ga28213721d039fdd7e2b6864514d8df40"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga28213721d039fdd7e2b6864514d8df40">InsertSort</a> (Type *base, size_t num, KsQSortCompFunc compareFunc, Type2 *base2=nullptr, Type3 *base3=nullptr)</td></tr>
+<tr class="memdesc:ga28213721d039fdd7e2b6864514d8df40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировка массива с возможностью синхронной перестановки элементов в двух других массивах. Эффективна для небольших массивов.  <a href="group___base___algorithms.html#ga28213721d039fdd7e2b6864514d8df40">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga28213721d039fdd7e2b6864514d8df40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0548094c037b1ea8f76b6f7f193303dd"><td class="memTemplParams" colspan="2">template&lt;class Type , class Type2 , class Type3 &gt; </td></tr>
+<tr class="memitem:ga0548094c037b1ea8f76b6f7f193303dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___algorithms.html#ga0548094c037b1ea8f76b6f7f193303dd">QuickSort</a> (Type *base, size_t num, KsQSortCompFunc compareFunc, Type2 *base2=nullptr, Type3 *base3=nullptr)</td></tr>
+<tr class="memdesc:ga0548094c037b1ea8f76b6f7f193303dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировка массива с возможностью синхронной перестановки элементов в двух других массивах. Работает с массивами элементов, которые предоставляют оператор присваивания. Не гарантирует сохранение порядка равных элементов.  <a href="group___base___algorithms.html#ga0548094c037b1ea8f76b6f7f193303dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0548094c037b1ea8f76b6f7f193303dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Макросы</h2>
+<a id="ga70201948152c3af9a97a6a7720725a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70201948152c3af9a97a6a7720725a2a">&#9670;&nbsp;</a></span>__REG_DUPLICATE_IMPL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __REG_DUPLICATE_IMPL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__CLASS</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><a class="code" href="class_mb_ref_item.html">MbRefItem</a> * copyItem = <span class="keyword">nullptr</span>;                               \</div>
+<div class="line">if ( iReg == <span class="keyword">nullptr</span> || !iReg-&gt;IsReg( <span class="keyword">this</span>, copyItem ) ) {    \</div>
+<div class="line">  copyItem = <span class="keyword">new</span> __CLASS;                                     \</div>
+<div class="line">  if ( iReg != <span class="keyword">nullptr</span> )                                      \</div>
+<div class="line">    iReg-&gt;SetReg( <span class="keyword">this</span>, copyItem );                           \</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_mb_ref_item_html"><div class="ttname"><a href="class_mb_ref_item.html">MbRefItem</a></div><div class="ttdoc">Объект с подсчетом ссылок.</div><div class="ttdef"><b>Definition:</b> reference_item.h:93</div></div>
+</div><!-- fragment -->
+<p>Создать копию объекта с использованием регистратора сдублированных объектов. </p>
+<p>Создать копию объекта с использованием регистратора сдублированных объектов. Если копия объекта уже зарегистрирована, то получить ее из регистратора. <br  />
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="ga6d58f77b031805804c115f31d445a5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d58f77b031805804c115f31d445a5f6">&#9670;&nbsp;</a></span>NormalizeAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double&amp; c3d::NormalizeAngle </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angleEpsilon</em> = <code><a class="el" href="class_math.html#aa11ac2ecdd6f81c080e2b42f036793a0">Math::AngleEps</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нормализовать угол. </p>
+<p>Исходный угол, если требуется, загоняется в интервал [0, 2*M_PI).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">angle</td><td>- Исходный угол, который требуется нормализовать.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angleEpsilon</td><td>- Погрешность угла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad564d7c43dbfb04caf10bc122432f6c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad564d7c43dbfb04caf10bc122432f6c9">&#9670;&nbsp;</a></span>AngleBetweenVectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double c3d::AngleBetweenVectors </td>
+          <td>(</td>
+          <td class="paramtype">const Type &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Type &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить угол между двумерными векторами. </p>
+<p>Вычислить угол между двумерными векторами. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>- Вектор 1.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v2</td><td>- Вектор 2.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Величину угла. </dd></dl>
+
+</div>
+</div>
+<a id="ga1e221948129c541d3be8fd908df8642b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e221948129c541d3be8fd908df8642b">&#9670;&nbsp;</a></span>ArFind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ParamsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::ArFind </td>
+          <td>(</td>
+          <td class="paramtype">const ParamsVector &amp;&#160;</td>
+          <td class="paramname"><em>arParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t &amp;&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти параметр в массиве. </p>
+<p>Находится индекс заданного параметра в массиве. Входной массив должен быть отсортирован по возрастанию параметров. Если задать начальное значение индекса близко к предполагаемому нахождению искомого параметра, поиск будет выполняться быстрее. Если в массиве нет параметра равного заданному, то найденным будет считаться первый параметр массива больший заданного. Если в массиве будет 1 элемент, то он будем считаться равным заданному.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arParam</td><td>- Множество параметров.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- Значение параметра, которое требуется найти в массиве.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">id</td><td>- Индекс найденного параметра в массиве.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>- true, если в массиве есть элементы, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="ga06fe16a6dc3baff4d44b86420cc92c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06fe16a6dc3baff4d44b86420cc92c7f">&#9670;&nbsp;</a></span>InRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::InRange </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Лежит ли число в интервале [x1, x2]. </p>
+<p>x1 может быть как началом, так и концом интервала, как и x2.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>- Начало или конец исходного интервала.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x2</td><td>- Начало или конец исходного интервала.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>- Исходное число, которое надо проверить.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если x лежит внутри интервала, <br  />
+ иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="gaa00af61c6ec03bafd6c7979d1ff2c6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa00af61c6ec03bafd6c7979d1ff2c6ad">&#9670;&nbsp;</a></span>IsParamOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::IsParamOn </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>treg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Находится ли параметр в диапазоне кривой. </p>
+<p>Диапазон кривой дается областью определения ее параметра [tmin, tmax].</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmin</td><td>- Минимальное значение параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmax</td><td>- Максимальное значение параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- Исходный параметр</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">treg</td><td>- Точность задания параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если t лежит внутри интервала [tmin, tmax], <br  />
+ иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="ga45c222a08b766afa03dc86475e40cd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45c222a08b766afa03dc86475e40cd85">&#9670;&nbsp;</a></span>InRangePlus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::InRangePlus </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code>FLT_EPSILON</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Лежит ли число в диапазоне [0, x1). </p>
+<p>x1 &gt;= 0 </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1</td><td>- Конец исходного интервала.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>- Исходное число, которое надо проверить.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если x лежит внутри интервала, <br  />
+ иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="ga2bdeb63304f32cf1740e430179b84bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bdeb63304f32cf1740e430179b84bb1">&#9670;&nbsp;</a></span>IsMonotonic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TypeVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::IsMonotonic </td>
+          <td>(</td>
+          <td class="paramtype">const TypeVector &amp;&#160;</td>
+          <td class="paramname"><em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isAscending</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowEqual</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Нормализован ли массив объектов по возрастанию или убыванию. </p>
+<p>Нормализован ли массив объектов по возрастанию или убыванию. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">items</td><td>- Одномерный массив объектов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isAscending</td><td>- Проверять на возрастание.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allowEqual</td><td>- Допускать равенство объектов.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если массив объектов отсортировано по возрастанию (убыванию), <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="gad33c21265a5635a1fd43b90d1ed5afec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad33c21265a5635a1fd43b90d1ed5afec">&#9670;&nbsp;</a></span>ArePointsOnLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point , class Vector , class PointsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::ArePointsOnLine </td>
+          <td>(</td>
+          <td class="paramtype">const PointsVector &amp;&#160;</td>
+          <td class="paramname"><em>pnts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>metricEps</em> = <code><a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Лежат ли точки на линии. </p>
+<p>Лежат ли точки на линии (улучшенный вариант IsPointOnLine). <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnts</td><td>- Набор точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">metricEps</td><td>- Точность проверки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если точки лежат на линии, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="ga7512443b796fad2a67fb794fa3823888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7512443b796fad2a67fb794fa3823888">&#9670;&nbsp;</a></span>IsPlanar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class SpacePoints &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::IsPlanar </td>
+          <td>(</td>
+          <td class="paramtype">const SpacePoints &amp;&#160;</td>
+          <td class="paramname"><em>pnts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> *&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>mEps</em> = <code><a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Лежит ли набор точек на плоскости. </p>
+<p>Лежит ли набор точек на плоскости. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnts</td><td>- Набор точек.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">place</td><td>- Система координат, в которой лежат точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mEps</td><td>- Точность проверки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если точки лежат на плоскости, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="ga804bacbc4c98d81afdee2bf13d39e0d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga804bacbc4c98d81afdee2bf13d39e0d2">&#9670;&nbsp;</a></span>IsPlanar2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::IsPlanar2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_array2.html">Array2</a>&lt; Point &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pnts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> *&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>mEps</em> = <code><a class="el" href="mb__variables_8h.html#ad9781e4a7c4323f9dd219e55c18c41e6">METRIC_EPSILON</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Лежит ли набор точек на плоскости. </p>
+<p>Лежит ли набор точек на плоскости. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnts</td><td>- Набор точек.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">place</td><td>- Система координат, в которой лежат точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mEps</td><td>- Точность проверки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если точки лежат на плоскости, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="ga90d7618054de26417a4ae7d9815f8a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90d7618054de26417a4ae7d9815f8a6d">&#9670;&nbsp;</a></span>CalculateBoundingBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PointsVector , class BBox &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::CalculateBoundingBox </td>
+          <td>(</td>
+          <td class="paramtype">const PointsVector &amp;&#160;</td>
+          <td class="paramname"><em>pnts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BBox &amp;&#160;</td>
+          <td class="paramname"><em>bbox</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать габарит набора точек. </p>
+<p>Рассчитать габарит набора точек. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnts</td><td>- Набор точек.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bbox</td><td>- Габарит.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если габарит рассчитан, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="gaa8c4a80dba9b1934a521247f851df44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa8c4a80dba9b1934a521247f851df44c">&#9670;&nbsp;</a></span>CalculateBoundingBox2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point , class BBox &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::CalculateBoundingBox2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_array2.html">Array2</a>&lt; Point &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pnts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BBox &amp;&#160;</td>
+          <td class="paramname"><em>bbox</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать габарит набора точек. </p>
+<p>Рассчитать габарит набора точек. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnts</td><td>- Набор точек.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bbox</td><td>- Габарит.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если габарит рассчитан, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="ga6613a51135f29736a2748f71fac10e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6613a51135f29736a2748f71fac10e05">&#9670;&nbsp;</a></span>SetLimitParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DoubleVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> c3d::SetLimitParam </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#ac1be80d720ec08ce4b01dc311674fd4a">DoubleVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>tarr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>teps</em> = <code><a class="el" href="class_math.html#a96b07cfb0f21bb2ea10c50bc79c9c585">Math::paramEpsilon</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установить область изменения параметра. </p>
+<p>Установить (репараметризовать) область изменения параметра в массиве. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tarr</td><td>- Множество параметров, упорядоченных по возрастанию параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmin</td><td>- Минимальное значение параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmax</td><td>- Максимальное значение параметра. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga186a74f9511de75f73b590e444bebb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga186a74f9511de75f73b590e444bebb35">&#9670;&nbsp;</a></span>SortSynchroArrays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DoubleParamsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SortSynchroArrays </td>
+          <td>(</td>
+          <td class="paramtype">DoubleParamsVector &amp;&#160;</td>
+          <td class="paramname"><em>tt0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleParamsVector &amp;&#160;</td>
+          <td class="paramname"><em>tt2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkCoincidentParams</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отсортировать массив. </p>
+<p>Первый массив сортируется по возрастанию параметра. Элементы второго массива переставляются синхронно с элементами первого. Если установлен соответствующий флаг, то проводится проверка на наличие в массиве tt0 совпадающих параметров. Если они есть, то оставляется один и соответствующий ему в tt2. При этом в tt0 оставляется тот параметр, для которого соответствующий элемент в tt2 имеет минимальное значение.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">tt0</td><td>- Исходный массив 1 параметров, который требуется отсортировать.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tt2</td><td>- Исходный массив 2 параметров, который требуется отсортировать синхронно с tt0.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Точность сравнения параметров.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkCoincidentParams</td><td>- Флаг проверки на наличие совпадающих параметров. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga349fda6b5779f1214705142c331f6135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga349fda6b5779f1214705142c331f6135">&#9670;&nbsp;</a></span>SortArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DoubleParamsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> SortArray </td>
+          <td>(</td>
+          <td class="paramtype">DoubleParamsVector &amp;&#160;</td>
+          <td class="paramname"><em>tt0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkCoincidentParams</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отсортировать массив. </p>
+<p>Множество сортируется по возрастанию параметра. Если установлен соответствующий флаг, то проводится проверка на наличие совпадающих параметров. Если они есть, то оставляется только один из них.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">tt0</td><td>- Исходный массив параметров, который требуется отсортировать.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Точность сравнения параметров.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkCoincidentParams</td><td>- Флаг проверки на наличие совпадающих параметров. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad6ed7929eb7d979532bdb21b1f7517b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6ed7929eb7d979532bdb21b1f7517b6">&#9670;&nbsp;</a></span>CorrectCiclicParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CorrectCiclicParameter </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перебросить параметр на период. </p>
+<p>Перебросить параметр на период. Переброс происходит в сторону начального приближения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>- Период.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p0</td><td>- Начальное приближение параметра.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">p</td><td>- Уточняемый параметр.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если переброс был выполнен, <br  />
+ иначе - false. </dd></dl>
+
+</div>
+</div>
+<a id="ga51e4521bb173fabfc572f29bc9e942c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51e4521bb173fabfc572f29bc9e942c8">&#9670;&nbsp;</a></span>CorrectParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CorrectParameter </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code><a class="el" href="class_math.html#a5ed3096fd796f242fee4e81ad6d6461a">Math::paramRegion</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уточнить параметр. </p>
+<p>Если параметр замкнутый или должен находится не на расширении параметрической области, то он в случае необходимости загоняется внутрь интервала [pmin, pmax].</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pext</td><td>- Используется ли расширение параметрической области.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pc</td><td>- Замкнутость области определения параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmin</td><td>- Минимальное значение параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmax</td><td>- Максимальное значение параметра.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td>- Уточняемый параметр.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Точность вычислений. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4af4d21c865b040773536efeac74c346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4af4d21c865b040773536efeac74c346">&#9670;&nbsp;</a></span>CorrectCheckNearParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CorrectCheckNearParameter </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tPeriod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>ext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tRegion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Коррекция параметра с проверкой. </p>
+<p>Если после коррекции параметр выходит за пределы интервала [tmin, tmax], а флаг использования параметра на расширении параметрической области равен false, то параметр приравнивается либо к tmin, либо к tmax, в зависимости от того, с какой стороны он вышел за пределы интервала [tmin, tmax].</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmin</td><td>- Минимальное значение параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmax</td><td>- Максимальное значение параметра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tPeriod</td><td>- Период.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ext</td><td>- Используется ли расширение параметрической области.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tRegion</td><td>- Точность задания параметра.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- Уточняемый параметр.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если не было выхода за пределы интервала [tmin, tmax] после коррекции, <br  />
+ иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="ga74e0138d6489dc01317684d5e0e32ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74e0138d6489dc01317684d5e0e32ae9">&#9670;&nbsp;</a></span>MatrixRoughInverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MatrixRoughInverse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place3D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> *&#160;</td>
+          <td class="paramname"><em>pDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>seeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>seeZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить матрицу инвертирования значка. </p>
+<p>Рассчитывается матрица инвертирования в трехмерных размерах.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place3D</td><td>- Локальная система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDir</td><td>- Направление.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">seeY</td><td>- Ось Y экрана.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">seeZ</td><td>- Ось Z экрана.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">matrix</td><td>- Матрица инвертирования.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если матрица найдена, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="ga79016c718039de4213b63d066576405e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79016c718039de4213b63d066576405e">&#9670;&nbsp;</a></span>MatrixTextInverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MatrixTextInverse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place3D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> *&#160;</td>
+          <td class="paramname"><em>pDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>seeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>seeZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить матрицу инвертирования текста. </p>
+<p>Рассчитывается матрица инвертирования в трехмерных размерах.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place3D</td><td>- Локальная система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDir</td><td>- Направление.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">seeY</td><td>- Ось Y экрана.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">seeZ</td><td>- Ось Z экрана.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">matrix</td><td>- Матрица инвертирования.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если матрица найдена, <br  />
+ иначе false </dd></dl>
+
+</div>
+</div>
+<a id="ga5bc16de71aa31848b0d4753e7a5205af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5bc16de71aa31848b0d4753e7a5205af">&#9670;&nbsp;</a></span>RoundedValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RoundedValue </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Округлить значение до n значащих цифр. </p>
+<p>Округлить значение до n значащих цифр. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">value</td><td>- Округляемое число.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>- Число значащих цифр.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если округление выполнено, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="ga92c83571130b628819f4dd6ae87c09ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92c83571130b628819f4dd6ae87c09ba">&#9670;&nbsp;</a></span>QuadraticEquation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int QuadraticEquation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; double, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить квадратное уравнение вида a * x^2 + b * x + c = 0 без внешнего управления погрешностью. </p>
+<p>Решить квадратное уравнение вида a * x^2 + b * x + c = 0 без внешнего управления погрешностью. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>- Коэффициент при квадрате неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>- Коэффициент при неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Коэффициент - константный член уравнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">d</td><td>- Дискриминант уравнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">res</td><td>- Корни уравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество действительных решений и дискриминант уравнения. </dd></dl>
+
+</div>
+</div>
+<a id="ga539504eddb94dc853b19b092ccb41586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga539504eddb94dc853b19b092ccb41586">&#9670;&nbsp;</a></span>QuadraticEquation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int QuadraticEquation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em> = <code><a class="el" href="class_math.html#a96b07cfb0f21bb2ea10c50bc79c9c585">Math::paramEpsilon</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить квадратное уравнение вида a * x^2 + b * x + c = 0. </p>
+<p>Решить квадратное уравнение вида a * x^2 + b * x + c = 0. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>- Коэффициент при квадрате неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>- Коэффициент при неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Коэффициент - константный член уравнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x1</td><td>- Первый корень уравнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x2</td><td>- Второй корень уравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">epsilon</td><td>- Погрешность нахождения решения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество действительных решений. </dd></dl>
+
+</div>
+</div>
+<a id="ga4bff97f91fa2de7cadeea275b5b649eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4bff97f91fa2de7cadeea275b5b649eb">&#9670;&nbsp;</a></span>QubicEquation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int QubicEquation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить кубическое уравнение вида a * x^3 + b * x^2 + c * x + d = 0. </p>
+<p>Решить кубическое уравнение вида a * x^3 + b * x^2 + c * x + d = 0. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>- Коэффициент при кубе неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>- Коэффициент при квадрате неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Коэффициент при неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- Коэффициент - константный член уравнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>- Корни уравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">epsilon</td><td>- Погрешность нахождения решения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество действительных решений. </dd></dl>
+
+</div>
+</div>
+<a id="ga1540703d94455d31775828a542ed4093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1540703d94455d31775828a542ed4093">&#9670;&nbsp;</a></span>CubicEquation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CubicEquation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>i2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>i3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить кубическое уравнение вида x^3 - i1 * x^2 + i2 * x - i3 = 0. </p>
+<p>Решить кубическое уравнение вида x^3 - i1 * x^2 + i2 * x - i3 = 0. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i1</td><td>- Коэффициент при квадрате неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i2</td><td>- Коэффициент при неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i3</td><td>- Коэффициент - константный член уравнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>- Корни уравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">epsilon</td><td>- Погрешность нахождения решения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество действительных решений. </dd></dl>
+
+</div>
+</div>
+<a id="ga3b3d71a4c4be9110749d47f5743acdd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b3d71a4c4be9110749d47f5743acdd3">&#9670;&nbsp;</a></span>Degree4Equation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Degree4Equation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Решить уравнение четвертой степени вида a * x^4 + b * x^3 + с * x^2 + d * x + e = 0. </p>
+<p>Решить уравнение четвертой степени вида a * x^4 + b * x^3 + с * x^2 + d * x + e = 0. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>- Коэффициент при четвертой степени неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>- Коэффициент при кубе неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>- Коэффициент при квадрате неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- Коэффициент при неизвестной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>- Коэффициент - константный член уравнения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>- Корни уравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">epsilon</td><td>- Погрешность нахождения решения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество действительных решений. </dd></dl>
+
+</div>
+</div>
+<a id="ga950592a3c2e0189d53ad0ff3a5999b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga950592a3c2e0189d53ad0ff3a5999b2f">&#9670;&nbsp;</a></span>EigenVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> EigenVector </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>[c3d::SPACE_DIM][c3d::SPACE_DIM], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить собственный вектор матрицы 3 x 3. </p>
+<p>Определить собственный вектор матрицы 3 x 3. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>- Матрица 3 x 3.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vect</td><td>- Собственный вектор матрицы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa613819e3f4623a098a436cd7f3ee092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa613819e3f4623a098a436cd7f3ee092">&#9670;&nbsp;</a></span>EqualPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::EqualPoints </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить точки на равенство. </p>
+<p>Точки считаются равными, если их координаты отличаются на величину, не превышающую заданную погрешность.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Первая декартова точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>- Вторая декартова точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая погрешность совпадения точек.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если точки совпадают, <br  />
+ иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="gac8f98cd9f1b9f6c23a4df761d6f39d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8f98cd9f1b9f6c23a4df761d6f39d0e">&#9670;&nbsp;</a></span>EqualVectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Vector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::EqualVectors </td>
+          <td>(</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить векторы на равенство с заданной точностью. </p>
+<p>Проверка равенства векторов с заданной точностью. Векторы считаются равными, если их координаты отличаются на величину, не превышающую заданную погрешность.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Первый вектор.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>- Второй вектор.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Погрешность координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если векторы равны. </dd></dl>
+
+</div>
+</div>
+<a id="ga378b0fd7fe809a8f7963cd11f05aeb6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga378b0fd7fe809a8f7963cd11f05aeb6b">&#9670;&nbsp;</a></span>EqualMatrices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Matrix &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c3d::EqualMatrices </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>m2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сравнить матрицы. </p>
+<p>Толерантное сравнение двух матриц.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m1,m2</td><td>- Исходные матрицы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Толерантность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если матрицы равны, <br  />
+ false в противном случае. </dd></dl>
+
+</div>
+</div>
+<a id="gac557ae753e312ae335981055ef3fa111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac557ae753e312ae335981055ef3fa111">&#9670;&nbsp;</a></span>GetCosSin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> c3d::GetCosSin </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>cosT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>sinT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление косинуса и синуса. </p>
+<p>В 1.7 раза быстрее, чем отдельное вычисление sin и cos, проверено под release с оптимизацией.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tt</td><td>- Угол (в радианах).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cosT</td><td>- Косинус угла tt.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sinT</td><td>- Синус угла tt. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0b92b1183644f386127643f5d08268c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b92b1183644f386127643f5d08268c2">&#9670;&nbsp;</a></span>GetParamDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double GetParamDistance </td>
+          <td>(</td>
+          <td class="paramtype">const Type &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Type &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">MbeSplineParamType</a>&#160;</td>
+          <td class="paramname"><em>spType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дать меру расстояния. </p>
+<p>Дать меру расстояния.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1,p2</td><td>- Точки между которыми ищется расстояние.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spType</td><td>- Тип параметризации сплайновых объектов.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расстояние. </dd></dl>
+
+</div>
+</div>
+<a id="gade70fe1c96b3bce08f3f1dfc249750bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade70fe1c96b3bce08f3f1dfc249750bc">&#9670;&nbsp;</a></span>IsValidNurbsParams() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidNurbsParams </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить параметры инициализации nurbs-объекта. </p>
+<p>Проверить параметры инициализации nurbs-объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcnt</td><td>- Число точек.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="gad3eecfd2a18613ac796c2f041ccb92b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3eecfd2a18613ac796c2f041ccb92b9">&#9670;&nbsp;</a></span>IsValidNurbsParams() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidNurbsParams </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить параметры инициализации nurbs-объекта. </p>
+<p>Проверить параметры инициализации nurbs-объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcnt</td><td>- Число точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wcnt</td><td>- Число весов.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="gae9c0bf8d62af089a555b471073906467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9c0bf8d62af089a555b471073906467">&#9670;&nbsp;</a></span>IsValidNurbsParams() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidNurbsParams </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>kcnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить параметры инициализации nurbs-объекта. </p>
+<p>Проверить параметры инициализации nurbs-объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcnt</td><td>- Число точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wcnt</td><td>- Число весов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kcnt</td><td>- Число узлов.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="ga50daee8684278ea02b9d0b4cbaf361d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50daee8684278ea02b9d0b4cbaf361d9">&#9670;&nbsp;</a></span>IsValidNurbsParamsExt() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidNurbsParamsExt </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить параметры инициализации nurbs-кривой. </p>
+<p>Проверить параметры инициализации nurbs-кривой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcnt</td><td>- Число точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Узловой вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="gaccb9c870e5a4aa84aedf6714456a9c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccb9c870e5a4aa84aedf6714456a9c72">&#9670;&nbsp;</a></span>IsValidNurbsParamsExt() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PointVector , class DoubleVector , class WeightVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidNurbsParamsExt </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PointVector &amp;&#160;</td>
+          <td class="paramname"><em>pnts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WeightVector *&#160;</td>
+          <td class="paramname"><em>wts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DoubleVector *&#160;</td>
+          <td class="paramname"><em>knots</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить параметры инициализации nurbs-кривой. </p>
+<p>Проверить параметры инициализации nurbs-кривой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnts</td><td>- Точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wts</td><td>- Веса точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Узловой вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="gabc990cd2c44160f97de56591adc897f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc990cd2c44160f97de56591adc897f0">&#9670;&nbsp;</a></span>IsValidNurbsParamsExt() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PointVector , class WeightVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidNurbsParamsExt </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PointVector &amp;&#160;</td>
+          <td class="paramname"><em>pnts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WeightVector *&#160;</td>
+          <td class="paramname"><em>wts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить параметры инициализации nurbs-кривой. </p>
+<p>Проверить параметры инициализации nurbs-кривой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnts</td><td>- Точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wts</td><td>- Веса точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Узловой вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="gae7193ff434101c3b0b316d2dadc6e69f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7193ff434101c3b0b316d2dadc6e69f">&#9670;&nbsp;</a></span>IsValidNurbsKnots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidNurbsKnots </td>
+          <td>(</td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code><a class="el" href="mb__variables_8h.html#a602d939a0f94df238f45f78caf760ae1">EXTENT_EPSILON</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить узловой вектор nurbs-объекта. </p>
+<p>Проверить узловой вектор nurbs-объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Узловой вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="ga2b9c9373ad90b34e1be730603e323f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b9c9373ad90b34e1be730603e323f9e">&#9670;&nbsp;</a></span>RestoreClippedKnots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RestoreClippedKnots </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pointsCnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить и попытаться починить обрезанный узловой вектор nurbs-объекта. </p>
+<p>Проверить и попытаться починить обрезанный узловой вектор nurbs-объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pointsCnt</td><td>- Количество точек.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">knots</td><td>- Узловой вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если параметры согласованы. </dd></dl>
+
+</div>
+</div>
+<a id="gac24ca29b2f1169b710e64a211a560912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac24ca29b2f1169b710e64a211a560912">&#9670;&nbsp;</a></span>KnotIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ptrdiff_t KnotIndex </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определение индекса узла left для первой ненулевой функции. </p>
+<p>Определение индекса узла left для первой ненулевой функции (knots[mid] &lt;= t &lt; knots[mid + 1]).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Множество узлов.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t</td><td>- Значение параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс узла. </dd></dl>
+
+</div>
+</div>
+<a id="ga0fdd4fa1a56de3d751ea6e91f3aa8c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fdd4fa1a56de3d751ea6e91f3aa8c43">&#9670;&nbsp;</a></span>DefineKnotsVector() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ptrdiff_t DefineKnotsVector </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>uppPointsIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить узловой вектор (равномерная параметризация). </p>
+<p>Определить узловой вектор (равномерная параметризация).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uppPointsIndex</td><td>- Индекс последней точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Узловой вектор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga751a91ad19056d86b19a386bce27ebfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga751a91ad19056d86b19a386bce27ebfa">&#9670;&nbsp;</a></span>DefineKnotsVector() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ParamsVector , class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DefineKnotsVector </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ParamsVector *&#160;</td>
+          <td class="paramname"><em>paramsPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>kMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить узловой вектор. </p>
+<p>Определить узловой вектор.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>- Количество точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>- Параметры точек (для замкнутого count+1).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kMode</td><td>- Способ построения узлового вектора при наличии параметров.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">knots</td><td>- Узловой вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если набор параметров сформирован. </dd></dl>
+
+</div>
+</div>
+<a id="ga35f74e50715b3602333b70edbb9d7d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35f74e50715b3602333b70edbb9d7d76">&#9670;&nbsp;</a></span>DefineThroughPointsParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PointsVector , class ParamsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DefineThroughPointsParams </td>
+          <td>(</td>
+          <td class="paramtype">const PointsVector &amp;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___data___structures.html#ga3877650b895d602b5b27749e4bdadc21">MbeSplineParamType</a>&#160;</td>
+          <td class="paramname"><em>spType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamsVector &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить параметрическое распределение точек. </p>
+<p>Определить параметрическое распределение точек.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>- Массив точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spType</td><td>- Тип параметризации сплайновых объектов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">params</td><td>- Параметрическое распределение точек.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если набор параметров сформирован. </dd></dl>
+
+</div>
+</div>
+<a id="ga9af883dd781bad55a263934fb06a663f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9af883dd781bad55a263934fb06a663f">&#9670;&nbsp;</a></span>BasisFuns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KnotsVector , class DoubleVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BasisFuns </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleVector &amp;&#160;</td>
+          <td class="paramname"><em>nsplines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleVector &amp;&#160;</td>
+          <td class="paramname"><em>lrVect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисление B - базиса (degree - порядок B-сплайна, p = (degree - 1) - степень полинома(B-сплайна)). </p>
+<p>Вычисление B - базиса (degree - порядок B-сплайна, p = (degree - 1) - степень полинома(B-сплайна)). Для ускорения используется рабочий вектор lr = { left[p+1], right[p+1] } ).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>- Индекс в массиве узлов, получаемый с помощью функции <a class="el" href="group___base___algorithms.html#gac24ca29b2f1169b710e64a211a560912" title="Определение индекса узла left для первой ненулевой функции.">KnotIndex()</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- Параметр.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- p = degree - 1, где degree - порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Узловой вектор.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nsplines</td><td>- Массив размерности degree, заполняется значениями сплайна в поля 0..degree-2; nsplines[degree-1] = 0.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">lrVect</td><td>- Массив размерности 2*(p+1) = 2*degree, содержимое игнорируется и будет перезаписано. Нужен для ускорения работы функции. В результате работы в нем останется мусор.. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga629230ed3cd6c164712a921457ba8514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga629230ed3cd6c164712a921457ba8514">&#9670;&nbsp;</a></span>CalcBsplvb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DoubleVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CalcBsplvb </td>
+          <td>(</td>
+          <td class="paramtype">const DoubleVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>leftIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleVector &amp;&#160;</td>
+          <td class="paramname"><em>biatx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleVector &amp;&#160;</td>
+          <td class="paramname"><em>lrVect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить базисный сплайн по параметру t и узловому вектору. </p>
+<p>Вычислить базисный сплайн по параметру t и узловому вектору. </p>
+
+</div>
+</div>
+<a id="gae17a8043373547c92e06466e86dc4be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae17a8043373547c92e06466e86dc4be6">&#9670;&nbsp;</a></span>CurveDeriveCpts() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point , class NurbsVector , class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CurveDeriveCpts </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Point *&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pointCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NurbsVector *&#160;</td>
+          <td class="paramname"><em>PW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NurbsVector *&#160;</td>
+          <td class="paramname"><em>PK</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить все разностные формы кривой. </p>
+<p>Вычислить все (или опционально некоторые) разностные формы кривой (характеристические производные). </p>
+
+</div>
+</div>
+<a id="ga23674e1a07b5f921bfd9aa4f949de845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23674e1a07b5f921bfd9aa4f949de845">&#9670;&nbsp;</a></span>CurveDeriveCpts() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point , class NurbsVector , class KnotsVector &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CurveDeriveCpts </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Point *&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pointCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NurbsVector *&#160;</td>
+          <td class="paramname"><em>PW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NurbsVector *&#160;</td>
+          <td class="paramname"><em>PK</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить все разностные формы кривой. </p>
+<p>Вычислить все (или опционально некоторые) разностные формы кривой (характеристические производные). </p>
+
+</div>
+</div>
+<a id="gaa3af2ee3c54851b06bc0660af45b5b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3af2ee3c54851b06bc0660af45b5b02">&#9670;&nbsp;</a></span>CurveDeriveCpts() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point , class NurbsVector , class KnotsVector , class DoubleTriple &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CurveDeriveCpts </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Point *&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pointCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NurbsVector *&#160;</td>
+          <td class="paramname"><em>PW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_double_triple.html">DoubleTriple</a> **&#160;</td>
+          <td class="paramname"><em>DT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>WT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить все разностные формы кривой. </p>
+<p>Вычислить все (или опционально некоторые) разностные формы кривой (характеристические производные). </p>
+
+</div>
+</div>
+<a id="ga545dab23956f21347e9bd676847d645f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga545dab23956f21347e9bd676847d645f">&#9670;&nbsp;</a></span>CurveDeriveCpts() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point , class NurbsVector , class KnotsVector , class DoubleTriple &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CurveDeriveCpts </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Point *&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pointCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const NurbsVector *&#160;</td>
+          <td class="paramname"><em>PW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_double_triple.html">DoubleTriple</a> **&#160;</td>
+          <td class="paramname"><em>DT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>WT</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить все разностные формы кривой. </p>
+<p>Вычислить все (или опционально некоторые) разностные формы кривой (характеристические производные). </p>
+
+</div>
+</div>
+<a id="ga21a75118df88f3fba6ba120c24f0702d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21a75118df88f3fba6ba120c24f0702d">&#9670;&nbsp;</a></span>CurveDeriveCpts() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point , class Homogeneous &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CurveDeriveCpts </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Point *&#160;</td>
+          <td class="paramname"><em>P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>W</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pointCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Homogeneous *&#160;</td>
+          <td class="paramname"><em>H0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Homogeneous *&#160;</td>
+          <td class="paramname"><em>H1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Homogeneous *&#160;</td>
+          <td class="paramname"><em>H2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Homogeneous *&#160;</td>
+          <td class="paramname"><em>H3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить все разностные формы кривой. </p>
+<p>Вычислить все (или опционально некоторые) разностные формы кривой (характеристические производные). </p>
+
+</div>
+</div>
+<a id="ga40db03907664d89f34c215c15deac936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40db03907664d89f34c215c15deac936">&#9670;&nbsp;</a></span>CheckParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CheckParam </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>tMax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загнать параметр t в параметрическую область кривой. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tMin,tMax</td><td>- Параметры, задающие параметрическую область кривой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости кривой.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t</td><td>- Исходный параметр. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga47e49905d84cff5a32f403e250480623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47e49905d84cff5a32f403e250480623">&#9670;&nbsp;</a></span>CalculateSplines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KnotsVector , class DoubleVector1 , class DoubleVector2 &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ptrdiff_t CalculateSplines </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>degree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KnotsVector &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleVector1 &amp;&#160;</td>
+          <td class="paramname"><em>nsplines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleVector2 &amp;&#160;</td>
+          <td class="paramname"><em>lrVect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать ненулевые сплайны при данном параметре. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">degree</td><td>- Порядок B-сплайна.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">knots</td><td>- Множество узлов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Признак замкнутости.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t</td><td>- Параметр</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nsplines</td><td>- Множество размерности degree, заполняется значениями сплайна.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lrVect</td><td>- Вспомогательный массив (содержит мусор).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Номер первого ненулевого B-сплайна. </dd></dl>
+
+</div>
+</div>
+<a id="gac81e951c80d51cc9762d7259ff5772dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac81e951c80d51cc9762d7259ff5772dd">&#9670;&nbsp;</a></span>Swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> Swap </td>
+          <td>(</td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ind1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ind2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перестановка 2 элементов в массиве. </p>
+<p>Переставляются заданные элементы массива. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">base</td><td>- Указатель на массив. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ind1</td><td>- Индекс первого элемента. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ind2</td><td>- Индекс второго элемента. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga28213721d039fdd7e2b6864514d8df40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28213721d039fdd7e2b6864514d8df40">&#9670;&nbsp;</a></span>InsertSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Type2 , class Type3 &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InsertSort </td>
+          <td>(</td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KsQSortCompFunc&#160;</td>
+          <td class="paramname"><em>compareFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type2 *&#160;</td>
+          <td class="paramname"><em>base2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type3 *&#160;</td>
+          <td class="paramname"><em>base3</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортировка массива с возможностью синхронной перестановки элементов в двух других массивах. Эффективна для небольших массивов. </p>
+<p>Первый массив сортируется по возрастанию параметра. Элементы второго и третьего массивов переставляются синхронно с элементами первого. Подразумевается, что массивы имеют одинаковый размер.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">base</td><td>- Указатель на первый массив, который требуется отсортировать.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>- Количество элементов в массиве.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compareFunc</td><td>- Указатель на функцию сравнения элементов первого массива. Аналог функции strcmp, предоставляемый пользователем для сравнения элементов массива. Принимает 2 указателя на элементы и возвращает: отрицательное значение, если 1&lt;2; 0, если 1=2; положительное значение, если 1&gt;2.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">base2</td><td>- Указатель на второй массив (может быть nullptr).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">base3</td><td>- Указатель на третий массив (может быть nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0548094c037b1ea8f76b6f7f193303dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0548094c037b1ea8f76b6f7f193303dd">&#9670;&nbsp;</a></span>QuickSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type , class Type2 , class Type3 &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> QuickSort </td>
+          <td>(</td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KsQSortCompFunc&#160;</td>
+          <td class="paramname"><em>compareFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type2 *&#160;</td>
+          <td class="paramname"><em>base2</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type3 *&#160;</td>
+          <td class="paramname"><em>base3</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортировка массива с возможностью синхронной перестановки элементов в двух других массивах. Работает с массивами элементов, которые предоставляют оператор присваивания. Не гарантирует сохранение порядка равных элементов. </p>
+<p>Первый массив сортируется по возрастанию параметра. Элементы второго и третьего массивов переставляются синхронно с элементами первого. Подразумевается, что массивы имеют одинаковый размер.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">base</td><td>- Указатель на первый массив, который требуется отсортировать.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>- Количество элементов в массиве.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compareFunc</td><td>- Указатель на функцию сравнения элементов первого массива. Аналог функции strcmp, предоставляемый пользователем для сравнения элементов массивы. Принимает 2 указателя на элементы и возвращает: отрицательное значение, если 1&lt;2; 0, если 1=2, положительное значение, если 1&gt;2.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">base2</td><td>- Указатель на второй массив (может быть nullptr).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">base3</td><td>- Указатель на третий массив (может быть nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

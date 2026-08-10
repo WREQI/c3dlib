@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Шаблон класса KdTree&lt; Scalar &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_kd_tree.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_kd_tree-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Шаблон класса KdTree&lt; Scalar &gt;<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___tools.html">Библиотека шаблонов и сериализации</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>К-d дерево.  
+ <a href="class_kd_tree.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;templ_kdtree.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса KdTree&lt; Scalar &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_kd_tree__coll__graph.svg" width="188" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9593294c3ba6f12f65cc5293ac43e30e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a9593294c3ba6f12f65cc5293ac43e30e">KdTree</a> (const PointList &amp;<a class="el" href="class_kd_tree.html#a8649f9b52f481ae76efeae22dd38c523">points</a>, size_t minLeafSize=16, size_t maxDepth=64, bool balanced=false)</td></tr>
+<tr class="memdesc:a9593294c3ba6f12f65cc5293ac43e30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_kd_tree.html#a9593294c3ba6f12f65cc5293ac43e30e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9593294c3ba6f12f65cc5293ac43e30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b8325c6c57ab004e5130683d279c1b"><td class="memItemLeft" align="right" valign="top"><a id="af8b8325c6c57ab004e5130683d279c1b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#af8b8325c6c57ab004e5130683d279c1b">~KdTree</a> ()</td></tr>
+<tr class="memdesc:af8b8325c6c57ab004e5130683d279c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:af8b8325c6c57ab004e5130683d279c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции очереди с приоритетом.</div></td></tr>
+<tr class="memitem:ae024fd8d5b175a55b2255fe3c5d8be9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#ae024fd8d5b175a55b2255fe3c5d8be9f">GetKNearestNeighbors</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;queryPoint, size_t neighborCount, <a class="el" href="class_priority_queue.html">ScalarPriorityQueue</a> &amp;neighborQueue)</td></tr>
+<tr class="memdesc:ae024fd8d5b175a55b2255fe3c5d8be9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти k ближайших соседей для данной точки.  <a href="class_kd_tree.html#ae024fd8d5b175a55b2255fe3c5d8be9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae024fd8d5b175a55b2255fe3c5d8be9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecdf991457829307c579dbc1b9bfa181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#aecdf991457829307c579dbc1b9bfa181">GetRadiusNeighbors</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;queryPoint, double radius, const <a class="el" href="namespacec3d.html#a036a7a6d9f9b8b60bd540559fd599871">c3d::BoolVector</a> &amp;used, <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;neighbors)</td></tr>
+<tr class="memdesc:aecdf991457829307c579dbc1b9bfa181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайших соседей внутри сферы заданного радиуса для данной точки.  <a href="class_kd_tree.html#aecdf991457829307c579dbc1b9bfa181">Подробнее...</a><br /></td></tr>
+<tr class="separator:aecdf991457829307c579dbc1b9bfa181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a23475e72a406452130fd6b7c29f4f3"><td class="memItemLeft" align="right" valign="top"><a id="a0a23475e72a406452130fd6b7c29f4f3"></a>
+const NodeList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a0a23475e72a406452130fd6b7c29f4f3">GetNodes</a> ()</td></tr>
+<tr class="memdesc:a0a23475e72a406452130fd6b7c29f4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить узлы дерева. <br /></td></tr>
+<tr class="separator:a0a23475e72a406452130fd6b7c29f4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314d2a37cb6076558d33474c5b397b2d"><td class="memItemLeft" align="right" valign="top"><a id="a314d2a37cb6076558d33474c5b397b2d"></a>
+const PointList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a314d2a37cb6076558d33474c5b397b2d">GetPoints</a> ()</td></tr>
+<tr class="memdesc:a314d2a37cb6076558d33474c5b397b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить множество точек. <br /></td></tr>
+<tr class="separator:a314d2a37cb6076558d33474c5b397b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0639815b499adab815dd3744ac29b9e7"><td class="memItemLeft" align="right" valign="top"><a id="a0639815b499adab815dd3744ac29b9e7"></a>
+const IndexList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a0639815b499adab815dd3744ac29b9e7">GetIndices</a> ()</td></tr>
+<tr class="memdesc:a0639815b499adab815dd3744ac29b9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить индексы точек. <br /></td></tr>
+<tr class="separator:a0639815b499adab815dd3744ac29b9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6b3e68e33b8834a9d3258a65bcda57"><td class="memItemLeft" align="right" valign="top"><a id="a5b6b3e68e33b8834a9d3258a65bcda57"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a5b6b3e68e33b8834a9d3258a65bcda57">GetNumLevel</a> ()</td></tr>
+<tr class="memdesc:a5b6b3e68e33b8834a9d3258a65bcda57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить глубину дерева. <br /></td></tr>
+<tr class="separator:a5b6b3e68e33b8834a9d3258a65bcda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05c271b4b9a3c31356b6dead34fb9a9"><td class="memItemLeft" align="right" valign="top"><a id="af05c271b4b9a3c31356b6dead34fb9a9"></a>
+const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#af05c271b4b9a3c31356b6dead34fb9a9">GetAxisAlignedBox</a> ()</td></tr>
+<tr class="memdesc:af05c271b4b9a3c31356b6dead34fb9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить ограничивающий куб. <br /></td></tr>
+<tr class="separator:af05c271b4b9a3c31356b6dead34fb9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a33c72c95a73a5b337015a6e58c683164"><td class="memItemLeft" align="right" valign="top"><a id="a33c72c95a73a5b337015a6e58c683164"></a>
+<a class="el" href="class_mb_cube.html">MbCube</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a33c72c95a73a5b337015a6e58c683164">box</a></td></tr>
+<tr class="memdesc:a33c72c95a73a5b337015a6e58c683164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ограничивающий куб. <br /></td></tr>
+<tr class="separator:a33c72c95a73a5b337015a6e58c683164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0104755e370f0c876fdaa91822c4e034"><td class="memItemLeft" align="right" valign="top"><a id="a0104755e370f0c876fdaa91822c4e034"></a>
+NodeList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a0104755e370f0c876fdaa91822c4e034">nodes</a></td></tr>
+<tr class="memdesc:a0104755e370f0c876fdaa91822c4e034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узлы дерева. <br /></td></tr>
+<tr class="separator:a0104755e370f0c876fdaa91822c4e034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8649f9b52f481ae76efeae22dd38c523"><td class="memItemLeft" align="right" valign="top"><a id="a8649f9b52f481ae76efeae22dd38c523"></a>
+PointList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a8649f9b52f481ae76efeae22dd38c523">points</a></td></tr>
+<tr class="memdesc:a8649f9b52f481ae76efeae22dd38c523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Множество точек. <br /></td></tr>
+<tr class="separator:a8649f9b52f481ae76efeae22dd38c523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb91443f0eef5156188c45ad11cf8ee"><td class="memItemLeft" align="right" valign="top"><a id="adeb91443f0eef5156188c45ad11cf8ee"></a>
+IndexList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#adeb91443f0eef5156188c45ad11cf8ee">indices</a></td></tr>
+<tr class="memdesc:adeb91443f0eef5156188c45ad11cf8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индексы точек. <br /></td></tr>
+<tr class="separator:adeb91443f0eef5156188c45ad11cf8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d29e5b6e809aec02feefb4f690062c"><td class="memItemLeft" align="right" valign="top"><a id="af4d29e5b6e809aec02feefb4f690062c"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#af4d29e5b6e809aec02feefb4f690062c">targetCellSize</a></td></tr>
+<tr class="memdesc:af4d29e5b6e809aec02feefb4f690062c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальное количество точек в листе дерева. <br /></td></tr>
+<tr class="separator:af4d29e5b6e809aec02feefb4f690062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6f7e46b1977d68f4399896598bb078"><td class="memItemLeft" align="right" valign="top"><a id="a1b6f7e46b1977d68f4399896598bb078"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a1b6f7e46b1977d68f4399896598bb078">targetMaxDepth</a></td></tr>
+<tr class="memdesc:a1b6f7e46b1977d68f4399896598bb078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная глубина дерева. <br /></td></tr>
+<tr class="separator:a1b6f7e46b1977d68f4399896598bb078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01617273d8bb93aa46f436c6f7727988"><td class="memItemLeft" align="right" valign="top"><a id="a01617273d8bb93aa46f436c6f7727988"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a01617273d8bb93aa46f436c6f7727988">numLevel</a></td></tr>
+<tr class="memdesc:a01617273d8bb93aa46f436c6f7727988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Глубина дерева. <br /></td></tr>
+<tr class="separator:a01617273d8bb93aa46f436c6f7727988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4702cdc95d8c9a65ac9d392980d353"><td class="memItemLeft" align="right" valign="top"><a id="a6c4702cdc95d8c9a65ac9d392980d353"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a6c4702cdc95d8c9a65ac9d392980d353">isBalanced</a></td></tr>
+<tr class="memdesc:a6c4702cdc95d8c9a65ac9d392980d353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбалансированное дерево или нет. <br /></td></tr>
+<tr class="separator:a6c4702cdc95d8c9a65ac9d392980d353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;class Scalar&gt;<br />
+class KdTree&lt; Scalar &gt;</h3>
+
+<p>К-d дерево. </p>
+<p>К-мерное бинарное дерево. <br  />
+</p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a9593294c3ba6f12f65cc5293ac43e30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9593294c3ba6f12f65cc5293ac43e30e">&#9670;&nbsp;</a></span>KdTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Scalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_kd_tree.html">KdTree</a>&lt; Scalar &gt;::<a class="el" href="class_kd_tree.html">KdTree</a> </td>
+          <td>(</td>
+          <td class="paramtype">const PointList &amp;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>minLeafSize</em> = <code>16</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxDepth</em> = <code>64</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>balanced</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор k-мерного дерева.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">points</td><td>- Множество точек.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minLeafSize</td><td>- Минимальное количество точек в листе дерева (по умолчанию 16).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxDepth</td><td>- Максимальная глубина дерева (по умолчанию 64).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">balanced</td><td>- Создать сбалансированное дерево или нет (по умолчанию несбалансированное). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae024fd8d5b175a55b2255fe3c5d8be9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae024fd8d5b175a55b2255fe3c5d8be9f">&#9670;&nbsp;</a></span>GetKNearestNeighbors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Scalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> <a class="el" href="class_kd_tree.html">KdTree</a>&lt; Scalar &gt;::GetKNearestNeighbors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>queryPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>neighborCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_priority_queue.html">ScalarPriorityQueue</a> &amp;&#160;</td>
+          <td class="paramname"><em>neighborQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти k ближайших соседей для данной точки. </p>
+<p>Найти k ближайших соседей для данной точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queryPoint</td><td>- Точка, для которой ищутся соседи.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">neighborCount</td><td>- Запрашиваемое число соседей .</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">neighborQueue</td><td>- Очередь с результатами поиска, в котором верхний элемент является наиболее удаленным от заданной точки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aecdf991457829307c579dbc1b9bfa181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecdf991457829307c579dbc1b9bfa181">&#9670;&nbsp;</a></span>GetRadiusNeighbors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Scalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> <a class="el" href="class_kd_tree.html">KdTree</a>&lt; Scalar &gt;::GetRadiusNeighbors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>queryPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a036a7a6d9f9b8b60bd540559fd599871">c3d::BoolVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>used</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>neighbors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти ближайших соседей внутри сферы заданного радиуса для данной точки. </p>
+<p>Найти ближайших соседей внутри сферы заданного радиуса для данной точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queryPoint</td><td>- Точка, для которой ищутся соседи.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>- Радиус сферы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">used</td><td>- Фильтр для точек. Значение true подразумевает, что точка исключается из рассмотрения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">neighbors</td><td>- Массив найденных соседей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="templ__kdtree_8h.html">templ_kdtree.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_kd_tree.html">KdTree</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

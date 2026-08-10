@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbSpaceItem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_space_item.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="class_mb_space_item-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbSpaceItem<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___items.html">Геометрические объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Геометрический объект в трехмерном пространстве.  
+ <a href="class_mb_space_item.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;space_item.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbSpaceItem:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_mb_space_item__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbSpaceItem:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_space_item__coll__graph.svg" width="200" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a23bc52fccf5304c4c0b7836e954b5840"><td class="memItemLeft" align="right" valign="top"><a id="a23bc52fccf5304c4c0b7836e954b5840"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a23bc52fccf5304c4c0b7836e954b5840">~MbSpaceItem</a> ()</td></tr>
+<tr class="memdesc:a23bc52fccf5304c4c0b7836e954b5840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a23bc52fccf5304c4c0b7836e954b5840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860e3b9fc0fa49b8920d2a275049eb21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a860e3b9fc0fa49b8920d2a275049eb21">PrepareWrite</a> () const</td></tr>
+<tr class="memdesc:a860e3b9fc0fa49b8920d2a275049eb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация объекта.  <a href="class_mb_space_item.html#a860e3b9fc0fa49b8920d2a275049eb21">Подробнее...</a><br /></td></tr>
+<tr class="separator:a860e3b9fc0fa49b8920d2a275049eb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Общие функции геометрического объекта.</div></td></tr>
+<tr class="memitem:af45589d642ef2d36c9d1898be4b48156"><td class="memItemLeft" align="right" valign="top"><a id="af45589d642ef2d36c9d1898be4b48156"></a>
+<a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#af45589d642ef2d36c9d1898be4b48156">RefType</a> () const override</td></tr>
+<tr class="memdesc:af45589d642ef2d36c9d1898be4b48156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:af45589d642ef2d36c9d1898be4b48156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7ca3883146d3d69b9afe970f9c7d0c"><td class="memItemLeft" align="right" valign="top"><a id="afa7ca3883146d3d69b9afe970f9c7d0c"></a>
+virtual <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#afa7ca3883146d3d69b9afe970f9c7d0c">IsA</a> () const =0</td></tr>
+<tr class="memdesc:afa7ca3883146d3d69b9afe970f9c7d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить тип объекта. <br /></td></tr>
+<tr class="separator:afa7ca3883146d3d69b9afe970f9c7d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3895dc4b8a33779171354fd71776a1"><td class="memItemLeft" align="right" valign="top"><a id="abc3895dc4b8a33779171354fd71776a1"></a>
+virtual <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#abc3895dc4b8a33779171354fd71776a1">Type</a> () const =0</td></tr>
+<tr class="memdesc:abc3895dc4b8a33779171354fd71776a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить групповой тип объекта. <br /></td></tr>
+<tr class="separator:abc3895dc4b8a33779171354fd71776a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f71ade003546c60ba41d9af3ef128c"><td class="memItemLeft" align="right" valign="top"><a id="a59f71ade003546c60ba41d9af3ef128c"></a>
+virtual <a class="el" href="group___geometric___items.html#gafd7eb7897408c4c38de7860da15d876b">MbeSpaceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a59f71ade003546c60ba41d9af3ef128c">Family</a> () const =0</td></tr>
+<tr class="memdesc:a59f71ade003546c60ba41d9af3ef128c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить семейство объекта. <br /></td></tr>
+<tr class="separator:a59f71ade003546c60ba41d9af3ef128c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74eb49881b4cda0c731ade63ba830e8"><td class="memItemLeft" align="right" valign="top"><a id="ac74eb49881b4cda0c731ade63ba830e8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#ac74eb49881b4cda0c731ade63ba830e8">IsFamilyRegistrable</a> () const override</td></tr>
+<tr class="memdesc:ac74eb49881b4cda0c731ade63ba830e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли объект к регистрируемому семейству. <br /></td></tr>
+<tr class="separator:ac74eb49881b4cda0c731ade63ba830e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f3e80f6f21819c27ffe75506636911"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a77f3e80f6f21819c27ffe75506636911">Duplicate</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *iReg=nullptr) const =0</td></tr>
+<tr class="memdesc:a77f3e80f6f21819c27ffe75506636911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать копию объекта.  <a href="class_mb_space_item.html#a77f3e80f6f21819c27ffe75506636911">Подробнее...</a><br /></td></tr>
+<tr class="separator:a77f3e80f6f21819c27ffe75506636911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff953fe5ad2edb37acdfbbdbb7148043"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#aff953fe5ad2edb37acdfbbdbb7148043">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matr, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)=0</td></tr>
+<tr class="memdesc:aff953fe5ad2edb37acdfbbdbb7148043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать объект согласно матрице.  <a href="class_mb_space_item.html#aff953fe5ad2edb37acdfbbdbb7148043">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff953fe5ad2edb37acdfbbdbb7148043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2006b7fff304a10dfa973b72759cb65"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#ae2006b7fff304a10dfa973b72759cb65">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;to, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)=0</td></tr>
+<tr class="memdesc:ae2006b7fff304a10dfa973b72759cb65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть объект вдоль вектора.  <a href="class_mb_space_item.html#ae2006b7fff304a10dfa973b72759cb65">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae2006b7fff304a10dfa973b72759cb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a49b34182dfe467e37dae1c0982f4dd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a1a49b34182dfe467e37dae1c0982f4dd">Rotate</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;axis, double angle, <a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *iReg=nullptr)=0</td></tr>
+<tr class="memdesc:a1a49b34182dfe467e37dae1c0982f4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть объект вокруг оси на заданный угол.  <a href="class_mb_space_item.html#a1a49b34182dfe467e37dae1c0982f4dd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1a49b34182dfe467e37dae1c0982f4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d7fa6cb8c01be0c9456ae36e122f68"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a51d7fa6cb8c01be0c9456ae36e122f68">IsSame</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;other, double accuracy=<a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a>) const =0</td></tr>
+<tr class="memdesc:a51d7fa6cb8c01be0c9456ae36e122f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты равными.  <a href="class_mb_space_item.html#a51d7fa6cb8c01be0c9456ae36e122f68">Подробнее...</a><br /></td></tr>
+<tr class="separator:a51d7fa6cb8c01be0c9456ae36e122f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a575283df807ac23404a47d6ac85590"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a0a575283df807ac23404a47d6ac85590">IsSimilar</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;item) const</td></tr>
+<tr class="memdesc:a0a575283df807ac23404a47d6ac85590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить, являются ли объекты подобными.  <a href="class_mb_space_item.html#a0a575283df807ac23404a47d6ac85590">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0a575283df807ac23404a47d6ac85590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5093771e43c5eab4fc1f6d603b22e1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#aff5093771e43c5eab4fc1f6d603b22e1">SetEqual</a> (const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;item)=0</td></tr>
+<tr class="memdesc:aff5093771e43c5eab4fc1f6d603b22e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать объекты равным, если они подобны.  <a href="class_mb_space_item.html#aff5093771e43c5eab4fc1f6d603b22e1">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff5093771e43c5eab4fc1f6d603b22e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4c927c97e93b6661c646bf673f6f83"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#aef4c927c97e93b6661c646bf673f6f83">DistanceToPoint</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point) const =0</td></tr>
+<tr class="memdesc:aef4c927c97e93b6661c646bf673f6f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить расстояние до точки.  <a href="class_mb_space_item.html#aef4c927c97e93b6661c646bf673f6f83">Подробнее...</a><br /></td></tr>
+<tr class="separator:aef4c927c97e93b6661c646bf673f6f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf96cb312c266eb1ae2340f4c870ad4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a4cf96cb312c266eb1ae2340f4c870ad4">AddYourGabaritTo</a> (<a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube) const =0</td></tr>
+<tr class="memdesc:a4cf96cb312c266eb1ae2340f4c870ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расширить присланный габаритный куб так, чтобы он включал в себя данный объект.  <a href="class_mb_space_item.html#a4cf96cb312c266eb1ae2340f4c870ad4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4cf96cb312c266eb1ae2340f4c870ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22ccd5ace5fc29a3e27725926a4827d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#af22ccd5ace5fc29a3e27725926a4827d">CalculateLocalGabarit</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;into, <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube) const =0</td></tr>
+<tr class="memdesc:af22ccd5ace5fc29a3e27725926a4827d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит в локальной системы координат.  <a href="class_mb_space_item.html#af22ccd5ace5fc29a3e27725926a4827d">Подробнее...</a><br /></td></tr>
+<tr class="separator:af22ccd5ace5fc29a3e27725926a4827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061f4ed9211c507b116c5b0ec433fd7f"><td class="memItemLeft" align="right" valign="top"><a id="a061f4ed9211c507b116c5b0ec433fd7f"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a061f4ed9211c507b116c5b0ec433fd7f">Refresh</a> ()</td></tr>
+<tr class="memdesc:a061f4ed9211c507b116c5b0ec433fd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевести все временные (mutable) данные объекта в неопределённое (исходное) состояние. <br /></td></tr>
+<tr class="separator:a061f4ed9211c507b116c5b0ec433fd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c2f077c841b4e7a626ba05d13e392b"><td class="memItemLeft" align="right" valign="top"><a id="a08c2f077c841b4e7a626ba05d13e392b"></a>
+virtual <a class="el" href="class_mb_property.html">MbProperty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a08c2f077c841b4e7a626ba05d13e392b">CreateProperty</a> (<a class="el" href="mb__property__title_8h.html#aff36a02591ff535f7cab841a4b0dd312">MbePrompt</a> name) const =0</td></tr>
+<tr class="memdesc:a08c2f077c841b4e7a626ba05d13e392b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать собственное свойство с заданием его имени. <br /></td></tr>
+<tr class="separator:a08c2f077c841b4e7a626ba05d13e392b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0377f42bedf917440fb6dace05d16c07"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a0377f42bedf917440fb6dace05d16c07">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)=0</td></tr>
+<tr class="memdesc:a0377f42bedf917440fb6dace05d16c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта.  <a href="class_mb_space_item.html#a0377f42bedf917440fb6dace05d16c07">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0377f42bedf917440fb6dace05d16c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38908f7d2f0b34269140fefeb3c6cd11"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a38908f7d2f0b34269140fefeb3c6cd11">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)=0</td></tr>
+<tr class="memdesc:a38908f7d2f0b34269140fefeb3c6cd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить свойства объекта.  <a href="class_mb_space_item.html#a38908f7d2f0b34269140fefeb3c6cd11">Подробнее...</a><br /></td></tr>
+<tr class="separator:a38908f7d2f0b34269140fefeb3c6cd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d81f6ac0f5711398cf707d7ffabb54"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a11d81f6ac0f5711398cf707d7ffabb54">CalculateMesh</a> (const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;note, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const =0</td></tr>
+<tr class="memdesc:a11d81f6ac0f5711398cf707d7ffabb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Построить полигональную копию mesh.  <a href="class_mb_space_item.html#a11d81f6ac0f5711398cf707d7ffabb54">Подробнее...</a><br /></td></tr>
+<tr class="separator:a11d81f6ac0f5711398cf707d7ffabb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bd72d51277eba72f1372b0f137a0de"><td class="memItemLeft" align="right" valign="top"><a id="a28bd72d51277eba72f1372b0f137a0de"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWire</b> (const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;stepData, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const</td></tr>
+<tr class="separator:a28bd72d51277eba72f1372b0f137a0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da943ddec0381a8ad89c73fae99d4a3"><td class="memItemLeft" align="right" valign="top"><a id="a0da943ddec0381a8ad89c73fae99d4a3"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWire</b> (double sag, <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const</td></tr>
+<tr class="separator:a0da943ddec0381a8ad89c73fae99d4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b7d14509866775298811fd124eac5b"><td class="memItemLeft" align="right" valign="top"><a id="a85b7d14509866775298811fd124eac5b"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a85b7d14509866775298811fd124eac5b">GetBasisItems</a> (<a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:a85b7d14509866775298811fd124eac5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать базовые объекты в присланный контейнер. <br /></td></tr>
+<tr class="separator:a85b7d14509866775298811fd124eac5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ecdfa8659289dd12ff54b0f35e385b"><td class="memItemLeft" align="right" valign="top"><a id="aa7ecdfa8659289dd12ff54b0f35e385b"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#aa7ecdfa8659289dd12ff54b0f35e385b">GetBasisPoints</a> (<a class="el" href="struct_mb_control_data3_d.html">MbControlData3D</a> &amp;) const</td></tr>
+<tr class="memdesc:aa7ecdfa8659289dd12ff54b0f35e385b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать контрольные точки объекта. <br /></td></tr>
+<tr class="separator:aa7ecdfa8659289dd12ff54b0f35e385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee09411ad5e5ec9154327a80cf1419f"><td class="memItemLeft" align="right" valign="top"><a id="a4ee09411ad5e5ec9154327a80cf1419f"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a4ee09411ad5e5ec9154327a80cf1419f">SetBasisPoints</a> (const <a class="el" href="struct_mb_control_data3_d.html">MbControlData3D</a> &amp;)</td></tr>
+<tr class="memdesc:a4ee09411ad5e5ec9154327a80cf1419f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить объект по контрольным точкам. <br /></td></tr>
+<tr class="separator:a4ee09411ad5e5ec9154327a80cf1419f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_tape_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tape_base')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memitem:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a882f3184894a3c57779f50040701da15"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a882f3184894a3c57779f50040701da15">TapeBase</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>)</td></tr>
+<tr class="memdesc:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a882f3184894a3c57779f50040701da15 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a461627b28a34cdb1f861bd5f27b75973"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a461627b28a34cdb1f861bd5f27b75973">TapeBase</a> (const <a class="el" href="class_tape_base.html">TapeBase</a> &amp;)</td></tr>
+<tr class="memdesc:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
+<tr class="separator:a461627b28a34cdb1f861bd5f27b75973 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ac41735d7c9b266ae4257479ff9e8ccbf"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ac41735d7c9b266ae4257479ff9e8ccbf">~TapeBase</a> ()</td></tr>
+<tr class="memdesc:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ac41735d7c9b266ae4257479ff9e8ccbf inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a5a9ef73842145559805331f1bbcb6b27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a5a9ef73842145559805331f1bbcb6b27">GetRegistrable</a> () const</td></tr>
+<tr class="memdesc:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли потоковый класс регистрируемым. <br /></td></tr>
+<tr class="separator:a5a9ef73842145559805331f1bbcb6b27 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a7037a8880d0d39f984b7c0cd9641e8fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a7037a8880d0d39f984b7c0cd9641e8fa">SetRegistrable</a> (<a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> regs=<a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>) const</td></tr>
+<tr class="memdesc:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить состояние регистрации потокового класса. <br /></td></tr>
+<tr class="separator:a7037a8880d0d39f984b7c0cd9641e8fa inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="ab3e16d35ad147f5104af765c3ad005a1"></a>
+virtual <a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#ab3e16d35ad147f5104af765c3ad005a1">GetClassDescriptor</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const =0</td></tr>
+<tr class="memdesc:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить дескриптор класса <br /></td></tr>
+<tr class="separator:ab3e16d35ad147f5104af765c3ad005a1 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memItemLeft" align="right" valign="top"><a id="a6274436843eedff2904f43dd6b6ac1c0"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html#a6274436843eedff2904f43dd6b6ac1c0">GetPureName</a> (const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;) const</td></tr>
+<tr class="memdesc:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя класса. <br /></td></tr>
+<tr class="separator:a6274436843eedff2904f43dd6b6ac1c0 inherit pub_methods_class_tape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a64964a5fe986724fb4ba3f52ba615cad"><td class="memItemLeft" align="right" valign="top"><a id="a64964a5fe986724fb4ba3f52ba615cad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_space_item.html#a64964a5fe986724fb4ba3f52ba615cad">MbSpaceItem</a> ()</td></tr>
+<tr class="memdesc:a64964a5fe986724fb4ba3f52ba615cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:a64964a5fe986724fb4ba3f52ba615cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Геометрический объект в трехмерном пространстве. </p>
+<p>Родительский класс геометрических объектов в трехмерном пространстве. Наследниками являются: точка <a class="el" href="class_mb_point3_d.html" title="Трёхмерная точка со свойствами геометрического объекта.">MbPoint3D</a>, кривая <a class="el" href="class_mb_curve3_d.html" title="Кривая в трехмерном пространстве.">MbCurve3D</a>, поверхность <a class="el" href="class_mb_surface.html" title="Поверхность в трехмерном пространстве.">MbSurface</a>, объект геометрической модели <a class="el" href="class_mb_item.html" title="Объект геометрической модели.">MbItem</a> и другие вспомогательные объекты.<br  />
+ Объект имеет счетчик ссылок и умеет записываться и читаться. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a77f3e80f6f21819c27ffe75506636911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f3e80f6f21819c27ffe75506636911">&#9670;&nbsp;</a></span>Duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_mb_space_item.html">MbSpaceItem</a>&amp; MbSpaceItem::Duplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать копию объекта. </p>
+<p>Создать копию объекта с использованием регистратора. Регистратор используется для предотвращения многократного копирования объекта. Если объект содержит ссылки на другие объекты, то вложенные объекты так же копируются. Допустимо не передавать регистратор в функцию. Тогда будет создана новая копия объекта. При копировании одиночного объекта или набора не связанных между собой объектов допустимо не использовать регистратор. Регистратор необходимо использовать, если надо последовательно копировать несколько взаимосвязанных объектов. Возможно, что связь объектов обусловлена наличием в них ссылок на общие объекты. Тогда, при копировании без использования регистратора, можно получить набор копий, содержащих ссылки на разные копии одного и того же вложенного объекта, что ведет к потере связи между копиями.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Копия объекта. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_mb_wire_frame.html#adb251bbb6e7cf439876e35a16a8032bb">MbWireFrame</a>, <a class="el" href="class_mb_space_instance.html#a1b1336d02806c56ae2ca413756c85803">MbSpaceInstance</a>, <a class="el" href="class_mb_solid.html#a2cfe91534e56032e711a710d58fce6a4">MbSolid</a>, <a class="el" href="class_mb_plane_instance.html#a1357487860142c3bfd921f6a121278c8">MbPlaneInstance</a>, <a class="el" href="class_mb_instance.html#ac11c082d607d78bfdb98df480c50465d">MbInstance</a>, <a class="el" href="class_mb_assembly.html#ad8402b6b34c1c62367db123c7fe9b09b">MbAssembly</a>, <a class="el" href="class_mb_torus_surface.html#a5f79d3dbfc86dc407792d3fa23274552">MbTorusSurface</a>, <a class="el" href="class_mb_spline_surface.html#ae64b2531ef6dbe8715f791156d82d1bf">MbSplineSurface</a>, <a class="el" href="class_mb_spiral_surface.html#a9a55c79c1bcdffe5f44f8da6c9a64eab">MbSpiralSurface</a>, <a class="el" href="class_mb_sphere_surface.html#ae7c01935277af5a8a9aedd32d7186290">MbSphereSurface</a>, <a class="el" href="class_mb_sector_surface.html#a6439194e1cb267c36ae02f50f9f885da">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#a98f914badff787a573b0628022378548">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#a1f727f324217333640b8b76a19d5d7f6">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#a5f178fcdf3090a25f70cb7f899bd9dde">MbRevolutionSurface</a>, <a class="el" href="class_mb_plane.html#aa113b995f26c191a259d0223107632ff">MbPlane</a>, <a class="el" href="class_mb_offset_surface.html#a434c90ca948d0ec9ef3ad0dc4f2c8855">MbOffsetSurface</a>, <a class="el" href="class_mb_mesh_surface.html#a7da2ad4526673c0eb5dec4b77e8590fa">MbMeshSurface</a>, <a class="el" href="class_mb_lofted_surface.html#a2177e1604fc6c23fca267271c4c81b6e">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#a3b497877045f3acd1cc9ee7042ceeb6d">MbJoinSurface</a>, <a class="el" href="class_mb_grid_surface.html#a7cacd71c6d64149b18825bbdc5cc76bc">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#ad518ecc71e48c915d62d5cf302f97fe5">MbGregorySurface</a>, <a class="el" href="class_mb_fillet_surface.html#aa51aced963d464937d1155c3447457ba">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#a86a3e84c56d4f703037cb5955e1fcf37">MbExtrusionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#ac9086d2c318e6ed0eacf4d124edc0a24">MbExplorationSurface</a>, <a class="el" href="class_mb_expansion_surface.html#ac9071d4aa37386354b786972880802b2">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#a145c9f2dafa410adf235922054308552">MbExactionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#a507f91addfe0920f2fc3cd9b4059f468">MbEvolutionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#adf500376e87a434b2da177d596bb22ae">MbElevationSurface</a>, <a class="el" href="class_mb_cylinder_surface.html#a9bab75f8a1c5624d667bf280e60d42dd">MbCylinderSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a72d4ee36a549189eadc85a417eba2ef4">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_cover_surface.html#a6e5b545f6c959bb955abaf2a6ddb25b7">MbCoverSurface</a>, <a class="el" href="class_mb_corner_surface.html#a05989e321f5c99f673981758ae0a6e25">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a0c8347569e38d0e0873c8ef4c2bb93dc">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_cone_surface.html#aa2b61517ddf727c8ec8f6eba41f0135a">MbConeSurface</a>, <a class="el" href="class_mb_channel_surface.html#a32f74ff0f55bf546df6d676040601b7e">MbChannelSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#a894f4953f550c5add0ecdbcc8b3efc51">MbChamferSurface</a>, <a class="el" href="class_mb_polymesh.html#a28c2b3e75051e524c392cd0d0b6d125c">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#a25eeebb582dce6584703a47c98f5b34c">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#a882d7cb00c76a4e4181764e0d533323a">MbPoint3D</a>, <a class="el" href="class_mb_mesh.html#a87eb40553690138d2fca99a162dcbd8c">MbMesh</a>, <a class="el" href="class_mb_thread.html#a81fbc703ee3cccdc77436adecacdf943">MbThread</a>, <a class="el" href="class_mb_points_symbol.html#a1d792ad9f960b7076cca0712328fd167">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#a899b6e7266a1d8639b126f9001e10160">MbLeader</a>, <a class="el" href="class_mb_rough.html#adfd41c93b5c83a624197d9f76e4d287d">MbRough</a>, <a class="el" href="class_mb_radial_dimension.html#ad5c2be31bcf21867626923cc56d4674e">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a554f5a7ba1d0139f04ffb2ce12d27e77">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#ae2ff95bfbab95df2729574e00e4d435b">MbLinearDimension</a>, <a class="el" href="class_mb_marker.html#a7b61cae99dff658407ede14ef0f9dd00">MbMarker</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#a6b56e82f048f854ddc8dc87a27314c14">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#a171f8b2f297e353ad332b10d3e6339ac">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#ae624d7f9e9b9d8b00736209cfe5fe8de">MbSurfaceCurve</a>, <a class="el" href="class_mb_silhouette_curve.html#a78ea6d770d2185f44fd215e6dc1b4b10">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#a5de177a35831e3c011d92bb143c55730">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#ad5eb8908bc404393e47e4e9a15f66e22">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#a793c20ec9a45f5298d572f45b0ed4477">MbPlaneCurve</a>, <a class="el" href="class_mb_offset_curve3_d.html#a4acdadc2ffb8f169f90e89a4e3641149">MbOffsetCurve3D</a>, <a class="el" href="class_mb_nurbs3_d.html#a4414d0ff09db0b38d44058294c3a19a4">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#a06b439c45843ee27ad0fc19ba52bff67">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#a3a80af03a68c150ca1899110cca1a2b0">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#a5709ac199e74552b03efd9b1506cec60">MbHermit3D</a>, <a class="el" href="class_mb_curve_spiral.html#afbded4603608010bbdae2c483c4e3c18">MbCurveSpiral</a>, <a class="el" href="class_mb_cubic_spline3_d.html#a35ae3c6724c686e5e379773045d2cd06">MbCubicSpline3D</a>, <a class="el" href="class_mb_crooked_spiral.html#a17d8cc191060fcd9833bc4a497cb048a">MbCrookedSpiral</a>, <a class="el" href="class_mb_contour_on_surface.html#a58445eb46f52366a16a5e1220e5544f3">MbContourOnSurface</a>, <a class="el" href="class_mb_contour_on_plane.html#a5b954ef8fc8947cf764336805af532c2">MbContourOnPlane</a>, <a class="el" href="class_mb_contour3_d.html#a18d692c84707fa811e74d2c36e587bcb">MbContour3D</a>, <a class="el" href="class_mb_cone_spiral.html#a90d2c577ce4b506bbca12c82d2c20b74">MbConeSpiral</a>, <a class="el" href="class_mb_character_curve3_d.html#a1956d01d3029c432bec099f4ce92a8d1">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#a6e7b0d0d4ce1ec2bf1719337bb3d9e69">MbBridgeCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#a13c03c8b4c590e408c84658a7a8d0f37">MbBezier3D</a>, <a class="el" href="class_mb_b_spline.html#a669987a35621124291946a995e0b6af3">MbBSpline</a>, <a class="el" href="class_mb_arc3_d.html#adc5b8e150a64fba00ad1717a2b5e751e">MbArc3D</a>, <a class="el" href="class_mb_collection.html#a47a5506581241b028d1938c7740245f8">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#aa4548fdce5b85a833526cbead636870c">MbAssistingItem</a> и <a class="el" href="class_mb_p_m_i.html#a7c9cfd52537e788b215ca680a317f5c7">MbPMI</a>.</p>
+
+</div>
+</div>
+<a id="aff953fe5ad2edb37acdfbbdbb7148043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff953fe5ad2edb37acdfbbdbb7148043">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразовать объект согласно матрице. </p>
+<p>Преобразовать исходный объект согласно матрице c использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то вложенные объекты так же преобразуются согласно матрице. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих трансформации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">matr</td><td>- Матрица преобразования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_torus_surface.html#a0cee1de936640eaf375f73341e722816">MbTorusSurface</a>, <a class="el" href="class_mb_sphere_surface.html#a1462d5e44f63a2a1b8e710d65c8a6e18">MbSphereSurface</a>, <a class="el" href="class_mb_mesh_surface.html#a65659a045d2b2459c62f2d6ad913edba">MbMeshSurface</a>, <a class="el" href="class_mb_grid_surface.html#a77bc3c82d5ef9ccf2a8520d1b9d1eed2">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#abd76e9e0352aa9ab501efa8bf729a05c">MbGregorySurface</a>, <a class="el" href="class_mb_elementary_surface.html#a39bd82239793d231d7b5fef1063681c0">MbElementarySurface</a>, <a class="el" href="class_mb_cylinder_surface.html#a863f7560cbe204a58663c5368aceb3ea">MbCylinderSurface</a>, <a class="el" href="class_mb_cover_surface.html#a5d257017c53ed8cca915411925d7f4fe">MbCoverSurface</a>, <a class="el" href="class_mb_corner_surface.html#a4d74b6ace66ce91cc0c74579bd88a834">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a89c4256bfd95ce3922d705b5a0dc3d72">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_cone_surface.html#a5cd70e2f21ec465c55e299449c5fde56">MbConeSurface</a>, <a class="el" href="class_mb_b_spline.html#a35deea61503665bbc1d3ad39274dad1c">MbBSpline</a>, <a class="el" href="class_mb_space_instance.html#a8d5ba4aba5f68af462348b9e49a37b40">MbSpaceInstance</a>, <a class="el" href="class_mb_solid.html#ad5202e28d7504abfe26cb0c1004bc528">MbSolid</a>, <a class="el" href="class_mb_instance.html#af52b14e21e76d6e5e5bd4240791d8653">MbInstance</a>, <a class="el" href="class_mb_assembly.html#a6ffb06f2518581f0d3f9839a1eaea33a">MbAssembly</a>, <a class="el" href="class_mb_offset_curve3_d.html#a39a665f796be38dfd61000797f308d6c">MbOffsetCurve3D</a>, <a class="el" href="class_mb_wire_frame.html#a168ae72113c85859ac3563d3409ee5d7">MbWireFrame</a>, <a class="el" href="class_mb_spiral_surface.html#ad2f4d35c074c3b4944f254014bf94208">MbSpiralSurface</a>, <a class="el" href="class_mb_sector_surface.html#adbfc5eaddef4d831776e1802b6bbcaa5">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#a7eacb0254c554f418fc6524a6114e89f">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#ae438766c68b7d4ceff7c3907285ca8ef">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#a3c8b3f58e7dc9b278d2ef008c02eb00c">MbRevolutionSurface</a>, <a class="el" href="class_mb_poly_surface.html#a431a62770d76facb2f615d69ef458eaa">MbPolySurface</a>, <a class="el" href="class_mb_plane.html#ad22ada5be3b97bba6ccb29d6071bdb0c">MbPlane</a>, <a class="el" href="class_mb_offset_surface.html#a1438b2c8618445d41d3b31e311379ca5">MbOffsetSurface</a>, <a class="el" href="class_mb_lofted_surface.html#a0d29606c76a652fc839b9cb648aff16c">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#a615b5200dc8fe31e7f574b64a3e8b0ce">MbJoinSurface</a>, <a class="el" href="class_mb_fillet_surface.html#aae726019b9e8c90d2c0c51b2de6d4a11">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#ad908d7214a03623c3ed87bf49a1dac80">MbExtrusionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#afc202c2d655b9937bdda3767e2d74918">MbExplorationSurface</a>, <a class="el" href="class_mb_expansion_surface.html#ac88974b0c5b98becf78400bfb78699c2">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#a159ac8f1fdcf4898f96a75981607147f">MbExactionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#ab871675c78b43f1befe6acad550fa73b">MbEvolutionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#adb89f8b03e77c585f2760497e63e6cb4">MbElevationSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#afd37545340f0e1d4231f4971d0fcb17e">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#a65d3c4cbf484c50a8217e5ae2ba90fb3">MbChamferSurface</a>, <a class="el" href="class_mb_polymesh.html#ab68b46ed22c02c4859486288c76ac6f3">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#af1c799825afd9eb704c6a6410b30f7ce">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#a36152326801bcd76b4f9611fbc815054">MbPoint3D</a>, <a class="el" href="class_mb_plane_instance.html#adb5130078186b9df5b79306c34010974">MbPlaneInstance</a>, <a class="el" href="class_mb_mesh.html#a54e53db3ff77ea3c3ad803f13fba44e0">MbMesh</a>, <a class="el" href="class_mb_thread.html#ab582fff479e89fb442764d7a11bd4a84">MbThread</a>, <a class="el" href="class_mb_points_symbol.html#ac61b74e3db0341a9a7888b9773f2cebc">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#a8fbccc7befa2d1313d87996071ec2c98">MbLeader</a>, <a class="el" href="class_mb_radial_dimension.html#ad882ff0b0150b41e5b34e345f6a0f719">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#ae9370beb32cf0a6a4ba47c47338ab5da">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#a0511ba177a739fd4a5f127fd6796f556">MbLinearDimension</a>, <a class="el" href="class_mb_marker.html#a5b55f33947fa43fcd521ffa844666990">MbMarker</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#aa4e6339eb53c02247fa582dab9419d17">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#a167b8bac9171b7eeecae6b6ac14174a1">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#a9c345aaeafa588ea3e30e30bce580693">MbSurfaceCurve</a>, <a class="el" href="class_mb_spiral.html#af3773dd25a1861aa44cded08387420f1">MbSpiral</a>, <a class="el" href="class_mb_silhouette_curve.html#ad22caa06bba944924408a4b11e150887">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#af56248253cac168f3cce9084a9e3d227">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#a71cf22cd62a5eea82faeca7984ec67a0">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#ad2f71f7ebf7852cab98516845c52053e">MbPlaneCurve</a>, <a class="el" href="class_mb_nurbs3_d.html#a838e43a04afaf773ac45d014364bc2ea">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#aa6600347c7e039ff86dd263e3fffc9ad">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#a6b5cb4f9264ee406622f0fe75f8827dc">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#a9678ab95531911ec21c4b948ac362abf">MbHermit3D</a>, <a class="el" href="class_mb_cubic_spline3_d.html#ad57adfb4d11707bb135256c8218739f0">MbCubicSpline3D</a>, <a class="el" href="class_mb_contour_on_surface.html#a3e59bdb635d761691be38e6aee6152a4">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#ae97fb4de6d20907d04f9e7dff79f4058">MbContour3D</a>, <a class="el" href="class_mb_character_curve3_d.html#a26aa6b7551be488bf490ab24c1c54785">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#ae9f814127c2e5992cc39ce9ab4db9c60">MbBridgeCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#a134fe5ed847188f7b66b145baf5c26f2">MbBezier3D</a>, <a class="el" href="class_mb_arc3_d.html#ad6c30dde619ac408c301cbafe219ad6f">MbArc3D</a>, <a class="el" href="class_mb_collection.html#a29731fc30a5bb26a619fe904fdfd754f">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#a978d633d3cf98c208ec65d3953d9d311">MbAssistingItem</a> и <a class="el" href="class_mb_p_m_i.html#a116f48b4a626e615520b1888715c02ed">MbPMI</a>.</p>
+
+</div>
+</div>
+<a id="ae2006b7fff304a10dfa973b72759cb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2006b7fff304a10dfa973b72759cb65">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::Move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сдвинуть объект вдоль вектора. </p>
+<p>Сдвинуть геометрический объект вдоль вектора с использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то к вложенным объектам так же применяется операция сдвига. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих сдвигу.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>- Вектор сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_mesh_surface.html#abeade03e19fd27b0160e4daa86593216">MbMeshSurface</a>, <a class="el" href="class_mb_grid_surface.html#a516bc4c72fe90f8a79890e12b47e1463">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#aabce910f8091c06a1e7bee7d6067eea6">MbGregorySurface</a>, <a class="el" href="class_mb_elementary_surface.html#a7b3bbfd1e9d756b98e00748161b86f35">MbElementarySurface</a>, <a class="el" href="class_mb_cover_surface.html#a2d36844e751f67aedf7a7fc80853b043">MbCoverSurface</a>, <a class="el" href="class_mb_corner_surface.html#a734b161589e4ff3b74e43c4d02517b21">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a464b2af96a9c8db536fd242f1405979b">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_b_spline.html#a1262a12859c581dbeb8f55ba980da956">MbBSpline</a>, <a class="el" href="class_mb_space_instance.html#a17bf19af5875d1b1c7d7edb554bc2705">MbSpaceInstance</a>, <a class="el" href="class_mb_solid.html#a1d285d85e5795998027cc55daca1f4be">MbSolid</a>, <a class="el" href="class_mb_instance.html#a789ba59818201315a27d57fec2ff3b91">MbInstance</a>, <a class="el" href="class_mb_assembly.html#a20dcecc7f860a0c9b883618d47b5bc32">MbAssembly</a>, <a class="el" href="class_mb_offset_curve3_d.html#a2706840648c70faca53b9711035a0863">MbOffsetCurve3D</a>, <a class="el" href="class_mb_wire_frame.html#a6becfe1aec5e23893ecb57b33dc05134">MbWireFrame</a>, <a class="el" href="class_mb_spiral_surface.html#ab4c9f6e08242a09458337b6ecc84c51e">MbSpiralSurface</a>, <a class="el" href="class_mb_sector_surface.html#af61e3a2be377da9e2d1b12a0b6ec3057">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#a808eeca99739f3efac31e74ca6a36b42">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#a4d6a2bb860da2161ebece1dd703dd962">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#a6038688ae82f36b2b4ff1aa569683019">MbRevolutionSurface</a>, <a class="el" href="class_mb_poly_surface.html#ad35b06b20ec34df65bf3ff86916e05e6">MbPolySurface</a>, <a class="el" href="class_mb_offset_surface.html#a53933da108b8e974fd1fd602d02cce61">MbOffsetSurface</a>, <a class="el" href="class_mb_lofted_surface.html#a399b1b7a407ab18dd29cd06e262b7a0a">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#ab4417d2096f9807a5c87d862b90b63a7">MbJoinSurface</a>, <a class="el" href="class_mb_fillet_surface.html#aed6a224c967c602e75ca10dc500d2557">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#a282d29051a3a2463e0fdcb7ff78831a7">MbExtrusionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#a862a74a0119acb70db87fc3f3a698d82">MbExplorationSurface</a>, <a class="el" href="class_mb_expansion_surface.html#af9d9f1be14b1b34ae79186792a85690d">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#a4cd9fc2cf062eb2a1123db4323283e70">MbExactionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#a3567842a15d1cef447881a6789a8ea48">MbEvolutionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#acb572a963ab47278a2390c8cfd3d3b9d">MbElevationSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a2dd6855479a7d9b45ca8fe5f6e6a7c2f">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#ac99d1eb025325ea39a08d3b1e6f6baf4">MbChamferSurface</a>, <a class="el" href="class_mb_polymesh.html#a33f6723fa65661f15140c7913405346f">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#a7f1cbd69a242d27049b058593195eb16">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#a29f1f3afc56f97c6dd27efc71b5be543">MbPoint3D</a>, <a class="el" href="class_mb_plane_instance.html#a863b942046633669188cdc1a7959f2a1">MbPlaneInstance</a>, <a class="el" href="class_mb_mesh.html#a0507057bf59533384a972c678b4bd4a3">MbMesh</a>, <a class="el" href="class_mb_thread.html#a88f0136f2901dab5728868471712d1bc">MbThread</a>, <a class="el" href="class_mb_points_symbol.html#a62d2f53e1d724bb496dca5535b24a0f8">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#aedfe4e15f6961c34b8aa9d3c04d0f9e4">MbLeader</a>, <a class="el" href="class_mb_radial_dimension.html#ae87ae2f49ff3b955967270e22caa2e75">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a2e207145714c6eaaeb1c9a2b2e0b7c6a">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#a60ec5008229b878ca5384fbbc9d5919c">MbLinearDimension</a>, <a class="el" href="class_mb_marker.html#aa4911c558caa4fb488293a0d33e83935">MbMarker</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#a74e73773085b8853d8d6345f0337d42e">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#a8d958611e4abd7d8e1508e0dd97972e1">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#a8e5b2d28ee0cb4a52dbae09a880067a6">MbSurfaceCurve</a>, <a class="el" href="class_mb_spiral.html#a0408b040945043562120d3dab5d1bf00">MbSpiral</a>, <a class="el" href="class_mb_silhouette_curve.html#a360c79ffcce14f4cee1a8fd1f3638627">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#af46b81dafb50574adced096955cbeb43">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#ab5efcabbee7423b380b64457a76f6fa4">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#a53f7821beec62b39fb17cdb4855b6556">MbPlaneCurve</a>, <a class="el" href="class_mb_nurbs3_d.html#a90d87431a0db96101ee67a2e1ac286b6">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#ac2ba2eab9bf834a67d4adcc61eb3eead">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#a3ded3fddfa367fe4bb0db76c71f674e4">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#a9a7cf50d405bb22e1d6fe03397748dad">MbHermit3D</a>, <a class="el" href="class_mb_cubic_spline3_d.html#a5ca2ecbf330c4b328fce964f4728e02d">MbCubicSpline3D</a>, <a class="el" href="class_mb_contour_on_surface.html#ae47e3057745fbd1f9832bc44d8937413">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#a6923b21b56b60cce65744b88951fad01">MbContour3D</a>, <a class="el" href="class_mb_character_curve3_d.html#a476dc1f23057eac7c865f9f38b2acdca">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#aa39e7b1263437ae8dd05d73642916573">MbBridgeCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#ac965d2401b71d683f7b0d5f1c6247f71">MbBezier3D</a>, <a class="el" href="class_mb_arc3_d.html#a1fb656ae7bab81c59620459020e8232f">MbArc3D</a>, <a class="el" href="class_mb_collection.html#adc8a8d61d806944ee9b362103a8380d1">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#ab75cb64d3ef20ad5fa7edf2d156c58d5">MbAssistingItem</a> и <a class="el" href="class_mb_p_m_i.html#a983523d1499b1181fa78603e08b85e4a">MbPMI</a>.</p>
+
+</div>
+</div>
+<a id="a1a49b34182dfe467e37dae1c0982f4dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a49b34182dfe467e37dae1c0982f4dd">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_reg_transform.html">MbRegTransform</a> *&#160;</td>
+          <td class="paramname"><em>iReg</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повернуть объект вокруг оси на заданный угол. </p>
+<p>Повернуть объект вокруг оси на заданный угол с использованием регистратора. Если объект содержит ссылки на другие геометрические объекты, то к вложенным объектам так же применяется операция поворота. Регистратор служит для предотвращения многократного преобразования объекта. Допустимо использовать функцию без регистратора, если надо преобразовать одиночный объект. Если надо преобразовать набор взаимосвязанных объектов, необходимо использовать регистратор для предотвращения повторного преобразования вложенных объектов, поскольку не исключена ситуация, когда несколько объектов из набора содержат ссылки на один или несколько общих объектов, подлежащих повороту.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>- Ось поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол поворота.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Регистратор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_mesh_surface.html#a5dcce31f83374b93ac57f58c3b7d6dd9">MbMeshSurface</a>, <a class="el" href="class_mb_grid_surface.html#a0c4a600a0c2a59f54d76e4282c10fe27">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#ae2163925ae2b002200a55cf44ebfbdcb">MbGregorySurface</a>, <a class="el" href="class_mb_elementary_surface.html#a4e67090cdcc87230b20bc28fc91d1626">MbElementarySurface</a>, <a class="el" href="class_mb_cover_surface.html#abd05886a4e053c6ea2d9466132b96b2d">MbCoverSurface</a>, <a class="el" href="class_mb_corner_surface.html#a2c2a420e70078bbf68145da91fe14a04">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a6e9072c497d5d365a75bbd10c2376c39">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_b_spline.html#a1d0f37ff18bdceebc963e44cf9d63cdb">MbBSpline</a>, <a class="el" href="class_mb_thread.html#a3e497afca4cd6c98c13ba1f26f342886">MbThread</a>, <a class="el" href="class_mb_points_symbol.html#ae4ca6e37c99e21cdbd41b13a37eb134d">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#a922ed99366ab88a1566008f0dedc6f44">MbLeader</a>, <a class="el" href="class_mb_space_instance.html#a20a22455df2c395c9fa30140526450f4">MbSpaceInstance</a>, <a class="el" href="class_mb_solid.html#a747456e7c7260ae6d50d90517262a237">MbSolid</a>, <a class="el" href="class_mb_instance.html#a9acc90c69a6eac5cf810afda024c4f3d">MbInstance</a>, <a class="el" href="class_mb_assembly.html#a76411c8dfc89811b77b7d921d5c68272">MbAssembly</a>, <a class="el" href="class_mb_offset_curve3_d.html#ab95fd1c6d138b9afbd79c77ebc72e2ff">MbOffsetCurve3D</a>, <a class="el" href="class_mb_wire_frame.html#a997d33272cfdcd1921f7f2af9239c874">MbWireFrame</a>, <a class="el" href="class_mb_spiral_surface.html#a70799bbaa6f4454248a4159dbbebcbb8">MbSpiralSurface</a>, <a class="el" href="class_mb_sector_surface.html#a5c857b73b55aaed9833d5b909e169ccd">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#a826223e35f8874ca930f5f57457fea50">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#ac3779e852aa7aa624711fc87c75d0d21">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#a87b053917faac21fe93abbe0c1a43a6d">MbRevolutionSurface</a>, <a class="el" href="class_mb_poly_surface.html#a5236836e478d4e6838da298254e6ff17">MbPolySurface</a>, <a class="el" href="class_mb_offset_surface.html#af4d35f76fdd761d5c9c71b3e40cd4e5f">MbOffsetSurface</a>, <a class="el" href="class_mb_lofted_surface.html#ad34caa51228bdd411d282d650959fef0">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#ae652301edc5490e13dd08d270eaa132b">MbJoinSurface</a>, <a class="el" href="class_mb_fillet_surface.html#a13b36f5a366e8c3edc97afaa81838805">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#a93a6a43d02116c93c3f824d837b271c1">MbExtrusionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#a2c4a838beb7ee6966fa5a0e6cc803f04">MbExplorationSurface</a>, <a class="el" href="class_mb_expansion_surface.html#a9acdbbeb61532f69ca215627692de9c2">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#af7d5ab7395a6c8f43347325b81fd476d">MbExactionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#ae1b8667d0cac9b0d7d14889fc5f9dea5">MbEvolutionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#a4b59f52d902591a0acf91d69ec2980e1">MbElevationSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a525a2eb3fd639ef854ee050dc780d15f">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#aa642d513ce7320dedf8ebb2c6c9f210a">MbChamferSurface</a>, <a class="el" href="class_mb_polymesh.html#abe94101a33a1c26a51c8ecc747fefed3">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#afcae3155d18945d804afcfb1841eeb84">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#aa1cf86521a6e033c4a3b19d1db1fb106">MbPoint3D</a>, <a class="el" href="class_mb_plane_instance.html#ab2be8e3caed61d6659471b6aec6789dc">MbPlaneInstance</a>, <a class="el" href="class_mb_mesh.html#ad380883240c732f3123ebf1660da610e">MbMesh</a>, <a class="el" href="class_mb_radial_dimension.html#a0e331f9e8615bd254df0b7ce07ad97a2">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a222d4ea7a3e757395d1bc714141ef5a2">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#ad12b855a0006a31f6cb7231193ca23bf">MbLinearDimension</a>, <a class="el" href="class_mb_marker.html#acd5be53226964ce4ee61bc09501a680c">MbMarker</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#a31c41247e679c7aaa4cae26823b83d06">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#a7ae56a4252dedb42d09bf877e39ade22">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#a6f5c77dbb04583b2cf5c2ee3ffe04489">MbSurfaceCurve</a>, <a class="el" href="class_mb_spiral.html#a0885b604e416accd92565f5fb8de5501">MbSpiral</a>, <a class="el" href="class_mb_silhouette_curve.html#a4d8507dc73ef04831df8ab8254385f97">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#a29b46dae0caa0ad1819b0b9d8ebdaf2e">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#a9a4556239b08bd3bacbfcbb384660724">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#a5437fcd0c50a55cfb9b7b19ea00bb31f">MbPlaneCurve</a>, <a class="el" href="class_mb_nurbs3_d.html#a1cef2732b420edb618dfbea5e02e4dfa">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#aef2be8bf86225153321d2061dab6f507">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#a7a3fa4acacc5e32157745873c9848046">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#ac98e62b606920b0e0ef59cdd45e974b2">MbHermit3D</a>, <a class="el" href="class_mb_cubic_spline3_d.html#a63613d611b94f1dd6ee74fc09fc8dda9">MbCubicSpline3D</a>, <a class="el" href="class_mb_contour_on_surface.html#a28bbdc5af19cfd62bcf56b6a27699230">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#ac9f1258ec2272074cab07f1cf6d13240">MbContour3D</a>, <a class="el" href="class_mb_character_curve3_d.html#a4ef048acafc2d04c0b32b6c8dfc66ab4">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#a2919d80d08080f967e0c9712ea9349b5">MbBridgeCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#a883e522333aa55218e863720abf4ee27">MbBezier3D</a>, <a class="el" href="class_mb_arc3_d.html#a71efd8cd0629284d2de9d399862d0427">MbArc3D</a>, <a class="el" href="class_mb_collection.html#a0916e9a0356ca9bbe7fc772ec22f228b">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#a121d3acf971c477c2d3221ec5e29a39e">MbAssistingItem</a> и <a class="el" href="class_mb_p_m_i.html#ae4886a9152a43398338c2ab5a43061ed">MbPMI</a>.</p>
+
+</div>
+</div>
+<a id="a51d7fa6cb8c01be0c9456ae36e122f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d7fa6cb8c01be0c9456ae36e122f68">&#9670;&nbsp;</a></span>IsSame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbSpaceItem::IsSame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em> = <code><a class="el" href="mb__variables_8h.html#a34e4cfd9121bef7e982e1ab10a4a633d">LENGTH_EPSILON</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты равными. </p>
+<p>Равными считаются однотипные объекты, все данные которых одинаковы (равны).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для сравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Точность сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Равны ли объекты. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_mb_torus_surface.html#a481fc0f57b85c707f9d9cfef561def1b">MbTorusSurface</a>, <a class="el" href="class_mb_spline_surface.html#a415595cae0fac0afabbfe0fcec4bb849">MbSplineSurface</a>, <a class="el" href="class_mb_spiral_surface.html#a7e237c38bffa0fe6e22b05205815bf92">MbSpiralSurface</a>, <a class="el" href="class_mb_sphere_surface.html#a508c634d348cc0bf4147be76a19c1f07">MbSphereSurface</a>, <a class="el" href="class_mb_sector_surface.html#ab1ac0cfcfaec78a96e5d32d9d94a8016">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#a5ed2b1380b5636e5e259c17530d58b8b">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#afc803e0fae44664d89bc0eb5a33661da">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#ace2f6b4f31c25aef64be37af617f0beb">MbRevolutionSurface</a>, <a class="el" href="class_mb_plane.html#a9dcccd318b71eb4757fd2b40c5481b5a">MbPlane</a>, <a class="el" href="class_mb_offset_surface.html#aba1cf87b421c4d5e27ed49139c9eeecd">MbOffsetSurface</a>, <a class="el" href="class_mb_mesh_surface.html#a9006ba5d47d0e37b876a3434d5283d9f">MbMeshSurface</a>, <a class="el" href="class_mb_lofted_surface.html#ab3caab64adb285b7e109d49652ff6766">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#a882d576a774bf5de3aa96e2718c72704">MbJoinSurface</a>, <a class="el" href="class_mb_grid_surface.html#adee85c47f3fa0dc8faba7cbb11d5173a">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#ae10cf3c7ba53342b84d1803718c8547c">MbGregorySurface</a>, <a class="el" href="class_mb_fillet_surface.html#a55015632b93f5f52c58974599d09cc54">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#abfb70056bb4afd9d9de3ea0668acfab1">MbExtrusionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#aab48972bcba3a2691abbed73b70afdd9">MbExplorationSurface</a>, <a class="el" href="class_mb_expansion_surface.html#a0cee5a60e86b61014b7605ef04a1135b">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#a05240aa5dba337a33c996858f2296547">MbExactionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#ab6722001efd308afe8cc6efc9784b5ee">MbEvolutionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#ae9847e3415d6b3b27049168e777449d1">MbElevationSurface</a>, <a class="el" href="class_mb_cylinder_surface.html#ad10a054cc0f0c299f6acd7f834c621e6">MbCylinderSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#ae0a74ee73cb26ad18659846de82d4039">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_cover_surface.html#a544ce9224bee6ec4f81ab9117eff264f">MbCoverSurface</a>, <a class="el" href="class_mb_corner_surface.html#af8f3077bdbe8967ac0fd778cb61df7c1">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a0cd907e26766b013716033546a0e60bb">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_cone_surface.html#a233f2d84144aab0510d3b8699140127b">MbConeSurface</a>, <a class="el" href="class_mb_channel_surface.html#aa33393231342126775331765b7182c57">MbChannelSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#aab808fa266a48227d37ca44befeb00fc">MbChamferSurface</a>, <a class="el" href="class_mb_space_instance.html#a881ced7bf33c706d8465b99a95c92af6">MbSpaceInstance</a>, <a class="el" href="class_mb_polymesh.html#a5b1e91904293010182d4f165aa2c1ae4">MbPolymesh</a>, <a class="el" href="class_mb_point3_d.html#a9830273f3b95747f46504eb49a428745">MbPoint3D</a>, <a class="el" href="class_mb_mesh.html#a8aa0d4e9ce55ccc545baa88786ce91e4">MbMesh</a>, <a class="el" href="class_mb_points_symbol.html#abda5cf533b80d80ee6a8ec6555bc5f03">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#a224b5e0f81a29b4e0060516f707a7454">MbLeader</a>, <a class="el" href="class_mb_rough.html#aecb80f49a11dc5a7eb7bb8adf3688458">MbRough</a>, <a class="el" href="class_mb_marker.html#a060612926e9db61e417793a47a76814e">MbMarker</a>, <a class="el" href="class_mb_instance.html#a11b3cc59a89430cbde91cfe0b92b4bdc">MbInstance</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#ad76745e9d641dad55d22945a28d33431">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#a5ef86c247d6980a83af6a30e2a9b0b5e">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#abe58bbbeda0796bc4a4fd63b157b582e">MbSurfaceCurve</a>, <a class="el" href="class_mb_silhouette_curve.html#af5abd0e8afe7741f65ba028f4ad58d13">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#ab255adc73cfb08d48ebcc355f63efd6b">MbReparamCurve3D</a>, <a class="el" href="class_mb_plane_curve.html#a2df2c56e9fefe6e0c01e41c0127b84cf">MbPlaneCurve</a>, <a class="el" href="class_mb_offset_curve3_d.html#a3f080f98aaeb787e783da5471f570f15">MbOffsetCurve3D</a>, <a class="el" href="class_mb_nurbs3_d.html#ac6ea681a5902a2b2be1b22f1b62d8bb3">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#aa4f718cdd9d03ae5f0677c3af7f15349">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#a97e5717333bdb7a19d5fa8b1b3e5ceec">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#a03d9bafd827a693b707100457167b14c">MbHermit3D</a>, <a class="el" href="class_mb_curve_spiral.html#a7b870f5bea13c8631e1aefcb044144ef">MbCurveSpiral</a>, <a class="el" href="class_mb_cubic_spline3_d.html#a9791ad5a0a5934505b340a8a77fd2aae">MbCubicSpline3D</a>, <a class="el" href="class_mb_crooked_spiral.html#a116fb6e6eb5cbfc9d8b210769ea70f0e">MbCrookedSpiral</a>, <a class="el" href="class_mb_contour_on_surface.html#ae17e76662767b91bbc77c0b73d08a123">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#af0676c2de02e04e614ab1b21ad7a6e37">MbContour3D</a>, <a class="el" href="class_mb_character_curve3_d.html#a2a242d9aa2d30c2af2d6dc726f221418">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#ad6df2d8206627488a2914f4d7597ae82">MbBezier3D</a>, <a class="el" href="class_mb_b_spline.html#a55a8615379eb012729f2ac648aff828c">MbBSpline</a>, <a class="el" href="class_mb_arc3_d.html#a9d7e6a04a7880d20e7cf84675dbe039f">MbArc3D</a>, <a class="el" href="class_mb_assisting_item.html#ad1f780b212180e023f6916d494cd9139">MbAssistingItem</a>, <a class="el" href="class_mb_assembly.html#aec99571393fb397b9fba8c9d8ee916ed">MbAssembly</a>, <a class="el" href="class_mb_p_m_i.html#acc1ab1132e61914b22c0845f0b3992b3">MbPMI</a>, <a class="el" href="class_mb_collection.html#ae695f0b16f097baa9228fc16a1b7fa31">MbCollection</a>, <a class="el" href="class_mb_radial_dimension.html#a7ea22b390ae7e746e250cfd08440f983">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#ae2d9c0db9ded18dd936e9d794224d152">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#adef3ab047189927a06594749b9f78bdf">MbLinearDimension</a>, <a class="el" href="class_mb_wire_frame.html#a1fdc350966321226c7f2dfb461463b5d">MbWireFrame</a>, <a class="el" href="class_mb_solid.html#a58d84cbaaef6f29a3bf9b4b17d0128c5">MbSolid</a>, <a class="el" href="class_mb_point_frame.html#a41e04cee15f711a0f7c55b82fc89eb26">MbPointFrame</a>, <a class="el" href="class_mb_plane_instance.html#a60f5e809bbbbf609f9f3daf347a26fa1">MbPlaneInstance</a>, <a class="el" href="class_mb_thread.html#ac781b3bbc187119f96e1e547fcaae74e">MbThread</a>, <a class="el" href="class_mb_spiral.html#a76352bed02458bcc3b55c39bbb481e8c">MbSpiral</a>, <a class="el" href="class_mb_polyline3_d.html#ae55b5651066c8ca663ce6ccad891f11b">MbPolyline3D</a>, <a class="el" href="class_mb_contour_on_plane.html#a7916eaa704a22c981514e8b63ae2e230">MbContourOnPlane</a>, <a class="el" href="class_mb_cone_spiral.html#a73a9e8aff7864fe1c05cef88dbffeb83">MbConeSpiral</a> и <a class="el" href="class_mb_bridge_curve3_d.html#ac6b52c9c5d7ac05e38d7b0a65ca580ae">MbBridgeCurve3D</a>.</p>
+
+</div>
+</div>
+<a id="a0a575283df807ac23404a47d6ac85590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a575283df807ac23404a47d6ac85590">&#9670;&nbsp;</a></span>IsSimilar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbSpaceItem::IsSimilar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить, являются ли объекты подобными. </p>
+<p>Подобными считаются однотипные объекты, данные которых можно приравнять или данные так же являются подобными (указатели). Подобный объект можно инициализировать по данным подобного ему объекта (приравнять один другому без изменения адресов).</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Подобны ли объекты. </dd></dl>
+
+<p>Переопределяется в <a class="el" href="class_mb_mesh_surface.html#a24a7960aa0c89b455d28574fc8eee18e">MbMeshSurface</a>, <a class="el" href="class_mb_grid_surface.html#a54e67a40a0bd0a31e4601788c81824ba">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#afb9dcd090acef8fdd0cc0a4fbc25b9a8">MbGregorySurface</a>, <a class="el" href="class_mb_cover_surface.html#acba6c33e63c70925480141065475b00a">MbCoverSurface</a>, <a class="el" href="class_mb_corner_surface.html#ad7cd90edd3d3e8d0d91e4e8a72dc25f9">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a5c7a3439374b0c0a77abd2e6bae2a14d">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_space_instance.html#a20fa76a211f0ee6528e9a69b8d36a74d">MbSpaceInstance</a>, <a class="el" href="class_mb_marker.html#a3fd4331850caa8fb4f67e6f469e8ccd3">MbMarker</a>, <a class="el" href="class_mb_instance.html#a13c7b4a8f9ab51c8cedafe18becfc647">MbInstance</a>, <a class="el" href="class_mb_bridge_curve3_d.html#a227a4cb470e317b0c70460f094e237d5">MbBridgeCurve3D</a>, <a class="el" href="class_mb_assisting_item.html#a0b78fbc756eee3eb932c10282e9f17cf">MbAssistingItem</a>, <a class="el" href="class_mb_p_m_i.html#ae0806e1f74e89098fd63539b15bbeab0">MbPMI</a>, <a class="el" href="class_mb_wire_frame.html#a51d03c9538f89f96292ebb6df003f4b1">MbWireFrame</a>, <a class="el" href="class_mb_spiral_surface.html#a2f39e9a6a4acfe84a89452ee38c72c25">MbSpiralSurface</a>, <a class="el" href="class_mb_sector_surface.html#a26ce323ec2cf265d12be8a62990b9e0e">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#af31fa9d2cb6b58c781acdea6efc8f96f">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#aa8306a858c6305af152900ec0d96ec05">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#ab292db73a9c58457205ad4ebfcf68dbc">MbRevolutionSurface</a>, <a class="el" href="class_mb_offset_surface.html#a1587014b4afca5f15744b78d3204b773">MbOffsetSurface</a>, <a class="el" href="class_mb_lofted_surface.html#a605109d52e51f0e3b4a10e8fe1eef9ef">MbLoftedSurface</a>, <a class="el" href="class_mb_fillet_surface.html#a5fc10bea5a339f34597197b7a565a6c7">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#a172bf9d91fe148f750b219ff5db79292">MbExtrusionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#a649beb923a7f07145e1e4625d5ab5ed3">MbExplorationSurface</a>, <a class="el" href="class_mb_expansion_surface.html#ae646c037e7889e8b71398c4f425484b1">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#aa08a23522f73e38c8d620ac2064c0e84">MbExactionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#a862d72bf44cf2df16d793292f3aa7a5a">MbEvolutionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#adde236c4bc6da4b96fd7fba7d6d5c25c">MbElevationSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a31786579f5bc5bc151e8baa12cf3749d">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_channel_surface.html#aef8f1c3589f846aabfc263bf6b03c31d">MbChannelSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#acd15a3e1f433e5a19d559736e40ab387">MbChamferSurface</a>, <a class="el" href="class_mb_solid.html#aea50a1eb5e27e0d693adcc9d2d11d13a">MbSolid</a>, <a class="el" href="class_mb_point_frame.html#a1d8b19b8d977018e573abb9ff346d58d">MbPointFrame</a>, <a class="el" href="class_mb_plane_instance.html#ab1f8dc9b73cd22c4123a067b851a75b1">MbPlaneInstance</a>, <a class="el" href="class_mb_thread.html#a7bfe13132dcc390d334f2806904c0daa">MbThread</a>, <a class="el" href="class_mb_symbol.html#ae937b6654483fdd0ab34926c57bc72b3">MbSymbol</a>, <a class="el" href="class_mb_dimension.html#a03e3159e68863553b31be05b7d9c346a">MbDimension</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#a09df29d7160c524e74c0e3378df4229f">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#ad6e174774e81139698bf76a269162865">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#a83ae35380e08c278e638feb7d63e4a7c">MbSurfaceCurve</a>, <a class="el" href="class_mb_silhouette_curve.html#a2b3267bd329eb90746343dce6926f6e0">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#add638739300ae5dccdeb40fe9f61b626">MbReparamCurve3D</a>, <a class="el" href="class_mb_plane_curve.html#aa413122b57131ee14d82fd7624323ae6">MbPlaneCurve</a>, <a class="el" href="class_mb_offset_curve3_d.html#a3477598fd17883c7b225193e9e3e0fe2">MbOffsetCurve3D</a>, <a class="el" href="class_mb_contour_on_surface.html#a689fa9dddeed8e17088d9e8b4f1f8ba2">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#a7d8bdf6539e20c72b5c91f36370ed2ab">MbContour3D</a> и <a class="el" href="class_mb_assembly.html#a39062d513de8061ce40b42dea762d0aa">MbAssembly</a>.</p>
+
+</div>
+</div>
+<a id="aff5093771e43c5eab4fc1f6d603b22e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5093771e43c5eab4fc1f6d603b22e1">&#9670;&nbsp;</a></span>SetEqual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbSpaceItem::SetEqual </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_space_item.html">MbSpaceItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сделать объекты равным, если они подобны. </p>
+<p>Равными можно сделать только подобные объекты. Подобный объект приравнивается присланному путем изменения численных данных.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>- Объект для инициализации.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Сделан ли объект равным присланному. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_mb_mesh_surface.html#a637bd341b00990528dd3a6cc1feb2124">MbMeshSurface</a>, <a class="el" href="class_mb_grid_surface.html#ac5009b4f4d3a9192984fd8bb5b65d687">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#a5f42c4428fdb099a50bca0aaee5dcfda">MbGregorySurface</a>, <a class="el" href="class_mb_cover_surface.html#aa4ab49c5db72abcf039c687eaf4d8e03">MbCoverSurface</a>, <a class="el" href="class_mb_corner_surface.html#a5f83877ecce63d789e1a847ef2f5e8f7">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a47796b75b0535df3ceda65210bfabd86">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_cone_surface.html#a2a9c721b6cb02ef28d7d7d9dd177654d">MbConeSurface</a>, <a class="el" href="class_mb_space_instance.html#af389477ec891c7ffca398cdc53909c62">MbSpaceInstance</a>, <a class="el" href="class_mb_polymesh.html#a0281a88e78f0d394b5bf8b7b2e488a80">MbPolymesh</a>, <a class="el" href="class_mb_point3_d.html#a64261e93c8b40fc5eb212dae050dd090">MbPoint3D</a>, <a class="el" href="class_mb_mesh.html#a182a062e50b6dc94615bc80ac1d6ed52">MbMesh</a>, <a class="el" href="class_mb_marker.html#a119c19f87f76a33431c19c9fcccc8795">MbMarker</a>, <a class="el" href="class_mb_instance.html#a3e14bd75a85fe5f150a6e8dcbb4ead12">MbInstance</a>, <a class="el" href="class_mb_curve_spiral.html#a7fc39ddaa7a2cdfa925658f0a976d139">MbCurveSpiral</a>, <a class="el" href="class_mb_crooked_spiral.html#ab8f18767645046076860758b820bab78">MbCrookedSpiral</a>, <a class="el" href="class_mb_b_spline.html#ad72c92d52dd3fed4acd4a02a3e7df21e">MbBSpline</a>, <a class="el" href="class_mb_collection.html#a992549a5f06eb4b890257922672e73d5">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#a9dffb3943bbe6386541317a7f3d8867b">MbAssistingItem</a>, <a class="el" href="class_mb_wire_frame.html#ac6696e6291bb13360960ef60324fce4c">MbWireFrame</a>, <a class="el" href="class_mb_torus_surface.html#acea5eb3b111b8af422606382cd0ee193">MbTorusSurface</a>, <a class="el" href="class_mb_spline_surface.html#a380f99ca2e676b9ebf907695cf60c0ea">MbSplineSurface</a>, <a class="el" href="class_mb_spiral_surface.html#a5e2244819185c429fe8853cf29fba964">MbSpiralSurface</a>, <a class="el" href="class_mb_sphere_surface.html#a655413235b79e93471d202e409acc601">MbSphereSurface</a>, <a class="el" href="class_mb_sector_surface.html#a121ca5a2188ae87e1d51071cc460d49e">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#ace428a97fcb670d781ec014396f5bf96">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#a985cd154ca735e8ab229e873b77e659f">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#a93d0cc9059f2f5fab37b588bac84e22f">MbRevolutionSurface</a>, <a class="el" href="class_mb_plane.html#a0682ee30631fe66a4edd3735b7ad12b1">MbPlane</a>, <a class="el" href="class_mb_offset_surface.html#a891f68f063ec0a75a274ed55a42c316e">MbOffsetSurface</a>, <a class="el" href="class_mb_lofted_surface.html#aaa0ee91f72d04fdb6e13a465b0ca719b">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#a3db07436dadc777af2dab29147313691">MbJoinSurface</a>, <a class="el" href="class_mb_fillet_surface.html#a0eeada1464c5a79422cd30e154ddbb37">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#acb30882c2f2870610c61cbb113b9325f">MbExtrusionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#a456f3c18d4c7c1d33b04985904036198">MbExplorationSurface</a>, <a class="el" href="class_mb_expansion_surface.html#a577238d2fdf7b0700caaf3ce86095238">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#a6a5058fc6ed19bb648a3f03ec693b9dc">MbExactionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#a78ae086889ef853e05c9c244639deb19">MbEvolutionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#ad71526cd65a683d5c4d4261b3bebc99a">MbElevationSurface</a>, <a class="el" href="class_mb_cylinder_surface.html#a05c056e6bc05c0a1d0c040308ce683cd">MbCylinderSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a7ea71954941eda22435e88e4eefb1816">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_channel_surface.html#a7834522ebb9f17076f79b8f5f8ef1c84">MbChannelSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#a0c3bf0d76e2cd46f6410123e5f1ed4bb">MbChamferSurface</a>, <a class="el" href="class_mb_solid.html#a319218dded5df2b2fb9760cde85fe35a">MbSolid</a>, <a class="el" href="class_mb_point_frame.html#a13ee8cbdd557cc8e1dbd9424ef71ef86">MbPointFrame</a>, <a class="el" href="class_mb_plane_instance.html#a897228b328d8ec3d5c13c3e413ab3d89">MbPlaneInstance</a>, <a class="el" href="class_mb_thread.html#aa92cc3c968e3a6307f9a997c8e1319e0">MbThread</a>, <a class="el" href="class_mb_points_symbol.html#a106cfbad3357b502621bf5d362c3743c">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#a17b514fa6ccc1cd9b5231399c0b4a8ea">MbLeader</a>, <a class="el" href="class_mb_rough.html#ae8d9c3f99fd6064ee90e19db62754e34">MbRough</a>, <a class="el" href="class_mb_radial_dimension.html#a466a96486ec7d46907293abeedb7f90e">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#ad269bd53a01ec6f7a1334ad3d8aedc9f">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#acf232e772c29640f1bd1c069f9f72455">MbLinearDimension</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#a3e52202ec9fcb32fa408147de33a9c5a">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#aa7e3639bb596941354f56e047d086870">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#a727121c5e22e4693ab3890741033e764">MbSurfaceCurve</a>, <a class="el" href="class_mb_spiral.html#ac1e763b4139e5b2ec0fd23437595a0aa">MbSpiral</a>, <a class="el" href="class_mb_silhouette_curve.html#aa9031792521b3c73d3e5a7fc15a63236">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#a356825437d89feb1ab4e730102f49e6f">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#a36f2b91e9caf71074e9bb70afd2b0fa2">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#a604826f35412573620cc3b4ee2fa2b5b">MbPlaneCurve</a>, <a class="el" href="class_mb_offset_curve3_d.html#a6e00249929e66ab051f8294a44712251">MbOffsetCurve3D</a>, <a class="el" href="class_mb_nurbs3_d.html#acd6c0cce21f59cc0aeedfd51d4b5361d">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#a3f09dd39c52087769da0c49196316187">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#a80c694f7d1f02f96d26aa456f8d0f5c9">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#afe478f308db49c3305a9c40fa17fe3af">MbHermit3D</a>, <a class="el" href="class_mb_cubic_spline3_d.html#afee00549a474ddb422f3a1fc307d0167">MbCubicSpline3D</a>, <a class="el" href="class_mb_contour_on_surface.html#a339a4ce800ebd77e9a666c24da391b50">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#aeeac2ab2dba6d9ab9c22980b5a04f458">MbContour3D</a>, <a class="el" href="class_mb_character_curve3_d.html#a5f8da9d85b0249bb9f2cf3345a8e0894">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#aa721cd775e2bab4335cc28b2b7bc0dca">MbBridgeCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#a8060dcd17c26783c436b7ad8825b1331">MbBezier3D</a>, <a class="el" href="class_mb_arc3_d.html#a810fcf2c890f62c503c82c9968677d82">MbArc3D</a>, <a class="el" href="class_mb_assembly.html#a565f470c9c298ff44db58eb3d5e5af9c">MbAssembly</a> и <a class="el" href="class_mb_p_m_i.html#a1fcbfb060f3dadc36fbea60fe53860fb">MbPMI</a>.</p>
+
+</div>
+</div>
+<a id="aef4c927c97e93b6661c646bf673f6f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4c927c97e93b6661c646bf673f6f83">&#9670;&nbsp;</a></span>DistanceToPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double MbSpaceItem::DistanceToPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определить расстояние до точки. </p>
+<p>Определить расстояние до точки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>- Точка.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расстояние от объекта до точки. </dd></dl>
+
+<p>Замещается в <a class="el" href="class_mb_elementary_surface.html#a586d2ee86cd20a31a367a437bc1f86fe">MbElementarySurface</a>, <a class="el" href="class_mb_wire_frame.html#a8e0e3371ddcdefc7e88ab6dd659c3f43">MbWireFrame</a>, <a class="el" href="class_mb_surface.html#a4404936e13d4d5eb0e930229292bffaa">MbSurface</a>, <a class="el" href="class_mb_plane.html#aba1604dd0f97eabf796c22b84faf71dc">MbPlane</a>, <a class="el" href="class_mb_grid_surface.html#ad0db6dc04f880b5633966ef477a8b3c5">MbGridSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a00985dc842a66abf1c02b98ece8a3583">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_space_instance.html#ab6b54299f282c35ca445729858837ade">MbSpaceInstance</a>, <a class="el" href="class_mb_solid.html#aa577566a033bb0189295de60cdd6d8d2">MbSolid</a>, <a class="el" href="class_mb_polymesh.html#ae48406f4abb77a25625e021fc42101f6">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#aab92f2102793c7c44577ade757428bd8">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#a52bfd2cd57ea47d3bec5fd8a95cab0f1">MbPoint3D</a>, <a class="el" href="class_mb_plane_instance.html#a799eb3e33c613424333f5d9e48e77230">MbPlaneInstance</a>, <a class="el" href="class_mb_mesh.html#a783238a74512c2880eb8d6d19f2b5293">MbMesh</a>, <a class="el" href="class_mb_thread.html#a8f67fe1df5455759f65e72debe9a3942">MbThread</a>, <a class="el" href="class_mb_symbol.html#a788846187f141017f1dbb095fadd6587">MbSymbol</a>, <a class="el" href="class_mb_radial_dimension.html#a26a6986de267d5df007879a0ffaf9b79">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a02e2fa5dbbda65118591a6cb87dc25ba">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#a8144d7f632d0d6236d73d6e4560b9ea2">MbLinearDimension</a>, <a class="el" href="class_mb_marker.html#abc56225dbc3f3c0df5de34ca57af5812">MbMarker</a>, <a class="el" href="class_mb_instance.html#a3334d1ae9d313e327e71d8d78783f613">MbInstance</a>, <a class="el" href="class_mb_curve3_d.html#a8ef268b48738a5d61eeb66f939892b62">MbCurve3D</a>, <a class="el" href="class_mb_reparam_curve3_d.html#acc071c3913702146f61e516464bc6a2f">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#a185799e851336bd91eb1abd8d6e50934">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#afc6fa1b2b53b561d69607d188e266bb5">MbPlaneCurve</a>, <a class="el" href="class_mb_line3_d.html#a3ae2a476bd9dbfc735ef89ae1504a092">MbLine3D</a>, <a class="el" href="class_mb_contour_on_surface.html#a0ad59d559584b1b6272b17e6a61a34b6">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#a4bb043d0afc925dd81b59ed830fd4212">MbContour3D</a>, <a class="el" href="class_mb_arc3_d.html#a49d32234b9b733d3bb4fd125e3e136c3">MbArc3D</a>, <a class="el" href="class_mb_collection.html#a6ec32bb452c29a9f1ceff2f81535237c">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#a95e227e51e70660ab48a4398b4b4d04e">MbAssistingItem</a>, <a class="el" href="class_mb_assembly.html#a96bb060d4996b5fd97fe47d9a1b4b748">MbAssembly</a> и <a class="el" href="class_mb_p_m_i.html#aa57b03dcfc229be7b118998373e2c663">MbPMI</a>.</p>
+
+</div>
+</div>
+<a id="a4cf96cb312c266eb1ae2340f4c870ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf96cb312c266eb1ae2340f4c870ad4">&#9670;&nbsp;</a></span>AddYourGabaritTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::AddYourGabaritTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расширить присланный габаритный куб так, чтобы он включал в себя данный объект. </p>
+<p>Расширить присланный габаритный куб так, чтобы он включал в себя данный объект.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cube</td><td>- Принимающий габаритный куб с информацией по габаритам. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_space_instance.html#aa3817ce3bd9353f560db4eea8a42554d">MbSpaceInstance</a>, <a class="el" href="class_mb_polymesh.html#ab832e69b1ec6c5b24909b548a0847cad">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#a7a171ca04a6da0ae5d7a068b82c9524e">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#a32dcd83a26b135111356fd5e303b3682">MbPoint3D</a>, <a class="el" href="class_mb_mesh.html#a26ebc7aef9c19c96a37b93e9cd71cc46">MbMesh</a>, <a class="el" href="class_mb_marker.html#a18968ea7710c4cd845a6bf1e7fab4590">MbMarker</a>, <a class="el" href="class_mb_instance.html#a349207211a7f078f6c6afa176b053655">MbInstance</a>, <a class="el" href="class_mb_surface_intersection_curve.html#aa3c17cd6e1583d78cbfd1365ca1e242c">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_contour_on_surface.html#ad7b6304ea407525122274e97a3976a24">MbContourOnSurface</a>, <a class="el" href="class_mb_collection.html#af2dd5d92de0921696bbf4d835db78e82">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#a32cfb626147f47a137197b4fe172f685">MbAssistingItem</a>, <a class="el" href="class_mb_assembly.html#a27a6efd98ffd4a996d5c6b01c3196162">MbAssembly</a>, <a class="el" href="class_mb_p_m_i.html#a098dbe8ae9531a5222fafd1781a26511">MbPMI</a>, <a class="el" href="class_mb_surface.html#a846a23574ebc34ccfc7e62cfa0d5cf9a">MbSurface</a>, <a class="el" href="class_mb_wire_frame.html#a781ed6f5a050a8f51ff52a1a8655a7c8">MbWireFrame</a>, <a class="el" href="class_mb_solid.html#abd424a9e997ab9a83160e0175ae469ab">MbSolid</a>, <a class="el" href="class_mb_plane_instance.html#a1217e5480c773c4d18bf67127361ada1">MbPlaneInstance</a>, <a class="el" href="class_mb_thread.html#a41c8923710693c3ac5e7e4ce7b88d00e">MbThread</a>, <a class="el" href="class_mb_symbol.html#a225954df67e4295b96f6e785586f31af">MbSymbol</a>, <a class="el" href="class_mb_radial_dimension.html#a690b49e15d45adfad4949c25486b413f">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a78f5a2169a10c70e67970cb8cf51ec3b">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#a71c7282c9a0b0809028f30b83947a355">MbLinearDimension</a>, <a class="el" href="class_mb_curve3_d.html#a032b2ec48469e0f092adf2adc5c0f1f2">MbCurve3D</a>, <a class="el" href="class_mb_surface_curve.html#a50f265ed0f7ed17222ae06445a1048ca">MbSurfaceCurve</a>, <a class="el" href="class_mb_spiral.html#ac166a83ac547c2ac0c057e9f2553a558">MbSpiral</a>, <a class="el" href="class_mb_poly_curve3_d.html#a1f4af06de9588af7a7cce574d2e76322">MbPolyCurve3D</a>, <a class="el" href="class_mb_plane_curve.html#aa4440e746e0c8cfdcc5b692af2fc9833">MbPlaneCurve</a>, <a class="el" href="class_mb_offset_curve3_d.html#a58af2167880c2415da49824218f0a60b">MbOffsetCurve3D</a>, <a class="el" href="class_mb_line3_d.html#a355bf24916b24c156c99dcd087d3b028">MbLine3D</a>, <a class="el" href="class_mb_character_curve3_d.html#abfea1514764b96187f79f2f62f87727e">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#a3b370a2e3fd165d9bc58cc5905feea55">MbBridgeCurve3D</a> и <a class="el" href="class_mb_arc3_d.html#a16690707bba7ba0e3d7e4e4d7cee4dcf">MbArc3D</a>.</p>
+
+</div>
+</div>
+<a id="af22ccd5ace5fc29a3e27725926a4827d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af22ccd5ace5fc29a3e27725926a4827d">&#9670;&nbsp;</a></span>CalculateLocalGabarit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::CalculateLocalGabarit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>into</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рассчитать габарит в локальной системы координат. </p>
+<p>Для получения габарита объекта относительно локальной системы координат, присланный куб делается пустым. Затем вычисляются габариты объекта в локальной системе координат и сохраняются в кубе cube.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">into</td><td>- Матрица перехода от текущей для объекта системы координат к локальной системе координат.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cube</td><td>- Куб с информацией по габаритам. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_thread.html#a67af2f221bf480a2ef43dfd164274ba1">MbThread</a>, <a class="el" href="class_mb_wire_frame.html#aab560f7c0261b16640806a7838e6d5c5">MbWireFrame</a>, <a class="el" href="class_mb_surface.html#ab5130c78874cc446e3fdbeb8877165c4">MbSurface</a>, <a class="el" href="class_mb_space_instance.html#a76da2e88c105bef2c50ae2bee05a56b4">MbSpaceInstance</a>, <a class="el" href="class_mb_solid.html#a79536b3e388dea1dce87d9c571e6fe79">MbSolid</a>, <a class="el" href="class_mb_polymesh.html#a4b762c98d3e543888699cba0dd7b48ca">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#a4edaeff34b6e98cd20ea9b3eaceaba67">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#af9c5a1ab3bfb6d768f61df5059954254">MbPoint3D</a>, <a class="el" href="class_mb_plane_instance.html#a317667a87da2569168a8e89b11362806">MbPlaneInstance</a>, <a class="el" href="class_mb_mesh.html#a62bdd433b2195e28f10a00847b92465e">MbMesh</a>, <a class="el" href="class_mb_legend.html#a5d99249d26139733a6b926f17125da26">MbLegend</a>, <a class="el" href="class_mb_instance.html#ab887809e607289a3f3113d26123e455f">MbInstance</a>, <a class="el" href="class_mb_curve3_d.html#a5d147dc73d55b82a1bc9711453ff4b45">MbCurve3D</a>, <a class="el" href="class_mb_collection.html#a5d80f045330bdc35fe9376df11db1486">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#aa5548a657168ff4aafb75f1e87fd42f3">MbAssistingItem</a>, <a class="el" href="class_mb_assembly.html#aa410c87841482ed2ece93ef9f2c9da42">MbAssembly</a>, <a class="el" href="class_mb_line3_d.html#a84cb2b300e58b6e4992e9bffd1d79ea4">MbLine3D</a>, <a class="el" href="class_mb_sphere_surface.html#ac4b6f158d38685916cbb2d23b1df4ca3">MbSphereSurface</a>, <a class="el" href="class_mb_sector_surface.html#ad06fc7674c689f58b7d87f110a9b0539">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#acdd5ed6b0882e6beab2236eff32ac344">MbSectionSurface</a>, <a class="el" href="class_mb_ruled_surface.html#afb5c9162463d379ebaf6ff0fac250714">MbRuledSurface</a>, <a class="el" href="class_mb_plane.html#a8b79b6263373a2e13d43dad6cc510221">MbPlane</a>, <a class="el" href="class_mb_extrusion_surface.html#a05e0509ede132938eeb4f36fc93f822c">MbExtrusionSurface</a>, <a class="el" href="class_mb_evolution_surface.html#a8ad8f24ebf03bedabe79e50e860ad86a">MbEvolutionSurface</a>, <a class="el" href="class_mb_cylinder_surface.html#aa312819002fb9f8fd0a1626eafc504bf">MbCylinderSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a3a23fb3a2178354d827977a6875be5e7">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_cone_surface.html#ab4ffc9b368d20bc2d24aee6a0777b4ff">MbConeSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#a8921a16f9006a59eff5d70c15e859f1b">MbChamferSurface</a>, <a class="el" href="class_mb_reparam_curve3_d.html#af278ede24f27bc0741ff196bd94ac9bd">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#a0b7d8eb957a2607da1a38ef620f6e464">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#a77b221a7ce377a0b50b43260c0c44c45">MbPlaneCurve</a>, <a class="el" href="class_mb_line_segment3_d.html#a56caf2e13e7ab78ac1dfdd7b82dc1d6f">MbLineSegment3D</a>, <a class="el" href="class_mb_contour3_d.html#a0efe5a2ee00dec8bfa2323b9dd3c8b58">MbContour3D</a> и <a class="el" href="class_mb_arc3_d.html#a22c5265a2c39cb2214c8fddc07e90832">MbArc3D</a>.</p>
+
+</div>
+</div>
+<a id="a0377f42bedf917440fb6dace05d16c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0377f42bedf917440fb6dace05d16c07">&#9670;&nbsp;</a></span>GetProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::GetProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_properties.html">MbProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать свойства объекта. </p>
+<p>Выдать внутренние данные (свойства) объекта для их просмотра и модификации.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">properties</td><td>- Контейнер для внутренних данных объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_torus_surface.html#a16f1316d869ef337bcbb5f385bd85a6f">MbTorusSurface</a>, <a class="el" href="class_mb_spiral_surface.html#a77e608e7553144395ffad064704bbe5e">MbSpiralSurface</a>, <a class="el" href="class_mb_sphere_surface.html#a3ff9c5798e0c256185cfac91babfe8d4">MbSphereSurface</a>, <a class="el" href="class_mb_ruled_surface.html#ade3217edc111c156f4823c0a7c884f32">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#a623dada47be4b27d2e6f1992951851b0">MbRevolutionSurface</a>, <a class="el" href="class_mb_plane.html#a73f78beb9dcc39072304876a739afbfb">MbPlane</a>, <a class="el" href="class_mb_offset_surface.html#a97d67860273165d9717d1eaf60b3c0c9">MbOffsetSurface</a>, <a class="el" href="class_mb_mesh_surface.html#ac1c056ac0ef0f5a847df84bc85f7f1e6">MbMeshSurface</a>, <a class="el" href="class_mb_lofted_surface.html#a7fc57e9333cc86adc98045f49a5e4c88">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#a3c8b717218d274855fd8b2538d71dd33">MbJoinSurface</a>, <a class="el" href="class_mb_grid_surface.html#a6daf7324933b1a9760d539fd12e2d9af">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#a4dbd61ac79027612ed90d9467c3ddc9c">MbGregorySurface</a>, <a class="el" href="class_mb_fillet_surface.html#ad2121735f52ae6c97ae1494cc3b98c95">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#a1524cdadc504e95e30fcaf5ca232b96d">MbExtrusionSurface</a>, <a class="el" href="class_mb_expansion_surface.html#a64eae77d2e34cd698c8dfc78ee47e0a9">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#a5d006daa3b344406c894ed1f284a3a60">MbExactionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#a8307e352b6610a97797e1a7409ef9c1f">MbElevationSurface</a>, <a class="el" href="class_mb_cylinder_surface.html#a9ea7937e3d76c8c27195a1c09763bfa5">MbCylinderSurface</a>, <a class="el" href="class_mb_cover_surface.html#a291af1ab87b0204f8c9389d5dcfa726f">MbCoverSurface</a>, <a class="el" href="class_mb_cone_surface.html#a6edba7926fc84ca34ba61352ed90b7fa">MbConeSurface</a>, <a class="el" href="class_mb_channel_surface.html#a25e936e617b34ca5ae09c6851dda0d22">MbChannelSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#add449d6c9eea5dd404f79647f5e06146">MbChamferSurface</a>, <a class="el" href="class_mb_space_instance.html#a9c37c697078bc123cc73d4c05c0cb59e">MbSpaceInstance</a>, <a class="el" href="class_mb_polymesh.html#a6512d178ff4883ee464aba3fbff576f8">MbPolymesh</a>, <a class="el" href="class_mb_point3_d.html#a83932ddfc0f34f4e0ecad6669b309da5">MbPoint3D</a>, <a class="el" href="class_mb_item.html#a3de974ec8959a64aeb1bb64633340aa3">MbItem</a>, <a class="el" href="class_mb_mesh.html#a8c849e152abd48afa6345fa2a4e4e75e">MbMesh</a>, <a class="el" href="class_mb_marker.html#a1eab3d74781909725ce1ef71e5e00daa">MbMarker</a>, <a class="el" href="class_mb_instance.html#a503ec7d4f8c5453f158cb2e979491ba8">MbInstance</a>, <a class="el" href="class_mb_b_spline.html#ae225bda6b660136c4ee9bd5464c4662f">MbBSpline</a>, <a class="el" href="class_mb_assisting_item.html#abc2ee4ef933b4beaadf3a17d1b40a9e5">MbAssistingItem</a>, <a class="el" href="class_mb_p_m_i.html#a8da92e4701ee95f1ef86d749699fba88">MbPMI</a>, <a class="el" href="class_mb_wire_frame.html#abd1ff78274ee0563e18ef4975042fb05">MbWireFrame</a>, <a class="el" href="class_mb_spline_surface.html#a8310011b10ea9f702a7e35749573e32b">MbSplineSurface</a>, <a class="el" href="class_mb_sector_surface.html#a0246d57e4d5dfaa9621275b4918f84cd">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#ad437a2158c2f94cf1ffc96ac0451e1e9">MbSectionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#a4cf7c73867ef2ee301de6b075d994783">MbExplorationSurface</a>, <a class="el" href="class_mb_evolution_surface.html#a70d90d451cbff20ef460e6861ff9a6bc">MbEvolutionSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#ab6022c06e00e883a1385472721780ce8">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_corner_surface.html#af625c94cacbc4fd846d440bab716d608">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#a708525a031ad5fbfb2a926b0d5cf38e2">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_solid.html#a8b596c994a8a41b96a614dca95c1d01f">MbSolid</a>, <a class="el" href="class_mb_point_frame.html#a19ae0aeeeb0d5a9a07cb621c025ef913">MbPointFrame</a>, <a class="el" href="class_mb_plane_instance.html#a1372c4c3da335e9c51d634ea7d3f6481">MbPlaneInstance</a>, <a class="el" href="class_mb_thread.html#a5bd3731fa9025713475b8aa9abad2f81">MbThread</a>, <a class="el" href="class_mb_points_symbol.html#a62e09e96d95db6fde480dc1f17374310">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#a2b0c5f1433b0039f1a84dbc5a797defc">MbLeader</a>, <a class="el" href="class_mb_radial_dimension.html#a6aaa0e0fda5e6480dded37f81ff7e379">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a28eef2c6c4aec7fd191f78b63f75b731">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#a6d8e698bc578f13664838b1d7021859d">MbLinearDimension</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#a71c37f01e8872254da346a9432becda2">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#af5ce351a53a5f3ae920e7522cc1f09d9">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#a44c9c7ed26c7a8e3a718f884dd5e6f6f">MbSurfaceCurve</a>, <a class="el" href="class_mb_silhouette_curve.html#aa320ac328e122e179eebaa9a199ea5fa">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#a48972bf35916aff4438514ea825baeaa">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#a31d13a60b64e4f4d593f981934eb7a56">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#af0779cf380a50e089dacaf295c847289">MbPlaneCurve</a>, <a class="el" href="class_mb_offset_curve3_d.html#a65e2ec9ca8d9dbbd8343bf0fc43867e7">MbOffsetCurve3D</a>, <a class="el" href="class_mb_nurbs3_d.html#aa493708a5a4d555fde27954570ee243f">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#ac671e0fa3ea1cba620dd93a22e7b758b">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#ac24abd53936bfdb30754df244facd712">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#a010b9220099b55465b1335bccbf1fce2">MbHermit3D</a>, <a class="el" href="class_mb_curve_spiral.html#aa6f5a8322ee5c026865fc5b8a34f7a29">MbCurveSpiral</a>, <a class="el" href="class_mb_cubic_spline3_d.html#acc4413401f700c80a5cb9852dc29b079">MbCubicSpline3D</a>, <a class="el" href="class_mb_crooked_spiral.html#aa1df138406c3ef506776d003418c698e">MbCrookedSpiral</a>, <a class="el" href="class_mb_contour_on_surface.html#a9e29ef7c89fae22418dc243323681f98">MbContourOnSurface</a>, <a class="el" href="class_mb_contour_on_plane.html#a7045307e876d8ba8757d6fd1a76f0f09">MbContourOnPlane</a>, <a class="el" href="class_mb_contour3_d.html#aeac9e95db62ec44c0e2e7a8425a480df">MbContour3D</a>, <a class="el" href="class_mb_cone_spiral.html#a2e5d7aa73d4046a442f61b9ef1c2a5b0">MbConeSpiral</a>, <a class="el" href="class_mb_character_curve3_d.html#a5fbe987367bf6ff7bb41882beded5e2c">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#ab96efbc4141063b9e481bc7d394c7458">MbBridgeCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#aea86b475371ebf8e1787720d7ac8eb67">MbBezier3D</a>, <a class="el" href="class_mb_arc3_d.html#a16c269262c978cef7685e796ea2a9852">MbArc3D</a>, <a class="el" href="class_mb_collection.html#ab681893fc8919da9f3794e95fefe0dea">MbCollection</a> и <a class="el" href="class_mb_assembly.html#a1495771f8b4254e513bdc27d13a11746">MbAssembly</a>.</p>
+
+</div>
+</div>
+<a id="a38908f7d2f0b34269140fefeb3c6cd11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38908f7d2f0b34269140fefeb3c6cd11">&#9670;&nbsp;</a></span>SetProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::SetProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изменить свойства объекта. </p>
+<p>Изменение внутренних данных (свойств) объекта выполняется копированием соответствующих значений из присланного объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">properties</td><td>- Контейнер для внутренних данных объекта. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_torus_surface.html#ab9c14686668b1d5b3038828e9353b006">MbTorusSurface</a>, <a class="el" href="class_mb_spiral_surface.html#aa1882ad0f32a69149b2144e5a7770a60">MbSpiralSurface</a>, <a class="el" href="class_mb_sphere_surface.html#a522ad202f619f986e77e435a11c81b05">MbSphereSurface</a>, <a class="el" href="class_mb_ruled_surface.html#aec86ed09f28fa2612979ee32bbdee41d">MbRuledSurface</a>, <a class="el" href="class_mb_revolution_surface.html#a90e6c9150f4f2dcba8f3d85d18cc2b2f">MbRevolutionSurface</a>, <a class="el" href="class_mb_plane.html#a6e95700869da66c7d50ee039cded59d0">MbPlane</a>, <a class="el" href="class_mb_offset_surface.html#a894e5d46e9eeef6f93f583894bc71c02">MbOffsetSurface</a>, <a class="el" href="class_mb_mesh_surface.html#a97874f07f39c8fdfdc2da79e2f3fa1b0">MbMeshSurface</a>, <a class="el" href="class_mb_lofted_surface.html#ad7ef6cb9c627dca596bf2020084b6871">MbLoftedSurface</a>, <a class="el" href="class_mb_join_surface.html#af5b12f354be1078cc23ec9b3b2a5cc7e">MbJoinSurface</a>, <a class="el" href="class_mb_grid_surface.html#ab6066d2f6e8c23f96c3cbd87ceffaea9">MbGridSurface</a>, <a class="el" href="class_mb_gregory_surface.html#a0d394c62366cd8cd78ea6074be6bd558">MbGregorySurface</a>, <a class="el" href="class_mb_fillet_surface.html#a539fa9e2c4988d7297a5296dc1116b82">MbFilletSurface</a>, <a class="el" href="class_mb_extrusion_surface.html#afdc7265fe1db7e44f8fc7dea7a184873">MbExtrusionSurface</a>, <a class="el" href="class_mb_expansion_surface.html#aee0613b06d9ffccdcab32eda7eb31ee2">MbExpansionSurface</a>, <a class="el" href="class_mb_exaction_surface.html#a0bb457ca8adde217043329e45c0cfd5d">MbExactionSurface</a>, <a class="el" href="class_mb_elevation_surface.html#a63ce3271c8ae8b15413b5c2428fbfa86">MbElevationSurface</a>, <a class="el" href="class_mb_cylinder_surface.html#a9b5d3634b87e667f51fe97172630f12f">MbCylinderSurface</a>, <a class="el" href="class_mb_cover_surface.html#ad912c8e96ca4048dddef11b90465e77b">MbCoverSurface</a>, <a class="el" href="class_mb_cone_surface.html#aab4347a89aea5862fae3fb28ad14616b">MbConeSurface</a>, <a class="el" href="class_mb_chamfer_surface.html#a1b73f2e2f6888878218655c90165fdae">MbChamferSurface</a>, <a class="el" href="class_mb_space_instance.html#a0d967ca3ff39ddd8aa2e0cb6936ac509">MbSpaceInstance</a>, <a class="el" href="class_mb_polymesh.html#a0c0ee8471eea717dd621dbc8ed4a11b9">MbPolymesh</a>, <a class="el" href="class_mb_point3_d.html#a6810a273f9df0b88ce8d738d8f51a14a">MbPoint3D</a>, <a class="el" href="class_mb_item.html#aab373f3f527746e562e6074c84263d2e">MbItem</a>, <a class="el" href="class_mb_mesh.html#a812136a1d141af49ca1a94f40239abed">MbMesh</a>, <a class="el" href="class_mb_marker.html#a210ce911e819b4400048809175a25b14">MbMarker</a>, <a class="el" href="class_mb_instance.html#abb6117bd46792cabe0d75add2fdbd02d">MbInstance</a>, <a class="el" href="class_mb_b_spline.html#ac09936ea8b725c051c17959b8752b1ce">MbBSpline</a>, <a class="el" href="class_mb_assisting_item.html#a34404a0308e21c7d9ea44fe7ed064857">MbAssistingItem</a>, <a class="el" href="class_mb_p_m_i.html#a7b545121f55b493abb66c945911f3381">MbPMI</a>, <a class="el" href="class_mb_wire_frame.html#a5bff9ffb773a633b4af1d3deb9171b20">MbWireFrame</a>, <a class="el" href="class_mb_spline_surface.html#a5c8377fd03ee90f3591b6fa54de6e4c6">MbSplineSurface</a>, <a class="el" href="class_mb_sector_surface.html#a9768d58b98edfa333665f69415005387">MbSectorSurface</a>, <a class="el" href="class_mb_section_surface.html#a763fc3f0727c2d1ad928ffeacc91408c">MbSectionSurface</a>, <a class="el" href="class_mb_exploration_surface.html#afb80aa6fe877fc57e17b66b0b00b45d1">MbExplorationSurface</a>, <a class="el" href="class_mb_evolution_surface.html#a1063f7f4e0d6244187df45a3c8af7201">MbEvolutionSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a806d087a7ac73dfeadf55970905aac6c">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_corner_surface.html#a676c43aa45d587628e13111dc6ea9521">MbCornerSurface</a>, <a class="el" href="class_mb_coons_patch_surface.html#af6afdbfb12336954f4906967d831443a">MbCoonsPatchSurface</a>, <a class="el" href="class_mb_solid.html#a541c79b8bbf1f42855e641bedaeee476">MbSolid</a>, <a class="el" href="class_mb_point_frame.html#adf54bd1637f923eead2e88440268b0c9">MbPointFrame</a>, <a class="el" href="class_mb_plane_instance.html#adbb471f05f9963eb9f61c9e9c0825869">MbPlaneInstance</a>, <a class="el" href="class_mb_thread.html#acc5526b88e5a516ebea05de1ea4f8774">MbThread</a>, <a class="el" href="class_mb_points_symbol.html#a1cce20cc19c795c51ce7622d0fc61ff6">MbPointsSymbol</a>, <a class="el" href="class_mb_leader.html#a774b0fc7fcbbd24649c8b268fd70685f">MbLeader</a>, <a class="el" href="class_mb_radial_dimension.html#ac0e5320454f80659bd8af102b1472110">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a000b964f8167b16a0747d954e1e28cfc">MbAngularDimension</a>, <a class="el" href="class_mb_linear_dimension.html#a9e7b3fc85420210e204f28ccff781f06">MbLinearDimension</a>, <a class="el" href="class_mb_trimmed_curve3_d.html#a45aa3bc53a7b225b0766bb8a21a4927f">MbTrimmedCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#a9344eb2cbc2aaa707cf5c94635a9a786">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_surface_curve.html#a87c5347db50ef7ea681157786719af1a">MbSurfaceCurve</a>, <a class="el" href="class_mb_silhouette_curve.html#ad359e82cf0ba01c69ec6cd97e6fc4a20">MbSilhouetteCurve</a>, <a class="el" href="class_mb_reparam_curve3_d.html#a16a2284115760505b51b801363078a9c">MbReparamCurve3D</a>, <a class="el" href="class_mb_polyline3_d.html#ac62c8b3b0ea214daeeea3f32dabb2868">MbPolyline3D</a>, <a class="el" href="class_mb_plane_curve.html#aae26f3a16cc16903538dbb79566143a8">MbPlaneCurve</a>, <a class="el" href="class_mb_offset_curve3_d.html#a875b75e6a06b2e108436401259a6f788">MbOffsetCurve3D</a>, <a class="el" href="class_mb_nurbs3_d.html#a9ae1ebbc1c0aee016e10ab54099f7e4b">MbNurbs3D</a>, <a class="el" href="class_mb_line_segment3_d.html#acee5f0b764cdc64e54d82b7888f7cc66">MbLineSegment3D</a>, <a class="el" href="class_mb_line3_d.html#ac3487cfab243647515acf946a4016446">MbLine3D</a>, <a class="el" href="class_mb_hermit3_d.html#aadaae89b50139ce7536dcdf644f10eca">MbHermit3D</a>, <a class="el" href="class_mb_curve_spiral.html#a0e91b0ab1457504000fdaacf48afb1bb">MbCurveSpiral</a>, <a class="el" href="class_mb_cubic_spline3_d.html#a531b15824814012b1a6d9ad3f2e0fb2f">MbCubicSpline3D</a>, <a class="el" href="class_mb_crooked_spiral.html#a1f10b9d56c80e6261533abccb9d5ae4b">MbCrookedSpiral</a>, <a class="el" href="class_mb_contour_on_surface.html#a51565764f82c04e5b5bab97c1c07b2aa">MbContourOnSurface</a>, <a class="el" href="class_mb_contour_on_plane.html#a7cd07bf8cd983d3f4d340f1f82d6cb28">MbContourOnPlane</a>, <a class="el" href="class_mb_contour3_d.html#ae3293ee375e2fc980dd47a4c12e9bb8a">MbContour3D</a>, <a class="el" href="class_mb_cone_spiral.html#aa56fc9dc8f8408014d49b0317e8c4852">MbConeSpiral</a>, <a class="el" href="class_mb_character_curve3_d.html#a5115471c6c7cabc37b944ae1f3dc39db">MbCharacterCurve3D</a>, <a class="el" href="class_mb_bridge_curve3_d.html#a74c0e4b499382b42dd8899ce3e142448">MbBridgeCurve3D</a>, <a class="el" href="class_mb_bezier3_d.html#adf5062a703040c96b0d1958afe108ba9">MbBezier3D</a>, <a class="el" href="class_mb_arc3_d.html#a6fa6e9a929b7d6cbbfb2b2e29e935ee7">MbArc3D</a>, <a class="el" href="class_mb_collection.html#ae45e6483a094516c3a054617ba2cf98d">MbCollection</a> и <a class="el" href="class_mb_assembly.html#a2e419569a0b01641496f10cb787e1e51">MbAssembly</a>.</p>
+
+</div>
+</div>
+<a id="a11d81f6ac0f5711398cf707d7ffabb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d81f6ac0f5711398cf707d7ffabb54">&#9670;&nbsp;</a></span>CalculateMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::CalculateMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_step_data.html">MbStepData</a> &amp;&#160;</td>
+          <td class="paramname"><em>stepData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_form_note.html">MbFormNote</a> &amp;&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Построить полигональную копию mesh. </p>
+<p>Построить полигональную копию данного объекта, представленную полигонами, или/и плоскими пластинами.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stepData</td><td>- Данные для вычисления шага при построении полигонального.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">note</td><td>- Способ построения полигонального объекта.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">mesh</td><td>- Построенный полигональный объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="class_mb_wire_frame.html#ae488d9d813daadde429d785ff999b4cb">MbWireFrame</a>, <a class="el" href="class_mb_surface.html#a272466ce5086443e77304cb1701001c1">MbSurface</a>, <a class="el" href="class_mb_grid_surface.html#a2480662b99f59b1dccf779d75a9e5140">MbGridSurface</a>, <a class="el" href="class_mb_curve_bounded_surface.html#a3d338ae1b5a2e0fc14ec920d0882c9fc">MbCurveBoundedSurface</a>, <a class="el" href="class_mb_space_instance.html#a6ff1bdf538605d849667cb3eb7676c87">MbSpaceInstance</a>, <a class="el" href="class_mb_solid.html#a85f05a8d94b8116330108c96ddfd932f">MbSolid</a>, <a class="el" href="class_mb_polymesh.html#a0acc4c3fa10a04ec45da0bd805cfb03e">MbPolymesh</a>, <a class="el" href="class_mb_point_frame.html#a022dc7688c1a6499f5a5b62fabbc4dd7">MbPointFrame</a>, <a class="el" href="class_mb_point3_d.html#aee8e0334e9b4f955519065b0b1d41388">MbPoint3D</a>, <a class="el" href="class_mb_plane_instance.html#af26f1ed92e6bf74c21b016c41f89e911">MbPlaneInstance</a>, <a class="el" href="class_mb_mesh.html#a8185eb38594a71cfaf1c10369bf41827">MbMesh</a>, <a class="el" href="class_mb_thread.html#a38c69fda6e7b72897d717348b70bfeb2">MbThread</a>, <a class="el" href="class_mb_symbol.html#ac0a9f1e9fc6a759af4fb53471dd78648">MbSymbol</a>, <a class="el" href="class_mb_marker.html#ade1a64e2054b65a86c4cf2ea4933d0de">MbMarker</a>, <a class="el" href="class_mb_instance.html#a481cb0c1d66ba94b137f036adbe4ac82">MbInstance</a>, <a class="el" href="class_mb_curve3_d.html#a36e21a1d5f31fbdbc25f843fdfaa2994">MbCurve3D</a>, <a class="el" href="class_mb_surface_intersection_curve.html#a7b510462b0eb714ade29729f3b6f22c5">MbSurfaceIntersectionCurve</a>, <a class="el" href="class_mb_contour_on_surface.html#af46523268d610ce900ad94275f58df8a">MbContourOnSurface</a>, <a class="el" href="class_mb_contour3_d.html#ab4407c97dbfb064cb18e719d8b860c8b">MbContour3D</a>, <a class="el" href="class_mb_b_spline.html#a305182282ba823e496df66e732817c69">MbBSpline</a>, <a class="el" href="class_mb_collection.html#a7a23e37d7d7ff47af353bef3a087540f">MbCollection</a>, <a class="el" href="class_mb_assisting_item.html#aa47b898c00cb343fbf2386d595d9532c">MbAssistingItem</a>, <a class="el" href="class_mb_assembly.html#a54bdb6e333cfc0c262196e61abd09fad">MbAssembly</a>, <a class="el" href="class_mb_p_m_i.html#a4db66b65aea7b6c7db17f1e57fb79691">MbPMI</a>, <a class="el" href="class_mb_radial_dimension.html#a16631964ab79221948d7fef3ff86c2ad">MbRadialDimension</a>, <a class="el" href="class_mb_angular_dimension.html#a341fd30f5a402f285a1f5aacd8a725e6">MbAngularDimension</a> и <a class="el" href="class_mb_linear_dimension.html#a8a455aa9726492644d1bb52eec9c6ca0">MbLinearDimension</a>.</p>
+
+</div>
+</div>
+<a id="a860e3b9fc0fa49b8920d2a275049eb21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860e3b9fc0fa49b8920d2a275049eb21">&#9670;&nbsp;</a></span>PrepareWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbSpaceItem::PrepareWrite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Регистрация объекта. </p>
+<p>Регистрация объекта для предотвращения его многократной записи. Другие объекты могут содержать указатель на данный объект. Функция взводит флаг, который позволяет записывать объект один раз, а в остальных записях ссылаться на записанный экземпляр. Чтение так же выполняется один раз, а в остальных случаях чтения подставляется адрес уже прочитанного объекта. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="space__item_8h.html">space_item.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_space_item.html">MbSpaceItem</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:06. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

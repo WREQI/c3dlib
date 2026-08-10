@@ -1,0 +1,1857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbCube</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_cube.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_mb_cube-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbCube<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___mathematic___base__3_d.html">Трёхмерные базовые объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Габаритный параллелепипед.  
+ <a href="class_mb_cube.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_cube.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса MbCube:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_cube__coll__graph.svg" width="182" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a01ab32ea44a09f138dc8adb8d36e6794"><td class="memItemLeft" align="right" valign="top"><a id="a01ab32ea44a09f138dc8adb8d36e6794"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a01ab32ea44a09f138dc8adb8d36e6794">MbCube</a> ()</td></tr>
+<tr class="memdesc:a01ab32ea44a09f138dc8adb8d36e6794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой конструктор. <br /></td></tr>
+<tr class="separator:a01ab32ea44a09f138dc8adb8d36e6794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f1f0a19bd104fa9b2acf7fa942dfa1"><td class="memItemLeft" align="right" valign="top"><a id="a80f1f0a19bd104fa9b2acf7fa942dfa1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a80f1f0a19bd104fa9b2acf7fa942dfa1">MbCube</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;init)</td></tr>
+<tr class="memdesc:a80f1f0a19bd104fa9b2acf7fa942dfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:a80f1f0a19bd104fa9b2acf7fa942dfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b08e46867bd6b0b7de5fdbaf0fd3cb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a3b08e46867bd6b0b7de5fdbaf0fd3cb8">MbCube</a> (double xmin, double ymin, double zmin, double xmax, double ymax, double zmax, bool normalize=false)</td></tr>
+<tr class="memdesc:a3b08e46867bd6b0b7de5fdbaf0fd3cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по координатам  <a href="class_mb_cube.html#a3b08e46867bd6b0b7de5fdbaf0fd3cb8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3b08e46867bd6b0b7de5fdbaf0fd3cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc606a1006c5037e5154d91c915ad6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a2dc606a1006c5037e5154d91c915ad6c">MbCube</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1, bool normalize=false)</td></tr>
+<tr class="memdesc:a2dc606a1006c5037e5154d91c915ad6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по двум точкам.  <a href="class_mb_cube.html#a2dc606a1006c5037e5154d91c915ad6c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2dc606a1006c5037e5154d91c915ad6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c650515753d62aeb8d183f147bb59d"><td class="memItemLeft" align="right" valign="top"><a id="a25c650515753d62aeb8d183f147bb59d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a25c650515753d62aeb8d183f147bb59d">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:a25c650515753d62aeb8d183f147bb59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на пустоту. Габаритный параллелепипед считается пустым, если он не содержит ни одной точки 3D-пространства. <br /></td></tr>
+<tr class="separator:a25c650515753d62aeb8d183f147bb59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85df627c4621468f78c437ddd4ceca8"><td class="memItemLeft" align="right" valign="top"><a id="ab85df627c4621468f78c437ddd4ceca8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ab85df627c4621468f78c437ddd4ceca8">SetEmpty</a> ()</td></tr>
+<tr class="memdesc:ab85df627c4621468f78c437ddd4ceca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить пустым ("вывернутым"). <br /></td></tr>
+<tr class="separator:ab85df627c4621468f78c437ddd4ceca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4fe675f76aa75cbb68ea59f875f4319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ae4fe675f76aa75cbb68ea59f875f4319">Set</a> (double xmin, double ymin, double zmin, double xmax, double ymax, double zmax, bool normalize=false)</td></tr>
+<tr class="memdesc:ae4fe675f76aa75cbb68ea59f875f4319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать по координатам.  <a href="class_mb_cube.html#ae4fe675f76aa75cbb68ea59f875f4319">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae4fe675f76aa75cbb68ea59f875f4319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c3e2e5fe0b88082d1ed60cf9928ad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a43c3e2e5fe0b88082d1ed60cf9928ad9">Set</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1, bool normalize=false)</td></tr>
+<tr class="memdesc:a43c3e2e5fe0b88082d1ed60cf9928ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать по двум точкам.  <a href="class_mb_cube.html#a43c3e2e5fe0b88082d1ed60cf9928ad9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a43c3e2e5fe0b88082d1ed60cf9928ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa397962e29da4d9ae59c0bfc238e03c"><td class="memItemLeft" align="right" valign="top"><a id="aaa397962e29da4d9ae59c0bfc238e03c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aaa397962e29da4d9ae59c0bfc238e03c">Init</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;init)</td></tr>
+<tr class="memdesc:aaa397962e29da4d9ae59c0bfc238e03c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать по другому габариту. <br /></td></tr>
+<tr class="separator:aaa397962e29da4d9ae59c0bfc238e03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512918192715452aa81bc8324205f116"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a512918192715452aa81bc8324205f116">Init</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p0, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p1)</td></tr>
+<tr class="memdesc:a512918192715452aa81bc8324205f116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать по двум точкам.  <a href="class_mb_cube.html#a512918192715452aa81bc8324205f116">Подробнее...</a><br /></td></tr>
+<tr class="separator:a512918192715452aa81bc8324205f116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80693bd223d8f66a25e9b8da6de129b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a80693bd223d8f66a25e9b8da6de129b0">AddRect</a> (const <a class="el" href="class_mb_rect.html">MbRect</a> &amp;r, const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place)</td></tr>
+<tr class="memdesc:a80693bd223d8f66a25e9b8da6de129b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить габарит.  <a href="class_mb_cube.html#a80693bd223d8f66a25e9b8da6de129b0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a80693bd223d8f66a25e9b8da6de129b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32d5aa8f7685d9e08dd4a37a431a089"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ab32d5aa8f7685d9e08dd4a37a431a089">ProjectionRect</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, <a class="el" href="class_mb_rect.html">MbRect</a> &amp;rect) const</td></tr>
+<tr class="memdesc:ab32d5aa8f7685d9e08dd4a37a431a089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проекция на плейсмент.  <a href="class_mb_cube.html#ab32d5aa8f7685d9e08dd4a37a431a089">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab32d5aa8f7685d9e08dd4a37a431a089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa042123e379359c0a6c0e00516eed511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aa042123e379359c0a6c0e00516eed511">ProjectionRect</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;dir, <a class="el" href="class_mb_rect.html">MbRect</a> &amp;rect) const</td></tr>
+<tr class="memdesc:aa042123e379359c0a6c0e00516eed511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проекция на плейсмент вдоль вектора в любом из двух направлений.  <a href="class_mb_cube.html#aa042123e379359c0a6c0e00516eed511">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa042123e379359c0a6c0e00516eed511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619175aae86620301b0952e4e89e1791"><td class="memItemLeft" align="right" valign="top"><a id="a619175aae86620301b0952e4e89e1791"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a619175aae86620301b0952e4e89e1791">ProjectionRect</a> (const <a class="el" href="class_mb_curve3_d.html">MbCurve3D</a> &amp;curve, bool ext, <a class="el" href="class_mb_rect1_d.html">MbRect1D</a> &amp;rect) const</td></tr>
+<tr class="memdesc:a619175aae86620301b0952e4e89e1791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить параметрический интервал кривой, охватывающий проекцию куба на кривую. <br /></td></tr>
+<tr class="separator:a619175aae86620301b0952e4e89e1791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b678331fb9196735dbf23cf8592c845"><td class="memItemLeft" align="right" valign="top"><a id="a5b678331fb9196735dbf23cf8592c845"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a5b678331fb9196735dbf23cf8592c845">Normalize</a> ()</td></tr>
+<tr class="memdesc:a5b678331fb9196735dbf23cf8592c845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализовать себя. <br /></td></tr>
+<tr class="separator:a5b678331fb9196735dbf23cf8592c845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39486683cd5ec885affd8f4a3ed40a88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a39486683cd5ec885affd8f4a3ed40a88">GetLocation</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;pl, double eps) const</td></tr>
+<tr class="memdesc:a39486683cd5ec885affd8f4a3ed40a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить положение куба относительно плоскости.  <a href="class_mb_cube.html#a39486683cd5ec885affd8f4a3ed40a88">Подробнее...</a><br /></td></tr>
+<tr class="separator:a39486683cd5ec885affd8f4a3ed40a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7131a5c99034c24baff24d0953473028"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a7131a5c99034c24baff24d0953473028">InsideLocation</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place, <a class="el" href="class_mb_rect.html">MbRect</a> &amp;rect, double eps) const</td></tr>
+<tr class="memdesc:a7131a5c99034c24baff24d0953473028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить положение куба относительно трубы.  <a href="class_mb_cube.html#a7131a5c99034c24baff24d0953473028">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7131a5c99034c24baff24d0953473028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c75c77bf156c9f654a4d15c54ca9328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a3c75c77bf156c9f654a4d15c54ca9328">Include</a> (double x, double y, double <a class="el" href="op__mesh__parameter_8h.html#a34a18bcd92ae1e698dfffacace4f34a2afbade9e36a3f36d3d676c1b808451dd7">z</a>)</td></tr>
+<tr class="memdesc:a3c75c77bf156c9f654a4d15c54ca9328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить в себя точку, заданную как XYZ.  <a href="class_mb_cube.html#a3c75c77bf156c9f654a4d15c54ca9328">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3c75c77bf156c9f654a4d15c54ca9328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ffe4c7e4f858ee31d24a03b4387135"><td class="memTemplParams" colspan="2"><a id="a35ffe4c7e4f858ee31d24a03b4387135"></a>
+template&lt;class Point &gt; </td></tr>
+<tr class="memitem:a35ffe4c7e4f858ee31d24a03b4387135"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a35ffe4c7e4f858ee31d24a03b4387135">Include</a> (const Point &amp;)</td></tr>
+<tr class="memdesc:a35ffe4c7e4f858ee31d24a03b4387135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить в себя точку. <br /></td></tr>
+<tr class="separator:a35ffe4c7e4f858ee31d24a03b4387135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb09b198ad8924e69180c947781085a9"><td class="memItemLeft" align="right" valign="top"><a id="afb09b198ad8924e69180c947781085a9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#afb09b198ad8924e69180c947781085a9">GetVolume</a> (double eps=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>) const</td></tr>
+<tr class="memdesc:afb09b198ad8924e69180c947781085a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать объем куба. <br /></td></tr>
+<tr class="separator:afb09b198ad8924e69180c947781085a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ade83ece5524f5e6555679b1df84891"><td class="memItemLeft" align="right" valign="top"><a id="a8ade83ece5524f5e6555679b1df84891"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a8ade83ece5524f5e6555679b1df84891">GetSquare</a> (double eps=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>) const</td></tr>
+<tr class="memdesc:a8ade83ece5524f5e6555679b1df84891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать половину площади граней куба. <br /></td></tr>
+<tr class="separator:a8ade83ece5524f5e6555679b1df84891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b01f60e663a7129806fa4654bb6286"><td class="memItemLeft" align="right" valign="top"><a id="a85b01f60e663a7129806fa4654bb6286"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a85b01f60e663a7129806fa4654bb6286">GetLengthX</a> () const</td></tr>
+<tr class="memdesc:a85b01f60e663a7129806fa4654bb6286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать размер стороны X куба. <br /></td></tr>
+<tr class="separator:a85b01f60e663a7129806fa4654bb6286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bfd1a6ebc88ee395a2025b64c8935a"><td class="memItemLeft" align="right" valign="top"><a id="a76bfd1a6ebc88ee395a2025b64c8935a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a76bfd1a6ebc88ee395a2025b64c8935a">GetLengthY</a> () const</td></tr>
+<tr class="memdesc:a76bfd1a6ebc88ee395a2025b64c8935a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать размер стороны Y куба. <br /></td></tr>
+<tr class="separator:a76bfd1a6ebc88ee395a2025b64c8935a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3ca1da31ba304b9580e5d72cd6e328"><td class="memItemLeft" align="right" valign="top"><a id="a5b3ca1da31ba304b9580e5d72cd6e328"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a5b3ca1da31ba304b9580e5d72cd6e328">GetLengthZ</a> () const</td></tr>
+<tr class="memdesc:a5b3ca1da31ba304b9580e5d72cd6e328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать размер стороны Z куба. <br /></td></tr>
+<tr class="separator:a5b3ca1da31ba304b9580e5d72cd6e328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066fafb463b3b553913c4b617cd2842c"><td class="memItemLeft" align="right" valign="top"><a id="a066fafb463b3b553913c4b617cd2842c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a066fafb463b3b553913c4b617cd2842c">GetDiagonal</a> () const</td></tr>
+<tr class="memdesc:a066fafb463b3b553913c4b617cd2842c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать размер диагонали куба. <br /></td></tr>
+<tr class="separator:a066fafb463b3b553913c4b617cd2842c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade8a749e9a3c142cdc2ca24417760b3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aade8a749e9a3c142cdc2ca24417760b3">DistanceToPoint</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point) const</td></tr>
+<tr class="memdesc:aade8a749e9a3c142cdc2ca24417760b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить расстояние до ближайшей грани габаритного куба.  <a href="class_mb_cube.html#aade8a749e9a3c142cdc2ca24417760b3">Подробнее...</a><br /></td></tr>
+<tr class="separator:aade8a749e9a3c142cdc2ca24417760b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace41893e8f2f97837d94a79d335da5c9"><td class="memItemLeft" align="right" valign="top"><a id="ace41893e8f2f97837d94a79d335da5c9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ace41893e8f2f97837d94a79d335da5c9">DistanceToPoint2</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point) const</td></tr>
+<tr class="memdesc:ace41893e8f2f97837d94a79d335da5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить квадрат расстояния до точки. <br /></td></tr>
+<tr class="separator:ace41893e8f2f97837d94a79d335da5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae1b40a9b561224497b75e225e5ce4a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a3ae1b40a9b561224497b75e225e5ce4a">DistanceToCube</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube, double eps=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>) const</td></tr>
+<tr class="memdesc:a3ae1b40a9b561224497b75e225e5ce4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить расстояние до куба.  <a href="class_mb_cube.html#a3ae1b40a9b561224497b75e225e5ce4a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3ae1b40a9b561224497b75e225e5ce4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a6bf7b6bb8b856153dd9987f862d36"><td class="memItemLeft" align="right" valign="top"><a id="a75a6bf7b6bb8b856153dd9987f862d36"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a75a6bf7b6bb8b856153dd9987f862d36">Enlarge</a> (double delta)</td></tr>
+<tr class="memdesc:a75a6bf7b6bb8b856153dd9987f862d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расширить куб во все стороны на величину delta. <br /></td></tr>
+<tr class="separator:a75a6bf7b6bb8b856153dd9987f862d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d44cdb83e618bc3aad2ec1fe0a3862a"><td class="memItemLeft" align="right" valign="top"><a id="a6d44cdb83e618bc3aad2ec1fe0a3862a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a6d44cdb83e618bc3aad2ec1fe0a3862a">Enlarge</a> (double dx, double dy, double dz)</td></tr>
+<tr class="memdesc:a6d44cdb83e618bc3aad2ec1fe0a3862a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расширить куб во все стороны на соответствующую величину. <br /></td></tr>
+<tr class="separator:a6d44cdb83e618bc3aad2ec1fe0a3862a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad880f3d6528a70e0fbb1cfad7ea663fd"><td class="memItemLeft" align="right" valign="top"><a id="ad880f3d6528a70e0fbb1cfad7ea663fd"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ad880f3d6528a70e0fbb1cfad7ea663fd">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;to)</td></tr>
+<tr class="memdesc:ad880f3d6528a70e0fbb1cfad7ea663fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль вектора. <br /></td></tr>
+<tr class="separator:ad880f3d6528a70e0fbb1cfad7ea663fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29143c746988f621fe60541fa6bd0c58"><td class="memItemLeft" align="right" valign="top"><a id="a29143c746988f621fe60541fa6bd0c58"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a29143c746988f621fe60541fa6bd0c58">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix)</td></tr>
+<tr class="memdesc:a29143c746988f621fe60541fa6bd0c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать согласно матрице. <br /></td></tr>
+<tr class="separator:a29143c746988f621fe60541fa6bd0c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c2360e39844ca75e5af3dc08430279"><td class="memItemLeft" align="right" valign="top"><a id="a10c2360e39844ca75e5af3dc08430279"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a10c2360e39844ca75e5af3dc08430279">Scale</a> (double sx, double sy, double sz)</td></tr>
+<tr class="memdesc:a10c2360e39844ca75e5af3dc08430279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштабировать. <br /></td></tr>
+<tr class="separator:a10c2360e39844ca75e5af3dc08430279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8f34896d90a36859afa47ab1b055fb"><td class="memItemLeft" align="right" valign="top"><a id="acc8f34896d90a36859afa47ab1b055fb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#acc8f34896d90a36859afa47ab1b055fb">IsSame</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;other, double accuracy) const</td></tr>
+<tr class="memdesc:acc8f34896d90a36859afa47ab1b055fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными? <br /></td></tr>
+<tr class="separator:acc8f34896d90a36859afa47ab1b055fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f4fbf7f90790a0721757bbe5376d0f"><td class="memItemLeft" align="right" valign="top"><a id="a04f4fbf7f90790a0721757bbe5376d0f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a04f4fbf7f90790a0721757bbe5376d0f">GetMin</a> (size_t k) const</td></tr>
+<tr class="memdesc:a04f4fbf7f90790a0721757bbe5376d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к минимальной координате по индексу. <br /></td></tr>
+<tr class="separator:a04f4fbf7f90790a0721757bbe5376d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affdbaf655a7583c6f0f79563f41d18d5"><td class="memItemLeft" align="right" valign="top"><a id="affdbaf655a7583c6f0f79563f41d18d5"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#affdbaf655a7583c6f0f79563f41d18d5">GetMax</a> (size_t k) const</td></tr>
+<tr class="memdesc:affdbaf655a7583c6f0f79563f41d18d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к максимальной координате по индексу. <br /></td></tr>
+<tr class="separator:affdbaf655a7583c6f0f79563f41d18d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac703f7eab37e192de0b82bad5b676ec4"><td class="memItemLeft" align="right" valign="top"><a id="ac703f7eab37e192de0b82bad5b676ec4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ac703f7eab37e192de0b82bad5b676ec4">GetSideLength</a> (size_t k) const</td></tr>
+<tr class="memdesc:ac703f7eab37e192de0b82bad5b676ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать длина по стороне. <br /></td></tr>
+<tr class="separator:ac703f7eab37e192de0b82bad5b676ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996fb546ce1b11a01ed58c3261d86df9"><td class="memItemLeft" align="right" valign="top"><a id="a996fb546ce1b11a01ed58c3261d86df9"></a>
+const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a996fb546ce1b11a01ed58c3261d86df9">GetCube</a> () const</td></tr>
+<tr class="memdesc:a996fb546ce1b11a01ed58c3261d86df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать себя. <br /></td></tr>
+<tr class="separator:a996fb546ce1b11a01ed58c3261d86df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22c39b7c827e501c261337f2db11ebd"><td class="memItemLeft" align="right" valign="top"><a id="ac22c39b7c827e501c261337f2db11ebd"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ac22c39b7c827e501c261337f2db11ebd">GetVerticesCount</a> () const</td></tr>
+<tr class="memdesc:ac22c39b7c827e501c261337f2db11ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество вершин. <br /></td></tr>
+<tr class="separator:ac22c39b7c827e501c261337f2db11ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05ac79ba2844e8121e843de71bfd221"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aa05ac79ba2844e8121e843de71bfd221">GetVertices</a> (std::vector&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;points) const</td></tr>
+<tr class="memdesc:aa05ac79ba2844e8121e843de71bfd221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать все вершины куба.  <a href="class_mb_cube.html#aa05ac79ba2844e8121e843de71bfd221">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa05ac79ba2844e8121e843de71bfd221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72dd1bb16b7f4bec07772905d8007bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ab72dd1bb16b7f4bec07772905d8007bd">GetVertex</a> (ptrdiff_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:ab72dd1bb16b7f4bec07772905d8007bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать вершину куба по индексу.  <a href="class_mb_cube.html#ab72dd1bb16b7f4bec07772905d8007bd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab72dd1bb16b7f4bec07772905d8007bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99733a02f8dcb49c0ece7b0b9c25743d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a99733a02f8dcb49c0ece7b0b9c25743d">GetEdgeCentre</a> (ptrdiff_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a99733a02f8dcb49c0ece7b0b9c25743d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать центр ребра по индексу.  <a href="class_mb_cube.html#a99733a02f8dcb49c0ece7b0b9c25743d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a99733a02f8dcb49c0ece7b0b9c25743d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c1074ffa5b1c97a283a58dc7ebe0d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ae6c1074ffa5b1c97a283a58dc7ebe0d0">GetFaceCentre</a> (ptrdiff_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:ae6c1074ffa5b1c97a283a58dc7ebe0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать центр грани по индексу.  <a href="class_mb_cube.html#ae6c1074ffa5b1c97a283a58dc7ebe0d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae6c1074ffa5b1c97a283a58dc7ebe0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d98d6509067f2619a1b8e933b70bf78"><td class="memItemLeft" align="right" valign="top"><a id="a2d98d6509067f2619a1b8e933b70bf78"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a2d98d6509067f2619a1b8e933b70bf78">GetCentre</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a2d98d6509067f2619a1b8e933b70bf78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать центр куба. <br /></td></tr>
+<tr class="separator:a2d98d6509067f2619a1b8e933b70bf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efa689cdf8a74ecf0697a4262c4a102"><td class="memItemLeft" align="right" valign="top"><a id="a1efa689cdf8a74ecf0697a4262c4a102"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a1efa689cdf8a74ecf0697a4262c4a102">GetCenter</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a1efa689cdf8a74ecf0697a4262c4a102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать центр куба. <br /></td></tr>
+<tr class="separator:a1efa689cdf8a74ecf0697a4262c4a102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17375905ee42f8b8af8e54690c00e775"><td class="memItemLeft" align="right" valign="top"><a id="a17375905ee42f8b8af8e54690c00e775"></a>
+<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a17375905ee42f8b8af8e54690c00e775">Centre</a> () const</td></tr>
+<tr class="memdesc:a17375905ee42f8b8af8e54690c00e775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Центр габарита. <br /></td></tr>
+<tr class="separator:a17375905ee42f8b8af8e54690c00e775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed43d83d1fe7b40071aaf12d28d8dd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a5ed43d83d1fe7b40071aaf12d28d8dd3">GetControlPoint</a> (size_t pIndex, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a5ed43d83d1fe7b40071aaf12d28d8dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать характерную точку куба по ее номеру.  <a href="class_mb_cube.html#a5ed43d83d1fe7b40071aaf12d28d8dd3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5ed43d83d1fe7b40071aaf12d28d8dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524a645a4b6b4efa26e614d0bde07149"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a524a645a4b6b4efa26e614d0bde07149">GetControlPoints</a> (<a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;points) const</td></tr>
+<tr class="memdesc:a524a645a4b6b4efa26e614d0bde07149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать все характерные точки куба.  <a href="class_mb_cube.html#a524a645a4b6b4efa26e614d0bde07149">Подробнее...</a><br /></td></tr>
+<tr class="separator:a524a645a4b6b4efa26e614d0bde07149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828ad5ed87fc91ed58af3c786ea3bf15"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a828ad5ed87fc91ed58af3c786ea3bf15">GetNearestControlIndex</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p) const</td></tr>
+<tr class="memdesc:a828ad5ed87fc91ed58af3c786ea3bf15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать номер ближайшей характерной точки куба.  <a href="class_mb_cube.html#a828ad5ed87fc91ed58af3c786ea3bf15">Подробнее...</a><br /></td></tr>
+<tr class="separator:a828ad5ed87fc91ed58af3c786ea3bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5142909f8449311098290d9be33259c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a5142909f8449311098290d9be33259c7">GetFixedControlIndex</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:a5142909f8449311098290d9be33259c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать номер противолежащей точки.  <a href="class_mb_cube.html#a5142909f8449311098290d9be33259c7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5142909f8449311098290d9be33259c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac998bc18fc5f61a3cfdbfa7bb6afc822"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ac998bc18fc5f61a3cfdbfa7bb6afc822">CalculateMatrix</a> (size_t pIndex, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;fixedPoint, bool useFixed, bool isotropy, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrix) const</td></tr>
+<tr class="memdesc:ac998bc18fc5f61a3cfdbfa7bb6afc822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать матрицу деформации.  <a href="class_mb_cube.html#ac998bc18fc5f61a3cfdbfa7bb6afc822">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac998bc18fc5f61a3cfdbfa7bb6afc822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции доступа к полям</div></td></tr>
+<tr class="memitem:ac1d872a5ef12267431c4a8235ae2a19d"><td class="memItemLeft" align="right" valign="top"><a id="ac1d872a5ef12267431c4a8235ae2a19d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ac1d872a5ef12267431c4a8235ae2a19d">SetXMin</a> (double s)</td></tr>
+<tr class="memdesc:ac1d872a5ef12267431c4a8235ae2a19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить минимальную координату по X. <br /></td></tr>
+<tr class="separator:ac1d872a5ef12267431c4a8235ae2a19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec13d46837746e3e9eaa8f21529cd243"><td class="memItemLeft" align="right" valign="top"><a id="aec13d46837746e3e9eaa8f21529cd243"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aec13d46837746e3e9eaa8f21529cd243">SetYMin</a> (double s)</td></tr>
+<tr class="memdesc:aec13d46837746e3e9eaa8f21529cd243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить минимальную координату по Y. <br /></td></tr>
+<tr class="separator:aec13d46837746e3e9eaa8f21529cd243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56af6259454c8d896c6635c331be0950"><td class="memItemLeft" align="right" valign="top"><a id="a56af6259454c8d896c6635c331be0950"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a56af6259454c8d896c6635c331be0950">SetZMin</a> (double s)</td></tr>
+<tr class="memdesc:a56af6259454c8d896c6635c331be0950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить минимальную координату по Z. <br /></td></tr>
+<tr class="separator:a56af6259454c8d896c6635c331be0950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8aa1bc1b3203bb3a734948ec9bb490"><td class="memItemLeft" align="right" valign="top"><a id="adb8aa1bc1b3203bb3a734948ec9bb490"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#adb8aa1bc1b3203bb3a734948ec9bb490">SetXMax</a> (double s)</td></tr>
+<tr class="memdesc:adb8aa1bc1b3203bb3a734948ec9bb490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить максимальную координату по X. <br /></td></tr>
+<tr class="separator:adb8aa1bc1b3203bb3a734948ec9bb490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4438f6e4c18f007462177a52f37ce771"><td class="memItemLeft" align="right" valign="top"><a id="a4438f6e4c18f007462177a52f37ce771"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a4438f6e4c18f007462177a52f37ce771">SetYMax</a> (double s)</td></tr>
+<tr class="memdesc:a4438f6e4c18f007462177a52f37ce771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить максимальную координату по Y. <br /></td></tr>
+<tr class="separator:a4438f6e4c18f007462177a52f37ce771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae87de30148c9c3e9cd86c5bda2f2784"><td class="memItemLeft" align="right" valign="top"><a id="aae87de30148c9c3e9cd86c5bda2f2784"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aae87de30148c9c3e9cd86c5bda2f2784">SetZMax</a> (double s)</td></tr>
+<tr class="memdesc:aae87de30148c9c3e9cd86c5bda2f2784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить максимальную координату по Z. <br /></td></tr>
+<tr class="separator:aae87de30148c9c3e9cd86c5bda2f2784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea13670e8815284b848a8826b366b32"><td class="memItemLeft" align="right" valign="top"><a id="a3ea13670e8815284b848a8826b366b32"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a3ea13670e8815284b848a8826b366b32">GetXMin</a> () const</td></tr>
+<tr class="memdesc:a3ea13670e8815284b848a8826b366b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать минимальную координату по X. <br /></td></tr>
+<tr class="separator:a3ea13670e8815284b848a8826b366b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd12429211a2aa90336f1cedcb12c880"><td class="memItemLeft" align="right" valign="top"><a id="afd12429211a2aa90336f1cedcb12c880"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#afd12429211a2aa90336f1cedcb12c880">GetYMin</a> () const</td></tr>
+<tr class="memdesc:afd12429211a2aa90336f1cedcb12c880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать минимальную координату по Y. <br /></td></tr>
+<tr class="separator:afd12429211a2aa90336f1cedcb12c880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c5c2a706abeb4aadf0d8add514b5f0"><td class="memItemLeft" align="right" valign="top"><a id="a34c5c2a706abeb4aadf0d8add514b5f0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a34c5c2a706abeb4aadf0d8add514b5f0">GetZMin</a> () const</td></tr>
+<tr class="memdesc:a34c5c2a706abeb4aadf0d8add514b5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать минимальную координату по Z. <br /></td></tr>
+<tr class="separator:a34c5c2a706abeb4aadf0d8add514b5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76267dbe2656b3d07c4a3a8c302b95cc"><td class="memItemLeft" align="right" valign="top"><a id="a76267dbe2656b3d07c4a3a8c302b95cc"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a76267dbe2656b3d07c4a3a8c302b95cc">GetXMax</a> () const</td></tr>
+<tr class="memdesc:a76267dbe2656b3d07c4a3a8c302b95cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать максимальную координату по X. <br /></td></tr>
+<tr class="separator:a76267dbe2656b3d07c4a3a8c302b95cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230a2e07d323524e39ed3a67b774f018"><td class="memItemLeft" align="right" valign="top"><a id="a230a2e07d323524e39ed3a67b774f018"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a230a2e07d323524e39ed3a67b774f018">GetYMax</a> () const</td></tr>
+<tr class="memdesc:a230a2e07d323524e39ed3a67b774f018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать максимальную координату по Y. <br /></td></tr>
+<tr class="separator:a230a2e07d323524e39ed3a67b774f018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4693eb20c65812040ab75239a6f6a235"><td class="memItemLeft" align="right" valign="top"><a id="a4693eb20c65812040ab75239a6f6a235"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a4693eb20c65812040ab75239a6f6a235">GetZMax</a> () const</td></tr>
+<tr class="memdesc:a4693eb20c65812040ab75239a6f6a235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать максимальную координату по Z. <br /></td></tr>
+<tr class="separator:a4693eb20c65812040ab75239a6f6a235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Перегрузка логических операций.</div></td></tr>
+<tr class="memitem:aa1a627657c2f0f84b8e4a8b22d4dd644"><td class="memItemLeft" align="right" valign="top"><a id="aa1a627657c2f0f84b8e4a8b22d4dd644"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aa1a627657c2f0f84b8e4a8b22d4dd644">operator=</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;)</td></tr>
+<tr class="memdesc:aa1a627657c2f0f84b8e4a8b22d4dd644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить значение. <br /></td></tr>
+<tr class="separator:aa1a627657c2f0f84b8e4a8b22d4dd644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d91e18ab4cb12213b4cfcc92150fda2"><td class="memTemplParams" colspan="2"><a id="a7d91e18ab4cb12213b4cfcc92150fda2"></a>
+template&lt;class Point &gt; </td></tr>
+<tr class="memitem:a7d91e18ab4cb12213b4cfcc92150fda2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a7d91e18ab4cb12213b4cfcc92150fda2">operator|=</a> (const Point &amp;)</td></tr>
+<tr class="memdesc:a7d91e18ab4cb12213b4cfcc92150fda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить в себя точку. <br /></td></tr>
+<tr class="separator:a7d91e18ab4cb12213b4cfcc92150fda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ca96cf7f4e647fc0d8a952b058788a"><td class="memItemLeft" align="right" valign="top"><a id="ab7ca96cf7f4e647fc0d8a952b058788a"></a>
+<a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ab7ca96cf7f4e647fc0d8a952b058788a">operator|=</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;)</td></tr>
+<tr class="memdesc:ab7ca96cf7f4e647fc0d8a952b058788a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить в себя габаритный куб. <br /></td></tr>
+<tr class="separator:ab7ca96cf7f4e647fc0d8a952b058788a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4937e47e12cb77f1eaafe2ffb5a5f5c2"><td class="memItemLeft" align="right" valign="top"><a id="a4937e47e12cb77f1eaafe2ffb5a5f5c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a4937e47e12cb77f1eaafe2ffb5a5f5c2">operator==</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;) const</td></tr>
+<tr class="memdesc:a4937e47e12cb77f1eaafe2ffb5a5f5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на равенство с точностью <a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e" title="Погрешность длины.">Math::lengthEpsilon</a>. Рекомендуется вместо оператора == использовать функцию IsSame с явным указанием точности сравнения на равенство. <br /></td></tr>
+<tr class="separator:a4937e47e12cb77f1eaafe2ffb5a5f5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb043ab07376b4ea0dba351ca369d184"><td class="memItemLeft" align="right" valign="top"><a id="aeb043ab07376b4ea0dba351ca369d184"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#aeb043ab07376b4ea0dba351ca369d184">operator!=</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;) const</td></tr>
+<tr class="memdesc:aeb043ab07376b4ea0dba351ca369d184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на неравенство с точностью <a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e" title="Погрешность длины.">Math::lengthEpsilon</a>. Рекомендуется вместо оператора != использовать инвертированное значение функции IsSame с явным указанием точности сравнения на равенство. <br /></td></tr>
+<tr class="separator:aeb043ab07376b4ea0dba351ca369d184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Булевы операции куба с точкой, линией, плоскостью и другим кубом.</div></td></tr>
+<tr class="memitem:a3e5f110ce5ad0a7f9bf91be1e9110645"><td class="memTemplParams" colspan="2">template&lt;class Point &gt; </td></tr>
+<tr class="memitem:a3e5f110ce5ad0a7f9bf91be1e9110645"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a3e5f110ce5ad0a7f9bf91be1e9110645">Contains</a> (const Point &amp;) const</td></tr>
+<tr class="memdesc:a3e5f110ce5ad0a7f9bf91be1e9110645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, лежит ли точка внутри габаритного параллелепипеда.  <a href="class_mb_cube.html#a3e5f110ce5ad0a7f9bf91be1e9110645">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3e5f110ce5ad0a7f9bf91be1e9110645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1380708bc047ea93361dcc36891c2d18"><td class="memTemplParams" colspan="2">template&lt;class Point &gt; </td></tr>
+<tr class="memitem:a1380708bc047ea93361dcc36891c2d18"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a1380708bc047ea93361dcc36891c2d18">Contains</a> (const Point &amp;, double eps) const</td></tr>
+<tr class="memdesc:a1380708bc047ea93361dcc36891c2d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, лежит ли точка внутри габаритного параллелепипеда.  <a href="class_mb_cube.html#a1380708bc047ea93361dcc36891c2d18">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1380708bc047ea93361dcc36891c2d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b051c8c2fde18e79009651be61d3e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a28b051c8c2fde18e79009651be61d3e0">Contains</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;) const</td></tr>
+<tr class="memdesc:a28b051c8c2fde18e79009651be61d3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, содержит ли один параллелепипед другой.  <a href="class_mb_cube.html#a28b051c8c2fde18e79009651be61d3e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a28b051c8c2fde18e79009651be61d3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfda9d46f4668fddd5bbab221a01625"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#afbfda9d46f4668fddd5bbab221a01625">Contains</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;, double eps) const</td></tr>
+<tr class="memdesc:afbfda9d46f4668fddd5bbab221a01625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, содержит ли один параллелепипед другой.  <a href="class_mb_cube.html#afbfda9d46f4668fddd5bbab221a01625">Подробнее...</a><br /></td></tr>
+<tr class="separator:afbfda9d46f4668fddd5bbab221a01625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37299b99287537d3df471420e543d2d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a37299b99287537d3df471420e543d2d2">Intersect</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;other, double eps=(<a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a>+<a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a>)) const</td></tr>
+<tr class="memdesc:a37299b99287537d3df471420e543d2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекается ли габаритный параллелепипед с другим параллелепипедом.  <a href="class_mb_cube.html#a37299b99287537d3df471420e543d2d2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a37299b99287537d3df471420e543d2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79703b0c74e1d07f8f6a6d057ec3b1a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a79703b0c74e1d07f8f6a6d057ec3b1a8">Intersect</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;pl, double eps=<a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a>) const</td></tr>
+<tr class="memdesc:a79703b0c74e1d07f8f6a6d057ec3b1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекается ли куб с плоскостью XY локальной системы координат.  <a href="class_mb_cube.html#a79703b0c74e1d07f8f6a6d057ec3b1a8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a79703b0c74e1d07f8f6a6d057ec3b1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50f8452b511336f6be507f4cae3fed5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ac50f8452b511336f6be507f4cae3fed5">Intersect</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;, double eps=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>) const</td></tr>
+<tr class="memdesc:ac50f8452b511336f6be507f4cae3fed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекается ли куб с линией.  <a href="class_mb_cube.html#ac50f8452b511336f6be507f4cae3fed5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac50f8452b511336f6be507f4cae3fed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5a286ab74fcec3c8d0e5caa03483d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#abf5a286ab74fcec3c8d0e5caa03483d4">Intersect</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;p, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;axis, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;param, double delta=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>) const</td></tr>
+<tr class="memdesc:abf5a286ab74fcec3c8d0e5caa03483d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти пересечение прямой с "поверхностью" куба.  <a href="class_mb_cube.html#abf5a286ab74fcec3c8d0e5caa03483d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:abf5a286ab74fcec3c8d0e5caa03483d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7951c24fb8542f4509181efbbae708"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a1e7951c24fb8542f4509181efbbae708">Intersect</a> (const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;placement, double radius, <a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;param, double delta=<a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a>) const</td></tr>
+<tr class="memdesc:a1e7951c24fb8542f4509181efbbae708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересечение куба и окружности.  <a href="class_mb_cube.html#a1e7951c24fb8542f4509181efbbae708">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e7951c24fb8542f4509181efbbae708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c061610a2eb923c69ece26cd30c067"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a17c061610a2eb923c69ece26cd30c067">Intersection</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube1, const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube2, double eps=<a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a>)</td></tr>
+<tr class="memdesc:a17c061610a2eb923c69ece26cd30c067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Куб пересечения двух кубов.  <a href="class_mb_cube.html#a17c061610a2eb923c69ece26cd30c067">Подробнее...</a><br /></td></tr>
+<tr class="separator:a17c061610a2eb923c69ece26cd30c067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049bb3e2f5bf0208a2312763e117e27d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a049bb3e2f5bf0208a2312763e117e27d">Union</a> (const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube1, const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;cube2)</td></tr>
+<tr class="memdesc:a049bb3e2f5bf0208a2312763e117e27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Куб объединения двух кубов.  <a href="class_mb_cube.html#a049bb3e2f5bf0208a2312763e117e27d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a049bb3e2f5bf0208a2312763e117e27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a2d189e7af37661bd720da9bd8143d826"><td class="memItemLeft" align="right" valign="top"><a id="a2d189e7af37661bd720da9bd8143d826"></a>
+static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#a2d189e7af37661bd720da9bd8143d826">GetDimension</a> ()</td></tr>
+<tr class="memdesc:a2d189e7af37661bd720da9bd8143d826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество координат точки. <br /></td></tr>
+<tr class="separator:a2d189e7af37661bd720da9bd8143d826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ab59a33d3999b28c3092c5d41744e7d4c"><td class="memItemLeft" align="right" valign="top"><a id="ab59a33d3999b28c3092c5d41744e7d4c"></a>
+<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ab59a33d3999b28c3092c5d41744e7d4c">pmin</a></td></tr>
+<tr class="memdesc:ab59a33d3999b28c3092c5d41744e7d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка диагонали параллелепипеда с минимальными координатами. <br /></td></tr>
+<tr class="separator:ab59a33d3999b28c3092c5d41744e7d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4aad1c9e95bebba3f36ec4aae893409"><td class="memItemLeft" align="right" valign="top"><a id="ab4aad1c9e95bebba3f36ec4aae893409"></a>
+<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cube.html#ab4aad1c9e95bebba3f36ec4aae893409">pmax</a></td></tr>
+<tr class="memdesc:ab4aad1c9e95bebba3f36ec4aae893409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка диагонали параллелепипеда с максимальными координатами. <br /></td></tr>
+<tr class="separator:ab4aad1c9e95bebba3f36ec4aae893409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Габаритный параллелепипед. </p>
+<p>Габаритный параллелепипед - это область 3D-пространства, ограниченная прямым параллелепипедом, грани которого параллельным плоскостям системы координат.<br  />
+ Используется для быстрой оценки близости или не пересечения трёхмерных объектов, содержащихся в параллелепипеде. Габаритный параллелепипед описывается парой точек, расположенных на главной диагонали куба. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a3b08e46867bd6b0b7de5fdbaf0fd3cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b08e46867bd6b0b7de5fdbaf0fd3cb8">&#9670;&nbsp;</a></span>MbCube() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbCube::MbCube </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalize</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по координатам </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmin,ymin,zmin</td><td>- Координаты точки угла куба с минимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmax,ymax,zmax</td><td>- Координаты точки угла куба с максимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>- Нормализовать себя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2dc606a1006c5037e5154d91c915ad6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc606a1006c5037e5154d91c915ad6c">&#9670;&nbsp;</a></span>MbCube() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbCube::MbCube </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalize</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по двум точкам. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p0</td><td>- Точка угла куба с минимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Точка угла куба с максимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>- Нормализовать себя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae4fe675f76aa75cbb68ea59f875f4319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4fe675f76aa75cbb68ea59f875f4319">&#9670;&nbsp;</a></span>Set() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::Set </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalize</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализировать по координатам. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmin,ymin,zmin</td><td>- Координаты точки угла куба с минимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmax,ymax,zmax</td><td>- Координаты точки угла куба с максимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>- Нормализовать себя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a43c3e2e5fe0b88082d1ed60cf9928ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c3e2e5fe0b88082d1ed60cf9928ad9">&#9670;&nbsp;</a></span>Set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>normalize</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализировать по двум точкам. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p0</td><td>- Точка угла куба с минимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Точка угла куба с максимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">normalize</td><td>- Нормализовать себя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a512918192715452aa81bc8324205f116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512918192715452aa81bc8324205f116">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализировать по двум точкам. </p>
+<p>Инициализированный куб нормализуется.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p0</td><td>- Точка угла куба с минимальными координатами.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Точка угла куба с максимальными координатами. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80693bd223d8f66a25e9b8da6de129b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80693bd223d8f66a25e9b8da6de129b0">&#9670;&nbsp;</a></span>AddRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::AddRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_rect.html">MbRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить габарит. </p>
+<p>Габарит добавляется в локальной системе координат исходного куба.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>- Габарит.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Локальная система координат. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab32d5aa8f7685d9e08dd4a37a431a089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32d5aa8f7685d9e08dd4a37a431a089">&#9670;&nbsp;</a></span>ProjectionRect() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::ProjectionRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_rect.html">MbRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проекция на плейсмент. </p>
+<p>Вычисляет прямоугольник, охватывающий проекцию куба на плейсмент.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Локальная система координат.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rect</td><td>- Прямоугольник, охватывающий искомую проекцию. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa042123e379359c0a6c0e00516eed511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa042123e379359c0a6c0e00516eed511">&#9670;&nbsp;</a></span>ProjectionRect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::ProjectionRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_rect.html">MbRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проекция на плейсмент вдоль вектора в любом из двух направлений. </p>
+<p>Вычисляет прямоугольник, охватывающий проекцию куба на плейсмент вдоль вектора в любом из двух направлений.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Локальная система координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>- Вектор направления.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rect</td><td>- Прямоугольник, охватывающий искомую проекцию. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39486683cd5ec885affd8f4a3ed40a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39486683cd5ec885affd8f4a3ed40a88">&#9670;&nbsp;</a></span>GetLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___data___structures.html#gafea98832e921162c14ba15d55698f257">MbeItemLocation</a> MbCube::GetLocation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить положение куба относительно плоскости. </p>
+<p>Определить положение куба относительно плоскости XY локальной системы координат, направление оси Z локальной системы координат при этом не учитывается.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pl</td><td>- Локальная система координат, задающая плоскость.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>iloc_OnItem - куб пересекает плоскость XY локальной системы координат,<br  />
+ iloc_InItem - куб расположен над плоскостью XY локальной системы координат,<br  />
+ iloc_OutOfItem - куб расположен под плоскостью XY локальной системы координат. </dd></dl>
+
+</div>
+</div>
+<a id="a7131a5c99034c24baff24d0953473028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7131a5c99034c24baff24d0953473028">&#9670;&nbsp;</a></span>InsideLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::InsideLocation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_rect.html">MbRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить положение куба относительно трубы. </p>
+<p>Определить, расположен ли куб внутри трубы прямоугольного сечения, заданного прямоугольником в плоскости XY локальной системы координат.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Локальная система координат, в в плоскости XY которой лежит сечение трубы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rect</td><td>- Прямоугольник, задающая сечение трубы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если куб расположен внутри трубы. </dd></dl>
+
+</div>
+</div>
+<a id="a3c75c77bf156c9f654a4d15c54ca9328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c75c77bf156c9f654a4d15c54ca9328">&#9670;&nbsp;</a></span>Include()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::Include </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включить в себя точку, заданную как XYZ. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x,y,z</td><td>- Координаты точки, которую требуется включить в габарит. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e5f110ce5ad0a7f9bf91be1e9110645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5f110ce5ad0a7f9bf91be1e9110645">&#9670;&nbsp;</a></span>Contains() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Contains </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить, лежит ли точка внутри габаритного параллелепипеда. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если лежит. </dd></dl>
+
+</div>
+</div>
+<a id="a1380708bc047ea93361dcc36891c2d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1380708bc047ea93361dcc36891c2d18">&#9670;&nbsp;</a></span>Contains() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Point &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Contains </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить, лежит ли точка внутри габаритного параллелепипеда. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если лежит. </dd></dl>
+
+</div>
+</div>
+<a id="a28b051c8c2fde18e79009651be61d3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b051c8c2fde18e79009651be61d3e0">&#9670;&nbsp;</a></span>Contains() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Contains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>box</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить, содержит ли один параллелепипед другой. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если данный габаритный параллелепипед содержит другой. </dd></dl>
+
+</div>
+</div>
+<a id="afbfda9d46f4668fddd5bbab221a01625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbfda9d46f4668fddd5bbab221a01625">&#9670;&nbsp;</a></span>Contains() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Contains </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>box</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить, содержит ли один параллелепипед другой. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если данный габаритный параллелепипед содержит другой. </dd></dl>
+
+</div>
+</div>
+<a id="a37299b99287537d3df471420e543d2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37299b99287537d3df471420e543d2d2">&#9670;&nbsp;</a></span>Intersect() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code>(<a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a>+<a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a>)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пересекается ли габаритный параллелепипед с другим параллелепипедом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- Другой параллелепипед.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пересекается. </dd></dl>
+
+</div>
+</div>
+<a id="a79703b0c74e1d07f8f6a6d057ec3b1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79703b0c74e1d07f8f6a6d057ec3b1a8">&#9670;&nbsp;</a></span>Intersect() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code><a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пересекается ли куб с плоскостью XY локальной системы координат. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pl</td><td>- Плейсмент, задающий плоскость.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пересекается. </dd></dl>
+
+</div>
+</div>
+<a id="ac50f8452b511336f6be507f4cae3fed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50f8452b511336f6be507f4cae3fed5">&#9670;&nbsp;</a></span>Intersect() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code><a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пересекается ли куб с линией. </p>
+<p>Линия задается точкой и вектором.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пересекается. </dd></dl>
+
+</div>
+</div>
+<a id="abf5a286ab74fcec3c8d0e5caa03483d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5a286ab74fcec3c8d0e5caa03483d4">&#9670;&nbsp;</a></span>Intersect() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em> = <code><a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти пересечение прямой с "поверхностью" куба. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Точка на прямой.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>- Вектор, задающий направление прямой.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">param</td><td>- Точки пересечения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пересечение есть, <br  />
+ false в противном случае. </dd></dl>
+
+</div>
+</div>
+<a id="a1e7951c24fb8542f4509181efbbae708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e7951c24fb8542f4509181efbbae708">&#9670;&nbsp;</a></span>Intersect() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>placement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em> = <code><a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пересечение куба и окружности. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">placement</td><td>- Плейсмент окружности.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>- Радиус окружности.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">param</td><td>- Точки пересечения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пересечение есть, <br  />
+ false в противном случае. </dd></dl>
+
+</div>
+</div>
+<a id="a17c061610a2eb923c69ece26cd30c067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17c061610a2eb923c69ece26cd30c067">&#9670;&nbsp;</a></span>Intersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Intersection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code><a class="el" href="namespacec3d.html#a5618b61e44d59f0497a39f6f14267ba4">c3d::MIN_RADIUS</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Куб пересечения двух кубов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cube1,cube2</td><td>- Исходные кубы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пересечение есть, <br  />
+ false в противном случае. </dd></dl>
+
+</div>
+</div>
+<a id="a049bb3e2f5bf0208a2312763e117e27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049bb3e2f5bf0208a2312763e117e27d">&#9670;&nbsp;</a></span>Union()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::Union </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Куб объединения двух кубов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cube1,cube2</td><td>- Исходные кубы.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>false, если итоговый куб пуст, <br  />
+ true в противном случае. </dd></dl>
+
+</div>
+</div>
+<a id="aade8a749e9a3c142cdc2ca24417760b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade8a749e9a3c142cdc2ca24417760b3">&#9670;&nbsp;</a></span>DistanceToPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MbCube::DistanceToPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычислить расстояние до ближайшей грани габаритного куба. </p>
+<p>Найденное расстояние до ближайшей границы имеет отрицательное значение, если точка находится внутри, и положительное - если снаружи.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>- Исследуемая точка.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает расстояние до границы. </dd></dl>
+
+</div>
+</div>
+<a id="a3ae1b40a9b561224497b75e225e5ce4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae1b40a9b561224497b75e225e5ce4a">&#9670;&nbsp;</a></span>DistanceToCube()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MbCube::DistanceToCube </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>cube</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code><a class="el" href="class_math.html#ae18e7456e94ece8b58768efd3f8f0b53">Math::metricRegion</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить расстояние до куба. </p>
+<p>Возвращается ноль, если кубы пересекаются или один содержится в другом.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cube</td><td>- Другой куб.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eps</td><td>- Метрическая точность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает расстояние до границы. </dd></dl>
+
+</div>
+</div>
+<a id="aa05ac79ba2844e8121e843de71bfd221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05ac79ba2844e8121e843de71bfd221">&#9670;&nbsp;</a></span>GetVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MbCube::GetVertices </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать все вершины куба. </p>
+<p>Выдать все вершины куба.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">points</td><td>- Вершины.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число вершин. Ноль, если куб пуст. </dd></dl>
+
+</div>
+</div>
+<a id="ab72dd1bb16b7f4bec07772905d8007bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72dd1bb16b7f4bec07772905d8007bd">&#9670;&nbsp;</a></span>GetVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::GetVertex </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать вершину куба по индексу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Исходный индекс. 0 &lt;= index &lt;= 7.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td>- Искомая вершина. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a99733a02f8dcb49c0ece7b0b9c25743d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99733a02f8dcb49c0ece7b0b9c25743d">&#9670;&nbsp;</a></span>GetEdgeCentre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::GetEdgeCentre </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать центр ребра по индексу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Исходный индекс. 0 &lt;= index &lt;= 12 (общий номер минус CUBE_VERTEX_COUNT).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td>- Координаты центра ребра. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6c1074ffa5b1c97a283a58dc7ebe0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c1074ffa5b1c97a283a58dc7ebe0d0">&#9670;&nbsp;</a></span>GetFaceCentre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCube::GetFaceCentre </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать центр грани по индексу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Исходный индекс. 0 &lt;= index &lt;= 5 (общий номер минус CUBE_VERTEX_COUNT минус CUBE_EDGES_COUNT).</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td>- Координаты центра ребра. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5ed43d83d1fe7b40071aaf12d28d8dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed43d83d1fe7b40071aaf12d28d8dd3">&#9670;&nbsp;</a></span>GetControlPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::GetControlPoint </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дать характерную точку куба по ее номеру. </p>
+<p>Общая нумерация характерных точек куба: 0-7 вершины, 8-19 середины рёбер, 20-25 центры граней.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pIndex</td><td>- Номер характерных точек.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">p</td><td>- Координаты характерной точки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>false, если куб пуст или индекс принимает недопустимое значение, <br  />
+ true в противном случае. </dd></dl>
+
+</div>
+</div>
+<a id="a524a645a4b6b4efa26e614d0bde07149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a524a645a4b6b4efa26e614d0bde07149">&#9670;&nbsp;</a></span>GetControlPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MbCube::GetControlPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_array.html">SArray</a>&lt; <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать все характерные точки куба. </p>
+<p>Все характерные точки куба: 8 вершин, 12 середин рёбер, 6 центров граней.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">points</td><td>- Характерные точки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число характерных точек. Ноль, если куб пуст. </dd></dl>
+
+</div>
+</div>
+<a id="a828ad5ed87fc91ed58af3c786ea3bf15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a828ad5ed87fc91ed58af3c786ea3bf15">&#9670;&nbsp;</a></span>GetNearestControlIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MbCube::GetNearestControlIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать номер ближайшей характерной точки куба. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Исходная точка, к которой ищется ближайшая характерная точка куба.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Номер точки. </dd></dl>
+
+</div>
+</div>
+<a id="a5142909f8449311098290d9be33259c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5142909f8449311098290d9be33259c7">&#9670;&nbsp;</a></span>GetFixedControlIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t MbCube::GetFixedControlIndex </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дать номер противолежащей точки. </p>
+<p>Для точки куба с номером index дать номер противолежащей точки, которая может использоваться в качестве фиксированной.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Номер исходной точки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Номер противолежащей точки. </dd></dl>
+
+</div>
+</div>
+<a id="ac998bc18fc5f61a3cfdbfa7bb6afc822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac998bc18fc5f61a3cfdbfa7bb6afc822">&#9670;&nbsp;</a></span>CalculateMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCube::CalculateMatrix </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useFixed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isotropy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать матрицу деформации. </p>
+<p>Матрица деформации рассчитывается по-новому положению point характерной точки куба с индексом pIndex.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pIndex</td><td>- Номер смещаемой точки (0-7 вершины, 8-19 середины рёбер, 20-25 центры граней).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>- Точка, с которой нужно совместить точку куба с номером pIndex.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fixedPoint</td><td>- Неподвижная точка преобразования, используется, если useFixed = true.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">useFixed</td><td>- Использовать неподвижную точку (true), если useFixed = false, то неподвижной будет противолежащая точка куба.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isotropy</td><td>- Одинаковые масштабы по осям (true), масштабы, пропорциональны проекциям смещения рассматриваемой точки на стороны куба (false)</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">matrix</td><td>- Рассчитанная матрица преобразования.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если искомая матрица была найдена. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__cube_8h.html">mb_cube.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_cube.html">MbCube</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:02. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс VSN::Font</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_v_s_n_1_1_font.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="class_v_s_n_1_1_font-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс VSN::Font</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс <a class="el" href="class_v_s_n_1_1_font.html" title="Класс Font описывает шрифт для отрисовки текста.\detail Класс Font описывает шрифт для отрисовки текс...">Font</a> описывает шрифт для отрисовки текста.\detail Класс <a class="el" href="class_v_s_n_1_1_font.html" title="Класс Font описывает шрифт для отрисовки текста.\detail Класс Font описывает шрифт для отрисовки текс...">Font</a> описывает шрифт для отрисовки текста. Позволяет менять такие параметры шрифта как семейство, курсивность и жирность. Когда мы устанавливаем новый параметр шрифта, происходит поиск шрифта в базе с соответствующими параметрами, и, в случае успеха, шрифт меняется на новый. Семейство шрифта может быть задано как точным названием (например, 'Times New Roman'), так и сокращенным (например, 'times'). Регистр букв значения не имеет. Если шрифт не находится в базе, то используется шрифт по умолчанию. Для работы с базой шрифтов используйте класс FontDatabase.  
+ <a href="class_v_s_n_1_1_font.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;vsn_font.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a02de3d27ec54ea41d270e4e12f3a7920"><td class="memItemLeft" align="right" valign="top"><a id="a02de3d27ec54ea41d270e4e12f3a7920"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a02de3d27ec54ea41d270e4e12f3a7920">Font</a> ()</td></tr>
+<tr class="memdesc:a02de3d27ec54ea41d270e4e12f3a7920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a02de3d27ec54ea41d270e4e12f3a7920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8251bb7193f4208d7a3c11f3eb528287"><td class="memItemLeft" align="right" valign="top"><a id="a8251bb7193f4208d7a3c11f3eb528287"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a8251bb7193f4208d7a3c11f3eb528287">Font</a> (const <a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;other)</td></tr>
+<tr class="memdesc:a8251bb7193f4208d7a3c11f3eb528287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:a8251bb7193f4208d7a3c11f3eb528287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0260f1e851b20209d38fe5eda5163c96"><td class="memItemLeft" align="right" valign="top"><a id="a0260f1e851b20209d38fe5eda5163c96"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a0260f1e851b20209d38fe5eda5163c96">Font</a> (<a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a0260f1e851b20209d38fe5eda5163c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор перемещения. <br /></td></tr>
+<tr class="separator:a0260f1e851b20209d38fe5eda5163c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cccf6bcb1369b9055444dd526903929"><td class="memItemLeft" align="right" valign="top"><a id="a4cccf6bcb1369b9055444dd526903929"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a4cccf6bcb1369b9055444dd526903929">Font</a> (const char *family, bool italic=false, bool bold=false)</td></tr>
+<tr class="memdesc:a4cccf6bcb1369b9055444dd526903929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:a4cccf6bcb1369b9055444dd526903929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa778be0ac90910eef68430832925d43f"><td class="memItemLeft" align="right" valign="top"><a id="aa778be0ac90910eef68430832925d43f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#aa778be0ac90910eef68430832925d43f">~Font</a> ()</td></tr>
+<tr class="memdesc:aa778be0ac90910eef68430832925d43f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор освобождает созданные ресурсы. <br /></td></tr>
+<tr class="separator:aa778be0ac90910eef68430832925d43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd7b8439a93a5c9eb175af347db872b"><td class="memItemLeft" align="right" valign="top"><a id="a1fd7b8439a93a5c9eb175af347db872b"></a>
+<a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a1fd7b8439a93a5c9eb175af347db872b">operator=</a> (const <a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;other)</td></tr>
+<tr class="memdesc:a1fd7b8439a93a5c9eb175af347db872b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания. <br /></td></tr>
+<tr class="separator:a1fd7b8439a93a5c9eb175af347db872b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7600d7a91125fad4325255d678ecb5f"><td class="memItemLeft" align="right" valign="top"><a id="ab7600d7a91125fad4325255d678ecb5f"></a>
+<a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#ab7600d7a91125fad4325255d678ecb5f">operator=</a> (<a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:ab7600d7a91125fad4325255d678ecb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перемещения. <br /></td></tr>
+<tr class="separator:ab7600d7a91125fad4325255d678ecb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18065fb4bac813275fc8f6a16de0b4a"><td class="memItemLeft" align="right" valign="top"><a id="ab18065fb4bac813275fc8f6a16de0b4a"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#ab18065fb4bac813275fc8f6a16de0b4a">GetSize</a> () const</td></tr>
+<tr class="memdesc:ab18065fb4bac813275fc8f6a16de0b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение размера шрифта. <br /></td></tr>
+<tr class="separator:ab18065fb4bac813275fc8f6a16de0b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5705d34412584f3f0d815fe07e8006f1"><td class="memItemLeft" align="right" valign="top"><a id="a5705d34412584f3f0d815fe07e8006f1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a5705d34412584f3f0d815fe07e8006f1">SetSize</a> (uint fontSize)</td></tr>
+<tr class="memdesc:a5705d34412584f3f0d815fe07e8006f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задание размера шрифта. <br /></td></tr>
+<tr class="separator:a5705d34412584f3f0d815fe07e8006f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b82b49af8f3dcba69403cb4dd5e1e95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a5b82b49af8f3dcba69403cb4dd5e1e95">IsValid</a> () const</td></tr>
+<tr class="memdesc:a5b82b49af8f3dcba69403cb4dd5e1e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка доступности шрифта в графической библиотеке Vision.  <a href="class_v_s_n_1_1_font.html#a5b82b49af8f3dcba69403cb4dd5e1e95">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5b82b49af8f3dcba69403cb4dd5e1e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568be6ab937b27326088ca33c30c4f5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a568be6ab937b27326088ca33c30c4f5e">IsSystem</a> () const</td></tr>
+<tr class="memdesc:a568be6ab937b27326088ca33c30c4f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка признака системного шрифта.  <a href="class_v_s_n_1_1_font.html#a568be6ab937b27326088ca33c30c4f5e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a568be6ab937b27326088ca33c30c4f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69e08d525f90ea91096cf52c810af01"><td class="memItemLeft" align="right" valign="top"><a id="ab69e08d525f90ea91096cf52c810af01"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#ab69e08d525f90ea91096cf52c810af01">GetFamily</a> () const</td></tr>
+<tr class="memdesc:ab69e08d525f90ea91096cf52c810af01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить семейство шрифтов. <br /></td></tr>
+<tr class="separator:ab69e08d525f90ea91096cf52c810af01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fdcfdc24336a6f750ba5e5225ecf95c"><td class="memItemLeft" align="right" valign="top"><a id="a8fdcfdc24336a6f750ba5e5225ecf95c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a8fdcfdc24336a6f750ba5e5225ecf95c">SetFamily</a> (const char *family)</td></tr>
+<tr class="memdesc:a8fdcfdc24336a6f750ba5e5225ecf95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить семейство шрифтов. Возвращает true в случае успеха. <br /></td></tr>
+<tr class="separator:a8fdcfdc24336a6f750ba5e5225ecf95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe97bc8f05d0cd9dd5f2b456222666d0"><td class="memItemLeft" align="right" valign="top"><a id="abe97bc8f05d0cd9dd5f2b456222666d0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#abe97bc8f05d0cd9dd5f2b456222666d0">GetPixelSize</a> () const</td></tr>
+<tr class="memdesc:abe97bc8f05d0cd9dd5f2b456222666d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить размер шрифта в пикселях. <br /></td></tr>
+<tr class="separator:abe97bc8f05d0cd9dd5f2b456222666d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761ef4967a3ee66106a46e70b17a071b"><td class="memItemLeft" align="right" valign="top"><a id="a761ef4967a3ee66106a46e70b17a071b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a761ef4967a3ee66106a46e70b17a071b">SetPixelSize</a> (float pixelSize)</td></tr>
+<tr class="memdesc:a761ef4967a3ee66106a46e70b17a071b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить размер шрифта в пикселях. <br /></td></tr>
+<tr class="separator:a761ef4967a3ee66106a46e70b17a071b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8349524a2452c17bc8fb2b5dcb980d5d"><td class="memItemLeft" align="right" valign="top"><a id="a8349524a2452c17bc8fb2b5dcb980d5d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a8349524a2452c17bc8fb2b5dcb980d5d">GetPointSize</a> () const</td></tr>
+<tr class="memdesc:a8349524a2452c17bc8fb2b5dcb980d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить размер шрифта в точках. <br /></td></tr>
+<tr class="separator:a8349524a2452c17bc8fb2b5dcb980d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c965a4b80c307eec9f50ecc88184372"><td class="memItemLeft" align="right" valign="top"><a id="a0c965a4b80c307eec9f50ecc88184372"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a0c965a4b80c307eec9f50ecc88184372">SetPointSize</a> (float pointSize)</td></tr>
+<tr class="memdesc:a0c965a4b80c307eec9f50ecc88184372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить размер шрифта в точках. <br /></td></tr>
+<tr class="separator:a0c965a4b80c307eec9f50ecc88184372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72702faf64f056d4405a3422516b1798"><td class="memItemLeft" align="right" valign="top"><a id="a72702faf64f056d4405a3422516b1798"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a72702faf64f056d4405a3422516b1798">GetSizeISO</a> () const</td></tr>
+<tr class="memdesc:a72702faf64f056d4405a3422516b1798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить размер шрифта в мм по ISO. <br /></td></tr>
+<tr class="separator:a72702faf64f056d4405a3422516b1798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38013f2d7ce6f81473a3a07322bef6b9"><td class="memItemLeft" align="right" valign="top"><a id="a38013f2d7ce6f81473a3a07322bef6b9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a38013f2d7ce6f81473a3a07322bef6b9">SetSizeISO</a> (float sizeMM)</td></tr>
+<tr class="memdesc:a38013f2d7ce6f81473a3a07322bef6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить размер шрифта в мм по ISO. <br /></td></tr>
+<tr class="separator:a38013f2d7ce6f81473a3a07322bef6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19e440eb39d0652ad0fd4f0d2a63016"><td class="memItemLeft" align="right" valign="top"><a id="af19e440eb39d0652ad0fd4f0d2a63016"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#af19e440eb39d0652ad0fd4f0d2a63016">IsItalic</a> () const</td></tr>
+<tr class="memdesc:af19e440eb39d0652ad0fd4f0d2a63016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли шрифт курсивом. <br /></td></tr>
+<tr class="separator:af19e440eb39d0652ad0fd4f0d2a63016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54515db266a9541ba6b44236ae1ba433"><td class="memItemLeft" align="right" valign="top"><a id="a54515db266a9541ba6b44236ae1ba433"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a54515db266a9541ba6b44236ae1ba433">SetItalic</a> (bool italic)</td></tr>
+<tr class="memdesc:a54515db266a9541ba6b44236ae1ba433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать шрифт курсивом. Возвращает true в случае успеха. <br /></td></tr>
+<tr class="separator:a54515db266a9541ba6b44236ae1ba433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e671381089b728ba3353b822b39a0c"><td class="memItemLeft" align="right" valign="top"><a id="a42e671381089b728ba3353b822b39a0c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#a42e671381089b728ba3353b822b39a0c">IsBold</a> () const</td></tr>
+<tr class="memdesc:a42e671381089b728ba3353b822b39a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли шрифт жирным. <br /></td></tr>
+<tr class="separator:a42e671381089b728ba3353b822b39a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae694f043f15ad054be4b4b194cb89d32"><td class="memItemLeft" align="right" valign="top"><a id="ae694f043f15ad054be4b4b194cb89d32"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#ae694f043f15ad054be4b4b194cb89d32">SetBold</a> (bool bold)</td></tr>
+<tr class="memdesc:ae694f043f15ad054be4b4b194cb89d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать шрифт жирным. Возвращает true в случае успеха. <br /></td></tr>
+<tr class="separator:ae694f043f15ad054be4b4b194cb89d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:af1eb5fd2dd5e00d10406d9d6e3c3e82e"><td class="memItemLeft" align="right" valign="top"><a id="af1eb5fd2dd5e00d10406d9d6e3c3e82e"></a>
+static <a class="el" href="class_v_s_n_1_1_font.html">Font</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_font.html#af1eb5fd2dd5e00d10406d9d6e3c3e82e">Default</a> ()</td></tr>
+<tr class="memdesc:af1eb5fd2dd5e00d10406d9d6e3c3e82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает шрифт по умолчанию. <br /></td></tr>
+<tr class="separator:af1eb5fd2dd5e00d10406d9d6e3c3e82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс <a class="el" href="class_v_s_n_1_1_font.html" title="Класс Font описывает шрифт для отрисовки текста.\detail Класс Font описывает шрифт для отрисовки текс...">Font</a> описывает шрифт для отрисовки текста.</p>
+<p>\detail Класс <a class="el" href="class_v_s_n_1_1_font.html" title="Класс Font описывает шрифт для отрисовки текста.\detail Класс Font описывает шрифт для отрисовки текс...">Font</a> описывает шрифт для отрисовки текста. Позволяет менять такие параметры шрифта как семейство, курсивность и жирность. Когда мы устанавливаем новый параметр шрифта, происходит поиск шрифта в базе с соответствующими параметрами, и, в случае успеха, шрифт меняется на новый. Семейство шрифта может быть задано как точным названием (например, 'Times New Roman'), так и сокращенным (например, 'times'). Регистр букв значения не имеет. Если шрифт не находится в базе, то используется шрифт по умолчанию. Для работы с базой шрифтов используйте класс FontDatabase. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a5b82b49af8f3dcba69403cb4dd5e1e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b82b49af8f3dcba69403cb4dd5e1e95">&#9670;&nbsp;</a></span>IsValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VSN::Font::IsValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка доступности шрифта в графической библиотеке Vision. </p>
+<p>Возвращает true, если удается найти шрифт с указанными атрибутами. </p>
+
+</div>
+</div>
+<a id="a568be6ab937b27326088ca33c30c4f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568be6ab937b27326088ca33c30c4f5e">&#9670;&nbsp;</a></span>IsSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VSN::Font::IsSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка признака системного шрифта. </p>
+<p>Возвращает true, если такой шрифт доступен в графической библиотеке Vision и является системным. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="vsn__font_8h.html">vsn_font.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>VSN</b></li><li class="navelem"><a class="el" href="class_v_s_n_1_1_font.html">Font</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:08. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

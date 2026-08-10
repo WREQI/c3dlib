@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс VSN::BoundingBoxRepBase</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_v_s_n_1_1_bounding_box_rep_base.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="class_v_s_n_1_1_bounding_box_rep_base-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс VSN::BoundingBoxRepBase</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html" title="BoundingBoxRepBase является базовым классом для представлений ограничивающего параллелепипеда и служи...">BoundingBoxRepBase</a> является базовым классом для представлений ограничивающего параллелепипеда и служит для отображения информационного габарита в сцене и вывода численых значений по всем осям в виде шкалы.  
+ <a href="class_v_s_n_1_1_bounding_box_rep_base.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;vsn_boundingboxrep.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:VSN::BoundingBoxRepBase:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_v_s_n_1_1_bounding_box_rep_base__inherit__graph.svg" width="376" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса VSN::BoundingBoxRepBase:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_v_s_n_1_1_bounding_box_rep_base__coll__graph.svg" width="198" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a49e8352a8fcbc7cedc0d3343de9fd50d"><td class="memItemLeft" align="right" valign="top"><a id="a49e8352a8fcbc7cedc0d3343de9fd50d"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a49e8352a8fcbc7cedc0d3343de9fd50d">~BoundingBoxRepBase</a> ()</td></tr>
+<tr class="memdesc:a49e8352a8fcbc7cedc0d3343de9fd50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a49e8352a8fcbc7cedc0d3343de9fd50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c046218f4869420a0623e7940ddd977"><td class="memItemLeft" align="right" valign="top"><a id="a9c046218f4869420a0623e7940ddd977"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a9c046218f4869420a0623e7940ddd977">IsVisibleBoundingBox</a> () const</td></tr>
+<tr class="memdesc:a9c046218f4869420a0623e7940ddd977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть видимость <a class="el" href="class_v_s_n_1_1_bounding_box.html">BoundingBox</a>. <br /></td></tr>
+<tr class="separator:a9c046218f4869420a0623e7940ddd977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a31e2def167ac28d94d0dbfb683d686"><td class="memItemLeft" align="right" valign="top"><a id="a2a31e2def167ac28d94d0dbfb683d686"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a2a31e2def167ac28d94d0dbfb683d686">SetVisibleBoundingBox</a> (bool visible)</td></tr>
+<tr class="memdesc:a2a31e2def167ac28d94d0dbfb683d686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить видимость <a class="el" href="class_v_s_n_1_1_bounding_box.html">BoundingBox</a>. <br /></td></tr>
+<tr class="separator:a2a31e2def167ac28d94d0dbfb683d686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9bbcecc60461af99b7477c388758cd"><td class="memItemLeft" align="right" valign="top"><a id="a2a9bbcecc60461af99b7477c388758cd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a2a9bbcecc60461af99b7477c388758cd">IsVisibleAxis</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:a2a9bbcecc60461af99b7477c388758cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть видимость указанной оси. <br /></td></tr>
+<tr class="separator:a2a9bbcecc60461af99b7477c388758cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0218c1f64d787030d11073a952bb4539"><td class="memItemLeft" align="right" valign="top"><a id="a0218c1f64d787030d11073a952bb4539"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a0218c1f64d787030d11073a952bb4539">SetVisibleAxis</a> (AxisOrientation orientation, bool visible)</td></tr>
+<tr class="memdesc:a0218c1f64d787030d11073a952bb4539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить видимость указанной оси. <br /></td></tr>
+<tr class="separator:a0218c1f64d787030d11073a952bb4539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067571b095133f6666484f007e953548"><td class="memItemLeft" align="right" valign="top"><a id="a067571b095133f6666484f007e953548"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a067571b095133f6666484f007e953548">IsVisibleTips</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:a067571b095133f6666484f007e953548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть видимость наконечника указанной оси. <br /></td></tr>
+<tr class="separator:a067571b095133f6666484f007e953548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf93687cdf9739c56f2f3ff8c411dd7"><td class="memItemLeft" align="right" valign="top"><a id="a4cf93687cdf9739c56f2f3ff8c411dd7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a4cf93687cdf9739c56f2f3ff8c411dd7">SetVisibleTips</a> (AxisOrientation orientation, bool visible)</td></tr>
+<tr class="memdesc:a4cf93687cdf9739c56f2f3ff8c411dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить видимость наконечника указанной оси. <br /></td></tr>
+<tr class="separator:a4cf93687cdf9739c56f2f3ff8c411dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae464d010628ee5098435b744fcd7b166"><td class="memItemLeft" align="right" valign="top"><a id="ae464d010628ee5098435b744fcd7b166"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#ae464d010628ee5098435b744fcd7b166">IsVisibleLabels</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:ae464d010628ee5098435b744fcd7b166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть видимость текста меток указанной оси. <br /></td></tr>
+<tr class="separator:ae464d010628ee5098435b744fcd7b166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0a97c2db865c33af1e978a16c8d876"><td class="memItemLeft" align="right" valign="top"><a id="a3c0a97c2db865c33af1e978a16c8d876"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a3c0a97c2db865c33af1e978a16c8d876">SetVisibleLabels</a> (AxisOrientation orientation, bool visible)</td></tr>
+<tr class="memdesc:a3c0a97c2db865c33af1e978a16c8d876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить видимость текста меток указанной оси. <br /></td></tr>
+<tr class="separator:a3c0a97c2db865c33af1e978a16c8d876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca01cdbf3ff0cb47de6e85e0740d661"><td class="memItemLeft" align="right" valign="top"><a id="afca01cdbf3ff0cb47de6e85e0740d661"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#afca01cdbf3ff0cb47de6e85e0740d661">IsReversedAxis</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:afca01cdbf3ff0cb47de6e85e0740d661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть обратное направление указанной оси. <br /></td></tr>
+<tr class="separator:afca01cdbf3ff0cb47de6e85e0740d661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab298858980aeb8d135f24781766199ff"><td class="memItemLeft" align="right" valign="top"><a id="ab298858980aeb8d135f24781766199ff"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#ab298858980aeb8d135f24781766199ff">SetReversedAxis</a> (AxisOrientation orientation, bool bEnabled)</td></tr>
+<tr class="memdesc:ab298858980aeb8d135f24781766199ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить обратное направление указанной оси. <br /></td></tr>
+<tr class="separator:ab298858980aeb8d135f24781766199ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415bdf27599744941d8492e407a8ef49"><td class="memItemLeft" align="right" valign="top"><a id="a415bdf27599744941d8492e407a8ef49"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a415bdf27599744941d8492e407a8ef49">IsAutoAdjustOrigin</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:a415bdf27599744941d8492e407a8ef49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть признак совпадения с миром начала координат. Если true, то начало координат совпадает с миром. <br /></td></tr>
+<tr class="separator:a415bdf27599744941d8492e407a8ef49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb90a24c9a647e22fb3513f40c0e615"><td class="memItemLeft" align="right" valign="top"><a id="a8fb90a24c9a647e22fb3513f40c0e615"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a8fb90a24c9a647e22fb3513f40c0e615">SetAutoAdjustOrigin</a> (AxisOrientation orientation, bool bAuto)</td></tr>
+<tr class="memdesc:a8fb90a24c9a647e22fb3513f40c0e615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить совпадение начала координат с миром. Если true, то начала координат совпадают с миром. <br /></td></tr>
+<tr class="separator:a8fb90a24c9a647e22fb3513f40c0e615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21080177d703a0b2b742f15465c2c208"><td class="memItemLeft" align="right" valign="top"><a id="a21080177d703a0b2b742f15465c2c208"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a21080177d703a0b2b742f15465c2c208">GetSegmentCount</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:a21080177d703a0b2b742f15465c2c208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть количество рисок шкалы по указанной оси. <br /></td></tr>
+<tr class="separator:a21080177d703a0b2b742f15465c2c208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26225701162eff2b57228b55161fb32"><td class="memItemLeft" align="right" valign="top"><a id="ae26225701162eff2b57228b55161fb32"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#ae26225701162eff2b57228b55161fb32">SetSegmentCount</a> (AxisOrientation orientation, int count)</td></tr>
+<tr class="memdesc:ae26225701162eff2b57228b55161fb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить количество рисок шкалы по указанной оси. <br /></td></tr>
+<tr class="separator:ae26225701162eff2b57228b55161fb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19215d2eac5d67b5853772737a381c3"><td class="memItemLeft" align="right" valign="top"><a id="ab19215d2eac5d67b5853772737a381c3"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#ab19215d2eac5d67b5853772737a381c3">GetTipSize</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:ab19215d2eac5d67b5853772737a381c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть размер рисок шкалы по указанной оси. <br /></td></tr>
+<tr class="separator:ab19215d2eac5d67b5853772737a381c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f44ca1b0e6ccacd93c3aec0886deaa8"><td class="memItemLeft" align="right" valign="top"><a id="a9f44ca1b0e6ccacd93c3aec0886deaa8"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a9f44ca1b0e6ccacd93c3aec0886deaa8">SetTipSize</a> (AxisOrientation orientation, float size)</td></tr>
+<tr class="memdesc:a9f44ca1b0e6ccacd93c3aec0886deaa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить размер наконечника по указанной оси. <br /></td></tr>
+<tr class="separator:a9f44ca1b0e6ccacd93c3aec0886deaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5588ef3becc98e3e5dff99cdf48bb5"><td class="memItemLeft" align="right" valign="top"><a id="aab5588ef3becc98e3e5dff99cdf48bb5"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aab5588ef3becc98e3e5dff99cdf48bb5">GetSegmentSize</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:aab5588ef3becc98e3e5dff99cdf48bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть размер рисок шкалы по указанной оси. <br /></td></tr>
+<tr class="separator:aab5588ef3becc98e3e5dff99cdf48bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13427ed2d989a67ae5cc6e4a26e9e10a"><td class="memItemLeft" align="right" valign="top"><a id="a13427ed2d989a67ae5cc6e4a26e9e10a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a13427ed2d989a67ae5cc6e4a26e9e10a">SetSegmentSize</a> (AxisOrientation orientation, float size)</td></tr>
+<tr class="memdesc:a13427ed2d989a67ae5cc6e4a26e9e10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить размер рисок шкалы по указанной оси. <br /></td></tr>
+<tr class="separator:a13427ed2d989a67ae5cc6e4a26e9e10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff19b62139a670f3a242d4bc52b37d6d"><td class="memItemLeft" align="right" valign="top"><a id="aff19b62139a670f3a242d4bc52b37d6d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aff19b62139a670f3a242d4bc52b37d6d">GetFormatPrecision</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:aff19b62139a670f3a242d4bc52b37d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть формат отображения значений по указанной оси. <br /></td></tr>
+<tr class="separator:aff19b62139a670f3a242d4bc52b37d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb710a815464c9ee7e0c3368b1bfb04"><td class="memItemLeft" align="right" valign="top"><a id="a8fb710a815464c9ee7e0c3368b1bfb04"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a8fb710a815464c9ee7e0c3368b1bfb04">SetFormatPrecision</a> (AxisOrientation orientation, int precision)</td></tr>
+<tr class="memdesc:a8fb710a815464c9ee7e0c3368b1bfb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить формат отображения значений по указанной оси. <br /></td></tr>
+<tr class="separator:a8fb710a815464c9ee7e0c3368b1bfb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d00c16a948bd0ef29db01621bb1b932"><td class="memItemLeft" align="right" valign="top"><a id="a5d00c16a948bd0ef29db01621bb1b932"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a5d00c16a948bd0ef29db01621bb1b932">GetBoundingBoxEdgeWidth</a> () const</td></tr>
+<tr class="memdesc:a5d00c16a948bd0ef29db01621bb1b932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть толщину ребра ограничивающего параллелепипеда. <br /></td></tr>
+<tr class="separator:a5d00c16a948bd0ef29db01621bb1b932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa495a57b03d329c2f07e6b3f5f6735f4"><td class="memItemLeft" align="right" valign="top"><a id="aa495a57b03d329c2f07e6b3f5f6735f4"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aa495a57b03d329c2f07e6b3f5f6735f4">SetBoundingBoxEdgeWidth</a> (float width)</td></tr>
+<tr class="memdesc:aa495a57b03d329c2f07e6b3f5f6735f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить толщину ребра ограничивающего параллелепипеда. <br /></td></tr>
+<tr class="separator:aa495a57b03d329c2f07e6b3f5f6735f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f91e3fbde2cb61eac731cf9d87c82f"><td class="memItemLeft" align="right" valign="top"><a id="a97f91e3fbde2cb61eac731cf9d87c82f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a97f91e3fbde2cb61eac731cf9d87c82f">GetAxisThickness</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:a97f91e3fbde2cb61eac731cf9d87c82f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть толщину оси. <br /></td></tr>
+<tr class="separator:a97f91e3fbde2cb61eac731cf9d87c82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e261d19e8309d0d50caf23e1a4c795"><td class="memItemLeft" align="right" valign="top"><a id="af5e261d19e8309d0d50caf23e1a4c795"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#af5e261d19e8309d0d50caf23e1a4c795">SetAxisThickness</a> (AxisOrientation orientation, float width)</td></tr>
+<tr class="memdesc:af5e261d19e8309d0d50caf23e1a4c795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить толщину оси. <br /></td></tr>
+<tr class="separator:af5e261d19e8309d0d50caf23e1a4c795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5606806799e25bdb9904957e965477"><td class="memItemLeft" align="right" valign="top"><a id="abc5606806799e25bdb9904957e965477"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#abc5606806799e25bdb9904957e965477">IsDimensionVisible</a> () const</td></tr>
+<tr class="memdesc:abc5606806799e25bdb9904957e965477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть видимость габаритного размера параллелепипеда. <br /></td></tr>
+<tr class="separator:abc5606806799e25bdb9904957e965477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec41b876111bd146deb8e669f0ef1649"><td class="memItemLeft" align="right" valign="top"><a id="aec41b876111bd146deb8e669f0ef1649"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aec41b876111bd146deb8e669f0ef1649">SetDimensionVisible</a> (bool bVisible)</td></tr>
+<tr class="memdesc:aec41b876111bd146deb8e669f0ef1649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить видимость габаритного размера параллелепипеда. <br /></td></tr>
+<tr class="separator:aec41b876111bd146deb8e669f0ef1649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6834ceefd6d44a0475fe566d7deeaed2"><td class="memItemLeft" align="right" valign="top"><a id="a6834ceefd6d44a0475fe566d7deeaed2"></a>
+<a class="el" href="class_v_s_n_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a6834ceefd6d44a0475fe566d7deeaed2">GetColorDimension</a> () const</td></tr>
+<tr class="memdesc:a6834ceefd6d44a0475fe566d7deeaed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть цвет размеров. <br /></td></tr>
+<tr class="separator:a6834ceefd6d44a0475fe566d7deeaed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f59c064c95d7f509835fcafd30f0cf"><td class="memItemLeft" align="right" valign="top"><a id="a54f59c064c95d7f509835fcafd30f0cf"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a54f59c064c95d7f509835fcafd30f0cf">SetColorDimension</a> (const <a class="el" href="class_v_s_n_1_1_color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:a54f59c064c95d7f509835fcafd30f0cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить цвет размеров. <br /></td></tr>
+<tr class="separator:a54f59c064c95d7f509835fcafd30f0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e22746fd4363568f820b5bd18da2bb"><td class="memItemLeft" align="right" valign="top"><a id="a04e22746fd4363568f820b5bd18da2bb"></a>
+<a class="el" href="class_v_s_n_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a04e22746fd4363568f820b5bd18da2bb">GetColorAxis</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:a04e22746fd4363568f820b5bd18da2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть цвет указанной оси. <br /></td></tr>
+<tr class="separator:a04e22746fd4363568f820b5bd18da2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d50101802360d85b122241cb765c2ed"><td class="memItemLeft" align="right" valign="top"><a id="a9d50101802360d85b122241cb765c2ed"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a9d50101802360d85b122241cb765c2ed">SetColorAxis</a> (AxisOrientation orientation, const <a class="el" href="class_v_s_n_1_1_color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:a9d50101802360d85b122241cb765c2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить цвет указанной оси. <br /></td></tr>
+<tr class="separator:a9d50101802360d85b122241cb765c2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaabf37b6a4df7144fa3ea91ebe3891b"><td class="memItemLeft" align="right" valign="top"><a id="acaabf37b6a4df7144fa3ea91ebe3891b"></a>
+<a class="el" href="class_v_s_n_1_1_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#acaabf37b6a4df7144fa3ea91ebe3891b">GetColorLabels</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:acaabf37b6a4df7144fa3ea91ebe3891b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть цвет текста указанной оси. <br /></td></tr>
+<tr class="separator:acaabf37b6a4df7144fa3ea91ebe3891b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3553c4045f71d76913a353b013cebc27"><td class="memItemLeft" align="right" valign="top"><a id="a3553c4045f71d76913a353b013cebc27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a3553c4045f71d76913a353b013cebc27">SetColorLabels</a> (AxisOrientation orientation, const <a class="el" href="class_v_s_n_1_1_color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:a3553c4045f71d76913a353b013cebc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить цвет текста указанной оси. <br /></td></tr>
+<tr class="separator:a3553c4045f71d76913a353b013cebc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec405885a9807555706e5199e591657"><td class="memItemLeft" align="right" valign="top"><a id="a0ec405885a9807555706e5199e591657"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a0ec405885a9807555706e5199e591657">GetFontSizeLabels</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:a0ec405885a9807555706e5199e591657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть размер шрифта текста указанной оси. <br /></td></tr>
+<tr class="separator:a0ec405885a9807555706e5199e591657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954afc46a3ac7991de23a51c457166ba"><td class="memItemLeft" align="right" valign="top"><a id="a954afc46a3ac7991de23a51c457166ba"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a954afc46a3ac7991de23a51c457166ba">SetFontSizeLabels</a> (AxisOrientation orientation, uint size)</td></tr>
+<tr class="memdesc:a954afc46a3ac7991de23a51c457166ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить размер шрифта текста указанной оси. <br /></td></tr>
+<tr class="separator:a954afc46a3ac7991de23a51c457166ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62211a9d13a897059f1dbe221577d69"><td class="memItemLeft" align="right" valign="top"><a id="aa62211a9d13a897059f1dbe221577d69"></a>
+const <a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aa62211a9d13a897059f1dbe221577d69">GetFontLabels</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:aa62211a9d13a897059f1dbe221577d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить шрифт текста. <br /></td></tr>
+<tr class="separator:aa62211a9d13a897059f1dbe221577d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f04a32933dcf61069b216ab2975dae"><td class="memItemLeft" align="right" valign="top"><a id="a75f04a32933dcf61069b216ab2975dae"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a75f04a32933dcf61069b216ab2975dae">SetFontLabels</a> (AxisOrientation orientation, const <a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;font)</td></tr>
+<tr class="memdesc:a75f04a32933dcf61069b216ab2975dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать шрифт текста. <br /></td></tr>
+<tr class="separator:a75f04a32933dcf61069b216ab2975dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c58901a368078131e94c16b6bf8c12"><td class="memItemLeft" align="right" valign="top"><a id="a80c58901a368078131e94c16b6bf8c12"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a80c58901a368078131e94c16b6bf8c12">SetFontLabels</a> (const <a class="el" href="class_v_s_n_1_1_font.html">Font</a> &amp;font)</td></tr>
+<tr class="memdesc:a80c58901a368078131e94c16b6bf8c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать шрифт текста. <br /></td></tr>
+<tr class="separator:a80c58901a368078131e94c16b6bf8c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0cb872cd73671ce6c9dc7bc47e1922a"><td class="memItemLeft" align="right" valign="top"><a id="aa0cb872cd73671ce6c9dc7bc47e1922a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aa0cb872cd73671ce6c9dc7bc47e1922a">GetScaleLabels</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:aa0cb872cd73671ce6c9dc7bc47e1922a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вкл./Выкл. масштабирование текста. <br /></td></tr>
+<tr class="separator:aa0cb872cd73671ce6c9dc7bc47e1922a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5562e5bca890ec2c1140be20d85b0cc"><td class="memItemLeft" align="right" valign="top"><a id="ad5562e5bca890ec2c1140be20d85b0cc"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#ad5562e5bca890ec2c1140be20d85b0cc">GetThicknessAxis</a> (AxisOrientation orientation) const</td></tr>
+<tr class="memdesc:ad5562e5bca890ec2c1140be20d85b0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть толщину указанной оси. <br /></td></tr>
+<tr class="separator:ad5562e5bca890ec2c1140be20d85b0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4883f737a8f3642a548a674d127ee7"><td class="memItemLeft" align="right" valign="top"><a id="a7d4883f737a8f3642a548a674d127ee7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a7d4883f737a8f3642a548a674d127ee7">SetThicknessAxis</a> (AxisOrientation orientation, float thickness)</td></tr>
+<tr class="memdesc:a7d4883f737a8f3642a548a674d127ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить толщину указанной оси. <br /></td></tr>
+<tr class="separator:a7d4883f737a8f3642a548a674d127ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefdbbc1ac99c5cf99ffefb8a6264045b"><td class="memItemLeft" align="right" valign="top"><a id="aefdbbc1ac99c5cf99ffefb8a6264045b"></a>
+<a class="el" href="struct_v_s_n_1_1_box_vertex.html">BoxVertex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aefdbbc1ac99c5cf99ffefb8a6264045b">GetAxesOrigin</a> () const</td></tr>
+<tr class="memdesc:aefdbbc1ac99c5cf99ffefb8a6264045b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить начальную точку координатных осей. <br /></td></tr>
+<tr class="separator:aefdbbc1ac99c5cf99ffefb8a6264045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9647ab7cfcd3b3a79f535a2d00889d1"><td class="memItemLeft" align="right" valign="top"><a id="aa9647ab7cfcd3b3a79f535a2d00889d1"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#aa9647ab7cfcd3b3a79f535a2d00889d1">SetAxesOrigin</a> (const <a class="el" href="struct_v_s_n_1_1_box_vertex.html">BoxVertex</a> &amp;origin)</td></tr>
+<tr class="memdesc:aa9647ab7cfcd3b3a79f535a2d00889d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить начальную точку координатных осей. <br /></td></tr>
+<tr class="separator:aa9647ab7cfcd3b3a79f535a2d00889d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_v_s_n_1_1_geometry_rep"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_v_s_n_1_1_geometry_rep')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_v_s_n_1_1_geometry_rep.html">VSN::GeometryRep</a></td></tr>
+<tr class="memitem:a77e60fe256227aaac57ecf4db8871af8 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a77e60fe256227aaac57ecf4db8871af8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a77e60fe256227aaac57ecf4db8871af8">GeometryRep</a> (<a class="el" href="class_v_s_n_1_1_node.html">Node</a> *pParent=nullptr)</td></tr>
+<tr class="memdesc:a77e60fe256227aaac57ecf4db8871af8 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a77e60fe256227aaac57ecf4db8871af8 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf4470e2909eb55a4c99197df6c0f42 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="aadf4470e2909eb55a4c99197df6c0f42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#aadf4470e2909eb55a4c99197df6c0f42">GeometryRep</a> (<a class="el" href="class_v_s_n_1_1_geometry.html">Geometry</a> *pGeometry, <a class="el" href="class_v_s_n_1_1_node.html">Node</a> *pParent=nullptr)</td></tr>
+<tr class="memdesc:aadf4470e2909eb55a4c99197df6c0f42 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по геометрическим параметрам объекта. <br /></td></tr>
+<tr class="separator:aadf4470e2909eb55a4c99197df6c0f42 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563b20d746bdf0784ec0b380d4d9b182 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a563b20d746bdf0784ec0b380d4d9b182"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a563b20d746bdf0784ec0b380d4d9b182">~GeometryRep</a> () override</td></tr>
+<tr class="memdesc:a563b20d746bdf0784ec0b380d4d9b182 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a563b20d746bdf0784ec0b380d4d9b182 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada214be223af448602d98d76889a36f4 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="ada214be223af448602d98d76889a36f4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#ada214be223af448602d98d76889a36f4">IsReferenceEmpty</a> () const</td></tr>
+<tr class="memdesc:ada214be223af448602d98d76889a36f4 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли ссылка пустой. <br /></td></tr>
+<tr class="separator:ada214be223af448602d98d76889a36f4 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b08d0784e242e1a8f84a5b2c6111e87 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a8b08d0784e242e1a8f84a5b2c6111e87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a8b08d0784e242e1a8f84a5b2c6111e87">IsLoaded</a> () const</td></tr>
+<tr class="memdesc:a8b08d0784e242e1a8f84a5b2c6111e87 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли представление загруженным. <br /></td></tr>
+<tr class="separator:a8b08d0784e242e1a8f84a5b2c6111e87 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ef28a24e27c0ec2805cb2610feae7f inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a21ef28a24e27c0ec2805cb2610feae7f"></a>
+const <a class="el" href="class_v_s_n_1_1_string.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a21ef28a24e27c0ec2805cb2610feae7f">GetNameRep</a> () const</td></tr>
+<tr class="memdesc:a21ef28a24e27c0ec2805cb2610feae7f inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть имя представления. <br /></td></tr>
+<tr class="separator:a21ef28a24e27c0ec2805cb2610feae7f inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0d0f8332eb3d49a134e8fb818d7cae inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="acc0d0f8332eb3d49a134e8fb818d7cae"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#acc0d0f8332eb3d49a134e8fb818d7cae">SetNameRep</a> (const <a class="el" href="class_v_s_n_1_1_string.html">String</a> &amp;name)</td></tr>
+<tr class="memdesc:acc0d0f8332eb3d49a134e8fb818d7cae inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать имя представления. <br /></td></tr>
+<tr class="separator:acc0d0f8332eb3d49a134e8fb818d7cae inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26efaebc197d3153a95af366800b1321 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a26efaebc197d3153a95af366800b1321"></a>
+<a class="el" href="class_v_s_n_1_1_geometry.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a26efaebc197d3153a95af366800b1321">GetGeomByKey</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key) const</td></tr>
+<tr class="memdesc:a26efaebc197d3153a95af366800b1321 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть геометрические данные по уникальному ключу. <br /></td></tr>
+<tr class="separator:a26efaebc197d3153a95af366800b1321 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7839f34f91f538acf87d06e335a79d00 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a7839f34f91f538acf87d06e335a79d00"></a>
+<a class="el" href="class_v_s_n_1_1_geometry.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a7839f34f91f538acf87d06e335a79d00">GetGeomAt</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>) const</td></tr>
+<tr class="memdesc:a7839f34f91f538acf87d06e335a79d00 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть геометрические данные по индексу. <br /></td></tr>
+<tr class="separator:a7839f34f91f538acf87d06e335a79d00 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f69828c03d07352fde46707a52c318 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="ae2f69828c03d07352fde46707a52c318"></a>
+const ObjectList&lt; <a class="el" href="class_v_s_n_1_1_geometry.html">Geometry</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#ae2f69828c03d07352fde46707a52c318">GetGeomList</a> () const</td></tr>
+<tr class="memdesc:ae2f69828c03d07352fde46707a52c318 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть список геометрических данных. <br /></td></tr>
+<tr class="separator:ae2f69828c03d07352fde46707a52c318 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bec8cc1468ca144a7d0bd9e5a829366 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a0bec8cc1468ca144a7d0bd9e5a829366"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a0bec8cc1468ca144a7d0bd9e5a829366">GetGeometryCount</a> () const</td></tr>
+<tr class="memdesc:a0bec8cc1468ca144a7d0bd9e5a829366 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть количество тел. <br /></td></tr>
+<tr class="separator:a0bec8cc1468ca144a7d0bd9e5a829366 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb1025243af387ddbed0d2f87e4b846 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a5cb1025243af387ddbed0d2f87e4b846"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a5cb1025243af387ddbed0d2f87e4b846">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:a5cb1025243af387ddbed0d2f87e4b846 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если массив представлений пуст. <br /></td></tr>
+<tr class="separator:a5cb1025243af387ddbed0d2f87e4b846 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc8e5f31edaad0f394fa77f2a1fdb27 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a6cc8e5f31edaad0f394fa77f2a1fdb27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a6cc8e5f31edaad0f394fa77f2a1fdb27">IsBoundingBoxValid</a> () const</td></tr>
+<tr class="memdesc:a6cc8e5f31edaad0f394fa77f2a1fdb27 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если ограничивающий габарит правильный. <br /></td></tr>
+<tr class="separator:a6cc8e5f31edaad0f394fa77f2a1fdb27 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecd279b3e609a4614c59806b36ec24c inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a1ecd279b3e609a4614c59806b36ec24c"></a>
+<a class="el" href="class_v_s_n_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a1ecd279b3e609a4614c59806b36ec24c">GetBoundingBox</a> () const</td></tr>
+<tr class="memdesc:a1ecd279b3e609a4614c59806b36ec24c inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть габарит представления. <br /></td></tr>
+<tr class="separator:a1ecd279b3e609a4614c59806b36ec24c inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a4cfd82e536657bb1f9670efc19ba6 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a28a4cfd82e536657bb1f9670efc19ba6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a28a4cfd82e536657bb1f9670efc19ba6">IsGeometryInRep</a> (<a class="el" href="class_v_s_n_1_1_geometry.html">Geometry</a> *pGeom)</td></tr>
+<tr class="memdesc:a28a4cfd82e536657bb1f9670efc19ba6 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть true, если представление содержит геометрические данные. <br /></td></tr>
+<tr class="separator:a28a4cfd82e536657bb1f9670efc19ba6 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66772bd2b37785a65d0da1aa0fc3a93f inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a66772bd2b37785a65d0da1aa0fc3a93f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a66772bd2b37785a65d0da1aa0fc3a93f">GetMaterialCount</a> () const</td></tr>
+<tr class="memdesc:a66772bd2b37785a65d0da1aa0fc3a93f inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть количество материалов. <br /></td></tr>
+<tr class="separator:a66772bd2b37785a65d0da1aa0fc3a93f inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03525ce978ebb094d8d6afb839d4bf9a inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a03525ce978ebb094d8d6afb839d4bf9a"></a>
+std::set&lt; <a class="el" href="class_v_s_n_1_1_material.html">Material</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a03525ce978ebb094d8d6afb839d4bf9a">GetMaterials</a> () const</td></tr>
+<tr class="memdesc:a03525ce978ebb094d8d6afb839d4bf9a inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть набор материалов. <br /></td></tr>
+<tr class="separator:a03525ce978ebb094d8d6afb839d4bf9a inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281deb493e72b785f52cf5ef5752bdcb inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a281deb493e72b785f52cf5ef5752bdcb"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a281deb493e72b785f52cf5ef5752bdcb">GetVolume</a> () const</td></tr>
+<tr class="memdesc:a281deb493e72b785f52cf5ef5752bdcb inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть объем представления. <br /></td></tr>
+<tr class="separator:a281deb493e72b785f52cf5ef5752bdcb inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6896a0d5f0984b4bd5bd7c77718ca83d inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a6896a0d5f0984b4bd5bd7c77718ca83d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a6896a0d5f0984b4bd5bd7c77718ca83d">AddGeometry</a> (<a class="el" href="class_v_s_n_1_1_geometry.html">Geometry</a> *pGeom)</td></tr>
+<tr class="memdesc:a6896a0d5f0984b4bd5bd7c77718ca83d inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить геометрические данные в представление. <br /></td></tr>
+<tr class="separator:a6896a0d5f0984b4bd5bd7c77718ca83d inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ed3e5f12271dd9b148dbba3ab275ea inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="ac4ed3e5f12271dd9b148dbba3ab275ea"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#ac4ed3e5f12271dd9b148dbba3ab275ea">DeleteEmptyGeometry</a> ()</td></tr>
+<tr class="memdesc:ac4ed3e5f12271dd9b148dbba3ab275ea inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить пустые геометрические данные и обновить материалы. <br /></td></tr>
+<tr class="separator:ac4ed3e5f12271dd9b148dbba3ab275ea inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af799a3fc3c998475b3ae4eb9baa65a16 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="af799a3fc3c998475b3ae4eb9baa65a16"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#af799a3fc3c998475b3ae4eb9baa65a16">Clear</a> ()</td></tr>
+<tr class="memdesc:af799a3fc3c998475b3ae4eb9baa65a16 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить все геометрические данные. <br /></td></tr>
+<tr class="separator:af799a3fc3c998475b3ae4eb9baa65a16 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2da45f88a696e273869a8515ab1244c inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="ab2da45f88a696e273869a8515ab1244c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#ab2da45f88a696e273869a8515ab1244c">ReverseNormals</a> ()</td></tr>
+<tr class="memdesc:ab2da45f88a696e273869a8515ab1244c inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сменить направление нормалей геометрии на противоположное. <br /></td></tr>
+<tr class="separator:ab2da45f88a696e273869a8515ab1244c inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210f11c31fd22dbaf564c871e13fc39b inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a210f11c31fd22dbaf564c871e13fc39b"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a210f11c31fd22dbaf564c871e13fc39b">ReplaceRep</a> (<a class="el" href="class_v_s_n_1_1_geometry_rep.html">GeometryRep</a> *pRep)</td></tr>
+<tr class="memdesc:a210f11c31fd22dbaf564c871e13fc39b inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменить представление. <br /></td></tr>
+<tr class="separator:a210f11c31fd22dbaf564c871e13fc39b inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8672da0a7f6b8ada23bf53c037ccc896 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="a8672da0a7f6b8ada23bf53c037ccc896"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a8672da0a7f6b8ada23bf53c037ccc896">ReplaceMaterialById</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;oldKey, <a class="el" href="class_v_s_n_1_1_material.html">Material</a> *pMaterial)</td></tr>
+<tr class="memdesc:a8672da0a7f6b8ada23bf53c037ccc896 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заменить указанный материал. <br /></td></tr>
+<tr class="separator:a8672da0a7f6b8ada23bf53c037ccc896 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72e445628567eae1c805498ffb6fe28 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="ab72e445628567eae1c805498ffb6fe28"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#ab72e445628567eae1c805498ffb6fe28">TransformGeometriesByMatrix</a> (const <a class="el" href="class_v_s_n_1_1_matrix3_d_f.html">Matrix3DF</a> &amp;matrix)</td></tr>
+<tr class="memdesc:ab72e445628567eae1c805498ffb6fe28 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать вершины сетки по данной матрице. <br /></td></tr>
+<tr class="separator:ab72e445628567eae1c805498ffb6fe28 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae711e65a3f63093c71787f723ea4a025 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top"><a id="ae711e65a3f63093c71787f723ea4a025"></a>
+virtual <a class="el" href="class_v_s_n_1_1_geometry_rep.html">GeometryRep</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#ae711e65a3f63093c71787f723ea4a025">operator=</a> (const <a class="el" href="class_v_s_n_1_1_geometry_rep.html">GeometryRep</a> &amp;)</td></tr>
+<tr class="memdesc:ae711e65a3f63093c71787f723ea4a025 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания. <br /></td></tr>
+<tr class="separator:ae711e65a3f63093c71787f723ea4a025 inherit pub_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_v_s_n_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_v_s_n_1_1_node')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_v_s_n_1_1_node.html">VSN::Node</a></td></tr>
+<tr class="memitem:a2d82d4f34bcbac220a4385c7b7f25bd4 inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a2d82d4f34bcbac220a4385c7b7f25bd4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a2d82d4f34bcbac220a4385c7b7f25bd4">Node</a> (<a class="el" href="class_v_s_n_1_1_node.html">Node</a> *pParent=nullptr)</td></tr>
+<tr class="memdesc:a2d82d4f34bcbac220a4385c7b7f25bd4 inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a2d82d4f34bcbac220a4385c7b7f25bd4 inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e4c4038e2174c256bb4de5b6a6bcea inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a42e4c4038e2174c256bb4de5b6a6bcea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a42e4c4038e2174c256bb4de5b6a6bcea">~Node</a> () override</td></tr>
+<tr class="memdesc:a42e4c4038e2174c256bb4de5b6a6bcea inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a42e4c4038e2174c256bb4de5b6a6bcea inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7442e0e9c3b2d93313e7ea6ebfc0dd3d inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a7442e0e9c3b2d93313e7ea6ebfc0dd3d"></a>
+<a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a7442e0e9c3b2d93313e7ea6ebfc0dd3d">GetUniqueKey</a> () const</td></tr>
+<tr class="memdesc:a7442e0e9c3b2d93313e7ea6ebfc0dd3d inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть ключ, идентифицирующий экземпляр <a class="el" href="class_v_s_n_1_1_node.html" title="Node является базовым классом для всех классов Vision, которые используются для построения сцены.">Node</a>. <br /></td></tr>
+<tr class="separator:a7442e0e9c3b2d93313e7ea6ebfc0dd3d inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ead49a36721c06b506f7dcaf0f1f62 inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a74ead49a36721c06b506f7dcaf0f1f62"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a74ead49a36721c06b506f7dcaf0f1f62">SetUniqueKey</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key)</td></tr>
+<tr class="memdesc:a74ead49a36721c06b506f7dcaf0f1f62 inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить уникальный ключ для этого экземпляра. <br /></td></tr>
+<tr class="separator:a74ead49a36721c06b506f7dcaf0f1f62 inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a14f3a662e4cf11d3ed1fd524ed2c2 inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a80a14f3a662e4cf11d3ed1fd524ed2c2"></a>
+<a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a80a14f3a662e4cf11d3ed1fd524ed2c2">GetCustomKey</a> () const</td></tr>
+<tr class="memdesc:a80a14f3a662e4cf11d3ed1fd524ed2c2 inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть пользовательский ключ, идентифицирующий экземпляр <a class="el" href="class_v_s_n_1_1_node.html" title="Node является базовым классом для всех классов Vision, которые используются для построения сцены.">Node</a>. <br /></td></tr>
+<tr class="separator:a80a14f3a662e4cf11d3ed1fd524ed2c2 inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d66be9c46c4013b6362f82c734bb9e inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="ac5d66be9c46c4013b6362f82c734bb9e"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#ac5d66be9c46c4013b6362f82c734bb9e">SetCustomKey</a> (const <a class="el" href="class_v_s_n_1_1_node_key.html">NodeKey</a> &amp;key)</td></tr>
+<tr class="memdesc:ac5d66be9c46c4013b6362f82c734bb9e inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить пользовательский уникальный ключ для этого экземпляра. <br /></td></tr>
+<tr class="separator:ac5d66be9c46c4013b6362f82c734bb9e inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333db4101ba0521f06356fde7f48805b inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a333db4101ba0521f06356fde7f48805b"></a>
+<a class="el" href="class_v_s_n_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a333db4101ba0521f06356fde7f48805b">GetParentNode</a> () const</td></tr>
+<tr class="memdesc:a333db4101ba0521f06356fde7f48805b inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть указатель на родительский объект или nullptr, если родителя нет. <br /></td></tr>
+<tr class="separator:a333db4101ba0521f06356fde7f48805b inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba45fffbc2f1257387372f68c4565e9 inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="adba45fffbc2f1257387372f68c4565e9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#adba45fffbc2f1257387372f68c4565e9">IsEnabled</a> () const</td></tr>
+<tr class="memdesc:adba45fffbc2f1257387372f68c4565e9 inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть флаг включение узла. По умолчанию флаг всегда включен. <br /></td></tr>
+<tr class="separator:adba45fffbc2f1257387372f68c4565e9 inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaeb0faa63f651e05bafff2f00c7ae70 inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="aaaeb0faa63f651e05bafff2f00c7ae70"></a>
+ObjectList&lt; <a class="el" href="class_v_s_n_1_1_node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#aaaeb0faa63f651e05bafff2f00c7ae70">GetChildNodes</a> () const</td></tr>
+<tr class="memdesc:aaaeb0faa63f651e05bafff2f00c7ae70 inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть массив дочерних узлов для этого узла. <br /></td></tr>
+<tr class="separator:aaaeb0faa63f651e05bafff2f00c7ae70 inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01fe7a7ab45ad1cfc12afb9114b28ef inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="aa01fe7a7ab45ad1cfc12afb9114b28ef"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#aa01fe7a7ab45ad1cfc12afb9114b28ef">SetParent</a> (<a class="el" href="class_v_s_n_1_1_node.html">Node</a> *pParent)</td></tr>
+<tr class="memdesc:aa01fe7a7ab45ad1cfc12afb9114b28ef inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить родительский объект для этого объекта. <br /></td></tr>
+<tr class="separator:aa01fe7a7ab45ad1cfc12afb9114b28ef inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca6f8df1930dfb1055a76aaf1a4d8e0 inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a2ca6f8df1930dfb1055a76aaf1a4d8e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a2ca6f8df1930dfb1055a76aaf1a4d8e0">IsNotificationsBlocked</a> () const</td></tr>
+<tr class="memdesc:a2ca6f8df1930dfb1055a76aaf1a4d8e0 inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть True, если уведомления заблокированы, в противном случае False. <br /></td></tr>
+<tr class="separator:a2ca6f8df1930dfb1055a76aaf1a4d8e0 inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d420b5080427ff4ce60536386a3b90 inherit pub_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a12d420b5080427ff4ce60536386a3b90"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a12d420b5080427ff4ce60536386a3b90">SetBlockNotifications</a> (bool block)</td></tr>
+<tr class="memdesc:a12d420b5080427ff4ce60536386a3b90 inherit pub_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить блокировку уведомлений и вернуть предыдущее значение блокировки. <br /></td></tr>
+<tr class="separator:a12d420b5080427ff4ce60536386a3b90 inherit pub_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_v_s_n_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_v_s_n_1_1_object')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_v_s_n_1_1_object.html">VSN::Object</a></td></tr>
+<tr class="memitem:a9c5a3f66c3047d424d997068499ea0ec inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a9c5a3f66c3047d424d997068499ea0ec"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a9c5a3f66c3047d424d997068499ea0ec">Object</a> (<a class="el" href="class_v_s_n_1_1_object.html">Object</a> *pParent=nullptr)</td></tr>
+<tr class="memdesc:a9c5a3f66c3047d424d997068499ea0ec inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор c родителем. <br /></td></tr>
+<tr class="separator:a9c5a3f66c3047d424d997068499ea0ec inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80e3caa2d62f6b722acdd53572ba7b6 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ab80e3caa2d62f6b722acdd53572ba7b6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#ab80e3caa2d62f6b722acdd53572ba7b6">~Object</a> ()</td></tr>
+<tr class="memdesc:ab80e3caa2d62f6b722acdd53572ba7b6 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ab80e3caa2d62f6b722acdd53572ba7b6 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78344a20bb0810112c022993d7053e2b inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a78344a20bb0810112c022993d7053e2b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a78344a20bb0810112c022993d7053e2b">SetParent</a> (<a class="el" href="class_v_s_n_1_1_object.html">Object</a> *pParent)</td></tr>
+<tr class="memdesc:a78344a20bb0810112c022993d7053e2b inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить родителя для объекта. <br /></td></tr>
+<tr class="separator:a78344a20bb0810112c022993d7053e2b inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707336d7d701a8641274eaec848f171f inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a707336d7d701a8641274eaec848f171f"></a>
+<a class="el" href="class_v_s_n_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a707336d7d701a8641274eaec848f171f">GetObjectName</a> () const</td></tr>
+<tr class="memdesc:a707336d7d701a8641274eaec848f171f inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить имя объекта. <br /></td></tr>
+<tr class="separator:a707336d7d701a8641274eaec848f171f inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0acd91d3ec0a00c0838d0e66fdd940 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a7c0acd91d3ec0a00c0838d0e66fdd940"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a7c0acd91d3ec0a00c0838d0e66fdd940">SetObjectName</a> (const <a class="el" href="class_v_s_n_1_1_string.html">String</a> &amp;name)</td></tr>
+<tr class="memdesc:a7c0acd91d3ec0a00c0838d0e66fdd940 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить имя объекту. <br /></td></tr>
+<tr class="separator:a7c0acd91d3ec0a00c0838d0e66fdd940 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569b1440569c015bad0037bd0c52be0e inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a569b1440569c015bad0037bd0c52be0e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a569b1440569c015bad0037bd0c52be0e">IsControlType</a> () const</td></tr>
+<tr class="memdesc:a569b1440569c015bad0037bd0c52be0e inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть тип объекта. <br /></td></tr>
+<tr class="separator:a569b1440569c015bad0037bd0c52be0e inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdedcabcd8ca2f545a866efd497645cc inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abdedcabcd8ca2f545a866efd497645cc"></a>
+<a class="el" href="class_v_s_n_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#abdedcabcd8ca2f545a866efd497645cc">GetParent</a> () const</td></tr>
+<tr class="memdesc:abdedcabcd8ca2f545a866efd497645cc inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть указатель на родителя. <br /></td></tr>
+<tr class="separator:abdedcabcd8ca2f545a866efd497645cc inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c0359ac6dfdb8c52e15a176c15a615 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a29c0359ac6dfdb8c52e15a176c15a615"></a>
+<a class="el" href="class_v_s_n_1_1_variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a29c0359ac6dfdb8c52e15a176c15a615">GetProperty</a> (const <a class="el" href="class_v_s_n_1_1_string.html">String</a> &amp;name) const</td></tr>
+<tr class="memdesc:a29c0359ac6dfdb8c52e15a176c15a615 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть вариант свойства по имени. <br /></td></tr>
+<tr class="separator:a29c0359ac6dfdb8c52e15a176c15a615 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b58fd889161ab4d7735fc962f92d4e3 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b58fd889161ab4d7735fc962f92d4e3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a3b58fd889161ab4d7735fc962f92d4e3">IsSignalsBlocked</a> () const</td></tr>
+<tr class="memdesc:a3b58fd889161ab4d7735fc962f92d4e3 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть признак блокировки сигналов этого объекта. <br /></td></tr>
+<tr class="separator:a3b58fd889161ab4d7735fc962f92d4e3 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6ef6ac27ecb58ae148715bb183433f inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="abe6ef6ac27ecb58ae148715bb183433f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#abe6ef6ac27ecb58ae148715bb183433f">SetBlockSignals</a> (bool bBlock)</td></tr>
+<tr class="memdesc:abe6ef6ac27ecb58ae148715bb183433f inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить признак блокировки сигналов этого объекта. <br /></td></tr>
+<tr class="separator:abe6ef6ac27ecb58ae148715bb183433f inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25641f514a18d5b1758c7fb155d0700c inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a25641f514a18d5b1758c7fb155d0700c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a25641f514a18d5b1758c7fb155d0700c">AddEventListener</a> (<a class="el" href="class_v_s_n_1_1_object.html">Object</a> *pObject)</td></tr>
+<tr class="memdesc:a25641f514a18d5b1758c7fb155d0700c inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить слушателя событий. <br /></td></tr>
+<tr class="separator:a25641f514a18d5b1758c7fb155d0700c inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3529daf3dfdcd064cbd413d63c3540e0 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3529daf3dfdcd064cbd413d63c3540e0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a3529daf3dfdcd064cbd413d63c3540e0">RemoveEventListener</a> (<a class="el" href="class_v_s_n_1_1_object.html">Object</a> *pObject)</td></tr>
+<tr class="memdesc:a3529daf3dfdcd064cbd413d63c3540e0 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить слушателя событий. <br /></td></tr>
+<tr class="separator:a3529daf3dfdcd064cbd413d63c3540e0 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66426c53b2bf727d52e6f031e7f2938c inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a66426c53b2bf727d52e6f031e7f2938c"></a>
+<a class="el" href="class_v_s_n_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a66426c53b2bf727d52e6f031e7f2938c">GetSender</a> () const</td></tr>
+<tr class="memdesc:a66426c53b2bf727d52e6f031e7f2938c inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть указатель на объект, который с генерировал сигнал. <br /></td></tr>
+<tr class="separator:a66426c53b2bf727d52e6f031e7f2938c inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85d73b7a431bc7ed6dd876c2bc03471 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ab85d73b7a431bc7ed6dd876c2bc03471"></a>
+Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#ab85d73b7a431bc7ed6dd876c2bc03471">GetThread</a> () const</td></tr>
+<tr class="memdesc:ab85d73b7a431bc7ed6dd876c2bc03471 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">NO TRANSLATION. <br /></td></tr>
+<tr class="separator:ab85d73b7a431bc7ed6dd876c2bc03471 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8319da1c42d142e1e0e2b132b959c027 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a8319da1c42d142e1e0e2b132b959c027"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a8319da1c42d142e1e0e2b132b959c027">BindWithThread</a> (Thread *thread)</td></tr>
+<tr class="memdesc:a8319da1c42d142e1e0e2b132b959c027 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Связывание c потоком. <br /></td></tr>
+<tr class="separator:a8319da1c42d142e1e0e2b132b959c027 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b839f56bb5ac5e1a4790e6d09023a61 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a3b839f56bb5ac5e1a4790e6d09023a61"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a3b839f56bb5ac5e1a4790e6d09023a61">StartTimer</a> (int interval, TimerType timerType=tt_CoarseTimer)</td></tr>
+<tr class="memdesc:a3b839f56bb5ac5e1a4790e6d09023a61 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">NO TRANSLATION. <br /></td></tr>
+<tr class="separator:a3b839f56bb5ac5e1a4790e6d09023a61 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7177529bce8260b0d58f9bb518f94936 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="a7177529bce8260b0d58f9bb518f94936"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a7177529bce8260b0d58f9bb518f94936">KillTimer</a> (int id)</td></tr>
+<tr class="memdesc:a7177529bce8260b0d58f9bb518f94936 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">NO TRANSLATION. <br /></td></tr>
+<tr class="separator:a7177529bce8260b0d58f9bb518f94936 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae821a8af54b6eaf9e0e5d73bcb4ee7d0 inherit pub_methods_class_v_s_n_1_1_object"><td class="memItemLeft" align="right" valign="top"><a id="ae821a8af54b6eaf9e0e5d73bcb4ee7d0"></a>
+const ObjectList&lt; <a class="el" href="class_v_s_n_1_1_object.html">Object</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#ae821a8af54b6eaf9e0e5d73bcb4ee7d0">GetChildren</a> () const</td></tr>
+<tr class="memdesc:ae821a8af54b6eaf9e0e5d73bcb4ee7d0 inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть список указателей детей. <br /></td></tr>
+<tr class="separator:ae821a8af54b6eaf9e0e5d73bcb4ee7d0 inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b01dd53f074325db98b212ad58f90af inherit pub_methods_class_v_s_n_1_1_object"><td class="memTemplParams" colspan="2"><a id="a7b01dd53f074325db98b212ad58f90af"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7b01dd53f074325db98b212ad58f90af inherit pub_methods_class_v_s_n_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#a7b01dd53f074325db98b212ad58f90af">FindChild</a> (const <a class="el" href="class_v_s_n_1_1_string.html">String</a> &amp;objName=<a class="el" href="class_v_s_n_1_1_string.html">String</a>()) const</td></tr>
+<tr class="memdesc:a7b01dd53f074325db98b212ad58f90af inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть указателей на ребенка. <br /></td></tr>
+<tr class="separator:a7b01dd53f074325db98b212ad58f90af inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab997c367660e574f129d7aa41244074e inherit pub_methods_class_v_s_n_1_1_object"><td class="memTemplParams" colspan="2"><a id="ab997c367660e574f129d7aa41244074e"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab997c367660e574f129d7aa41244074e inherit pub_methods_class_v_s_n_1_1_object"><td class="memTemplItemLeft" align="right" valign="top">ObjectList&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_object.html#ab997c367660e574f129d7aa41244074e">FindChildren</a> (const <a class="el" href="class_v_s_n_1_1_string.html">String</a> &amp;objName=<a class="el" href="class_v_s_n_1_1_string.html">String</a>(), VSN::ChildFindingPolicies policies=VSN::FindAllNestedChildren) const</td></tr>
+<tr class="memdesc:ab997c367660e574f129d7aa41244074e inherit pub_methods_class_v_s_n_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть список указателей детей. <br /></td></tr>
+<tr class="separator:ab997c367660e574f129d7aa41244074e inherit pub_methods_class_v_s_n_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_v_s_n_1_1_basic_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_v_s_n_1_1_basic_object')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_v_s_n_1_1_basic_object.html">VSN::BasicObject</a></td></tr>
+<tr class="memitem:a23754523cf7be5ff426c25aece6106a8 inherit pub_methods_class_v_s_n_1_1_basic_object"><td class="memItemLeft" align="right" valign="top"><a id="a23754523cf7be5ff426c25aece6106a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_basic_object.html#a23754523cf7be5ff426c25aece6106a8">BasicObject</a> ()</td></tr>
+<tr class="memdesc:a23754523cf7be5ff426c25aece6106a8 inherit pub_methods_class_v_s_n_1_1_basic_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:a23754523cf7be5ff426c25aece6106a8 inherit pub_methods_class_v_s_n_1_1_basic_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc41bb0029d235bec6c382c00015dbc1 inherit pub_methods_class_v_s_n_1_1_basic_object"><td class="memItemLeft" align="right" valign="top"><a id="abc41bb0029d235bec6c382c00015dbc1"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_basic_object.html#abc41bb0029d235bec6c382c00015dbc1">~BasicObject</a> ()</td></tr>
+<tr class="memdesc:abc41bb0029d235bec6c382c00015dbc1 inherit pub_methods_class_v_s_n_1_1_basic_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:abc41bb0029d235bec6c382c00015dbc1 inherit pub_methods_class_v_s_n_1_1_basic_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a6ba4032736070ec7f345d683c22fcc88"><td class="memItemLeft" align="right" valign="top"><a id="a6ba4032736070ec7f345d683c22fcc88"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html#a6ba4032736070ec7f345d683c22fcc88">BoundingBoxRepBase</a> (<a class="el" href="class_v_s_n_1_1_bounding_box_geometry_base.html">BoundingBoxGeometryBase</a> *boxObject)</td></tr>
+<tr class="memdesc:a6ba4032736070ec7f345d683c22fcc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для внутреннего использования. <br /></td></tr>
+<tr class="separator:a6ba4032736070ec7f345d683c22fcc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_v_s_n_1_1_geometry_rep"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_v_s_n_1_1_geometry_rep')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_v_s_n_1_1_geometry_rep.html">VSN::GeometryRep</a></td></tr>
+<tr class="memitem:a0cbb9f692ed8af2bd80fd26aa3faf8a6 inherit pro_methods_class_v_s_n_1_1_geometry_rep"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_geometry_rep.html#a0cbb9f692ed8af2bd80fd26aa3faf8a6">GeometryRep</a> (GeometryRepPrivate &amp;dd, <a class="el" href="class_v_s_n_1_1_node.html">Node</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a0cbb9f692ed8af2bd80fd26aa3faf8a6 inherit pro_methods_class_v_s_n_1_1_geometry_rep"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал об окончании перестроения всей геометрии.  <a href="class_v_s_n_1_1_geometry_rep.html#a0cbb9f692ed8af2bd80fd26aa3faf8a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0cbb9f692ed8af2bd80fd26aa3faf8a6 inherit pro_methods_class_v_s_n_1_1_geometry_rep"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_v_s_n_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_v_s_n_1_1_node')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_v_s_n_1_1_node.html">VSN::Node</a></td></tr>
+<tr class="memitem:a2ef597a23e2dd540ee330dcc4073d8c4 inherit pro_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a2ef597a23e2dd540ee330dcc4073d8c4">Node</a> (NodePrivate &amp;dd, <a class="el" href="class_v_s_n_1_1_node.html">Node</a> *pParent)</td></tr>
+<tr class="memdesc:a2ef597a23e2dd540ee330dcc4073d8c4 inherit pro_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить флаг включения узла.  <a href="class_v_s_n_1_1_node.html#a2ef597a23e2dd540ee330dcc4073d8c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2ef597a23e2dd540ee330dcc4073d8c4 inherit pro_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c8427e3ded5982b18a026bc21f60ed inherit pro_methods_class_v_s_n_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a53c8427e3ded5982b18a026bc21f60ed"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_v_s_n_1_1_node.html#a53c8427e3ded5982b18a026bc21f60ed">SceneModificationEvent</a> (const std::shared_ptr&lt; <a class="el" href="class_v_s_n_1_1_scene_modification.html">SceneModification</a> &gt; &amp;modification)</td></tr>
+<tr class="memdesc:a53c8427e3ded5982b18a026bc21f60ed inherit pro_methods_class_v_s_n_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Эта функция вызывается, если произошли какие-либо изменения в сцене. <br /></td></tr>
+<tr class="separator:a53c8427e3ded5982b18a026bc21f60ed inherit pro_methods_class_v_s_n_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html" title="BoundingBoxRepBase является базовым классом для представлений ограничивающего параллелепипеда и служи...">BoundingBoxRepBase</a> является базовым классом для представлений ограничивающего параллелепипеда и служит для отображения информационного габарита в сцене и вывода численых значений по всем осям в виде шкалы. </p>
+<p><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html" title="BoundingBoxRepBase является базовым классом для представлений ограничивающего параллелепипеда и служи...">BoundingBoxRepBase</a> имеет ряд полезных функций с помощью которых можно изменить толщину линий осей, изменить их цвет. <a class="el" href="class_v_s_n_1_1_bounding_box_rep.html" title="BoundingBoxRep это представления для BoundingBoxGeometry.">BoundingBoxRep</a> дает возможность настроить вид отображения шкалы, ее направления, а также видимость. Есть возможность настройки начала координат, совпадение начала координат с миром или начала вектора направления осей. <br  />
+. </p>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="vsn__boundingboxrep_8h.html">vsn_boundingboxrep.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>VSN</b></li><li class="navelem"><a class="el" href="class_v_s_n_1_1_bounding_box_rep_base.html">BoundingBoxRepBase</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:08. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,869 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Определение столкновений</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group___collision___detection.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Определение столкновений<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___computation.html">Методы геометрических вычислений</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Определение столкновений:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___collision___detection.svg" width="334" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__query.html">cdet_query</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура данных и обратных вызовов для запроса на поиск соударений. Базовый класс, предназначенный для реализации на стороне приложения структуры запроса к алгоритму поиска соударений. С помощью обратных вызовов приложение управляет поиском соударений и получает сведения o найденных пересечениях.  <a href="structcdet__query.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdet__collided__faces.html">cdet_collided_faces</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура запроса для поиска граней столкновения.  <a href="structcdet__collided__faces.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cd_collision_detection.html">CdCollisionDetection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Утилита для поиска столкновений и запросов на измерения расстояний.  <a href="class_cd_collision_detection.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cd_scene_iterator.html">CdSceneIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Итератор для обхода объектов сцены детектора столкновений.  <a href="class_cd_scene_iterator.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cd_scene_iterator_range.html">CdSceneIteratorRange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диапазон итераторов сцены для поддержки range-based for loop.  <a href="struct_cd_scene_iterator_range.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_d_m__instance.html">CDM_instance</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, определяющая экземпляр геометрического объекта (полигональное или граничное представление).  <a href="struct_c_d_m__instance.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_d_m__component.html">CDM_component</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Компонентом является геометрическое объединение тел или полигональных объектов, наделенных собственной локальной системой координат.  <a href="struct_c_d_m__component.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_d_m__ray.html">CDM_ray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, определяющая луч в сцене детектора столкновений.  <a href="struct_c_d_m__ray.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_d_m__callback__table.html">CDM_callback_table</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, объединяющая обратные вызовы детектора столкновений.  <a href="struct_c_d_m__callback__table.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ga4d2eeca22d46c41eecc5fd3d1b6d9105"><td class="memItemLeft" align="right" valign="top"><a id="ga4d2eeca22d46c41eecc5fd3d1b6d9105"></a>
+typedef const CdSceneItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a></td></tr>
+<tr class="memdesc:ga4d2eeca22d46c41eecc5fd3d1b6d9105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект из набора контроля столкновений. <br /></td></tr>
+<tr class="separator:ga4d2eeca22d46c41eecc5fd3d1b6d9105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22b4cd905cc12d70abe2f884ffad6ce4"><td class="memItemLeft" align="right" valign="top"><a id="ga22b4cd905cc12d70abe2f884ffad6ce4"></a>
+typedef <a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">CDM_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga22b4cd905cc12d70abe2f884ffad6ce4">cdet_result</a></td></tr>
+<tr class="memdesc:ga22b4cd905cc12d70abe2f884ffad6ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код результата контроля столкновений. <br /></td></tr>
+<tr class="separator:ga22b4cd905cc12d70abe2f884ffad6ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06ef43cb936c5cc3d2221786eda72ac5"><td class="memItemLeft" align="right" valign="top"><a id="ga06ef43cb936c5cc3d2221786eda72ac5"></a>
+typedef const <a class="el" href="class_mt_ref_item.html">MtRefItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga06ef43cb936c5cc3d2221786eda72ac5">cdet_bvt_node</a></td></tr>
+<tr class="memdesc:ga06ef43cb936c5cc3d2221786eda72ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узел дерева объемов. <br /></td></tr>
+<tr class="separator:ga06ef43cb936c5cc3d2221786eda72ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c61a3d410270aa9955c622cbd711636"><td class="memItemLeft" align="right" valign="top"><a id="ga8c61a3d410270aa9955c622cbd711636"></a>
+typedef std::pair&lt; <a class="el" href="group___collision___detection.html#ga06ef43cb936c5cc3d2221786eda72ac5">cdet_bvt_node</a>, <a class="el" href="group___collision___detection.html#ga06ef43cb936c5cc3d2221786eda72ac5">cdet_bvt_node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga8c61a3d410270aa9955c622cbd711636">cdet_bvt_pair</a></td></tr>
+<tr class="memdesc:ga8c61a3d410270aa9955c622cbd711636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пара ветвей поддерева объемов. <br /></td></tr>
+<tr class="separator:ga8c61a3d410270aa9955c622cbd711636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf02104d473ac01f1a807adad6db283a3"><td class="memItemLeft" align="right" valign="top"><a id="gaf02104d473ac01f1a807adad6db283a3"></a>
+typedef <a class="el" href="class_s_ptr.html">SPtr</a>&lt; <a class="el" href="class_mb_item.html">MbItem</a> &gt;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gaf02104d473ac01f1a807adad6db283a3">CDM_item_registered</a>) (cdet_app_item appItem)</td></tr>
+<tr class="memdesc:gaf02104d473ac01f1a807adad6db283a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application item was registered in the scene. <br /></td></tr>
+<tr class="separator:gaf02104d473ac01f1a807adad6db283a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae424acfbbfcd9eb4a25b0d42035d9b9f"><td class="memItemLeft" align="right" valign="top"><a id="gae424acfbbfcd9eb4a25b0d42035d9b9f"></a>
+typedef <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gae424acfbbfcd9eb4a25b0d42035d9b9f">CDM_item_unregistered</a>) (cdet_app_item appItem)</td></tr>
+<tr class="memdesc:gae424acfbbfcd9eb4a25b0d42035d9b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application item was unregistered in the scene. <br /></td></tr>
+<tr class="separator:gae424acfbbfcd9eb4a25b0d42035d9b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga958796ddca2734e8e32ed52189dd1948"><td class="memItemLeft" align="right" valign="top"><a id="ga958796ddca2734e8e32ed52189dd1948"></a>
+typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga958796ddca2734e8e32ed52189dd1948">CDM_abort</a>) ()</td></tr>
+<tr class="memdesc:ga958796ddca2734e8e32ed52189dd1948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query to interrupt calculations. <br /></td></tr>
+<tr class="separator:ga958796ddca2734e8e32ed52189dd1948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gacc090e702a720330783e649c03f4bdf8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">CDM_result</a> {  }</td></tr>
+<tr class="memdesc:gacc090e702a720330783e649c03f4bdf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код результата контроля столкновений или измерений.  <a href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacc090e702a720330783e649c03f4bdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca02e40f8c9b0b3c8af6a1780c9cc22d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gaca02e40f8c9b0b3c8af6a1780c9cc22d">cdet_setting_result</a> { <a class="el" href="group___collision___detection.html#ggaca02e40f8c9b0b3c8af6a1780c9cc22da03b6e09be26013d3564327663d45758e">CDM_PARAMETER_Applied</a> = 1
+, <b>CDM_PARAMETER_NotChanged</b>
+ }</td></tr>
+<tr class="memdesc:gaca02e40f8c9b0b3c8af6a1780c9cc22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат смены настроек алгоритма поиска столкновений.  <a href="group___collision___detection.html#gaca02e40f8c9b0b3c8af6a1780c9cc22d">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaca02e40f8c9b0b3c8af6a1780c9cc22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga96bde410e2cbcea81838c2d6e8fbdda2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga96bde410e2cbcea81838c2d6e8fbdda2">InterferenceSolids</a> (<a class="el" href="class_mb_solid.html">MbSolid</a> &amp;solid1, <a class="el" href="class_mb_solid.html">MbSolid</a> &amp;solid2, std::vector&lt; <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> * &gt; *edges, <a class="el" href="namespacec3d.html#a3997c581492c835355a34b9b337c87eb">c3d::IndicesPairsVector</a> *intersectedFaces, <a class="el" href="namespacec3d.html#a3997c581492c835355a34b9b337c87eb">c3d::IndicesPairsVector</a> *similarFaces, <a class="el" href="namespacec3d.html#a3997c581492c835355a34b9b337c87eb">c3d::IndicesPairsVector</a> *touchedFaces)</td></tr>
+<tr class="memdesc:ga96bde410e2cbcea81838c2d6e8fbdda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расчет пересечений тел посредством аппарата булевой операции.  <a href="group___collision___detection.html#ga96bde410e2cbcea81838c2d6e8fbdda2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga96bde410e2cbcea81838c2d6e8fbdda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed2a3dc7a2935874ce808728ab4a358e"><td class="memItemLeft" align="right" valign="top"><a id="gaed2a3dc7a2935874ce808728ab4a358e"></a>
+<a class="el" href="group___collision___detection.html#ga8c61a3d410270aa9955c622cbd711636">cdet_bvt_pair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gaed2a3dc7a2935874ce808728ab4a358e">BvtSubNodes</a> (<a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>, <a class="el" href="group___collision___detection.html#ga06ef43cb936c5cc3d2221786eda72ac5">cdet_bvt_node</a>)</td></tr>
+<tr class="memdesc:gaed2a3dc7a2935874ce808728ab4a358e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить левую и правую ветви поддерева объемов. <br /></td></tr>
+<tr class="separator:gaed2a3dc7a2935874ce808728ab4a358e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7934025b047d85bcc058953d4706383d"><td class="memItemLeft" align="right" valign="top"><a id="ga7934025b047d85bcc058953d4706383d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga7934025b047d85bcc058953d4706383d">GetOrientedBox</a> (<a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>, <a class="el" href="group___collision___detection.html#ga06ef43cb936c5cc3d2221786eda72ac5">cdet_bvt_node</a>, <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;)</td></tr>
+<tr class="memdesc:ga7934025b047d85bcc058953d4706383d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Матрица получения ограничивающего параллелепипеда из единичного куба. <br /></td></tr>
+<tr class="separator:ga7934025b047d85bcc058953d4706383d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ce5965334bc9974e2bd0ab13e62ff63"><td class="memItemLeft" align="right" valign="top">cdet_scene&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga4ce5965334bc9974e2bd0ab13e62ff63">CDM_CreateScene</a> ()</td></tr>
+<tr class="memdesc:ga4ce5965334bc9974e2bd0ab13e62ff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать пустую сцену детектора столкновений.  <a href="group___collision___detection.html#ga4ce5965334bc9974e2bd0ab13e62ff63">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4ce5965334bc9974e2bd0ab13e62ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34f9078a88b719f9b24a3eaa32579412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga34f9078a88b719f9b24a3eaa32579412">CDM_RemoveScene</a> (cdet_scene scn)</td></tr>
+<tr class="memdesc:ga34f9078a88b719f9b24a3eaa32579412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить сцену детектора столкновений.  <a href="group___collision___detection.html#ga34f9078a88b719f9b24a3eaa32579412">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga34f9078a88b719f9b24a3eaa32579412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bfe8ebce5b3c6aa13e1ab7570262957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga0bfe8ebce5b3c6aa13e1ab7570262957">CDM_AddComponent</a> (cdet_scene scn, const <a class="el" href="struct_c_d_m__component.html">CDM_component</a> &amp;comp)</td></tr>
+<tr class="memdesc:ga0bfe8ebce5b3c6aa13e1ab7570262957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить новый компонент в сцену детектора столкновений и задать параметры близости.  <a href="group___collision___detection.html#ga0bfe8ebce5b3c6aa13e1ab7570262957">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0bfe8ebce5b3c6aa13e1ab7570262957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26856f6cbae6fc97b9a02fa4e3556826"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga26856f6cbae6fc97b9a02fa4e3556826">CDM_AddInstance</a> (cdet_scene scn, const <a class="el" href="struct_c_d_m__instance.html">CDM_instance</a> &amp;inst)</td></tr>
+<tr class="memdesc:ga26856f6cbae6fc97b9a02fa4e3556826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить экземпляр тела с заданным положением в сцену для детектора столкновений.  <a href="group___collision___detection.html#ga26856f6cbae6fc97b9a02fa4e3556826">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga26856f6cbae6fc97b9a02fa4e3556826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga162603b721145f6bf5a08c11d8732847"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga162603b721145f6bf5a08c11d8732847">CDM_AddInstance</a> (cdet_scene scn, <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> compItem, const <a class="el" href="struct_c_d_m__instance.html">CDM_instance</a> &amp;inst)</td></tr>
+<tr class="memdesc:ga162603b721145f6bf5a08c11d8732847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить новый экземпляр тела в компонент детектора столкновений.  <a href="group___collision___detection.html#ga162603b721145f6bf5a08c11d8732847">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga162603b721145f6bf5a08c11d8732847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfe3bb04bdc84a9d9faa50349092c75b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gadfe3bb04bdc84a9d9faa50349092c75b">CDM_AddRay</a> (cdet_scene scn, const <a class="el" href="struct_c_d_m__ray.html">CDM_ray</a> &amp;ray)</td></tr>
+<tr class="memdesc:gadfe3bb04bdc84a9d9faa50349092c75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить луч в сцену детектора столкновений.  <a href="group___collision___detection.html#gadfe3bb04bdc84a9d9faa50349092c75b">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadfe3bb04bdc84a9d9faa50349092c75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5251110149b5052476140b5833188227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga5251110149b5052476140b5833188227">CDM_RemoveItem</a> (cdet_scene scn, <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> scnItem)</td></tr>
+<tr class="memdesc:ga5251110149b5052476140b5833188227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить геометрический объект из сцены детектора столкновений.  <a href="group___collision___detection.html#ga5251110149b5052476140b5833188227">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5251110149b5052476140b5833188227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8efbfddc58d7dba7ceef0d04df3a56e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga8efbfddc58d7dba7ceef0d04df3a56e3">CDM_Reposition</a> (cdet_scene scn, <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> scnItem, const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;place)</td></tr>
+<tr class="memdesc:ga8efbfddc58d7dba7ceef0d04df3a56e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять текущее положение геометрического объекта в сцене.  <a href="group___collision___detection.html#ga8efbfddc58d7dba7ceef0d04df3a56e3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8efbfddc58d7dba7ceef0d04df3a56e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga190d69ff092c30c87894b54de39ba9ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">cdet_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga190d69ff092c30c87894b54de39ba9ea">CDM_CheckCollisions</a> (cdet_scene scn, <a class="el" href="structcdet__query.html">cdet_query</a> &amp;cdQuery)</td></tr>
+<tr class="memdesc:ga190d69ff092c30c87894b54de39ba9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запросить поиск столкновений между элементами сцены.  <a href="group___collision___detection.html#ga190d69ff092c30c87894b54de39ba9ea">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga190d69ff092c30c87894b54de39ba9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c8d032f2a6f6d840aebf8f06cdfe2cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">cdet_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga0c8d032f2a6f6d840aebf8f06cdfe2cf">CDM_CheckCollisions</a> (cdet_scene scn)</td></tr>
+<tr class="memdesc:ga0c8d032f2a6f6d840aebf8f06cdfe2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить столкновения между геометрическими объектами сцены.  <a href="group___collision___detection.html#ga0c8d032f2a6f6d840aebf8f06cdfe2cf">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0c8d032f2a6f6d840aebf8f06cdfe2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0eb4461e9188477599bc07f4517d9b91"><td class="memItemLeft" align="right" valign="top">cdet_app_item&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga0eb4461e9188477599bc07f4517d9b91">CDM_AppItem</a> (cdet_scene scn, <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> scnItem)</td></tr>
+<tr class="memdesc:ga0eb4461e9188477599bc07f4517d9b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать дескриптор клиентского приложения по дескриптору объекта сцены детектора столкновений.  <a href="group___collision___detection.html#ga0eb4461e9188477599bc07f4517d9b91">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0eb4461e9188477599bc07f4517d9b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4205e776f3b5eff8c04a5cf65b00b647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga4205e776f3b5eff8c04a5cf65b00b647">CDM_ExportToC3D</a> (cdet_scene scn, const TCHAR *c3dFile)</td></tr>
+<tr class="memdesc:ga4205e776f3b5eff8c04a5cf65b00b647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Экспортировать сцену детектора столкновений в модель C3D.  <a href="group___collision___detection.html#ga4205e776f3b5eff8c04a5cf65b00b647">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4205e776f3b5eff8c04a5cf65b00b647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51e96c85ea892e3b646e182d26f5d9bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_cd_scene_iterator_range.html">CdSceneIteratorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga51e96c85ea892e3b646e182d26f5d9bf">CDM_SubItemsRange</a> (cdet_scene scn, <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> scnItem)</td></tr>
+<tr class="memdesc:ga51e96c85ea892e3b646e182d26f5d9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать диапазон итераторов для обхода элементов, принадлежащих компоненту сцены (только на уровне этого компонента).  <a href="group___collision___detection.html#ga51e96c85ea892e3b646e182d26f5d9bf">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga51e96c85ea892e3b646e182d26f5d9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab17086a53adfe52837b82779fd78b8ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_cd_scene_iterator_range.html">CdSceneIteratorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gab17086a53adfe52837b82779fd78b8ae">CDM_InDepthSubItems</a> (cdet_scene scn, <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> scnItem)</td></tr>
+<tr class="memdesc:gab17086a53adfe52837b82779fd78b8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать диапазон итераторов с обходом в глубину для компонента сцены.  <a href="group___collision___detection.html#gab17086a53adfe52837b82779fd78b8ae">Подробнее...</a><br /></td></tr>
+<tr class="separator:gab17086a53adfe52837b82779fd78b8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43bd0b1504150ce2e9725463bcbaab63"><td class="memItemLeft" align="right" valign="top"><a id="ga43bd0b1504150ce2e9725463bcbaab63"></a>
+<a class="el" href="struct_cd_scene_iterator_range.html">CdSceneIteratorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga43bd0b1504150ce2e9725463bcbaab63">CDM_SceneItems</a> (cdet_scene scn)</td></tr>
+<tr class="memdesc:ga43bd0b1504150ce2e9725463bcbaab63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать диапазон итераторов всех объектов сцены дектектора столкновений. <br /></td></tr>
+<tr class="separator:ga43bd0b1504150ce2e9725463bcbaab63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9da5ff8921bd97a0bcbc3ede80f4e492"><td class="memItemLeft" align="right" valign="top"><a id="ga9da5ff8921bd97a0bcbc3ede80f4e492"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga9da5ff8921bd97a0bcbc3ede80f4e492">CDM_ClearScene</a> (cdet_scene scn)</td></tr>
+<tr class="memdesc:ga9da5ff8921bd97a0bcbc3ede80f4e492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключить из рассмотрения все модели. <br /></td></tr>
+<tr class="separator:ga9da5ff8921bd97a0bcbc3ede80f4e492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:gacc7d6f46bd99a69c1e46dcad5d21ff8a"><td class="memItemLeft" align="right" valign="top"><a id="gacc7d6f46bd99a69c1e46dcad5d21ff8a"></a>
+const <a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#gacc7d6f46bd99a69c1e46dcad5d21ff8a">CDET_NULL</a> = nullptr</td></tr>
+<tr class="memdesc:gacc7d6f46bd99a69c1e46dcad5d21ff8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустой объект набора для контроля столкновений. <br /></td></tr>
+<tr class="separator:gacc7d6f46bd99a69c1e46dcad5d21ff8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f47c323bbcd1b977c27cc487a4d0e4a"><td class="memItemLeft" align="right" valign="top"><a id="ga4f47c323bbcd1b977c27cc487a4d0e4a"></a>
+const cdet_app_item&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga4f47c323bbcd1b977c27cc487a4d0e4a">CDET_APP_NULL</a> = nullptr</td></tr>
+<tr class="memdesc:ga4f47c323bbcd1b977c27cc487a4d0e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Нулевой" объект модели приложения. <br /></td></tr>
+<tr class="separator:ga4f47c323bbcd1b977c27cc487a4d0e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga395ae3af40c5640c3168f90066d201f3"><td class="memItemLeft" align="right" valign="top"><a id="ga395ae3af40c5640c3168f90066d201f3"></a>
+const <a class="el" href="group___collision___detection.html#ga06ef43cb936c5cc3d2221786eda72ac5">cdet_bvt_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___collision___detection.html#ga395ae3af40c5640c3168f90066d201f3">CDET_BVT_NULL</a> = nullptr</td></tr>
+<tr class="memdesc:ga395ae3af40c5640c3168f90066d201f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пустое дерево объемов. <br /></td></tr>
+<tr class="separator:ga395ae3af40c5640c3168f90066d201f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Перечисления</h2>
+<a id="gacc090e702a720330783e649c03f4bdf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc090e702a720330783e649c03f4bdf8">&#9670;&nbsp;</a></span>CDM_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">CDM_result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Код результата контроля столкновений или измерений. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ggacc090e702a720330783e649c03f4bdf8a79b1dc9ead3d37e5c7cd5d68b93bbc0a"></a>CDM_RESULT_MeasuringSucceed&#160;</td><td class="fielddoc"><p>Успешный результат измерительного запроса (например, запрос на минимальное расстояние). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacc090e702a720330783e649c03f4bdf8a2bee729b79b36b726951cca0509e9903"></a>CDM_RESULT_NoCollisionDetected&#160;</td><td class="fielddoc"><p>Столкновний не выявлено. Пересечений нет или поиск был прерван. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacc090e702a720330783e649c03f4bdf8a0ea3ae1b4a4e1f980fc7676bea4ad6e6"></a>CDM_RESULT_CollisionDetected&#160;</td><td class="fielddoc"><p>Выявлено хотя бы одно объемное пересечение (коллизия). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacc090e702a720330783e649c03f4bdf8a2c29f178fa71c3f0bb193faf2bb95d22"></a>CDM_RESULT_Error&#160;</td><td class="fielddoc"><p>Неизвестная ошибка или внутрисистемная ошибка. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaca02e40f8c9b0b3c8af6a1780c9cc22d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca02e40f8c9b0b3c8af6a1780c9cc22d">&#9670;&nbsp;</a></span>cdet_setting_result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___collision___detection.html#gaca02e40f8c9b0b3c8af6a1780c9cc22d">cdet_setting_result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Результат смены настроек алгоритма поиска столкновений. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ggaca02e40f8c9b0b3c8af6a1780c9cc22da03b6e09be26013d3564327663d45758e"></a>CDM_PARAMETER_Applied&#160;</td><td class="fielddoc"><p>Параметр настройки изменен успешно. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="ga96bde410e2cbcea81838c2d6e8fbdda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96bde410e2cbcea81838c2d6e8fbdda2">&#9670;&nbsp;</a></span>InterferenceSolids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc">MbResultType</a> InterferenceSolids </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_solid.html">MbSolid</a> &amp;&#160;</td>
+          <td class="paramname"><em>solid1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_solid.html">MbSolid</a> &amp;&#160;</td>
+          <td class="paramname"><em>solid2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>edges</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3997c581492c835355a34b9b337c87eb">c3d::IndicesPairsVector</a> *&#160;</td>
+          <td class="paramname"><em>intersectedFaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3997c581492c835355a34b9b337c87eb">c3d::IndicesPairsVector</a> *&#160;</td>
+          <td class="paramname"><em>similarFaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3997c581492c835355a34b9b337c87eb">c3d::IndicesPairsVector</a> *&#160;</td>
+          <td class="paramname"><em>touchedFaces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расчет пересечений тел посредством аппарата булевой операции. </p>
+<p>Расчет пересечений тел посредством аппарата булевой операции. <br  />
+</p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">solid1</td><td>- Первое тело. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">solid2</td><td>- Второе тело. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">edges</td><td>- Ребра пересечения тел. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">intersectedFaces</td><td>- Пары номеров пересекшихся граней. <br  />
+<ul>
+<li>Пары номеров касающихся граней с противоположно направленными нормалями.</li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">similarFaces</td><td>- Пары номеров касающихся подобных граней, которые могут быть объединены.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата операции.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Тела будут изменены операцией! Если требуется сохранить тела без изменений, передавайте копии, сделанные помощью <a class="el" href="class_mb_solid.html#a2cfe91534e56032e711a710d58fce6a4" title="Создать копию объекта.">MbSolid::Duplicate()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga4ce5965334bc9974e2bd0ab13e62ff63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ce5965334bc9974e2bd0ab13e62ff63">&#9670;&nbsp;</a></span>CDM_CreateScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cdet_scene CDM_CreateScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создать пустую сцену детектора столкновений. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Дескриптор сцены детектора столкновений и запросов на близость тел. </dd></dl>
+
+</div>
+</div>
+<a id="ga34f9078a88b719f9b24a3eaa32579412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34f9078a88b719f9b24a3eaa32579412">&#9670;&nbsp;</a></span>CDM_RemoveScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CDM_RemoveScene </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить сцену детектора столкновений. </p>
+<p>Данный метод освобождает память от внутренних структур данных, обслуживающих детектор столкновений. Удаляемая сцена становится недействительной после данного вызова.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scn</td><td>- Сцена запросов на столкновения и близость тел. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0bfe8ebce5b3c6aa13e1ab7570262957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0bfe8ebce5b3c6aa13e1ab7570262957">&#9670;&nbsp;</a></span>CDM_AddComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> CDM_AddComponent </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_d_m__component.html">CDM_component</a> &amp;&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить новый компонент в сцену детектора столкновений и задать параметры близости. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comp</td><td>- Компонент, являющийся геометрическим объединением тел или полигональных объектов, наделенный собственной локальной системой координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый компонет, зарегистрированный в сцене детектора столкновений.</dd></dl>
+<p>Компонент позволяет объединять тела в геометрически-жесткие множества. </p>
+
+</div>
+</div>
+<a id="ga26856f6cbae6fc97b9a02fa4e3556826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26856f6cbae6fc97b9a02fa4e3556826">&#9670;&nbsp;</a></span>CDM_AddInstance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> CDM_AddInstance </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_d_m__instance.html">CDM_instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>inst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить экземпляр тела с заданным положением в сцену для детектора столкновений. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inst</td><td>- Запись экземпляра геометрического объекта (полигональное или граничное представление). <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Дескриптор объекта для детектора столкновений.</dd></dl>
+<dl class="section user"><dt>Повторно-используемые элементы сцены</dt><dd></dd></dl>
+<p>Один и тот же экземпляр класса '<a class="el" href="class_mb_item.html" title="Объект геометрической модели.">MbItem</a>' может быть добавлен в сцену сколько угодно раз с помощью данного вызова. При многократном добавлении одного и того же геометрического объекта детектор столкновений создает только одну поисковую структуру данных (BVT). Ресурсы памяти и времени вычислений, потраченные на создание такой структуры, повторно используется для всех экземпляров сцены, основанные на одном и том же объекте '<a class="el" href="class_mb_item.html" title="Объект геометрической модели.">MbItem</a>'. </p>
+
+</div>
+</div>
+<a id="ga162603b721145f6bf5a08c11d8732847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga162603b721145f6bf5a08c11d8732847">&#9670;&nbsp;</a></span>CDM_AddInstance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> CDM_AddInstance </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td>
+          <td class="paramname"><em>compItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_d_m__instance.html">CDM_instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>inst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить новый экземпляр тела в компонент детектора столкновений. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">compItem</td><td>- Компонент, которому будет принадлежать экземпляр.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inst</td><td>- Запись экземпляра геометрического объекта (полигональное или граничное представление).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Дескриптор экземпляра тела, зарегистрированный в сцене детектора столкновений.</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Значение compItem может быть нулевым. Значит просто вставка не будет принадлежать ни одному компоненту. </dd></dl>
+
+</div>
+</div>
+<a id="gadfe3bb04bdc84a9d9faa50349092c75b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadfe3bb04bdc84a9d9faa50349092c75b">&#9670;&nbsp;</a></span>CDM_AddRay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a> CDM_AddRay </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_c_d_m__ray.html">CDM_ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить луч в сцену детектора столкновений. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ray</td><td>- Геометрическое представление луча</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Дескриптор объекта в сцене детектора столкновений. </dd></dl>
+
+</div>
+</div>
+<a id="ga5251110149b5052476140b5833188227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5251110149b5052476140b5833188227">&#9670;&nbsp;</a></span>CDM_RemoveItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CDM_RemoveItem </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td>
+          <td class="paramname"><em>scnItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить геометрический объект из сцены детектора столкновений. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scnItem</td><td>- Дескриптор объекта в сцене детектора столкновений. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8efbfddc58d7dba7ceef0d04df3a56e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8efbfddc58d7dba7ceef0d04df3a56e3">&#9670;&nbsp;</a></span>CDM_Reposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> CDM_Reposition </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td>
+          <td class="paramname"><em>scnItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_placement3_d.html">MbPlacement3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>place</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поменять текущее положение геометрического объекта в сцене. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scnItem</td><td>- Дескриптор объекта в сцене детектора столкновений.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">place</td><td>- Положение, которое занимает объект в глобальной СК. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga190d69ff092c30c87894b54de39ba9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga190d69ff092c30c87894b54de39ba9ea">&#9670;&nbsp;</a></span>CDM_CheckCollisions() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">cdet_result</a> CDM_CheckCollisions </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcdet__query.html">cdet_query</a> &amp;&#160;</td>
+          <td class="paramname"><em>cdQuery</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запросить поиск столкновений между элементами сцены. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Коды результата детектора столкновений и измерение расстояния.</dd></dl>
+<p>Осуществляется поиск столкновения между элементами сцены согласно запроса <code>cdQuery</code>, а именно проверяются пары, как на уровне сборки, включая компоненты целиком, так и на уровне отдельных компонент. Клиентское приложение имеет возможность настроить запрос так, чтобы искать столкновения не всех со всеми, а только между группами объектов. </p>
+
+</div>
+</div>
+<a id="ga0c8d032f2a6f6d840aebf8f06cdfe2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c8d032f2a6f6d840aebf8f06cdfe2cf">&#9670;&nbsp;</a></span>CDM_CheckCollisions() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___collision___detection.html#gacc090e702a720330783e649c03f4bdf8">cdet_result</a> CDM_CheckCollisions </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить столкновения между геометрическими объектами сцены. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Коды результата детектора столкновений и измерение расстояния. </dd></dl>
+
+</div>
+</div>
+<a id="ga0eb4461e9188477599bc07f4517d9b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0eb4461e9188477599bc07f4517d9b91">&#9670;&nbsp;</a></span>CDM_AppItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cdet_app_item CDM_AppItem </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td>
+          <td class="paramname"><em>scnItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать дескриптор клиентского приложения по дескриптору объекта сцены детектора столкновений. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scnItem</td><td>- Дескриптор объекта в сцене детектора столкновений.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Дескриптор клиентского приложения. </dd></dl>
+
+</div>
+</div>
+<a id="ga4205e776f3b5eff8c04a5cf65b00b647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4205e776f3b5eff8c04a5cf65b00b647">&#9670;&nbsp;</a></span>CDM_ExportToC3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="conv__res__type_8h.html#ae4028a45fa3830e9c2380749bef0f1ce">MbeConvResType</a> CDM_ExportToC3D </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TCHAR *&#160;</td>
+          <td class="paramname"><em>c3dFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Экспортировать сцену детектора столкновений в модель C3D. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c3dFile</td><td>- Имя файла.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат конвертирования. </dd></dl>
+
+</div>
+</div>
+<a id="ga51e96c85ea892e3b646e182d26f5d9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51e96c85ea892e3b646e182d26f5d9bf">&#9670;&nbsp;</a></span>CDM_SubItemsRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_cd_scene_iterator_range.html">CdSceneIteratorRange</a> CDM_SubItemsRange </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td>
+          <td class="paramname"><em>scnItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать диапазон итераторов для обхода элементов, принадлежащих компоненту сцены (только на уровне этого компонента). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scnItem</td><td>- Объект сцены детектора столкновений. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab17086a53adfe52837b82779fd78b8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab17086a53adfe52837b82779fd78b8ae">&#9670;&nbsp;</a></span>CDM_InDepthSubItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_cd_scene_iterator_range.html">CdSceneIteratorRange</a> CDM_InDepthSubItems </td>
+          <td>(</td>
+          <td class="paramtype">cdet_scene&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___collision___detection.html#ga4d2eeca22d46c41eecc5fd3d1b6d9105">cdet_item</a>&#160;</td>
+          <td class="paramname"><em>scnItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выдать диапазон итераторов с обходом в глубину для компонента сцены. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scnItem</td><td>- Объект сцены детектора столкновений. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

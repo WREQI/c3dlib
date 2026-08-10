@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс InertiaProperties</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_inertia_properties.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_inertia_properties-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс InertiaProperties<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___geometric___computation.html">Методы геометрических вычислений</a> &raquo; <a class="el" href="group___inertia___computation.html">Вычисление инерционных характеристик</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Инерционные характеристики тела.  
+ <a href="class_inertia_properties.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mip_solid_mass_inertia.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса InertiaProperties:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_inertia_properties__coll__graph.svg" width="362" height="159"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac135167188329ba48a3c3decc35c7fe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#ac135167188329ba48a3c3decc35c7fe4">InertiaProperties</a> ()</td></tr>
+<tr class="memdesc:ac135167188329ba48a3c3decc35c7fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="class_inertia_properties.html#ac135167188329ba48a3c3decc35c7fe4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac135167188329ba48a3c3decc35c7fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77931d547d2a548958ac995f8f441479"><td class="memItemLeft" align="right" valign="top"><a id="a77931d547d2a548958ac995f8f441479"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a77931d547d2a548958ac995f8f441479">InertiaProperties</a> (const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;other)</td></tr>
+<tr class="memdesc:a77931d547d2a548958ac995f8f441479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:a77931d547d2a548958ac995f8f441479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa1c304f5bc2271ccfd1c1588bc4137"><td class="memItemLeft" align="right" valign="top"><a id="a7fa1c304f5bc2271ccfd1c1588bc4137"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a7fa1c304f5bc2271ccfd1c1588bc4137">~InertiaProperties</a> ()</td></tr>
+<tr class="memdesc:a7fa1c304f5bc2271ccfd1c1588bc4137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:a7fa1c304f5bc2271ccfd1c1588bc4137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0246d1e0e91379f799826869ef95e4de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a0246d1e0e91379f799826869ef95e4de">Init</a> ()</td></tr>
+<tr class="memdesc:a0246d1e0e91379f799826869ef95e4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация.  <a href="class_inertia_properties.html#a0246d1e0e91379f799826869ef95e4de">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0246d1e0e91379f799826869ef95e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68a322f48408943cd9886d4f7bf18b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#aa68a322f48408943cd9886d4f7bf18b1">CheckData</a> ()</td></tr>
+<tr class="memdesc:aa68a322f48408943cd9886d4f7bf18b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить данные.  <a href="class_inertia_properties.html#aa68a322f48408943cd9886d4f7bf18b1">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa68a322f48408943cd9886d4f7bf18b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c17e0188f9d1c1336d4b6be7bdd5265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a9c17e0188f9d1c1336d4b6be7bdd5265">CalculateIntegrals</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_face.html">MbFace</a> &gt; &amp;faces, bool closed, double density, double deviateAngle, <a class="el" href="struct_if_progress_indicator.html">IfProgressIndicator</a> *progress)</td></tr>
+<tr class="memdesc:a9c17e0188f9d1c1336d4b6be7bdd5265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить массо-центровочных характеристики.  <a href="class_inertia_properties.html#a9c17e0188f9d1c1336d4b6be7bdd5265">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9c17e0188f9d1c1336d4b6be7bdd5265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a0c14fd04ec4c4e9dd65a1d40511c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a77a0c14fd04ec4c4e9dd65a1d40511c4">CalculateProperties</a> (const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_face.html">MbFace</a> &gt; &amp;faces, bool closed, double density, bool calculateAll, double deviateAngle, <a class="el" href="struct_if_progress_indicator.html">IfProgressIndicator</a> *progress)</td></tr>
+<tr class="memdesc:a77a0c14fd04ec4c4e9dd65a1d40511c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить масс-центровочных характеристики.  <a href="class_inertia_properties.html#a77a0c14fd04ec4c4e9dd65a1d40511c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a77a0c14fd04ec4c4e9dd65a1d40511c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be5a354f276999b795d9a9fb070a353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a5be5a354f276999b795d9a9fb070a353">CalculateIntegrals</a> (const <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh, double density)</td></tr>
+<tr class="memdesc:a5be5a354f276999b795d9a9fb070a353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить масс-центровочных характеристики.  <a href="class_inertia_properties.html#a5be5a354f276999b795d9a9fb070a353">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5be5a354f276999b795d9a9fb070a353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3232283033dc50365b66abaf5e87b996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a3232283033dc50365b66abaf5e87b996">CalculateProperties</a> (const <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh, double density, bool calculateAll)</td></tr>
+<tr class="memdesc:a3232283033dc50365b66abaf5e87b996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определить масс-центровочных характеристики.  <a href="class_inertia_properties.html#a3232283033dc50365b66abaf5e87b996">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3232283033dc50365b66abaf5e87b996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9534dd3b01187e0def7c8c27190ced1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a9534dd3b01187e0def7c8c27190ced1b">GetIntegrals</a> (const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;etalon)</td></tr>
+<tr class="memdesc:a9534dd3b01187e0def7c8c27190ced1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить интегралы инерции.  <a href="class_inertia_properties.html#a9534dd3b01187e0def7c8c27190ced1b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9534dd3b01187e0def7c8c27190ced1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbac5579606340638694a9c6a636fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#aafbac5579606340638694a9c6a636fdd">CrossIntegrals</a> (const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;prop)</td></tr>
+<tr class="memdesc:aafbac5579606340638694a9c6a636fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Учесть частично заданных характеристик.  <a href="class_inertia_properties.html#aafbac5579606340638694a9c6a636fdd">Подробнее...</a><br /></td></tr>
+<tr class="separator:aafbac5579606340638694a9c6a636fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4167d3e9acc6ca1a2adda2bcea3e7be2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a4167d3e9acc6ca1a2adda2bcea3e7be2">Calculate</a> ()</td></tr>
+<tr class="memdesc:a4167d3e9acc6ca1a2adda2bcea3e7be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать главную центральную систему.  <a href="class_inertia_properties.html#a4167d3e9acc6ca1a2adda2bcea3e7be2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4167d3e9acc6ca1a2adda2bcea3e7be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bef01e1c1b5eb32d9f199d74e11b0c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a4bef01e1c1b5eb32d9f199d74e11b0c4">CalculateCenter</a> (bool isCheckData=true)</td></tr>
+<tr class="memdesc:a4bef01e1c1b5eb32d9f199d74e11b0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать центр масс и центральные моменты инерции.  <a href="class_inertia_properties.html#a4bef01e1c1b5eb32d9f199d74e11b0c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4bef01e1c1b5eb32d9f199d74e11b0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6ceda05a15d55b26acb24894bc7bc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#abb6ceda05a15d55b26acb24894bc7bc7">CalculateGeneral</a> ()</td></tr>
+<tr class="memdesc:abb6ceda05a15d55b26acb24894bc7bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать главные центральные моменты инерции.  <a href="class_inertia_properties.html#abb6ceda05a15d55b26acb24894bc7bc7">Подробнее...</a><br /></td></tr>
+<tr class="separator:abb6ceda05a15d55b26acb24894bc7bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac033942c113e1f8b3a07c4581df68393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#ac033942c113e1f8b3a07c4581df68393">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;m)</td></tr>
+<tr class="memdesc:ac033942c113e1f8b3a07c4581df68393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Трансформировать.  <a href="class_inertia_properties.html#ac033942c113e1f8b3a07c4581df68393">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac033942c113e1f8b3a07c4581df68393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b61262bcbf0076f8a93da6fa42c998"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a02b61262bcbf0076f8a93da6fa42c998">IntegralsTransform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;m)</td></tr>
+<tr class="memdesc:a02b61262bcbf0076f8a93da6fa42c998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Трансформировать.  <a href="class_inertia_properties.html#a02b61262bcbf0076f8a93da6fa42c998">Подробнее...</a><br /></td></tr>
+<tr class="separator:a02b61262bcbf0076f8a93da6fa42c998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad2d334042a806d59b22438483db485"><td class="memItemLeft" align="right" valign="top"><a id="a8ad2d334042a806d59b22438483db485"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a8ad2d334042a806d59b22438483db485">Add</a> (const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;)</td></tr>
+<tr class="memdesc:a8ad2d334042a806d59b22438483db485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить к полям объекта полей другого объекта. <br /></td></tr>
+<tr class="separator:a8ad2d334042a806d59b22438483db485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78523717883b3b498e23b0288bb173d"><td class="memItemLeft" align="right" valign="top"><a id="aa78523717883b3b498e23b0288bb173d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#aa78523717883b3b498e23b0288bb173d">ChangeDensity</a> (double density)</td></tr>
+<tr class="memdesc:aa78523717883b3b498e23b0288bb173d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить плотность. <br /></td></tr>
+<tr class="separator:aa78523717883b3b498e23b0288bb173d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148c0c621753905a6017f4080cfcc698"><td class="memItemLeft" align="right" valign="top"><a id="a148c0c621753905a6017f4080cfcc698"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a148c0c621753905a6017f4080cfcc698">IsSame</a> (const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;other, double accuracy) const</td></tr>
+<tr class="memdesc:a148c0c621753905a6017f4080cfcc698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными? <br /></td></tr>
+<tr class="separator:a148c0c621753905a6017f4080cfcc698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49364d4eafd75fa91867651fc3ba153"><td class="memItemLeft" align="right" valign="top"><a id="ac49364d4eafd75fa91867651fc3ba153"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#ac49364d4eafd75fa91867651fc3ba153">operator=</a> (const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;)</td></tr>
+<tr class="memdesc:ac49364d4eafd75fa91867651fc3ba153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания. <br /></td></tr>
+<tr class="separator:ac49364d4eafd75fa91867651fc3ba153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a27856835f4fa99c75b4195914a77e5a9"><td class="memItemLeft" align="right" valign="top"><a id="a27856835f4fa99c75b4195914a77e5a9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a27856835f4fa99c75b4195914a77e5a9">area</a></td></tr>
+<tr class="memdesc:a27856835f4fa99c75b4195914a77e5a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Площадь поверхности. <br /></td></tr>
+<tr class="separator:a27856835f4fa99c75b4195914a77e5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c64382f8d9cb2e2607296becc8f9a11"><td class="memItemLeft" align="right" valign="top"><a id="a3c64382f8d9cb2e2607296becc8f9a11"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a3c64382f8d9cb2e2607296becc8f9a11">volume</a></td></tr>
+<tr class="memdesc:a3c64382f8d9cb2e2607296becc8f9a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объем. <br /></td></tr>
+<tr class="separator:a3c64382f8d9cb2e2607296becc8f9a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f63c8b845d13f6aa7d5f79246c4cba3"><td class="memItemLeft" align="right" valign="top"><a id="a4f63c8b845d13f6aa7d5f79246c4cba3"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a4f63c8b845d13f6aa7d5f79246c4cba3">mass</a></td></tr>
+<tr class="memdesc:a4f63c8b845d13f6aa7d5f79246c4cba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масса. <br /></td></tr>
+<tr class="separator:a4f63c8b845d13f6aa7d5f79246c4cba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251b949ae667b80105b1007c438c4c4c"><td class="memItemLeft" align="right" valign="top"><a id="a251b949ae667b80105b1007c438c4c4c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a251b949ae667b80105b1007c438c4c4c">inertia</a> [<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>]</td></tr>
+<tr class="memdesc:a251b949ae667b80105b1007c438c4c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Статические моменты. <br /></td></tr>
+<tr class="separator:a251b949ae667b80105b1007c438c4c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0343fbb3e18d760c3b799aeac7ffba50"><td class="memItemLeft" align="right" valign="top"><a id="a0343fbb3e18d760c3b799aeac7ffba50"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a0343fbb3e18d760c3b799aeac7ffba50">initial</a> [<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>][<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>]</td></tr>
+<tr class="memdesc:a0343fbb3e18d760c3b799aeac7ffba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Моменты инерции относительно исходных осей координат. <br /></td></tr>
+<tr class="separator:a0343fbb3e18d760c3b799aeac7ffba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f3cb8f8fc54ed7c55bdd6178d86931"><td class="memItemLeft" align="right" valign="top"><a id="a19f3cb8f8fc54ed7c55bdd6178d86931"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a19f3cb8f8fc54ed7c55bdd6178d86931">moments</a> [<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>][<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>]</td></tr>
+<tr class="memdesc:a19f3cb8f8fc54ed7c55bdd6178d86931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Моменты инерции относительно центральных осей координат. <br /></td></tr>
+<tr class="separator:a19f3cb8f8fc54ed7c55bdd6178d86931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e267e9e7eb208507e2b8d87f29ff9d"><td class="memItemLeft" align="right" valign="top"><a id="af7e267e9e7eb208507e2b8d87f29ff9d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#af7e267e9e7eb208507e2b8d87f29ff9d">general</a> [<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>]</td></tr>
+<tr class="memdesc:af7e267e9e7eb208507e2b8d87f29ff9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главные центральные моменты инерции. <br /></td></tr>
+<tr class="separator:af7e267e9e7eb208507e2b8d87f29ff9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fbd7f4ca95dbb4e8083b1546c2c1c4"><td class="memItemLeft" align="right" valign="top"><a id="ac8fbd7f4ca95dbb4e8083b1546c2c1c4"></a>
+<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#ac8fbd7f4ca95dbb4e8083b1546c2c1c4">center</a></td></tr>
+<tr class="memdesc:ac8fbd7f4ca95dbb4e8083b1546c2c1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Центр тяжести. <br /></td></tr>
+<tr class="separator:ac8fbd7f4ca95dbb4e8083b1546c2c1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ac8ff505f809a0faa27a86f230082a"><td class="memItemLeft" align="right" valign="top"><a id="a39ac8ff505f809a0faa27a86f230082a"></a>
+<a class="el" href="class_mb_vector3_d.html">MbVector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_properties.html#a39ac8ff505f809a0faa27a86f230082a">direction</a> [<a class="el" href="namespacec3d.html#a1bdc35e09784cb32b6109fe30d161ee0">c3d::SPACE_DIM</a>]</td></tr>
+<tr class="memdesc:a39ac8ff505f809a0faa27a86f230082a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Векторы направлений главных центральных осей инерции. <br /></td></tr>
+<tr class="separator:a39ac8ff505f809a0faa27a86f230082a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Инерционные характеристики тела. </p>
+<p>Инерционные характеристики тела.<br  />
+ Векторы direction дают направления главных осей инерции. <br  />
+ Если все главные моменты инерции general[i] i=1,2,3 разные, то все векторы direction[i] i=1,2,3 не равны нулю. <br  />
+ Если все главные моменты инерции general[i] i=1,2,3 одинаковые, то все векторы direction[i] i=1,2,3 равны нулю и главными направлениями могут служить любые три взаимно ортогональных вектора. <br  />
+ Если два из трех главных моментов инерции равны, например general[j]==general[k], то два из трёх векторов равны нулю direction[j]=direction[k]=0, а не равный нулю вектор direction[i] определяет направление главной оси инерции, момент general[i] относительно которой отличается от других, двумя другими главными направлениями могут служить любые два взаимно ортогональных и ортогональных не равному нулю вектору direction[i] вектора. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ac135167188329ba48a3c3decc35c7fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac135167188329ba48a3c3decc35c7fe4">&#9670;&nbsp;</a></span>InertiaProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InertiaProperties::InertiaProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<p>Конструктор инерционных характеристик с умолчательными значениями полей.<br  />
+ Умолчательные значения означают, что параметры не заданы. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a0246d1e0e91379f799826869ef95e4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0246d1e0e91379f799826869ef95e4de">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация. </p>
+<p>Инициализация инерционных характеристик умолчательными значениями полей.<br  />
+ Умолчательные значения означают, что параметры не заданы. </p>
+
+</div>
+</div>
+<a id="aa68a322f48408943cd9886d4f7bf18b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68a322f48408943cd9886d4f7bf18b1">&#9670;&nbsp;</a></span>CheckData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InertiaProperties::CheckData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверить данные. </p>
+<p>Проверить данные на корректность.<br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>true, если данные корректны,<br  />
+ данные могут быть некорректны в случае нулевой площади поверхности. </dd></dl>
+
+</div>
+</div>
+<a id="a9c17e0188f9d1c1336d4b6be7bdd5265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c17e0188f9d1c1336d4b6be7bdd5265">&#9670;&nbsp;</a></span>CalculateIntegrals() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::CalculateIntegrals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_face.html">MbFace</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>faces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deviateAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_if_progress_indicator.html">IfProgressIndicator</a> *&#160;</td>
+          <td class="paramname"><em>progress</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить массо-центровочных характеристики. </p>
+<p>Определить массо-центровочных характеристики набора граней.<br  />
+ Каждое тело представлено совокупностью граней, описывающих его поверхность. Определение объёма, центра масс и моментов инерции тела приводит к вычислению объёмных интегралов. С помощью формулы Остроградского-Гаусса интегралы по объёму тела сводятся к интегралам по поверхностям граней тела.<br  />
+ При численном интегрировании по поверхности область определения параметров грани разбивается на небольшие четырёхугольные или треугольные подобласти. От размеров подобластей зависит точность вычисления. В качестве управляющего параметра разбиения области интегрирования используется угловое отклонение нормали поверхности в подобласти deviateAngle. Размер каждой подобласти определён условием: угловое изменение нормали поверхности в подобласти не должно превышать deviateAngle.<br  />
+ Для четырёхугольных подобластей по каждому параметру поверхности интегрирование выполняется с помощью квадратурных формул Гаусса. Для треугольных областей удобно перейти от координат u и v к трём барицентрическим координатам a, b, c, построенным по точкам pa, pb, pc. Координаты произвольной точки p=(u,v) через барицентрические координаты a, b, c выражаются с помощью формул<br  />
+u = a ua + b ub + c uc,<br  />
+ v = a va + b vb + c vc.<br  />
+ Барицентрические координаты удовлетворяют равенству: a + b + c = 1.<br  />
+ Во всех случаях каждый поверхностный интеграл вычисляется как взвешенная сумма значений интегрируемой функции внутри области интегрирования. Для каждого отдельного тела расчёт выполняется в местной системе координат. Затем характеристики тела переводятся в глобальную систему координат и суммируются. Результатом являются характеристики сборки тел в глобальной, центральной и главной центральной системе координат.</p>
+<dl class="section note"><dt>Заметки</dt><dd>В многопоточном режиме выполняется параллельно (временно: многопоточность работает, только если <a class="el" href="struct_if_progress_indicator.html" title="Индикатор прогресса выполнения.">IfProgressIndicator</a> не определен).</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">faces</td><td>- Набор граней.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Замкнутость набора граней.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">density</td><td>- Плотность (closed == true) или удельная масса на единицу площади (closed == false).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviateAngle</td><td>- Параметр управления точностью расчёта - угловое отклонение нормпли поверхности или касательных кривой на участке численного интегрирования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">progress</td><td>- Индикатор прогресса выполнения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a77a0c14fd04ec4c4e9dd65a1d40511c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a0c14fd04ec4c4e9dd65a1d40511c4">&#9670;&nbsp;</a></span>CalculateProperties() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::CalculateProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_r_p_array.html">RPArray</a>&lt; <a class="el" href="class_mb_face.html">MbFace</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>faces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>closed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calculateAll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deviateAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_if_progress_indicator.html">IfProgressIndicator</a> *&#160;</td>
+          <td class="paramname"><em>progress</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить масс-центровочных характеристики. </p>
+<p>Определить масс-центровочных характеристики набора граней.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">faces</td><td>- Набор граней.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">closed</td><td>- Замкнутость набора граней.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">density</td><td>- Плотность (closed == true) или удельная масса на единицу площади (closed == false).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calculateAll</td><td>- Если false, проводится расчет интегралов инерции,<br  />
+ если true, то еще проводится расчет центра масс, центральных моментов инерции, главных центральных моментов инерции.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviateAngle</td><td>- Параметр управления точностью расчёта - угловое отклонение нормали поверхности или касательных кривой на участке численного интегрирования.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">progress</td><td>- Индикатор прогресса выполнения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5be5a354f276999b795d9a9fb070a353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be5a354f276999b795d9a9fb070a353">&#9670;&nbsp;</a></span>CalculateIntegrals() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::CalculateIntegrals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>density</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить масс-центровочных характеристики. </p>
+<p>Определить масс-центровочных характеристики полигонального объекта.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>- Полигональный объект.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">density</td><td>- Плотность (closed == true) или удельная масса на единицу площади (closed == false). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3232283033dc50365b66abaf5e87b996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3232283033dc50365b66abaf5e87b996">&#9670;&nbsp;</a></span>CalculateProperties() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::CalculateProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calculateAll</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определить масс-центровочных характеристики. </p>
+<p>Определить масс-центровочных характеристики полигонального объекта.<br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>- Полигональный объект.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">density</td><td>- Плотность или удельная масса на единицу площади.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calculateAll</td><td>- Если false, проводится расчет интегралов инерции,<br  />
+ если true, то еще проводится расчет центра масс, центральных моментов инерции, главных центральных моментов инерции. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9534dd3b01187e0def7c8c27190ced1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9534dd3b01187e0def7c8c27190ced1b">&#9670;&nbsp;</a></span>GetIntegrals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::GetIntegrals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>etalon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычислить интегралы инерции. </p>
+<p>Вычислить интегралы инерции по заданным пользователем моментам инерции.<br  />
+ Присваивает себе значение площади, объема, массы, центра масс эталона, пересчитывает моменты инерции относительно центральных осей координат по заданным моментам инерции эталона.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">etalon</td><td>- Эталон. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aafbac5579606340638694a9c6a636fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbac5579606340638694a9c6a636fdd">&#9670;&nbsp;</a></span>CrossIntegrals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::CrossIntegrals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_inertia_properties.html">InertiaProperties</a> &amp;&#160;</td>
+          <td class="paramname"><em>prop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Учесть частично заданных характеристик. </p>
+<p>Пересчитать интегралы инерции с учётом частично заданных пользователем моментов инерции.<br  />
+ Присваивает себе значение площади, объема, массы, центра масс эталона, моментов инерции, если эти величины у эталона заданы.<br  />
+ Площадь, объем, масса, центр масс, моменты инерции объекта не изменяются, если соответствующая величина у эталона не задана.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">prop</td><td>- Частично заданные инерционные характеристики. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4167d3e9acc6ca1a2adda2bcea3e7be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4167d3e9acc6ca1a2adda2bcea3e7be2">&#9670;&nbsp;</a></span>Calculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InertiaProperties::Calculate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать главную центральную систему. </p>
+<p>Расчёт главной центральной системы координат и проверка.<br  />
+ Входит: расчет центра масс и центральных моментов инерции, расчет главных центральных моментов инерции.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае корректных данных. </dd></dl>
+
+</div>
+</div>
+<a id="a4bef01e1c1b5eb32d9f199d74e11b0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bef01e1c1b5eb32d9f199d74e11b0c4">&#9670;&nbsp;</a></span>CalculateCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InertiaProperties::CalculateCenter </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isCheckData</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать центр масс и центральные моменты инерции. </p>
+<p>Рассчитать центр масс и центральные моменты инерции.<br  />
+ <br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>true в случае корректных данных. </dd></dl>
+
+</div>
+</div>
+<a id="abb6ceda05a15d55b26acb24894bc7bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6ceda05a15d55b26acb24894bc7bc7">&#9670;&nbsp;</a></span>CalculateGeneral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InertiaProperties::CalculateGeneral </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рассчитать главные центральные моменты инерции. </p>
+<p>Рассчитать главные центральные моменты инерции.<br  />
+ <br  />
+ </p><dl class="section return"><dt>Возвращает</dt><dd>true в случае корректных данных. </dd></dl>
+
+</div>
+</div>
+<a id="ac033942c113e1f8b3a07c4581df68393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac033942c113e1f8b3a07c4581df68393">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::Transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Трансформировать. </p>
+<p>Трансформировать данные по матрице.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>- Матрица трансформации. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a02b61262bcbf0076f8a93da6fa42c998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b61262bcbf0076f8a93da6fa42c998">&#9670;&nbsp;</a></span>IntegralsTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> InertiaProperties::IntegralsTransform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Трансформировать. </p>
+<p>Трансформировать интегралы инерции в соответствии с матрицей.<br  />
+ <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>- Матрица трансформации. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mip__solid__mass__inertia_8h.html">mip_solid_mass_inertia.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_inertia_properties.html">InertiaProperties</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

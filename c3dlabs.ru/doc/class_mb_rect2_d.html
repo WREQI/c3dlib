@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbRect2D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_rect2_d.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_mb_rect2_d-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbRect2D<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___mathematic___base__3_d.html">Трёхмерные базовые объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Двумерный куб.  
+ <a href="class_mb_rect2_d.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_rect2d.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса MbRect2D:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_rect2_d__coll__graph.svg" width="94" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af9465fbd21481dd41cfe1c76aa81026d"><td class="memItemLeft" align="right" valign="top"><a id="af9465fbd21481dd41cfe1c76aa81026d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#af9465fbd21481dd41cfe1c76aa81026d">MbRect2D</a> ()</td></tr>
+<tr class="memdesc:af9465fbd21481dd41cfe1c76aa81026d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. <br /></td></tr>
+<tr class="separator:af9465fbd21481dd41cfe1c76aa81026d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06deda6c09a85b063de018d074e91676"><td class="memItemLeft" align="right" valign="top"><a id="a06deda6c09a85b063de018d074e91676"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a06deda6c09a85b063de018d074e91676">MbRect2D</a> (double xmin, double ymin, double xmax, double ymax)</td></tr>
+<tr class="memdesc:a06deda6c09a85b063de018d074e91676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по заданным значениям границ. <br /></td></tr>
+<tr class="separator:a06deda6c09a85b063de018d074e91676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc950032bcae92bf74f109b475487996"><td class="memItemLeft" align="right" valign="top"><a id="adc950032bcae92bf74f109b475487996"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#adc950032bcae92bf74f109b475487996">MbRect2D</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pmin, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pmax)</td></tr>
+<tr class="memdesc:adc950032bcae92bf74f109b475487996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по двум диагональным точкам. <br /></td></tr>
+<tr class="separator:adc950032bcae92bf74f109b475487996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cdeaf701651d6bab3eb3fe640d7675"><td class="memItemLeft" align="right" valign="top"><a id="a65cdeaf701651d6bab3eb3fe640d7675"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a65cdeaf701651d6bab3eb3fe640d7675">MbRect2D</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pmin, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pmax)</td></tr>
+<tr class="memdesc:a65cdeaf701651d6bab3eb3fe640d7675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по двум диагональным трехмерным точкам. <br /></td></tr>
+<tr class="separator:a65cdeaf701651d6bab3eb3fe640d7675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0fc344b4bd2b88ae8c2ea57b68f4d9"><td class="memItemLeft" align="right" valign="top"><a id="a9b0fc344b4bd2b88ae8c2ea57b68f4d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a9b0fc344b4bd2b88ae8c2ea57b68f4d9">MbRect2D</a> (const <a class="el" href="class_mb_rect2_d.html">MbRect2D</a> &amp;other)</td></tr>
+<tr class="memdesc:a9b0fc344b4bd2b88ae8c2ea57b68f4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:a9b0fc344b4bd2b88ae8c2ea57b68f4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae828cbbf2154d9232081594b9bf46b4b"><td class="memItemLeft" align="right" valign="top"><a id="ae828cbbf2154d9232081594b9bf46b4b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ae828cbbf2154d9232081594b9bf46b4b">Init</a> ()</td></tr>
+<tr class="memdesc:ae828cbbf2154d9232081594b9bf46b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать неустановленным. <br /></td></tr>
+<tr class="separator:ae828cbbf2154d9232081594b9bf46b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174c4385c4739fb4e6bb99300c6def67"><td class="memItemLeft" align="right" valign="top"><a id="a174c4385c4739fb4e6bb99300c6def67"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a174c4385c4739fb4e6bb99300c6def67">Init</a> (double xmin, double ymin, double xmax, double ymax)</td></tr>
+<tr class="memdesc:a174c4385c4739fb4e6bb99300c6def67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инизиализировать заданными значениями границ. <br /></td></tr>
+<tr class="separator:a174c4385c4739fb4e6bb99300c6def67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fec7dccd8e2ae41ffad82261bf95d40"><td class="memItemLeft" align="right" valign="top"><a id="a9fec7dccd8e2ae41ffad82261bf95d40"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a9fec7dccd8e2ae41ffad82261bf95d40">Init</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;)</td></tr>
+<tr class="memdesc:a9fec7dccd8e2ae41ffad82261bf95d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инизиализировать двумя диагональными точками. <br /></td></tr>
+<tr class="separator:a9fec7dccd8e2ae41ffad82261bf95d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d2a1b2999d45b76577217f3ea50d0b"><td class="memItemLeft" align="right" valign="top"><a id="a08d2a1b2999d45b76577217f3ea50d0b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a08d2a1b2999d45b76577217f3ea50d0b">Init</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;)</td></tr>
+<tr class="memdesc:a08d2a1b2999d45b76577217f3ea50d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инизиализировать двумя диагональными трехмерными точками. <br /></td></tr>
+<tr class="separator:a08d2a1b2999d45b76577217f3ea50d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7074120e229ac1b83adc89fbcfeb40"><td class="memItemLeft" align="right" valign="top"><a id="aca7074120e229ac1b83adc89fbcfeb40"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#aca7074120e229ac1b83adc89fbcfeb40">Init</a> (const <a class="el" href="class_mb_rect2_d.html">MbRect2D</a> &amp;)</td></tr>
+<tr class="memdesc:aca7074120e229ac1b83adc89fbcfeb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать другим кубом. <br /></td></tr>
+<tr class="separator:aca7074120e229ac1b83adc89fbcfeb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5b9093655233d20a842d9ecda1e009"><td class="memItemLeft" align="right" valign="top"><a id="a2e5b9093655233d20a842d9ecda1e009"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a2e5b9093655233d20a842d9ecda1e009">Init</a> (const <a class="el" href="class_mb_rect.html">MbRect</a> &amp;)</td></tr>
+<tr class="memdesc:a2e5b9093655233d20a842d9ecda1e009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать другим кубом. <br /></td></tr>
+<tr class="separator:a2e5b9093655233d20a842d9ecda1e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82cd47d221e5eb5fbdab184bff73de0c"><td class="memItemLeft" align="right" valign="top"><a id="a82cd47d221e5eb5fbdab184bff73de0c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a82cd47d221e5eb5fbdab184bff73de0c">Invert</a> ()</td></tr>
+<tr class="memdesc:a82cd47d221e5eb5fbdab184bff73de0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать вывернутый двумерный куб. <br /></td></tr>
+<tr class="separator:a82cd47d221e5eb5fbdab184bff73de0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21879c36b9b97c56894994847eab286d"><td class="memItemLeft" align="right" valign="top"><a id="a21879c36b9b97c56894994847eab286d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a21879c36b9b97c56894994847eab286d">Short</a> (double, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a21879c36b9b97c56894994847eab286d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сократить двумерный куб на заданный коэффициент. <br /></td></tr>
+<tr class="separator:a21879c36b9b97c56894994847eab286d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c5030052b6754ff3243a094f3d75b0"><td class="memItemLeft" align="right" valign="top"><a id="a19c5030052b6754ff3243a094f3d75b0"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a19c5030052b6754ff3243a094f3d75b0">Short</a> (double, double, double, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a19c5030052b6754ff3243a094f3d75b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сократить двумерный куб на заданный коэффициент. <br /></td></tr>
+<tr class="separator:a19c5030052b6754ff3243a094f3d75b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484da1471d112727905402c15821acbf"><td class="memItemLeft" align="right" valign="top"><a id="a484da1471d112727905402c15821acbf"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a484da1471d112727905402c15821acbf">Short</a> (double, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a484da1471d112727905402c15821acbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сократить двумерный куб на заданный коэффициент. <br /></td></tr>
+<tr class="separator:a484da1471d112727905402c15821acbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03416b206dd518177a785f957185e70"><td class="memItemLeft" align="right" valign="top"><a id="ab03416b206dd518177a785f957185e70"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ab03416b206dd518177a785f957185e70">Short</a> (double, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:ab03416b206dd518177a785f957185e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сократить двумерный куб на заданный коэффициент. <br /></td></tr>
+<tr class="separator:ab03416b206dd518177a785f957185e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6c1f4b52655b31ae4c0a92f9ff0721"><td class="memItemLeft" align="right" valign="top"><a id="aae6c1f4b52655b31ae4c0a92f9ff0721"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#aae6c1f4b52655b31ae4c0a92f9ff0721">Short</a> (double, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:aae6c1f4b52655b31ae4c0a92f9ff0721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сократить двумерный куб на заданный коэффициент. <br /></td></tr>
+<tr class="separator:aae6c1f4b52655b31ae4c0a92f9ff0721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cef4032154544ca00527f06771b4ff9"><td class="memItemLeft" align="right" valign="top"><a id="a5cef4032154544ca00527f06771b4ff9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a5cef4032154544ca00527f06771b4ff9">Short</a> (double, const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a5cef4032154544ca00527f06771b4ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сократить двумерный куб на заданный коэффициент. <br /></td></tr>
+<tr class="separator:a5cef4032154544ca00527f06771b4ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e79aab5b8d136d43e34e3e8fceacfad"><td class="memItemLeft" align="right" valign="top"><a id="a7e79aab5b8d136d43e34e3e8fceacfad"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a7e79aab5b8d136d43e34e3e8fceacfad">Include</a> (double, double, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a7e79aab5b8d136d43e34e3e8fceacfad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a7e79aab5b8d136d43e34e3e8fceacfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8594c458cc382571fbbb6e30be015ff"><td class="memItemLeft" align="right" valign="top"><a id="ae8594c458cc382571fbbb6e30be015ff"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ae8594c458cc382571fbbb6e30be015ff">Include</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:ae8594c458cc382571fbbb6e30be015ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:ae8594c458cc382571fbbb6e30be015ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c3e57609dfd2fb510a88014df790f7"><td class="memItemLeft" align="right" valign="top"><a id="a05c3e57609dfd2fb510a88014df790f7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a05c3e57609dfd2fb510a88014df790f7">Include</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a05c3e57609dfd2fb510a88014df790f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a05c3e57609dfd2fb510a88014df790f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f0138528a5b329872e5b6cdfbcaecf"><td class="memItemLeft" align="right" valign="top"><a id="a33f0138528a5b329872e5b6cdfbcaecf"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a33f0138528a5b329872e5b6cdfbcaecf">Include</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a33f0138528a5b329872e5b6cdfbcaecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a33f0138528a5b329872e5b6cdfbcaecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bfba9026f39ab2f9c251a8256b032c"><td class="memItemLeft" align="right" valign="top"><a id="a52bfba9026f39ab2f9c251a8256b032c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a52bfba9026f39ab2f9c251a8256b032c">Include</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a52bfba9026f39ab2f9c251a8256b032c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a52bfba9026f39ab2f9c251a8256b032c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70aa1424bb1ab3d4ae3bf7b6f31586c"><td class="memItemLeft" align="right" valign="top"><a id="ab70aa1424bb1ab3d4ae3bf7b6f31586c"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ab70aa1424bb1ab3d4ae3bf7b6f31586c">Include</a> (const <a class="el" href="class_mb_rect2_d.html">MbRect2D</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:ab70aa1424bb1ab3d4ae3bf7b6f31586c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить другой двумерный куб. <br /></td></tr>
+<tr class="separator:ab70aa1424bb1ab3d4ae3bf7b6f31586c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747438b21ad246146ab6ff3f4912e932"><td class="memItemLeft" align="right" valign="top"><a id="a747438b21ad246146ab6ff3f4912e932"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a747438b21ad246146ab6ff3f4912e932">Include</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, bool bis=true, double delta=<a class="el" href="class_math.html#a0f69cd2d9af4913959172b052706335e">Math::lengthEpsilon</a>)</td></tr>
+<tr class="memdesc:a747438b21ad246146ab6ff3f4912e932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить двумерный куб. <br /></td></tr>
+<tr class="separator:a747438b21ad246146ab6ff3f4912e932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f53d6f58c8a288e3c7fe800f715ff98"><td class="memItemLeft" align="right" valign="top"><a id="a2f53d6f58c8a288e3c7fe800f715ff98"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a2f53d6f58c8a288e3c7fe800f715ff98">IncludeEx</a> (double, double)</td></tr>
+<tr class="memdesc:a2f53d6f58c8a288e3c7fe800f715ff98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a2f53d6f58c8a288e3c7fe800f715ff98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ca5e931406bf071eb0cdb95c2270cd"><td class="memItemLeft" align="right" valign="top"><a id="a82ca5e931406bf071eb0cdb95c2270cd"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a82ca5e931406bf071eb0cdb95c2270cd">IncludeEx</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;)</td></tr>
+<tr class="memdesc:a82ca5e931406bf071eb0cdb95c2270cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a82ca5e931406bf071eb0cdb95c2270cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5947eeb32199012df2c6a845557f8743"><td class="memItemLeft" align="right" valign="top"><a id="a5947eeb32199012df2c6a845557f8743"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a5947eeb32199012df2c6a845557f8743">IncludeEx</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;)</td></tr>
+<tr class="memdesc:a5947eeb32199012df2c6a845557f8743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a5947eeb32199012df2c6a845557f8743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab725c51bb79f9fa9d777db5f3175ffdf"><td class="memItemLeft" align="right" valign="top"><a id="ab725c51bb79f9fa9d777db5f3175ffdf"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ab725c51bb79f9fa9d777db5f3175ffdf">IncludeEx</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;)</td></tr>
+<tr class="memdesc:ab725c51bb79f9fa9d777db5f3175ffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:ab725c51bb79f9fa9d777db5f3175ffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7aad18ae6ff9c504e29e6eac9a757a"><td class="memItemLeft" align="right" valign="top"><a id="a8c7aad18ae6ff9c504e29e6eac9a757a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a8c7aad18ae6ff9c504e29e6eac9a757a">IncludeEx</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;)</td></tr>
+<tr class="memdesc:a8c7aad18ae6ff9c504e29e6eac9a757a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить точку. <br /></td></tr>
+<tr class="separator:a8c7aad18ae6ff9c504e29e6eac9a757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa25b8482797c03b337ab9c9610f7f61"><td class="memItemLeft" align="right" valign="top"><a id="afa25b8482797c03b337ab9c9610f7f61"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#afa25b8482797c03b337ab9c9610f7f61">IncludeEx</a> (const <a class="el" href="class_mb_rect2_d.html">MbRect2D</a> &amp;)</td></tr>
+<tr class="memdesc:afa25b8482797c03b337ab9c9610f7f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включить другой двумерный куб. <br /></td></tr>
+<tr class="separator:afa25b8482797c03b337ab9c9610f7f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5eb57608bfcf1d5521fe90ecf07244f"><td class="memItemLeft" align="right" valign="top"><a id="ae5eb57608bfcf1d5521fe90ecf07244f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ae5eb57608bfcf1d5521fe90ecf07244f">IncludeEx</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;)</td></tr>
+<tr class="memdesc:ae5eb57608bfcf1d5521fe90ecf07244f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить двумерный куб. <br /></td></tr>
+<tr class="separator:ae5eb57608bfcf1d5521fe90ecf07244f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f98a35e356f41e985ec3eeddb64dd8b"><td class="memItemLeft" align="right" valign="top"><a id="a0f98a35e356f41e985ec3eeddb64dd8b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a0f98a35e356f41e985ec3eeddb64dd8b">Equalize</a> ()</td></tr>
+<tr class="memdesc:a0f98a35e356f41e985ec3eeddb64dd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выровнять область. <br /></td></tr>
+<tr class="separator:a0f98a35e356f41e985ec3eeddb64dd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75f75bda76003601ad875c1967131fa"><td class="memItemLeft" align="right" valign="top"><a id="ab75f75bda76003601ad875c1967131fa"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ab75f75bda76003601ad875c1967131fa">Equalize</a> (<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;) const</td></tr>
+<tr class="memdesc:ab75f75bda76003601ad875c1967131fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выровнять область. <br /></td></tr>
+<tr class="separator:ab75f75bda76003601ad875c1967131fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d2f760531b5f3301846e6afac25221"><td class="memItemLeft" align="right" valign="top"><a id="a97d2f760531b5f3301846e6afac25221"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a97d2f760531b5f3301846e6afac25221">Equalize</a> (double &amp;, double &amp;, double &amp;, double &amp;) const</td></tr>
+<tr class="memdesc:a97d2f760531b5f3301846e6afac25221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выровнять область. <br /></td></tr>
+<tr class="separator:a97d2f760531b5f3301846e6afac25221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df848cb4464b601e7a174ecb1f93ade"><td class="memItemLeft" align="right" valign="top"><a id="a4df848cb4464b601e7a174ecb1f93ade"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a4df848cb4464b601e7a174ecb1f93ade">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:a4df848cb4464b601e7a174ecb1f93ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, является ли область пустой. <br /></td></tr>
+<tr class="separator:a4df848cb4464b601e7a174ecb1f93ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a1a62a6debd949ca40ab924b288226"><td class="memItemLeft" align="right" valign="top"><a id="aa6a1a62a6debd949ca40ab924b288226"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#aa6a1a62a6debd949ca40ab924b288226">IsDegenert</a> () const</td></tr>
+<tr class="memdesc:aa6a1a62a6debd949ca40ab924b288226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, является ли область вырожденной. <br /></td></tr>
+<tr class="separator:aa6a1a62a6debd949ca40ab924b288226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3244bcb848921b1cc13c073734521788"><td class="memItemLeft" align="right" valign="top"><a id="a3244bcb848921b1cc13c073734521788"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a3244bcb848921b1cc13c073734521788">IsIntersect</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const</td></tr>
+<tr class="memdesc:a3244bcb848921b1cc13c073734521788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекается ли точка с прямоугольником. <br /></td></tr>
+<tr class="separator:a3244bcb848921b1cc13c073734521788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177111c2569e05418a575eb157eb2e61"><td class="memItemLeft" align="right" valign="top"><a id="a177111c2569e05418a575eb157eb2e61"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a177111c2569e05418a575eb157eb2e61">IsIntersect</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;) const</td></tr>
+<tr class="memdesc:a177111c2569e05418a575eb157eb2e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекается ли точка с прямоугольником. <br /></td></tr>
+<tr class="separator:a177111c2569e05418a575eb157eb2e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336881acf64463bd2df1c2bbad09110e"><td class="memItemLeft" align="right" valign="top"><a id="a336881acf64463bd2df1c2bbad09110e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a336881acf64463bd2df1c2bbad09110e">IsIntersect</a> (double, double) const</td></tr>
+<tr class="memdesc:a336881acf64463bd2df1c2bbad09110e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекается ли точка с прямоугольником. <br /></td></tr>
+<tr class="separator:a336881acf64463bd2df1c2bbad09110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e770a32b01129827f9c752fe6b6146"><td class="memItemLeft" align="right" valign="top"><a id="ad1e770a32b01129827f9c752fe6b6146"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ad1e770a32b01129827f9c752fe6b6146">IsIntersect</a> (const <a class="el" href="class_mb_rect2_d.html">MbRect2D</a> &amp;) const</td></tr>
+<tr class="memdesc:ad1e770a32b01129827f9c752fe6b6146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекаются ли прямоугольники. <br /></td></tr>
+<tr class="separator:ad1e770a32b01129827f9c752fe6b6146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb1f845fdb6cb6e35717f508b7ad6c2"><td class="memItemLeft" align="right" valign="top"><a id="a9bb1f845fdb6cb6e35717f508b7ad6c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a9bb1f845fdb6cb6e35717f508b7ad6c2">IsIntersect</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;) const</td></tr>
+<tr class="memdesc:a9bb1f845fdb6cb6e35717f508b7ad6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекаются ли прямоугольники. <br /></td></tr>
+<tr class="separator:a9bb1f845fdb6cb6e35717f508b7ad6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae65f8ef5bce91cb883afdfa4e73803"><td class="memItemLeft" align="right" valign="top"><a id="afae65f8ef5bce91cb883afdfa4e73803"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#afae65f8ef5bce91cb883afdfa4e73803">IsIntersect</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;, const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const</td></tr>
+<tr class="memdesc:afae65f8ef5bce91cb883afdfa4e73803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекаются ли прямоугольники. <br /></td></tr>
+<tr class="separator:afae65f8ef5bce91cb883afdfa4e73803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12bff5a2bb1611bb07e144a04127f7a9"><td class="memItemLeft" align="right" valign="top"><a id="a12bff5a2bb1611bb07e144a04127f7a9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a12bff5a2bb1611bb07e144a04127f7a9">IsIntersect</a> (double, double, double, double) const</td></tr>
+<tr class="memdesc:a12bff5a2bb1611bb07e144a04127f7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пересекаются ли прямоугольники. <br /></td></tr>
+<tr class="separator:a12bff5a2bb1611bb07e144a04127f7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22034bda9272e1d6064fecd56adb2450"><td class="memItemLeft" align="right" valign="top"><a id="a22034bda9272e1d6064fecd56adb2450"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a22034bda9272e1d6064fecd56adb2450">IsEmptyInt</a> (double, double) const</td></tr>
+<tr class="memdesc:a22034bda9272e1d6064fecd56adb2450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли пересечение с пустым кубом. <br /></td></tr>
+<tr class="separator:a22034bda9272e1d6064fecd56adb2450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7563b5aef02a3da12de0a39a09568a58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a7563b5aef02a3da12de0a39a09568a58">IsEmptyInt</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;) const</td></tr>
+<tr class="memdesc:a7563b5aef02a3da12de0a39a09568a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли пересечение с пустым кубом.  <a href="class_mb_rect2_d.html#a7563b5aef02a3da12de0a39a09568a58">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7563b5aef02a3da12de0a39a09568a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d47856cb75caef523e058328c3fc9a"><td class="memItemLeft" align="right" valign="top"><a id="a71d47856cb75caef523e058328c3fc9a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a71d47856cb75caef523e058328c3fc9a">IsEmptyInt</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;) const</td></tr>
+<tr class="memdesc:a71d47856cb75caef523e058328c3fc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли пересечение с пустым кубом. <br /></td></tr>
+<tr class="separator:a71d47856cb75caef523e058328c3fc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6a467abde479a2f4f5bbc5a6a284d4"><td class="memItemLeft" align="right" valign="top"><a id="abe6a467abde479a2f4f5bbc5a6a284d4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#abe6a467abde479a2f4f5bbc5a6a284d4">IsEmptyInt</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const</td></tr>
+<tr class="memdesc:abe6a467abde479a2f4f5bbc5a6a284d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли пересечение с пустым кубом. <br /></td></tr>
+<tr class="separator:abe6a467abde479a2f4f5bbc5a6a284d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908054eb9bc1f80ed0612e586425bb62"><td class="memItemLeft" align="right" valign="top"><a id="a908054eb9bc1f80ed0612e586425bb62"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a908054eb9bc1f80ed0612e586425bb62">SetInRect</a> (<a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;) const</td></tr>
+<tr class="memdesc:a908054eb9bc1f80ed0612e586425bb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать трехмерную точку в куб. <br /></td></tr>
+<tr class="separator:a908054eb9bc1f80ed0612e586425bb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128394c92a1cdc98b90a67d46b46619f"><td class="memItemLeft" align="right" valign="top"><a id="a128394c92a1cdc98b90a67d46b46619f"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a128394c92a1cdc98b90a67d46b46619f">SetInRect</a> (<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;) const</td></tr>
+<tr class="memdesc:a128394c92a1cdc98b90a67d46b46619f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать двумерную точку в куб. <br /></td></tr>
+<tr class="separator:a128394c92a1cdc98b90a67d46b46619f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e60aa76261dec97d494171066e42bb5"><td class="memItemLeft" align="right" valign="top"><a id="a9e60aa76261dec97d494171066e42bb5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a9e60aa76261dec97d494171066e42bb5">SetInRect</a> (<a class="el" href="class_mb_rect2_d.html">MbRect2D</a> &amp;) const</td></tr>
+<tr class="memdesc:a9e60aa76261dec97d494171066e42bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать другой куб в куб. <br /></td></tr>
+<tr class="separator:a9e60aa76261dec97d494171066e42bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e7c5c51be372615f5b89fa88c29547"><td class="memItemLeft" align="right" valign="top"><a id="a88e7c5c51be372615f5b89fa88c29547"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a88e7c5c51be372615f5b89fa88c29547">SetInRect</a> (double &amp;, double &amp;) const</td></tr>
+<tr class="memdesc:a88e7c5c51be372615f5b89fa88c29547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать двумерную точку в куб. <br /></td></tr>
+<tr class="separator:a88e7c5c51be372615f5b89fa88c29547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa89e54979f2c07c9746fa2ff2da250"><td class="memItemLeft" align="right" valign="top"><a id="a8fa89e54979f2c07c9746fa2ff2da250"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a8fa89e54979f2c07c9746fa2ff2da250">SetInRectX</a> (double &amp;) const</td></tr>
+<tr class="memdesc:a8fa89e54979f2c07c9746fa2ff2da250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать в куб. <br /></td></tr>
+<tr class="separator:a8fa89e54979f2c07c9746fa2ff2da250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec776208b7e16b032d98fe575bb7f293"><td class="memItemLeft" align="right" valign="top"><a id="aec776208b7e16b032d98fe575bb7f293"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#aec776208b7e16b032d98fe575bb7f293">SetInRectY</a> (double &amp;) const</td></tr>
+<tr class="memdesc:aec776208b7e16b032d98fe575bb7f293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загнать в куб. <br /></td></tr>
+<tr class="separator:aec776208b7e16b032d98fe575bb7f293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1143c5198a279be9d350ace1f72272"><td class="memItemLeft" align="right" valign="top"><a id="acd1143c5198a279be9d350ace1f72272"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#acd1143c5198a279be9d350ace1f72272">GetXMin</a> () const</td></tr>
+<tr class="memdesc:acd1143c5198a279be9d350ace1f72272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть минимальное значение параметра u. <br /></td></tr>
+<tr class="separator:acd1143c5198a279be9d350ace1f72272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52725094ab1196934dbcb3a41ca4244"><td class="memItemLeft" align="right" valign="top"><a id="aa52725094ab1196934dbcb3a41ca4244"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#aa52725094ab1196934dbcb3a41ca4244">GetXMax</a> () const</td></tr>
+<tr class="memdesc:aa52725094ab1196934dbcb3a41ca4244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть максимальное значение параметра u. <br /></td></tr>
+<tr class="separator:aa52725094ab1196934dbcb3a41ca4244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd002e3cb7ddf863a22cc0ffa87cae66"><td class="memItemLeft" align="right" valign="top"><a id="acd002e3cb7ddf863a22cc0ffa87cae66"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#acd002e3cb7ddf863a22cc0ffa87cae66">GetYMin</a> () const</td></tr>
+<tr class="memdesc:acd002e3cb7ddf863a22cc0ffa87cae66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть минимальное значение параметра v. <br /></td></tr>
+<tr class="separator:acd002e3cb7ddf863a22cc0ffa87cae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5b49153ddcfe4d086698976322160f"><td class="memItemLeft" align="right" valign="top"><a id="adc5b49153ddcfe4d086698976322160f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#adc5b49153ddcfe4d086698976322160f">GetYMax</a> () const</td></tr>
+<tr class="memdesc:adc5b49153ddcfe4d086698976322160f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть максимальное значение параметра v. <br /></td></tr>
+<tr class="separator:adc5b49153ddcfe4d086698976322160f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428aa89e990446e128dea1bc966945d4"><td class="memItemLeft" align="right" valign="top"><a id="a428aa89e990446e128dea1bc966945d4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a428aa89e990446e128dea1bc966945d4">GetScaleX</a> () const</td></tr>
+<tr class="memdesc:a428aa89e990446e128dea1bc966945d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить характерный масштаб двумерного куба по x. <br /></td></tr>
+<tr class="separator:a428aa89e990446e128dea1bc966945d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6629c3e224d5848c5d19e45dca14b4ef"><td class="memItemLeft" align="right" valign="top"><a id="a6629c3e224d5848c5d19e45dca14b4ef"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a6629c3e224d5848c5d19e45dca14b4ef">GetScaleY</a> () const</td></tr>
+<tr class="memdesc:a6629c3e224d5848c5d19e45dca14b4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить характерный масштаб двумерного куба по y. <br /></td></tr>
+<tr class="separator:a6629c3e224d5848c5d19e45dca14b4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626b21716355fc3490e0516fe85bc6a0"><td class="memItemLeft" align="right" valign="top"><a id="a626b21716355fc3490e0516fe85bc6a0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a626b21716355fc3490e0516fe85bc6a0">GetScale</a> () const</td></tr>
+<tr class="memdesc:a626b21716355fc3490e0516fe85bc6a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить характерный масштаб двумерного куба. <br /></td></tr>
+<tr class="separator:a626b21716355fc3490e0516fe85bc6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707462722493d904c0edbdeb5a96fcfd"><td class="memItemLeft" align="right" valign="top"><a id="a707462722493d904c0edbdeb5a96fcfd"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a707462722493d904c0edbdeb5a96fcfd">IncreaseX</a> (double)</td></tr>
+<tr class="memdesc:a707462722493d904c0edbdeb5a96fcfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить куб по x. <br /></td></tr>
+<tr class="separator:a707462722493d904c0edbdeb5a96fcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e5c6c77fe9bde9a1d0df742805b074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a03e5c6c77fe9bde9a1d0df742805b074">IncreaseY</a> (double)</td></tr>
+<tr class="memdesc:a03e5c6c77fe9bde9a1d0df742805b074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить куб по y.  <a href="class_mb_rect2_d.html#a03e5c6c77fe9bde9a1d0df742805b074">Подробнее...</a><br /></td></tr>
+<tr class="separator:a03e5c6c77fe9bde9a1d0df742805b074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065465113532472c1b9e040621e6d656"><td class="memItemLeft" align="right" valign="top"><a id="a065465113532472c1b9e040621e6d656"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a065465113532472c1b9e040621e6d656">IsBoundX</a> (double, double) const</td></tr>
+<tr class="memdesc:a065465113532472c1b9e040621e6d656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли границе X первый параметр с точностью заданной вторым. <br /></td></tr>
+<tr class="separator:a065465113532472c1b9e040621e6d656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00e9d756180fd089ebd35480f1f4336"><td class="memItemLeft" align="right" valign="top"><a id="ad00e9d756180fd089ebd35480f1f4336"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ad00e9d756180fd089ebd35480f1f4336">IsBoundY</a> (double, double) const</td></tr>
+<tr class="memdesc:ad00e9d756180fd089ebd35480f1f4336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли границе Y первый параметр с точностью заданной вторым. <br /></td></tr>
+<tr class="separator:ad00e9d756180fd089ebd35480f1f4336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9a9e7c4978558af8995e5c49bddee2"><td class="memItemLeft" align="right" valign="top"><a id="adb9a9e7c4978558af8995e5c49bddee2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#adb9a9e7c4978558af8995e5c49bddee2">IsBound</a> (double, double, double) const</td></tr>
+<tr class="memdesc:adb9a9e7c4978558af8995e5c49bddee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли границе первый параметр с точностью заданной вторым. <br /></td></tr>
+<tr class="separator:adb9a9e7c4978558af8995e5c49bddee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63541609d6b41b4b1d1dd64b0d31e9a"><td class="memItemLeft" align="right" valign="top"><a id="ab63541609d6b41b4b1d1dd64b0d31e9a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ab63541609d6b41b4b1d1dd64b0d31e9a">IsBound</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;, double) const</td></tr>
+<tr class="memdesc:ab63541609d6b41b4b1d1dd64b0d31e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли границе первый параметр с точностью заданной вторым. <br /></td></tr>
+<tr class="separator:ab63541609d6b41b4b1d1dd64b0d31e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d820be080bb72aa7708546f8898d470"><td class="memItemLeft" align="right" valign="top"><a id="a8d820be080bb72aa7708546f8898d470"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a8d820be080bb72aa7708546f8898d470">IsBound</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;, double) const</td></tr>
+<tr class="memdesc:a8d820be080bb72aa7708546f8898d470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли границе первый параметр с точностью заданной вторым. <br /></td></tr>
+<tr class="separator:a8d820be080bb72aa7708546f8898d470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cf95c6147d06d07a9fb42f4ac75340"><td class="memItemLeft" align="right" valign="top"><a id="ae3cf95c6147d06d07a9fb42f4ac75340"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#ae3cf95c6147d06d07a9fb42f4ac75340">IsBound</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;, double) const</td></tr>
+<tr class="memdesc:ae3cf95c6147d06d07a9fb42f4ac75340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли границе первый параметр с точностью заданной вторым. <br /></td></tr>
+<tr class="separator:ae3cf95c6147d06d07a9fb42f4ac75340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8633b7ab8094e2803e3178b9ef5f1686"><td class="memItemLeft" align="right" valign="top"><a id="a8633b7ab8094e2803e3178b9ef5f1686"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a8633b7ab8094e2803e3178b9ef5f1686">IsBound</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;, double) const</td></tr>
+<tr class="memdesc:a8633b7ab8094e2803e3178b9ef5f1686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принадлежит ли границе первый параметр с точностью заданной вторым. <br /></td></tr>
+<tr class="separator:a8633b7ab8094e2803e3178b9ef5f1686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6d5fc95391a8470bcdb764ed656453"><td class="memItemLeft" align="right" valign="top"><a id="a6a6d5fc95391a8470bcdb764ed656453"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a6a6d5fc95391a8470bcdb764ed656453">Move</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;)</td></tr>
+<tr class="memdesc:a6a6d5fc95391a8470bcdb764ed656453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть куб. <br /></td></tr>
+<tr class="separator:a6a6d5fc95391a8470bcdb764ed656453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f71463b81e974640ce6d6f3f278860a"><td class="memItemLeft" align="right" valign="top"><a id="a4f71463b81e974640ce6d6f3f278860a"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a4f71463b81e974640ce6d6f3f278860a">GetVertex</a> (size_t <a class="el" href="m2b__mesh__curvature_8h.html#ab4f55b2239bd9720fb28a76c1ede2d94a6a992d5529f459a44fee58c733255e86">index</a>, <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p) const</td></tr>
+<tr class="memdesc:a4f71463b81e974640ce6d6f3f278860a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать вершину габаритного прямоугольника по индексу от 0 до 3. <br /></td></tr>
+<tr class="separator:a4f71463b81e974640ce6d6f3f278860a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a3041bdfbbedd87376ccf1e04a639034e"><td class="memItemLeft" align="right" valign="top"><a id="a3041bdfbbedd87376ccf1e04a639034e"></a>
+<a class="el" href="class_mb_rect1_d.html">MbRect1D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a3041bdfbbedd87376ccf1e04a639034e">rx</a></td></tr>
+<tr class="memdesc:a3041bdfbbedd87376ccf1e04a639034e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диапазон по x. <br /></td></tr>
+<tr class="separator:a3041bdfbbedd87376ccf1e04a639034e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611d99c7a2a31e28db0818a61c932ce7"><td class="memItemLeft" align="right" valign="top"><a id="a611d99c7a2a31e28db0818a61c932ce7"></a>
+<a class="el" href="class_mb_rect1_d.html">MbRect1D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_rect2_d.html#a611d99c7a2a31e28db0818a61c932ce7">ry</a></td></tr>
+<tr class="memdesc:a611d99c7a2a31e28db0818a61c932ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диапазон по y. <br /></td></tr>
+<tr class="separator:a611d99c7a2a31e28db0818a61c932ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Двумерный куб. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a7563b5aef02a3da12de0a39a09568a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7563b5aef02a3da12de0a39a09568a58">&#9670;&nbsp;</a></span>IsEmptyInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbRect2D::IsEmptyInt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Есть ли пересечение с пустым кубом. </p>
+<p>Есть ли пересечение с пустым кубом. </p>
+
+</div>
+</div>
+<a id="a03e5c6c77fe9bde9a1d0df742805b074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e5c6c77fe9bde9a1d0df742805b074">&#9670;&nbsp;</a></span>IncreaseY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbRect2D::IncreaseY </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить куб по y. </p>
+<p>Увеличить куб. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="mb__rect2d_8h.html">mb_rect2d.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_rect2_d.html">MbRect2D</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:05. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

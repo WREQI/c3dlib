@@ -1,0 +1,1799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Работа с потоками</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group___base___tools___i_o.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Работа с потоками<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___tools.html">Библиотека шаблонов и сериализации</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Работа с потоками:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="group___base___tools___i_o.svg" width="303" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cluster.html">Cluster</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кластер.  <a href="class_cluster.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_space.html">FileSpace</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Файловое пространство.  <a href="class_file_space.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cluster_reference.html">ClusterReference</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Позиция в кластере для чтения/записи.  <a href="struct_cluster_reference.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiobuf___seq.html">iobuf_Seq</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Потоковый буфер, обеспечивает только последовательную запись, без возможности удалить или перезаписать файл.  <a href="classiobuf___seq.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmembuf.html">membuf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Потоковый буфер памяти.  <a href="classmembuf.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_registrator.html">TapeRegistrator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для контроля чтения/записи char* и TCHAR* только через ReadTCHAR/WriteTCHAR() скомпилировать с данным дефайном и увидим все места, где незаконно пишутся/читаются данные через operator &lt;&lt; и &gt;&gt;.  <a href="class_tape_registrator.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_registrator_ex.html">TapeRegistratorEx</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив для регистрации объектов с сохранением информации о позиции чтения/записи.  <a href="class_tape_registrator_ex.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scoped_read_progress.html">ScopedReadProgress</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индикатор прогресса в области видимости для reader.  <a href="class_scoped_read_progress.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_descriptor.html">ClassDescriptor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Упакованное имя класса.  <a href="class_class_descriptor.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_class.html">TapeClass</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Обертка" для одного потокового класса.  <a href="class_tape_class.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_manager.html">TapeManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Менеджер потоков.  <a href="class_tape_manager.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_tape_class_container.html">TapeClassContainer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив регистрации потоковых классов.  <a href="struct_tape_class_container.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c3_d_locale_switcher.html">C3DLocaleSwitcher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Локальное задание локали.  <a href="class_c3_d_locale_switcher.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tape_base.html">TapeBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс для потоковых классов.  <a href="class_tape_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtape.html">tape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс потока для реализации чтения и записи.  <a href="classtape.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreader.html">reader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для чтения.  <a href="classreader.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreader__ex.html">reader_ex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для чтения с возможностью чтения из нескольких FileSpaces по заданным позициям.  <a href="classreader__ex.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwriter.html">writer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для записи.  <a href="classwriter.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwriter__ex.html">writer_ex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для записи в разные FileSpaces.  <a href="classwriter__ex.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_i_model_tree_node.html">c3d::IModelTreeNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узел дерева модели.  <a href="classc3d_1_1_i_model_tree_node.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_i_model_tree.html">c3d::IModelTree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обобщенное дерево модели.  <a href="classc3d_1_1_i_model_tree.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_i_embodiment_tree.html">c3d::IEmbodimentTree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дерево Исполнений.  <a href="classc3d_1_1_i_embodiment_tree.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_version_container.html">VersionContainer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер версий.  <a href="class_version_container.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_mb_tree_node.html">c3d::MbTreeNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узел дерева.  <a href="classc3d_1_1_mb_tree_node.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_mb_model_tree.html">c3d::MbModelTree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дерево геометрической модели.  <a href="classc3d_1_1_mb_model_tree.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_data_base.html">c3d::ItemDataBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс для пользовательских данных узла дерева.  <a href="classc3d_1_1_item_data_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_prompt_attr_base.html">c3d::PromptAttrBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс для данных атрибутов с подсказкой.  <a href="classc3d_1_1_prompt_attr_base.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_data_bool.html">c3d::ItemDataBool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство типа bool.  <a href="classc3d_1_1_item_data_bool.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_data_integer.html">c3d::ItemDataInteger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство типа integer.  <a href="classc3d_1_1_item_data_integer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_data_double.html">c3d::ItemDataDouble</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство типа double.  <a href="classc3d_1_1_item_data_double.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_data_string.html">c3d::ItemDataString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свойство типа string.  <a href="classc3d_1_1_item_data_string.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_bool.html">c3d::ItemAttrBool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута bool.  <a href="classc3d_1_1_item_attr_bool.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_integer.html">c3d::ItemAttrInteger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута integer.  <a href="classc3d_1_1_item_attr_integer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_double.html">c3d::ItemAttrDouble</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута double.  <a href="classc3d_1_1_item_attr_double.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_string.html">c3d::ItemAttrString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута string.  <a href="classc3d_1_1_item_attr_string.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_int64.html">c3d::ItemAttrInt64</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута int64.  <a href="classc3d_1_1_item_attr_int64.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_product_info.html">c3d::ItemAttrProductInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута <a class="el" href="class_mb_product_info.html" title="Данные об изделии.">MbProductInfo</a>.  <a href="classc3d_1_1_item_attr_product_info.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_identifier.html">c3d::ItemAttrIdentifier</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Идентификатор.  <a href="classc3d_1_1_item_attr_identifier.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_color.html">c3d::ItemAttrColor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Цвет.  <a href="classc3d_1_1_item_attr_color.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_width.html">c3d::ItemAttrWidth</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Толщина.  <a href="classc3d_1_1_item_attr_width.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_style.html">c3d::ItemAttrStyle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Стиль.  <a href="classc3d_1_1_item_attr_style.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_selected.html">c3d::ItemAttrSelected</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Селектированность.  <a href="classc3d_1_1_item_attr_selected.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_visible.html">c3d::ItemAttrVisible</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Видимость.  <a href="classc3d_1_1_item_attr_visible.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_changed.html">c3d::ItemAttrChanged</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Изменённость.  <a href="classc3d_1_1_item_attr_changed.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_dencity.html">c3d::ItemAttrDencity</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Плотность.  <a href="classc3d_1_1_item_attr_dencity.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_update_stamp.html">c3d::ItemAttrUpdateStamp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Метка времени обновления.  <a href="classc3d_1_1_item_attr_update_stamp.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_anchor.html">c3d::ItemAttrAnchor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Якорь.  <a href="classc3d_1_1_item_attr_anchor.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_embodiment.html">c3d::ItemAttrEmbodiment</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута исполнения.  <a href="classc3d_1_1_item_attr_embodiment.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_item_attr_thickness.html">c3d::ItemAttrThickness</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные атрибута Толщина оболочки.  <a href="classc3d_1_1_item_attr_thickness.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3d_1_1_user_data_map.html">c3d::UserDataMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер для пользовательских данных узла дерева.  <a href="classc3d_1_1_user_data_map.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc3d_1_1_mb_item_data.html">c3d::MbItemData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные узла дерева.  <a href="structc3d_1_1_mb_item_data.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga722ded92dd0ebaf524ad9aeb7507e0cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga722ded92dd0ebaf524ad9aeb7507e0cb">__OVERLOAD_MEMORY_ALLOCATE_FREE_</a></td></tr>
+<tr class="memdesc:ga722ded92dd0ebaf524ad9aeb7507e0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переменная включает перегрузку операторов new/delete, обеспечивающую последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="group___base___tools___i_o.html#ga722ded92dd0ebaf524ad9aeb7507e0cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga722ded92dd0ebaf524ad9aeb7507e0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44a79e30e80276867c85de631638a447"><td class="memItemLeft" align="right" valign="top"><a id="ga44a79e30e80276867c85de631638a447"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga44a79e30e80276867c85de631638a447">DECLARE_NEW_DELETE_CLASS</a>(Class)</td></tr>
+<tr class="memdesc:ga44a79e30e80276867c85de631638a447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление функций new, delete и операторов доступа. <br /></td></tr>
+<tr class="separator:ga44a79e30e80276867c85de631638a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7784ec786a03b6c4eb5e8d6dfc0bd92"><td class="memItemLeft" align="right" valign="top"><a id="gaf7784ec786a03b6c4eb5e8d6dfc0bd92"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaf7784ec786a03b6c4eb5e8d6dfc0bd92">DECLARE_PERSISTENT_CTOR</a>(Class)</td></tr>
+<tr class="memdesc:gaf7784ec786a03b6c4eb5e8d6dfc0bd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для потокового класса. Реализация должна быть обеспечена пользователем. <br /></td></tr>
+<tr class="separator:gaf7784ec786a03b6c4eb5e8d6dfc0bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e7de3d0f6a81058ca7e0ac4ad51f687"><td class="memItemLeft" align="right" valign="top"><a id="ga3e7de3d0f6a81058ca7e0ac4ad51f687"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga3e7de3d0f6a81058ca7e0ac4ad51f687">DECLARE_PERSISTENT_FUNCS</a>(Class)</td></tr>
+<tr class="memdesc:ga3e7de3d0f6a81058ca7e0ac4ad51f687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функции чтения и записи. Реализация должна быть обеспечена пользователем. <br /></td></tr>
+<tr class="separator:ga3e7de3d0f6a81058ca7e0ac4ad51f687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee49687194682a3c51834653bff452e7"><td class="memItemLeft" align="right" valign="top"><a id="gaee49687194682a3c51834653bff452e7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaee49687194682a3c51834653bff452e7">DECLARE_CLASS_DESC_FUNC</a>(Class)</td></tr>
+<tr class="memdesc:gaee49687194682a3c51834653bff452e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функции получения дескриптора класса. Реализация находится в макросе IMP_CLASS_DESC_FUNC. <br /></td></tr>
+<tr class="separator:gaee49687194682a3c51834653bff452e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadca9d3b81cb8e16f2949defe74877466"><td class="memItemLeft" align="right" valign="top"><a id="gadca9d3b81cb8e16f2949defe74877466"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gadca9d3b81cb8e16f2949defe74877466">IMPL_PERSISTENT_OPS</a>(Class)</td></tr>
+<tr class="memdesc:gadca9d3b81cb8e16f2949defe74877466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Операторы чтения и записи указателей и ссылок. <br /></td></tr>
+<tr class="separator:gadca9d3b81cb8e16f2949defe74877466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59adc4c82490d23754cd39c2fb99b0da"><td class="memItemLeft" align="right" valign="top"><a id="ga59adc4c82490d23754cd39c2fb99b0da"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga59adc4c82490d23754cd39c2fb99b0da">EOF</a>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="memdesc:ga59adc4c82490d23754cd39c2fb99b0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конец файла. <br /></td></tr>
+<tr class="separator:ga59adc4c82490d23754cd39c2fb99b0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga026f060924cd1f6584ecacfbc60a22ef"><td class="memItemLeft" align="right" valign="top"><a id="ga026f060924cd1f6584ecacfbc60a22ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga026f060924cd1f6584ecacfbc60a22ef">IMP_PERSISTENT_OPS_BASE</a>(Class,  DLLFUNC)</td></tr>
+<tr class="memdesc:ga026f060924cd1f6584ecacfbc60a22ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация дружественных операторов чтения и записи указателей и ссылок, объявленных в макросе DECLARE_PERSISTENT_OPS_BASE. <br /></td></tr>
+<tr class="separator:ga026f060924cd1f6584ecacfbc60a22ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab37273577db6eec91ad578a4b7ee8965"><td class="memItemLeft" align="right" valign="top"><a id="gab37273577db6eec91ad578a4b7ee8965"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gab37273577db6eec91ad578a4b7ee8965">IMP_CLASS_DESC_FUNC</a>(AppID,  Class)</td></tr>
+<tr class="memdesc:gab37273577db6eec91ad578a4b7ee8965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функции получения дескриптора (хэш + APP UID) класса. Реализация макроса DECLARE_CLASS_DESC_FUNC. <br /></td></tr>
+<tr class="separator:gab37273577db6eec91ad578a4b7ee8965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b5485786a41355e6ba88b0654b60ccf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga8b5485786a41355e6ba88b0654b60ccf">IMP_PERSISTENT_REGISTRATION</a>(AppID,  Class)</td></tr>
+<tr class="memdesc:ga8b5485786a41355e6ba88b0654b60ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструирование нового экземпляра класса.  <a href="group___base___tools___i_o.html#ga8b5485786a41355e6ba88b0654b60ccf">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8b5485786a41355e6ba88b0654b60ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad149802c3fc4c52d6a76724bf8d47664"><td class="memItemLeft" align="right" valign="top"><a id="gad149802c3fc4c52d6a76724bf8d47664"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad149802c3fc4c52d6a76724bf8d47664">IMP_PERSISTENT_NEW_DELETE_CLASS</a>(Class)</td></tr>
+<tr class="memdesc:gad149802c3fc4c52d6a76724bf8d47664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация функций new, delete и операторов доступа (объявленных в DECLARE_NEW_DELETE_CLASS). <br /></td></tr>
+<tr class="separator:gad149802c3fc4c52d6a76724bf8d47664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0186d4c0267310686b74222962069569"><td class="memItemLeft" align="right" valign="top"><a id="ga0186d4c0267310686b74222962069569"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga0186d4c0267310686b74222962069569">IMP_PERSISTENT_NEW_DELETE_CLASS_EX</a>(Class)</td></tr>
+<tr class="memdesc:ga0186d4c0267310686b74222962069569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация операторов new и delete, обеспечивающая последовательное обращение к функциям выделения/освобождения памяти из разных потоков (объявленных в DECLARE_NEW_DELETE_CLASS_EX). <br /></td></tr>
+<tr class="separator:ga0186d4c0267310686b74222962069569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfa2f7a7aee5aaf204072a25da4dc703"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gabfa2f7a7aee5aaf204072a25da4dc703">IMP_PERSISTENT_CLASS_OPS</a>(AppID,  Class,  DLLFUNC)</td></tr>
+<tr class="memdesc:gabfa2f7a7aee5aaf204072a25da4dc703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация объявления DECLARE_PERSISTENT_CLASS_BASE.  <a href="group___base___tools___i_o.html#gabfa2f7a7aee5aaf204072a25da4dc703">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabfa2f7a7aee5aaf204072a25da4dc703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5948b858709bd33faa1208bec476ddf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga5948b858709bd33faa1208bec476ddf8">IMP_A_PERSISTENT_CLASS_OPS</a>(AppID,  Class,  DLLFUNC)</td></tr>
+<tr class="memdesc:ga5948b858709bd33faa1208bec476ddf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация объявления DECLARE_PERSISTENT_CLASS_BASE для абстрактного поточного класса.  <a href="group___base___tools___i_o.html#ga5948b858709bd33faa1208bec476ddf8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5948b858709bd33faa1208bec476ddf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e38dc991a80f7725e06f6f82edf00d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga9e38dc991a80f7725e06f6f82edf00d7">IMP_PERSISTENT_CLASS_NEW_DEL_OPS</a>(AppID,  Class,  DLLFUNC)</td></tr>
+<tr class="memdesc:ga9e38dc991a80f7725e06f6f82edf00d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация объявления DECLARE_PERSISTENT_CLASS_NEW_DEL_BASE.  <a href="group___base___tools___i_o.html#ga9e38dc991a80f7725e06f6f82edf00d7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9e38dc991a80f7725e06f6f82edf00d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8eedadfaa401e6ebd8d2fd90f5fc54f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad8eedadfaa401e6ebd8d2fd90f5fc54f">IMP_PERSISTENT_CLASS_FROM_BASE_NEW_DEL</a>(AppID,  Class,  Base)</td></tr>
+<tr class="memdesc:gad8eedadfaa401e6ebd8d2fd90f5fc54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аналог макроса IMP_PERSISTENT_CLASS_FROM_BASE с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="group___base___tools___i_o.html#gad8eedadfaa401e6ebd8d2fd90f5fc54f">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad8eedadfaa401e6ebd8d2fd90f5fc54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7d6e3f3f5ac0d9ab8aee5652c8258f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gac7d6e3f3f5ac0d9ab8aee5652c8258f0">IMP_PERSISTENT_CLASS_WD_NEW_DEL</a>(AppID,  Class)</td></tr>
+<tr class="memdesc:gac7d6e3f3f5ac0d9ab8aee5652c8258f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аналог макроса IMP_PERSISTENT_CLASS_WD с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="group___base___tools___i_o.html#gac7d6e3f3f5ac0d9ab8aee5652c8258f0">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac7d6e3f3f5ac0d9ab8aee5652c8258f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fc75446eced97c1fe81214d2addef29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga3fc75446eced97c1fe81214d2addef29">IMP_PERSISTENT_CLASS</a>(AppID,  Class)</td></tr>
+<tr class="memdesc:ga3fc75446eced97c1fe81214d2addef29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реализация объявления DECLARE_PERSISTENT_CLASS.  <a href="group___base___tools___i_o.html#ga3fc75446eced97c1fe81214d2addef29">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3fc75446eced97c1fe81214d2addef29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac59362cbe9042145a0379896b544d48c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gac59362cbe9042145a0379896b544d48c">IMP_PERSISTENT_CLASS_NEW_DEL</a>(AppID,  Class)</td></tr>
+<tr class="memdesc:gac59362cbe9042145a0379896b544d48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аналог макроса IMP_PERSISTENT_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="group___base___tools___i_o.html#gac59362cbe9042145a0379896b544d48c">Подробнее...</a><br /></td></tr>
+<tr class="separator:gac59362cbe9042145a0379896b544d48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a7f182d4bc30809847f37216ea89e16"><td class="memItemLeft" align="right" valign="top"><a id="ga3a7f182d4bc30809847f37216ea89e16"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga3a7f182d4bc30809847f37216ea89e16">IMP_PERSISTENT_RO_REGISTRATION</a>(AppID,  Class)</td></tr>
+<tr class="memdesc:ga3a7f182d4bc30809847f37216ea89e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструирование нового экземпляра класса для класса без записи. <br /></td></tr>
+<tr class="separator:ga3a7f182d4bc30809847f37216ea89e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ddbecc063b4017234b4ff0a1491dee1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga6ddbecc063b4017234b4ff0a1491dee1">IMP_PERSISTENT_RO_CLASS_NEW_DEL</a>(AppID,  Class)</td></tr>
+<tr class="memdesc:ga6ddbecc063b4017234b4ff0a1491dee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аналог макроса IMP_PERSISTENT_RO_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="group___base___tools___i_o.html#ga6ddbecc063b4017234b4ff0a1491dee1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6ddbecc063b4017234b4ff0a1491dee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d4a6bb1d2534a3e1e3dfe341815d66c"><td class="memItemLeft" align="right" valign="top"><a id="ga7d4a6bb1d2534a3e1e3dfe341815d66c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga7d4a6bb1d2534a3e1e3dfe341815d66c">IMP_PERSISTENT_CTOR</a>(Class)&#160;&#160;&#160;  Class::Class( <a class="el" href="group___base___tools___i_o.html#gaeaad0b37b9a0cee594270084f076a06c">TapeInit</a> ) {}</td></tr>
+<tr class="memdesc:ga7d4a6bb1d2534a3e1e3dfe341815d66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для потокового класса. <br /></td></tr>
+<tr class="separator:ga7d4a6bb1d2534a3e1e3dfe341815d66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2aba9f875b15bb1fac8d3e96a29690a2"><td class="memItemLeft" align="right" valign="top"><a id="ga2aba9f875b15bb1fac8d3e96a29690a2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga2aba9f875b15bb1fac8d3e96a29690a2">IMP_PERSISTENT_CTOR1</a>(Class,  Base)&#160;&#160;&#160;  Class::Class( <a class="el" href="group___base___tools___i_o.html#gaeaad0b37b9a0cee594270084f076a06c">TapeInit</a> ) : Base( <a class="el" href="group___base___tools___i_o.html#ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877">tapeInit</a> ) {}</td></tr>
+<tr class="memdesc:ga2aba9f875b15bb1fac8d3e96a29690a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для класса с одной потоковой базой. <br /></td></tr>
+<tr class="separator:ga2aba9f875b15bb1fac8d3e96a29690a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f0e861ac435575a8639d95ea0f0b6c2"><td class="memItemLeft" align="right" valign="top"><a id="ga7f0e861ac435575a8639d95ea0f0b6c2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga7f0e861ac435575a8639d95ea0f0b6c2">IMP_PERSISTENT_CTOR2</a>(Class,  Base1,  Base2)&#160;&#160;&#160;  Class::Class( <a class="el" href="group___base___tools___i_o.html#gaeaad0b37b9a0cee594270084f076a06c">TapeInit</a> ) : Base1( <a class="el" href="group___base___tools___i_o.html#ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877">tapeInit</a> ), Base2( <a class="el" href="group___base___tools___i_o.html#ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877">tapeInit</a> ) {}</td></tr>
+<tr class="memdesc:ga7f0e861ac435575a8639d95ea0f0b6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для класса с двумя потоковыми базами. <br /></td></tr>
+<tr class="separator:ga7f0e861ac435575a8639d95ea0f0b6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ed6bb8a09f381f67b1ca613d6fa6b13"><td class="memItemLeft" align="right" valign="top"><a id="ga5ed6bb8a09f381f67b1ca613d6fa6b13"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga5ed6bb8a09f381f67b1ca613d6fa6b13">DECLARE_PERSISTENT_OPS</a>(Class)</td></tr>
+<tr class="memdesc:ga5ed6bb8a09f381f67b1ca613d6fa6b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дружественные операторы чтения и записи указателей и ссылок. <br /></td></tr>
+<tr class="separator:ga5ed6bb8a09f381f67b1ca613d6fa6b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3c5a9c1cffa145c8026bbe4023ac87a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad3c5a9c1cffa145c8026bbe4023ac87a">DECLARE_PERSISTENT_CLASS</a>(Class)</td></tr>
+<tr class="memdesc:gad3c5a9c1cffa145c8026bbe4023ac87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление класса Class поточным.  <a href="group___base___tools___i_o.html#gad3c5a9c1cffa145c8026bbe4023ac87a">Подробнее...</a><br /></td></tr>
+<tr class="separator:gad3c5a9c1cffa145c8026bbe4023ac87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14b0d2a610e8b43e87264200c57794e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga14b0d2a610e8b43e87264200c57794e9">DECLARE_PERSISTENT_CLASS_NEW_DEL</a>(Class)</td></tr>
+<tr class="memdesc:ga14b0d2a610e8b43e87264200c57794e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аналог макроса DECLARE_PERSISTENT_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков.  <a href="group___base___tools___i_o.html#ga14b0d2a610e8b43e87264200c57794e9">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga14b0d2a610e8b43e87264200c57794e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:gafc7f6a8743a67feb4762f3f39a22fba4"><td class="memItemLeft" align="right" valign="top"><a id="gafc7f6a8743a67feb4762f3f39a22fba4"></a>
+typedef <a class="el" href="class_tape_base.html">TapeBase</a> *<a class="el" href="group___base___tools.html#gac222546936fb54161055741ce938ba80">CALL_DECLARATION</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gafc7f6a8743a67feb4762f3f39a22fba4">BUILD_FUNC</a>(<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>)</td></tr>
+<tr class="memdesc:gafc7f6a8743a67feb4762f3f39a22fba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон функции создания нового экземпляра. <br /></td></tr>
+<tr class="separator:gafc7f6a8743a67feb4762f3f39a22fba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga296faf9c195d7ae5686d36386a088c59"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *<a class="el" href="group___base___tools.html#gac222546936fb54161055741ce938ba80">CALL_DECLARATION</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga296faf9c195d7ae5686d36386a088c59">CAST_FUNC</a>(const <a class="el" href="class_tape_base.html">TapeBase</a> *)</td></tr>
+<tr class="memdesc:ga296faf9c195d7ae5686d36386a088c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон функции преобразования.  <a href="group___base___tools___i_o.html#ga296faf9c195d7ae5686d36386a088c59">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga296faf9c195d7ae5686d36386a088c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf30abb3bf8282afc7e7009fdd8d644e7"><td class="memItemLeft" align="right" valign="top">typedef void *typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>(<a class="el" href="group___base___tools.html#gac222546936fb54161055741ce938ba80">CALL_DECLARATION</a> *WRITE_FUNC) (<a class="el" href="classwriter.html">writer</a> &amp;out</td></tr>
+<tr class="memdesc:gaf30abb3bf8282afc7e7009fdd8d644e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон функции записи экземпляра.  <a href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf30abb3bf8282afc7e7009fdd8d644e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:gaa22cbb23d538ddc0fb150708c4ec17fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a> { <a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d">noRegistrable</a>
+, <a class="el" href="group___base___tools___i_o.html#ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f">registrable</a>
+ }</td></tr>
+<tr class="memdesc:gaa22cbb23d538ddc0fb150708c4ec17fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы регистрации объектов.  <a href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaa22cbb23d538ddc0fb150708c4ec17fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaad0b37b9a0cee594270084f076a06c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaeaad0b37b9a0cee594270084f076a06c">TapeInit</a> { <a class="el" href="group___base___tools___i_o.html#ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877">tapeInit</a>
+ }</td></tr>
+<tr class="memdesc:gaeaad0b37b9a0cee594270084f076a06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Типы инициализации объектов.  <a href="group___base___tools___i_o.html#gaeaad0b37b9a0cee594270084f076a06c">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaeaad0b37b9a0cee594270084f076a06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27650a4acc3aac8269b1a4294d8c138a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga27650a4acc3aac8269b1a4294d8c138a">ColorProcessing</a> : uint16 { <a class="el" href="group___base___tools___i_o.html#gga27650a4acc3aac8269b1a4294d8c138aaeb39272f1c9c45d3d355a30c8847012b">cr_Color</a>
+, <a class="el" href="group___base___tools___i_o.html#gga27650a4acc3aac8269b1a4294d8c138aaa3ab7b748fe370c4feda1c15354c88e8">cr_Visual</a>
+, <a class="el" href="group___base___tools___i_o.html#gga27650a4acc3aac8269b1a4294d8c138aa0581c7a5933989efc8f162d84588c8e0">cr_Both</a>
+ }</td></tr>
+<tr class="memdesc:ga27650a4acc3aac8269b1a4294d8c138a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы обработки атрибутов цвета.  <a href="group___base___tools___i_o.html#ga27650a4acc3aac8269b1a4294d8c138a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga27650a4acc3aac8269b1a4294d8c138a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga448a528a6d62651be78ae2558f76c227"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga448a528a6d62651be78ae2558f76c227">TapePointerType</a> { <br />
+&#160;&#160;<a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227aa23c30a45cad615f7ba32168fe21d3f1">tpt_Null</a> = 0x00
+, <a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227a35402a55ae527ed17c5517d81fda1186">tpt_Indexed16</a> = 0x01
+, <a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227a9c7ddd084140d917dfcd08215fd958a4">tpt_Object</a> = 0x02
+, <a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227aacd446df7952a2fac86d70fb004689b9">tpt_Indexed8</a> = 0x03
+, <br />
+&#160;&#160;<a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227ae945bfb99ba360c44ed3cb5ca264016d">tpt_Indexed32</a> = 0x04
+, <a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227adb9dd179424e82c8c55fa7573e3ac4ba">tpt_Indexed64</a> = 0x05
+, <a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227a00f47cc033a730bbfac3db18c18fa32b">tpt_DetachedObject</a> = 0x06
+, <a class="el" href="group___base___tools___i_o.html#gga448a528a6d62651be78ae2558f76c227ab0284a6004bdcaeb23f5131448fe4069">tpt_ObjectCatalog</a> = 0x07
+<br />
+ }</td></tr>
+<tr class="memdesc:ga448a528a6d62651be78ae2558f76c227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Способы записи указателей.  <a href="group___base___tools___i_o.html#ga448a528a6d62651be78ae2558f76c227">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga448a528a6d62651be78ae2558f76c227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0e56ac2ff90e1fc1c1ca75a65b89c21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaf0e56ac2ff90e1fc1c1ca75a65b89c21">c3d::MbeItemDataType</a> </td></tr>
+<tr class="memdesc:gaf0e56ac2ff90e1fc1c1ca75a65b89c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип пользовательских данных узла дерева модели.  <a href="group___base___tools___i_o.html#gaf0e56ac2ff90e1fc1c1ca75a65b89c21">Подробнее...</a><br /></td></tr>
+<tr class="separator:gaf0e56ac2ff90e1fc1c1ca75a65b89c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga40bf859c0976dfd327c6d328fd6687b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga40bf859c0976dfd327c6d328fd6687b7">IsEqualSArrayItems</a> (const <a class="el" href="class_cluster.html">Cluster</a> &amp;, const <a class="el" href="class_cluster.html">Cluster</a> &amp;)</td></tr>
+<tr class="separator:ga40bf859c0976dfd327c6d328fd6687b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2216ccc2218018302370aa1974b340d3"><td class="memItemLeft" align="right" valign="top"><a id="ga2216ccc2218018302370aa1974b340d3"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga2216ccc2218018302370aa1974b340d3">LenCOUNT</a> (<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version)</td></tr>
+<tr class="memdesc:ga2216ccc2218018302370aa1974b340d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина данных size_t в потоке. <br /></td></tr>
+<tr class="separator:ga2216ccc2218018302370aa1974b340d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7c054e95893031e339ed402ae791b42"><td class="memItemLeft" align="right" valign="top"><a id="gab7c054e95893031e339ed402ae791b42"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gab7c054e95893031e339ed402ae791b42">SizeOfFileSpace</a> (<a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, size_t cnt, bool calcFull)</td></tr>
+<tr class="memdesc:gab7c054e95893031e339ed402ae791b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер данных <a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a> в потоке указанной версии. <br /></td></tr>
+<tr class="separator:gab7c054e95893031e339ed402ae791b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb39516c5d5738b5c3cf5ea97d955a58"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gadb39516c5d5738b5c3cf5ea97d955a58">getMemLen</a> (const <a class="el" href="class_cluster.html">Cluster</a> &amp;c, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>)</td></tr>
+<tr class="memdesc:gadb39516c5d5738b5c3cf5ea97d955a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер данных кластера.  <a href="group___base___tools___i_o.html#gadb39516c5d5738b5c3cf5ea97d955a58">Подробнее...</a><br /></td></tr>
+<tr class="separator:gadb39516c5d5738b5c3cf5ea97d955a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eba4bbcf0576d91af1da4c33aaa21a7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga3eba4bbcf0576d91af1da4c33aaa21a7">getMemLen</a> (const <a class="el" href="class_file_space.html">FileSpace</a> &amp;s, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version)</td></tr>
+<tr class="memdesc:ga3eba4bbcf0576d91af1da4c33aaa21a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер данных файла.  <a href="group___base___tools___i_o.html#ga3eba4bbcf0576d91af1da4c33aaa21a7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga3eba4bbcf0576d91af1da4c33aaa21a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2097d0396bb6f150ca6259b2bc93cd3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga2097d0396bb6f150ca6259b2bc93cd3e">IsGoodFile</a> (const <a class="el" href="class_file_space.html">FileSpace</a> &amp;file, const <a class="el" href="classiobuf___seq.html">iobuf_Seq</a> &amp;owner)</td></tr>
+<tr class="memdesc:ga2097d0396bb6f150ca6259b2bc93cd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить массив кластеров файла.  <a href="group___base___tools___i_o.html#ga2097d0396bb6f150ca6259b2bc93cd3e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2097d0396bb6f150ca6259b2bc93cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga730f994b723b6403f1cec1ae7d0843b2"><td class="memItemLeft" align="right" valign="top"><a id="ga730f994b723b6403f1cec1ae7d0843b2"></a>
+<a class="el" href="classiobuf.html">iobuf</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga730f994b723b6403f1cec1ae7d0843b2">createiobuf</a> (const TCHAR *fileName)</td></tr>
+<tr class="memdesc:ga730f994b723b6403f1cec1ae7d0843b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать буфер с диска. <br /></td></tr>
+<tr class="separator:ga730f994b723b6403f1cec1ae7d0843b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b831dbce105b2bffd2e18e24da7c449"><td class="memItemLeft" align="right" valign="top"><a id="ga5b831dbce105b2bffd2e18e24da7c449"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga5b831dbce105b2bffd2e18e24da7c449">writeiobuftodisk</a> (const TCHAR *fileName, <a class="el" href="classmembuf.html">membuf</a> &amp;buf)</td></tr>
+<tr class="memdesc:ga5b831dbce105b2bffd2e18e24da7c449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать буфер на диск. <br /></td></tr>
+<tr class="separator:ga5b831dbce105b2bffd2e18e24da7c449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaebff158d4504b7bdcd8278bcf12864a"><td class="memTemplParams" colspan="2"><a id="gaaebff158d4504b7bdcd8278bcf12864a"></a>
+template&lt;class Base &gt; </td></tr>
+<tr class="memitem:gaaebff158d4504b7bdcd8278bcf12864a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaaebff158d4504b7bdcd8278bcf12864a">ReadBase</a> (<a class="el" href="classreader.html">reader</a> &amp;in, Base *base)</td></tr>
+<tr class="memdesc:gaaebff158d4504b7bdcd8278bcf12864a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция чтения базового класса. <br /></td></tr>
+<tr class="separator:gaaebff158d4504b7bdcd8278bcf12864a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad90ea5e05d9bce0857bc9bdb1a8ca059"><td class="memTemplParams" colspan="2"><a id="gad90ea5e05d9bce0857bc9bdb1a8ca059"></a>
+template&lt;class Base &gt; </td></tr>
+<tr class="memitem:gad90ea5e05d9bce0857bc9bdb1a8ca059"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad90ea5e05d9bce0857bc9bdb1a8ca059">WriteBase</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, const Base *base)</td></tr>
+<tr class="memdesc:gad90ea5e05d9bce0857bc9bdb1a8ca059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция записи базового класса. <br /></td></tr>
+<tr class="separator:gad90ea5e05d9bce0857bc9bdb1a8ca059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga789e59eb07487f308499f673c758a631"><td class="memTemplParams" colspan="2"><a id="ga789e59eb07487f308499f673c758a631"></a>
+template&lt;class Base &gt; </td></tr>
+<tr class="memitem:ga789e59eb07487f308499f673c758a631"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga789e59eb07487f308499f673c758a631">ReadVBase</a> (<a class="el" href="classreader.html">reader</a> &amp;in, Base *base)</td></tr>
+<tr class="memdesc:ga789e59eb07487f308499f673c758a631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция чтения виртуального базового класса. <br /></td></tr>
+<tr class="separator:ga789e59eb07487f308499f673c758a631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga842eb94320b5157c5ca44ebb6723c803"><td class="memTemplParams" colspan="2"><a id="ga842eb94320b5157c5ca44ebb6723c803"></a>
+template&lt;class Base &gt; </td></tr>
+<tr class="memitem:ga842eb94320b5157c5ca44ebb6723c803"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga842eb94320b5157c5ca44ebb6723c803">WriteVBase</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, const Base *base)</td></tr>
+<tr class="memdesc:ga842eb94320b5157c5ca44ebb6723c803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция записи виртуального базового класса. <br /></td></tr>
+<tr class="separator:ga842eb94320b5157c5ca44ebb6723c803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7713c9ab998aeaa7b3ff2f6d6787111"><td class="memItemLeft" align="right" valign="top"><a id="gaf7713c9ab998aeaa7b3ff2f6d6787111"></a>
+uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaf7713c9ab998aeaa7b3ff2f6d6787111">hash</a> (const char *name)</td></tr>
+<tr class="memdesc:gaf7713c9ab998aeaa7b3ff2f6d6787111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Упаковать строку(имя класса) в uint16. <br /></td></tr>
+<tr class="separator:gaf7713c9ab998aeaa7b3ff2f6d6787111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6c62bfc740ab54dfa7b42e2382ad8ed"><td class="memItemLeft" align="right" valign="top"><a id="gaa6c62bfc740ab54dfa7b42e2382ad8ed"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaa6c62bfc740ab54dfa7b42e2382ad8ed">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, bool i)</td></tr>
+<tr class="memdesc:gaa6c62bfc740ab54dfa7b42e2382ad8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись bool в поток. <br /></td></tr>
+<tr class="separator:gaa6c62bfc740ab54dfa7b42e2382ad8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7f0629d0ba725d6a689485f93a49a7a"><td class="memItemLeft" align="right" valign="top"><a id="gab7f0629d0ba725d6a689485f93a49a7a"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gab7f0629d0ba725d6a689485f93a49a7a">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, bool &amp;i)</td></tr>
+<tr class="memdesc:gab7f0629d0ba725d6a689485f93a49a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение bool в поток. <br /></td></tr>
+<tr class="separator:gab7f0629d0ba725d6a689485f93a49a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91dc11c31e24704c26c0afd42cac8d2d"><td class="memItemLeft" align="right" valign="top"><a id="ga91dc11c31e24704c26c0afd42cac8d2d"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga91dc11c31e24704c26c0afd42cac8d2d">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, signed int i)</td></tr>
+<tr class="memdesc:ga91dc11c31e24704c26c0afd42cac8d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись signed int в поток. <br /></td></tr>
+<tr class="separator:ga91dc11c31e24704c26c0afd42cac8d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cef7690113f7a22c5b692ddaecf4720"><td class="memItemLeft" align="right" valign="top"><a id="ga7cef7690113f7a22c5b692ddaecf4720"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga7cef7690113f7a22c5b692ddaecf4720">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, unsigned int i)</td></tr>
+<tr class="memdesc:ga7cef7690113f7a22c5b692ddaecf4720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись unsigned int в поток. <br /></td></tr>
+<tr class="separator:ga7cef7690113f7a22c5b692ddaecf4720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99915d795041ff8a89102b411b2f8db9"><td class="memItemLeft" align="right" valign="top"><a id="ga99915d795041ff8a89102b411b2f8db9"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga99915d795041ff8a89102b411b2f8db9">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, signed int &amp;i)</td></tr>
+<tr class="memdesc:ga99915d795041ff8a89102b411b2f8db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение signed int в поток. <br /></td></tr>
+<tr class="separator:ga99915d795041ff8a89102b411b2f8db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b49bb1c6f013d4efa9e696931381780"><td class="memItemLeft" align="right" valign="top"><a id="ga4b49bb1c6f013d4efa9e696931381780"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga4b49bb1c6f013d4efa9e696931381780">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, unsigned int &amp;i)</td></tr>
+<tr class="memdesc:ga4b49bb1c6f013d4efa9e696931381780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение unsigned int в поток. <br /></td></tr>
+<tr class="separator:ga4b49bb1c6f013d4efa9e696931381780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb3fd56182b2e6e4e62ba45fac67f152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gacb3fd56182b2e6e4e62ba45fac67f152">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, int64 val)</td></tr>
+<tr class="memdesc:gacb3fd56182b2e6e4e62ba45fac67f152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись int32 в поток.  <a href="group___base___tools___i_o.html#gacb3fd56182b2e6e4e62ba45fac67f152">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacb3fd56182b2e6e4e62ba45fac67f152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacca0f7daa42b33a256ba4df39d603fe0"><td class="memItemLeft" align="right" valign="top"><a id="gacca0f7daa42b33a256ba4df39d603fe0"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gacca0f7daa42b33a256ba4df39d603fe0">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, int64 &amp;val)</td></tr>
+<tr class="memdesc:gacca0f7daa42b33a256ba4df39d603fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение int64 в поток. <br /></td></tr>
+<tr class="separator:gacca0f7daa42b33a256ba4df39d603fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6bd7a5e51d503d42f2fd68e9e600f6d4"><td class="memItemLeft" align="right" valign="top"><a id="ga6bd7a5e51d503d42f2fd68e9e600f6d4"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga6bd7a5e51d503d42f2fd68e9e600f6d4">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, signed char &amp;ch)</td></tr>
+<tr class="memdesc:ga6bd7a5e51d503d42f2fd68e9e600f6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение signed char в поток. <br /></td></tr>
+<tr class="separator:ga6bd7a5e51d503d42f2fd68e9e600f6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfe23a44ad9155956ebb2e6161d2917f"><td class="memItemLeft" align="right" valign="top"><a id="gadfe23a44ad9155956ebb2e6161d2917f"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gadfe23a44ad9155956ebb2e6161d2917f">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, unsigned char &amp;ch)</td></tr>
+<tr class="memdesc:gadfe23a44ad9155956ebb2e6161d2917f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение unsigned char в поток. <br /></td></tr>
+<tr class="separator:gadfe23a44ad9155956ebb2e6161d2917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e0ef3e6e0357973f6bc163ff84dfb3d"><td class="memItemLeft" align="right" valign="top"><a id="ga0e0ef3e6e0357973f6bc163ff84dfb3d"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga0e0ef3e6e0357973f6bc163ff84dfb3d">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, char &amp;ch)</td></tr>
+<tr class="memdesc:ga0e0ef3e6e0357973f6bc163ff84dfb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение char в поток. <br /></td></tr>
+<tr class="separator:ga0e0ef3e6e0357973f6bc163ff84dfb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7380c92750c1ff21a739a61d244dbe9"><td class="memItemLeft" align="right" valign="top"><a id="gae7380c92750c1ff21a739a61d244dbe9"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gae7380c92750c1ff21a739a61d244dbe9">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, signed short &amp;sh)</td></tr>
+<tr class="memdesc:gae7380c92750c1ff21a739a61d244dbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение signed short в поток. <br /></td></tr>
+<tr class="separator:gae7380c92750c1ff21a739a61d244dbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccfd99f5973e27db29d1cf68e069556b"><td class="memItemLeft" align="right" valign="top"><a id="gaccfd99f5973e27db29d1cf68e069556b"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaccfd99f5973e27db29d1cf68e069556b">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, unsigned short &amp;sh)</td></tr>
+<tr class="memdesc:gaccfd99f5973e27db29d1cf68e069556b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение unsigned short в поток. <br /></td></tr>
+<tr class="separator:gaccfd99f5973e27db29d1cf68e069556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c64700d397f721ea4101b664a7c9baf"><td class="memItemLeft" align="right" valign="top"><a id="ga0c64700d397f721ea4101b664a7c9baf"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga0c64700d397f721ea4101b664a7c9baf">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, wchar_t &amp;sh)</td></tr>
+<tr class="memdesc:ga0c64700d397f721ea4101b664a7c9baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение wchar_t в поток. <br /></td></tr>
+<tr class="separator:ga0c64700d397f721ea4101b664a7c9baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga016f96cd3636de22eb06c50badaa44c9"><td class="memItemLeft" align="right" valign="top"><a id="ga016f96cd3636de22eb06c50badaa44c9"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga016f96cd3636de22eb06c50badaa44c9">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, float &amp;f)</td></tr>
+<tr class="memdesc:ga016f96cd3636de22eb06c50badaa44c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение float в поток. <br /></td></tr>
+<tr class="separator:ga016f96cd3636de22eb06c50badaa44c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecdc2b8e0fbbed3f1c131e8a46f181a7"><td class="memItemLeft" align="right" valign="top"><a id="gaecdc2b8e0fbbed3f1c131e8a46f181a7"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaecdc2b8e0fbbed3f1c131e8a46f181a7">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, double &amp;d)</td></tr>
+<tr class="memdesc:gaecdc2b8e0fbbed3f1c131e8a46f181a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение double в поток. <br /></td></tr>
+<tr class="separator:gaecdc2b8e0fbbed3f1c131e8a46f181a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadda30c34b0e5af80a432ef3a3d3a239b"><td class="memItemLeft" align="right" valign="top"><a id="gadda30c34b0e5af80a432ef3a3d3a239b"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gadda30c34b0e5af80a432ef3a3d3a239b">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, long double &amp;l)</td></tr>
+<tr class="memdesc:gadda30c34b0e5af80a432ef3a3d3a239b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение long double из потока. <br /></td></tr>
+<tr class="separator:gadda30c34b0e5af80a432ef3a3d3a239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga318d801b5036cbc7041129d2943ded39"><td class="memTemplParams" colspan="2"><a id="ga318d801b5036cbc7041129d2943ded39"></a>
+template&lt;class _Class &gt; </td></tr>
+<tr class="memitem:ga318d801b5036cbc7041129d2943ded39"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga318d801b5036cbc7041129d2943ded39">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, <a class="el" href="class_s_ptr.html">SPtr</a>&lt; _Class &gt; &amp;sPtr)</td></tr>
+<tr class="memdesc:ga318d801b5036cbc7041129d2943ded39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение smart-указателя из потока. <br /></td></tr>
+<tr class="separator:ga318d801b5036cbc7041129d2943ded39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d60b0612663dd3a308061fa7cfb22ac"><td class="memTemplParams" colspan="2"><a id="ga0d60b0612663dd3a308061fa7cfb22ac"></a>
+template&lt;class _Class &gt; </td></tr>
+<tr class="memitem:ga0d60b0612663dd3a308061fa7cfb22ac"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga0d60b0612663dd3a308061fa7cfb22ac">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, const <a class="el" href="class_s_ptr.html">SPtr</a>&lt; _Class &gt; &amp;sPtr)</td></tr>
+<tr class="memdesc:ga0d60b0612663dd3a308061fa7cfb22ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись smart-указателя в поток. <br /></td></tr>
+<tr class="separator:ga0d60b0612663dd3a308061fa7cfb22ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38dd6e67ca4b29a6b2c068274acbe2c8"><td class="memItemLeft" align="right" valign="top"><a id="ga38dd6e67ca4b29a6b2c068274acbe2c8"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga38dd6e67ca4b29a6b2c068274acbe2c8">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, signed char ch)</td></tr>
+<tr class="memdesc:ga38dd6e67ca4b29a6b2c068274acbe2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись signed char в поток. <br /></td></tr>
+<tr class="separator:ga38dd6e67ca4b29a6b2c068274acbe2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c1dc51858b4e29bc832dc2fcf923c5a"><td class="memItemLeft" align="right" valign="top"><a id="ga3c1dc51858b4e29bc832dc2fcf923c5a"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga3c1dc51858b4e29bc832dc2fcf923c5a">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, unsigned char ch)</td></tr>
+<tr class="memdesc:ga3c1dc51858b4e29bc832dc2fcf923c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись unsigned char в поток. <br /></td></tr>
+<tr class="separator:ga3c1dc51858b4e29bc832dc2fcf923c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab824752314f243e3003b79820b4a54bf"><td class="memItemLeft" align="right" valign="top"><a id="gab824752314f243e3003b79820b4a54bf"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gab824752314f243e3003b79820b4a54bf">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, char ch)</td></tr>
+<tr class="memdesc:gab824752314f243e3003b79820b4a54bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись char в поток. <br /></td></tr>
+<tr class="separator:gab824752314f243e3003b79820b4a54bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6d5f933eba63d1b072218878ec1bb7f"><td class="memItemLeft" align="right" valign="top"><a id="gaa6d5f933eba63d1b072218878ec1bb7f"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaa6d5f933eba63d1b072218878ec1bb7f">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, signed short sh)</td></tr>
+<tr class="memdesc:gaa6d5f933eba63d1b072218878ec1bb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись signed short в поток. <br /></td></tr>
+<tr class="separator:gaa6d5f933eba63d1b072218878ec1bb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbe2f27dcc8371c96f387d445ad7408b"><td class="memItemLeft" align="right" valign="top"><a id="gacbe2f27dcc8371c96f387d445ad7408b"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gacbe2f27dcc8371c96f387d445ad7408b">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, unsigned short sh)</td></tr>
+<tr class="memdesc:gacbe2f27dcc8371c96f387d445ad7408b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись unsigned short в поток. <br /></td></tr>
+<tr class="separator:gacbe2f27dcc8371c96f387d445ad7408b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace6cddfdc801f67a94d8f1069ee69308"><td class="memItemLeft" align="right" valign="top"><a id="gace6cddfdc801f67a94d8f1069ee69308"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gace6cddfdc801f67a94d8f1069ee69308">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, wchar_t sh)</td></tr>
+<tr class="memdesc:gace6cddfdc801f67a94d8f1069ee69308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись wchar_t в поток. <br /></td></tr>
+<tr class="separator:gace6cddfdc801f67a94d8f1069ee69308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b8f88c69bc1fe7b266304cd321afd9b"><td class="memItemLeft" align="right" valign="top"><a id="ga2b8f88c69bc1fe7b266304cd321afd9b"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga2b8f88c69bc1fe7b266304cd321afd9b">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, float f)</td></tr>
+<tr class="memdesc:ga2b8f88c69bc1fe7b266304cd321afd9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись float в поток. <br /></td></tr>
+<tr class="separator:ga2b8f88c69bc1fe7b266304cd321afd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga852229474c8936e9cee1d8c2cd61b131"><td class="memItemLeft" align="right" valign="top"><a id="ga852229474c8936e9cee1d8c2cd61b131"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga852229474c8936e9cee1d8c2cd61b131">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, const double &amp;d)</td></tr>
+<tr class="memdesc:ga852229474c8936e9cee1d8c2cd61b131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись double в поток. <br /></td></tr>
+<tr class="separator:ga852229474c8936e9cee1d8c2cd61b131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4db796835aa54273418ddd98b0ba16a0"><td class="memItemLeft" align="right" valign="top"><a id="ga4db796835aa54273418ddd98b0ba16a0"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga4db796835aa54273418ddd98b0ba16a0">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, const long double &amp;l)</td></tr>
+<tr class="memdesc:ga4db796835aa54273418ddd98b0ba16a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись long double в поток. <br /></td></tr>
+<tr class="separator:ga4db796835aa54273418ddd98b0ba16a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad275f83308ebf397525a77a32fde49fe"><td class="memItemLeft" align="right" valign="top"><a id="gad275f83308ebf397525a77a32fde49fe"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad275f83308ebf397525a77a32fde49fe">WriteTCHAR</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, const TCHAR *ts, bool directSingleByte=false)</td></tr>
+<tr class="memdesc:gad275f83308ebf397525a77a32fde49fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать TCHAR строку в поток. <br /></td></tr>
+<tr class="separator:gad275f83308ebf397525a77a32fde49fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad91b39aa2176584477fdb916f5ba55a7"><td class="memItemLeft" align="right" valign="top"><a id="gad91b39aa2176584477fdb916f5ba55a7"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad91b39aa2176584477fdb916f5ba55a7">ReadTCHAR</a> (<a class="el" href="classreader.html">reader</a> &amp;in, TCHAR *&amp;ts, bool directSingleByte=false)</td></tr>
+<tr class="memdesc:gad91b39aa2176584477fdb916f5ba55a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать TCHAR строку из потока. <br /></td></tr>
+<tr class="separator:gad91b39aa2176584477fdb916f5ba55a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga624ba7e4680e1230d94c19544b412527"><td class="memItemLeft" align="right" valign="top"><a id="ga624ba7e4680e1230d94c19544b412527"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga624ba7e4680e1230d94c19544b412527">WriteWcharT</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, const wchar_t *ts)</td></tr>
+<tr class="memdesc:ga624ba7e4680e1230d94c19544b412527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать wchar_t строку в поток. <br /></td></tr>
+<tr class="separator:ga624ba7e4680e1230d94c19544b412527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e1091bab0b476997cf7af53f602eeab"><td class="memItemLeft" align="right" valign="top"><a id="ga1e1091bab0b476997cf7af53f602eeab"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga1e1091bab0b476997cf7af53f602eeab">ReadWcharT</a> (<a class="el" href="classreader.html">reader</a> &amp;in, wchar_t *&amp;ts)</td></tr>
+<tr class="memdesc:ga1e1091bab0b476997cf7af53f602eeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать TCHAR строку из потока. <br /></td></tr>
+<tr class="separator:ga1e1091bab0b476997cf7af53f602eeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga520b9efeba836743e6685bd7aaee7ced"><td class="memItemLeft" align="right" valign="top"><a id="ga520b9efeba836743e6685bd7aaee7ced"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga520b9efeba836743e6685bd7aaee7ced">WriteCOUNT</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, size_t count)</td></tr>
+<tr class="memdesc:ga520b9efeba836743e6685bd7aaee7ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись size_t в зависимости от версии потока. <br /></td></tr>
+<tr class="separator:ga520b9efeba836743e6685bd7aaee7ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga935a569569fd27cc2bb3a88d718afe50"><td class="memItemLeft" align="right" valign="top"><a id="ga935a569569fd27cc2bb3a88d718afe50"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga935a569569fd27cc2bb3a88d718afe50">WriteINT_T</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, ptrdiff_t count)</td></tr>
+<tr class="memdesc:ga935a569569fd27cc2bb3a88d718afe50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись ptrdiff_t в зависимости от версии потока. <br /></td></tr>
+<tr class="separator:ga935a569569fd27cc2bb3a88d718afe50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87fa3464f03369ce13f46e6f09a4c72f"><td class="memItemLeft" align="right" valign="top"><a id="ga87fa3464f03369ce13f46e6f09a4c72f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga87fa3464f03369ce13f46e6f09a4c72f">ReadCOUNT</a> (<a class="el" href="classreader.html">reader</a> &amp;in, bool uint_val=true)</td></tr>
+<tr class="memdesc:ga87fa3464f03369ce13f46e6f09a4c72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение size_t в зависимости от версии потока. <br /></td></tr>
+<tr class="separator:ga87fa3464f03369ce13f46e6f09a4c72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6367b4b42ebff26511b6d702f2a9239d"><td class="memItemLeft" align="right" valign="top"><a id="ga6367b4b42ebff26511b6d702f2a9239d"></a>
+ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga6367b4b42ebff26511b6d702f2a9239d">ReadINT_T</a> (<a class="el" href="classreader.html">reader</a> &amp;in, bool uint_val=true)</td></tr>
+<tr class="memdesc:ga6367b4b42ebff26511b6d702f2a9239d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение ptrdiff_t в зависимости от версии потока. <br /></td></tr>
+<tr class="separator:ga6367b4b42ebff26511b6d702f2a9239d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd6575eaffb29c6e7aff72f8bd94f848"><td class="memItemLeft" align="right" valign="top"><a id="gacd6575eaffb29c6e7aff72f8bd94f848"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gacd6575eaffb29c6e7aff72f8bd94f848">WriteCOUNT</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *out, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, size_t count)</td></tr>
+<tr class="memdesc:gacd6575eaffb29c6e7aff72f8bd94f848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись size_t в память в зависимости от версии потока. <br /></td></tr>
+<tr class="separator:gacd6575eaffb29c6e7aff72f8bd94f848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18e2271106c4377ff1f103fa1a068dee"><td class="memItemLeft" align="right" valign="top"><a id="ga18e2271106c4377ff1f103fa1a068dee"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga18e2271106c4377ff1f103fa1a068dee">WriteCOUNT</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *out, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, ptrdiff_t count)</td></tr>
+<tr class="memdesc:ga18e2271106c4377ff1f103fa1a068dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись ptrdiff_t в память в зависимости от версии потока. <br /></td></tr>
+<tr class="separator:ga18e2271106c4377ff1f103fa1a068dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad25a82129830cd27bb1cafce674cb5b8"><td class="memItemLeft" align="right" valign="top"><a id="gad25a82129830cd27bb1cafce674cb5b8"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad25a82129830cd27bb1cafce674cb5b8">ReadCOUNT</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *in, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version)</td></tr>
+<tr class="memdesc:gad25a82129830cd27bb1cafce674cb5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение size_t в память в зависимости от версии потока. <br /></td></tr>
+<tr class="separator:gad25a82129830cd27bb1cafce674cb5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0f394fe3360d9e227911f7820471986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class_descriptor.html">ClassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gae0f394fe3360d9e227911f7820471986">GetPackedClassName</a> (const <a class="el" href="class_class_descriptor.html">ClassDescriptor</a> &amp;classDescr, const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;ver)</td></tr>
+<tr class="memdesc:gae0f394fe3360d9e227911f7820471986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить упакованное имя класса по значению хэша записанному в поток.  <a href="group___base___tools___i_o.html#gae0f394fe3360d9e227911f7820471986">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae0f394fe3360d9e227911f7820471986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc2df9adea642c495dfcff720055e492"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gabc2df9adea642c495dfcff720055e492">AddPackedClassNameForVersion</a> (const <a class="el" href="class_class_descriptor.html">ClassDescriptor</a> &amp;newClassName, const <a class="el" href="class_class_descriptor.html">ClassDescriptor</a> &amp;oldClassName, uint appIndex, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> lowVersion, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> highVersion)</td></tr>
+<tr class="memdesc:gabc2df9adea642c495dfcff720055e492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить новое соответствие значения хэша записанного в поток упакованному имени класса.  <a href="group___base___tools___i_o.html#gabc2df9adea642c495dfcff720055e492">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabc2df9adea642c495dfcff720055e492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa5e119a3c7d4297de6841d63cbbd9a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gafa5e119a3c7d4297de6841d63cbbd9a2">IsValidStreamClassName</a> (const char *className, const <a class="el" href="struct_mb_uuid.html">MbUuid</a> &amp;appID)</td></tr>
+<tr class="memdesc:gafa5e119a3c7d4297de6841d63cbbd9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диагностика коллизий имени нового класса с зарегистрированными классами.  <a href="group___base___tools___i_o.html#gafa5e119a3c7d4297de6841d63cbbd9a2">Подробнее...</a><br /></td></tr>
+<tr class="separator:gafa5e119a3c7d4297de6841d63cbbd9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c7477df5d585e977ace410423cfc850"><td class="memItemLeft" align="right" valign="top"><a id="ga0c7477df5d585e977ace410423cfc850"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga0c7477df5d585e977ace410423cfc850">WriteSimpleName</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, const <a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a> &amp;s)</td></tr>
+<tr class="memdesc:ga0c7477df5d585e977ace410423cfc850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись простого имени. <br /></td></tr>
+<tr class="separator:ga0c7477df5d585e977ace410423cfc850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ed146873c1a33405c2f02367d96c81f"><td class="memItemLeft" align="right" valign="top"><a id="ga4ed146873c1a33405c2f02367d96c81f"></a>
+<a class="el" href="group___base___tools.html#ga602a7f1e190ed81f380a8870f2c08289">SimpleName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga4ed146873c1a33405c2f02367d96c81f">ReadSimpleName</a> (<a class="el" href="classreader.html">reader</a> &amp;in)</td></tr>
+<tr class="memdesc:ga4ed146873c1a33405c2f02367d96c81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение простого имени. <br /></td></tr>
+<tr class="separator:ga4ed146873c1a33405c2f02367d96c81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fdd396137ad91a8e6747c0ce8aaefef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga6fdd396137ad91a8e6747c0ce8aaefef">c3d::operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;out, const <a class="el" href="classc3d_1_1_str_hash.html">StrHash</a> &amp;strHash)</td></tr>
+<tr class="memdesc:ga6fdd396137ad91a8e6747c0ce8aaefef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор записи хэша.  <a href="group___base___tools___i_o.html#ga6fdd396137ad91a8e6747c0ce8aaefef">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga6fdd396137ad91a8e6747c0ce8aaefef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga752df469f6a01f84247c352bf61ffdd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga752df469f6a01f84247c352bf61ffdd2">c3d::operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;in, <a class="el" href="classc3d_1_1_str_hash.html">c3d::StrHash</a> &amp;strHash)</td></tr>
+<tr class="memdesc:ga752df469f6a01f84247c352bf61ffdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор чтения хэша.  <a href="group___base___tools___i_o.html#ga752df469f6a01f84247c352bf61ffdd2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga752df469f6a01f84247c352bf61ffdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad45dac144286d67e346d3a931b8a5f48"><td class="memItemLeft" align="right" valign="top"><a id="gad45dac144286d67e346d3a931b8a5f48"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gad45dac144286d67e346d3a931b8a5f48">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, const std::string &amp;s)</td></tr>
+<tr class="memdesc:gad45dac144286d67e346d3a931b8a5f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись строки в поток. <br /></td></tr>
+<tr class="separator:gad45dac144286d67e346d3a931b8a5f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01aba92be2ddb8810b59d623d16e053a"><td class="memItemLeft" align="right" valign="top"><a id="ga01aba92be2ddb8810b59d623d16e053a"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga01aba92be2ddb8810b59d623d16e053a">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, std::string &amp;s)</td></tr>
+<tr class="memdesc:ga01aba92be2ddb8810b59d623d16e053a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение строки из потока. <br /></td></tr>
+<tr class="separator:ga01aba92be2ddb8810b59d623d16e053a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7275fbd251e7b518511e7ace948db43b"><td class="memItemLeft" align="right" valign="top"><a id="ga7275fbd251e7b518511e7ace948db43b"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga7275fbd251e7b518511e7ace948db43b">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, const std::wstring &amp;s)</td></tr>
+<tr class="memdesc:ga7275fbd251e7b518511e7ace948db43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись строки в поток. <br /></td></tr>
+<tr class="separator:ga7275fbd251e7b518511e7ace948db43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdce496253cf656b490b31ca131f14f9"><td class="memItemLeft" align="right" valign="top"><a id="gabdce496253cf656b490b31ca131f14f9"></a>
+<a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gabdce496253cf656b490b31ca131f14f9">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;ps, std::wstring &amp;s)</td></tr>
+<tr class="memdesc:gabdce496253cf656b490b31ca131f14f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение строки из потока. <br /></td></tr>
+<tr class="separator:gabdce496253cf656b490b31ca131f14f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4aed5d631ee98cec837525de89dc1fef"><td class="memItemLeft" align="right" valign="top"><a id="ga4aed5d631ee98cec837525de89dc1fef"></a>
+<a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga4aed5d631ee98cec837525de89dc1fef">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;ps, const std::wstring *s)</td></tr>
+<tr class="memdesc:ga4aed5d631ee98cec837525de89dc1fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись строки в поток. <br /></td></tr>
+<tr class="separator:ga4aed5d631ee98cec837525de89dc1fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd7858a0c5c696eae7a1d5972876c367"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gacd7858a0c5c696eae7a1d5972876c367">ReadCluster</a> (<a class="el" href="classreader.html">reader</a> &amp;in, uint16 clusterSize, <a class="el" href="class_cluster.html">Cluster</a> &amp;cl)</td></tr>
+<tr class="memdesc:gacd7858a0c5c696eae7a1d5972876c367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать кластер.  <a href="group___base___tools___i_o.html#gacd7858a0c5c696eae7a1d5972876c367">Подробнее...</a><br /></td></tr>
+<tr class="separator:gacd7858a0c5c696eae7a1d5972876c367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacfce50bb90b007982891f8675b53235"><td class="memItemLeft" align="right" valign="top"><a id="gaacfce50bb90b007982891f8675b53235"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gaacfce50bb90b007982891f8675b53235">WriteClusterInfo</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *out, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, const <a class="el" href="class_cluster.html">Cluster</a> &amp;obj)</td></tr>
+<tr class="memdesc:gaacfce50bb90b007982891f8675b53235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать информацию о кластере. <br /></td></tr>
+<tr class="separator:gaacfce50bb90b007982891f8675b53235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7866533a5f0b31725eadcb732ef4cfbe"><td class="memItemLeft" align="right" valign="top"><a id="ga7866533a5f0b31725eadcb732ef4cfbe"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga7866533a5f0b31725eadcb732ef4cfbe">ReadClusterInfo</a> (<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> *in, <a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a> version, <a class="el" href="class_cluster.html">Cluster</a> &amp;obj)</td></tr>
+<tr class="memdesc:ga7866533a5f0b31725eadcb732ef4cfbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прочитать информацию о кластере. <br /></td></tr>
+<tr class="separator:ga7866533a5f0b31725eadcb732ef4cfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcc208151c3213904534d6d77f20cb9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#gabcc208151c3213904534d6d77f20cb9e">operator&gt;&gt;</a> (<a class="el" href="classreader.html">reader</a> &amp;, <a class="el" href="class_version_container.html">VersionContainer</a> &amp;)</td></tr>
+<tr class="memdesc:gabcc208151c3213904534d6d77f20cb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор чтения контейнера версий.  <a href="group___base___tools___i_o.html#gabcc208151c3213904534d6d77f20cb9e">Подробнее...</a><br /></td></tr>
+<tr class="separator:gabcc208151c3213904534d6d77f20cb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5178bcf02f03e817ae12bddd0dd8ea81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___base___tools___i_o.html#ga5178bcf02f03e817ae12bddd0dd8ea81">operator&lt;&lt;</a> (<a class="el" href="classwriter.html">writer</a> &amp;, const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;)</td></tr>
+<tr class="memdesc:ga5178bcf02f03e817ae12bddd0dd8ea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор записи контейнера версий.  <a href="group___base___tools___i_o.html#ga5178bcf02f03e817ae12bddd0dd8ea81">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5178bcf02f03e817ae12bddd0dd8ea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Макросы</h2>
+<a id="ga722ded92dd0ebaf524ad9aeb7507e0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga722ded92dd0ebaf524ad9aeb7507e0cb">&#9670;&nbsp;</a></span>__OVERLOAD_MEMORY_ALLOCATE_FREE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __OVERLOAD_MEMORY_ALLOCATE_FREE_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переменная включает перегрузку операторов new/delete, обеспечивающую последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+<p>Переменная включает перегрузку операторов new/delete, обеспечивающую последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+
+</div>
+</div>
+<a id="ga8b5485786a41355e6ba88b0654b60ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b5485786a41355e6ba88b0654b60ccf">&#9670;&nbsp;</a></span>IMP_PERSISTENT_REGISTRATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_REGISTRATION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="class_tape_base.html">TapeBase</a> * <a class="code" href="group___base___tools.html#gac222546936fb54161055741ce938ba80">CALL_DECLARATION</a> make ## _ ## Class () {                   \</div>
+<div class="line">    return <span class="keyword">new</span> Class(<a class="code" href="group___base___tools___i_o.html#ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877">tapeInit</a>);                                         \</div>
+<div class="line">  }                                                                     \</div>
+<div class="line">  void * <a class="code" href="group___base___tools.html#gac222546936fb54161055741ce938ba80">CALL_DECLARATION</a> cast ## _ ## Class ( <span class="keyword">const</span> <a class="code" href="class_tape_base.html">TapeBase</a> * obj ) { \</div>
+<div class="line">    return <span class="keyword">dynamic_cast&lt;</span>Class *<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><a class="code" href="class_tape_base.html">TapeBase</a> *<span class="keyword">&gt;</span>(obj) );         \</div>
+<div class="line">  }                                                                     \</div>
+<div class="line">                                                                        \</div>
+<div class="line">  TapeClass  r ## Class(                                                \</div>
+<div class="line">    <span class="keyword">typeid</span>(Class).name(),                                               \</div>
+<div class="line">    AppID,                                                              \</div>
+<div class="line">    (<a class="code" href="group___base___tools___i_o.html#gafc7f6a8743a67feb4762f3f39a22fba4">BUILD_FUNC</a>) make ## _ ## Class,                                    \</div>
+<div class="line">    (<a class="code" href="group___base___tools___i_o.html#ga296faf9c195d7ae5686d36386a088c59">CAST_FUNC</a> ) cast ## _ ## Class,                                    \</div>
+<div class="line">    (READ_FUNC ) Class::Read,                                           \</div>
+<div class="line">    (WRITE_FUNC) Class::Write                                           \</div>
+<div class="line">  )</div>
+<div class="ttc" id="aclass_tape_base_html"><div class="ttname"><a href="class_tape_base.html">TapeBase</a></div><div class="ttdoc">Базовый класс для потоковых классов.</div><div class="ttdef"><b>Definition:</b> io_tape_define.h:260</div></div>
+<div class="ttc" id="agroup___base___tools___i_o_html_ga296faf9c195d7ae5686d36386a088c59"><div class="ttname"><a href="group___base___tools___i_o.html#ga296faf9c195d7ae5686d36386a088c59">CAST_FUNC</a></div><div class="ttdeci">void *CALL_DECLARATION * CAST_FUNC(const TapeBase *)</div><div class="ttdoc">Шаблон функции преобразования.</div><div class="ttdef"><b>Definition:</b> io_tape.h:183</div></div>
+<div class="ttc" id="agroup___base___tools___i_o_html_gafc7f6a8743a67feb4762f3f39a22fba4"><div class="ttname"><a href="group___base___tools___i_o.html#gafc7f6a8743a67feb4762f3f39a22fba4">BUILD_FUNC</a></div><div class="ttdeci">TapeBase *CALL_DECLARATION * BUILD_FUNC(void)</div><div class="ttdoc">Шаблон функции создания нового экземпляра.</div><div class="ttdef"><b>Definition:</b> io_tape.h:174</div></div>
+<div class="ttc" id="agroup___base___tools___i_o_html_ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877"><div class="ttname"><a href="group___base___tools___i_o.html#ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877">tapeInit</a></div><div class="ttdeci">@ tapeInit</div><div class="ttdoc">По умолчанию.</div><div class="ttdef"><b>Definition:</b> io_tape_define.h:234</div></div>
+<div class="ttc" id="agroup___base___tools_html_gac222546936fb54161055741ce938ba80"><div class="ttname"><a href="group___base___tools.html#gac222546936fb54161055741ce938ba80">CALL_DECLARATION</a></div><div class="ttdeci">#define CALL_DECLARATION</div><div class="ttdoc">Определение CALL_DECLARATION.</div><div class="ttdef"><b>Definition:</b> math_x.h:88</div></div>
+</div><!-- fragment -->
+<p>Конструирование нового экземпляра класса. </p>
+<p>Конструирование нового экземпляра класса. <br  />
+ Определяются функция конструирования нового экземпляра класса, функция преобразования от указателя на <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a> к указателю на класс и класс (не экземпляр!) добавляется в массив потоковых путем создания переменной r ## Class типа <a class="el" href="class_tape_class.html" title="&quot;Обертка&quot; для одного потокового класса.">TapeClass</a> (а в конструкторе <a class="el" href="class_tape_class.html" title="&quot;Обертка&quot; для одного потокового класса.">TapeClass</a> производится добавление в массив потоковых классов). Символ ## - это указание препроцессору о необходимости "склейки" текущего идентификатора с последующим. </p>
+
+</div>
+</div>
+<a id="gabfa2f7a7aee5aaf204072a25da4dc703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfa2f7a7aee5aaf204072a25da4dc703">&#9670;&nbsp;</a></span>IMP_PERSISTENT_CLASS_OPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_CLASS_OPS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DLLFUNC&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#ga8b5485786a41355e6ba88b0654b60ccf">IMP_PERSISTENT_REGISTRATION</a>( AppID, Class );            \</div>
+<div class="line">  IMP_PERSISTENT_NEW_DELETE_CLASS( Class );               \</div>
+<div class="line">  IMP_PERSISTENT_OPS_BASE( Class, DLLFUNC );              \</div>
+<div class="line">  IMP_CLASS_DESC_FUNC( AppID, Class )</div>
+<div class="ttc" id="agroup___base___tools___i_o_html_ga8b5485786a41355e6ba88b0654b60ccf"><div class="ttname"><a href="group___base___tools___i_o.html#ga8b5485786a41355e6ba88b0654b60ccf">IMP_PERSISTENT_REGISTRATION</a></div><div class="ttdeci">#define IMP_PERSISTENT_REGISTRATION(AppID, Class)</div><div class="ttdoc">Конструирование нового экземпляра класса.</div><div class="ttdef"><b>Definition:</b> io_tape.h:2045</div></div>
+</div><!-- fragment -->
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS_BASE. </p>
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS_BASE. Описывает необходимые действия для поточного класса. Устанавливается в любой .cpp файл. Class должен наследовать от <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a>. Должны быть реализованы функции чтения Read и записи Write. <br  />
+</p>
+
+</div>
+</div>
+<a id="ga5948b858709bd33faa1208bec476ddf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5948b858709bd33faa1208bec476ddf8">&#9670;&nbsp;</a></span>IMP_A_PERSISTENT_CLASS_OPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_A_PERSISTENT_CLASS_OPS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DLLFUNC&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#gad149802c3fc4c52d6a76724bf8d47664">IMP_PERSISTENT_NEW_DELETE_CLASS</a>( Class );               \</div>
+<div class="line">  IMP_PERSISTENT_OPS_BASE( Class, DLLFUNC );              \</div>
+<div class="line">  IMP_CLASS_DESC_FUNC( AppID, Class )</div>
+<div class="ttc" id="agroup___base___tools___i_o_html_gad149802c3fc4c52d6a76724bf8d47664"><div class="ttname"><a href="group___base___tools___i_o.html#gad149802c3fc4c52d6a76724bf8d47664">IMP_PERSISTENT_NEW_DELETE_CLASS</a></div><div class="ttdeci">#define IMP_PERSISTENT_NEW_DELETE_CLASS(Class)</div><div class="ttdoc">Реализация функций new, delete и операторов доступа (объявленных в DECLARE_NEW_DELETE_CLASS).</div><div class="ttdef"><b>Definition:</b> io_tape.h:2145</div></div>
+</div><!-- fragment -->
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS_BASE для абстрактного поточного класса. </p>
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS_BASE для абстрактного поточного класса. Описывает необходимые действия для поточного класса. Устанавливается в любой .cpp файл. Class должен наследовать от <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a>. Должны быть реализованы функции чтения Read и записи Write. <br  />
+</p>
+
+</div>
+</div>
+<a id="ga9e38dc991a80f7725e06f6f82edf00d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e38dc991a80f7725e06f6f82edf00d7">&#9670;&nbsp;</a></span>IMP_PERSISTENT_CLASS_NEW_DEL_OPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_CLASS_NEW_DEL_OPS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DLLFUNC&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#gabfa2f7a7aee5aaf204072a25da4dc703">IMP_PERSISTENT_CLASS_OPS</a>( AppID, Class, DLLFUNC );            \</div>
+<div class="line">  IMP_PERSISTENT_NEW_DELETE_CLASS_EX( Class );</div>
+<div class="ttc" id="agroup___base___tools___i_o_html_gabfa2f7a7aee5aaf204072a25da4dc703"><div class="ttname"><a href="group___base___tools___i_o.html#gabfa2f7a7aee5aaf204072a25da4dc703">IMP_PERSISTENT_CLASS_OPS</a></div><div class="ttdeci">#define IMP_PERSISTENT_CLASS_OPS(AppID, Class, DLLFUNC)</div><div class="ttdoc">Реализация объявления DECLARE_PERSISTENT_CLASS_BASE.</div><div class="ttdef"><b>Definition:</b> io_tape.h:2232</div></div>
+</div><!-- fragment -->
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS_NEW_DEL_BASE. </p>
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS_NEW_DEL_BASE. Описывает необходимые действия для поточного класса. Устанавливается в любой .cpp файл. Class должен наследовать от <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a>. Должны быть реализованы функции чтения Read и записи Write. <br  />
+</p>
+
+</div>
+</div>
+<a id="gad8eedadfaa401e6ebd8d2fd90f5fc54f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8eedadfaa401e6ebd8d2fd90f5fc54f">&#9670;&nbsp;</a></span>IMP_PERSISTENT_CLASS_FROM_BASE_NEW_DEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_CLASS_FROM_BASE_NEW_DEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Base&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  IMP_PERSISTENT_CLASS_FROM_BASE( AppID, Class, Base )             \</div>
+<div class="line">  IMP_PERSISTENT_NEW_DELETE_CLASS_EX( Class )</div>
+</div><!-- fragment -->
+<p>Аналог макроса IMP_PERSISTENT_CLASS_FROM_BASE с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+<p>Аналог макроса IMP_PERSISTENT_CLASS_FROM_BASE с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков (включается переменной __OVERLOAD_MEMORY_ALLOCATE_FREE_). </p>
+
+</div>
+</div>
+<a id="gac7d6e3f3f5ac0d9ab8aee5652c8258f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7d6e3f3f5ac0d9ab8aee5652c8258f0">&#9670;&nbsp;</a></span>IMP_PERSISTENT_CLASS_WD_NEW_DEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_CLASS_WD_NEW_DEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  IMP_PERSISTENT_CLASS_WD( AppID, Class );              \</div>
+<div class="line">  IMP_PERSISTENT_NEW_DELETE_CLASS_EX( Class )</div>
+</div><!-- fragment -->
+<p>Аналог макроса IMP_PERSISTENT_CLASS_WD с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+<p>Аналог макроса IMP_PERSISTENT_CLASS_WD с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков (включается переменной __OVERLOAD_MEMORY_ALLOCATE_FREE_). </p>
+
+</div>
+</div>
+<a id="ga3fc75446eced97c1fe81214d2addef29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fc75446eced97c1fe81214d2addef29">&#9670;&nbsp;</a></span>IMP_PERSISTENT_CLASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_CLASS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#ga8b5485786a41355e6ba88b0654b60ccf">IMP_PERSISTENT_REGISTRATION</a>( AppID, Class ); \</div>
+<div class="line">  IMP_PERSISTENT_NEW_DELETE_CLASS( Class );    \</div>
+<div class="line">  IMP_CLASS_DESC_FUNC( AppID, Class )</div>
+</div><!-- fragment -->
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS. </p>
+<p>Реализация объявления DECLARE_PERSISTENT_CLASS. Описывает необходимые действия для поточного класса. Устанавливается в любой .cpp файл. Class должен наследовать от <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a>. Должны быть реализованы функции чтения Read и записи Write. <br  />
+</p>
+
+</div>
+</div>
+<a id="gac59362cbe9042145a0379896b544d48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac59362cbe9042145a0379896b544d48c">&#9670;&nbsp;</a></span>IMP_PERSISTENT_CLASS_NEW_DEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_CLASS_NEW_DEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#ga3fc75446eced97c1fe81214d2addef29">IMP_PERSISTENT_CLASS</a>( AppID, Class );              \</div>
+<div class="line">  IMP_PERSISTENT_NEW_DELETE_CLASS_EX( Class );</div>
+<div class="ttc" id="agroup___base___tools___i_o_html_ga3fc75446eced97c1fe81214d2addef29"><div class="ttname"><a href="group___base___tools___i_o.html#ga3fc75446eced97c1fe81214d2addef29">IMP_PERSISTENT_CLASS</a></div><div class="ttdeci">#define IMP_PERSISTENT_CLASS(AppID, Class)</div><div class="ttdoc">Реализация объявления DECLARE_PERSISTENT_CLASS.</div><div class="ttdef"><b>Definition:</b> io_tape.h:2464</div></div>
+</div><!-- fragment -->
+<p>Аналог макроса IMP_PERSISTENT_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+<p>Аналог макроса IMP_PERSISTENT_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков (включается переменной __OVERLOAD_MEMORY_ALLOCATE_FREE_). </p>
+
+</div>
+</div>
+<a id="ga6ddbecc063b4017234b4ff0a1491dee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ddbecc063b4017234b4ff0a1491dee1">&#9670;&nbsp;</a></span>IMP_PERSISTENT_RO_CLASS_NEW_DEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMP_PERSISTENT_RO_CLASS_NEW_DEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">AppID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  IMP_PERSISTENT_RO_CLASS( AppID, Class );              \</div>
+<div class="line">  IMP_PERSISTENT_NEW_DELETE_CLASS_EX( Class )</div>
+</div><!-- fragment -->
+<p>Аналог макроса IMP_PERSISTENT_RO_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+<p>Аналог макроса IMP_PERSISTENT_RO_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков (включается переменной __OVERLOAD_MEMORY_ALLOCATE_FREE_). </p>
+
+</div>
+</div>
+<a id="gad3c5a9c1cffa145c8026bbe4023ac87a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3c5a9c1cffa145c8026bbe4023ac87a">&#9670;&nbsp;</a></span>DECLARE_PERSISTENT_CLASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_PERSISTENT_CLASS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#ga3e7de3d0f6a81058ca7e0ac4ad51f687">DECLARE_PERSISTENT_FUNCS</a>( Class );         \</div>
+<div class="line">  DECLARE_PERSISTENT_OPS( Class );           \</div>
+<div class="line">  DECLARE_PERSISTENT_CTOR( Class );          \</div>
+<div class="line">  DECLARE_NEW_DELETE_CLASS( Class );         \</div>
+<div class="line">  DECLARE_CLASS_DESC_FUNC(Class)</div>
+<div class="ttc" id="agroup___base___tools___i_o_html_ga3e7de3d0f6a81058ca7e0ac4ad51f687"><div class="ttname"><a href="group___base___tools___i_o.html#ga3e7de3d0f6a81058ca7e0ac4ad51f687">DECLARE_PERSISTENT_FUNCS</a></div><div class="ttdeci">#define DECLARE_PERSISTENT_FUNCS(Class)</div><div class="ttdoc">Функции чтения и записи. Реализация должна быть обеспечена пользователем.</div><div class="ttdef"><b>Definition:</b> io_base.h:190</div></div>
+</div><!-- fragment -->
+<p>Объявление класса Class поточным. </p>
+<p>Объявление класс Class поточным. Устанавливается в декларации класса в файле *.h. Декларирует операторы &lt;&lt;, &gt;&gt;, а также функции Read и Write, которые должны быть определены в любом файле *.cpp Class должен наследовать от <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a>. Для этого класса должен быть определен конструктор чтения, а его тело должно быть в .cpp файле. <br  />
+</p>
+
+</div>
+</div>
+<a id="ga14b0d2a610e8b43e87264200c57794e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14b0d2a610e8b43e87264200c57794e9">&#9670;&nbsp;</a></span>DECLARE_PERSISTENT_CLASS_NEW_DEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_PERSISTENT_CLASS_NEW_DEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">  <a class="code" href="group___base___tools___i_o.html#gad3c5a9c1cffa145c8026bbe4023ac87a">DECLARE_PERSISTENT_CLASS</a>( Class )               \</div>
+<div class="line">  DECLARE_NEW_DELETE_CLASS_EX( Class )</div>
+<div class="ttc" id="agroup___base___tools___i_o_html_gad3c5a9c1cffa145c8026bbe4023ac87a"><div class="ttname"><a href="group___base___tools___i_o.html#gad3c5a9c1cffa145c8026bbe4023ac87a">DECLARE_PERSISTENT_CLASS</a></div><div class="ttdeci">#define DECLARE_PERSISTENT_CLASS(Class)</div><div class="ttdoc">Объявление класса Class поточным.</div><div class="ttdef"><b>Definition:</b> io_tape_define.h:819</div></div>
+</div><!-- fragment -->
+<p>Аналог макроса DECLARE_PERSISTENT_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков. </p>
+<p>Аналог макроса DECLARE_PERSISTENT_CLASS с возможностью перегрузки операторов new/delete, обеспечивающий последовательное обращение к функциям выделения/освобождения памяти из разных потоков (включается переменной __OVERLOAD_MEMORY_ALLOCATE_FREE_). </p>
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="ga296faf9c195d7ae5686d36386a088c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga296faf9c195d7ae5686d36386a088c59">&#9670;&nbsp;</a></span>CAST_FUNC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>* <a class="el" href="group___base___tools.html#gac222546936fb54161055741ce938ba80">CALL_DECLARATION</a>* CAST_FUNC(const <a class="el" href="class_tape_base.html">TapeBase</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблон функции преобразования. </p>
+<p>Шаблон функции преобразования из указателя на <a class="el" href="class_tape_base.html" title="Базовый класс для потоковых классов.">TapeBase</a> к указателю на класс. <br  />
+</p>
+
+</div>
+</div>
+<a id="gaf30abb3bf8282afc7e7009fdd8d644e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf30abb3bf8282afc7e7009fdd8d644e7">&#9670;&nbsp;</a></span>void</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблон функции записи экземпляра. </p>
+<p>Шаблон функции чтения экземпляра. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="gaa22cbb23d538ddc0fb150708c4ec17fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa22cbb23d538ddc0fb150708c4ec17fc">&#9670;&nbsp;</a></span>RegistrableRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___base___tools___i_o.html#gaa22cbb23d538ddc0fb150708c4ec17fc">RegistrableRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Типы регистрации объектов. </p>
+<p>Типы регистрации потоковых объектов. <br  />
+</p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ggaa22cbb23d538ddc0fb150708c4ec17fca8c5c18aa82822f46bb85f4371567677d"></a>noRegistrable&#160;</td><td class="fielddoc"><p>Нерегистрируемый объект. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa22cbb23d538ddc0fb150708c4ec17fcaf5881018809cec1adce378378e9f646f"></a>registrable&#160;</td><td class="fielddoc"><p>Регистрируемый объект. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaeaad0b37b9a0cee594270084f076a06c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeaad0b37b9a0cee594270084f076a06c">&#9670;&nbsp;</a></span>TapeInit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___base___tools___i_o.html#gaeaad0b37b9a0cee594270084f076a06c">TapeInit</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Типы инициализации объектов. </p>
+<p>Типы регистрации потоковых объектов. <br  />
+</p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ggaeaad0b37b9a0cee594270084f076a06ca95ba437738e24be9bcbcefc1ec6a9877"></a>tapeInit&#160;</td><td class="fielddoc"><p>По умолчанию. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga27650a4acc3aac8269b1a4294d8c138a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27650a4acc3aac8269b1a4294d8c138a">&#9670;&nbsp;</a></span>ColorProcessing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___base___tools___i_o.html#ga27650a4acc3aac8269b1a4294d8c138a">ColorProcessing</a> : uint16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Способы обработки атрибутов цвета. </p>
+<p>Способы обработки атрибутов цвета в потоке чтения. <br  />
+</p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="gga27650a4acc3aac8269b1a4294d8c138aaeb39272f1c9c45d3d355a30c8847012b"></a>cr_Color&#160;</td><td class="fielddoc"><p>Использовать только данные <a class="el" href="class_mb_color.html" title="Цвет.">MbColor</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga27650a4acc3aac8269b1a4294d8c138aaa3ab7b748fe370c4feda1c15354c88e8"></a>cr_Visual&#160;</td><td class="fielddoc"><p>Использовать только данные <a class="el" href="class_mb_visual.html" title="Свойства материала.">MbVisual</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga27650a4acc3aac8269b1a4294d8c138aa0581c7a5933989efc8f162d84588c8e0"></a>cr_Both&#160;</td><td class="fielddoc"><p>Смешивать данные <a class="el" href="class_mb_visual.html" title="Свойства материала.">MbVisual</a> и <a class="el" href="class_mb_color.html" title="Цвет.">MbColor</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga448a528a6d62651be78ae2558f76c227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga448a528a6d62651be78ae2558f76c227">&#9670;&nbsp;</a></span>TapePointerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___base___tools___i_o.html#ga448a528a6d62651be78ae2558f76c227">TapePointerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Способы записи указателей. </p>
+<p>Способы записи указателей. <br  />
+</p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227aa23c30a45cad615f7ba32168fe21d3f1"></a>tpt_Null&#160;</td><td class="fielddoc"><p>Нулевой указатель. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227a35402a55ae527ed17c5517d81fda1186"></a>tpt_Indexed16&#160;</td><td class="fielddoc"><p>Индекс указателя в массиве регистрации (2 байта). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227a9c7ddd084140d917dfcd08215fd958a4"></a>tpt_Object&#160;</td><td class="fielddoc"><p>Тело объекта. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227aacd446df7952a2fac86d70fb004689b9"></a>tpt_Indexed8&#160;</td><td class="fielddoc"><p>Индекс указателя в массиве регистрации (1 байт). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227ae945bfb99ba360c44ed3cb5ca264016d"></a>tpt_Indexed32&#160;</td><td class="fielddoc"><p>Индекс указателя в массиве регистрации (4 байта). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227adb9dd179424e82c8c55fa7573e3ac4ba"></a>tpt_Indexed64&#160;</td><td class="fielddoc"><p>Индекс указателя в массиве регистрации (8 байт). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227a00f47cc033a730bbfac3db18c18fa32b"></a>tpt_DetachedObject&#160;</td><td class="fielddoc"><p>Тело объекта в отдельном <a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga448a528a6d62651be78ae2558f76c227ab0284a6004bdcaeb23f5131448fe4069"></a>tpt_ObjectCatalog&#160;</td><td class="fielddoc"><p>Каталог объектов в отдельном <a class="el" href="class_file_space.html" title="Файловое пространство.">FileSpace</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf0e56ac2ff90e1fc1c1ca75a65b89c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0e56ac2ff90e1fc1c1ca75a65b89c21">&#9670;&nbsp;</a></span>MbeItemDataType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___base___tools___i_o.html#gaf0e56ac2ff90e1fc1c1ca75a65b89c21">c3d::MbeItemDataType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип пользовательских данных узла дерева модели. </p>
+<p>Тип пользовательских данных узла дерева модели. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="ga40bf859c0976dfd327c6d328fd6687b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40bf859c0976dfd327c6d328fd6687b7">&#9670;&nbsp;</a></span>IsEqualSArrayItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsEqualSArrayItems </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_cluster.html">Cluster</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_cluster.html">Cluster</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Сравнить два кластера. </p>
+
+</div>
+</div>
+<a id="gadb39516c5d5738b5c3cf5ea97d955a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb39516c5d5738b5c3cf5ea97d955a58">&#9670;&nbsp;</a></span>getMemLen() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getMemLen </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_cluster.html">Cluster</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Размер данных кластера. </p>
+<p>Размер данных кластера в потоке указанной версии. <br  />
+</p>
+
+</div>
+</div>
+<a id="ga3eba4bbcf0576d91af1da4c33aaa21a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3eba4bbcf0576d91af1da4c33aaa21a7">&#9670;&nbsp;</a></span>getMemLen() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getMemLen </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_file_space.html">FileSpace</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Размер данных файла. </p>
+<p>Размер данных файлового пространства в потоке указанной версии. <br  />
+</p>
+
+</div>
+</div>
+<a id="ga2097d0396bb6f150ca6259b2bc93cd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2097d0396bb6f150ca6259b2bc93cd3e">&#9670;&nbsp;</a></span>IsGoodFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsGoodFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_file_space.html">FileSpace</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classiobuf___seq.html">iobuf_Seq</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверить массив кластеров файла. </p>
+<p>Проверить массив кластеров, из которых состоит этот файл. <br  />
+</p>
+
+</div>
+</div>
+<a id="gacb3fd56182b2e6e4e62ba45fac67f152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb3fd56182b2e6e4e62ba45fac67f152">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwriter.html">writer</a>&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td>
+          <td class="paramname"><em>ps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запись int32 в поток. </p>
+<p>Запись uint32 в поток. Чтение int32 в поток. Чтение uint32 в поток. Запись int64 в поток. </p>
+
+</div>
+</div>
+<a id="gae0f394fe3360d9e227911f7820471986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0f394fe3360d9e227911f7820471986">&#9670;&nbsp;</a></span>GetPackedClassName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_class_descriptor.html">ClassDescriptor</a> GetPackedClassName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_class_descriptor.html">ClassDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>classDescr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>ver</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить упакованное имя класса по значению хэша записанному в поток. </p>
+<p>Получить упакованное имя класса по значению хэша записанному в поток. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">classDescr</td><td>- Обертка хэша.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ver</td><td>- Версия потока в котором записан хэш.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает упакованное имя класса. </dd></dl>
+
+</div>
+</div>
+<a id="gabc2df9adea642c495dfcff720055e492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc2df9adea642c495dfcff720055e492">&#9670;&nbsp;</a></span>AddPackedClassNameForVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> AddPackedClassNameForVersion </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_class_descriptor.html">ClassDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>newClassName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_class_descriptor.html">ClassDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>oldClassName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>appIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>lowVersion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___base___tools.html#ga60b5ced9a2c857353403e253729c710d">VERSION</a>&#160;</td>
+          <td class="paramname"><em>highVersion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить новое соответствие значения хэша записанного в поток упакованному имени класса. </p>
+<p>Добавить новое соответствие значения хэша записанного в поток упакованному имени класса. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newClassName</td><td>- Новое имя класса.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oldClassName</td><td>- Старое имя класса.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">appIndex</td><td>- Индекс приложения, которому принадлежит класс.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lowVersion</td><td>- Нижняя граница версии.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">highVersion</td><td>- Верхняя граница версии. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafa5e119a3c7d4297de6841d63cbbd9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa5e119a3c7d4297de6841d63cbbd9a2">&#9670;&nbsp;</a></span>IsValidStreamClassName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValidStreamClassName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>className</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_mb_uuid.html">MbUuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>appID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Диагностика коллизий имени нового класса с зарегистрированными классами. </p>
+<p>Диагностика коллизий имени нового класса с зарегистрированными классами. <br  />
+ </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">className</td><td>- Имя класса. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">appID</td><td>- Идентификатор приложения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Признак уникальности класса с заданным именем при регистрации с указанным идентификатором приложения. </dd></dl>
+
+</div>
+</div>
+<a id="ga6fdd396137ad91a8e6747c0ce8aaefef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fdd396137ad91a8e6747c0ce8aaefef">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwriter.html">writer</a>&amp; c3d::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classc3d_1_1_str_hash.html">StrHash</a> &amp;&#160;</td>
+          <td class="paramname"><em>strHash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор записи хэша. </p>
+<p>Оператор записи. </p>
+
+</div>
+</div>
+<a id="ga752df469f6a01f84247c352bf61ffdd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga752df469f6a01f84247c352bf61ffdd2">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classreader.html">reader</a>&amp; c3d::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classc3d_1_1_str_hash.html">c3d::StrHash</a> &amp;&#160;</td>
+          <td class="paramname"><em>strHash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор чтения хэша. </p>
+<p>Оператор чтения. </p>
+
+</div>
+</div>
+<a id="gacd7858a0c5c696eae7a1d5972876c367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd7858a0c5c696eae7a1d5972876c367">&#9670;&nbsp;</a></span>ReadCluster()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> ReadCluster </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16&#160;</td>
+          <td class="paramname"><em>clusterSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_cluster.html">Cluster</a> &amp;&#160;</td>
+          <td class="paramname"><em>cl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Прочитать кластер. </p>
+<p>Записать кластер. </p>
+
+</div>
+</div>
+<a id="gabcc208151c3213904534d6d77f20cb9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabcc208151c3213904534d6d77f20cb9e">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classreader.html">reader</a>&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classreader.html">reader</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_version_container.html">VersionContainer</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор чтения контейнера версий. </p>
+<p>Оператор чтения. </p>
+
+</div>
+</div>
+<a id="ga5178bcf02f03e817ae12bddd0dd8ea81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5178bcf02f03e817ae12bddd0dd8ea81">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwriter.html">writer</a>&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwriter.html">writer</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_version_container.html">VersionContainer</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор записи контейнера версий. </p>
+<p>Оператор записи. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:00. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,2149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbPolymeshTopo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_polymesh_topo.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="class_mb_polymesh_topo-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbPolymeshTopo<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Представление топологии полигональной модели в виде halfedge.  
+ <a href="class_mb_polymesh_topo.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;polymesh_topo.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MbPolymeshTopo:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_polymesh_topo__inherit__graph.svg" width="138" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MbPolymeshTopo:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_polymesh_topo__coll__graph.svg" width="138" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae3d7f0acb477bbea451f32d65c424c29"><td class="memItemLeft" align="right" valign="top"><a id="ae3d7f0acb477bbea451f32d65c424c29"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ae3d7f0acb477bbea451f32d65c424c29">~MbPolymeshTopo</a> ()</td></tr>
+<tr class="memdesc:ae3d7f0acb477bbea451f32d65c424c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор. <br /></td></tr>
+<tr class="separator:ae3d7f0acb477bbea451f32d65c424c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3796fe9cc61af6a6a2fdc5d494cc3d0a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a3796fe9cc61af6a6a2fdc5d494cc3d0a">GetMesh</a> (<a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh) const =0</td></tr>
+<tr class="memdesc:a3796fe9cc61af6a6a2fdc5d494cc3d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать полигональный геометрический объект <a class="el" href="class_mb_mesh.html" title="Полигональный объект модели - фасетный объект.">MbMesh</a> на основе сегментации.  <a href="class_mb_polymesh_topo.html#a3796fe9cc61af6a6a2fdc5d494cc3d0a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3796fe9cc61af6a6a2fdc5d494cc3d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545d81634df6829176b2e8ca20c1f922"><td class="memItemLeft" align="right" valign="top"><a id="a545d81634df6829176b2e8ca20c1f922"></a>
+virtual <a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a545d81634df6829176b2e8ca20c1f922">Clone</a> () const =0</td></tr>
+<tr class="memdesc:a545d81634df6829176b2e8ca20c1f922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Клонировать. <br /></td></tr>
+<tr class="separator:a545d81634df6829176b2e8ca20c1f922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a9e2128e67a3ec7da0366de33e960d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a13a9e2128e67a3ec7da0366de33e960d">CalculateGabarit</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matrInto, <a class="el" href="class_mb_cube.html">MbCube</a> &amp;bb) const =0</td></tr>
+<tr class="memdesc:a13a9e2128e67a3ec7da0366de33e960d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитать габарит в локальной системе координат.  <a href="class_mb_polymesh_topo.html#a13a9e2128e67a3ec7da0366de33e960d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a13a9e2128e67a3ec7da0366de33e960d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271bae7c41772d5f3ec47092d740fbf1"><td class="memItemLeft" align="right" valign="top"><a id="a271bae7c41772d5f3ec47092d740fbf1"></a>
+virtual const <a class="el" href="class_mb_halfedge.html">MbHalfedge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a271bae7c41772d5f3ec47092d740fbf1">GetMeshTopo</a> () const =0</td></tr>
+<tr class="memdesc:a271bae7c41772d5f3ec47092d740fbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить топологию сетки. <br /></td></tr>
+<tr class="separator:a271bae7c41772d5f3ec47092d740fbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff11d1bbcc1b5ca94528476ed6f2bb0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#adff11d1bbcc1b5ca94528476ed6f2bb0">Reserve</a> (size_t nVx, size_t nEd, size_t nF)=0</td></tr>
+<tr class="memdesc:adff11d1bbcc1b5ca94528476ed6f2bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зарезервировать память под вершины, ребра и фасеты.  <a href="class_mb_polymesh_topo.html#adff11d1bbcc1b5ca94528476ed6f2bb0">Подробнее...</a><br /></td></tr>
+<tr class="separator:adff11d1bbcc1b5ca94528476ed6f2bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f77845b5c2d9dfa645b8f516cf4c838"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a4f77845b5c2d9dfa645b8f516cf4c838">CloneVertex</a> (size_t iVx)=0</td></tr>
+<tr class="memdesc:a4f77845b5c2d9dfa645b8f516cf4c838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Клонировать вершину.  <a href="class_mb_polymesh_topo.html#a4f77845b5c2d9dfa645b8f516cf4c838">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4f77845b5c2d9dfa645b8f516cf4c838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa29339d2e3387e324ae8a0164c088a"><td class="memItemLeft" align="right" valign="top"><a id="aeaa29339d2e3387e324ae8a0164c088a"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aeaa29339d2e3387e324ae8a0164c088a">AddVertex</a> ()=0</td></tr>
+<tr class="memdesc:aeaa29339d2e3387e324ae8a0164c088a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить активную вершину. <br /></td></tr>
+<tr class="separator:aeaa29339d2e3387e324ae8a0164c088a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade50d59ef4cdeece56b182ecafa1fb70"><td class="memItemLeft" align="right" valign="top"><a id="ade50d59ef4cdeece56b182ecafa1fb70"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ade50d59ef4cdeece56b182ecafa1fb70">AddEdge</a> ()=0</td></tr>
+<tr class="memdesc:ade50d59ef4cdeece56b182ecafa1fb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить активное ребро. <br /></td></tr>
+<tr class="separator:ade50d59ef4cdeece56b182ecafa1fb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0579e3ff2be91e02eab3da91a507419a"><td class="memItemLeft" align="right" valign="top"><a id="a0579e3ff2be91e02eab3da91a507419a"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a0579e3ff2be91e02eab3da91a507419a">AddFacet</a> ()=0</td></tr>
+<tr class="memdesc:a0579e3ff2be91e02eab3da91a507419a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить активный фасет. <br /></td></tr>
+<tr class="separator:a0579e3ff2be91e02eab3da91a507419a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313e5cd93e76b54e4591dd35c23ee295"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a313e5cd93e76b54e4591dd35c23ee295">MakeVertexInactive</a> (size_t iVx)=0</td></tr>
+<tr class="memdesc:a313e5cd93e76b54e4591dd35c23ee295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать вершину неактивной.  <a href="class_mb_polymesh_topo.html#a313e5cd93e76b54e4591dd35c23ee295">Подробнее...</a><br /></td></tr>
+<tr class="separator:a313e5cd93e76b54e4591dd35c23ee295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f89543ebd53e31bdf51907ad2cd079"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ac0f89543ebd53e31bdf51907ad2cd079">MakeEdgeInactive</a> (size_t iEd)=0</td></tr>
+<tr class="memdesc:ac0f89543ebd53e31bdf51907ad2cd079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать ребро неактивным.  <a href="class_mb_polymesh_topo.html#ac0f89543ebd53e31bdf51907ad2cd079">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac0f89543ebd53e31bdf51907ad2cd079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a697ac68f03455c07ae2bd6227dc70"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ab0a697ac68f03455c07ae2bd6227dc70">MakeFacetInactive</a> (size_t iF)=0</td></tr>
+<tr class="memdesc:ab0a697ac68f03455c07ae2bd6227dc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать фасет неактивным.  <a href="class_mb_polymesh_topo.html#ab0a697ac68f03455c07ae2bd6227dc70">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab0a697ac68f03455c07ae2bd6227dc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a1805fc2b0944d0dec8a898185f3a2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a46a1805fc2b0944d0dec8a898185f3a2">SewEdges</a> (size_t iEd0, size_t iEd1)=0</td></tr>
+<tr class="memdesc:a46a1805fc2b0944d0dec8a898185f3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сделать ребра близнецами.  <a href="class_mb_polymesh_topo.html#a46a1805fc2b0944d0dec8a898185f3a2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a46a1805fc2b0944d0dec8a898185f3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5ae10019d0a4a4cfce52b191eda941"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a4c5ae10019d0a4a4cfce52b191eda941">AddFacet</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;vertices)=0</td></tr>
+<tr class="memdesc:a4c5ae10019d0a4a4cfce52b191eda941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить фасет на основе существующих вершин.  <a href="class_mb_polymesh_topo.html#a4c5ae10019d0a4a4cfce52b191eda941">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4c5ae10019d0a4a4cfce52b191eda941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6116e52161476161bb21ea0cfd76ad69"><td class="memItemLeft" align="right" valign="top"><a id="a6116e52161476161bb21ea0cfd76ad69"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a6116e52161476161bb21ea0cfd76ad69">SewByVertices</a> ()=0</td></tr>
+<tr class="memdesc:a6116e52161476161bb21ea0cfd76ad69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сшить сетку (установить близнецов) после добавления всех фасетов функцией <a class="el" href="class_mb_polymesh_topo.html#a4c5ae10019d0a4a4cfce52b191eda941" title="Добавить фасет на основе существующих вершин.">AddFacet( const c3d::IndicesVector &amp; vertices )</a>. <br /></td></tr>
+<tr class="separator:a6116e52161476161bb21ea0cfd76ad69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0936239c6a692e4eecbcc4b79ddf63"><td class="memItemLeft" align="right" valign="top"><a id="a3d0936239c6a692e4eecbcc4b79ddf63"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a3d0936239c6a692e4eecbcc4b79ddf63">DeleteInactive</a> ()=0</td></tr>
+<tr class="memdesc:a3d0936239c6a692e4eecbcc4b79ddf63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить неактивные вершины, ребра и фасеты, регионы и циклы. <br /></td></tr>
+<tr class="separator:a3d0936239c6a692e4eecbcc4b79ddf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d50548e589c144d787f8bc1ea4343a2"><td class="memItemLeft" align="right" valign="top"><a id="a6d50548e589c144d787f8bc1ea4343a2"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a6d50548e589c144d787f8bc1ea4343a2">Invert</a> ()=0</td></tr>
+<tr class="memdesc:a6d50548e589c144d787f8bc1ea4343a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инвертировать нормали (сменить на противоположные). <br /></td></tr>
+<tr class="separator:a6d50548e589c144d787f8bc1ea4343a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb91c06b3823afa10fabea7887e2202"><td class="memItemLeft" align="right" valign="top"><a id="addb91c06b3823afa10fabea7887e2202"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#addb91c06b3823afa10fabea7887e2202">Transform</a> (const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;matr)=0</td></tr>
+<tr class="memdesc:addb91c06b3823afa10fabea7887e2202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать согласно матрице. <br /></td></tr>
+<tr class="separator:addb91c06b3823afa10fabea7887e2202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7392c80c5fedde7fab22b19c942ed710"><td class="memItemLeft" align="right" valign="top"><a id="a7392c80c5fedde7fab22b19c942ed710"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a7392c80c5fedde7fab22b19c942ed710">Move</a> (const <a class="el" href="class_mb_vector3_d.html">MbVector3D</a> &amp;to)=0</td></tr>
+<tr class="memdesc:a7392c80c5fedde7fab22b19c942ed710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль вектора. <br /></td></tr>
+<tr class="separator:a7392c80c5fedde7fab22b19c942ed710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe21215c885236812f0f4db2a2a9335"><td class="memItemLeft" align="right" valign="top"><a id="afbe21215c885236812f0f4db2a2a9335"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#afbe21215c885236812f0f4db2a2a9335">Rotate</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;axis, double angle)=0</td></tr>
+<tr class="memdesc:afbe21215c885236812f0f4db2a2a9335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть вокруг оси. <br /></td></tr>
+<tr class="separator:afbe21215c885236812f0f4db2a2a9335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5682928b326e0bbfd4140b9d9a2582e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a5682928b326e0bbfd4140b9d9a2582e5">DeleteFacets</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;facets)=0</td></tr>
+<tr class="memdesc:a5682928b326e0bbfd4140b9d9a2582e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить указанные фасеты.  <a href="class_mb_polymesh_topo.html#a5682928b326e0bbfd4140b9d9a2582e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5682928b326e0bbfd4140b9d9a2582e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d52825e5a91151e83a127f2f6c4561"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ae8d52825e5a91151e83a127f2f6c4561">FlipEdge</a> (size_t iEd)=0</td></tr>
+<tr class="memdesc:ae8d52825e5a91151e83a127f2f6c4561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перебросить ребро между двумя треугольниками.  <a href="class_mb_polymesh_topo.html#ae8d52825e5a91151e83a127f2f6c4561">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae8d52825e5a91151e83a127f2f6c4561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d45cf676d8cf0ef40380a5613b627d8"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a8d45cf676d8cf0ef40380a5613b627d8">SplitEdge</a> (size_t iEd, double prm)=0</td></tr>
+<tr class="memdesc:a8d45cf676d8cf0ef40380a5613b627d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разрезать ребро на два в заданном соотношении.  <a href="class_mb_polymesh_topo.html#a8d45cf676d8cf0ef40380a5613b627d8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8d45cf676d8cf0ef40380a5613b627d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efea39ddb9f42f5e7ab73e5c5c01af6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a7efea39ddb9f42f5e7ab73e5c5c01af6">SplitFacet</a> (size_t eVx0, size_t eVx1, <a class="el" href="namespacec3d.html#ac6e3b0ffa07879cf207de0c9a6739c4b">c3d::IndicesPair</a> &amp;eNew)=0</td></tr>
+<tr class="memdesc:a7efea39ddb9f42f5e7ab73e5c5c01af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбить фасет ребром, соединяющим вершины двух указанных ребер из цикла фасета.  <a href="class_mb_polymesh_topo.html#a7efea39ddb9f42f5e7ab73e5c5c01af6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7efea39ddb9f42f5e7ab73e5c5c01af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e47442f13907f3dc169127a692a18f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a38e47442f13907f3dc169127a692a18f">JoinEdgeFacets</a> (size_t iEd)=0</td></tr>
+<tr class="memdesc:a38e47442f13907f3dc169127a692a18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объединить фасеты, соседние с указанным ребром.  <a href="class_mb_polymesh_topo.html#a38e47442f13907f3dc169127a692a18f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a38e47442f13907f3dc169127a692a18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4ce4b07311fde6a6cd2a290ce59d39"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a1c4ce4b07311fde6a6cd2a290ce59d39">RemoveVertexValence2</a> (size_t iVx)=0</td></tr>
+<tr class="memdesc:a1c4ce4b07311fde6a6cd2a290ce59d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить вершину валентности два, объединить соотвествующие ребра в одно ребро.  <a href="class_mb_polymesh_topo.html#a1c4ce4b07311fde6a6cd2a290ce59d39">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1c4ce4b07311fde6a6cd2a290ce59d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3542657ef76ce530c741aa995e9d155"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ac3542657ef76ce530c741aa995e9d155">InsertVertexTriangle</a> (size_t iTr, double u, double v)=0</td></tr>
+<tr class="memdesc:ac3542657ef76ce530c741aa995e9d155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Внедрить в треугольник вершину, определяемую заданными барицентрическими координатами.  <a href="class_mb_polymesh_topo.html#ac3542657ef76ce530c741aa995e9d155">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac3542657ef76ce530c741aa995e9d155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c45076f2d1375d121c544bb682540d3"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a0c45076f2d1375d121c544bb682540d3">InsertVertexFacet</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;edgesSplit, const std::array&lt; size_t, 3 &gt; &amp;edgesInterpolate, double u, double v)=0</td></tr>
+<tr class="memdesc:a0c45076f2d1375d121c544bb682540d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Внедрить в фасет вершину, определяемую заданными барицентрическими координатами.  <a href="class_mb_polymesh_topo.html#a0c45076f2d1375d121c544bb682540d3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0c45076f2d1375d121c544bb682540d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad648387b4c6bd21ad92e52ca978752e8"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ad648387b4c6bd21ad92e52ca978752e8">FindNearest</a> (const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pnt, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pntProj, size_t &amp;iFacet) const =0</td></tr>
+<tr class="memdesc:ad648387b4c6bd21ad92e52ca978752e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайшую точку и вернуть расстояние до нее.  <a href="class_mb_polymesh_topo.html#ad648387b4c6bd21ad92e52ca978752e8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad648387b4c6bd21ad92e52ca978752e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addad74283e00efb7ba8174dc33fdae81"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#addad74283e00efb7ba8174dc33fdae81">FindLineIntersection</a> (const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;ray, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;pntCross, double &amp;tRes, size_t &amp;iFacet) const =0</td></tr>
+<tr class="memdesc:addad74283e00efb7ba8174dc33fdae81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти ближайшую точку пересечения лучом.  <a href="class_mb_polymesh_topo.html#addad74283e00efb7ba8174dc33fdae81">Подробнее...</a><br /></td></tr>
+<tr class="separator:addad74283e00efb7ba8174dc33fdae81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95bbd69e07de5a2f72f8a1ea371c914"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ab95bbd69e07de5a2f72f8a1ea371c914">TriangulateFacet</a> (size_t iFacet)=0</td></tr>
+<tr class="memdesc:ab95bbd69e07de5a2f72f8a1ea371c914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Триангулировать заданный фасет.  <a href="class_mb_polymesh_topo.html#ab95bbd69e07de5a2f72f8a1ea371c914">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab95bbd69e07de5a2f72f8a1ea371c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6012f604fe53a4bde6044915868a35a0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a6012f604fe53a4bde6044915868a35a0">GetPart</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;facets, <a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a> &amp;part) const =0</td></tr>
+<tr class="memdesc:a6012f604fe53a4bde6044915868a35a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить набор фасетов в отдельный объект.  <a href="class_mb_polymesh_topo.html#a6012f604fe53a4bde6044915868a35a0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6012f604fe53a4bde6044915868a35a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5363d5679c23118098bd394981161f45"><td class="memItemLeft" align="right" valign="top"><a id="a5363d5679c23118098bd394981161f45"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a5363d5679c23118098bd394981161f45">IsSegmented</a> () const =0</td></tr>
+<tr class="memdesc:a5363d5679c23118098bd394981161f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить, инициализирована ли сегментация. <br /></td></tr>
+<tr class="separator:a5363d5679c23118098bd394981161f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51818022baadeaf69913961d6fc2db85"><td class="memItemLeft" align="right" valign="top"><a id="a51818022baadeaf69913961d6fc2db85"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a51818022baadeaf69913961d6fc2db85">Initialize</a> (const <a class="el" href="class_mb_halfedge_boundary_criterion_base.html">MbHalfedgeBoundaryCriterionBase</a> &amp;crit)=0</td></tr>
+<tr class="memdesc:a51818022baadeaf69913961d6fc2db85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать сегментацию критерием границы. <br /></td></tr>
+<tr class="separator:a51818022baadeaf69913961d6fc2db85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee83ecb829382fc5ae3d90b360d5cd8"><td class="memItemLeft" align="right" valign="top"><a id="a4ee83ecb829382fc5ae3d90b360d5cd8"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a4ee83ecb829382fc5ae3d90b360d5cd8">Initialize</a> ()=0</td></tr>
+<tr class="memdesc:a4ee83ecb829382fc5ae3d90b360d5cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать сегментацию из одного региона. <br /></td></tr>
+<tr class="separator:a4ee83ecb829382fc5ae3d90b360d5cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c9e3d80ea9069c39813715499634dd"><td class="memItemLeft" align="right" valign="top"><a id="a34c9e3d80ea9069c39813715499634dd"></a>
+virtual const <a class="el" href="class_mb_halfedge.html">MbHalfedge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a34c9e3d80ea9069c39813715499634dd">GetSegmTopo</a> () const =0</td></tr>
+<tr class="memdesc:a34c9e3d80ea9069c39813715499634dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить топологию сегментации. <br /></td></tr>
+<tr class="separator:a34c9e3d80ea9069c39813715499634dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6fe91b8056968d8818aaa4114c22bb8"><td class="memItemLeft" align="right" valign="top"><a id="ac6fe91b8056968d8818aaa4114c22bb8"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ac6fe91b8056968d8818aaa4114c22bb8">LoopsCount</a> () const =0</td></tr>
+<tr class="memdesc:ac6fe91b8056968d8818aaa4114c22bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество циклов. <br /></td></tr>
+<tr class="separator:ac6fe91b8056968d8818aaa4114c22bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459dc103d27d00af40e5d8398ae529d6"><td class="memItemLeft" align="right" valign="top"><a id="a459dc103d27d00af40e5d8398ae529d6"></a>
+virtual const <a class="el" href="class_mb_segmentation_loop.html">MbSegmentationLoop</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a459dc103d27d00af40e5d8398ae529d6">Loop</a> (size_t iLoop) const =0</td></tr>
+<tr class="memdesc:a459dc103d27d00af40e5d8398ae529d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить цикл. <br /></td></tr>
+<tr class="separator:a459dc103d27d00af40e5d8398ae529d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c84dd8f442891361bcc066ad8c21b98"><td class="memItemLeft" align="right" valign="top"><a id="a0c84dd8f442891361bcc066ad8c21b98"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a0c84dd8f442891361bcc066ad8c21b98">IsInnerLoop</a> (size_t iLoop) const =0</td></tr>
+<tr class="memdesc:a0c84dd8f442891361bcc066ad8c21b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить, является ли цикл внутренним (все его ребра внутренние). <br /></td></tr>
+<tr class="separator:a0c84dd8f442891361bcc066ad8c21b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6eb132037900d0830e275c18cb591e7"><td class="memItemLeft" align="right" valign="top"><a id="ad6eb132037900d0830e275c18cb591e7"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ad6eb132037900d0830e275c18cb591e7">RegionCount</a> () const =0</td></tr>
+<tr class="memdesc:ad6eb132037900d0830e275c18cb591e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество регионов в сегментации. <br /></td></tr>
+<tr class="separator:ad6eb132037900d0830e275c18cb591e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b61a57a7c36057e760fcafa5cc9fa3"><td class="memItemLeft" align="right" valign="top"><a id="a82b61a57a7c36057e760fcafa5cc9fa3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a82b61a57a7c36057e760fcafa5cc9fa3">IsRegionActive</a> (size_t iRegion) const =0</td></tr>
+<tr class="memdesc:a82b61a57a7c36057e760fcafa5cc9fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить, активен ли регион. <br /></td></tr>
+<tr class="separator:a82b61a57a7c36057e760fcafa5cc9fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58028bdf339cce27041005746ad41bc5"><td class="memItemLeft" align="right" valign="top"><a id="a58028bdf339cce27041005746ad41bc5"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a58028bdf339cce27041005746ad41bc5">SubRegionsCount</a> () const =0</td></tr>
+<tr class="memdesc:a58028bdf339cce27041005746ad41bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество подрегионов. <br /></td></tr>
+<tr class="separator:a58028bdf339cce27041005746ad41bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97cc3e7a660cdfb660eadeab00fb75c"><td class="memItemLeft" align="right" valign="top"><a id="ae97cc3e7a660cdfb660eadeab00fb75c"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ae97cc3e7a660cdfb660eadeab00fb75c">SubRegionsCount</a> (size_t iRegion) const =0</td></tr>
+<tr class="memdesc:ae97cc3e7a660cdfb660eadeab00fb75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество подрегионов для региона в сегментации. <br /></td></tr>
+<tr class="separator:ae97cc3e7a660cdfb660eadeab00fb75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a161601c7daf546660bc8d30354a18a"><td class="memItemLeft" align="right" valign="top"><a id="a0a161601c7daf546660bc8d30354a18a"></a>
+virtual const <a class="el" href="class_mb_segmentation_sub_region.html">MbSegmentationSubRegion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a0a161601c7daf546660bc8d30354a18a">SubRegion</a> (size_t iSub) const =0</td></tr>
+<tr class="memdesc:a0a161601c7daf546660bc8d30354a18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить подрегион. <br /></td></tr>
+<tr class="separator:a0a161601c7daf546660bc8d30354a18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cde412fc5881eb48ccb09137e921223"><td class="memItemLeft" align="right" valign="top"><a id="a4cde412fc5881eb48ccb09137e921223"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a4cde412fc5881eb48ccb09137e921223">EdgeSegmCount</a> () const =0</td></tr>
+<tr class="memdesc:a4cde412fc5881eb48ccb09137e921223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество ребер в сегментации. <br /></td></tr>
+<tr class="separator:a4cde412fc5881eb48ccb09137e921223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46320650a738f4e051a800f7da4c3097"><td class="memItemLeft" align="right" valign="top"><a id="a46320650a738f4e051a800f7da4c3097"></a>
+virtual const <a class="el" href="class_mb_halfedge_edge.html">MbHalfedgeEdge</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a46320650a738f4e051a800f7da4c3097">EdgeSegm</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:a46320650a738f4e051a800f7da4c3097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить ребро сегментации по индексу. <br /></td></tr>
+<tr class="separator:a46320650a738f4e051a800f7da4c3097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ff66277d87beacc3ce72df80beaa17"><td class="memItemLeft" align="right" valign="top"><a id="ad6ff66277d87beacc3ce72df80beaa17"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ad6ff66277d87beacc3ce72df80beaa17">IsInnerEdge</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:ad6ff66277d87beacc3ce72df80beaa17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли ребро сегментации внутренним. <br /></td></tr>
+<tr class="separator:ad6ff66277d87beacc3ce72df80beaa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb250aadcabe23cc0eaf24a18461ec4b"><td class="memItemLeft" align="right" valign="top"><a id="aeb250aadcabe23cc0eaf24a18461ec4b"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aeb250aadcabe23cc0eaf24a18461ec4b">GetSegmEdgeId</a> (size_t iEdTopo) const =0</td></tr>
+<tr class="memdesc:aeb250aadcabe23cc0eaf24a18461ec4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить индекс сегментационного ребра для ребра сетки. <br /></td></tr>
+<tr class="separator:aeb250aadcabe23cc0eaf24a18461ec4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90d37c0831cc8ef7572c9fb20c44125"><td class="memItemLeft" align="right" valign="top"><a id="ad90d37c0831cc8ef7572c9fb20c44125"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ad90d37c0831cc8ef7572c9fb20c44125">GetFacetRegionId</a> (size_t iFacet, size_t &amp;iRegion, size_t &amp;iSubRegion) const =0</td></tr>
+<tr class="memdesc:ad90d37c0831cc8ef7572c9fb20c44125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор региона и подрегиона фасета. <br /></td></tr>
+<tr class="separator:ad90d37c0831cc8ef7572c9fb20c44125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5f791b8406c47e0e54bb002ec43d5c"><td class="memItemLeft" align="right" valign="top"><a id="ada5f791b8406c47e0e54bb002ec43d5c"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ada5f791b8406c47e0e54bb002ec43d5c">VertexSegmCount</a> () const =0</td></tr>
+<tr class="memdesc:ada5f791b8406c47e0e54bb002ec43d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество вершин в сегментации. <br /></td></tr>
+<tr class="separator:ada5f791b8406c47e0e54bb002ec43d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be92c849ed9a9dbc946694c8879f881"><td class="memItemLeft" align="right" valign="top"><a id="a2be92c849ed9a9dbc946694c8879f881"></a>
+virtual const <a class="el" href="class_mb_halfedge_vertex.html">MbHalfedgeVertex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a2be92c849ed9a9dbc946694c8879f881">VertexSegm</a> (size_t iVxSegm) const =0</td></tr>
+<tr class="memdesc:a2be92c849ed9a9dbc946694c8879f881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить вершину сегментации по индексу. <br /></td></tr>
+<tr class="separator:a2be92c849ed9a9dbc946694c8879f881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d72e968d15cdd36ca9e6e513386c102"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a7d72e968d15cdd36ca9e6e513386c102">GetRegion</a> (size_t r, <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;facets) const =0</td></tr>
+<tr class="memdesc:a7d72e968d15cdd36ca9e6e513386c102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить индексы фасетов, относящихся к региону.  <a href="class_mb_polymesh_topo.html#a7d72e968d15cdd36ca9e6e513386c102">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7d72e968d15cdd36ca9e6e513386c102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1327f8ac650d1ad55054885c9bd510ff"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a1327f8ac650d1ad55054885c9bd510ff">GetSubRegion</a> (size_t iSub, <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;facets, bool bAdd=false) const =0</td></tr>
+<tr class="memdesc:a1327f8ac650d1ad55054885c9bd510ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить индексы фасетов, относящихся к подрегиону региона.  <a href="class_mb_polymesh_topo.html#a1327f8ac650d1ad55054885c9bd510ff">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1327f8ac650d1ad55054885c9bd510ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35d0aa9e7bc4c569ead79db512fc250"><td class="memItemLeft" align="right" valign="top"><a id="aa35d0aa9e7bc4c569ead79db512fc250"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aa35d0aa9e7bc4c569ead79db512fc250">DeleteRegion</a> (size_t iRegion)=0</td></tr>
+<tr class="memdesc:aa35d0aa9e7bc4c569ead79db512fc250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регион. <br /></td></tr>
+<tr class="separator:aa35d0aa9e7bc4c569ead79db512fc250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c56cf786fc21efbdb7049b4929f90c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a6c56cf786fc21efbdb7049b4929f90c5">SplitByEdgesTopo</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;splitSet, bool bKeepRegions, <a class="el" href="class_progress_bar_wrapper.html">ProgressBarWrapper</a> *progress=nullptr)=0</td></tr>
+<tr class="memdesc:a6c56cf786fc21efbdb7049b4929f90c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбить сегментацию выбранными ребрами.  <a href="class_mb_polymesh_topo.html#a6c56cf786fc21efbdb7049b4929f90c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6c56cf786fc21efbdb7049b4929f90c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab7bedd875bb88c0c84b4978398ebce"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a1ab7bedd875bb88c0c84b4978398ebce">RemoveTopoEdgesFromSegm</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;edgesToDel)=0</td></tr>
+<tr class="memdesc:a1ab7bedd875bb88c0c84b4978398ebce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить ребра сетки из ребер сегментации.  <a href="class_mb_polymesh_topo.html#a1ab7bedd875bb88c0c84b4978398ebce">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1ab7bedd875bb88c0c84b4978398ebce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4049b6f16fc4c3f186232c1edb7f6c7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ae4049b6f16fc4c3f186232c1edb7f6c7">RemoveSegmEdges</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;edgesToDel)=0</td></tr>
+<tr class="memdesc:ae4049b6f16fc4c3f186232c1edb7f6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить ребра сегментации. После удаления ребер общие регионы объединяются и сохраняется регион, у которого наибольшая площадь.  <a href="class_mb_polymesh_topo.html#ae4049b6f16fc4c3f186232c1edb7f6c7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae4049b6f16fc4c3f186232c1edb7f6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635749844347b509e8ba2fb526d71968"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a635749844347b509e8ba2fb526d71968">MergeRegions</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;regions, bool bRemoveValence2)=0</td></tr>
+<tr class="memdesc:a635749844347b509e8ba2fb526d71968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объединить несколько регионов в один.  <a href="class_mb_polymesh_topo.html#a635749844347b509e8ba2fb526d71968">Подробнее...</a><br /></td></tr>
+<tr class="separator:a635749844347b509e8ba2fb526d71968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb86548f8a1663730bdde199949dbc47"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#adb86548f8a1663730bdde199949dbc47">UnsewSegmEdges</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;edgesSegmToUnsew)=0</td></tr>
+<tr class="memdesc:adb86548f8a1663730bdde199949dbc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расшить ребра сегментации.  <a href="class_mb_polymesh_topo.html#adb86548f8a1663730bdde199949dbc47">Подробнее...</a><br /></td></tr>
+<tr class="separator:adb86548f8a1663730bdde199949dbc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4847b8605b6be15a90fb528425c964df"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a4847b8605b6be15a90fb528425c964df">UnsewTopoEdges</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;edgesTopoToUnsew)=0</td></tr>
+<tr class="memdesc:a4847b8605b6be15a90fb528425c964df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расшить ребра сетки.  <a href="class_mb_polymesh_topo.html#a4847b8605b6be15a90fb528425c964df">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4847b8605b6be15a90fb528425c964df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b754e253df6b74f5cce88ce2835ecd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ab1b754e253df6b74f5cce88ce2835ecd">SplitByFacetsTopo</a> (const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;splitSet, bool bMakeOneRegion, bool bKeepRegions)=0</td></tr>
+<tr class="memdesc:ab1b754e253df6b74f5cce88ce2835ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбить сегментацию выбранными фасетами.  <a href="class_mb_polymesh_topo.html#ab1b754e253df6b74f5cce88ce2835ecd">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab1b754e253df6b74f5cce88ce2835ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab361393680e65ef58b5cc74784b007e3"><td class="memItemLeft" align="right" valign="top"><a id="ab361393680e65ef58b5cc74784b007e3"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ab361393680e65ef58b5cc74784b007e3">SplitRegionBySubregions</a> (size_t iReg)=0</td></tr>
+<tr class="memdesc:ab361393680e65ef58b5cc74784b007e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить несвязные подрегионы региона как отдельные регионы. <br /></td></tr>
+<tr class="separator:ab361393680e65ef58b5cc74784b007e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4fed933537119090887fadb1e8a923"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacec3d.html#ac6e3b0ffa07879cf207de0c9a6739c4b">c3d::IndicesPair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a7f4fed933537119090887fadb1e8a923">SplitSegmentationEdge</a> (size_t iEdSegm, size_t iEdTopo, size_t iVxSegmSplit=<a class="el" href="group___base___tools.html#ga0c13cfe0532138c3d34962277b441914">SYS_MAX_T</a>)=0</td></tr>
+<tr class="memdesc:a7f4fed933537119090887fadb1e8a923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разрезать ребро сегментации на два по ребру сетки.  <a href="class_mb_polymesh_topo.html#a7f4fed933537119090887fadb1e8a923">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7f4fed933537119090887fadb1e8a923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0609e0f4ee46081fd2c74d32efd5c8ca"><td class="memItemLeft" align="right" valign="top"><a id="a0609e0f4ee46081fd2c74d32efd5c8ca"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a0609e0f4ee46081fd2c74d32efd5c8ca">ExtractSubRegionAsRegion</a> (size_t iSub)=0</td></tr>
+<tr class="memdesc:a0609e0f4ee46081fd2c74d32efd5c8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить подрегион как отдельный регион. <br /></td></tr>
+<tr class="separator:a0609e0f4ee46081fd2c74d32efd5c8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf169a301c98c1d934910dced97e047c"><td class="memItemLeft" align="right" valign="top"><a id="adf169a301c98c1d934910dced97e047c"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#adf169a301c98c1d934910dced97e047c">RemoveSegmVertexValence2</a> (size_t iVx)=0</td></tr>
+<tr class="memdesc:adf169a301c98c1d934910dced97e047c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить вершину сегментации валентности два, объединить соотвествующие ребра в одно ребро. <br /></td></tr>
+<tr class="separator:adf169a301c98c1d934910dced97e047c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb6a4f4f8cdc0dc71be30a6e1068ef4"><td class="memItemLeft" align="right" valign="top"><a id="a6bb6a4f4f8cdc0dc71be30a6e1068ef4"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a6bb6a4f4f8cdc0dc71be30a6e1068ef4">GetTopoVertex</a> (size_t iVxSegm) const =0</td></tr>
+<tr class="memdesc:a6bb6a4f4f8cdc0dc71be30a6e1068ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить индекс вершины сетки, соответствующей вершине сегментации. <br /></td></tr>
+<tr class="separator:a6bb6a4f4f8cdc0dc71be30a6e1068ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46318bfd4ea18b6f28fc89848a984799"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a46318bfd4ea18b6f28fc89848a984799">NextLoopEdge</a> (size_t iEdSegm, bool bExcudeInner) const =0</td></tr>
+<tr class="memdesc:a46318bfd4ea18b6f28fc89848a984799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти следующее ребро в контуре.  <a href="class_mb_polymesh_topo.html#a46318bfd4ea18b6f28fc89848a984799">Подробнее...</a><br /></td></tr>
+<tr class="separator:a46318bfd4ea18b6f28fc89848a984799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9b12522aa30abc17d29f8ad589bab1"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a3c9b12522aa30abc17d29f8ad589bab1">PrevLoopEdge</a> (size_t iEdSegm, bool bExcudeInner) const =0</td></tr>
+<tr class="memdesc:a3c9b12522aa30abc17d29f8ad589bab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти предыдущее ребро в контуре.  <a href="class_mb_polymesh_topo.html#a3c9b12522aa30abc17d29f8ad589bab1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3c9b12522aa30abc17d29f8ad589bab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ad50b8608136149cdacdf3e32efb79"><td class="memItemLeft" align="right" valign="top"><a id="a96ad50b8608136149cdacdf3e32efb79"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a96ad50b8608136149cdacdf3e32efb79">GetSegmEdgeRegionId</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:a96ad50b8608136149cdacdf3e32efb79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор региона, которому принадлежит ребро. <br /></td></tr>
+<tr class="separator:a96ad50b8608136149cdacdf3e32efb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816e285ea2fe75955ceaa68fd789c986"><td class="memItemLeft" align="right" valign="top"><a id="a816e285ea2fe75955ceaa68fd789c986"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a816e285ea2fe75955ceaa68fd789c986">GetSegmEdgeSubRegionId</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:a816e285ea2fe75955ceaa68fd789c986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор подрегиона, которому принадлежит ребро. <br /></td></tr>
+<tr class="separator:a816e285ea2fe75955ceaa68fd789c986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef515330ca8fa8b8765433f39606b300"><td class="memItemLeft" align="right" valign="top"><a id="aef515330ca8fa8b8765433f39606b300"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aef515330ca8fa8b8765433f39606b300">GetLoopRegionId</a> (size_t iLoop) const =0</td></tr>
+<tr class="memdesc:aef515330ca8fa8b8765433f39606b300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор региона, которому принадлежит цикл. <br /></td></tr>
+<tr class="separator:aef515330ca8fa8b8765433f39606b300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c3506b026092990d341ad1def3b6af"><td class="memItemLeft" align="right" valign="top"><a id="a13c3506b026092990d341ad1def3b6af"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a13c3506b026092990d341ad1def3b6af">GetLoopSubRegionId</a> (size_t iLoop) const =0</td></tr>
+<tr class="memdesc:a13c3506b026092990d341ad1def3b6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор подрегиона, которому принадлежит цикл. <br /></td></tr>
+<tr class="separator:a13c3506b026092990d341ad1def3b6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c15c1f918fd3c70b350df512d5dac1"><td class="memItemLeft" align="right" valign="top"><a id="af3c15c1f918fd3c70b350df512d5dac1"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#af3c15c1f918fd3c70b350df512d5dac1">GetNeighborRegionId</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:af3c15c1f918fd3c70b350df512d5dac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор региона с другой стороны ребра сегментации. <br /></td></tr>
+<tr class="separator:af3c15c1f918fd3c70b350df512d5dac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bf1030a0101a3a0587dad3d5294eba"><td class="memItemLeft" align="right" valign="top"><a id="a47bf1030a0101a3a0587dad3d5294eba"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a47bf1030a0101a3a0587dad3d5294eba">GetNeighborSubRegionId</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:a47bf1030a0101a3a0587dad3d5294eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить идентификатор подрегиона с другой стороны ребра сегментации. <br /></td></tr>
+<tr class="separator:a47bf1030a0101a3a0587dad3d5294eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88bbd62a0b739ab1e299b13e7a27375"><td class="memItemLeft" align="right" valign="top"><a id="ad88bbd62a0b739ab1e299b13e7a27375"></a>
+virtual <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ad88bbd62a0b739ab1e299b13e7a27375">GetSegmRegionModelAttributes</a> (size_t iRegion, bool bCreate)=0</td></tr>
+<tr class="memdesc:ad88bbd62a0b739ab1e299b13e7a27375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить контейнер атрибутов для региона. <br /></td></tr>
+<tr class="separator:ad88bbd62a0b739ab1e299b13e7a27375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951bc9cdc84471e4f378c34e8b3e7f7d"><td class="memItemLeft" align="right" valign="top"><a id="a951bc9cdc84471e4f378c34e8b3e7f7d"></a>
+virtual const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a951bc9cdc84471e4f378c34e8b3e7f7d">GetSegmRegionModelAttributes</a> (size_t iRegion) const =0</td></tr>
+<tr class="memdesc:a951bc9cdc84471e4f378c34e8b3e7f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить контейнер атрибутов для региона. <br /></td></tr>
+<tr class="separator:a951bc9cdc84471e4f378c34e8b3e7f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfc684af115bb15f753bde6ad25161b"><td class="memItemLeft" align="right" valign="top"><a id="a7dfc684af115bb15f753bde6ad25161b"></a>
+virtual <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a7dfc684af115bb15f753bde6ad25161b">GetSegmEdgeModelAttributes</a> (size_t iEdSegm, bool bCreate)=0</td></tr>
+<tr class="memdesc:a7dfc684af115bb15f753bde6ad25161b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить контейнер атрибутов для ребра сегментации. <br /></td></tr>
+<tr class="separator:a7dfc684af115bb15f753bde6ad25161b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe876f2b6e82ef5eae9c1f6d00ce164"><td class="memItemLeft" align="right" valign="top"><a id="affe876f2b6e82ef5eae9c1f6d00ce164"></a>
+virtual const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#affe876f2b6e82ef5eae9c1f6d00ce164">GetSegmEdgeModelAttributes</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:affe876f2b6e82ef5eae9c1f6d00ce164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить контейнер атрибутов для ребра сегментации. <br /></td></tr>
+<tr class="separator:affe876f2b6e82ef5eae9c1f6d00ce164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ced31262011089cc74a351867fa810"><td class="memItemLeft" align="right" valign="top"><a id="aa4ced31262011089cc74a351867fa810"></a>
+virtual <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aa4ced31262011089cc74a351867fa810">GetSegmVertexModelAttributes</a> (size_t iVxSegm, bool bCreate)=0</td></tr>
+<tr class="memdesc:aa4ced31262011089cc74a351867fa810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить контейнер атрибутов для вершины сегментации. <br /></td></tr>
+<tr class="separator:aa4ced31262011089cc74a351867fa810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c0f2c6efd341e57585e39603d216d7"><td class="memItemLeft" align="right" valign="top"><a id="ae6c0f2c6efd341e57585e39603d216d7"></a>
+virtual const <a class="el" href="class_mb_attribute_container.html">MbAttributeContainer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ae6c0f2c6efd341e57585e39603d216d7">GetSegmVertexModelAttributes</a> (size_t iVxSegm) const =0</td></tr>
+<tr class="memdesc:ae6c0f2c6efd341e57585e39603d216d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить контейнер атрибутов для вершины сегментации. <br /></td></tr>
+<tr class="separator:ae6c0f2c6efd341e57585e39603d216d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fcae7b6d37fb2c580059e0e8f368bab"><td class="memItemLeft" align="right" valign="top"><a id="a0fcae7b6d37fb2c580059e0e8f368bab"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a0fcae7b6d37fb2c580059e0e8f368bab">MeshHalfedgeAttributeCount</a> () const</td></tr>
+<tr class="memdesc:a0fcae7b6d37fb2c580059e0e8f368bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество атрибутов сетки. <br /></td></tr>
+<tr class="separator:a0fcae7b6d37fb2c580059e0e8f368bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad2606fc156cca560adc78e9322c1f4"><td class="memItemLeft" align="right" valign="top"><a id="a1ad2606fc156cca560adc78e9322c1f4"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a1ad2606fc156cca560adc78e9322c1f4">SegmHalfedgeAttributeCount</a> () const</td></tr>
+<tr class="memdesc:a1ad2606fc156cca560adc78e9322c1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество атрибутов сегментации. <br /></td></tr>
+<tr class="separator:a1ad2606fc156cca560adc78e9322c1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127163c319054babf4fe389a007a4707"><td class="memTemplParams" colspan="2"><a id="a127163c319054babf4fe389a007a4707"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a127163c319054babf4fe389a007a4707"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a127163c319054babf4fe389a007a4707">AddMeshHalfedgeAttribute</a> ()</td></tr>
+<tr class="memdesc:a127163c319054babf4fe389a007a4707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в сетку атрибут заданного типа. <br /></td></tr>
+<tr class="separator:a127163c319054babf4fe389a007a4707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae729697a5fdd989bd903d7d37a1b31"><td class="memTemplParams" colspan="2"><a id="aaae729697a5fdd989bd903d7d37a1b31"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:aaae729697a5fdd989bd903d7d37a1b31"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aaae729697a5fdd989bd903d7d37a1b31">AddSegmHalfedgeAttribute</a> ()</td></tr>
+<tr class="memdesc:aaae729697a5fdd989bd903d7d37a1b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в сегментацию атрибут заданного типа. <br /></td></tr>
+<tr class="separator:aaae729697a5fdd989bd903d7d37a1b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e55e12481cbe0c43de2c7db47e13cf0"><td class="memTemplParams" colspan="2"><a id="a7e55e12481cbe0c43de2c7db47e13cf0"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7e55e12481cbe0c43de2c7db47e13cf0"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a7e55e12481cbe0c43de2c7db47e13cf0">GetMeshHalfedgeAttribute</a> ()</td></tr>
+<tr class="memdesc:a7e55e12481cbe0c43de2c7db47e13cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить атрибут сетки заданного типа для изменения. <br /></td></tr>
+<tr class="separator:a7e55e12481cbe0c43de2c7db47e13cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a499fad2444b0c1265d47b350882fd6"><td class="memTemplParams" colspan="2"><a id="a9a499fad2444b0c1265d47b350882fd6"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9a499fad2444b0c1265d47b350882fd6"><td class="memTemplItemLeft" align="right" valign="top">const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a9a499fad2444b0c1265d47b350882fd6">GetMeshHalfedgeAttribute</a> () const</td></tr>
+<tr class="memdesc:a9a499fad2444b0c1265d47b350882fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить атрибут сетки заданного типа. <br /></td></tr>
+<tr class="separator:a9a499fad2444b0c1265d47b350882fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e164e648baa8187e3e023a8e7c80ff7"><td class="memTemplParams" colspan="2"><a id="a9e164e648baa8187e3e023a8e7c80ff7"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9e164e648baa8187e3e023a8e7c80ff7"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a9e164e648baa8187e3e023a8e7c80ff7">GetSegmHalfedgeAttribute</a> ()</td></tr>
+<tr class="memdesc:a9e164e648baa8187e3e023a8e7c80ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить атрибут сегментации заданного типа для изменения. <br /></td></tr>
+<tr class="separator:a9e164e648baa8187e3e023a8e7c80ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f40c4041de7fabbd6cd3efc9975444"><td class="memTemplParams" colspan="2"><a id="af2f40c4041de7fabbd6cd3efc9975444"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:af2f40c4041de7fabbd6cd3efc9975444"><td class="memTemplItemLeft" align="right" valign="top">const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#af2f40c4041de7fabbd6cd3efc9975444">GetSegmHalfedgeAttribute</a> () const</td></tr>
+<tr class="memdesc:af2f40c4041de7fabbd6cd3efc9975444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить атрибут сегментации заданного типа. <br /></td></tr>
+<tr class="separator:af2f40c4041de7fabbd6cd3efc9975444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba914139f6201c3b94d735e44eb25f2d"><td class="memTemplParams" colspan="2"><a id="aba914139f6201c3b94d735e44eb25f2d"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:aba914139f6201c3b94d735e44eb25f2d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aba914139f6201c3b94d735e44eb25f2d">DeleteMeshHalfedgeAttribute</a> ()</td></tr>
+<tr class="memdesc:aba914139f6201c3b94d735e44eb25f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить сеточный атрибут заданного типа. <br /></td></tr>
+<tr class="separator:aba914139f6201c3b94d735e44eb25f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69843978d97bb79687f13a7859f0fda"><td class="memTemplParams" colspan="2"><a id="ac69843978d97bb79687f13a7859f0fda"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:ac69843978d97bb79687f13a7859f0fda"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ac69843978d97bb79687f13a7859f0fda">DeleteSegmHalfedgeAttribute</a> ()</td></tr>
+<tr class="memdesc:ac69843978d97bb79687f13a7859f0fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить сегментационный атрибут заданного типа. <br /></td></tr>
+<tr class="separator:ac69843978d97bb79687f13a7859f0fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3993d65bbd05dc35b5f8939bf8c9353"><td class="memItemLeft" align="right" valign="top"><a id="aa3993d65bbd05dc35b5f8939bf8c9353"></a>
+<a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aa3993d65bbd05dc35b5f8939bf8c9353">GetMeshHalfedgeAttributeByIndex</a> (size_t ind)</td></tr>
+<tr class="memdesc:aa3993d65bbd05dc35b5f8939bf8c9353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить сеточный атрибут по индексу для изменения. <br /></td></tr>
+<tr class="separator:aa3993d65bbd05dc35b5f8939bf8c9353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae518574d179a70845879439129026e17"><td class="memItemLeft" align="right" valign="top"><a id="ae518574d179a70845879439129026e17"></a>
+const <a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ae518574d179a70845879439129026e17">GetMeshHalfedgeAttributeByIndex</a> (size_t ind) const</td></tr>
+<tr class="memdesc:ae518574d179a70845879439129026e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить сеточный атрибут по индексу. <br /></td></tr>
+<tr class="separator:ae518574d179a70845879439129026e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a7aa4e1c68fa451c5e31c6b357f2f2"><td class="memItemLeft" align="right" valign="top"><a id="aa8a7aa4e1c68fa451c5e31c6b357f2f2"></a>
+<a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aa8a7aa4e1c68fa451c5e31c6b357f2f2">GetSegmHalfedgeAttributeByIndex</a> (size_t ind)</td></tr>
+<tr class="memdesc:aa8a7aa4e1c68fa451c5e31c6b357f2f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить сегментационный атрибут по индексу для изменения. <br /></td></tr>
+<tr class="separator:aa8a7aa4e1c68fa451c5e31c6b357f2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc05ed236d6140f105ed4fac39a43ee"><td class="memItemLeft" align="right" valign="top"><a id="a4dc05ed236d6140f105ed4fac39a43ee"></a>
+const <a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a4dc05ed236d6140f105ed4fac39a43ee">GetSegmHalfedgeAttributeByIndex</a> (size_t ind) const</td></tr>
+<tr class="memdesc:a4dc05ed236d6140f105ed4fac39a43ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить сегментационный атрибут по индексу. <br /></td></tr>
+<tr class="separator:a4dc05ed236d6140f105ed4fac39a43ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c99fa4e857b698690226fddbe7786f9"><td class="memItemLeft" align="right" valign="top"><a id="a6c99fa4e857b698690226fddbe7786f9"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a6c99fa4e857b698690226fddbe7786f9">DeleteMeshHalfedgeAttribute</a> (<a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *pAttr)</td></tr>
+<tr class="memdesc:a6c99fa4e857b698690226fddbe7786f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить сеточный атрибут. <br /></td></tr>
+<tr class="separator:a6c99fa4e857b698690226fddbe7786f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4221cccdb0df640ef74295f122dc53"><td class="memItemLeft" align="right" valign="top"><a id="a3e4221cccdb0df640ef74295f122dc53"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a3e4221cccdb0df640ef74295f122dc53">DeleteSegmHalfedgeAttribute</a> (<a class="el" href="class_mb_halfedge_attr_base.html">MbHalfedgeAttrBase</a> *pAttr)</td></tr>
+<tr class="memdesc:a3e4221cccdb0df640ef74295f122dc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить сегментационный атрибут. <br /></td></tr>
+<tr class="separator:a3e4221cccdb0df640ef74295f122dc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a53928d0ed33fee140de5df522a41a"><td class="memItemLeft" align="right" valign="top"><a id="ad2a53928d0ed33fee140de5df522a41a"></a>
+virtual const <a class="el" href="class_mb_face_shell.html">MbFaceShell</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#ad2a53928d0ed33fee140de5df522a41a">GetSubstrateShell</a> () const =0</td></tr>
+<tr class="memdesc:ad2a53928d0ed33fee140de5df522a41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить оболочку-подложку. <br /></td></tr>
+<tr class="separator:ad2a53928d0ed33fee140de5df522a41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28af8388581d6ed08be91a67d47b74fd"><td class="memItemLeft" align="right" valign="top"><a id="a28af8388581d6ed08be91a67d47b74fd"></a>
+virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a28af8388581d6ed08be91a67d47b74fd">DeleteSubstrateShell</a> ()=0</td></tr>
+<tr class="memdesc:a28af8388581d6ed08be91a67d47b74fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить оболочку-подложку. <br /></td></tr>
+<tr class="separator:a28af8388581d6ed08be91a67d47b74fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22dcdf866a496ef2e65fe9da62cf9248"><td class="memItemLeft" align="right" valign="top"><a id="a22dcdf866a496ef2e65fe9da62cf9248"></a>
+virtual const <a class="el" href="class_mb_face.html">MbFace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a22dcdf866a496ef2e65fe9da62cf9248">GetSubstrateShellFace</a> (size_t iRegion) const =0</td></tr>
+<tr class="memdesc:a22dcdf866a496ef2e65fe9da62cf9248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить грань оболочки-подложки по заданному региону сегментации. <br /></td></tr>
+<tr class="separator:a22dcdf866a496ef2e65fe9da62cf9248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6309933f0c4b238c6735ebf5e0f4d8a7"><td class="memItemLeft" align="right" valign="top"><a id="a6309933f0c4b238c6735ebf5e0f4d8a7"></a>
+virtual const <a class="el" href="class_mb_curve_edge.html">MbCurveEdge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a6309933f0c4b238c6735ebf5e0f4d8a7">GetSubstrateShellEdge</a> (size_t iEdSegm) const =0</td></tr>
+<tr class="memdesc:a6309933f0c4b238c6735ebf5e0f4d8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить ребро оболочки-подложки по заданному ребру сегментации. <br /></td></tr>
+<tr class="separator:a6309933f0c4b238c6735ebf5e0f4d8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b489d6612eb65240d1e904871fa0610"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a3b489d6612eb65240d1e904871fa0610">GetRegionPointByParameter</a> (size_t iReg, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;uv, bool bPercents, <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;point) const =0</td></tr>
+<tr class="memdesc:a3b489d6612eb65240d1e904871fa0610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить 3D точку в регионе по 2D параметру.  <a href="class_mb_polymesh_topo.html#a3b489d6612eb65240d1e904871fa0610">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3b489d6612eb65240d1e904871fa0610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4b8113ee0c7e384828c5f3013f8030ec"></a>
+virtual <a class="el" href="group___geometric___items.html#gad5d5f91a380bf12afb3c157e5acf973b">MbeRefType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4b8113ee0c7e384828c5f3013f8030ec">RefType</a> () const</td></tr>
+<tr class="memdesc:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрационный тип (для копирования, дублирования). <br /></td></tr>
+<tr class="separator:a4b8113ee0c7e384828c5f3013f8030ec inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="af03669b8cb6063ba665204be05a4c31d"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#af03669b8cb6063ba665204be05a4c31d">AddRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить регистратор. <br /></td></tr>
+<tr class="separator:af03669b8cb6063ba665204be05a4c31d inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a9163f5dbc5fde0c684124975677a7758"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a9163f5dbc5fde0c684124975677a7758">RemoveRegistrator</a> (<a class="el" href="class_mb_reg_duplicate.html">MbRegDuplicate</a> *reg) const</td></tr>
+<tr class="memdesc:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить регистратор. <br /></td></tr>
+<tr class="separator:a9163f5dbc5fde0c684124975677a7758 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a4641a79681e5f42ec4ad1f22ba83eee6"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a4641a79681e5f42ec4ad1f22ba83eee6">GetUseCount</a> () const</td></tr>
+<tr class="memdesc:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать количество ссылок (выдать количество владельцев объекта). <br /></td></tr>
+<tr class="separator:a4641a79681e5f42ec4ad1f22ba83eee6 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="ab1988ff8a67498fcc1b00df56685a5a3"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#ab1988ff8a67498fcc1b00df56685a5a3">AddRef</a> () const</td></tr>
+<tr class="memdesc:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:ab1988ff8a67498fcc1b00df56685a5a3 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aab710656096b69fd66d446e9c9403fa0"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aab710656096b69fd66d446e9c9403fa0">DecRef</a> () const</td></tr>
+<tr class="memdesc:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу. <br /></td></tr>
+<tr class="separator:aab710656096b69fd66d446e9c9403fa0 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="a5de264b38575afa46ff0640d3d96f443"></a>
+refcount_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#a5de264b38575afa46ff0640d3d96f443">Release</a> () const</td></tr>
+<tr class="memdesc:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшить количество ссылок на единицу и, если количество ссылок стало равным нулю, удалить себя. <br /></td></tr>
+<tr class="separator:a5de264b38575afa46ff0640d3d96f443 inherit pub_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a15ce9bdfeeb60c02067a0a0ddee63b71"><td class="memItemLeft" align="right" valign="top"><a id="a15ce9bdfeeb60c02067a0a0ddee63b71"></a>
+static <a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a15ce9bdfeeb60c02067a0a0ddee63b71">Create</a> ()</td></tr>
+<tr class="memdesc:a15ce9bdfeeb60c02067a0a0ddee63b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать пустой экземпляр класса. <br /></td></tr>
+<tr class="separator:a15ce9bdfeeb60c02067a0a0ddee63b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f36208800e3cd441092fe669b553dc2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a9f36208800e3cd441092fe669b553dc2">Create</a> (const <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;mesh, double toleranceSew)</td></tr>
+<tr class="memdesc:a9f36208800e3cd441092fe669b553dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать экземпляр класса на основе <a class="el" href="class_mb_mesh.html" title="Полигональный объект модели - фасетный объект.">MbMesh</a>.  <a href="class_mb_polymesh_topo.html#a9f36208800e3cd441092fe669b553dc2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9f36208800e3cd441092fe669b553dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933d03c9bdcb184dd65a584fe8e51340"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#a933d03c9bdcb184dd65a584fe8e51340">Create</a> (const <a class="el" href="class_i_mesh_provider.html">IMeshProvider</a> &amp;provider, const <a class="el" href="class_mb_repair_inconsistent_mesh_params.html">MbRepairInconsistentMeshParams</a> &amp;params)</td></tr>
+<tr class="memdesc:a933d03c9bdcb184dd65a584fe8e51340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать экземпляр класса на основе контейнера данных и параметров лечения.  <a href="class_mb_polymesh_topo.html#a933d03c9bdcb184dd65a584fe8e51340">Подробнее...</a><br /></td></tr>
+<tr class="separator:a933d03c9bdcb184dd65a584fe8e51340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:aa6e61544d4c0c62dd5b4de68ecd6318f"><td class="memItemLeft" align="right" valign="top"><a id="aa6e61544d4c0c62dd5b4de68ecd6318f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_polymesh_topo.html#aa6e61544d4c0c62dd5b4de68ecd6318f">MbPolymeshTopo</a> ()</td></tr>
+<tr class="memdesc:aa6e61544d4c0c62dd5b4de68ecd6318f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. <br /></td></tr>
+<tr class="separator:aa6e61544d4c0c62dd5b4de68ecd6318f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_mb_ref_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mb_ref_item')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_mb_ref_item.html">MbRefItem</a></td></tr>
+<tr class="memitem:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memItemLeft" align="right" valign="top"><a id="aba5d1a503c5df6d2b650ab6ef7fb355d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_ref_item.html#aba5d1a503c5df6d2b650ab6ef7fb355d">MbRefItem</a> ()</td></tr>
+<tr class="memdesc:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор без параметров. <br /></td></tr>
+<tr class="separator:aba5d1a503c5df6d2b650ab6ef7fb355d inherit pro_methods_class_mb_ref_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Представление топологии полигональной модели в виде halfedge. </p>
+<p>Halfedge представление - это представление полигональной модели в виде графа, где ключевым элементом представления является направленное ребро, ассоциированное с фасетом, которому оно принадлежит, и вершиной, из которой ребро исходит. Таким образом, каждое неграничное ребро поверхности представлено в виде пары противоположно направленных ребер (реберной пары). <br  />
+ Представление в виде графа позволяет иметь информацию о топологии поверхности, которую может быть сложно представить в виде обычного TriMesh либо полигонального представления, и открывает доступ к большой группе более эффективных алгоритмов, использующих операции на графах. <br  />
+ Для перемещения по топологии ребра организуются в замкнутые циклы вокруг фасетов. Для ребра можно получить следующее ребро в цикле, предыдущее ребро в цикле, фасет, циклу которого принадлежит ребро, и обратное ребро, указывающее в противоположном направлении. Фасеты, организованные вокруг вершины, образуют так называемый вершинный веер. Для удобства существует еще один вариант обхода топологии, в котором осуществляется перебор фасетов либо реберных пар вокруг этой вершины в порядке расположения по вершинному вееру, для этого каждая вершина содержит ссылку на ребро, с которого возможен полный обход веера против часовой стрелки. <br  />
+ Для обеспечения гибкости представления каждому элементу топологии возможно назначение атрибута, хранящего дополнительную информацию о данном элементе. Так, например, у вершины может быть атрибут, хранящий информацию о ее 3D координатах. Через атрибуты возможно назначение пользователем производных данных типов bool, float, double, unsigned int, int, и size_t. <br  />
+ Как дополнительный набор информации объект дополнительно к топологии хранит информацию о сегментации объекта. <br  />
+ Объект может быть разделен на регионы. Каждый регион содержит набор связных компонент, именующихся подрегионами. По аналогии с организацией half-edge каждый подрегион может иметь один или несколько сегментационных реберных циклов. В разработке. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a9f36208800e3cd441092fe669b553dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f36208800e3cd441092fe669b553dc2">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a>* MbPolymeshTopo::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>toleranceSew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать экземпляр класса на основе <a class="el" href="class_mb_mesh.html" title="Полигональный объект модели - фасетный объект.">MbMesh</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mesh</td><td>- Полигональный геометрический объект.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">toleranceSew</td><td>- Метрическая погрешность совпадения точек.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на созданный объект. </dd></dl>
+
+</div>
+</div>
+<a id="a933d03c9bdcb184dd65a584fe8e51340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933d03c9bdcb184dd65a584fe8e51340">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a>* MbPolymeshTopo::Create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_i_mesh_provider.html">IMeshProvider</a> &amp;&#160;</td>
+          <td class="paramname"><em>provider</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_repair_inconsistent_mesh_params.html">MbRepairInconsistentMeshParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать экземпляр класса на основе контейнера данных и параметров лечения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">provider</td><td>- Контейнер данных полигонального объекта.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>- Параметры лечения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает указатель на созданный объект. </dd></dl>
+
+</div>
+</div>
+<a id="a3796fe9cc61af6a6a2fdc5d494cc3d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3796fe9cc61af6a6a2fdc5d494cc3d0a">&#9670;&nbsp;</a></span>GetMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::GetMesh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mb_mesh.html">MbMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать полигональный геометрический объект <a class="el" href="class_mb_mesh.html" title="Полигональный объект модели - фасетный объект.">MbMesh</a> на основе сегментации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mesh</td><td>- Полигональный геометрический объект.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если геометрический объект успешно создан, и false иначе. </dd></dl>
+
+</div>
+</div>
+<a id="a13a9e2128e67a3ec7da0366de33e960d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a9e2128e67a3ec7da0366de33e960d">&#9670;&nbsp;</a></span>CalculateGabarit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::CalculateGabarit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix3_d.html">MbMatrix3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>matrInto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cube.html">MbCube</a> &amp;&#160;</td>
+          <td class="paramname"><em>bb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рассчитать габарит в локальной системе координат. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">matrInto</td><td>- Матрица преобразования в локальную СК.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bb</td><td>- Габарит. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adff11d1bbcc1b5ca94528476ed6f2bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff11d1bbcc1b5ca94528476ed6f2bb0">&#9670;&nbsp;</a></span>Reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nVx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nEd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nF</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Зарезервировать память под вершины, ребра и фасеты. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nVx</td><td>- Количество вершин.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nEd</td><td>- Количество ребер.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nF</td><td>- Количество фасетов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f77845b5c2d9dfa645b8f516cf4c838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f77845b5c2d9dfa645b8f516cf4c838">&#9670;&nbsp;</a></span>CloneVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t MbPolymeshTopo::CloneVertex </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iVx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Клонировать вершину. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iVx</td><td>- Индекс клонируемой вершины.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает индекс созданной вершины. </dd></dl>
+
+</div>
+</div>
+<a id="a313e5cd93e76b54e4591dd35c23ee295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313e5cd93e76b54e4591dd35c23ee295">&#9670;&nbsp;</a></span>MakeVertexInactive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::MakeVertexInactive </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iVx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сделать вершину неактивной. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iVx</td><td>- Индекс вершины. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac0f89543ebd53e31bdf51907ad2cd079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f89543ebd53e31bdf51907ad2cd079">&#9670;&nbsp;</a></span>MakeEdgeInactive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::MakeEdgeInactive </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сделать ребро неактивным. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEd</td><td>- Индекс ребра. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab0a697ac68f03455c07ae2bd6227dc70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a697ac68f03455c07ae2bd6227dc70">&#9670;&nbsp;</a></span>MakeFacetInactive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::MakeFacetInactive </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iF</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сделать фасет неактивным. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iF</td><td>- Индекс фасета. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a46a1805fc2b0944d0dec8a898185f3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a1805fc2b0944d0dec8a898185f3a2">&#9670;&nbsp;</a></span>SewEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::SewEdges </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEd0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEd1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сделать ребра близнецами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEd0</td><td>- Индекс одного ребра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEd1</td><td>- Индекс другого ребра. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c5ae10019d0a4a4cfce52b191eda941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5ae10019d0a4a4cfce52b191eda941">&#9670;&nbsp;</a></span>AddFacet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t MbPolymeshTopo::AddFacet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить фасет на основе существующих вершин. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>- Вершины.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает индекс созданного фасета. </dd></dl>
+
+</div>
+</div>
+<a id="a5682928b326e0bbfd4140b9d9a2582e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5682928b326e0bbfd4140b9d9a2582e5">&#9670;&nbsp;</a></span>DeleteFacets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::DeleteFacets </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>facets</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить указанные фасеты. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">facets</td><td>- Набор фасетов для удаления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8d52825e5a91151e83a127f2f6c4561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d52825e5a91151e83a127f2f6c4561">&#9670;&nbsp;</a></span>FlipEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::FlipEdge </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перебросить ребро между двумя треугольниками. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEd</td><td>- Ребро, которое требуется перебросить.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если переброска выполнена успешно, и false иначе. </dd></dl>
+
+</div>
+</div>
+<a id="a8d45cf676d8cf0ef40380a5613b627d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d45cf676d8cf0ef40380a5613b627d8">&#9670;&nbsp;</a></span>SplitEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t MbPolymeshTopo::SplitEdge </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разрезать ребро на два в заданном соотношении. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEd</td><td>- Ребро, которое требуется разрезать.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prm</td><td>- Параметр для разрезания ребра. Должен быть в промежутке от 0 до 1.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает индекс вершины, созданной на месте разреза. </dd></dl>
+
+</div>
+</div>
+<a id="a7efea39ddb9f42f5e7ab73e5c5c01af6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efea39ddb9f42f5e7ab73e5c5c01af6">&#9670;&nbsp;</a></span>SplitFacet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::SplitFacet </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>eVx0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>eVx1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#ac6e3b0ffa07879cf207de0c9a6739c4b">c3d::IndicesPair</a> &amp;&#160;</td>
+          <td class="paramname"><em>eNew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разбить фасет ребром, соединяющим вершины двух указанных ребер из цикла фасета. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eVx0</td><td>- Индекс первого ребра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eVx1</td><td>- Индекс второго ребра.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eNew</td><td>- Индексы двух новых ребер. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38e47442f13907f3dc169127a692a18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e47442f13907f3dc169127a692a18f">&#9670;&nbsp;</a></span>JoinEdgeFacets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::JoinEdgeFacets </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Объединить фасеты, соседние с указанным ребром. </p>
+<p>Объединить фасеты, соседние с указанным ребром. Операция, обратная к SplitFacet.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEd</td><td>- Индекс ребра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если объединение выполнено успешно, и false иначе. </dd></dl>
+
+</div>
+</div>
+<a id="a1c4ce4b07311fde6a6cd2a290ce59d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4ce4b07311fde6a6cd2a290ce59d39">&#9670;&nbsp;</a></span>RemoveVertexValence2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::RemoveVertexValence2 </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iVx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить вершину валентности два, объединить соотвествующие ребра в одно ребро. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iVx</td><td>- Индекс вершины.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если удаление выполнено успешно, и false иначе. </dd></dl>
+
+</div>
+</div>
+<a id="ac3542657ef76ce530c741aa995e9d155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3542657ef76ce530c741aa995e9d155">&#9670;&nbsp;</a></span>InsertVertexTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t MbPolymeshTopo::InsertVertexTriangle </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iTr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Внедрить в треугольник вершину, определяемую заданными барицентрическими координатами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iTr</td><td>- Индекс треугольника.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>- Первая барицентрическая координата.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- Вторая барицентрическая координата.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает индекс созданной вершины. </dd></dl>
+
+</div>
+</div>
+<a id="a0c45076f2d1375d121c544bb682540d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c45076f2d1375d121c544bb682540d3">&#9670;&nbsp;</a></span>InsertVertexFacet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t MbPolymeshTopo::InsertVertexFacet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>edgesSplit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; size_t, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edgesInterpolate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Внедрить в фасет вершину, определяемую заданными барицентрическими координатами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edgesSplit</td><td>- Набор ребер, вершины которых будут соединяться с новой вершиной.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">edgesInterpolate</td><td>- Набор ребер, значения в вершинах которых используются для интерполяции.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>- Первая барицентрическая координата.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- Вторая барицентрическая координата.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает индекс созданной вершины. </dd></dl>
+
+</div>
+</div>
+<a id="ad648387b4c6bd21ad92e52ca978752e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad648387b4c6bd21ad92e52ca978752e8">&#9670;&nbsp;</a></span>FindNearest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double MbPolymeshTopo::FindNearest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pntProj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>iFacet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Найти ближайшую точку и вернуть расстояние до нее. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pntProj</td><td>- Ближайшая точка.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">iFacet</td><td>- Индекс фасета, содержащего ближайшую точку.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает расстояние до ближайшей точки. </dd></dl>
+
+</div>
+</div>
+<a id="addad74283e00efb7ba8174dc33fdae81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addad74283e00efb7ba8174dc33fdae81">&#9670;&nbsp;</a></span>FindLineIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::FindLineIntersection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_axis3_d.html">MbAxis3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pntCross</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>tRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>iFacet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Найти ближайшую точку пересечения лучом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ray</td><td>- Луч.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pntCross</td><td>- Ближайшая точка пересечения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tRes</td><td>- Параметр луча в точке пересечения.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">iFacet</td><td>- Индекс фасета, пересекающегося с лучом.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если пересечение есть. </dd></dl>
+
+</div>
+</div>
+<a id="ab95bbd69e07de5a2f72f8a1ea371c914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95bbd69e07de5a2f72f8a1ea371c914">&#9670;&nbsp;</a></span>TriangulateFacet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::TriangulateFacet </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iFacet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Триангулировать заданный фасет. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iFacet</td><td>- Индекс фасета, который нужно триангулировать.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает true, если триангуляция прошла успешно. </dd></dl>
+
+</div>
+</div>
+<a id="a6012f604fe53a4bde6044915868a35a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6012f604fe53a4bde6044915868a35a0">&#9670;&nbsp;</a></span>GetPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::GetPart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>facets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a> &amp;&#160;</td>
+          <td class="paramname"><em>part</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выделить набор фасетов в отдельный объект. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">facets</td><td>- Набор фасетов.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">part</td><td>- Отдельный объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d72e968d15cdd36ca9e6e513386c102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d72e968d15cdd36ca9e6e513386c102">&#9670;&nbsp;</a></span>GetRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::GetRegion </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>facets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить индексы фасетов, относящихся к региону. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>- Индекс региона.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">facets</td><td>- Индексы фасетов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1327f8ac650d1ad55054885c9bd510ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1327f8ac650d1ad55054885c9bd510ff">&#9670;&nbsp;</a></span>GetSubRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::GetSubRegion </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iSub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>facets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAdd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить индексы фасетов, относящихся к подрегиону региона. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iSub</td><td>- Индекс подрегиона.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">facets</td><td>- Индексы фасетов.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bAdd</td><td>- Добавлять в конец списка фасетов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c56cf786fc21efbdb7049b4929f90c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c56cf786fc21efbdb7049b4929f90c5">&#9670;&nbsp;</a></span>SplitByEdgesTopo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::SplitByEdgesTopo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>splitSet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bKeepRegions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_progress_bar_wrapper.html">ProgressBarWrapper</a> *&#160;</td>
+          <td class="paramname"><em>progress</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разбить сегментацию выбранными ребрами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">splitSet</td><td>- Ребра.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bKeepRegions</td><td>- Сохранять прежние регионы (то есть не выделять новые подрегионы в отдельные регионы).</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">progress</td><td>- Индикатор процесса. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ab7bedd875bb88c0c84b4978398ebce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab7bedd875bb88c0c84b4978398ebce">&#9670;&nbsp;</a></span>RemoveTopoEdgesFromSegm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::RemoveTopoEdgesFromSegm </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>edgesToDel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить ребра сетки из ребер сегментации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edgesToDel</td><td>- Удаляемые ребра сетки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4049b6f16fc4c3f186232c1edb7f6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4049b6f16fc4c3f186232c1edb7f6c7">&#9670;&nbsp;</a></span>RemoveSegmEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::RemoveSegmEdges </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>edgesToDel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить ребра сегментации. После удаления ребер общие регионы объединяются и сохраняется регион, у которого наибольшая площадь. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edgesToDel</td><td>- Удаляемые ребра сегментации. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a635749844347b509e8ba2fb526d71968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635749844347b509e8ba2fb526d71968">&#9670;&nbsp;</a></span>MergeRegions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::MergeRegions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>regions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bRemoveValence2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Объединить несколько регионов в один. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">regions</td><td>- Регионы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bRemoveValence2</td><td>- Удалить вершины сегментации валентности два. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb86548f8a1663730bdde199949dbc47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb86548f8a1663730bdde199949dbc47">&#9670;&nbsp;</a></span>UnsewSegmEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::UnsewSegmEdges </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>edgesSegmToUnsew</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расшить ребра сегментации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edgesSegmToUnsew</td><td>- Ребра сегментации. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4847b8605b6be15a90fb528425c964df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4847b8605b6be15a90fb528425c964df">&#9670;&nbsp;</a></span>UnsewTopoEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::UnsewTopoEdges </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>edgesTopoToUnsew</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Расшить ребра сетки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">edgesTopoToUnsew</td><td>- Ребра сетки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1b754e253df6b74f5cce88ce2835ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b754e253df6b74f5cce88ce2835ecd">&#9670;&nbsp;</a></span>SplitByFacetsTopo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbPolymeshTopo::SplitByFacetsTopo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacec3d.html#a3d9a628b9fd00e0f1b109c2fbe6701ec">c3d::IndicesVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>splitSet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bMakeOneRegion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bKeepRegions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разбить сегментацию выбранными фасетами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">splitSet</td><td>- Фасеты.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bMakeOneRegion</td><td>- Объединять выбранные фасеты в один регион.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bKeepRegions</td><td>- Сохранять прежние регионы (то есть не выделять новые подрегионы в отдельные регионы). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f4fed933537119090887fadb1e8a923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4fed933537119090887fadb1e8a923">&#9670;&nbsp;</a></span>SplitSegmentationEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacec3d.html#ac6e3b0ffa07879cf207de0c9a6739c4b">c3d::IndicesPair</a> MbPolymeshTopo::SplitSegmentationEdge </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEdSegm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEdTopo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iVxSegmSplit</em> = <code><a class="el" href="group___base___tools.html#ga0c13cfe0532138c3d34962277b441914">SYS_MAX_T</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разрезать ребро сегментации на два по ребру сетки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEdSegm</td><td>- Ребро сегментации.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEdTopo</td><td>- Ребро сетки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iVxSegmSplit</td><td>- Индекс вершины сегментации в точке разреза (если не задан, вершина будет добавлена).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новые ребра сегментации, созданные при разрезании. </dd></dl>
+
+</div>
+</div>
+<a id="a46318bfd4ea18b6f28fc89848a984799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46318bfd4ea18b6f28fc89848a984799">&#9670;&nbsp;</a></span>NextLoopEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t MbPolymeshTopo::NextLoopEdge </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEdSegm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bExcudeInner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Найти следующее ребро в контуре. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEdSegm</td><td>- Ребро сегментации.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bExcudeInner</td><td>- Флаг исключения внутренних ребер сегментации.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс следующего ребра сегментации в контуре. </dd></dl>
+
+</div>
+</div>
+<a id="a3c9b12522aa30abc17d29f8ad589bab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9b12522aa30abc17d29f8ad589bab1">&#9670;&nbsp;</a></span>PrevLoopEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t MbPolymeshTopo::PrevLoopEdge </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iEdSegm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bExcudeInner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Найти предыдущее ребро в контуре. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iEdSegm</td><td>- Ребро сегментации.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bExcudeInner</td><td>- Флаг исключения внутренних ребер сегментации.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс предыдущего ребра сегментации в контуре. </dd></dl>
+
+</div>
+</div>
+<a id="a3b489d6612eb65240d1e904871fa0610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b489d6612eb65240d1e904871fa0610">&#9670;&nbsp;</a></span>GetRegionPointByParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MbPolymeshTopo::GetRegionPointByParameter </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iReg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>uv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bPercents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mb_cart_point3_d.html">MbCartPoint3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить 3D точку в регионе по 2D параметру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iReg</td><td>- Индекс региона.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uv</td><td>- 2D параметр. Если задан в процентах, x и y должны быть единичном интервале.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bPercents</td><td>- Признак задания параметра в процентах.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">point</td><td>- 3D точка.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если точка существует, иначе false (например, если сетка не параметризована). </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="polymesh__topo_8h.html">polymesh_topo.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_polymesh_topo.html">MbPolymeshTopo</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:05. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

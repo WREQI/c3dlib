@@ -1,0 +1,2061 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C3D Toolkit: Класс MbCartPoint</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">C3D Toolkit
+   &#160;<span id="projectnumber">Kernel - 118065, Vision - 2.16.3.1835</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_mb_cart_point.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="class_mb_cart_point-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MbCartPoint<div class="ingroups"><a class="el" href="group___geometric___modelling.html">C3D Modeler: Модуль геометрического моделирования</a> &raquo; <a class="el" href="group___base___items.html">Объекты алгоритмов</a> &raquo; <a class="el" href="group___mathematic___base__2_d.html">Двумерные базовые объекты</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Декартова двумерная точка.  
+ <a href="class_mb_cart_point.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;mb_cart_point.h&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса MbCartPoint:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_mb_cart_point__coll__graph.svg" width="166" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a149c8b7fc6a9b54dfecac66087e51e6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a149c8b7fc6a9b54dfecac66087e51e6b">MbCartPoint</a> ()</td></tr>
+<tr class="memdesc:a149c8b7fc6a9b54dfecac66087e51e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию.  <a href="class_mb_cart_point.html#a149c8b7fc6a9b54dfecac66087e51e6b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a149c8b7fc6a9b54dfecac66087e51e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c255083b3abca16ce4ad811ec01687"><td class="memItemLeft" align="right" valign="top"><a id="ac4c255083b3abca16ce4ad811ec01687"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ac4c255083b3abca16ce4ad811ec01687">MbCartPoint</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p)</td></tr>
+<tr class="memdesc:ac4c255083b3abca16ce4ad811ec01687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования. <br /></td></tr>
+<tr class="separator:ac4c255083b3abca16ce4ad811ec01687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48070013de350bfa48981499d5883a68"><td class="memItemLeft" align="right" valign="top"><a id="a48070013de350bfa48981499d5883a68"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a48070013de350bfa48981499d5883a68">MbCartPoint</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;p)</td></tr>
+<tr class="memdesc:a48070013de350bfa48981499d5883a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по вектору. <br /></td></tr>
+<tr class="separator:a48070013de350bfa48981499d5883a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730323c8cacf593c0719cbac98a709ae"><td class="memItemLeft" align="right" valign="top"><a id="a730323c8cacf593c0719cbac98a709ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a730323c8cacf593c0719cbac98a709ae">MbCartPoint</a> (double initX, double initY)</td></tr>
+<tr class="memdesc:a730323c8cacf593c0719cbac98a709ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по координатам. <br /></td></tr>
+<tr class="separator:a730323c8cacf593c0719cbac98a709ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85584cfd9d56128f3866d52086b976c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a85584cfd9d56128f3866d52086b976c4">MbCartPoint</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p, const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;matr)</td></tr>
+<tr class="memdesc:a85584cfd9d56128f3866d52086b976c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по точке в локальной системе координат.  <a href="class_mb_cart_point.html#a85584cfd9d56128f3866d52086b976c4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a85584cfd9d56128f3866d52086b976c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391c2ed26cfe34cbfe77ca8c870df60f"><td class="memItemLeft" align="right" valign="top"><a id="a391c2ed26cfe34cbfe77ca8c870df60f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a391c2ed26cfe34cbfe77ca8c870df60f">MbCartPoint</a> (const <a class="el" href="class_mb_float_point.html">MbFloatPoint</a> &amp;)</td></tr>
+<tr class="memdesc:a391c2ed26cfe34cbfe77ca8c870df60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по float-точке. <br /></td></tr>
+<tr class="separator:a391c2ed26cfe34cbfe77ca8c870df60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126f18f59c2bfce797e8b6a89287544b"><td class="memItemLeft" align="right" valign="top"><a id="a126f18f59c2bfce797e8b6a89287544b"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a126f18f59c2bfce797e8b6a89287544b">SetZero</a> ()</td></tr>
+<tr class="memdesc:a126f18f59c2bfce797e8b6a89287544b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обнулить координаты. <br /></td></tr>
+<tr class="separator:a126f18f59c2bfce797e8b6a89287544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8159f63a3d35ca4b0cc8cbe90e9ec5"><td class="memTemplParams" colspan="2"><a id="a0b8159f63a3d35ca4b0cc8cbe90e9ec5"></a>
+template&lt;class Point &gt; </td></tr>
+<tr class="memitem:a0b8159f63a3d35ca4b0cc8cbe90e9ec5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a0b8159f63a3d35ca4b0cc8cbe90e9ec5">Init</a> (const Point &amp;p)</td></tr>
+<tr class="memdesc:a0b8159f63a3d35ca4b0cc8cbe90e9ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать по другой точке. <br /></td></tr>
+<tr class="separator:a0b8159f63a3d35ca4b0cc8cbe90e9ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92406b1eac78037ac42473a21de40caf"><td class="memItemLeft" align="right" valign="top"><a id="a92406b1eac78037ac42473a21de40caf"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a92406b1eac78037ac42473a21de40caf">Init</a> (double initX, double initY)</td></tr>
+<tr class="memdesc:a92406b1eac78037ac42473a21de40caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать по координатам. <br /></td></tr>
+<tr class="separator:a92406b1eac78037ac42473a21de40caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c63189e22c0a31e75736a790337622"><td class="memItemLeft" align="right" valign="top"><a id="a55c63189e22c0a31e75736a790337622"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a55c63189e22c0a31e75736a790337622">DistanceToPoint</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;to) const</td></tr>
+<tr class="memdesc:a55c63189e22c0a31e75736a790337622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти расстояние от точки до точки. <br /></td></tr>
+<tr class="separator:a55c63189e22c0a31e75736a790337622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fca7202e7179192ee90d469278e9ec"><td class="memItemLeft" align="right" valign="top"><a id="a86fca7202e7179192ee90d469278e9ec"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a86fca7202e7179192ee90d469278e9ec">Transform</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;matr)</td></tr>
+<tr class="memdesc:a86fca7202e7179192ee90d469278e9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразовать согласно матрице. <br /></td></tr>
+<tr class="separator:a86fca7202e7179192ee90d469278e9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4659ed4acc7ba6d8701e2b98fe83069"><td class="memItemLeft" align="right" valign="top"><a id="ab4659ed4acc7ba6d8701e2b98fe83069"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ab4659ed4acc7ba6d8701e2b98fe83069">Move</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;to)</td></tr>
+<tr class="memdesc:ab4659ed4acc7ba6d8701e2b98fe83069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть вдоль вектора. <br /></td></tr>
+<tr class="separator:ab4659ed4acc7ba6d8701e2b98fe83069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad101ff6a0efb0230376a4347b6d97b99"><td class="memItemLeft" align="right" valign="top"><a id="ad101ff6a0efb0230376a4347b6d97b99"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ad101ff6a0efb0230376a4347b6d97b99">Move</a> (double dx, double dy)</td></tr>
+<tr class="memdesc:ad101ff6a0efb0230376a4347b6d97b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть на заданные приращения. <br /></td></tr>
+<tr class="separator:ad101ff6a0efb0230376a4347b6d97b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cee30e651de6fee1e55a20f97ba7fc"><td class="memItemLeft" align="right" valign="top"><a id="ad6cee30e651de6fee1e55a20f97ba7fc"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ad6cee30e651de6fee1e55a20f97ba7fc">DistanceToPoint2</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;to) const</td></tr>
+<tr class="memdesc:ad6cee30e651de6fee1e55a20f97ba7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти квадрат расстояния от точки до точки. <br /></td></tr>
+<tr class="separator:ad6cee30e651de6fee1e55a20f97ba7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8e35d5e3546fedd81a690d16a0f9d2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a7b8e35d5e3546fedd81a690d16a0f9d2">DistanceToLineSeg</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p2, double eps=<a class="el" href="class_math.html#ab286036ac6d326204428d62aadc062a4">Math::LengthEps</a>) const</td></tr>
+<tr class="memdesc:a7b8e35d5e3546fedd81a690d16a0f9d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расстояние от точки до отрезка.  <a href="class_mb_cart_point.html#a7b8e35d5e3546fedd81a690d16a0f9d2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7b8e35d5e3546fedd81a690d16a0f9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf0dcbb2f2dd97676c5fed93ccb5092"><td class="memItemLeft" align="right" valign="top"><a id="a1bf0dcbb2f2dd97676c5fed93ccb5092"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a1bf0dcbb2f2dd97676c5fed93ccb5092">Length</a> () const</td></tr>
+<tr class="memdesc:a1bf0dcbb2f2dd97676c5fed93ccb5092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина вектора ( 0, p(x,y) ). <br /></td></tr>
+<tr class="separator:a1bf0dcbb2f2dd97676c5fed93ccb5092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29e0abdcb9af977786e52b9b0188cdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ab29e0abdcb9af977786e52b9b0188cdc">Scale</a> (double sx, double sy)</td></tr>
+<tr class="memdesc:ab29e0abdcb9af977786e52b9b0188cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштабировать координаты.  <a href="class_mb_cart_point.html#ab29e0abdcb9af977786e52b9b0188cdc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab29e0abdcb9af977786e52b9b0188cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad335a73485ffe0dc34686cd3ecafabdc"><td class="memItemLeft" align="right" valign="top"><a id="ad335a73485ffe0dc34686cd3ecafabdc"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ad335a73485ffe0dc34686cd3ecafabdc">GetProperties</a> (<a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)</td></tr>
+<tr class="memdesc:ad335a73485ffe0dc34686cd3ecafabdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать свойства объекта. <br /></td></tr>
+<tr class="separator:ad335a73485ffe0dc34686cd3ecafabdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46995c15e84856224fc7af6068cca4f5"><td class="memItemLeft" align="right" valign="top"><a id="a46995c15e84856224fc7af6068cca4f5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a46995c15e84856224fc7af6068cca4f5">SetProperties</a> (const <a class="el" href="class_mb_properties.html">MbProperties</a> &amp;properties)</td></tr>
+<tr class="memdesc:a46995c15e84856224fc7af6068cca4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать свойства объекта. <br /></td></tr>
+<tr class="separator:a46995c15e84856224fc7af6068cca4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a04535ebde2d91d282853992aab5c74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a2a04535ebde2d91d282853992aab5c74">IsSame</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;other, double accuracy) const</td></tr>
+<tr class="memdesc:a2a04535ebde2d91d282853992aab5c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Являются ли объекты равными?  <a href="class_mb_cart_point.html#a2a04535ebde2d91d282853992aab5c74">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2a04535ebde2d91d282853992aab5c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d89ca6dbdcc433baf15cdf117dee839"><td class="memItemLeft" align="right" valign="top"><a id="a2d89ca6dbdcc433baf15cdf117dee839"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a2d89ca6dbdcc433baf15cdf117dee839">IsUndefined</a> () const</td></tr>
+<tr class="memdesc:a2d89ca6dbdcc433baf15cdf117dee839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Является ли точка неопределенной? <br /></td></tr>
+<tr class="separator:a2d89ca6dbdcc433baf15cdf117dee839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Сдвиги, вращения, отражения.</div></td></tr>
+<tr class="memitem:af6b004c8a2765b23446c0f20566b1935"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#af6b004c8a2765b23446c0f20566b1935">MoveAlongLine</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p2, double delta)</td></tr>
+<tr class="memdesc:af6b004c8a2765b23446c0f20566b1935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть по направлению, заданному второй точкой.  <a href="class_mb_cart_point.html#af6b004c8a2765b23446c0f20566b1935">Подробнее...</a><br /></td></tr>
+<tr class="separator:af6b004c8a2765b23446c0f20566b1935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4db88ebf9f728ca49fd222187808269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ae4db88ebf9f728ca49fd222187808269">MoveAlongLine</a> (double angle, double delta)</td></tr>
+<tr class="memdesc:ae4db88ebf9f728ca49fd222187808269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть по направлению, заданному углом.  <a href="class_mb_cart_point.html#ae4db88ebf9f728ca49fd222187808269">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae4db88ebf9f728ca49fd222187808269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29633c3508d8d25b34752b28e32dba15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a29633c3508d8d25b34752b28e32dba15">MoveAlongLine</a> (const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;angle, double delta)</td></tr>
+<tr class="memdesc:a29633c3508d8d25b34752b28e32dba15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть по направлению, заданному вектором.  <a href="class_mb_cart_point.html#a29633c3508d8d25b34752b28e32dba15">Подробнее...</a><br /></td></tr>
+<tr class="separator:a29633c3508d8d25b34752b28e32dba15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98aa980cacb41e82f599d1b0122d9e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ae98aa980cacb41e82f599d1b0122d9e1">MoveAlongLine</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;vect, double delta)</td></tr>
+<tr class="memdesc:ae98aa980cacb41e82f599d1b0122d9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть по направлению, заданному вектором.  <a href="class_mb_cart_point.html#ae98aa980cacb41e82f599d1b0122d9e1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae98aa980cacb41e82f599d1b0122d9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbc1da767bfdf3ad3a45a66620952f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#aebbc1da767bfdf3ad3a45a66620952f3">MoveUntilDist</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, double dist)</td></tr>
+<tr class="memdesc:aebbc1da767bfdf3ad3a45a66620952f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть точку по направлению к заданной на расстояние dist.  <a href="class_mb_cart_point.html#aebbc1da767bfdf3ad3a45a66620952f3">Подробнее...</a><br /></td></tr>
+<tr class="separator:aebbc1da767bfdf3ad3a45a66620952f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7034e7c38c2a39d28e849db0998715e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a7034e7c38c2a39d28e849db0998715e4">GoNearToPoint</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;to, double ratio)</td></tr>
+<tr class="memdesc:a7034e7c38c2a39d28e849db0998715e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сдвинуть по направлению.  <a href="class_mb_cart_point.html#a7034e7c38c2a39d28e849db0998715e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7034e7c38c2a39d28e849db0998715e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb36679d235991bd1dfcf2279783f89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a2cb36679d235991bd1dfcf2279783f89">Rotate</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, double angle)</td></tr>
+<tr class="memdesc:a2cb36679d235991bd1dfcf2279783f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть на угол.  <a href="class_mb_cart_point.html#a2cb36679d235991bd1dfcf2279783f89">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2cb36679d235991bd1dfcf2279783f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c87c1abcaace95ffb3d54fe3c2f3152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a1c87c1abcaace95ffb3d54fe3c2f3152">Rotate</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;angle)</td></tr>
+<tr class="memdesc:a1c87c1abcaace95ffb3d54fe3c2f3152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть на угол.  <a href="class_mb_cart_point.html#a1c87c1abcaace95ffb3d54fe3c2f3152">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1c87c1abcaace95ffb3d54fe3c2f3152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7da31ec8673a89a53597d70a8c3dce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a7b7da31ec8673a89a53597d70a8c3dce">Rotate</a> (double angle)</td></tr>
+<tr class="memdesc:a7b7da31ec8673a89a53597d70a8c3dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть на угол.  <a href="class_mb_cart_point.html#a7b7da31ec8673a89a53597d70a8c3dce">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7b7da31ec8673a89a53597d70a8c3dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb32334e5dad0548fd98c44f4aabd9f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#afb32334e5dad0548fd98c44f4aabd9f0">Rotate</a> (const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;angle)</td></tr>
+<tr class="memdesc:afb32334e5dad0548fd98c44f4aabd9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повернуть на угол.  <a href="class_mb_cart_point.html#afb32334e5dad0548fd98c44f4aabd9f0">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb32334e5dad0548fd98c44f4aabd9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff877881651f518dfe6ec9e877b466b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#aff877881651f518dfe6ec9e877b466b8">Mirror</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;from) const</td></tr>
+<tr class="memdesc:aff877881651f518dfe6ec9e877b466b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зеркально отразить точку от заданной.  <a href="class_mb_cart_point.html#aff877881651f518dfe6ec9e877b466b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff877881651f518dfe6ec9e877b466b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d3959d44e234114c2339330b40de93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#af1d3959d44e234114c2339330b40de93">Mirror</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p2) const</td></tr>
+<tr class="memdesc:af1d3959d44e234114c2339330b40de93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зеркально отразить точку от прямой.  <a href="class_mb_cart_point.html#af1d3959d44e234114c2339330b40de93">Подробнее...</a><br /></td></tr>
+<tr class="separator:af1d3959d44e234114c2339330b40de93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f71346c6179a6cbd89420a80164148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a62f71346c6179a6cbd89420a80164148">Mirror</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;p1, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;dir)</td></tr>
+<tr class="memdesc:a62f71346c6179a6cbd89420a80164148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зеркально отразить точку от прямой.  <a href="class_mb_cart_point.html#a62f71346c6179a6cbd89420a80164148">Подробнее...</a><br /></td></tr>
+<tr class="separator:a62f71346c6179a6cbd89420a80164148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Логические и арифметические операции.</div></td></tr>
+<tr class="memitem:abc1c1273f2515f2692545cde1dfa9bac"><td class="memItemLeft" align="right" valign="top"><a id="abc1c1273f2515f2692545cde1dfa9bac"></a>
+double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#abc1c1273f2515f2692545cde1dfa9bac">operator[]</a> (size_t i)</td></tr>
+<tr class="memdesc:abc1c1273f2515f2692545cde1dfa9bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступ к координате по индексу. <br /></td></tr>
+<tr class="separator:abc1c1273f2515f2692545cde1dfa9bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39d8a7996f6961112d31b3602429364"><td class="memItemLeft" align="right" valign="top"><a id="ad39d8a7996f6961112d31b3602429364"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ad39d8a7996f6961112d31b3602429364">operator[]</a> (size_t i) const</td></tr>
+<tr class="memdesc:ad39d8a7996f6961112d31b3602429364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение координаты по индексу. <br /></td></tr>
+<tr class="separator:ad39d8a7996f6961112d31b3602429364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0426c7da582c3008fdcaf6aa1448346"><td class="memItemLeft" align="right" valign="top"><a id="ae0426c7da582c3008fdcaf6aa1448346"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ae0426c7da582c3008fdcaf6aa1448346">operator==</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;with) const</td></tr>
+<tr class="memdesc:ae0426c7da582c3008fdcaf6aa1448346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на равенство с точностью <a class="el" href="class_math.html#ab286036ac6d326204428d62aadc062a4" title="Точность вычисления длины (PARAM_PRECISION).">Math::LengthEps</a>. Рекомендуется вместо оператора == использовать функцию IsSame с явным указанием точности сравнения на равенство. <br /></td></tr>
+<tr class="separator:ae0426c7da582c3008fdcaf6aa1448346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a78218de053ce06aa0ba6f5ed55368"><td class="memItemLeft" align="right" valign="top"><a id="a58a78218de053ce06aa0ba6f5ed55368"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a58a78218de053ce06aa0ba6f5ed55368">operator!=</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;with) const</td></tr>
+<tr class="memdesc:a58a78218de053ce06aa0ba6f5ed55368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на неравенство с точностью <a class="el" href="class_math.html#ab286036ac6d326204428d62aadc062a4" title="Точность вычисления длины (PARAM_PRECISION).">Math::LengthEps</a>. Рекомендуется вместо оператора != использовать инвертированное значение функции IsSame с явным указанием точности сравнения на равенство. <br /></td></tr>
+<tr class="separator:a58a78218de053ce06aa0ba6f5ed55368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb9abcb9569817533c55914bc574304"><td class="memItemLeft" align="right" valign="top"><a id="aebb9abcb9569817533c55914bc574304"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#aebb9abcb9569817533c55914bc574304">Equal</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;with) const</td></tr>
+<tr class="memdesc:aebb9abcb9569817533c55914bc574304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на точное равенство. <br /></td></tr>
+<tr class="separator:aebb9abcb9569817533c55914bc574304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73353893f308c83f69581468b0468dc5"><td class="memItemLeft" align="right" valign="top"><a id="a73353893f308c83f69581468b0468dc5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a73353893f308c83f69581468b0468dc5">operator&lt;</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;) const</td></tr>
+<tr class="memdesc:a73353893f308c83f69581468b0468dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на меньше. <br /></td></tr>
+<tr class="separator:a73353893f308c83f69581468b0468dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d08c4eeab46db5c5a6e3dc1c824a65a"><td class="memItemLeft" align="right" valign="top"><a id="a0d08c4eeab46db5c5a6e3dc1c824a65a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a0d08c4eeab46db5c5a6e3dc1c824a65a">operator&gt;</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;) const</td></tr>
+<tr class="memdesc:a0d08c4eeab46db5c5a6e3dc1c824a65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить на больше. <br /></td></tr>
+<tr class="separator:a0d08c4eeab46db5c5a6e3dc1c824a65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab72f893a6e63a877498b0c8571d5fa"><td class="memItemLeft" align="right" valign="top"><a id="a1ab72f893a6e63a877498b0c8571d5fa"></a>
+<a class="el" href="class_mb_vector.html">MbVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a1ab72f893a6e63a877498b0c8571d5fa">operator+</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt) const</td></tr>
+<tr class="memdesc:a1ab72f893a6e63a877498b0c8571d5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сложить две точки. <br /></td></tr>
+<tr class="separator:a1ab72f893a6e63a877498b0c8571d5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c78a4dca0b79d1314b3b0c2e984989"><td class="memItemLeft" align="right" valign="top"><a id="a57c78a4dca0b79d1314b3b0c2e984989"></a>
+<a class="el" href="class_mb_vector.html">MbVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a57c78a4dca0b79d1314b3b0c2e984989">operator-</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt) const</td></tr>
+<tr class="memdesc:a57c78a4dca0b79d1314b3b0c2e984989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычесть из точки точку. <br /></td></tr>
+<tr class="separator:a57c78a4dca0b79d1314b3b0c2e984989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328a425823c6dbc821f284d80e16bbe2"><td class="memItemLeft" align="right" valign="top"><a id="a328a425823c6dbc821f284d80e16bbe2"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a328a425823c6dbc821f284d80e16bbe2">operator+</a> (const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;d) const</td></tr>
+<tr class="memdesc:a328a425823c6dbc821f284d80e16bbe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сложить точку с вектором. <br /></td></tr>
+<tr class="separator:a328a425823c6dbc821f284d80e16bbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad268717a24231da137d9f5adb6edb6c1"><td class="memItemLeft" align="right" valign="top"><a id="ad268717a24231da137d9f5adb6edb6c1"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ad268717a24231da137d9f5adb6edb6c1">operator-</a> (const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;d) const</td></tr>
+<tr class="memdesc:ad268717a24231da137d9f5adb6edb6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычесть вектор из точки. <br /></td></tr>
+<tr class="separator:ad268717a24231da137d9f5adb6edb6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9387ec217d7d46a8a8b7a2b505df1167"><td class="memItemLeft" align="right" valign="top"><a id="a9387ec217d7d46a8a8b7a2b505df1167"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a9387ec217d7d46a8a8b7a2b505df1167">operator-</a> () const</td></tr>
+<tr class="memdesc:a9387ec217d7d46a8a8b7a2b505df1167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Унарный минус. <br /></td></tr>
+<tr class="separator:a9387ec217d7d46a8a8b7a2b505df1167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada480e7d825c6cf648e030d3ca026622"><td class="memItemLeft" align="right" valign="top"><a id="ada480e7d825c6cf648e030d3ca026622"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ada480e7d825c6cf648e030d3ca026622">operator*</a> (double factor) const</td></tr>
+<tr class="memdesc:ada480e7d825c6cf648e030d3ca026622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножить точку на число. <br /></td></tr>
+<tr class="separator:ada480e7d825c6cf648e030d3ca026622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1c2f76db6a7b2f5163d44878caa41b"><td class="memItemLeft" align="right" valign="top"><a id="acc1c2f76db6a7b2f5163d44878caa41b"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#acc1c2f76db6a7b2f5163d44878caa41b">operator/</a> (double factor) const</td></tr>
+<tr class="memdesc:acc1c2f76db6a7b2f5163d44878caa41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделить точку на число. <br /></td></tr>
+<tr class="separator:acc1c2f76db6a7b2f5163d44878caa41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa011d4833447780c5e4837c6738bcf2"><td class="memItemLeft" align="right" valign="top"><a id="afa011d4833447780c5e4837c6738bcf2"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#afa011d4833447780c5e4837c6738bcf2">operator*</a> (const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;) const</td></tr>
+<tr class="memdesc:afa011d4833447780c5e4837c6738bcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычислить точку как копию данной точки, преобразованную матрицей. <br /></td></tr>
+<tr class="separator:afa011d4833447780c5e4837c6738bcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa72085f2515cfadd71c90c41970f4e"><td class="memItemLeft" align="right" valign="top"><a id="acaa72085f2515cfadd71c90c41970f4e"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#acaa72085f2515cfadd71c90c41970f4e">operator+=</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt)</td></tr>
+<tr class="memdesc:acaa72085f2515cfadd71c90c41970f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сложить две точки. <br /></td></tr>
+<tr class="separator:acaa72085f2515cfadd71c90c41970f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd5e60810624c4014da8c7fece22727"><td class="memItemLeft" align="right" valign="top"><a id="a5bd5e60810624c4014da8c7fece22727"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a5bd5e60810624c4014da8c7fece22727">operator-=</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;pnt)</td></tr>
+<tr class="memdesc:a5bd5e60810624c4014da8c7fece22727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычесть из точки точку. <br /></td></tr>
+<tr class="separator:a5bd5e60810624c4014da8c7fece22727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab172318c60a1bc91056db2e00dcba522"><td class="memItemLeft" align="right" valign="top"><a id="ab172318c60a1bc91056db2e00dcba522"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ab172318c60a1bc91056db2e00dcba522">operator*=</a> (double factor)</td></tr>
+<tr class="memdesc:ab172318c60a1bc91056db2e00dcba522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножить точку на число. <br /></td></tr>
+<tr class="separator:ab172318c60a1bc91056db2e00dcba522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44adc1e5ca0c7ff7276030644d3d74bb"><td class="memItemLeft" align="right" valign="top"><a id="a44adc1e5ca0c7ff7276030644d3d74bb"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a44adc1e5ca0c7ff7276030644d3d74bb">operator/=</a> (double factor)</td></tr>
+<tr class="memdesc:a44adc1e5ca0c7ff7276030644d3d74bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделить точку на число. <br /></td></tr>
+<tr class="separator:a44adc1e5ca0c7ff7276030644d3d74bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6087a007f7a9a2bf97fde48e75cc3920"><td class="memItemLeft" align="right" valign="top"><a id="a6087a007f7a9a2bf97fde48e75cc3920"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a6087a007f7a9a2bf97fde48e75cc3920">operator+=</a> (<a class="el" href="class_mb_vector.html">MbVector</a> &amp;v)</td></tr>
+<tr class="memdesc:a6087a007f7a9a2bf97fde48e75cc3920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сложить точку с вектором. <br /></td></tr>
+<tr class="separator:a6087a007f7a9a2bf97fde48e75cc3920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff27f24026c1e901f11dd514e45fcf76"><td class="memItemLeft" align="right" valign="top"><a id="aff27f24026c1e901f11dd514e45fcf76"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#aff27f24026c1e901f11dd514e45fcf76">operator-=</a> (<a class="el" href="class_mb_vector.html">MbVector</a> &amp;v)</td></tr>
+<tr class="memdesc:aff27f24026c1e901f11dd514e45fcf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычесть вектор из точки. <br /></td></tr>
+<tr class="separator:aff27f24026c1e901f11dd514e45fcf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774916470e71227d88ff933bab922848"><td class="memItemLeft" align="right" valign="top"><a id="a774916470e71227d88ff933bab922848"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a774916470e71227d88ff933bab922848">operator+</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;vector) const</td></tr>
+<tr class="memdesc:a774916470e71227d88ff933bab922848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сложить точку с вектором. <br /></td></tr>
+<tr class="separator:a774916470e71227d88ff933bab922848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bf65b22d8764de0805867c3956a4f1"><td class="memItemLeft" align="right" valign="top"><a id="a16bf65b22d8764de0805867c3956a4f1"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a16bf65b22d8764de0805867c3956a4f1">operator-</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;vector) const</td></tr>
+<tr class="memdesc:a16bf65b22d8764de0805867c3956a4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычесть вектор из точки. <br /></td></tr>
+<tr class="separator:a16bf65b22d8764de0805867c3956a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e5ce2878d820f46b80abdfc6ffe2e0"><td class="memItemLeft" align="right" valign="top"><a id="ac3e5ce2878d820f46b80abdfc6ffe2e0"></a>
+<a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ac3e5ce2878d820f46b80abdfc6ffe2e0">operator=</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;)</td></tr>
+<tr class="memdesc:ac3e5ce2878d820f46b80abdfc6ffe2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить точке значения другой точки. <br /></td></tr>
+<tr class="separator:ac3e5ce2878d820f46b80abdfc6ffe2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e14ea12ecf389d39393181ee236eb5"><td class="memItemLeft" align="right" valign="top"><a id="a73e14ea12ecf389d39393181ee236eb5"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a73e14ea12ecf389d39393181ee236eb5">operator=</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;)</td></tr>
+<tr class="memdesc:a73e14ea12ecf389d39393181ee236eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить точке значения компонент вектора. <br /></td></tr>
+<tr class="separator:a73e14ea12ecf389d39393181ee236eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e15b690814ba6e814fec4ccee151d27"><td class="memItemLeft" align="right" valign="top"><a id="a7e15b690814ba6e814fec4ccee151d27"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a7e15b690814ba6e814fec4ccee151d27">operator=</a> (const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;)</td></tr>
+<tr class="memdesc:a7e15b690814ba6e814fec4ccee151d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить точке значения компонент вектора. <br /></td></tr>
+<tr class="separator:a7e15b690814ba6e814fec4ccee151d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecaf0aa2dc500d1c60182a38cab9100"><td class="memItemLeft" align="right" valign="top"><a id="a9ecaf0aa2dc500d1c60182a38cab9100"></a>
+<a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a9ecaf0aa2dc500d1c60182a38cab9100">operator=</a> (const <a class="el" href="class_mb_float_point.html">MbFloatPoint</a> &amp;)</td></tr>
+<tr class="memdesc:a9ecaf0aa2dc500d1c60182a38cab9100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Присвоить точке значений float-точки. <br /></td></tr>
+<tr class="separator:a9ecaf0aa2dc500d1c60182a38cab9100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Функции сложения и умножения точек с точками и с векторами.</div></td></tr>
+<tr class="memitem:a1d15c9d564f830146b4bad1759b8fc3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a1d15c9d564f830146b4bad1759b8fc3b">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v2, double t2)</td></tr>
+<tr class="memdesc:a1d15c9d564f830146b4bad1759b8fc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты сумме координат точки и вектора.  <a href="class_mb_cart_point.html#a1d15c9d564f830146b4bad1759b8fc3b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1d15c9d564f830146b4bad1759b8fc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4416274e6503bddc7c4324c5c3c1c8c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a4416274e6503bddc7c4324c5c3c1c8c8">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v2, double t2, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v3, double t3)</td></tr>
+<tr class="memdesc:a4416274e6503bddc7c4324c5c3c1c8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты сумме координат точки и двух векторов.  <a href="class_mb_cart_point.html#a4416274e6503bddc7c4324c5c3c1c8c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4416274e6503bddc7c4324c5c3c1c8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead0766e537925d0fcd25a4b0595b717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#aead0766e537925d0fcd25a4b0595b717">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, double t1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v2, double t2)</td></tr>
+<tr class="memdesc:aead0766e537925d0fcd25a4b0595b717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты сумме координат двух точек.  <a href="class_mb_cart_point.html#aead0766e537925d0fcd25a4b0595b717">Подробнее...</a><br /></td></tr>
+<tr class="separator:aead0766e537925d0fcd25a4b0595b717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0adfe5654f85466c0fa2cb96d123b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#afd0adfe5654f85466c0fa2cb96d123b7">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, double t1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v2, double t2, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v3, double t3)</td></tr>
+<tr class="memdesc:afd0adfe5654f85466c0fa2cb96d123b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты сумме координат трех точек.  <a href="class_mb_cart_point.html#afd0adfe5654f85466c0fa2cb96d123b7">Подробнее...</a><br /></td></tr>
+<tr class="separator:afd0adfe5654f85466c0fa2cb96d123b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe54c49a2b01ed9e7b892438b119e81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a9fe54c49a2b01ed9e7b892438b119e81">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, double t1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v2, double t2, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v3, double t3, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v4, double t4)</td></tr>
+<tr class="memdesc:a9fe54c49a2b01ed9e7b892438b119e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты сумме координат четырех точек.  <a href="class_mb_cart_point.html#a9fe54c49a2b01ed9e7b892438b119e81">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9fe54c49a2b01ed9e7b892438b119e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933802a3459efde70387b1fa18195733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a933802a3459efde70387b1fa18195733">Set</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;v2, double t2, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;v3, double t3)</td></tr>
+<tr class="memdesc:a933802a3459efde70387b1fa18195733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Приравнять координаты сумме координат точки и двух векторов.  <a href="class_mb_cart_point.html#a933802a3459efde70387b1fa18195733">Подробнее...</a><br /></td></tr>
+<tr class="separator:a933802a3459efde70387b1fa18195733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6131f16e6e300b67da491bebbb1b2a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ac6131f16e6e300b67da491bebbb1b2a7">Add</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v1, double t1)</td></tr>
+<tr class="memdesc:ac6131f16e6e300b67da491bebbb1b2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения компонент вектора.  <a href="class_mb_cart_point.html#ac6131f16e6e300b67da491bebbb1b2a7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac6131f16e6e300b67da491bebbb1b2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb3619d86e19fd3addbdb9e94479126"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#aabb3619d86e19fd3addbdb9e94479126">Add</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v1, double t1, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v2, double t2)</td></tr>
+<tr class="memdesc:aabb3619d86e19fd3addbdb9e94479126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения компонент двух векторов.  <a href="class_mb_cart_point.html#aabb3619d86e19fd3addbdb9e94479126">Подробнее...</a><br /></td></tr>
+<tr class="separator:aabb3619d86e19fd3addbdb9e94479126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ca23a4926c0a2298a53a282e2d6086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ae6ca23a4926c0a2298a53a282e2d6086">Add</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v1, double t1, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v2, double t2, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v3, double t3)</td></tr>
+<tr class="memdesc:ae6ca23a4926c0a2298a53a282e2d6086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения компонент векторов v1, v2 и v3, умноженных на числа t1, t2 и t3, соответственно.  <a href="class_mb_cart_point.html#ae6ca23a4926c0a2298a53a282e2d6086">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae6ca23a4926c0a2298a53a282e2d6086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e7ab4f39fbb445df8e7122ed1bc703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ae3e7ab4f39fbb445df8e7122ed1bc703">Add</a> (const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v1, double t1, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v2, double t2, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v3, double t3, const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;v4, double t4)</td></tr>
+<tr class="memdesc:ae3e7ab4f39fbb445df8e7122ed1bc703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения компонент трех векторов.  <a href="class_mb_cart_point.html#ae3e7ab4f39fbb445df8e7122ed1bc703">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae3e7ab4f39fbb445df8e7122ed1bc703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5011a67ade802f57f8978b2366e9e1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ab5011a67ade802f57f8978b2366e9e1d">Add</a> (const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;v1, double t1, const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;v2, double t2)</td></tr>
+<tr class="memdesc:ab5011a67ade802f57f8978b2366e9e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения компонент двух векторов.  <a href="class_mb_cart_point.html#ab5011a67ade802f57f8978b2366e9e1d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab5011a67ade802f57f8978b2366e9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e5c9d6e104a5efa87f94a434f431d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a76e5c9d6e104a5efa87f94a434f431d8">Add</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, double t1)</td></tr>
+<tr class="memdesc:a76e5c9d6e104a5efa87f94a434f431d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения координат точки.  <a href="class_mb_cart_point.html#a76e5c9d6e104a5efa87f94a434f431d8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a76e5c9d6e104a5efa87f94a434f431d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f058fcb4d8df574f70f083fb2edf78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ac6f058fcb4d8df574f70f083fb2edf78">Add</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, double t1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v2, double t2, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v3, double t3)</td></tr>
+<tr class="memdesc:ac6f058fcb4d8df574f70f083fb2edf78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения координат трех точек.  <a href="class_mb_cart_point.html#ac6f058fcb4d8df574f70f083fb2edf78">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac6f058fcb4d8df574f70f083fb2edf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329f5103ae68d8fbed2221c5686f7806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a329f5103ae68d8fbed2221c5686f7806">Add</a> (const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v1, double t1, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v2, double t2, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v3, double t3, const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;v4, double t4)</td></tr>
+<tr class="memdesc:a329f5103ae68d8fbed2221c5686f7806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить координаты на значения координат четырех точек.  <a href="class_mb_cart_point.html#a329f5103ae68d8fbed2221c5686f7806">Подробнее...</a><br /></td></tr>
+<tr class="separator:a329f5103ae68d8fbed2221c5686f7806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:ab2eed600c453cc607bad493186807ab3"><td class="memItemLeft" align="right" valign="top"><a id="ab2eed600c453cc607bad493186807ab3"></a>
+static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#ab2eed600c453cc607bad493186807ab3">GetDimension</a> ()</td></tr>
+<tr class="memdesc:ab2eed600c453cc607bad493186807ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество координат точки. <br /></td></tr>
+<tr class="separator:ab2eed600c453cc607bad493186807ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a224c903cb2042be3d66d4311fb210876"><td class="memItemLeft" align="right" valign="top"><a id="a224c903cb2042be3d66d4311fb210876"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a224c903cb2042be3d66d4311fb210876">x</a></td></tr>
+<tr class="memdesc:a224c903cb2042be3d66d4311fb210876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Первая координата точки. <br /></td></tr>
+<tr class="separator:a224c903cb2042be3d66d4311fb210876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ef60be521bdd6f63beebda5b1a7dfc"><td class="memItemLeft" align="right" valign="top"><a id="aa0ef60be521bdd6f63beebda5b1a7dfc"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#aa0ef60be521bdd6f63beebda5b1a7dfc">y</a></td></tr>
+<tr class="memdesc:aa0ef60be521bdd6f63beebda5b1a7dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вторая координата точки. <br /></td></tr>
+<tr class="separator:aa0ef60be521bdd6f63beebda5b1a7dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a58282957a36c5c9bad148f930f826a20"><td class="memItemLeft" align="right" valign="top"><a id="a58282957a36c5c9bad148f930f826a20"></a>
+static const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mb_cart_point.html#a58282957a36c5c9bad148f930f826a20">origin</a></td></tr>
+<tr class="memdesc:a58282957a36c5c9bad148f930f826a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начало координат или { 0, 0 }. <br /></td></tr>
+<tr class="separator:a58282957a36c5c9bad148f930f826a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Декартова двумерная точка. </p>
+<p>Двумерная точка описывается двумя координатами. Определены различные логические, арифметические и геометрические операции точек с точками и векторами. Точка названа в честь французского учёного геометра Рене Декарта (Rene Descartes, по латыни Renatus Cartesius). <br  />
+</p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a149c8b7fc6a9b54dfecac66087e51e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149c8b7fc6a9b54dfecac66087e51e6b">&#9670;&nbsp;</a></span>MbCartPoint() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbCartPoint::MbCartPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по умолчанию. </p>
+<p>Создает точку с нулевыми координатами. </p>
+
+</div>
+</div>
+<a id="a85584cfd9d56128f3866d52086b976c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85584cfd9d56128f3866d52086b976c4">&#9670;&nbsp;</a></span>MbCartPoint() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MbCartPoint::MbCartPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_matrix.html">MbMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>matr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по точке в локальной системе координат. </p>
+<p>Для перевода точки в глобальную систему координат задаётся матрица перехода из локальной системы.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>- Точка в локальной системе координат.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">matr</td><td>- Матрица перехода из локальной системы координат в глобальную. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="af6b004c8a2765b23446c0f20566b1935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b004c8a2765b23446c0f20566b1935">&#9670;&nbsp;</a></span>MoveAlongLine() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::MoveAlongLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сдвинуть по направлению, заданному второй точкой. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>- Исходная точка, определяющая направления сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>- Величина сдвига. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4db88ebf9f728ca49fd222187808269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4db88ebf9f728ca49fd222187808269">&#9670;&nbsp;</a></span>MoveAlongLine() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::MoveAlongLine </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сдвинуть по направлению, заданному углом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол, определяющий направление сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>- Величина сдвига. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29633c3508d8d25b34752b28e32dba15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29633c3508d8d25b34752b28e32dba15">&#9670;&nbsp;</a></span>MoveAlongLine() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::MoveAlongLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сдвинуть по направлению, заданному вектором. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Вектор, определяющий направление сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>- Величина сдвига. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae98aa980cacb41e82f599d1b0122d9e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98aa980cacb41e82f599d1b0122d9e1">&#9670;&nbsp;</a></span>MoveAlongLine() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::MoveAlongLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>vect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сдвинуть по направлению, заданному вектором. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Вектор, определяющий направление сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>- Величина сдвига. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebbc1da767bfdf3ad3a45a66620952f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebbc1da767bfdf3ad3a45a66620952f3">&#9670;&nbsp;</a></span>MoveUntilDist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::MoveUntilDist </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сдвинуть точку по направлению к заданной на расстояние dist. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Исходная точка, определяющая направления сдвига.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dist</td><td>- Величина сдвига. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7034e7c38c2a39d28e849db0998715e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7034e7c38c2a39d28e849db0998715e4">&#9670;&nbsp;</a></span>GoNearToPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::GoNearToPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ratio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сдвинуть по направлению. </p>
+<p>Сдвиг по направлению точки to на расстояние, определяемое отношением величины ratio к расстоянию между точками.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">to</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio</td><td>- Доля расстояния. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2cb36679d235991bd1dfcf2279783f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb36679d235991bd1dfcf2279783f89">&#9670;&nbsp;</a></span>Rotate() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повернуть на угол. </p>
+<p>Угол определяет вектор вращения, а точка - центр.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c87c1abcaace95ffb3d54fe3c2f3152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c87c1abcaace95ffb3d54fe3c2f3152">&#9670;&nbsp;</a></span>Rotate() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>pnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть на угол. </p>
+<p>Угол определяется вектором вращения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pnt</td><td>- Точка - центр вращения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Вектор вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b7da31ec8673a89a53597d70a8c3dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7da31ec8673a89a53597d70a8c3dce">&#9670;&nbsp;</a></span>Rotate() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повернуть на угол. </p>
+<p>Угол определяет вектор вращения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Угол вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb32334e5dad0548fd98c44f4aabd9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb32334e5dad0548fd98c44f4aabd9f0">&#9670;&nbsp;</a></span>Rotate() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повернуть на угол. </p>
+<p>Угол определяется вектором вращения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- Вектор вращения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aff877881651f518dfe6ec9e877b466b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff877881651f518dfe6ec9e877b466b8">&#9670;&nbsp;</a></span>Mirror() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_cart_point.html">MbCartPoint</a> MbCartPoint::Mirror </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Зеркально отразить точку от заданной. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>- Точка, от которой требуется отразить исходную.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Отраженную точку. </dd></dl>
+
+</div>
+</div>
+<a id="af1d3959d44e234114c2339330b40de93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d3959d44e234114c2339330b40de93">&#9670;&nbsp;</a></span>Mirror() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mb_cart_point.html">MbCartPoint</a> MbCartPoint::Mirror </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Зеркально отразить точку от прямой. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1,p2</td><td>- Точки, задающие прямую.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Отраженную точку. </dd></dl>
+
+</div>
+</div>
+<a id="a62f71346c6179a6cbd89420a80164148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62f71346c6179a6cbd89420a80164148">&#9670;&nbsp;</a></span>Mirror() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Mirror </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Зеркально отразить точку от прямой. </p>
+<p>Отражение происходит от прямой в направлении, задаваемом базовой точкой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>- Точка, задающая направление отражения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>- Вектор, задающий прямую, от которой делается отражение. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b8e35d5e3546fedd81a690d16a0f9d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8e35d5e3546fedd81a690d16a0f9d2">&#9670;&nbsp;</a></span>DistanceToLineSeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MbCartPoint::DistanceToLineSeg </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em> = <code><a class="el" href="class_math.html#ab286036ac6d326204428d62aadc062a4">Math::LengthEps</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расстояние от точки до отрезка. </p>
+<p>Отрезок задается по двум входным точкам.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1,p2</td><td>- Начальная и конечная точки отрезка.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Искомое расстояние. </dd></dl>
+
+</div>
+</div>
+<a id="ab29e0abdcb9af977786e52b9b0188cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29e0abdcb9af977786e52b9b0188cdc">&#9670;&nbsp;</a></span>Scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Scale </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Масштабировать координаты. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sx,sy</td><td>- Масштабирующие коэффициенты для компонент x и y соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d15c9d564f830146b4bad1759b8fc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d15c9d564f830146b4bad1759b8fc3b">&#9670;&nbsp;</a></span>Set() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Приравнять координаты сумме координат точки и вектора. </p>
+<p>Приравнять координаты сумме координат точки v1 и вектора v2, умноженного на число t2.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>- Исходная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v2</td><td>- Исходный вектор.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t2</td><td>- Число, на которое умножаются координаты исходного вектора v2. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4416274e6503bddc7c4324c5c3c1c8c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4416274e6503bddc7c4324c5c3c1c8c8">&#9670;&nbsp;</a></span>Set() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Приравнять координаты сумме координат точки и двух векторов. </p>
+<p>Приравнять координаты сумме координат точки v1 и векторов v2 и v3, умноженных на числа t2 и t3, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>- Исходная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v2,v3</td><td>- Исходные векторы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t2,t3</td><td>- Числа, на которые умножаются координаты векторов v2 и v3 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aead0766e537925d0fcd25a4b0595b717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead0766e537925d0fcd25a4b0595b717">&#9670;&nbsp;</a></span>Set() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Приравнять координаты сумме координат двух точек. </p>
+<p>Приравнять координаты сумме координат точек v1 и v2, умноженных на числа t1 и t2, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2</td><td>- Исходные точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2</td><td>- Числа, на которые умножаются координаты точек v1 и v2 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd0adfe5654f85466c0fa2cb96d123b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0adfe5654f85466c0fa2cb96d123b7">&#9670;&nbsp;</a></span>Set() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Приравнять координаты сумме координат трех точек. </p>
+<p>Приравнять координаты сумме координат точек v1, v2 и v3, умноженных на числа t1, t2 и t3, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2,v3</td><td>- Исходные точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2,t3</td><td>- Числа, на которые умножаются координаты точек v1, v2 и v3 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fe54c49a2b01ed9e7b892438b119e81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe54c49a2b01ed9e7b892438b119e81">&#9670;&nbsp;</a></span>Set() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Приравнять координаты сумме координат четырех точек. </p>
+<p>Приравнять координаты сумме координат точек v1, v2, v3 и v4, умноженных на числа t1, t2, t3 и t4, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2,v3,v4</td><td>- Исходные точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2,t3,t4</td><td>- Числа, на которые умножаются координаты точек v1, v2, v3 и v4 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a933802a3459efde70387b1fa18195733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933802a3459efde70387b1fa18195733">&#9670;&nbsp;</a></span>Set() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Приравнять координаты сумме координат точки и двух векторов. </p>
+<p>Приравнять координаты сумме координат точки v1 и векторов v2 и v3, умноженных на числа t2 и t3, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>- Исходная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v2,v3</td><td>- Исходные векторы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t2,t3</td><td>- Числа, на которые умножаются координаты векторов v2 и v3 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac6131f16e6e300b67da491bebbb1b2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6131f16e6e300b67da491bebbb1b2a7">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения компонент вектора. </p>
+<p>Увеличить координаты на значения компонент вектора v1, умноженных на число t1.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>- Исходный вектор.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1</td><td>- Число, на которое умножаются координаты исходного вектора v1. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabb3619d86e19fd3addbdb9e94479126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb3619d86e19fd3addbdb9e94479126">&#9670;&nbsp;</a></span>Add() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения компонент двух векторов. </p>
+<p>Увеличить координаты на значения компонент векторов v1 и v2, умноженных на числа t1 и t2, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2</td><td>- Исходные векторы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2</td><td>- Числа, на которые умножаются координаты векторов v1 и v2 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6ca23a4926c0a2298a53a282e2d6086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ca23a4926c0a2298a53a282e2d6086">&#9670;&nbsp;</a></span>Add() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения компонент векторов v1, v2 и v3, умноженных на числа t1, t2 и t3, соответственно. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2,v3</td><td>- Исходные векторы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2,t3</td><td>- Числа, на которые умножаются координаты векторов v1, v2 и v3 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3e7ab4f39fbb445df8e7122ed1bc703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e7ab4f39fbb445df8e7122ed1bc703">&#9670;&nbsp;</a></span>Add() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_vector.html">MbVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>v4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения компонент трех векторов. </p>
+<p>Увеличить координаты на значения компонент векторов v1, v2 и v3, умноженных на числа t1, t2 и t3, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2,v3</td><td>- Исходные векторы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2,t3</td><td>- Числа, на которые умножаются координаты векторов v1, v2 и v3 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab5011a67ade802f57f8978b2366e9e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5011a67ade802f57f8978b2366e9e1d">&#9670;&nbsp;</a></span>Add() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_direction.html">MbDirection</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения компонент двух векторов. </p>
+<p>Увеличить координаты на значения компонент векторов v1 и v2, умноженных на числа t1 и t2, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2</td><td>- Исходные векторы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2</td><td>- Числа, на которые умножаются координаты векторов v1 и v2 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a76e5c9d6e104a5efa87f94a434f431d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e5c9d6e104a5efa87f94a434f431d8">&#9670;&nbsp;</a></span>Add() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения координат точки. </p>
+<p>Увеличить координаты на значения координат точки v1, умноженных на число t1.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1</td><td>- Исходная точка.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1</td><td>- Число, на которое умножаются координаты исходной точки v1. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac6f058fcb4d8df574f70f083fb2edf78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f058fcb4d8df574f70f083fb2edf78">&#9670;&nbsp;</a></span>Add() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения координат трех точек. </p>
+<p>Увеличить координаты на значения координат точек v1, v2 и v3, умноженных на числа t1, t2 и t3, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2,v3</td><td>- Исходные точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2,t3</td><td>- Числа, на которые умножаются координаты точек v1, v2 и v3 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a329f5103ae68d8fbed2221c5686f7806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329f5103ae68d8fbed2221c5686f7806">&#9670;&nbsp;</a></span>Add() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___base___tools___i_o.html#gaf30abb3bf8282afc7e7009fdd8d644e7">void</a> MbCartPoint::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>v4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличить координаты на значения координат четырех точек. </p>
+<p>Увеличить координаты на значения координат точек v1, v2, v3 и v4, умноженных на числа t1, t2, t3 и t4, соответственно.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v1,v2,v3,v4</td><td>- Исходные точки.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1,t2,t3,t4</td><td>- Числа, на которые умножаются координаты точек v1, v2, v3 и v4 соответственно. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a04535ebde2d91d282853992aab5c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a04535ebde2d91d282853992aab5c74">&#9670;&nbsp;</a></span>IsSame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MbCartPoint::IsSame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mb_cart_point.html">MbCartPoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>accuracy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Являются ли объекты равными? </p>
+<p>Равными считаются объекты, данные которых равны с заданной точностью.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- Объект для сравнения.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accuracy</td><td>- Точность сравнения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Равны ли объекты. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="mb__cart__point_8h.html">mb_cart_point.h</a></li>
+<li><a class="el" href="mesh__float__point_8h.html">mesh_float_point.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_mb_cart_point.html">MbCartPoint</a></li>
+    <li class="footer">Документация по C3D Toolkit. Последние изменения: Чт 6 Авг 2026 20:26:01. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
