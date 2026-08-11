@@ -32,6 +32,12 @@ const routes = [
     meta: { title: 'API 文档', icon: 'code' }
   },
   {
+    path: '/sandbox',
+    name: 'sandbox',
+    component: () => import('@/views/SandboxView.vue'),
+    meta: { title: '内核沙箱', icon: 'sandbox' }
+  },
+  {
     path: '/learning',
     name: 'learning',
     component: () => import('@/views/LearningView.vue'),
