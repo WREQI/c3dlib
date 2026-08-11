@@ -26,22 +26,28 @@ const routes = [
     meta: { title: '模块详情', icon: 'modules', hidden: true }
   },
   {
+    path: '/module/:moduleId/:subId',
+    name: 'submodule-detail',
+    component: () => import('@/views/SubModuleDetailView.vue'),
+    meta: { title: '子模块学习', icon: 'modules', hidden: true }
+  },
+  {
     path: '/api-docs',
     name: 'api-docs',
     component: () => import('@/views/ApiDocsView.vue'),
     meta: { title: 'API 文档', icon: 'code' }
   },
   {
-    path: '/sandbox',
-    name: 'sandbox',
-    component: () => import('@/views/SandboxView.vue'),
-    meta: { title: '内核沙箱', icon: 'sandbox' }
-  },
-  {
     path: '/learning',
     name: 'learning',
     component: () => import('@/views/LearningView.vue'),
     meta: { title: '学习路径', icon: 'book' }
+  },
+  {
+    path: '/learning/:stageId/:lessonId',
+    name: 'lesson-detail',
+    component: () => import('@/views/LessonDetailView.vue'),
+    meta: { title: '学习单元', icon: 'book', hidden: true }
   },
   {
     path: '/resources',

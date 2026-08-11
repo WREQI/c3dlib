@@ -321,3 +321,20 @@ export function getAllLeafModules() {
   }
   return leaves
 }
+
+// 根据 moduleId 和 subId 查找子模块详情（sub 或 child 级别）
+export function findSubModule(moduleId, subId) {
+  const mod = findModule(moduleId)
+  if (!mod) return null
+  for (const sub of mod.subModules || []) {
+    if (sub.id === subId) {
+      return { ...sub, parent: mod, level: 'sub' }
+    }
+    for (const child of sub.children || []) {
+      if (child.id === subId) {
+        return { ...child, parent: mod, grandparent: sub, level: 'child' }
+      }
+    }
+  }
+  return null
+}

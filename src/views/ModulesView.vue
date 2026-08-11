@@ -68,23 +68,23 @@
             v-for="sub in mod.subModules"
             :key="sub.id"
             class="submodule-card"
+            @click="$router.push(`/module/${mod.id}/${sub.id}`)"
           >
             <h4>{{ sub.name }}</h4>
             <p class="sub-desc">{{ sub.description }}</p>
-            <div class="sub-children" v-if="sub.children && sub.children.length">
+            <div class="sub-children" v-if="sub.children && sub.children.length" @click.stop>
               <router-link
                 v-for="child in sub.children"
                 :key="child.id"
-                :to="child.docUrl"
-                target="_blank"
+                :to="`/module/${mod.id}/${child.id}`"
                 class="child-tag"
               >
                 {{ child.name }}
               </router-link>
             </div>
-            <a v-else :href="sub.docUrl" target="_blank" class="doc-link">
-              查看文档 →
-            </a>
+            <span v-else class="doc-link">
+              进入学习 →
+            </span>
           </div>
         </div>
       </div>
@@ -308,10 +308,12 @@ const filteredModules = computed(() => {
   border-radius: var(--radius-md);
   padding: 16px;
   transition: all 0.2s;
+  cursor: pointer;
 }
 .submodule-card:hover {
   border-color: var(--border-light);
   background: var(--bg-tertiary);
+  transform: translateY(-2px);
 }
 .submodule-card h4 {
   font-size: 14px;
@@ -346,7 +348,6 @@ const filteredModules = computed(() => {
 .doc-link {
   font-size: 12px;
   color: var(--accent-primary-light);
-  text-decoration: none;
 }
 
 .empty-state {

@@ -62,21 +62,31 @@
           <div class="branch-header">
             <span class="branch-dot" :style="{ background: module.color }"></span>
             <h3>{{ sub.name }}</h3>
-            <a :href="sub.docUrl" target="_blank" class="branch-doc">文档</a>
+            <router-link :to="`/module/${module.id}/${sub.id}`" class="branch-enter">
+              进入学习
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </router-link>
           </div>
           <p class="branch-desc">{{ sub.description }}</p>
           <div v-if="sub.children && sub.children.length" class="branch-children">
-            <div v-for="child in sub.children" :key="child.id" class="child-item">
+            <router-link
+              v-for="child in sub.children"
+              :key="child.id"
+              :to="`/module/${module.id}/${child.id}`"
+              class="child-item"
+            >
               <div class="child-info">
-                <a :href="child.docUrl" target="_blank" class="child-name">{{ child.name }}</a>
+                <span class="child-name">{{ child.name }}</span>
                 <p class="child-desc">{{ child.desc }}</p>
               </div>
-              <a :href="child.docUrl" target="_blank" class="child-arrow">
+              <span class="child-arrow">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                  <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
-              </a>
-            </div>
+              </span>
+            </router-link>
           </div>
         </div>
       </div>
@@ -281,17 +291,24 @@ const moduleIcons = {
   font-size: 15px;
   font-weight: 600;
 }
-.branch-doc {
+.branch-enter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 11px;
   color: var(--text-tertiary);
   text-decoration: none;
-  padding: 2px 8px;
+  padding: 4px 10px;
   background: var(--bg-tertiary);
-  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
   margin-left: auto;
+  transition: all 0.2s;
 }
-.branch-doc:hover {
-  color: var(--accent-primary-light);
+.branch-enter:hover {
+  color: var(--mod-color, var(--accent-primary-light));
+  border-color: var(--mod-color, var(--accent-primary));
+  background: var(--mod-color, var(--accent-primary)) + '10';
 }
 .branch-desc {
   font-size: 13px;
@@ -313,20 +330,18 @@ const moduleIcons = {
   padding: 10px 14px;
   background: var(--bg-secondary);
   border-radius: var(--radius-md);
+  text-decoration: none;
   transition: all 0.2s;
 }
 .child-item:hover {
   background: var(--bg-tertiary);
+  border-color: var(--mod-color, var(--accent-primary));
 }
 .child-info { flex: 1; min-width: 0; }
 .child-name {
   font-size: 13px;
   font-weight: 500;
   color: var(--text-primary);
-  text-decoration: none;
-}
-.child-name:hover {
-  color: var(--accent-primary-light);
 }
 .child-desc {
   font-size: 12px;
@@ -337,9 +352,10 @@ const moduleIcons = {
 .child-arrow {
   color: var(--text-tertiary);
   flex-shrink: 0;
+  transition: color 0.2s;
 }
-.child-arrow:hover {
-  color: var(--accent-primary-light);
+.child-item:hover .child-arrow {
+  color: var(--mod-color, var(--accent-primary-light));
 }
 
 .quick-links {
